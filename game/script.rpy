@@ -1,4 +1,4 @@
- ﻿# The script of the game goes in this file.
+﻿ ﻿# The script of the game goes in this file.
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
@@ -23,10 +23,11 @@ label start:
     me "Honestly, I couldn’t believe seeing my father at the stepdoor."
     me "Or could I? {w=.25}Maybe I shouldn’t believe it." 
     me "But I do. {w=.25}I really do."
-    me "I don’t really know anymore..."
+    me "{sc=1}I don’t really know anymore..."
 
     scene bg rural road
-    with Dissolve(.5)
+    with Dissolve(2)
+    play music "audio/music/griff.mp3" loop fadein 2.0
 
     me "A beatiful day of April rises at the zenith."
     me "The cold wind lulls the warm aspalth to sleep."
@@ -34,7 +35,7 @@ label start:
     me "This same glacial breeze brushes my whiskers. {w=.25} I sighed"
     me "My hands tap on the steering wheel."
     me "I was a bit bored. I must admit, the road can be long sometimes."
-    me "So I crank up the car radio to distract me."
+    me "Trying to fight the monotony, I crank up the car radio to distract me."
     me "I really like this music."
     me "I start to bop my head to the rythm of the music"
     me "The waves of"
