@@ -32,13 +32,13 @@ label start:
     me "A beatiful day of April rises at the zenith."
     me "The cold wind lulls the warm aspalth to sleep."
     me "A very peaceful day in the end."
-    me "This same glacial breeze brushes my whiskers. {w=.25} I sighed"
+    me "This same glacial breeze brushes my whiskers. {w=.25}I sigh."
     me "My hands tap on the steering wheel."
     me "I was a bit bored. I must admit, the road can be long sometimes."
     me "Trying to fight the monotony, I crank up the car radio to distract me."
     me "I really like this music."
     me "I start to bop my head to the rythm of the music"
-    me "The waves of"
+    me "The waves of the sound makes me wiggle so much that"
 
     # TODO: Interrupt the dialogue (maybe find a better metaphor)
 
