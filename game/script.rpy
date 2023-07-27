@@ -36,6 +36,8 @@ label start:
     me "I was a bit bored. I must admit, the road can be long sometimes."
     me "So I crank up the car radio to distract me."
     me "I really like this music."
+    me "I start to bop my head to the rythm of the music"
+    me "The waves of"
 
     # TODO: Interrupt the dialogue (maybe find a better metaphor)
 
