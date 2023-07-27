@@ -1,4 +1,4 @@
-﻿# The script of the game goes in this file.
+ ﻿# The script of the game goes in this file.
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
@@ -28,12 +28,14 @@ label start:
     scene bg rural road
     with Dissolve(.5)
 
-    me "A beatiful day of April rised at the zenith."
-    me "The cold wind lulled to sleep the warm aspalth."
+    me "A beatiful day of April rises at the zenith."
+    me "The cold wind lulls the warm aspalth to sleep."
     me "A very peaceful day in the end."
-    me "This same glacial breeze brushed my whiskers. {w=.25} I sighed"
-    me "My hands tapped on the steering wheel."
-    me "I was a bit bored."
+    me "This same glacial breeze brushes my whiskers. {w=.25} I sighed"
+    me "My hands tap on the steering wheel."
+    me "I was a bit bored. I must admit, the road can be long sometimes."
+    me "So I crank up the car radio to distract me."
+    me "I really like this music."
 
     # TODO: Interrupt the dialogue (maybe find a better metaphor)
 
@@ -57,7 +59,7 @@ label start:
 
     scene bg room
     
-    me "I live at the outskirtsê"
+    me "I live at the outskirts"
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
