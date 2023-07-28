@@ -7,11 +7,11 @@
 
 define ch = Character("Charles")
 
-define ca = Character("Carl")
+define Carl = Character("Carl")
 
-define me = Character(name=None, what_italic=True)
+define Me = Character(name=None, what_italic=True)
 
-define ga = Character("Gasperd")
+define Gasperd = Character("Gasperd")
 
 
 # The game starts here.
@@ -20,68 +20,71 @@ label start:
 
     # Black scene
 
-    me "Honestly{w=.5}, I couldn’t believe seeing my father at the stepdoor."
-    me "Or could I? {w=.25}Maybe I shouldn’t believe it." 
-    me "But I do. {w=.25}I really do."
-    me "{sc=1}I don’t really know anymore..."
+    Me "Honestly{w=.5}, I couldn’t believe seeing my father at the stepdoor."
+    Me "Or could I? {w=.25}Maybe I shouldn’t believe it." 
+    Me "But I do. {w=.25}I really do."
+    Me "{sc=1}I don’t really know anymore..."
 
+    pause 2.
     scene bg rural road
-    with Dissolve(2)
+    with Dissolve(.5)
     play music "audio/music/griff.mp3" loop fadein 2.0
 
-    me "A beatiful day of April rises at the zenith."
-    me "The cold wind lulls the warm aspalth to sleep."
-    me "A very peaceful day in the end."
-    me "This same glacial breeze brushes my whiskers. {w=.25}I sigh."
-    me "My hands tap on the steering wheel."
-    me "I was a bit bored. I must admit, the road can be long sometimes."
-    me "Trying to fight the monotony, I crank up the car radio to distract me."
+    Me "A beatiful day of April rises at the zenith."
+    Me "The cold wind lulls the warm aspalth to sleep."
+    Me "A very peaceful day in the end."
+    Me "This same glacial breeze brushes my whiskers. {w=.25}I sigh."
+    Me "My hands tap on the steering wheel."
+    Me "I was a bit bored. I must admit, the road can be long sometimes."
+    Me "Trying to fight the monotony, I crank up the car radio to distract Me."
     # TODO: Find a song that goes well here and maybe develop it more
-    me "I really like this music."
-    me "I start to bop my head to the rythm of the music"
-    me "The waves of the sound makes me wiggle so much that I bounc"
+    Me "I really like this music."
+    Me "I start to bop my head to the rythm of the music"
+    Me "The waves of the sound makes Me wiggle so much that I bounc"
 
     # TODO: Interrupt the dialogue (maybe find a better metaphor)
 
-    ca "Hey! Stop daydreaming! You’re driving."
-    me "That stirs me out of my euphoric trance and I turn at him"
-    ga "Ah! Oh my god, sorry!"
-    ga "Don’t shout like this. You’re really gonna send us flying into the ditch"
-    ca "LOOK AT THE FORSAKEN ROAD YOU MORON. STOP LOOKING AT ME."
-    me "Realising what I am doing, I quickly lose focus on my friend and focus back on the road."
-    me "Well, fortunately, nothing happened or crossed the road during our argument."
-    me "Given I wasn’t really paying attention beforehand, we’re lucky a hedgehog didn’t cross the road or a rabbit didn’t hop on."
-    me "I breathe a sigh of a relief and let of all my muscles relax."
-    me "I still don’t lose sight of the route and my cheeks start to get pretty red."
-    me "That was careless of me but Carl’s intervention distracted me even more…"
-    me "… Speaking of him, he hasn’t talked since the altercation."
-    me "I can see him on the corner of my eyes that he’s crossed his arms and got slouched on the seat."
-    me "He’s on the point of resting his legs on the driveboard, but he knows he can’t because I would instantly scold him."
-    me "The silence between us grows thicker every second passing by."
-    me "It starts to unsettle me so I think up of a thing to say."
-    me "I take a breath and open my mouth."
-    ga "I huh apolog"
-    ca "Sorry.{w=.5}.. for yelling at you. Got carried away."
-    ca "
+    Carl "Hey! Stop daydreaming! You’re driving."
+    Me "That stirs Me out of my euphoric trance and I turn at him"
+    Gasperd "Ah! Oh my god, sorry!"
+    Gasperd "Don’t shout like this. You’re really gonna send us flying into the ditch"
+    Carl "LOOK AT THE FORSAKEN ROAD YOU MORON. STOP LOOKING AT Me."
+    Me "Realising what I am doing, I quickly lose focus on my friend and focus back on the road."
+    Me "Well, fortunately, nothing happened or crossed the road during our argument."
+    Me "Given I wasn’t really paying attention beforehand, we’re lucky a hedgehog didn’t cross the road or a rabbit didn’t hop on."
+    Me "I breathe a sigh of a relief and let of all my muscles relax."
+    Me "I still don’t lose sight of the route and my cheeks start to get pretty red."
+    Me "That was careless of Me but Carl’s intervention distracted Me even more…"
+    Me "… Speaking of him, he hasn’t talked since the altercation."
+    Me "I can see him on the corner of my eyes that he’s crossed his arms and got slouched on the seat."
+    Me "He’s on the point of resting his legs on the driveboard, but he knows he can’t because I would instantly scold him."
+    Me "The silence between us grows thicker every second passing by."
+    Me "It starts to unsettle Me so I think up of a thing to say."
+    Me "I take a breath and open my mouth."
+    Gasperd "I huh apolog"
+    Carl "Sorry.{w=.5}.{w=.125}.{w=125} for yelling at you. Got carried away."
+    Carl "I am a bit on the nerves. I reacted too hard on you, it was…{w=.5} irresponsible of Me."
+    Gasperd "I apologise too…"
+    Gasperd "I apologise for getting distracted that much. it was…"
  
     # Blank
     # Gasperd desc
-    me "I am someone you could find at every corner of the street."
-    me "Well maybe not. Some people wouldn’t say that."
-    me "\"Oh my god, you should smile more.\" \"Are you ever happy?\" \"Why are you brooding again?\""
-    me "That really annoys me. I can smile if I want. It’s just I’m tired you know."
-    me "Mom once told me \"You are the smiliest boy I’ve ever seen. Never drop that smile, you hear me?\""
-    me "I wasn’t really listening but that caught me off guard."
-    me "Mrs. Cranberry once told me \"Of all my pupils, you’re one of the brightest and warmest boy I’ve had.\""
-    me "I still wasn’t really listening but it didn’t caught me off guard."
-    me "At the end of the day, I’m still lost. Do I smile enough?"
+    Me "I am someone you could find at every corner of the street."
+    Me "Well maybe not. Some people wouldn’t say that."
+    Me "\"Oh my god, you should smile more.\" \"Are you ever happy?\" \"Why are you brooding again?\""
+    Me "That really annoys Me. I can smile if I want. It’s just I’m tired you know."
+    Me "Mom once told Me \"You are the smiliest boy I’ve ever seen. Never drop that smile, you hear Me?\""
+    Me "I wasn’t really listening but that caught Me off guard."
+    Me "Mrs. Cranberry once told Me \"Of all my pupils, you’re one of the brightest and warmest boy I’ve had.\""
+    Me "I still wasn’t really listening but it didn’t caught Me off guard."
+    Me "At the end of the day, I’m still lost. Do I smile enough?"
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
     scene bg room
     
-    me "I live at the outskirts"
+    Me "I live at the outskirts"
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
