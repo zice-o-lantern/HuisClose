@@ -20,7 +20,7 @@ label start:
 
     # Black scene
 
-    me "Honestly{w=}, I couldn’t believe seeing my father at the stepdoor."
+    me "Honestly{w=.5}, I couldn’t believe seeing my father at the stepdoor."
     me "Or could I? {w=.25}Maybe I shouldn’t believe it." 
     me "But I do. {w=.25}I really do."
     me "{sc=1}I don’t really know anymore..."
@@ -58,6 +58,11 @@ label start:
     me "I can see him on the corner of my eyes that he’s crossed his arms and got slouched on the seat."
     me "He’s on the point of resting his legs on the driveboard, but he knows he can’t because I would instantly scold him."
     me "The silence between us grows thicker every second passing by."
+    me "It starts to unsettle me so I think up of a thing to say."
+    me "I take a breath and open my mouth."
+    ga "I huh apolog"
+    ca "Sorry.{w=.5}.. for yelling at you. Got carried away."
+    ca "
  
     # Blank
     # Gasperd desc
