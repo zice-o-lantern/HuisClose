@@ -20,7 +20,7 @@ label start:
 
     # Black scene
 
-    me "Honestly, I couldn’t believe seeing my father at the stepdoor."
+    me "Honestly{w=}, I couldn’t believe seeing my father at the stepdoor."
     me "Or could I? {w=.25}Maybe I shouldn’t believe it." 
     me "But I do. {w=.25}I really do."
     me "{sc=1}I don’t really know anymore..."
@@ -36,14 +36,28 @@ label start:
     me "My hands tap on the steering wheel."
     me "I was a bit bored. I must admit, the road can be long sometimes."
     me "Trying to fight the monotony, I crank up the car radio to distract me."
+    # TODO: Find a song that goes well here and maybe develop it more
     me "I really like this music."
     me "I start to bop my head to the rythm of the music"
-    me "The waves of the sound makes me wiggle so much that"
+    me "The waves of the sound makes me wiggle so much that I bounc"
 
     # TODO: Interrupt the dialogue (maybe find a better metaphor)
 
     ca "Hey! Stop daydreaming! You’re driving."
-    ga "Ah! Don’t shout like this. You’re really gonna send us flying into the ditch"
+    me "That stirs me out of my euphoric trance and I turn at him"
+    ga "Ah! Oh my god, sorry!"
+    ga "Don’t shout like this. You’re really gonna send us flying into the ditch"
+    ca "LOOK AT THE FORSAKEN ROAD YOU MORON. STOP LOOKING AT ME."
+    me "Realising what I am doing, I quickly lose focus on my friend and focus back on the road."
+    me "Well, fortunately, nothing happened or crossed the road during our argument."
+    me "Given I wasn’t really paying attention beforehand, we’re lucky a hedgehog didn’t cross the road or a rabbit didn’t hop on."
+    me "I breathe a sigh of a relief and let of all my muscles relax."
+    me "I still don’t lose sight of the route and my cheeks start to get pretty red."
+    me "That was careless of me but Carl’s intervention distracted me even more…"
+    me "… Speaking of him, he hasn’t talked since the altercation."
+    me "I can see him on the corner of my eyes that he’s crossed his arms and got slouched on the seat."
+    me "He’s on the point of resting his legs on the driveboard, but he knows he can’t because I would instantly scold him."
+    me "The silence between us grows thicker every second passing by."
  
     # Blank
     # Gasperd desc
