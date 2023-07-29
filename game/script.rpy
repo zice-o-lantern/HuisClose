@@ -78,7 +78,13 @@ label start:
     Me "He starts searching frenetically in the box."
     Gasperd "Well, don't you like it?"
     Carl "If I like it?"
-    Me "Carl 
+    Me "Carl stops searching though the box. He pauses."
+    Carl "Of course not! Would you like being run over by a car?"
+    Gasperd "A car??? That's how you feel about my company?"
+    Me "I turn my head to shoot at my most severe ironic glance."
+    Me "But Carl shouts."
+    Carl "Eyes on the road, God damn it!!!"
+    
  
     # Blank
     # Gasperd desc
