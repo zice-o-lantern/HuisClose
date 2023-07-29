@@ -77,6 +77,8 @@ label start:
     Carl "It's not. You're just making fun of me."
     Me "He starts searching frenetically in the box."
     Gasperd "Well, don't you like it?"
+    Carl "If I like it?"
+    Me "Carl 
  
     # Blank
     # Gasperd desc
