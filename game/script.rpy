@@ -38,8 +38,17 @@ label start:
     Me "This same glacial breeze brushes my whiskers. {w=.25}I sigh."
     Me "My hands tap on the steering wheel."
 
+    play music 'audio/music/griff.mp3' loop fadein 2.0
 
     Me "I was a bit bored. I must admit, the road can be long sometimes."
+    # TODO: Write an essay about boredom and apathy 
+    Me "In those times, it left me wonder how does one fight boredom.{w=.5} In fact, Boredom is a state of the mind where the person is left unentertained."
+    Me "So I’ll try to look at the landscape, hoping my mind would stop rotting and wither away."
+    Me "The little rock on the road, the blades of grass flowing into my view, the tall trees dashing into the corners of my eyes."
+    Me "The clouds flowing across the sky witout a care in the wold and the hills, far away, running for the horizon."
+    Me "At the sight of this unreachable goal, the hills can’t be bored with their determination to keep running for it.{w=.5} But as much as they would like to, they won’t ever be fulfilled."
+    Me "They are stuck in this bottomless pit following an astute and sterile quest.{w=1} But they aren’t bored."
+
     Me "Trying to fight the monotony, I crank up the car radio so that it can distract me."
 
     # TODO: Find a song that goes well here and maybe develop it more
