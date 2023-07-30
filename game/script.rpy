@@ -13,6 +13,8 @@ define Me = Character(name=None, what_italic=True)
 
 define Gasperd = Character("Gasperd")
 
+image ruralRoad = At("images/bg/ruralRoad.jpg")
+
 
 # The game starts here.
 
@@ -23,12 +25,12 @@ label start:
     Me "Honestly{w=.5}, I couldn’t believe seeing my father at the stepdoor."
     Me "Or could I? {w=.25}Maybe I shouldn’t believe it." 
     Me "But I do. {w=.25}I really do."
-    Me "{sc=1}I don’t really know anymore..."
+    Me "{sc=1}I really do."
 
     pause 2.
-    scene bg rural_road
+    scene ruralRoad
     with Dissolve(.5)
-    play music "audio/music/griff.mp3" loop fadein 2.0
+    play sound 'audio/sounds/car_white_noise.ogg' loop fadein 1.0
 
     Me "A beatiful day of April rises at the zenith."
     Me "The cold wind lulls the warm aspalth to sleep."
@@ -38,9 +40,12 @@ label start:
 
 
     Me "I was a bit bored. I must admit, the road can be long sometimes."
-    Me "Trying to fight the monotony, I crank up the car radio to distract me."
+    Me "Trying to fight the monotony, I crank up the car radio so that it can distract me."
+
     # TODO: Find a song that goes well here and maybe develop it more
-    Me "I really like this music."
+    play music 'audio/music/Roadhouse Blues.ogg'
+
+    Me "Now, that’s what I’m talking about!"
     Me "I start to bop my head to the rythm of the music"
     Me "The waves of the sound makes me wiggle so much that I bounc"
 
@@ -56,8 +61,8 @@ label start:
     Me "Given I wasn’t really paying attention beforehand, we’re lucky a hedgehog didn’t cross the road or a rabbit didn’t hop on."
     Me "I breathe a sigh of a relief and let of all my muscles relax."
     Me "I still don’t lose sight of the route ; my cheeks start to get pretty red."
-    Me "Seconds are passing by and soon minutes and it wont’t stop getting redder."
-    Me "My shoulders slowly and slowly swallow the top of my body ; I’m quickly reminded that I should focus on the road so my head quickly bounces back up."
+    Me "Seconds are passing by and soon minutes and it wont’t stop getting warmer."
+    Me "My shoulders slowly and slowly swallow the top of my body ; I’m quickly reminded that I should focus on the road so my head quickly bounces back up to place."
     Me "That was careless of me but Carl’s intervention distracted me even more…"
     Me "… Speaking of him, he hasn’t talked since the altercation."
     Me "I can see him on the corner of my eyes that he’s crossed his arms and got slouched on the seat."
@@ -85,8 +90,8 @@ label start:
     Carl "If I like it?"
     Me "Carl stops searching though the box. He pauses."
     Carl "Of course not! Would you like being run over by a car?"
-    Gasperd "A car??? That's how you feel about my company?"
-    Me "I turn my head to shoot at my most severe ironic glance."
+    Gasperd "A car??? That's how you feel about me?"
+    Me "I turn my head to shoot at him my most severe ironic glance."
     # Me "But Carl shouts."
     Carl "Eyes on the road, God damn it!!!"
     Gasperd "Oh please, could you say it more gently??{w=.5} What you’re doing is really counterproductive."
@@ -97,7 +102,11 @@ label start:
     Carl "No, no…{w=.5} Well maybe."
     Me "Slumped in his seat, he looks wishfully at the scenery"
     Carl "Since…{w=.25} Since…{w=.25} we’ve laughed like that."
-    Gasperd "You mean… since what happened"
+    Gasperd "You mean… since what happened last week?"
+    Carl "Oh come on, you know very well you weren’t smiling a bunch even before."
+    Me "No, I didn’t know, actually. What does that mean? Am I that much of a downer?"
+    Me "Carl gets back to look in the glove…{w=.5} Again."
+    Me ""
 
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
