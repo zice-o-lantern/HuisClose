@@ -131,5 +131,20 @@ label prologue:
     Me "I catch a glimpse of a rest area sign."
     Gasperd "If you want it that much, we can make a stop."
     Carl "You know what? Yeah. We both need a break."
-        
+    
+    jump rest_area
+    
+ label rest_area:
+    
+    stop music
+
+    scene parkingLot with Dissolve(2.)
+    
+    Me "The car steers over on the parking lot."
+    Me "I turn off the car and open the door."
+    Me "The rest area conveys some tinges of loneliness.
+    Me "Alone, I wander over the deserted road."
+    Me "The rattling of the ants fills the space"
+    Me "Interested by their so
+
     return
