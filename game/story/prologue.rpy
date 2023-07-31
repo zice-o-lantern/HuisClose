@@ -104,7 +104,7 @@ label prologue:
     Me "The stuff inside it clashes into each other like he went to take a hike in a minefield and stepped on every possible mine."
     Gasperd "You know, you won’t get what you want after you’ve looked for the 59th time."
     Ammon "I known, I know!"
-    Gasperd "What’re you’re looking for?"
+    Gasperd "What’re you looking for?"
 
     default both_options = 0
 
@@ -188,7 +188,31 @@ label rest_area:
     Me "Breathing out, I promptly grab the phone."
     Me "The phone numbers print themselves at high-speed on the station monitor."
     Me "Once the number dialed-in, I don’t wait for a second thought and press call."
-    Me "The phone rings once "
+    Me "The phone rings once..."
+    Me "Twice..."
+    Me "Thrice."
+    Me "It keeps ringing."
+    Me "Why isn't she answering?"
+    Me "Have I called too late?"
+    Me "I lower my head to look at my wrist watch"
+    Me "Fifteen past three."
+    Me "She should be at home."
+    Me "It finally picks up."
+    Gasperd "Hello Julie!"
+    Me "I nervously twirl the phone cable."
+    Julie "Oh hey Gas, how are you?"
+    Gasperd "I'm fine, I'm fine. A bit tired. And you?"
+    Julie "For the last days, pretty great."
+    Julie "Oh, by the way, you have left your toothbrush here."
+    Gasperd "Well I had to forget something, ahah…"
+    Me "Some quiet follows. In all honesty, I forgot why I have called."
+    Julie "… Is everything alright?"
+    Gasperd "Yes, Yes, don't worry-"
+    Julie "Is it about what happened Saturday?"
+    Me "Julie isn't a girl you can easily lie to, she'll always find her way into your mind."
+    Gasperd "I said, everything's alright-"
+    Julie "Do you want to talk about it. I mean, your father."
+    Me "I freeze."
     #TODO: write conversation with girlfriend.
 
     return
