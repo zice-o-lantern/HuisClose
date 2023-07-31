@@ -3,13 +3,15 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define Charles = Character("Charles")
+define ch = Character("Charles", color="#26222cff")
 
-define Ammon   = Character("Ammon")
+define am = Character("Ammon", color="#f0ee7b")
 
-define Me      = Character(name=None, what_italic=True)
+define me = Character(name=None, what_italic=True)
 
-define Gasperd = Character("Gasperd")
+define ga = Character("Gasperd", color="#454b41")
+
+define ju = Character("Julie", color="#aa6aca")
 
 # Declare images
 
