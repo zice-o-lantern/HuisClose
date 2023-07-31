@@ -7,6 +7,7 @@ label prologue:
     Me "Or could I? {w=.25}Maybe I shouldn’t believe it." 
     Me "But I do. {w=.25}I really do."
     Me "{sc=1}I really do."
+    # TODO: Write an essay about boredom and apathy 
 
     pause 2.
     scene ruralRoad
@@ -22,7 +23,6 @@ label prologue:
     play music 'audio/music/griff.mp3' loop fadein 2.0
 
     Me "I was a bit bored. I must admit, the road can be long sometimes."
-    # TODO: Write an essay about boredom and apathy 
     # Me "In those times, it left me wonder how does one fight boredom.{w=.5} In fact, Boredom is a state of the mind where the person is left unentertained."
     # Me "So I’ll try to look at the landscape, hoping my mind would stop rotting and wither away."
     # Me "The little rock on the road, the blades of grass flowing into my view, the tall trees dashing into the corners of my eyes."
@@ -32,7 +32,7 @@ label prologue:
 
     Me "Trying to fight the monotony, I crank up the car radio so that it can distract me."
 
-    # TODO: Find a song that goes well here and maybe develop it more
+    # TODO: maybe develop it more
     play music 'audio/music/Roadhouse Blues.ogg'
 
     Me "Now, that’s what I’m talking about!"
@@ -128,23 +128,41 @@ label prologue:
     Gasperd "Your book? I remember seeing it in the trunk."
     Carl "The trunk… Why did I put it in the trunk?"
     Gasperd "Don’t ask me."
-    Me "I catch a glimpse of a rest area sign."
+    Me "Flustered as he continues to mess up my glove box, I catch a glimpse of a rest area sign."
+    Me "Carl can be pretty impatient sometimes so he won’t stop until he finds it."
     Gasperd "If you want it that much, we can make a stop."
     Carl "You know what? Yeah. We both need a break."
     
     jump rest_area
     
- label rest_area:
+label rest_area:
     
     stop music
 
     scene parkingLot with Dissolve(2.)
     
     Me "The car steers over on the parking lot."
-    Me "I turn off the car and open the door."
-    Me "The rest area conveys some tinges of loneliness.
+    Me "I give a quick look through the window to see if there’s anyone there."
+    Me "Nobody…"
+    Me "I turn off the car and open the door as I put my hand into my pocket."
+    Me "I move my hands inside the pocket but I couldn’t find any cigarettes."
+    Me "So I decided to keep it in my pocket for some time."
+    Me "The rest area breathes some tinges of loneliness."
     Me "Alone, I wander over the deserted road."
-    Me "The rattling of the ants fills the space"
-    Me "Interested by their so
+    Me "There’s some restroons and a phone booth around."
+    Me "But that doesn’t matter for me."
+    Me "As I stretch my arms, I can’t help but notice something in the grass."
+    Me "I carefully approach it and here was a colony waiting for me"
+    Me "The rattling of the ants fills up the space"
+    Me "I crouch in the grass to take a closer look."
+    Me "Their train of life continues without a worry in the world."
+    Me "I wonder if they feel bored…"
+    Me "Even though I am stranded in a desert place, the quietness of it all soothes my heart."
+    Me "Carl bursts through his door."
+    Carl "Stretching your legs, huh?"
+    Gasperd "Yeah…"
+    Me "I quickly get up."
+    # TODO: Fi
+    Me "As Carl slams the door shut, he pulls out a cigarette out of his front pocket."
 
     return

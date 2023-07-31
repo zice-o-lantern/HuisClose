@@ -3,8 +3,6 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-# define e = Character("Eileen")
-
 define ch = Character("Charles")
 
 define Carl = Character("Carl")
@@ -12,6 +10,8 @@ define Carl = Character("Carl")
 define Me = Character(name=None, what_italic=True)
 
 define Gasperd = Character("Gasperd")
+
+# Declare images
 
 image ruralRoad = At("images/bg/ruralRoad.jpg")
 
