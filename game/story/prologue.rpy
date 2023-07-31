@@ -23,12 +23,6 @@ label prologue:
     play music 'audio/music/griff.mp3' loop fadein 2.0
 
     Me "I was a bit bored. I must admit, the road can be long sometimes."
-    # Me "In those times, it left me wonder how does one fight boredom.{w=.5} In fact, Boredom is a state of the mind where the person is left unentertained."
-    # Me "So I’ll try to look at the landscape, hoping my mind would stop rotting and wither away."
-    # Me "The little rock on the road, the blades of grass flowing into my view, the tall trees dashing into the corners of my eyes."
-    # Me "The clouds flowing across the sky witout a care in the wold and the hills, far away, running for the horizon."
-    # Me "At the sight of this unreachable goal, the hills can’t be bored with their determination to keep running for it.{w=.5} But as much as they would like to, they won’t ever be fulfilled."
-    # Me "They are stuck in this bottomless pit following an astute and sterile quest.{w=1} But they aren’t bored."
 
     Me "Trying to fight the monotony, I crank up the car radio so that it can distract me."
 
@@ -168,8 +162,23 @@ label rest_area:
     Me "He’s never been keen to sharing so I could dream ever getting one from him."
     Ammon "Sorry, last one."
     Me "He pauses and then takes a long drag and puff it in the clean air."
+    # TODO: Ammon’s description
 
     Me "Not enough determined, for the moment, to dig into his blatant lie, I’m reminded of the phone booth I’ve seen earlier."
     Me "I’m gonna "
+    Ammon "Go on, I will wait here for you."
+    Me "As soon as he finishes his phrase, I trot over the booth."
+    # TODO: Change tranquil later
+    Me "I didn’t notice before but I want some tranquility."
+    Me "dealing with him is all but tranquil."
+    Me "I briskly reach the phone and enter inside."
+    Me "I seal the door fast and I take a breath."
+    Me "Now I need to make this phone call."
+    Me "I take another deep breath."
+    Me "Breathing out, I promptly grab the phone."
+    Me "The phone numbers print themselves at high-speed on the station monitor."
+    Me "Once the number dialed-in, I don’t wait for a second thought and press call."
+    Me "The phone rings once "
+    #TODO: write conversation with girlfriend.
 
     return
