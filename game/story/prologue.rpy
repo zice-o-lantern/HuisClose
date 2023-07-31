@@ -270,7 +270,7 @@ label rest_area:
     me "He scrutinises every movement, every facial expression you can make."
     me "Nothing escapes those eyes and I know it but I still try to fool him times to times."
     me "Some day, he looks at me and I feel like a prey."
-    me "A prey in immediate danger " 
+    me "A prey frozen by the immediate danger, stuck by the fate of their predicament." 
     
 
     return
