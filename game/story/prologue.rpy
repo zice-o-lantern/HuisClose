@@ -3,16 +3,25 @@ label prologue:
     # Black scene
     pause 1.
 
-    Me "Honestly{w=.5}, I couldn’t believe seeing my father at the stepdoor."
-    Me "Or could I? {w=.25}Maybe I shouldn’t believe it." 
-    Me "But I do. {w=.25}I really do."
-    Me "{sc=1}I really do."
-    # TODO: Write an essay about boredom and apathy 
+    Me "Honestly{w=.5}, I couldn’t believe me strangling my father at the stepdoor."
+    Me "Or was it the stepdoor? {w=.25}Maybe it was on the pavement." 
+    Me "Or the grass. {w=.25}You know what?"
+    Me "{sc=1}It doesn’t matter anymore."
+    
+    pause 1.
 
-    pause 2.
+    Me "Before you condemn me of indifference, I would like to do my mea-culpa and warn you that I know nothing in life and I am not in anyway qualified to submit a verdict."
+    Me "It just happened that I am on a branching path where I can’t cower behind my hide and must take on the complex dilemma that I have been defied with."
+    Me "Is Boredom a crime? Let me rephrase: Can my lethargy cause irreparable wrongdoings for the world around me. By all means, I’ve tried and I’ve succeded to not hurt anyone."
+    Me "Is my dullness the root of all the issues I experienced since I’ve set foot on this forsaken Earth while I couldn’t see anything for my obliviousness?"
+    Me "No I don’t think so ; trust me, please, I’ve been pondering about it for a long time ; Being bored isn’t a crime as other form of boredom like Indifference, Lethargy or even Apathy."
+    Me "My Apathy won’t be a tragedy.{w=.25}.{w=.25}.{w=1.} My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy."
+    Me "{cps=60.}My Apathy won’t be a Tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a Tragedy"
+    Me "{cps=80.}My Apathy won’t be a Tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a{nw}"
+    Me "{cps=100.} My Apathy won’t be a tragedyMy Apathy won’t be a tragedyMy Apathy won’t be a tragedyMy Apathy won’t be a tragedyMy Apathy won’t be a tragedyMy Apathy won’t be a tragedyMy Apathy won’t be a tragedyMy Apathy won’t be a tragedy{nw}"
+    Me "{cps=110.} my apathy won’t be a tragedymy apathy won’t be a tragedymy apathy won’t be a tragedymyapathywon’tbeatragedymyapathywon’tbeatragedymyapathywon’tbeatragedymyapa{nw}"
     scene ruralRoad
-    with Dissolve(.5)
-    play sound 'audio/sounds/car_white_noise.ogg' loop fadein 1.0
+    play sound 'audio/sounds/car_white_noise.ogg' loop
 
     Me "A beatiful day of April rises at the zenith."
     Me "The cold wind lulls the warm aspalth to sleep."
@@ -31,10 +40,8 @@ label prologue:
 
     Me "Now, that’s what I’m talking about!"
     Me "I start to bop my head to the rythm of the music"
-    Me "The waves of the sound makes me wiggle so much that I bounc"
-
-    # TODO: Interrupt the dialogue (maybe find a better metaphor)
-
+    Me "The waves of the sound makes me wiggle so much that I bounc{nw}"
+    
     Ammon "Hey! Stop daydreaming! You’re driving."
     Me "That stirs me out of my euphoric trance and I turn at him"
     Gasperd "Ah! Oh my god, sorry!"
@@ -46,10 +53,11 @@ label prologue:
     Me "I breathe a sigh of a relief and let of all my muscles relax."
     Me "I still don’t lose sight of the route ; my cheeks start to get pretty red."
     Me "Seconds are passing by and soon minutes and it wont’t stop getting warmer."
-    Me "My shoulders slowly and slowly swallow the top of my body ; I’m quickly reminded that I should focus on the road so my head quickly bounces back up to place."
+    Me "My shoulders slowly and slowly swallow the top of my body ; I’m quickly reminded that I should focus on the road so my head bounces back up to place."
     Me "That was careless of me but Carl’s intervention distracted me even more…"
     Me "… Speaking of him, he hasn’t talked since the altercation."
     Me "I can see him on the corner of my eyes that he’s crossed his arms and got slouched on the seat."
+    Me "To get around his vigilance, I glance at him through the inner rear mirror."
     Me "He’s on the point of resting his legs on the driveboard, but he knows he can’t because I would instantly scold him."
     Me "The silence between us grows thicker and starts to create a sultry space void."
     Me "And the car radio music does not help fill the blank…"
@@ -132,8 +140,10 @@ label prologue:
 label rest_area:
     
     stop music
+    stop sound
 
     scene parkingLot with Dissolve(2.)
+    play sound "audio/sounds/bird_chirping.ogg"
     
     Me "The car steers over on the parking lot."
     Me "I give a quick look through the window to see if there’s anyone there."
@@ -165,8 +175,8 @@ label rest_area:
     # TODO: Ammon’s description
 
     Me "Not enough determined, for the moment, to dig into his blatant lie, I’m reminded of the phone booth I’ve seen earlier."
-    Me "I’m gonna "
-    Ammon "Go on, I will wait here for you."
+    Me "I’m gonna make a quick phone call."
+    Ammon "Suit yourself, I will wait here for you."
     Me "As soon as he finishes his phrase, I trot over the booth."
     # TODO: Change tranquil later
     Me "I didn’t notice before but I want some tranquility."
