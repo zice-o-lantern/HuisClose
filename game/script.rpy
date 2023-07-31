@@ -5,7 +5,7 @@
 
 define ch = Character("Charles")
 
-define Carl = Character("Carl")
+define Ammon = Character("Ammon")
 
 define Me = Character(name=None, what_italic=True)
 
