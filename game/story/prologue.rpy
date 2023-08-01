@@ -354,7 +354,12 @@ label rest_area:
     n1 "He huffs and huffs and then finally puffs. A veil of smoke flows through my nose and my lips and I can’t help but cough and cough without a break. But I won’t be defeated."
     am "So happy?"
     n1 "Ammon expects an answer, self-satisfied with his stunt."
-    n1 ""
+    n1 "However a puff of smoke goes through his face and he recoils back. coughing uncontrollably. Once his coughing fit done, he raises his head back shocked by the trick I've managed"
+    n1 "I walk away free from his grasp, from his little game, successful. The wind comes congratulating me, moving my frail and sensible ears. I brush my hair to set it back.
+    ga "Yeah. I'm happy"
+    n1 "I cast a quick side eye look so that I can observe his reaction."
+    n1 "He's smirking, that bastard. He likes it"
+    n1 "And I like it too"
 
 
 
