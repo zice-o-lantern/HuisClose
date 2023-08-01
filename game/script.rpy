@@ -7,7 +7,7 @@ define ch = Character("Charles", color="#26222cff")
 
 define am = Character("Ammon", color="#f0ee7b")
 
-define me = Character(name=None, what_italic=True)
+define n1 = Character(name=None, what_italic=True)
 
 define ga = Character("Gasperd", color="#454b41")
 
