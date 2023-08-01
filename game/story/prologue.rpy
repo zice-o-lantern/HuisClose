@@ -285,9 +285,14 @@ label rest_area:
     n1 "A fucking cigarette and he waves it between my two eyes."
     ga "Wha– You’ve said it was your last one! Give it to m—"
     am "Shh—"
-    n1 "I behold a finger on my mouth keeping it shut."
+    n1 "I behold a finger in front of me on my mouth keeping it shut."
     n1 "The audacity of this man."
     n1 "I gulp."
+    n1 "He pulls out his lighter and light it…{w} provocatively"
+    n1 "He starts to take a long, and even long drag until the cigarette is dried down."
+    n1 "Then, he puffs in the air, a large cloud of smoke ascending at a slow pace."
+    n1 "With a step onward, he prepares his unstoppable offence."
+    am "Hmm… Let's admit that. {w}Let's admit you are able to abandon me here."
 
 
     
