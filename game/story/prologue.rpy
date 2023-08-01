@@ -253,8 +253,8 @@ label rest_area:
     scene parkingLot with Fade(1.)
 
     me "I trot back to the car hoping I didn’t make Ammon wait too long. He would do a snarly remark about it."
-    me "I don’t have the energy to deal with it. Besides, right now, I don’t feel great."
-    me "I almost get to the car but I’m sweating from everywhere."
+    me "I don’t have the energy to deal with it. My heart still skips beats like a demented and lunatic violon player."
+    me "Almost reaching the car, a sweat drop flies in frint of my eyes.."
     me "I wipe off as much droplets I can but this makes my hands just more sweaty"
     me "Ammon, at this time, decided it was the good time to notice me."
     am "Hey have you been running? You are drenched."
@@ -272,6 +272,12 @@ label rest_area:
     me "Some day, he looks at me and I feel like a prey."
     me "A prey frozen by the immediate danger, stuck by the fate of their predicament." 
     me "His foul breathing moves every strand of hair nailing me down in place."
+    me "But then he closes his eyes as slowly"
+    me "He pinches his nose gap, massaging it to make it as soft as"
+    me "He opens his eyes back and his smile plays a warm lullaby, slowing my heart."
+    am "Anyway, who have you talked to? Julie I guess"
+    am "You can't go a day without her, can you?"
+    me "He giggles as he puts his hand in front his mouth, boucing it."
     
 
     return
