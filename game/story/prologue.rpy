@@ -11,11 +11,11 @@ label prologue:
     pause 1.
 
     # TODO: Develop that bit later
-    n1 "Before you condemn n1 of indifference, I would like to do my mea-culpa and warn you that I know nothing in life and I am not in anyway qualified to submit a verdict."
+    n1 "Before you condemn me of indifference, I would like to do my mea-culpa and warn you that I know nothing in life and I am not in anyway qualified to submit a verdict."
     n1 "It just happened that I am on a branching path where I can’t cower behind my hide and must take on the complex dilemma that I have been defied with."
     n1 "Is Boredom a crime? Let n1 rephrase: Can my lethargy cause irreparable wrongdoings for the world around n1. By all means, I’ve tried and I’ve succeded to not hurt anyone."
     n1 "Is my dullness the root of all the issues I experienced since I’ve set foot on this forsaken Earth while I couldn’t see anything for my obliviousness?"
-    n1 "No I don’t think so ; trust n1, please, I’ve been pondering about it for a long time ; Being bored isn’t a crime as other form of boredom like Indifference, Lethargy or even Apathy."
+    n1 "No I don’t think so ; trust me, please, I’ve been pondering about it for a long time ; Being bored isn’t a crime as other form of boredom like Indifference, Lethargy or even Apathy."
     n1 "My Apathy won’t be a tragedy.{w=.25}.{w=.25}.{w=1.} My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy."
     n1 "{cps=60.}My Apathy won’t be a Tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a Tragedy"
     n1 "{cps=80.}My Apathy won’t be a Tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a{nw}"
@@ -27,7 +27,7 @@ label prologue:
     # TODO: Talk about the road
     n1 "A beatiful day of April rises at the zenith."
     n1 "Roses, Tulipes, Lilies and Daffodils are blooming; Birds are singing the aftertales of the Spring and the wonders of life."
-    n1 "On days like these where the sun is so high in "
+    n1 "On days like these where the sun goes so high in the sky it could reach the other stars; by [finish sentence]. Cats like me should be playing in the fields of grass. "
     n1 "The cold wind lulls the warm aspalth to sleep. A very peaceful day in the end."
     n1 "This same glacial breeze brushes my whiskers. {w=.25}I sigh. My hands tap on the steering wheel."
 
@@ -72,7 +72,7 @@ label prologue:
     ga "I apologise for getting distracted that much. it was…"
     n1 "The words stop in their tracks and I throw him a quick look, smirking."
     ga "… irresponsible of n1."
-    n1 "am snickers."
+    n1 "Ammon snickers."
     am "Why are you repeating what I said?"
     n1 "He opens the glove box and start rummaging."
     n1 "I try to not pay attention to what he's doing."
@@ -167,7 +167,7 @@ label rest_area:
     am "Stretching your legs, huh?"
     ga "Yeah…"
     n1 "I quickly get up."
-    n1 "As am slams the door shut, he pulls out a box of cigarette out of his front pocket."
+    n1 "As Ammon slams the door shut, he pulls out a box of cigarette out of his front pocket."
     n1 "I observe him as he lights it, a bit envious."
     n1 "He must have noticed my stare because he casts n1 a side look."
     n1 "He’s never been keen to sharing so I could dream ever getting one from him."
