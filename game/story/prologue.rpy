@@ -26,14 +26,15 @@ label prologue:
 
     # TODO: Talk about the road
     n1 "A beatiful day of April rises at the zenith."
+    n1 "Roses, Tulipes, Lilies and Daffodils are blooming; Birds are singing the aftertales of the Spring and the wonders of life."
+    n1 "On days like these where the sun is so high in "
     n1 "The cold wind lulls the warm aspalth to sleep. A very peaceful day in the end."
     n1 "This same glacial breeze brushes my whiskers. {w=.25}I sigh. My hands tap on the steering wheel."
 
     play music 'audio/music/griff.mp3' loop fadein 2.0
-
     n1 "I was a bit bored. I must admit, the road can be long sometimes."
 
-    n1 "Trying to fight the monotony, I crank up the car radio so that it can distract n1."
+    n1 "Trying to fight the monotony, I crank up the car radio so that it can distract me."
 
     # TODO: maybe develop it more
     play music 'audio/music/Roadhouse Blues.ogg'
