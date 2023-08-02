@@ -13,7 +13,7 @@ label prologue:
     # TODO: Develop that bit later
     n1 "Before you condemn me of indifference, I would like to do my mea-culpa and warn you that I know nothing in life and I am not in anyway qualified to submit a verdict."
     n1 "It just happened that I am on a branching path where I can’t cower behind my hide and must take on the complex dilemma that I have been defied with."
-    n1 "Is Boredom a crime? Let n1 rephrase: Can my lethargy cause irreparable wrongdoings for the world around n1. By all means, I’ve tried and I’ve succeded to not hurt anyone."
+    n1 "Is Boredom a crime? Let me rephrase: Can my lethargy cause irreparable wrongdoings for the world around me. By all means, I’ve tried and I’ve succeded to not hurt anyone."
     n1 "Is my dullness the root of all the issues I experienced since I’ve set foot on this forsaken Earth while I couldn’t see anything for my obliviousness?"
     n1 "No I don’t think so ; trust me, please, I’ve been pondering about it for a long time ; Being bored isn’t a crime as other form of boredom like Indifference, Lethargy or even Apathy."
     n1 "My Apathy won’t be a tragedy.{w=.25}.{w=.25}.{w=1.} My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy."
@@ -41,13 +41,13 @@ label prologue:
 
     n1 "Now, that’s what I’m talking about!"
     n1 "I start to bop my head to the rythm of the music"
-    n1 "The waves of the sound makes n1 wiggle so much that I bounc{nw}"
+    n1 "The waves of the sound makes me wiggle so much that I bounc{nw}"
     
     am "Hey! Stop daydreaming! You’re driving."
-    n1 "That stirs n1 out of my euphoric trance and I turn at him"
+    n1 "That stirs me out of my euphoric trance and I turn at him"
     ga "Ah! Oh my god, sorry!"
     ga "Don’t shout like this. You’re really gonna send us flying into the ditch"
-    am "LOOK AT THE FORSAKEN ROAD YOU MORON. STOP LOOKING AT n1."
+    am "LOOK AT THE FORSAKEN ROAD YOU MORON. STOP LOOKING AT ME."
     n1 "Realising what I am doing, I quickly lose focus of my friend and focus back on the road."
     n1 "Well, fortunately, nothing happened or crossed the road during our argument."
     n1 "Given I wasn’t really paying attention beforehand, we’re lucky a hedgehog didn’t cross the road or a rabbit didn’t hop on."
@@ -55,14 +55,14 @@ label prologue:
     n1 "I still don’t lose sight of the route ; my cheeks start to get pretty red."
     n1 "Seconds are passing by and soon minutes and it wont’t stop getting warmer."
     n1 "My shoulders slowly and slowly swallow the top of my body ; I’m quickly reminded that I should focus on the road so my head bounces back up to place."
-    n1 "That was careless of n1 but Carl’s intervention distracted n1 even more…"
+    n1 "That was careless of me but Carl’s intervention distracted me even more…"
     n1 "… Speaking of him, he hasn’t talked since the altercation."
     n1 "I can see him on the corner of my eyes that he’s crossed his arms and got slouched on the seat."
     n1 "To get around his vigilance, I glance at him through the inner rear mirror."
     n1 "He’s on the point of resting his legs on the driveboard, but he knows he can’t because I would instantly scold him."
     n1 "The silence between us grows thicker and starts to create a sultry space void."
     n1 "And the car radio music does not help fill the blank…"
-    n1 "It starts to really unsettle n1 so I think up of a thing to say."
+    n1 "It starts to really unsettle me so I think up of a thing to say."
     n1 "I take a breath and open my mouth."
     # TODO: Once again, interrupt dialogue.
     ga "I huh apologise{nw}"
@@ -71,19 +71,19 @@ label prologue:
     ga "I apologise too…"
     ga "I apologise for getting distracted that much. it was…"
     n1 "The words stop in their tracks and I throw him a quick look, smirking."
-    ga "… irresponsible of n1."
+    ga "… irresponsible of me."
     n1 "Ammon snickers."
     am "Why are you repeating what I said?"
     n1 "He opens the glove box and start rummaging."
     n1 "I try to not pay attention to what he's doing."
     ga "Why not? I think it's funny."
-    am "It's not. You're just making fun of n1."
+    am "It's not. You're just making fun of me."
     n1 "He starts searching frenetically in the box."
     ga "Well, don't you like it?"
     am "If I like it?"
     n1 "am stops searching though the box. He pauses."
     am "Of course not! Would you like being run over by a car?"
-    ga "A car??? That's how you feel about n1?"
+    ga "A car??? That's how you feel about me?"
     n1 "I turn my head to shoot at him my most severe ironic glance."
     # n1 "But am shouts."
     am "Eyes on the road, God damn it!!!"
@@ -98,7 +98,7 @@ label prologue:
     ga "You mean… since what happened last week?"
     am "Oh come on, you know very well you weren’t smiling a bunch even before."
     n1 "No, I didn’t know, actually. What does that mean? Am I that much of a downer?"
-    ga "Are you telling n1 I don’t smile enough?"
+    ga "Are you telling me I don’t smile enough?"
     am "I’m not saying that…"
     n1 "His avoiding gaze says it."
     n1 "am gets back to look in the glove…{w=.5} Again."
@@ -122,7 +122,7 @@ label prologue:
             
             "Is it your crossword?":
                 am "I’m too broody to do any crosswords right now"
-                am "This trip has tired n1."
+                am "This trip has tired me."
                 ga "That much, huh…"
         
                 $both_options += 1
@@ -130,7 +130,7 @@ label prologue:
     am "Anyway, I’ve been looking for my book but I can’t find it."
     ga "Your book? I remember seeing it in the trunk."
     am "The trunk… Why did I put it in the trunk?"
-    ga "Don’t ask n1."
+    ga "Don’t ask me."
     n1 "Flustered as he continues to mess up my glove box, I catch a glimpse of a rest area sign."
     n1 "Ammon can be pretty impatient sometimes so he won’t stop until he finds it."
     ga "If you want it that much, we can make a stop."
@@ -143,7 +143,7 @@ label rest_area:
     stop music
     stop sound
 
-    scene parkingLot with Fade(2.)
+    scene parkingLot with Fade(2., 1.)
     play sound "audio/sounds/bird_chirping.ogg"
     
     n1 "The car steers over on the parking lot."
@@ -154,8 +154,8 @@ label rest_area:
     n1 "So I decided to keep it in my pocket for some time."
     n1 "The rest area breathes some tinges of loneliness."
     n1 "Alone, I wander over the deserted road."
-    n1 "There’s some restroons and a phone booth around."
-    n1 "But that doesn’t matter for n1."
+    n1 "There’s some restroonm and a phone booth around."
+    n1 "But that doesn’t matter for me."
     n1 "As I stretch my arms, I can’t help but notice something in the grass."
     n1 "I carefully approach it and here was a colony waiting for n1"
     n1 "The rattling of the ants fills up the space"
@@ -224,33 +224,33 @@ label rest_area:
     n1 "I freeze. My fingers start to shake."
     n1 "The sweat is making the thing I’m holding in my hand hard to hold it."
     n1 "It is something I don’t want to talk about."
-    ju "You’ve told n1 your father rung at the door but you’ve sade nothing about he told you. What did he say?"
+    ju "You’ve told me your father rang at the door but you’ve sade nothing about he told you. What did he say?"
     ju "You seem out of it since his visit."
     n1 "By the tone of her voice, she’s concerned. She will keep asking about it until she gets the answer she wants."
     n1 "I can’t stay calm anymore. With a trembling voice, I squeeze the phone."
     ga "I’ve got to go."
     ju "Wait, you still-"
     n1 "A crash resonated in the booth."
-    n1 "My ears ring like the thunder om agitaded seas. The fog on the glass surrounds n1."
+    n1 "My ears ring like the thunder om agitaded seas. The fog on the glass surrounds me."
     n1 "I smashed the phone into the handset. Why did I do that."
     n1 "I faze for a long period of time. My sense of time is so skewered I couldn’t even be bothered to look at my wristwatch."
     n1 "I might have spent 10 seconds, 5 minutes, an hour or a week inside this booth. I didn’t really care."
     n1 "I slump down in the phone booth. My hand attempt to get out of this suffocating box but it doesn’t work."
     n1 "The claws scratch and bang the window pane but it won’t break. I’m stuck in my tomb and I grasp for air."
-    n1 "Someone is strangling n1 and it looks like the devil itself has come to finish the job"
+    n1 "Someone is strangling me and it looks like the devil itself has come to finish the job"
     n1 "The dripping sweat has formed a puddle so I could bathe in my misdeeds. I try to puff my guiltiness away but my thoat shuts to keep it inside my chest."
     n1 "I want it to stop but it burns so I inhale all the air around but it keeps coming back stronger."
-    n1 "Now the box wants n1 dead so the pane gets closer and closer. No matter how I push them back, it won’t stop, it won’t stop ; it wasn’t supposed to happen like this."
+    n1 "Now the box wants me dead so the pane gets closer and closer. No matter how I push them back, it won’t stop, it won’t stop ; it wasn’t supposed to happen like this."
     n1 "But then, I look up and there is no one ; the box has stopped shrinking down"
     n1 "At some point, I manage to soothe my breathing down."
 
-    scene parkingLot with Fade(1.)
+    scene parkingLot with Fade(1., 1., 1.)
 
     n1 "I trot back to the car hoping I didn’t make Ammon wait too long. He would do a snarly remark about it."
     n1 "I don’t have the energy to deal with it. My heart still skips beats like a demented and lunatic violon player."
-    n1 "Almost reaching the car, a sweat drop flies in frint of my eyes.."
+    n1 "Almost reaching the car, a sweat drop flies in front of my eyes.."
     n1 "I wipe off as much droplets I can but this makes my hands just more sweaty"
-    n1 "Ammon, at this time, decided it was the good time to notice n1."
+    n1 "Ammon, at this time, decided it was the good time to notice me."
     am "Hey have you been running? You are drenched."
     ga "Hum maybe? I think I was just so much excited to talk with Julie that I’ve run faster than I expected. Hehehe… He."
     ga "It’s been long since I’ve run like that you know."
@@ -258,16 +258,13 @@ label rest_area:
     am "Really? Interesting…"
     n1 "Ammon reads people as his own open book. He looks through your soul with those eyes."
     n1 "He scrutinises every movement, every facial expression you make."
-    n1 "Nothing escapes those eyes and I know it but I still try to fool him nonetheless."
-    n1 "Some day he looks at me and I’m his prey."
-    n1 "A prey frozen by the immediate danger, stuck by the fate of their predicament." 
-    n1 "His foul breathing moves every strand of hair nailing me down in place."
-    n1 "But then he closes his eyes in an instant."
-    n1 "He pinches his nose gap, massaging it, thinking it might loosen up all of his wrinkles."
+    n1 "Nothing escapes those eyes and I know it but I still try to fool him nonetheless. Some day he looks at me and I’m his prey."
+    n1 "A prey frozen by the immediate danger, stuck by the fate of their predicament. His foul breathing moves every strand of hair nailing me down in place."
+    n1 "But then he closes his eyes in an instant. He pinches his nose gap, massaging it, thinking it might loosen up all of his wrinkles."
     n1 "All of a sudden, he raises his head making wonder what came into his mind."
     n1 "Eyes opened, heartfelt smile; I can’t resist it, it melts my heart."
     am "You know, with the time you’ve taken to make the call, I had the time to finish my smoke."
-    ga "Oh really? you could’ve left some for n1, pal."
+    ga "Oh really? you could’ve left some for me, pal."
     am "Ahah sorry, finders keepers. You should’ve made your call faster, little kitten."
     ga "Again that nickname? we’re the same age."
     am "Yes but you’re smaller than me."
@@ -361,12 +358,30 @@ label rest_area:
     n1 "I cast a quick side eye look so that I can observe his reaction."
     n1 "He's smirking, that bastard. He likes it"
     n1 "And I like it too"
+    n1 "But he {b}did{/b} have some cigarette on him. That wasn’t his last."
+    n1 "One way or the other, I’ll get back at him for his lie. I’m sure it still wasn’t his last."
 
-
-
-    
     am "Anyway, who have you talked to? Julie I guess"
+    n1 "Walking towards the driver seat, I stop; I could sense some bittersweetness in his voice but I decide to ignore it."
+    n1 "Besides, it’s not like I could make him admit. Let’s not get ahead of ourselves."
     am "You can't go a day without her, can you?"
-    
+    ga "I needed to check something with her. I forgot some stuff at home."
+    # TODO: develop julie encounter
+    am "Is it all you have talked about?"
+    n1 "It’s starting to get on my nerves. I can’t help but notice his suspicious tone, wary of me. My back to him, I look down trying to not think about the phone call."
+    ga "Everything’s fine, don’t worry."
 
-    return
+    am "Oh btw, can you open the trunk for me?"
+    n1 "I turn around, and I glance at him, puzzled. What was the matter with the trunk? That tells me something but it’s hard to remember."
+    n1 "Ammon, destabilsed by my sudden amnesia, fidget his cigarette, unsure if he said anythin wrong."
+    am "You know, the book I was looking for"
+    n1 "Là je suis fatigué donc on va speedrun là."
+    n1 "Gasperd va dans la voiture."
+    n1 "Ici j’affiche le bouton inventaire"
+    n1 "Il trouve la clé sur le contact"
+    $ga_inventory.append(car_keys)
+    $ga_inventory.append(car_keys)
+    show screen inventory
+    n1 "rorstaeuins"
+
+# label got_key:

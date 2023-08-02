@@ -24,4 +24,4 @@ image parkingLot = At("images/bg/bg restArea.jpg")
 label start:
     stop music
 
-    jump prologue
+    jump test_room
