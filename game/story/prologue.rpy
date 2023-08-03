@@ -43,6 +43,8 @@ label prologue:
     n1 "I start to bop my head to the rythm of the music"
     n1 "The waves of the sound makes me wiggle so much that I bounc{nw}"
     
+    am "Hey Gap? Are you sleeping?"
+    
     am "Hey! Stop daydreaming! You’re driving."
     n1 "That stirs me out of my euphoric trance and I turn at him"
     ga "Ah! Oh my god, sorry!"
