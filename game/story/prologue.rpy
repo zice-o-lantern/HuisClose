@@ -3,20 +3,7 @@ label prologue:
     # Black scene
     pause 1.
 
-    n1 "Honestly{w=.5}, I couldn’t believe me strangling my father at the stepdoor."
-    n1 "Or was it the stepdoor? {w=.25}Maybe it was on the pavement." 
-    n1 "Or the grass. {w=.25}You know what?"
-    n1 "{sc=1}It doesn’t matter anymore."
-    
-    pause 1.
-
-    # TODO: Develop that bit later
-    n1 "Before you condemn me of indifference, I would like to do my mea-culpa and warn you that I know nothing in life and I am not in anyway qualified to submit a verdict."
-    n1 "It just happened that I am on a branching path where I can’t cower behind my hide and must take on the complex dilemma that I have been defied with."
-    n1 "Is Boredom a crime? Let me rephrase: Can my lethargy cause irreparable wrongdoings for the world around me. By all means, I’ve tried and I’ve succeded to not hurt anyone."
-    n1 "Is my dullness the root of all the issues I experienced since I’ve set foot on this forsaken Earth while I couldn’t see anything for my obliviousness?"
-    n1 "No I don’t think so ; trust me, please, I’ve been pondering about it for a long time ; Being bored isn’t a crime as other form of boredom like Indifference, Lethargy or even Apathy."
-    n1 "My Apathy won’t be a tragedy.{w=.25}.{w=.25}.{w=1.} My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy."
+    .{w=.25}.{w=.25}.{w=1.} My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy."
     n1 "{cps=60.}My Apathy won’t be a Tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a Tragedy"
     n1 "{cps=80.}My Apathy won’t be a Tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a{nw}"
     n1 "{cps=100.} My Apathy won’t be a tragedyMy Apathy won’t be a tragedyMy Apathy won’t be a tragedyMy Apathy won’t be a tragedyMy Apathy won’t be a tragedyMy Apathy won’t be a tragedyMy Apathy won’t be a tragedyMy Apathy won’t be a tragedy{nw}"
@@ -43,8 +30,16 @@ label prologue:
     n1 "I start to bop my head to the rythm of the music"
     n1 "The waves of the sound makes me wiggle so much that I bounc{nw}"
     
-    am "Hey Gap? Are you sleeping?"
-    
+    am "Hey Gap? Are you sleepy?"
+    n1 "This deep voice calling for you awakens in you a surge of energy and you come to find your yourself jumping and groaning, letting out some groans go."
+    am "Oh my god don't move like that!"
+    n1 "Despite hearing an agitated man, gesticulating and whining around, I'm still not quite out of my slumber; My vidion is blurry like a fog on a Friday the 13th."
+    n1 "When I blink, sandpaper bags obstruct the path of my eyelids and every blink feels like pin and needles. The ruthless spikes pierce through the shutter lids veiling my view."
+    n1 "The weariness of the road benumbed my legs and the numbness flows through my veins in every muscle of my body. Fighting against it, I blink even more."
+    n1 "Sootheness and comfort; every time I blink through the slumber, the needles in my eyes fly through the wind, the shards of glass melt up from the spores of my skins between the strands of hair."
+    n1 "I am soon out of my reverie when Ammon speaks up again."
+    am "Hey are you there??!"
+    n1 "Panicking for me, he thinks over to get me out of it. His arms over my waist 
     am "Hey! Stop daydreaming! You’re driving."
     n1 "That stirs me out of my euphoric trance and I turn at him"
     ga "Ah! Oh my god, sorry!"
