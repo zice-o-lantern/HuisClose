@@ -2,8 +2,20 @@ label prologue:
     
     # Black scene
     pause 1.
+    -    n1 "Honestly{w=.5}, I couldn’t believe me strangling my father at the stepdoor."
+    n1 "Or was it the stepdoor? {w=.25}Maybe it was on the pavement." 
+    n1 "Or the grass. {w=.25}You know what?"
+    n1 "{sc=1}It doesn’t matter anymore."
+    
+    pause 1.
 
-    .{w=.25}.{w=.25}.{w=1.} My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy."
+    # TODO: Develop that bit later
+    n1 "Before you condemn me of indifference, I would like to do my mea-culpa and warn you that I know nothing in life and I am not in anyway qualified to submit a verdict."
+    n1 "It just happened that I am on a branching path where I can’t cower behind my hide and must take on the complex dilemma that I have been defied with."
+    n1 "Is Boredom a crime? Let me rephrase: Can my lethargy cause irreparable wrongdoings for the world around me. By all means, I’ve tried and I’ve succeded to not hurt anyone."
+    n1 "Is my dullness the root of all the issues I experienced since I’ve set foot on this forsaken Earth while I couldn’t see anything for my obliviousness?"
+    n1 "No I don’t think so ; trust me, please, I’ve been pondering about it for a long time ; Being bored isn’t a crime as other form of boredom like Indifference, Lethargy or even Apathy."
+    n1 "My Apathy won’t be a tragedy.{w=.25}.{w=.25}.{w=1.} My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy."
     n1 "{cps=60.}My Apathy won’t be a Tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a Tragedy"
     n1 "{cps=80.}My Apathy won’t be a Tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a{nw}"
     n1 "{cps=100.} My Apathy won’t be a tragedyMy Apathy won’t be a tragedyMy Apathy won’t be a tragedyMy Apathy won’t be a tragedyMy Apathy won’t be a tragedyMy Apathy won’t be a tragedyMy Apathy won’t be a tragedyMy Apathy won’t be a tragedy{nw}"
@@ -12,23 +24,31 @@ label prologue:
     play sound 'audio/sounds/car_white_noise.ogg' loop
 
     # TODO: Talk about the road
-    n1 "A beatiful day of April rises at the zenith."
+    n1 "A beatiful day of April rises down at the horizon."
     n1 "Roses, Tulipes, Lilies and Daffodils are blooming; Birds are singing the aftertales of the Spring and the wonders of life."
-    n1 "On days like these where the sun goes so high in the sky it could reach the other stars; by [finish sentence]. Cats like me should be playing in the fields of grass. "
-    n1 "The cold wind lulls the warm aspalth to sleep. A very peaceful day in the end."
-    n1 "This same glacial breeze brushes my whiskers. {w=.25}I sigh. My hands tap on the steering wheel."
+    n1 "On days like these where the sun goes so high in the sky it could reach the other stars; by which they adnire it. Cats like me should be playing in the fields of grass."
+    n1 "Although I am a bit too old to run around in fields of gras, playing with a ball of yarn, wandering over all around ’till my feet."
+    n1 "I mull about this prospect for a moment, realizing I do miss those free-worries days, where I didn’t have to worry about rent, competitive exams and social relationships…"
+    n1 "At least, I wasn’t {b}bored."
+    n1 "The cold wind lulls the warm aspalth to sleep, still exhausted from the hundreds of travellers. But once again, the two wheels of the motorcycle rouse it back to life, annoyed."
+    n1 "Looking far into the horizon, the distant red-crimson sphere holds its path and claws its glaze in me. Not afraid of the invitation, I brace its longing stare and return it with fierceness."
+    n1 "Even his vicious casted cherry pink glinted reflections in the helmet visor could not dissuade me. I will not give in for this challenge I have been given."
+    n1 "Mutiple minutes pass by and my eyelids weigh like a thousand year rock, ready to concede but still sturdy enough to resist."
 
-    play music 'audio/music/griff.mp3' loop fadein 2.0
-    n1 "I was a bit bored. I must admit, the road can be long sometimes."
 
-    n1 "Trying to fight the monotony, I crank up the car radio so that it can distract me."
+    # n1 "This same glacial breeze brushes my whiskers. {w=.25}I sigh. My hands tap on the steering wheel."
 
-    # TODO: maybe develop it more
-    play music 'audio/music/Roadhouse Blues.ogg'
+    # play music 'audio/music/griff.mp3' loop fadein 2.0
+    # n1 "I was a bit bored. I must admit, the road can be long sometimes."
 
-    n1 "Now, that’s what I’m talking about!"
-    n1 "I start to bop my head to the rythm of the music"
-    n1 "The waves of the sound makes me wiggle so much that I bounc{nw}"
+    # n1 "Trying to fight the monotony, I crank up the car radio so that it can distract me."
+
+    # # TODO: maybe develop it more
+    # play music 'audio/music/Roadhouse Blues.ogg'
+
+    # n1 "Now, that’s what I’m talking about!"
+    # n1 "I start to bop my head to the rythm of the music"
+    # n1 "The waves of the sound makes me wiggle so much that I bounc{nw}"
     
     am "Hey Gap? Are you sleepy?"
     n1 "This deep voice calling for you awakens in you a surge of energy and you come to find your yourself jumping and groaning, letting out some groans go."
@@ -39,7 +59,7 @@ label prologue:
     n1 "Sootheness and comfort; every time I blink through the slumber, the needles in my eyes fly through the wind, the shards of glass melt up from the spores of my skins between the strands of hair."
     n1 "I am soon out of my reverie when Ammon speaks up again."
     am "Hey are you there??!"
-    n1 "Panicking for me, he thinks over to get me out of it. His arms over my waist 
+    n1 "Panicking for me, he thinks over to get me out of it. His arms over my waist"
     am "Hey! Stop daydreaming! You’re driving."
     n1 "That stirs me out of my euphoric trance and I turn at him"
     ga "Ah! Oh my god, sorry!"
