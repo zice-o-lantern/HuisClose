@@ -31,10 +31,11 @@ label prologue:
     n1 "I mull about this prospect for a moment, realizing I do miss those free-worries days, where I didn’t have to worry about rent, competitive exams and social relationships…"
     n1 "At least, I wasn’t {b}bored."
     n1 "The cold wind lulls the warm aspalth to sleep, still exhausted from the hundreds of travellers. But once again, the two wheels of the motorcycle rouse it back to life, annoyed."
-    n1 "Looking far into the horizon, the distant red-crimson sphere holds its path and claws its glaze in me. Not afraid of the invitation, I brace its longing stare and return it with fierceness."
-    n1 "Even his vicious casted cherry pink glinted reflections in the helmet visor could not dissuade me. I will not give in for this challenge I have been given."
-    n1 "Mutiple minutes pass by and my eyelids weigh like a thousand year rock, ready to concede but still sturdy enough to resist."
-
+    n1 "Looking far into the horizon, the distant red-crimson sphere holds its path and claws its glaze in me. Happy from the invitation, I brace its longing stare and return it with sweetness."
+    n1 "Even his cheerful cherry pink glinted reflections in the helmet visor wont't distract me from the demonstration of enchantments life can offer. This time, I won't look away from the wonders of the world."
+    n1 "Mutiple minutes pass by and my eyelids weigh like a thousand flower, dried, withered away by the centuries, regretting the decades lost to the universe.."
+    n1 "Soon enough, content from its wizardry, the dying light of the sun disappears behing the horizon."
+    
 
     # n1 "This same glacial breeze brushes my whiskers. {w=.25}I sigh. My hands tap on the steering wheel."
 
