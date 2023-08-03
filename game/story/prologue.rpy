@@ -34,7 +34,9 @@ label prologue:
     n1 "Looking far into the horizon, the distant red-crimson sphere holds its path and claws its glaze in me. Happy from the invitation, I brace its longing stare and return it with sweetness."
     n1 "Even his cheerful cherry pink glinted reflections in the helmet visor wont't distract me from the demonstration of enchantments life can offer. This time, I won't look away from the wonders of the world."
     n1 "Mutiple minutes pass by and my eyelids weigh like a thousand flower, dried, withered away by the centuries, regretting the decades lost to the universe.."
-    n1 "Soon enough, content from its wizardry, the dying light of the sun disappears behing the horizon."
+    n1 "Soon enough, content from its mirage of fantasia, the dying light of the sun disappears behing the horizon."
+    n1 "Once gone, my eyes start to get heavy, for all they have been doing today is enduring the long day of road I've made, relieved the bright peach light has flown away."
+    n1 "For a moment, I find myself complying with my senses and give in the call of slumber. Falling down, I meet with the pleasant world of Wonderland where the misery is shrinking away and complete bliss is growing closer."
     
 
     # n1 "This same glacial breeze brushes my whiskers. {w=.25}I sigh. My hands tap on the steering wheel."
