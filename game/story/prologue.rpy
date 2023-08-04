@@ -2,7 +2,7 @@ label prologue:
     
     # Black scene
     pause 1.
-    -    n1 "Honestly{w=.5}, I couldn’t believe me strangling my father at the stepdoor."
+    n1 "Honestly{w=.5}, I couldn’t believe me strangling my father at the stepdoor."
     n1 "Or was it the stepdoor? {w=.25}Maybe it was on the pavement." 
     n1 "Or the grass. {w=.25}You know what?"
     n1 "{sc=1}It doesn’t matter anymore."
@@ -35,126 +35,36 @@ label prologue:
     n1 "Even his cheerful cherry pink glinted reflections in the helmet visor wont't distract me from the demonstration of enchantments life can offer. This time, I won't look away from the wonders of the world."
     n1 "Mutiple minutes pass by and my eyelids weigh like a thousand flower, dried, withered away by the centuries, regretting the decades lost to the universe.."
     n1 "Soon enough, content from its mirage of fantasia, the dying light of the sun disappears behing the horizon."
-    n1 "Once gone, my eyes start to get heavy, for all they have been doing today is enduring the long day of road I've made, relieved the bright peach light has flown away."
-    n1 "For a moment, I find myself complying with my senses and give in the call of slumber. Falling down, I meet with the pleasant world of Wonderland where the misery is shrinking away and complete bliss is growing closer."
-    
+    n1 "Once gone, my eyes start to get heavy, for all they have been doing today is enduring the long day of road I've made, relieved the bright peach light has flown away for another place, warmer and greener."
+    n1 "For a moment, I find myself complying with my inner desire and give in the call of slumber. Falling down, I meet with the peaceful world of Wonderland where the misery is shrinking away and complete bliss is growing closer."
 
-    # n1 "This same glacial breeze brushes my whiskers. {w=.25}I sigh. My hands tap on the steering wheel."
-
-    # play music 'audio/music/griff.mp3' loop fadein 2.0
-    # n1 "I was a bit bored. I must admit, the road can be long sometimes."
-
-    # n1 "Trying to fight the monotony, I crank up the car radio so that it can distract me."
-
-    # # TODO: maybe develop it more
-    # play music 'audio/music/Roadhouse Blues.ogg'
-
-    # n1 "Now, that’s what I’m talking about!"
-    # n1 "I start to bop my head to the rythm of the music"
-    # n1 "The waves of the sound makes me wiggle so much that I bounc{nw}"
-    
     am "Hey Gap? Are you sleepy?"
-    n1 "This deep voice calling for you awakens in you a surge of energy and you come to find your yourself jumping and groaning, letting out some groans go."
+
+    n1 "This deep voice calling for me awakens in me a surge of uncomfortable geyser and I come to find myself jumping and groaning, letting out some groans go."
+
     am "Oh my god don't move like that!"
-    n1 "Despite hearing an agitated man, gesticulating and whining around, I'm still not quite out of my slumber; My vidion is blurry like a fog on a Friday the 13th."
+
+    n1 "Despite hearing an agitated man, gesticulating and whining around, I'm still not quite out of my slumber; My vision is blurry like a fog on a Friday the 13th."
     n1 "When I blink, sandpaper bags obstruct the path of my eyelids and every blink feels like pin and needles. The ruthless spikes pierce through the shutter lids veiling my view."
     n1 "The weariness of the road benumbed my legs and the numbness flows through my veins in every muscle of my body. Fighting against it, I blink even more."
     n1 "Sootheness and comfort; every time I blink through the slumber, the needles in my eyes fly through the wind, the shards of glass melt up from the spores of my skins between the strands of hair."
     n1 "I am soon out of my reverie when Ammon speaks up again."
+
     am "Hey are you there??!"
-    n1 "Panicking for me, he thinks over to get me out of it. His arms over my waist"
-    am "Hey! Stop daydreaming! You’re driving."
-    n1 "That stirs me out of my euphoric trance and I turn at him"
-    ga "Ah! Oh my god, sorry!"
-    ga "Don’t shout like this. You’re really gonna send us flying into the ditch"
-    am "LOOK AT THE FORSAKEN ROAD YOU MORON. STOP LOOKING AT ME."
-    n1 "Realising what I am doing, I quickly lose focus of my friend and focus back on the road."
-    n1 "Well, fortunately, nothing happened or crossed the road during our argument."
-    n1 "Given I wasn’t really paying attention beforehand, we’re lucky a hedgehog didn’t cross the road or a rabbit didn’t hop on."
-    n1 "I breathe a sigh of a relief and let of all my muscles relax."
-    n1 "I still don’t lose sight of the route ; my cheeks start to get pretty red."
-    n1 "Seconds are passing by and soon minutes and it wont’t stop getting warmer."
-    n1 "My shoulders slowly and slowly swallow the top of my body ; I’m quickly reminded that I should focus on the road so my head bounces back up to place."
-    n1 "That was careless of me but Carl’s intervention distracted me even more…"
-    n1 "… Speaking of him, he hasn’t talked since the altercation."
-    n1 "I can see him on the corner of my eyes that he’s crossed his arms and got slouched on the seat."
-    n1 "To get around his vigilance, I glance at him through the inner rear mirror."
-    n1 "He’s on the point of resting his legs on the driveboard, but he knows he can’t because I would instantly scold him."
-    n1 "The silence between us grows thicker and starts to create a sultry space void."
-    n1 "And the car radio music does not help fill the blank…"
-    n1 "It starts to really unsettle me so I think up of a thing to say."
-    n1 "I take a breath and open my mouth."
-    # TODO: Once again, interrupt dialogue.
-    ga "I huh apologise{nw}"
-    am "Sorry.{w=.5}.{w=.125}.{w=.125} for yelling at you. Got carried away."
-    am "I am a bit on the nerves. I reacted too hard on you, it was…{w=.5} irresponsible of n1."
-    ga "I apologise too…"
-    ga "I apologise for getting distracted that much. it was…"
-    n1 "The words stop in their tracks and I throw him a quick look, smirking."
-    ga "… irresponsible of me."
-    n1 "Ammon snickers."
-    am "Why are you repeating what I said?"
-    n1 "He opens the glove box and start rummaging."
-    n1 "I try to not pay attention to what he's doing."
-    ga "Why not? I think it's funny."
-    am "It's not. You're just making fun of me."
-    n1 "He starts searching frenetically in the box."
-    ga "Well, don't you like it?"
-    am "If I like it?"
-    n1 "am stops searching though the box. He pauses."
-    am "Of course not! Would you like being run over by a car?"
-    ga "A car??? That's how you feel about me?"
-    n1 "I turn my head to shoot at him my most severe ironic glance."
-    # n1 "But am shouts."
-    am "Eyes on the road, God damn it!!!"
-    ga "Oh please, could you say it more gently??{w=.5} What you’re doing is really counterproductive."
-    n1 "Both of us drop in silence. Then laughter erupts in the air."
-    n1 "It takes us a lot of time to calm ourselves."
-    am "Ahah… It’s been so long…"
-    ga "It’s been so long since what? Since you’ve laughed? A bit grim, don’t you think?"
-    am "No, no…{w=.5} Well maybe."
-    n1 "Slumped in his seat, he looks wishfully at the scenery"
-    am "Since…{w=.25} Since…{w=.25} {b}we{/b}’ve laughed like that."
-    ga "You mean… since what happened last week?"
-    am "Oh come on, you know very well you weren’t smiling a bunch even before."
-    n1 "No, I didn’t know, actually. What does that mean? Am I that much of a downer?"
-    ga "Are you telling me I don’t smile enough?"
-    am "I’m not saying that…"
-    n1 "His avoiding gaze says it."
-    n1 "am gets back to look in the glove…{w=.5} Again."
-    n1 "The stuff inside it clashes into each other like he went to take a hike in a minefield and stepped on every possible mine."
-    ga "You know, you won’t get what you want after you’ve looked for the 59th time."
-    am "I known, I know!"
-    ga "What’re you looking for?"
 
-    default both_options = 0
+    n1 "Panicking for me, he thinks over how to get me out of it. His arms around my waist tighten and his chest approaches me, and at this moment the warmness emanating from the torso of his invading every piece of hair of my body."
+    n1 "Boiling and beating his chest; A shiver runs through my spine, then another one. A old sentiment all too familiar grows inside of me and I don’t like it. I don’t want to find out what happens next if he keeps at it."
+    n1 "I jerk him off."
 
-    while both_options < 2:
-        menu the_missing_item:
+    ga "Oh my god let go!!!"
 
-            "Is it the map?":
-                am "No it isn’t."
-                am "I trust you know where we’re going for."
-                am "… Right?"
-                ga "Right…"
-                
-                $both_options += 1
-            
-            "Is it your crossword?":
-                am "I’m too broody to do any crosswords right now"
-                am "This trip has tired me."
-                ga "That much, huh…"
-        
-                $both_options += 1
-    
-    am "Anyway, I’ve been looking for my book but I can’t find it."
-    ga "Your book? I remember seeing it in the trunk."
-    am "The trunk… Why did I put it in the trunk?"
-    ga "Don’t ask me."
-    n1 "Flustered as he continues to mess up my glove box, I catch a glimpse of a rest area sign."
-    n1 "Ammon can be pretty impatient sometimes so he won’t stop until he finds it."
-    ga "If you want it that much, we can make a stop."
-    am "You know what? Yeah. We both need a break."
+    n1 "My immediate and first reaction causes me to veer off track."
+    n1 "Slaloming and slaloming. I get hardly back the control of the motorcycle. It shakes us a lot. Now he’s squeezing me and won’t let go."
+    n1 "I manage to stabilise the vehicle very fast but we’re still quite nauseated from the experience."
+
+    am "Oh good Lord…"
+
+    n1 "He lets go."
     
     jump rest_area
     

@@ -11,7 +11,7 @@ style item_inventory:
 
 
 ## NOTE: custom inventory for game
-screen inventory:
+screen inventory():
     tag menu
 
     frame:
