@@ -10,7 +10,7 @@ label prologue:
     pause 1.
     
     # TODO: Develop that bit later
-    n1 "Before you condemn me of indifference, I would like to do my mea-culpa and warn you that I know nothing in life and I am not in anyway qualified to submit a verdict."
+    n1 "Before you condemn me of lethargy, I would like to do my mea-culpa and warn you that I know nothing in life and I am not in anyway qualified to submit a verdict."
     n1 "It just happened that I am on a branching path where I can’t cower behind my hide and must take on the complex dilemma that I have been defied with."
     n1 "Is Boredom a crime? Let me rephrase: Can my lethargy cause irreparable wrongdoings for the world around me. By all means, I’ve tried and I’ve succeded to not hurt anyone."
     n1 "Is my dullness the root of all the issues I experienced since I’ve set foot on this forsaken Earth while I couldn’t see anything for my obliviousness?"
@@ -60,14 +60,127 @@ label prologue:
 
     n1 "My immediate and first reaction causes me to veer off track."
     n1 "Slaloming and slaloming. I get hardly back the control of the motorcycle. It shakes us a lot. Now he’s squeezing me and won’t let go."
-    n1 "I manage to stabilise the vehicle very fast but we’re still quite nauseated from the experience."
+    n1 "I manage to stabilise the vehicle quite fast but we’re still quite nauseated from the experience."
 
     am "Oh good Lord…"
 
     n1 "He lets go."
-    
-    
-    n1 "The sun is no longer visible"
+
+    pause .5
+
+    n1 "After some time, a sort of strange quietness grew and loomed over the both of us. It was uncomfortable, as wondering what might have caused all of this agitation early on."
+    n1 "The guiltiness start to take its toll over me, for I have failed to keep focused on the road. A mingle of shame builds up in my throat and it’s stuck no matter how much I gulp."
+    n1 "I throw some quick looks in the mirror to see if there’s any casualties with Ammon. Apparently he’s fine so I start to relax a bit."
+    n1 "Although his undecypherable gaze under his helmet make it difficult to know for sure but his ominous aura penetrates all of my pores tinges all of my hair."
+    n1 "At some point, the silente itches me; I want to stop driving and scratch the back of my head, his cold stare is staggering the back of my neck."
+    n1 "The hum of the vehicle barely barely fills the glacial air and no matter how much fast I go, the biting frost won’t stop nimbling on me."
+    n1 "With guiltiness crepping up, I fire more and more worried looks in the mirror to know if the situation has evolved."
+    n1 "Constating the situation hasn’t evolved——I could’ve not picked enough information given the situation anyway——I try to think up something to break the ice."
+    n1 "I hesitate, I didn’t do anything wrong right? I just was unfocused for a moment and got back in control pretty fast. Nothing to write home about."
+    n1 "I squeeze the handlebar, fearing the moment I’ll have to open my mouth about it. It couldn’t be that hard, am I right?"
+    n1 "I gather all of my courage and brace myself for the challenge to come."
+    n1 "I close my eyes, say it those two words slowly."
+
+    ga "I apologise{nw}"
+
+    am "I’m sorry."
+
+    n1 "Ammon interrupts me. I’m flabbergasted——what did he just say——my ears couldn’t hear it. They quiver and raise like an antenna looking for the signal; it shouldn’t be possible what I just heard."
+
+    ga "What did you just say..?"
+
+    n1 "I can’t help myself but turn my head around. Maybe in front of me, I’ll see that I was mistaken."
+
+    am "I said I’m sorry{cps=3}...{/cps} for yelling at you. Are you happy?"
+
+    n1 "He reasserts himself. He crosses his arm sternly. It looks like his pride has been shamelessly plundered. He looks away and avoids my glaze. He shows a face of discomfort and akwardness."
+    n1 "That took him a lot of efforts, apparently——I mean, he’s the type to be a shithead about it—— he wronged mo a lot of times and he doesn’t up usually own up to it."
+    n1 "I grin bittersweetly, realizing I have been cut off in my tremendous amends."
+
+    ga "I forgive you.{w} I apologize too. I should’ve kept my eyes on the road. It’s been irresonsible of me."
+
+    n1 "I lower my head of shame."
+    n1 "I don’t know why I was so distracted but I guess we could’ve died both with my tomfoolery. But the fatigue keeps increasing."
+
+    am "Ooh? Mister Responsible Goody Two–Shoes is sorry? Mister is ashamed of what he’s done and wants to atone for he has sinned?"
+
+    n1 "{cps=20}Annnnd{/cps} there it is. My asshole of a friend I know."
+
+    ga "Oh shut up. I will take back what I just said"
+
+    am "Nah, nah, don’t worry, I’ll stop teasing you about it."
+
+    n1 "He puts back his boiling arms over my waist to grab on me. I don’t push him back."
+
+    am "Besides, the quietness was unsupportable. I couldn’t bear to be mad at you all of the trip and we just started."
+    am "And it looks like you’re getting sleepy so I’ll get just right enough on your nerves to keep you awake."
+
+    ga "And you’re damn good at it because I already want to shut closed that mouthy trap of yours."
+
+    n1 "As I grit my teeth holding back to steer us in the ditch on the side of the road to not hear his voice anymore, he slids his damp muzzle on my shoulder."
+    n1 "I hadn’t noticed but he has raised his visor just jor the sake of this maneuver."
+
+    am "That’s the gist of it."
+
+    ga "Ammon, I don’t know anymore if you’re trying to help or distract me."
+
+    am "Gueeeeessss."
+
+    n1 "He wants to distract me."
+
+    ga "I won’t."
+
+    n1 "I snicker sweetly and Ammon too as his jaw wiggles with squishiness on my shoulder."
+    n1 "Some pleasant quietness followeed, Ammon is busy looking for another topic of discussion gracing me for some respite."
+
+    am "Anyway, aren’t you excited?"
+
+    ga "For what?"
+
+    am "For what??? Do you really know where you’re going???"
+
+    ga "Yes yes, I know… Oh yeah right."
+
+    am "Yeah you know, the hotel??"
+
+    n1 "Yesterday I was grabbed by Ammon for he had something important to tell me. Apparently I’ve been \"broodier\" than usual——according to his words."
+    n1 "So he presented a solution for me: a trip to a luxurious hotel in Paris; all fees included."
+
+    am "Aren’t you a little curious about it?"
+
+    ga "Yes I am…"
+
+    am "So what do you want me to tell you?"
+
+    menu the_hotel:
+
+        "How did you get it?":
+            ga "I mean, you’ve come out of nowhere and brought it up"
+            ga "I’m just wondering how possibly you could’ve get a trip to an very fancy hotel."
+            ga "I’m a bit confused, no matter how many times you say it to me."
+            am "Ahah it’s a {cps=10}secreeeet{/cps}."
+            ga "Oh please stop being mysterious and just tell me."
+            n1 "He takes a pause for a moment, his eyes looking around."
+            am "{cps=5}I...{/cps} I got invited to it."
+            ga "You got invited? What do you mean? Have you been selected to a lottery or something like that?"
+            am "Not exactly… I’ve received a letter saying I’ve been selected."
+            n1 "He shifts uncomfortably in his place, searching for a better position.+ "
+
+            jump the_hotel
+        
+        "Do we have to pay for something?":
+            # Fill later
+            jump the_hotel
+
+        "What’s so interesting about it":
+            #Fill later
+            jump the_hotel
+        
+        "I’m all good."
+            #End Questions
+
+    am "Well if you haven’t anymore questions, you’re all filled in."
+
     jump rest_area
     
 label rest_area:
