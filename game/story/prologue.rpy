@@ -8,7 +8,7 @@ label prologue:
     n1 "{sc=1}It doesn’t matter anymore."
     
     pause 1.
-
+    
     # TODO: Develop that bit later
     n1 "Before you condemn me of indifference, I would like to do my mea-culpa and warn you that I know nothing in life and I am not in anyway qualified to submit a verdict."
     n1 "It just happened that I am on a branching path where I can’t cower behind my hide and must take on the complex dilemma that I have been defied with."
@@ -78,9 +78,13 @@ label rest_area:
     scene parkingLot with Fade(2., 1.)
     play sound "audio/sounds/bird_chirping.ogg"
     
-    n1 "The car steers over on the parking lot."
-    n1 "I give a quick look through the window to see if there’s anyone there."
-    n1 "Nobody…"
+    n1 "The moto steers over on the parking lot."
+    n1 "The wind has taken his liking over his liking over a blade of grass and a can of soda."
+    n1 "With a lazy eye, I follow those lost souls. I hope for them, they'll find a place to rest."
+    n1 "I clumsily stumble out of motorcycle and take a lot of time to get rid of my helmet"
+    n1 "My huge ears are stuck in it and the motivation to get them ebb away to the shores of my mind."
+    n1 "Eventually, Ammon, who had stripped away his helmet since a long time ago, notices me."
+    am "Do you want some help? You look like you're having a hard time."
     n1 "I turn off the car and open the door as I put my hand into my pocket."
     n1 "I move my hands inside the pocket but I couldn’t find any cigarettes."
     n1 "So I decided to keep it in my pocket for some time."
