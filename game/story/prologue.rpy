@@ -66,6 +66,8 @@ label prologue:
 
     n1 "He lets go."
     
+    
+    n1 "The sun is no longer visible"
     jump rest_area
     
 label rest_area:
