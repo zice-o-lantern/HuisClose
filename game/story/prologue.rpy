@@ -144,7 +144,7 @@ label prologue:
     am "Yeah you know, the hotel??"
 
     n1 "Yesterday I was grabbed by Ammon for he had something important to tell me. Apparently I’ve been \"broodier\" than usual——according to his words."
-    n1 "So he presented a solution for me: a trip to a luxurious hotel in Paris; all fees included."
+    n1 "So he presented a solution for me: he was invited to a trip to a luxurious hotel in Paris."
 
     am "Aren’t you a little curious about it?"
 
@@ -184,10 +184,40 @@ label prologue:
         
         "Do we have to pay for something?":
             ga "I mean, I’m not really whealthy lately so I don’t know if I could pay it all."
+            am "Think for a second, Gap."
+            n1 "He locks his gaze in mine and I could only focus the periodic sunset simulated by his eyelids on his gold eyes."
+            am "It doen’t look you’re thinking, right now."
+            ga "Yeah, I was thinking of a sunset."
+            n1 "Ammon tilts his head quizically."
+            am "{cps=3}...{/cps} Anyway. What I meant to say, do you thinkk you would have to pay if you were invited to sleep to your friend’s house?"
+            ga "Um… no. Because I was invited?"
+            am "Exactly Gap, so do you really think we’d have to pay when we were invited to a hotel?"
+            ga "I don’t know, Am… all is not very clear…"
+            am "I’m going to reassure you: it’s all fees included even the food and the drinks."
+            ga "Ok…"
+            am "Anyway do you have any other questions?"
             jump the_hotel
 
         "What’s so interesting about it":
-            #Fill later
+            ga "I mean, you seem very excited by all of it."
+            am "Why should’t I? You’re the one who isn’t enough excited for me."
+            ga "What’s in this hotel that gets you so much hyped up?"
+            am "Do you listen to me sometimes? This isn’t just a simple hotel. It’s like a fancy complex!"
+            n1 "Yeah the name gives the mood much——{i}Le Jardin d’Éden{/i} or The Garden of Eden."
+            n1 "Pretty obnoxious name."
+            am "There’s a pool, a theatre, a casino and most importantly an exposition!"
+            ga "An exposition? About what?"
+            am "Oh many things but more importantly, about World War II!"
+            ga "Oh right... for you PhD in History."
+            n1 "To be honest, it wasn’t just for the studies. Ammon is usually very passionate about History."
+            n1 "But the span of time he is the most passionate about is the 39—45 period."
+            n1 "For a long time, even talking about it was frowned upon. It was a clear taboo of our society"
+            n1 "It was clearly an effort of our traumatised population to get over it, to turn the page so not talking about it was easier."
+            n1 "The only thing it was talked about was the Resistance and its wonderful endeavors to fight off the invaders out of our country."
+            n1 "However lately people have started to bring this thorny and touchy topic back on the table."
+            n1 "Hence this exhibit somehow."
+            n1 "It looks like Ammon wants to take part into this endeavour."
+            am "Anyway, do you have any other questions?"
             jump the_hotel
         
         "I’m all good."
