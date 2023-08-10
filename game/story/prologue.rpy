@@ -158,57 +158,98 @@ label prologue:
             ga "I mean, you’ve come out of nowhere and brought it up"
             ga "I’m just wondering how possibly you could’ve get a trip to an very fancy hotel."
             ga "I’m a bit confused, no matter how many times you say it to me."
+
             am "Ahah it’s a {cps=10}secreeeet{/cps}."
+
             ga "Oh please stop being mysterious and just tell me."
+
             n1 "He takes a pause for a moment, his eyes looking around."
+
             am "{cps=5}I...{/cps} I got invited to it."
+
             ga "You got invited? What do you mean? Have you been selected to a lottery or something like that?"
+
             am "Not exactly… I’ve received a letter saying I’ve been selected."
+
             n1 "He shifts uncomfortably in his place, searching for a better position."
+
             am "It said I could bring a plus one…{w} So I choose you."
             am "You looked kinda down lately…"
+
             n1 "Having been told this repeatedly, I brush ofF this last comment and focus in the elephant in the room."
+
             ga "Who invited you..?"
+
             am "… Nicolas Lecloq."
             ga "Nicolas Lecloq??? {b}THE{/b} bilionaire?."
+
             am "Him in person."
+
             ga "How’d you know it’s not fake?"
+
             am "I’ve made my research."
+
             n1 "That’s a pretty vague answer he just told. I can’t help myself but squint."
+
             am "I know it’s unclear——but trust me."
+
             n1 "Well I am already on this bike on the road of Paris so it’s bit late to turn around."
+
             ga "{cps=3}...{/cps} Alright."
+
             am "Good."
             am "Have you any other questions?"
+
             jump the_hotel
         
         "Do we have to pay for something?":
             ga "I mean, I’m not really whealthy lately so I don’t know if I could pay it all."
+
             am "Think for a second, Gap."
+
             n1 "He locks his gaze in mine and I could only focus the periodic sunset simulated by his eyelids on his gold eyes."
+
             am "It doen’t look you’re thinking, right now."
+
             ga "Yeah, I was thinking of a sunset."
+
             n1 "Ammon tilts his head quizically."
+
             am "{cps=3}...{/cps} Anyway. What I meant to say, do you thinkk you would have to pay if you were invited to sleep to your friend’s house?"
+
             ga "Um… no. Because I was invited?"
+
             am "Exactly Gap, so do you really think we’d have to pay when we were invited to a hotel?"
+
             ga "I don’t know, Am… all is not very clear…"
+
             am "I’m going to reassure you: it’s all fees included even the food and the drinks."
+
             ga "Ok…"
+
             am "Anyway do you have any other questions?"
             jump the_hotel
 
         "What’s so interesting about it":
             ga "I mean, you seem very excited by all of it."
+
             am "Why should’t I? You’re the one who isn’t enough excited for me."
+
             ga "What’s in this hotel that gets you so much hyped up?"
+
             am "Do you listen to me sometimes? This isn’t just a simple hotel. It’s like a fancy complex!"
+
             n1 "Yeah the name gives the mood much——{i}Le Jardin d’Éden{/i} or The Garden of Eden."
             n1 "Pretty obnoxious name."
+
             am "There’s a pool, a theatre, a casino and most importantly an exposition!"
+
             ga "An exposition? About what?"
+
             am "Oh many things but more importantly, about World War II!"
+
             ga "Oh right... for you PhD in History."
+
             n1 "To be honest, it wasn’t just for the studies. Ammon is usually very passionate about History."
             n1 "But the span of time he is the most passionate about is the 39—45 period."
             n1 "For a long time, even talking about it was frowned upon. It was a clear taboo of our society"
@@ -217,14 +258,43 @@ label prologue:
             n1 "However lately people have started to bring this thorny and touchy topic back on the table."
             n1 "Hence this exhibit somehow."
             n1 "It looks like Ammon wants to take part into this endeavour."
+
             am "Anyway, do you have any other questions?"
             jump the_hotel
         
-        "I’m all good."
-            #End Questions
+        "I’m all good.":
+            ga "I think I’m all filled in."
 
-    am "Well if you haven’t anymore questions, you’re all filled in."
+    am "Well if you haven’t anymore questions, you sure are all filled in!"
 
+    ga "If you say so…"
+
+    n1 "While I say that, we pass in front of a road sign, indicating a rest area nearby."
+
+    am "Gapgap?"
+
+    n1 "I can’t help myself but roll my eyes to the back of my head hearing this corny nickname that I hate."
+
+    ga "Yes Amoney..?"
+
+    n1 "Not at all in the world fazed by the sweet nickname I just gave him, he jumps on his seat, his butt shaking moderately the bike, I could even hear his tail wiggling."
+    
+    am "Can we make a stop? You are quite sleepy? And…"
+    ga "And?"
+
+    am "I need to take a piss."
+
+    ga "Fiiiiiiine, we’ll make a stop. I do need it."
+
+    am "Thanks Gapgap!"
+
+    ga "Stop saying that or I’ll break your knees and make you piss on yourself."
+
+    am "You wouldn’t dare Gapgap…"
+
+    ga "Make me, Amoney."
+
+    n1 "And like that we exit the road."
     jump rest_area
     
 label rest_area:
@@ -243,9 +313,11 @@ label rest_area:
     n1 "I clumsily stumble out of motorcycle and take a lot of time to get rid of my helmet"
     n1 "My huge ears are stuck in it and the motivation to get them ebb away to the shores of my mind."
     n1 "Eventually, Ammon, who had stripped away his helmet since a long time ago, notices me."
+
     am "Do you want some help? You look like you're having a hard time."
     n1 "Usually, it would’ve been the time where I deflect any sort of assistance and where after some trepident events, I would either succed the task or yield into the help."
     n1 "But I didn’t have the strength to struggle so I give in to Ammon."
+    n1 "(j’ai pas fini de réécrire)"
     # n1 "I turn off the car and open the door as I put my hand into my pocket."
     # n1 "I move my hands inside the pocket but I couldn’t find any cigarettes."
     # n1 "So I decided to keep it in my pocket for some time."
@@ -282,6 +354,7 @@ label rest_area:
 
     scene bg phoneBooth
 
+    n1 "(Je vais un peu le réécrire)"
     n1 "I briskly reach the phone booth and enter inside."
     n1 "I seal the door fast and I take a breath."
     n1 "Now I need to make this phone call."
@@ -343,6 +416,7 @@ label rest_area:
 
     scene parkingLot with Fade(1., 1., 1.)
 
+    n1 "Je vais un peu le réécrire"
     n1 "I trot back to the car hoping I didn’t make Ammon wait too long. He would do a snarly remark about it."
     n1 "I don’t have the energy to deal with it. My heart still skips beats like a demented and lunatic violon player."
     n1 "Almost reaching the car, a sweat drop flies in front of my eyes.."
