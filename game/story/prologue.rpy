@@ -416,56 +416,113 @@ label rest_area:
 
     scene parkingLot with Fade(1., 1., 1.)
 
-    n1 "Je vais un peu le réécrire"
-    n1 "I trot back to the car hoping I didn’t make Ammon wait too long. He would do a snarly remark about it."
-    n1 "I don’t have the energy to deal with it. My heart still skips beats like a demented and lunatic violon player."
-    n1 "Almost reaching the car, a sweat drop flies in front of my eyes.."
-    n1 "I wipe off as much droplets I can but this makes my hands just more sweaty"
-    n1 "Ammon, at this time, decided it was the good time to notice me."
-    am "Hey have you been running? You are drenched."
-    ga "Hum maybe? I think I was just so much excited to talk with Julie that I’ve run faster than I expected. Hehehe… He."
-    ga "It’s been long since I’ve run like that you know."
-    n1 "I show him my eager smile but ingenuity can’t stop oozing from it"
-    am "Really? Interesting…"
-    n1 "Ammon reads people as his own open book. He looks through your soul with those eyes."
-    n1 "He scrutinises every movement, every facial expression you make."
-    n1 "Nothing escapes those eyes and I know it but I still try to fool him nonetheless. Some day he looks at me and I’m his prey."
-    n1 "A prey frozen by the immediate danger, stuck by the fate of their predicament. His foul breathing moves every strand of hair nailing me down in place."
-    n1 "But then he closes his eyes in an instant. He pinches his nose gap, massaging it, thinking it might loosen up all of his wrinkles."
-    n1 "All of a sudden, he raises his head making wonder what came into his mind."
-    n1 "Eyes opened, heartfelt smile; I can’t resist it, it melts my heart."
-    am "You know, with the time you’ve taken to make the call, I had the time to finish my smoke."
-    ga "Oh really? you could’ve left some for me, pal."
-    am "Ahah sorry, finders keepers. You should’ve made your call faster, little kitten."
-    ga "Again that nickname? we’re the same age."
-    am "Yes but you’re smaller than me."
-    n1 "I bear a hurt face and pretending to be offended, I pout and whine."
-    ga "You know I am the one with the car keys. I could turn it on and take the road abandoning you."
-    ga "You might have to hitch-hike, sell a liver or die alone in this rotten place."
-    ga "Me, on the other hand, will spend a golden time at this hotel eating and drinking until I sleep it off."
-    ga "And on the way back, I’ll remember this very good friend who wasn’t at all dear to my heart."
-    ga "How I don’t miss him and I manage myself better without him."
-    n1 "While uttering all of these sentences, step by step I get closer to him."
-    n1 "Every sentence, arms crossed behind my back, the distance between our faces reduces."
-    n1 "Until finally, our crunchy noses are onry seperated by a centimeter invading him with my mischievous smile."
-    ga "Do you get what I mean?"
-    n1 "Ammon seems a bit taken back by my demeanor. It’s not everyday he sees his little kitten of a friend suggesting abandoning him to his death on a rest area."
-    n1 "But then, he sets back to his usual unfazed face. Slowly and carefully, he puts his hand on his breast jacket pocket and pulls out a cigarette."
-    n1 "A fucking cigarette and he waves it between my two eyes."
-    ga "Wha– You’ve said it was your last one! Give it to m—"
-    am "Shh—"
-    n1 "I behold a finger in front of me on my mouth keeping it shut."
-    n1 "The audacity of this man.{w} I gulp."
-    n1 "He pulls out his lighter and light it in a quck manner to taunt me. He starts to take a long, and even long drag until the cigarette is dried down."
-    n1 "Then, he puffs in the air, a large cloud of smoke ascending at a slow pace. With a step onward, he prepares his unstoppable onslaught."
-    am "Hmm… Let's admit that.{w} Let's admit you are able to abandon me here."
-    n1 "He pauses and he takes a look around."
-    am "Let’s make the thought process : abandoning me with the crickets and the cry of the cicadas."
-    n1 "He locks eyes with me, and he won’t look away no matter how much step backward I make."
-    n1 "Suddenly, my foot can’t go further. It’s blocked. The car is there."
-    n1 "For seconds, he stares at me looking while a trail of smoke follows his way."
-    n1 "I cross my arms waiting for his offense"
-    am "Tell me, what would you do to abandon me down there."
+    n1 "I rush back towards the bike in hope to flee the burning rising inside the glacial heart of mine I wish I could shut out."
+    n1 "The more I run, The further the vehicle gets, the cicadas, witnessing this pitiful performance, coulnd’t hold back their laughter."
+    n1 "Heinous hyenas; that’s what they are. You could mistake them for buzzing, singing, drilling or cries, but I hear them very well: it was a loud sarcastic cackle."
+    n1 "Sweat drops blur my vision. Or maybe it was tears. Either way, the distorted landscapes didn’t come back once I’ve run through the kilometers to reach the bike."
+    n1 "The metallic frame as my only support, I huff and huff, grasping for air. The turtleneck tightening my neck for a long time, decided it was time to choke me."
+    n1 "Not able to bear it anymore, I start to get rid of my sweater that was imprisoning and suffocating me."
+
+    am "Huh, Gaspard? Are you alright?"
+
+    n1 "A familar voice and the sound of a belt swinging around rise my ears like antenna and stops me dead in my tracks."
+    n1 "I slowly turn around my head to be met with the concerned face of a dog with his belt unbuckled."
+    n1 "An embarrassing contest of glances followed and I coulnd’t break the glaze."
+    n1 "He finally buckles it up but that expression mixed with fear and inquisitiveness doesn’t disappear at all."
+
+    am "Were you...{w} undressing? Why do you sweat so much?"
+
+    n1 "He drowns me with questions."
+
+    am "Who did you call? Was it Julie? What did she tell you?"
+
+    ga "Your fly."
+
+    am "My... what?"
+
+    ga "Your fly’s opened."
+
+    n1 "Ammon looks down, confused, to notice that, indeed, his fly is opened. He zips it up and raises his head back with an unamused look."
+
+    am "… Anyway, have you been running?"
+
+    n1 "I quickly search for an excuse and determine that his proposition is the best outcome."
+
+    ga "Exactly... {w} I was making a little jog to make me stay awake."
+
+    n1 "Ammon approaches me, maintaning the gaze as if just looking away will break the link between us."
+    n1 "At close range, he lays down his hand on my shoulder. His claws soflty brush my jacket. I know it is a very arduous task for him to be that considerate."
+
+    am "Do you want to talk about what just happened?"
+
+    ga "No… I’m alright."
+
+    n1 "He helps me set back my sweater. It’s embarrassing coming from him that my cheeks get warm."
+
+    am "Well if you need anything, tell me huh?"
+    
+    n1 "He pats me on the shoulder."
+    n1 "In this moment, I wanted to embrace him, pour my heart out to him, open it so he can see all of its content,\nso he can finally unsterdand me, \nso he can finally see mo for who I am."
+    n1 "A puddle of emotions rains down my throat and dwells deep in my stomach. Some butterflies care not to get close of it, fly away to not be seen again."
+    n1 "But I can’t say anything. {w} I can’t say anything but——"
+
+    ga "Ok."
+
+    n1 "His message conveyed, he turns back and goes away, satsified."
+
+    ga "Thank you... Amo."
+
+    am "No problem, Gap"
+
+    n1 "Walking without a care in the world, he brings out a box of cigarettes out of his breast pocket and pulls one out."
+    n1 "I eye it enviously, hopelessy searching for calming down, I forgot mine so I am happy that he still has some."
+
+    ga "Hey can I have a smoke?"
+
+    am "Sorry it’s my last one."
+    
+
+
+
+    # n1 "Ammon reads people as his own open book. He looks through your soul with those eyes."
+    # n1 "He scrutinises every movement, every facial expression you make."
+    # n1 "Nothing escapes those eyes and I know it but I still try to fool him nonetheless. Some day he looks at me and I’m his prey."
+    # n1 "A prey frozen by the immediate danger, stuck by the fate of their predicament. His foul breathing moves every strand of hair nailing me down in place."
+    # n1 "But then he closes his eyes in an instant. He pinches his nose gap, massaging it, thinking it might loosen up all of his wrinkles."
+    # n1 "All of a sudden, he raises his head making wonder what came into his mind."
+    # n1 "Eyes opened, heartfelt smile; I can’t resist it, it melts my heart."
+    # am "You know, with the time you’ve taken to make the call, I had the time to finish my smoke."
+    # ga "Oh really? you could’ve left some for me, pal."
+    # am "Ahah sorry, finders keepers. You should’ve made your call faster, little kitten."
+    # ga "Again that nickname? we’re the same age."
+    # am "Yes but you’re smaller than me."
+    # n1 "I bear a hurt face and pretending to be offended, I pout and whine."
+    # ga "You know I am the one with the car keys. I could turn it on and take the road abandoning you."
+    # ga "You might have to hitch-hike, sell a liver or die alone in this rotten place."
+    # ga "Me, on the other hand, will spend a golden time at this hotel eating and drinking until I sleep it off."
+    # ga "And on the way back, I’ll remember this very good friend who wasn’t at all dear to my heart."
+    # ga "How I don’t miss him and I manage myself better without him."
+    # n1 "While uttering all of these sentences, step by step I get closer to him."
+    # n1 "Every sentence, arms crossed behind my back, the distance between our faces reduces."
+    # n1 "Until finally, our crunchy noses are onry seperated by a centimeter invading him with my mischievous smile."
+    # ga "Do you get what I mean?"
+    # n1 "Ammon seems a bit taken back by my demeanor. It’s not everyday he sees his little kitten of a friend suggesting abandoning him to his death on a rest area."
+    # n1 "But then, he sets back to his usual unfazed face. Slowly and carefully, he puts his hand on his breast jacket pocket and pulls out a cigarette."
+    # n1 "A fucking cigarette and he waves it between my two eyes."
+    # ga "Wha– You’ve said it was your last one! Give it to m—"
+    # am "Shh—"
+    # n1 "I behold a finger in front of me on my mouth keeping it shut."
+    # n1 "The audacity of this man.{w} I gulp."
+    # n1 "He pulls out his lighter and light it in a quck manner to taunt me. He starts to take a long, and even long drag until the cigarette is dried down."
+    # n1 "Then, he puffs in the air, a large cloud of smoke ascending at a slow pace. With a step onward, he prepares his unstoppable onslaught."
+    # am "Hmm… Let's admit that.{w} Let's admit you are able to abandon me here."
+    # n1 "He pauses and he takes a look around."
+    # am "Let’s make the thought process : abandoning me with the crickets and the cry of the cicadas."
+    # n1 "He locks eyes with me, and he won’t look away no matter how much step backward I make."
+    # n1 "Suddenly, my foot can’t go further. It’s blocked. The car is there."
+    # n1 "For seconds, he stares at me looking while a trail of smoke follows his way."
+    # n1 "I cross my arms waiting for his offense"
+    # am "Tell me, what would you do to abandon me down there."
 
 
     # TODO: timed option
@@ -495,15 +552,13 @@ label rest_area:
             am "But maybe you’d try to strangle me."
             n1 "He crosses his fingers above his neck."
             am "Go on then. I know you’re used to."
-            n1 "I clench my fist. What’s he talking about."
-            n1 "I wander elsewhere thinking he might have got this idea."
         
         "Run as fast as possible":
             am "With your little legs? That’s how you intend to make it?"
             am "That’s a bit presomptuous of you don’t you think?"
             am "Let me warn you, if you make a run for the car."
             am "I’ll catch you before you can even lay a finger on it"
-            am "Understood, little kitten?"
+            am "Understood, my little gap?"
             n1 "I look around to look for an argument to rebut him but I don’t find one."
             n1 "He is faster than me."
             jump how_you_abandon_me
