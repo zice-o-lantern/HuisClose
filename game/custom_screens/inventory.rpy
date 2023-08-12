@@ -7,7 +7,8 @@ init python:
             self.description = description
 
 style item_inventory:
-    yalign .3
+    xalign 0.5
+    yalign 0.3
 
 
 ## NOTE: custom inventory for game

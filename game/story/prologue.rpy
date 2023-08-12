@@ -459,7 +459,7 @@ label rest_area:
 
     n1 "He helps me set back my sweater. It’s embarrassing coming from him that my cheeks get warm."
 
-    am "Well if you need anything, tell me huh?"
+    am "Well if you need anything, tell me huh? I ’ll always be there."
     
     n1 "He pats me on the shoulder."
     n1 "In this moment, I wanted to embrace him, pour my heart out to him, open it so he can see all of its content,\nso he can finally unsterdand me, \nso he can finally see mo for who I am."
@@ -480,33 +480,20 @@ label rest_area:
     ga "Hey can I have a smoke?"
 
     am "Sorry it’s my last one."
+
+    n1 "He’s lying. A damn liar. After all he’s just said, he dares to lie to me?"
+    n1 "I know he’s lying. He wouldn’t go to a trip without refilling his stock of cigarettes; he’s addicted to it."
+    n1 "I can see his shifty {b}guilty{/b} eyes avoid my gaze."
+
+    am "What are doing looking at me like that? You should’ve brought your own smokes."
     
+    n1 "A sip of smoke whisks away from his long dirty satisfied muzzle. He really thinks that I won’t do anything?"
+    n1 "That’s it. I’m going to bust you up, Ammon. I’m going to make you pay for this affront. You well regret having the nerve to do that."
+    n1 "All of the sudden, My throat feels like sandpaper. I’m thirsty. My revenge can wait."
 
+    ga "Ok, I’m going to look for a water bottle in the trunk."
 
-
-    # n1 "Ammon reads people as his own open book. He looks through your soul with those eyes."
-    # n1 "He scrutinises every movement, every facial expression you make."
-    # n1 "Nothing escapes those eyes and I know it but I still try to fool him nonetheless. Some day he looks at me and I’m his prey."
-    # n1 "A prey frozen by the immediate danger, stuck by the fate of their predicament. His foul breathing moves every strand of hair nailing me down in place."
-    # n1 "But then he closes his eyes in an instant. He pinches his nose gap, massaging it, thinking it might loosen up all of his wrinkles."
-    # n1 "All of a sudden, he raises his head making wonder what came into his mind."
-    # n1 "Eyes opened, heartfelt smile; I can’t resist it, it melts my heart."
-    # am "You know, with the time you’ve taken to make the call, I had the time to finish my smoke."
-    # ga "Oh really? you could’ve left some for me, pal."
-    # am "Ahah sorry, finders keepers. You should’ve made your call faster, little kitten."
-    # ga "Again that nickname? we’re the same age."
-    # am "Yes but you’re smaller than me."
-    # n1 "I bear a hurt face and pretending to be offended, I pout and whine."
-    # ga "You know I am the one with the car keys. I could turn it on and take the road abandoning you."
-    # ga "You might have to hitch-hike, sell a liver or die alone in this rotten place."
-    # ga "Me, on the other hand, will spend a golden time at this hotel eating and drinking until I sleep it off."
-    # ga "And on the way back, I’ll remember this very good friend who wasn’t at all dear to my heart."
-    # ga "How I don’t miss him and I manage myself better without him."
-    # n1 "While uttering all of these sentences, step by step I get closer to him."
-    # n1 "Every sentence, arms crossed behind my back, the distance between our faces reduces."
-    # n1 "Until finally, our crunchy noses are onry seperated by a centimeter invading him with my mischievous smile."
-    # ga "Do you get what I mean?"
-    # n1 "Ammon seems a bit taken back by my demeanor. It’s not everyday he sees his little kitten of a friend suggesting abandoning him to his death on a rest area."
+    am "Suit youself."
     # n1 "But then, he sets back to his usual unfazed face. Slowly and carefully, he puts his hand on his breast jacket pocket and pulls out a cigarette."
     # n1 "A fucking cigarette and he waves it between my two eyes."
     # ga "Wha– You’ve said it was your last one! Give it to m—"

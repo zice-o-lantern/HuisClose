@@ -15,8 +15,8 @@ define ju = Character("Julie", color="#aa6aca")
 
 # Declare images
 
-image ruralRoad = At("images/bg/ruralRoad.jpg")
-image parkingLot = At("images/bg/bg restArea.jpg")
+image ruralRoad = At("bg/ruralRoad.jpg")
+image parkingLot = At("bg/bg restArea.jpg")
 
 
 # The game starts here.
