@@ -18,10 +18,12 @@ define ju = Character("Julie", color="#aa6aca")
 image ruralRoad = At("bg/ruralRoad.jpg")
 image parkingLot = At("bg/bg restArea.jpg")
 
+define dissolve = Dissolve(.5)
+
 
 # The game starts here.
 
 label start:
     stop music
 
-    jump test_room
+    jump prologue

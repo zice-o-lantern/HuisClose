@@ -6,9 +6,9 @@ label test_room:
     # hide screen get_item
 
     # "Anyway"
-    $ ammon_talked = 0
-    label restarea_interact_loop:
-        window hide
-        $ renpy.show_screen("restarea", _layer="master")
-        $ ui.interact()
-        jump restarea_interact_loop
+    python:
+        ammon_talked = 0
+        current_screen = "restarea"
+
+        
+    jump pointnclick_interact_loop
