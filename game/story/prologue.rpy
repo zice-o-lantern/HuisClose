@@ -541,7 +541,7 @@ label rest_area:
     label restarea_pointnclick_start:
         n1 "Ok so I guess I should start getting on my way"
         # n1 "Even though I’m not that thirsty..."
-        n1 "I am curious to what he was doing the top—box"
+        n1 "I am curious to what he was doing with the top—box"
         python:
             ammon_talked = 0
             current_screen = "restarea"
@@ -607,9 +607,42 @@ label hand_in_the_bag:
 
     ga "Perfectly."
 
-    am "Huh? Why is that? Go on tell ne, gapgap"
+    am "Huh? Why is that? Go on tell me, gapgap"
 
-    menu
+    menu did_he_forget:
+
+        "You never forget anything":
+            am "{cps=3}...{/cps} Oh you’re serious? You’re actually not joking?"
+            am "You’ve been pissing me off for the last minutes just for you to declare I am an omniscient being."
+            am "I know I am incredible and all but you can’t base off your argumentation."
+            
+            n1 "{cps=3}...{/cps}Why did I say that?"
+            n1 "Maybe I should rethink my answer." 
+            
+            $ ammon_score -= 1
+            
+            jump did_he_forget
+
+        "You’ve been to the trunk already":
+            ga "When you went to get a water bottle, you took your time to get one, did you?"
+            ga "I’ve watched you and you actually not even drank that damn water bottle."
+            
+            n1 "I point to the bottle still untouched"
+
+        "I’ve slipped a cigarette in your pocket":
+            ga "When you weren’t looking, I decided to put one in you pocket."
+            ga "As you often check them, you should’ve noticed by now."
+            ga "So you could not have forgotten!"
+            
+            am "{cps=3}...{/cps} Did you?"
+            
+            n1 "No, I did not."
+            n1 "Maybe I should rethink my answer."
+            
+            $ ammon_score -= 1
+
+            jump did_he_forget
+
 
     # TODO: timed option
     menu how_you_abandon_me:
