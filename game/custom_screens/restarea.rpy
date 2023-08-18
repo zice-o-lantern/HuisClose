@@ -132,8 +132,9 @@ label restarea_wallet:
     n1 "Ammon's wallet was sitting there, accessible to anyone's eyes, unaware of what it may happen."
     n1 "It has been previously opened by, I guess, the annoying dog smoking over there."
     n1 "Curious of its content, I peek over to see if he's distracted and assured he is, reach for it."
-    n1 "Feeling no guilt, determined to get at the bottom of this, I grab it and open it.
+    n1 "Feeling no guilt, determined to get at the bottom of this, I grab it and open it."
     n1 "Maybe he hid some smokes in it. I run through all of his papers and documents he keeps in it but no such luck."
+    n1 "Interested 
 
     return
 
