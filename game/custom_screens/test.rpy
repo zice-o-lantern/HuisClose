@@ -6,9 +6,12 @@ label test_room:
     # hide screen get_item
 
     # "Anyway"
+    scene bg test
     python:
-        ammon_talked = 0
-        current_screen = "restarea"
-
-        
-    jump pointnclick_interact_loop
+        ga_inventory.append(notebook)
+        ga_inventory.append(water_bottle)
+        # ga_inventory.append(cigarette)
+        ga_inventory.append(ammon_stuff)
+    # python:
+    #     ammon_talked = 0
+    #     current_screen = "restarea"

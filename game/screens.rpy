@@ -309,6 +309,8 @@ screen navigation():
 
         textbutton _("Preferences") action ShowMenu("preferences")
 
+        # textbutton _("Inventory") action ShowMenu("inventory")
+
         if _in_replay:
 
             textbutton _("End Replay") action EndReplay(confirm=True)

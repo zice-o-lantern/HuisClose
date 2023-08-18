@@ -19,6 +19,7 @@ image ruralRoad = At("bg/ruralRoad.jpg")
 image parkingLot = At("bg/bg restArea.jpg")
 
 define dissolve = Dissolve(.5)
+define fade = Fade(1., 1., 1.)
 
 
 # The game starts here.

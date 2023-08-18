@@ -1,6 +1,7 @@
 label prologue:
     
     # Black scene
+    scene black
     pause 1.
     n1 "Honestly{w=.5}, I couldn’t believe me strangling my father at the stepdoor."
     n1 "Or was it the stepdoor? {w=.25}Maybe it was on the pavement." 
@@ -302,7 +303,8 @@ label rest_area:
     stop music
     stop sound
 
-    scene parkingLot with Fade(2., 1.)
+    scene parkingLot
+    with Fade(2., 1.)
     play sound "audio/sounds/bird_chirping.ogg"
     
     n1 "The moto steers over on the parking lot."
@@ -414,7 +416,8 @@ label rest_area:
     n1 "But then, I look up and there is no one ; the box has stopped shrinking down"
     n1 "At some point, I manage to soothe my breathing down."
 
-    scene parkingLot with Fade(1., 1., 1.)
+    scene parkingLot 
+    with Fade(1., 1., 1.)
 
     n1 "I rush back towards the bike in hope to flee the burning rising inside the glacial heart of mine I wish I could shut out."
     n1 "The more I run, The further the vehicle gets, the cicadas, witnessing this pitiful performance, coulnd’t hold back their laughter."
@@ -474,18 +477,48 @@ label rest_area:
 
     am "No problem, Gap"
 
-    n1 "Walking without a care in the world, he brings out a box of cigarettes out of his breast pocket and pulls one out."
+    n1 "Some time passes and the tension in my clenched fists start to gradually loosen. Catching my breath has become easier and I am able to relax at this point."
+    n1 "When I can discern at least discern my breathing out of my heartbeat, I observe the landscapes, happy that my surroundings are peaceful."
+    n1 "I notice Ammon leaning against the bike, admiring too the sceneries. His look wanders over the horizon, maybe reaching for its end, leaping over the mountains and the clouds."
+    n1 "He’s conviced that, if you look hard enough, you should find it no matter how much time you spent; I smile."
+    n1 "I mull over the fact that I’ve been hard with Ammon. Maybe I put too much pressure on him. Lately, I do have a lot of tantrums. But I don’t know where it’s coming from."
+    n1 "Every time I try to dig deeper, I am met with an impenetrable wall, high, very high like the Rappunzel tower, pleading me to get up but I find myself just standing there, not able to process what’s in front."
+    n1 "I am scared of what’s over yonder that wall, what I could find.{w} Maybe that’s why it is so high…"
+    n1 "Lost in thought, I realise Ammon has been looking at me, his back still in my view. He shivers a bit because of the cold air——it is starting to be late."
+    n1 "Once gazes met, he wears for me a sad smile, meaning a thousand words and everything and the same time, I don’t get him."
+    n1 "I wonder to what he really thinks about. His aspirations, his dreams? Behind that Iron mask I wish I could see his genuine smile more otften."
+    n1 "Unfortunately, I know he doen’t open up to me that much. The key to his heart has been trampled on, stolen long ago by his relatives, and me unable to do anything about it." 
+    n1 "I return the smile, trying to cheer him up, despite knowing it’s ineffective for the statue of stone there."
+    n1 "By the time, my breathing stabilised and I feel the tiredness building up my spine, like the gravity inviting me to sleep on the comfortable ground."
+
+    am "Do you think you will be able to take back the road? You’re a bit sleepy."
+    
+    ga "Right know, I don’t think so."
+
+    am "Alright, take some rest."
+
+    n1 "I take his advice and sit on the grass, falling asleep."
+    ## TODO: Do a blink animation.
+    n1 "But I jerk my eyes open when I hear a familiar sound in the vicinity of Ammon"
+    n1 "He brings out a box of cigarettes out of his breast pocket and pulls one out."
     n1 "I eye it enviously, hopelessy searching for calming down, I forgot mine so I am happy that he still has some."
 
     ga "Hey can I have a smoke?"
 
-    am "Sorry it’s my last one."
+    am "Sorry it’s my last one, gapgap."
 
+    ## NOTE: Maybe smooth the transition here, a bit abrupt
+
+    n1 "Gapgap? Gapgap? Why he’s calling me like that? I hate this nickname."
+    n1 "And what’s with him? He smokes like he breathes, I’m sure he has still some left and nonetheless here’s his response."
+    n1 "The heat of this affront climbs up my head and sweat steans off my hair."
+    n1 "My arms stiffen like rugged sturdy sticks, my fingers pressed against my palm that my claws makes it bleed."
+    n1 "Did he just lie?"
     n1 "He’s lying. A damn liar. After all he’s just said, he dares to lie to me?"
     n1 "I know he’s lying. He wouldn’t go to a trip without refilling his stock of cigarettes; he’s addicted to it."
-    n1 "I can see his shifty {b}guilty{/b} eyes avoid my gaze."
+    n1 "I can see his shifty {b}guilty{/b} eyes avoid my mine."
 
-    am "What are doing looking at me like that? You should’ve brought your own smokes."
+    am "What are you doing looking at me like that? You should’ve brought your own smokes."
     
     n1 "A sip of smoke whisks away from his long dirty satisfied muzzle. He really thinks that I won’t do anything?"
     n1 "That’s it. I’m going to bust you up, Ammon. I’m going to make you pay for this affront. You well regret having the nerve to do that."
@@ -493,24 +526,90 @@ label rest_area:
 
     ga "Ok, I’m going to look for a water bottle in the trunk."
 
-    am "Suit youself."
-    # n1 "But then, he sets back to his usual unfazed face. Slowly and carefully, he puts his hand on his breast jacket pocket and pulls out a cigarette."
-    # n1 "A fucking cigarette and he waves it between my two eyes."
-    # ga "Wha– You’ve said it was your last one! Give it to m—"
-    # am "Shh—"
-    # n1 "I behold a finger in front of me on my mouth keeping it shut."
-    # n1 "The audacity of this man.{w} I gulp."
-    # n1 "He pulls out his lighter and light it in a quck manner to taunt me. He starts to take a long, and even long drag until the cigarette is dried down."
-    # n1 "Then, he puffs in the air, a large cloud of smoke ascending at a slow pace. With a step onward, he prepares his unstoppable onslaught."
-    # am "Hmm… Let's admit that.{w} Let's admit you are able to abandon me here."
-    # n1 "He pauses and he takes a look around."
-    # am "Let’s make the thought process : abandoning me with the crickets and the cry of the cicadas."
-    # n1 "He locks eyes with me, and he won’t look away no matter how much step backward I make."
-    # n1 "Suddenly, my foot can’t go further. It’s blocked. The car is there."
-    # n1 "For seconds, he stares at me looking while a trail of smoke follows his way."
-    # n1 "I cross my arms waiting for his offense"
-    # am "Tell me, what would you do to abandon me down there."
+    am "Wait I need to get a drink too."
 
+    n1 "Before I can stand up, he rushes towards the top—box and opens it."
+    n1 "I’m a bit curious if he’s going to get a bottle of water so I slowly get up and patiently observe him."
+    n1 "At first, I thought he was done with his task since I saw him grab something."
+    n1 "However, he now rummages in his stuff and sometimes pulls out some items like some photos, his wallet and on and on."
+    n1 "Confused, I question what he is really come to get but not until long, he closes the trunk and comes closer to me with a bottle of water in his hand."
+    n1 "I reach for the bottle but then——"
+    
+    am "Oh sorry, it’s for me. I forgot to take one for you."
+
+    n1 "He’s really starting to get on my nerves."
+    label restarea_pointnclick_start:
+        n1 "Ok so I guess I should start getting on my way"
+        # n1 "Even though I’m not that thirsty..."
+        n1 "I am curious to what he was doing the top—box"
+        python:
+            ammon_talked = 0
+            current_screen = "restarea"
+            trunk_explored = False
+        jump pointnclick_interact_loop 
+
+
+label confront_him:
+    python:
+        del ammon_talked
+        del trunk_explored
+
+    n1 "Standing on my two feets, I face Ammon, determined to confront him on his misdeeds. He won’t get away with it."
+    
+    ga "Hi Ammon."
+    
+    n1 "Our gaze meets. He looks at me, annoyed. Clearly fed up with my incessant assaults onto his trust, or his already flim veil of lies, he furrows his eyebrows."
+    
+    am "Have you finally come to realise that your little act of spoiled brat is embarassing to you?"
+    
+    ga "No."
+    
+    am "Then what do you want?"
+    
+    n1 "He sips another drag of smoke of the cigarette and let it whisk away in the air. The cinders of the burning tube rapidly fly around and land in the grass, for me to see, gritting my teeth."
+    
+    am "Don’t you see I’m busy?"
+
+    ga "Actually that’ll have to wait. I have something to discuss with you."
+
+    am "With me?"
+
+    n1 "He sets a pause to this exasperating activty of him and turns his head head, interested."
+
+    am "What is it?"
+
+    ga "It’s related to what you said earlier."
+
+    am "Spit it out."
+
+    n1 "Well I won’t spit it out but I might just show you."
+
+    $ evidence_selected = "Cigarette"
+    $ evid_label_to_go = "hand_in_the_bag"
+
+    jump present_evidence_loop
+
+label hand_in_the_bag:
+    ga "I have found this in your stuff."
+
+    am "You searched though my stuff? Why? You are very dedicated to the assignment it seems"
+
+    n1 "Ammon stays stoic like an abused teacher having to deal with a challenging child as a daily job. He taps his finger on his forearme, arns crossed, waiting for my following actions."
+    n1 "Taken aback by his reaction, I hesitate but quickly find back my resolve to spill his guts out."
+    n1 "I put the incriminating evidence in front of his eyes so ho won’t look away from his misdeed."
+    n1 "The vile dog’s eyes trot over the box of cigarette, left and right; unimpressed, as it was supposed to be like this."
+
+    am "So what? I just forgot about it. Why acting so agressively about it?"
+
+    ga "Well because you haven’t forgotten."
+
+    am "Oh? I {i}haven’t{/i} forgotten you say? I think you already know what it means but do you really see what you’re implying?"
+
+    ga "Perfectly."
+
+    am "Huh? Why is that? Go on tell ne, gapgap"
+
+    menu
 
     # TODO: timed option
     menu how_you_abandon_me:
@@ -524,7 +623,7 @@ label rest_area:
             am "You haven’t thought very deep about it, have you?"
             am "Once pinned down, what do you do?"
             am "Stay with me for the eternity, huh?"
-            n1 "Maybe it wouldn’t be so bad to pin him down for the eternity. That’d wipe off that smirky smile."
+            n1 "That’d wipe off that smuggy face at least."
             am "But as much as I’d like to, we have other matters to attend."
             jump how_you_abandon_me
 
@@ -538,7 +637,7 @@ label rest_area:
             am "Or maybe you wouldn’t try to hit on me but…"
             am "But maybe you’d try to strangle me."
             n1 "He crosses his fingers above his neck."
-            am "Go on then. I know you’re used to."
+            am "Go on then. I know you’d like to."
         
         "Run as fast as possible":
             am "With your little legs? That’s how you intend to make it?"
@@ -549,52 +648,3 @@ label rest_area:
             n1 "I look around to look for an argument to rebut him but I don’t find one."
             n1 "He is faster than me."
             jump how_you_abandon_me
-    
-
-    am "Anyway, no matter what you’re planning, it’s not important, right?"
-    n1 "I stop my track of thought to consider what he just said."
-    n1 "What started as a joke derailed in a nerve-breaking game."
-    am "You might be able to do whatever you’ve thought of.{w} But you aren’t willing to, huh?"
-    am "You might wave your tail around throwing at me threats thinking you could best me."
-    am "You could intimidate me with your imposing demeanor. But you’ve got nothing"
-    am "And in the end… Don’t threaten me with a good time, will you, honey?"
-    n1 "When he’s done doing his little speech, he inches closer to my face and I supress the urge to recoil. I must resist to him. He’s gone too far without me retaliating."
-    n1 "He takes a long drag of his cigarette; I wait for him to finish, preparing myself to his next blow, whatever that might be. He won’t take me down."
-    n1 "He closes the distance between our mouths. Whatever he might try it’s just a bluff. Still I find myself closing my eyes, dreading for the impact. But nothing happens."
-    n1 "When I finally reopens my eyes, what I believed before was a wisenheimer cat presents to me as the Big Bad Wolf."   
-    n1 "He huffs and huffs and then finally puffs. A veil of smoke flows through my nose and my lips and I can’t help but cough and cough without a break. But I won’t be defeated."
-    am "So happy?"
-    n1 "Ammon expects an answer, self-satisfied with his stunt."
-    n1 "However a puff of smoke goes through his face and he recoils back. coughing uncontrollably. Once his coughing fit done, he raises his head back shocked by the trick I've managed"
-    n1 "I walk away free from his grasp, from his little game, successful. The wind comes congratulating me, moving my frail and sensible ears. I brush my hair to set it back."
-    ga "Yeah. I'm happy"
-    n1 "I cast a quick side eye look so that I can observe his reaction."
-    n1 "He's smirking, that bastard. He likes it"
-    n1 "And I like it too"
-    n1 "But he {b}did{/b} have some cigarette on him. That wasn’t his last."
-    n1 "One way or the other, I’ll get back at him for his lie. I’m sure it still wasn’t his last."
-
-    am "Anyway, who have you talked to? Julie I guess"
-    n1 "Walking towards the driver seat, I stop; I could sense some bittersweetness in his voice but I decide to ignore it."
-    n1 "Besides, it’s not like I could make him admit. Let’s not get ahead of ourselves."
-    am "You can't go a day without her, can you?"
-    ga "I needed to check something with her. I forgot some stuff at home."
-    # TODO: develop julie encounter
-    am "Is it all you have talked about?"
-    n1 "It’s starting to get on my nerves. I can’t help but notice his suspicious tone, wary of me. My back to him, I look down trying to not think about the phone call."
-    ga "Everything’s fine, don’t worry."
-
-    am "Oh btw, can you open the trunk for me?"
-    n1 "I turn around, and I glance at him, puzzled. What was the matter with the trunk? That tells me something but it’s hard to remember."
-    n1 "Ammon, destabilsed by my sudden amnesia, fidget his cigarette, unsure if he said anythin wrong."
-    am "You know, the book I was looking for"
-    n1 "Là je suis fatigué donc on va speedrun là."
-    n1 "Gasperd va dans la voiture."
-    n1 "Ici j’affiche le bouton inventaire"
-    n1 "Il trouve la clé sur le contact"
-    $ga_inventory.append(car_keys)
-    $ga_inventory.append(car_keys)
-    show screen inventory
-    n1 "rorstaeuins"
-
-# label got_key:

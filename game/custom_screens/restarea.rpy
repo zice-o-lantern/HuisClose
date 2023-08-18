@@ -5,6 +5,8 @@ style bottom:
 screen restarea(screen_active=True):
     tag restarea
 
+    on "show" action SetVariable("current_screen", "restarea")
+
     add 'parking'
 
     imagebutton:
@@ -35,7 +37,7 @@ screen restareatrunk(screen_active=True):
 
     add 'trunkopen'
 
-    on "replace" action SetVariable("current_screen", "restareatrunk")
+    on "show" action SetVariable("current_screen", "restareatrunk")
 
     imagebutton:
         pos (350, 800)
@@ -77,11 +79,36 @@ transform custom_zoom:
 
 label restarea_ammon:
     $ renpy.show_screen(current_screen, _layer="master",screen_active=False)
+    for i in ga_inventory:
+        if i.name = "Cigarette":
+            jump confront_him
     if ammon_talked == 0:
         $ ammon_talked += 1
+        ga "Hey Ammon."
+        
+        am "What."
+
+        ga "Are you sure you don’t have a cigarette?"
+
+        am "No."
+
+        n1 "What a cheerfulness."
+
+        ga "So…{w} what were you doing in the box?"
+
+        am "None of your business, Gaspard."
+        am "Haven’t you told you were thirsty? I don’t have anything for you right now so go get one."
+
+        n1 "What’s gotten into him."
+        n1 "I just wanted a smoke…"
+    elif ammon_talked == 1:
+        $ ammon_talked += 1
         n1 "He’s still sucking on that cigarette. I hope he will choke on it."
+
         am "What are you looking at me for like that? Get over it."
+
         ga "{cps=3}...{/cps}"
+        
         am "Standing in silence won’t help you, you know? Just go take a hike, I want to finish it in peace."
         am "And that means without your daggering glaze on me."
         n1 "He’s right, I won’t get anywhere by just looking at him"
@@ -93,8 +120,11 @@ label restarea_trunk:
     $ renpy.show_screen("restareatrunk", _layer="master", screen_active=False)
     $ renpy.transition(dissolve)
     pause 0.5
-    "Nice trunk"
-    "Wish it had items"
+    if not trunk_explored:
+        n1 "I open the little trunk in the back of the motorcycle."
+        n1 "It was so crammed that I was a bit surprised that we managed to fit everything in that much of a place."
+        n1 "Discouraged by this sight, I slump my shoulders——I will never find that water bottle "
+        $ trunk_explored = True
     return
 
 label restarea_wallet:
