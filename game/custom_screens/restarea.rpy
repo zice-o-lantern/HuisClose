@@ -79,9 +79,10 @@ transform custom_zoom:
 
 label restarea_ammon:
     $ renpy.show_screen(current_screen, _layer="master",screen_active=False)
-    for i in ga_inventory:
-        if i.name = "Cigarette":
-            jump confront_him
+    python:
+        for i in ga_inventory:
+            if i.name == "Cigarette":
+                renpy.jump("confront_him")
     if ammon_talked == 0:
         $ ammon_talked += 1
         ga "Hey Ammon."
@@ -134,7 +135,15 @@ label restarea_wallet:
     n1 "Curious of its content, I peek over to see if he's distracted and assured he is, reach for it."
     n1 "Feeling no guilt, determined to get at the bottom of this, I grab it and open it."
     n1 "Maybe he hid some smokes in it. I run through all of his papers and documents he keeps in it but no such luck."
-    n1 "Interested 
+    ## TODO: Rewrite later
+    n1 "Maybe "
+    n1 "Interested by the photos I take them but I notice a box of cigarettes under the photos."
+    n1 "Ahah knew he was lying."
+
+    $ ga_inventory.append(cigarette)
+    # $ ga_inventory.append(wallet)
+
+    "(You can go see Ammon now)"
 
     return
 
