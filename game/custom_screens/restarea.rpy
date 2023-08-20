@@ -6,6 +6,7 @@ screen restarea(screen_active=True):
     tag restarea
 
     on "show" action SetVariable("current_screen", "restarea")
+    on "replace" action SetVariable("current_screen", "restarea")
 
     add 'parking'
 
@@ -38,6 +39,7 @@ screen restareatrunk(screen_active=True):
     add 'trunkopen'
 
     on "show" action SetVariable("current_screen", "restareatrunk")
+    on "replace" action SetVariable("current_screen", "restareatrunk")
 
     imagebutton:
         pos (350, 800)

@@ -15,7 +15,7 @@ define ju = Character("Julie", color="#aa6aca")
 
 # Declare images
 
-image ruralRoad = At("bg/ruralRoad.jpg")
+image ruralRoad = At("bg/ruralRoad.webp")
 image parkingLot = At("bg/bg restArea.jpg")
 
 define dissolve = Dissolve(.5)

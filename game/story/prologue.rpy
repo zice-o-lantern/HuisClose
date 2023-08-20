@@ -3,90 +3,106 @@ label prologue:
     # Black scene
     scene black
     pause 1.
-    n1 "Honestly{w=.5}, I couldn’t believe me strangling my father at the stepdoor."
-    n1 "Or was it the stepdoor? {w=.25}Maybe it was on the pavement." 
-    n1 "Or the grass. {w=.25}You know what?"
+    n1 "Honestly{w=0.5}, I couldn’t believe me strangling my father at the stepdoor."
+    n1 "Or was it the stepdoor? {w}Maybe it was on the pavement." 
+    n1 "Or the grass. {w=1.0}You know what?"
     n1 "{sc=1}It doesn’t matter anymore."
     
     pause 1.
-    
-    # TODO: Develop that bit later
-    n1 "Before you condemn me of lethargy, I would like to do my mea-culpa and warn you that I know nothing in life and I am not in anyway qualified to submit a verdict."
+
+    scene sky_of_stars with dissolve
+
+    play music "audio/music/griff.mp3" fadein 1.0 loop
+
+    # TODO: Add more glitches
+    n1 "Before you condemn me of lethargy, I would like to do my mea-culpa and warn you that I know nothing in life and I am not in anyway qualified to submit a verdict." 
     n1 "It just happened that I am on a branching path where I can’t cower behind my hide and must take on the complex dilemma that I have been defied with."
     n1 "Is Boredom a crime? Let me rephrase: Can my lethargy cause irreparable wrongdoings for the world around me. By all means, I’ve tried and I’ve succeded to not hurt anyone."
     n1 "Is my dullness the root of all the issues I experienced since I’ve set foot on this forsaken Earth while I couldn’t see anything for my obliviousness?"
-    n1 "No I don’t think so ; trust me, please, I’ve been pondering about it for a long time ; Being bored isn’t a crime as other form of boredom like Indifference, Lethargy or even Apathy."
-    n1 "My Apathy won’t be a tragedy.{w=.25}.{w=.25}.{w=1.} My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy."
-    n1 "{cps=60.}My Apathy won’t be a Tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a Tragedy"
-    n1 "{cps=80.}My Apathy won’t be a Tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a{nw}"
-    n1 "{cps=100.} My Apathy won’t be a tragedyMy Apathy won’t be a tragedyMy Apathy won’t be a tragedyMy Apathy won’t be a tragedyMy Apathy won’t be a tragedyMy Apathy won’t be a tragedyMy Apathy won’t be a tragedyMy Apathy won’t be a tragedy{nw}"
-    n1 "{cps=110.} my apathy won’t be a tragedymy apathy won’t be a tragedymy apathy won’t be a tragedymyapathywon’tbeatragedymyapathywon’tbeatragedymyapathywon’tbeatragedymyapa{nw}"
+    # n1 "{swap=Test phrase@Test Druugs@1.0}Test phrase{/swap}"
+    # n1 "{chaos}Also a test lol{/chaos}"
+    n1 "{sc=0.5}No I don’t think so; trust me, please, I’ve been pondering about \nit for a long time ; Being bored isn’t a crime as other form of \nboredom like Indifference, Lethargy or even Apathy.{/sc}"
+    n1 "{sc=0.75}My Apathy won’t be a tragedy.{w=.25}.{w=.25}.{w=1.} My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy.{/sc}"
+    n1 "{sc=1.0}{cps=60.}My Apathy won’t be a Tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a Tragedy{/sc}" (what_font = "gui/fonts/RifficFree-Bold.ttf", what_color="#000", what_outlines=[ (10, "#FFF") ])
+    n1 "{sc=1.25}{cps=80.}My Apathy won’t be a Tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a{/sc}{nw}"
+    n1 "{sc=1.5}{cps=100.} My Apathy won’t be a tragedyMy Apathy won’t be a tragedyMy Apathy won’t be a tragedyMy Apathy won’t be a tragedyMy Apathy won’t be a tragedyMy Apathy won’t be a tragedyMy Apathy won’t be a tragedyMy Apathy won’t be a tragedy{/sc}{nw}"
+    n1 "{sc=2.0}{cps=110.} my apathy won’t be a tragedymy apathy won’t be a tragedymy apathy won’t be a tragedymyapathywon’tbeatragedymyapathywon’tbeatragedymyapathywon’tbeatragedymyapa{/sc}{nw}"
+    
+    stop music
     scene ruralRoad
-    play sound 'audio/sounds/car_white_noise.ogg' loop
+    # play sound 'audio/sounds/car_white_noise.ogg' loop
+    play music "audio/music/The Beatles - Here Comes The Sun (2019 Mix).mp3" fadein 5.0 loop
 
     # TODO: Talk about the road
-    n1 "A beatiful day of April rises down at the horizon."
+    n1 "A beatiful day of April sets down at the horizon."
     n1 "Roses, Tulipes, Lilies and Daffodils are blooming; Birds are singing the aftertales of the Spring and the wonders of life."
-    n1 "On days like these where the sun goes so high in the sky it could reach the other stars; by which they adnire it. Cats like me should be playing in the fields of grass."
-    n1 "Although I am a bit too old to run around in fields of gras, playing with a ball of yarn, wandering over all around ’till my feet."
+    n1 "On days like these where the sun goes so high in the sky it could reach the other stars; by which they admire it. Cats like me should be playing in the fields of grass."
+    n1 "Although I am a bit too old to run around in fields of grasses, playing with a ball of yarn, wandering over all around ’till my feet wear out out of exhaustion."
     n1 "I mull about this prospect for a moment, realizing I do miss those free-worries days, where I didn’t have to worry about rent, competitive exams and social relationships…"
     n1 "At least, I wasn’t {b}bored."
-    n1 "The cold wind lulls the warm aspalth to sleep, still exhausted from the hundreds of travellers. But once again, the two wheels of the motorcycle rouse it back to life, annoyed."
-    n1 "Looking far into the horizon, the distant red-crimson sphere holds its path and claws its glaze in me. Happy from the invitation, I brace its longing stare and return it with sweetness."
-    n1 "Even his cheerful cherry pink glinted reflections in the helmet visor wont't distract me from the demonstration of enchantments life can offer. This time, I won't look away from the wonders of the world."
-    n1 "Mutiple minutes pass by and my eyelids weigh like a thousand flower, dried, withered away by the centuries, regretting the decades lost to the universe.."
-    n1 "Soon enough, content from its mirage of fantasia, the dying light of the sun disappears behing the horizon."
+    n1 "The cold wind lulls the warm aspalth to sleep, still tired from the hundreds of travellers. But once again, the two wheels of the motorcycle rouse it back to life, annoyed."
+    n1 "Looking far into the horizon, the distant red-crimson sphere holds its path and claws its glaze in me. Enchanted from its invitation, I brace in its longing stare and return it with sweetness."
+    n1 "Even its cheerful cherry pink glinted reflections in the helmet visor wont't distract me from it. This time, I won't look away from the wonders of the world."
+    # n1 "Mutiple minutes pass by and my eyelids weigh like a thousand of flowers, dried, withered away by the centuries."
+    # n1 "Mutliples minutes pass by and my eyes sprout a thousand of flowers, stinging my eyes, demanding a desereved rest."
+    n1 "Glimmers of a shining blue indigo and orange dance in the sky sprouting a thousand of flowers above, delivering a magnificient bouquet of shimmering colors."
+    n1 "I was melancholic of this spectacle, because I knew what it meant. The day is already done and all of this will die down to be replaced tomnorrow."
+    n1 "Soon enough, content from its demonstration of fantasies, the dying light of the sun disappears behind the horizon."
     n1 "Once gone, my eyes start to get heavy, for all they have been doing today is enduring the long day of road I've made, relieved the bright peach light has flown away for another place, warmer and greener."
     n1 "For a moment, I find myself complying with my inner desire and give in the call of slumber. Falling down, I meet with the peaceful world of Wonderland where the misery is shrinking away and complete bliss is growing closer."
 
+    ## TODO: Add sfx (guess pause the musuc and all)
     am "Hey Gap? Are you sleepy?"
 
     n1 "This deep voice calling for me awakens in me a surge of uncomfortable geyser and I come to find myself jumping and groaning, letting out some groans go."
 
     am "Oh my god don't move like that!"
 
-    n1 "Despite hearing an agitated man, gesticulating and whining around, I'm still not quite out of my slumber; My vision is blurry like a fog on a Friday the 13th."
-    n1 "When I blink, sandpaper bags obstruct the path of my eyelids and every blink feels like pin and needles. The ruthless spikes pierce through the shutter lids veiling my view."
-    n1 "The weariness of the road benumbed my legs and the numbness flows through my veins in every muscle of my body. Fighting against it, I blink even more."
-    n1 "Sootheness and comfort; every time I blink through the slumber, the needles in my eyes fly through the wind, the shards of glass melt up from the spores of my skins between the strands of hair."
+    n1 "Despite hearing an agitated man, gesticulating and whining around, I'm still not quite out of my slumber; The landscapes are all blurry and I can’t really distinguish them from the road."
+    n1 "Sandpaper bags obstruct the path of my eyelids and every blink feels like pin and needles. The ruthless spikes pierce through the shutter lids veiling my view."
+    n1 "The weariness of the road made my legs drowsy and the numbness flows through my veins in every muscle of my body. Fighting against it, I blink even more."
+    n1 "Sootheness and comfort; every time I blink through it, the needles in my eyes fly through the wind, the shards of glass melt up from the spores of my skins between the strands of hair."
     n1 "I am soon out of my reverie when Ammon speaks up again."
 
     am "Hey are you there??!"
 
-    n1 "Panicking for me, he thinks over how to get me out of it. His arms around my waist tighten and his chest approaches me, and at this moment the warmness emanating from the torso of his invading every piece of hair of my body."
+    n1 "Panicking for me, he thinks over how to get me out of it. His arms around my waist tighten and his chest draws nearer to me, and at this moment the warmness emanating from the torso of his invades every piece of hair of my body."
     n1 "Boiling and beating his chest; A shiver runs through my spine, then another one. A old sentiment all too familiar grows inside of me and I don’t like it. I don’t want to find out what happens next if he keeps at it."
-    n1 "I jerk him off."
+    n1 "I shove him off."
 
     ga "Oh my god let go!!!"
 
-    n1 "My immediate and first reaction causes me to veer off track."
-    n1 "Slaloming and slaloming. I get hardly back the control of the motorcycle. It shakes us a lot. Now he’s squeezing me and won’t let go."
+    n1 "My immediate reaction causes me to veer off track."
+    n1 "Slaloming and slaloming, I get hardly back the control of the motorcycle. It shakes us a lot. Now he’s squeezing me and won’t let go."
     n1 "I manage to stabilise the vehicle quite fast but we’re still quite nauseated from the experience."
 
     am "Oh good Lord…"
 
     n1 "He lets go."
 
-    pause .5
+    stop music
+
+    pause 1.0
+    play sound "audio/sounds/car_white_noise.ogg" loop fadein 1.0
 
     n1 "After some time, a sort of strange quietness grew and loomed over the both of us. It was uncomfortable, as wondering what might have caused all of this agitation early on."
-    n1 "The guiltiness start to take its toll over me, for I have failed to keep focused on the road. A mingle of shame builds up in my throat and it’s stuck no matter how much I gulp."
+    n1 "The guiltiness start to take its toll over me, I have failed to keep focused on the road. A mingle of shame builds up in my throat and it’s stuck no matter how much I gulp."
     n1 "I throw some quick looks in the mirror to see if there’s any casualties with Ammon. Apparently he’s fine so I start to relax a bit."
-    n1 "Although his undecypherable gaze under his helmet make it difficult to know for sure but his ominous aura penetrates all of my pores tinges all of my hair."
+    n1 "Although his undecypherable gaze under his helmet make it difficult to know for sure but his ominous aura penetrates all of my pores and tinges all of my hair."
     n1 "At some point, the silente itches me; I want to stop driving and scratch the back of my head, his cold stare is staggering the back of my neck."
     n1 "The hum of the vehicle barely barely fills the glacial air and no matter how much fast I go, the biting frost won’t stop nimbling on me."
     n1 "With guiltiness crepping up, I fire more and more worried looks in the mirror to know if the situation has evolved."
-    n1 "Constating the situation hasn’t evolved——I could’ve not picked enough information given the situation anyway——I try to think up something to break the ice."
+    n1 "Constating the situation hasn’t evolved—I could’ve not picked enough information given the situation anyway—I try to think up something to break the ice."
     n1 "I hesitate, I didn’t do anything wrong right? I just was unfocused for a moment and got back in control pretty fast. Nothing to write home about."
     n1 "I squeeze the handlebar, fearing the moment I’ll have to open my mouth about it. It couldn’t be that hard, am I right?"
     n1 "I gather all of my courage and brace myself for the challenge to come."
-    n1 "I close my eyes, say it those two words slowly."
+    n1 "I close my eyes, say those two words slowly."
 
     ga "I apologise{nw}"
 
     am "I’m sorry."
 
-    n1 "Ammon interrupts me. I’m flabbergasted——what did he just say——my ears couldn’t hear it. They quiver and raise like an antenna looking for the signal; it shouldn’t be possible what I just heard."
+    n1 "Ammon interrupts me. I’m flabbergasted—what did he just say—my ears couldn’t hear it. They quiver and raise like an antenna looking for the signal; it shouldn’t be possible what I just heard."
 
     ga "What did you just say..?"
 
@@ -94,9 +110,37 @@ label prologue:
 
     am "I said I’m sorry{cps=3}...{/cps} for yelling at you. Are you happy?"
 
+    play music "audio/music/Eleventh Hour - OneShot.mp3" fadein 1.0 loop
+
     n1 "He reasserts himself. He crosses his arm sternly. It looks like his pride has been shamelessly plundered. He looks away and avoids my glaze. He shows a face of discomfort and akwardness."
-    n1 "That took him a lot of efforts, apparently——I mean, he’s the type to be a shithead about it—— he wronged mo a lot of times and he doesn’t up usually own up to it."
-    n1 "I grin bittersweetly, realizing I have been cut off in my tremendous amends."
+    n1 "That took him a lot of efforts, apparently—I mean, he’s the type to be a knucklehead about it—he wronged me a lot of times and he doesn’t usually own up to it."
+    ## TODO: maybe add a short anecdote here
+    n1 "I grin bittersweetly, realizing I have been cut off in my tremendous amends to make it up to him."
+
+    ga "Oooooooh looks like the Big Bad Wolf can be sorry sometimes?"
+
+    am "Oh shut up and just drive."
+
+    ga "Ahah ok Big Baby Wolf"
+
+    n1 "He contorts himself in his place at my snickering, not pleased by my teasing."
+    n1 "It might have been uncalled for but I didn’t care; It was my way to get back at him to all of those years of mocking I endured. I might be the only one he does apologise to anyway."
+    n1 "Not that I am the Messiah or anything. I genuinely believe it’s more he doesn’t have a lot of people he could apologize to. His irritating attitude repels a lot of people and he also doesn’t like a lot of people."
+    n1 "Weirdly, one day, long ago, he set his sight on me and decided I was worthy of his friendship. A tad presomptuous, I’ll give it to you but nowadays I didn’t mind. I know very few people like this so it’s interesting."
+
+    am "You say one more word about it and I’ll push you off the bike."
+
+    ga "You wouldn’t dare, you pussycat."
+
+    am "That’s it, you lost your driving privileges."
+
+    n1 "He jumps on me and starts tickling. I laugh uncontrollably."
+
+    ga "N–No please stop, it’s incredibly stupid what you’re doing!"
+
+    am "You’re the one stupid, You should’ve known better."
+
+    n1 "I brake dryly, unable to withstand his tickling and take a time to catch back my breathing."
 
     ga "I forgive you.{w} I apologize too. I should’ve kept my eyes on the road. It’s been irresonsible of me."
 
@@ -107,7 +151,7 @@ label prologue:
 
     n1 "{cps=20}Annnnd{/cps} there it is. My asshole of a friend I know."
 
-    ga "Oh shut up. I will take back what I just said"
+    ga "Oh shut up. I will take back what I said"
 
     am "Nah, nah, don’t worry, I’ll stop teasing you about it."
 
@@ -389,7 +433,7 @@ label rest_area:
     n1 "At some point, I manage to soothe my breathing down."
 
     scene parkingLot 
-    with nade
+    with fade
 
     n1 "I rush back towards the bike in hope to flee the burning rising inside the glacial heart of mine I wish I could shut out."
     n1 "The more I run, The further the vehicle gets, the cicadas, witnessing this pitiful performance, coulnd’t hold back their laughter."
@@ -437,9 +481,11 @@ label rest_area:
     am "Well if you need anything, tell me huh? I ’ll always be there."
     
     n1 "He pats me on the shoulder."
-    n1 "In this moment, I wanted to embrace him, pour my heart out to him, open it so he can see all of its content,\nso he can finally unsterdand me, \nso he can finally see mo for who I am."
+    # n1 "In this moment, I wanted to embrace him, pour my heart out to him, open it so he can see all of its content,\nso he can finally unsterdand me, \nso he can finally see mo for who I am."
+    n1 "Deep down, a little voice whispers to me \"Just open up\" \"What are you waiting for\" \"He won’t be always there for you\" and my arms move on their own towards the reassuring friend."
     n1 "A puddle of emotions rains down my throat and dwells deep in my stomach. Some butterflies care not to get close of it, fly away to not be seen again."
-    n1 "But I can’t say anything. {w} I can’t say anything but——"
+    n1 "All of a sudden, my limbs fall dead, the threads maintaining them alive and up, slashed through, unfairly."
+    n1 "Nothing remains in my throat but a fragile cry and I mutter it."
 
     ga "Ok."
 
@@ -520,7 +566,7 @@ label rest_area:
             current_screen = "restarea"
             trunk_explored = False
         
-        show custom_quickbar
+        # show screen custom_quickbar
         jump pointnclick_interact_loop 
 
 
