@@ -85,8 +85,8 @@ label prologue:
     pause 1.0
     play sound "audio/sounds/car_white_noise.ogg" loop fadein 1.0
 
-    n1 "After some time, a sort of strange quietness grew and loomed over the both of us. It was uncomfortable, as wondering what might have caused all of this agitation early on."
-    n1 "The guiltiness start to take its toll over me, I have failed to keep focused on the road. A mingle of shame builds up in my throat and it’s stuck no matter how much I gulp."
+    n1 "After some time, a sort of strange quietness grew and loomed over the both of us. It was uncomfortable, wondering what might have caused all of this agitation early on."
+    n1 "The guiltiness start to take its toll over me, I didn't make a good job to keep focused on the road. A mingle of shame builds up in my throat and it’s stuck no matter how much I gulp."
     n1 "I throw some quick looks in the mirror to see if there’s any casualties with Ammon. Apparently he’s fine so I start to relax a bit."
     n1 "Although his undecypherable gaze under his helmet make it difficult to know for sure but his ominous aura penetrates all of my pores and tinges all of my hair."
     n1 "At some point, the silente itches me; I want to stop driving and scratch the back of my head, his cold stare is staggering the back of my neck."
@@ -141,6 +141,10 @@ label prologue:
     am "You’re the one stupid, You should’ve known better."
 
     n1 "I brake dryly, unable to withstand his tickling and take a time to catch back my breathing."
+    n1 "He truly acted like a child sometimes but I didn't mind, I did partake in his bickering. In not any circonstances, I would ever cut him off of his childishness."
+    n1 "I turn back to him, faking my exasperation to his behaviour, I pout and cross my arms with an exaggerated manner, it all makes me laugh inside."
+
+    n1 "But in the end this very, very, tall child needs to be put back in its place, he was becoming a bit too much bratty for your liking.
 
     ga "I forgive you.{w} I apologize too. I should’ve kept my eyes on the road. It’s been irresonsible of me."
 
