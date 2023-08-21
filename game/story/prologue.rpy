@@ -144,7 +144,39 @@ label prologue:
     n1 "He truly acted like a child sometimes but I didn't mind, I did partake in his bickering. In not any circonstances, I would ever cut him off of his childishness."
     n1 "I turn back to him, faking my exasperation to his behaviour, I pout and cross my arms with an exaggerated manner, it all makes me laugh inside."
 
-    n1 "But in the end this very, very, tall child needs to be put back in its place, he was becoming a bit too much bratty for your liking.
+    n1 "But in the end this very, very, tall child needs to be put back in his place, he was becoming a bit too much bratty for your liking.
+    
+    menu very_tall_child:
+        "Abandon him here":
+            $ ammon_score += 1
+            n1 "I gracefully get up from the seat. I will have to show him my grandeur so I make up my stance."
+            ga "You know what? Get off the bike. I'm going alone."
+            
+            am "No you won't. It's my property, I'm staying on it, I won't budge from an inch."
+            ga "This might be your bike but I'm driving it."
+            n1 "I had predicted this outcome—Who would willingly let himself get abandonned on the road?—although I didn't find myself annoyed. If only he submitted, everything would be easier,"
+            ga "Playing hard to get moved, huh? Be my gest then. I didn't want to come to that but I'm going to bust your fat behind."
+            n1 "Arms and legs spread; he provokes and accept my invitation."
+            am "Make me."
+            n1 "My resolve set, I dash to him and grab him from behind, leaving him no room to react. Ammon surprised, tries to wiggle out his way from this situation."
+            n1 "Unfortunately for him it's too late, for my claws have tighten the grasp on its prey any time soon."
+            am "Stop it! Let me go!"
+            ga "No, you'll learn to respect me."
+            am "Please, you will never be able to lift me."
+            ga "I might! And I might stop if you apologize for tickling me."
+            am "Never! Let me go or I'll bite!"
+            ga "Go on!"
+            n1 "It reached the point where Ammon became an eletric bolt, wiggling and biting in every directions."
+            n1 "Now's my last and only chance I might have to lift him off, therefore I put everything once of my strength and start the process."
+            n1 "Oh no. He's heavy."
+            n1 "Very heavy. More than I thought. Maybe the workout between his studies really paid out. Or he was eating more than he lets on. Whatever may be the case, I find myself losing control of the big dog."
+            n1 "And the bike... I–It–It wont—"
+            am "It won't stand up!"
+            n1 "Thusly, the bike loses its balance and the bike, the wiggling dog and I fall to our demise on the grey dirty road."
+        "Take him down":
+            $ ammon_score += 1
+            
+        "Push him off":
 
     ga "I forgive you.{w} I apologize too. I should’ve kept my eyes on the road. It’s been irresonsible of me."
 
