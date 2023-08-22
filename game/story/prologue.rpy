@@ -144,7 +144,7 @@ label prologue:
     n1 "He truly acted like a child sometimes but I didn't mind, I did partake in his bickering. In not any circonstances, I would ever cut him off of his childishness."
     n1 "I turn back to him, faking my exasperation to his behaviour, I pout and cross my arms with an exaggerated manner, it all makes me laugh inside."
 
-    n1 "But in the end this very, very, tall child needs to be put back in his place, he was becoming a bit too much bratty for your liking.
+    n1 "But in the end this very, very, tall child needs to be put back in his place, he was becoming a bit too much bratty for my liking."
     
     menu very_tall_child:
         "Abandon him here":
