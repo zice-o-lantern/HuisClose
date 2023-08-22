@@ -154,9 +154,10 @@ label prologue:
             
             am "No you won't. It's my property, I'm staying on it, I won't budge from an inch."
             ga "This might be your bike but I'm driving it."
-            n1 "I had predicted this outcome—Who would willingly let himself get abandonned on the road?—although I didn't find myself annoyed. If only he submitted, everything would be easier,"
+            am "Still."
+            n1 "I had predicted this outcome—Who would willingly let himself get abandonned on the road?—although I find myself annoyed. If only he submitted, everything would be easier,"
             ga "Playing hard to get moved, huh? Be my gest then. I didn't want to come to that but I'm going to bust your fat behind."
-            n1 "Arms and legs spread; he provokes and accept my invitation."
+            n1 "Arms and legs spread; he provokes me and accept my challenge."
             am "Make me."
             n1 "My resolve set, I dash to him and grab him from behind, leaving him no room to react. Ammon surprised, tries to wiggle out his way from this situation."
             n1 "Unfortunately for him it's too late, for my claws have tighten the grasp on its prey any time soon."
@@ -175,6 +176,33 @@ label prologue:
             n1 "Thusly, the bike loses its balance and the bike, the wiggling dog and I fall to our demise on the grey dirty road."
         "Take him down":
             $ ammon_score += 1
+            n1 "I gracefully get up from the seat. I will have to show him my grandeur so I make up my stance."
+            ga "You know what? Get off the bike. I'm going alone."
+            
+            am "No you won't. It's my property, I'm staying on it, I won't budge from an inch."
+            ga "This might be your bike but I'm driving it."
+            am "Still."
+            n1 "I had predicted this outcome—Who would willingly let himself get abandonned on the road?—although I find myself annoyed. If only he submitted, everything would be easier,"
+            ga "Playing hard to get moved, huh? Be my gest then. I didn't want to come to that but I'm going to take you down."
+            n1 "Arms and legs spread; he provokes me and accept my challenge."
+            am "Go on."
+            n1 "I come up with a plan: I need to lower his guard enough so I could approach him by behind. Then I'll be able to do whatever I want to him. Héll regret tickling me."
+            ga "Ok Ammon, you are right. I can't take you down."
+            n1 "Ammon raise an eyebrow. It's sort of sudden my change of mind but no time no time to smooth it over."
+            n1 "First step: Pretending admitting I was wrong; we're both stubborn. Doing that succeeded in confusing him at least."
+            ga "Besides it wasn't so bad, you're good at tickling. Sure I was driving but I need some tickling from time to time."
+            n1 "As he looking for a white and black cat named Gaspard, he only sees a stranger in front of him, casually walking closer to him."
+            n1 "Step 3: Initiate contact."
+            ga "Let me tickle you, then! You need some too!"
+            n1 "I jump on Ammon and assault him of tickles, destabilising him enough for him to laugh unconditionally."
+            am "Ahahah—Stop I can't take it anymore!—Ah ahAhhh."
+            n1 "I benefit from this window of opportunity for tackling him down on the bike with an armock of mine he won't get out of so easily."
+            am "Ouch ouch, okay you've won Gap no need to–"
+            n1 "I reinforce the armlock shutting him down."
+            ga "So who thought I couldn't take you down, huh?"
+            am "Maybe I did... but did you think of that!"
+            n1 "He pushes the ground with this foot, making the bike fall on me."
+            n1 "Thusly, the bike loses its balance and the bike, the submitted dog and I fall to our demise on the grey dirty road."
             
         "Push him off":
 
