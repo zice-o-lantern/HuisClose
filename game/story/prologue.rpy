@@ -205,6 +205,13 @@ label prologue:
             n1 "Thusly, the bike loses its balance and the bike, the submitted dog and I fall to our demise on the grey dirty road."
             
         "Push him off":
+            n1 "I quickly get up from the bike and decided that someone needed to learn their lessons."
+            n1 "I silently get near him and stay there for a moment, getting Ammon uncomfortable more and more."
+            n1 " At my concerning sight, Ammon starts fidgeting with his helmet, lost for words. His boot tapping the ground reinforces his ominous presentiment."
+            am "Are you alright, Gap?"
+            ga "Yes, I am."
+            am "Sooooo... what are you standing here for?"
+            ga "I keep my mouth shut. He doesn't have to know what I'm about to do."
 
     ga "I forgive you.{w} I apologize too. I should’ve kept my eyes on the road. It’s been irresonsible of me."
 
