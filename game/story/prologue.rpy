@@ -211,7 +211,11 @@ label prologue:
             am "Are you alright, Gap?"
             ga "Yes, I am."
             am "Sooooo... what are you standing here for?"
-            ga "I keep my mouth shut. He doesn't have to know what I'm about to do."
+            n1 "I keep my mouth shut. He doesn't have to know what I'm about to do."
+            n1 "You slowly reach out your arms to him, innocently. He doesn't have a clue in the world, of your ill-intended thoughts. That'll make his fall even harder."
+            am "A hug? I thought you didn't like being touch–"
+           
+
 
     ga "I forgive you.{w} I apologize too. I should’ve kept my eyes on the road. It’s been irresonsible of me."
 
