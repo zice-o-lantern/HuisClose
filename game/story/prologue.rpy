@@ -247,7 +247,10 @@ label prologue:
     if ammon_score >= 1:
         n1 "Aftermath passed, you both lay on the road, still shaken up by the fall. You hear Ammon cough. You look at him worriedly, checking if he's hurt."
         n1 "He doesn't look all bad, although he has bruises here and there. The next moment, you notice you are all bruised too. On your hands, arms, head, everywhere. Your clot are dirty and you feel bad because you had just washed them this morning."
-        n1 "Your primal instinct hits and you lick all of your injuries. Arms above your head, tongue in"
+        n1 "Your primal instinct hits and you lick all of your injuries. Arms above your head, tongue in your armpit; A longing stare hammers at you so you spin toward the source."
+        n1 "You contemplate a smirking, dirty dog, snickering. You fluster. He has already seen you doing that; what’s that so funny about it right now? I sulk and embarrassingly continue to lick at the wounds. But he still looks at me."
+        
+        ga "Could you stop looking at me? I don’t know what’s so interesting about it but it’s embarassing me."
 
 
     ga "I forgive you.{w} I apologize too. I should’ve kept my eyes on the road. It’s been irresonsible of me."
@@ -257,7 +260,7 @@ label prologue:
 
     am "Ooh? Mister Responsible Goody Two–Shoes is sorry? Mister is ashamed of what he’s done and wants to atone for he has sinned?"
 
-    n1 "{cps=20}Annnnd{/cps} there it is. My asshole of a friend I know."
+    # n1 "{cps=20}Annnnd{/cps} there it is. My asshole of a friend I know."
 
     ga "Oh shut up. I will take back what I said"
 
