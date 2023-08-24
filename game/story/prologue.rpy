@@ -37,44 +37,53 @@ label prologue:
     n1 "A beatiful day of April sets down at the horizon."
     n1 "Roses, Tulipes, Lilies and Daffodils are blooming; Birds are singing the aftertales of the Spring and the wonders of life."
     n1 "On days like these where the sun goes so high in the sky it could reach the other stars; by which they admire it. Cats like me should be playing in the fields of grass."
-    n1 "Although I am a bit too old to run around in fields of grasses, playing with a ball of yarn, wandering over all around ’till my feet wear out out of exhaustion."
-    n1 "I mull about this prospect for a moment, realizing I do miss those free-worries days, where I didn’t have to worry about rent, competitive exams and social relationships…"
-    n1 "At least, I wasn’t {b}bored."
+    n1 "Although you are a bit too old to run around in fields of grass, you catch yourself wanting to play with a ball of yarn, wandering over all around ’till your feet wear out of exhaustion."
+    n1 "You mull about it for a moment, about this prospect, realizing you do miss those free-worries days, where you didn’t have any worries about your life, your future, your carrier."
+    n1 "One day, you woke up from bed and you decided that you’d be a doctor! A doctor you say? Some laughed at this sight of naiveté, Some supported your decision, but in the end they were sure unimpressed."
+    n1 "Whether it had been whispered by Lady Fate or the fact that your father had said multiple times at this point that he’d be very happy if you were a doctor. You had truly no way of knowing which option was right."
+    n1 "You remember going to Father to reveal him your latest epiphany. He went to a pensive state of mind. He’s going to succeed me, huh? He bore a lethargic expression on his face, not that it was exceptional. He always seems dead to the outside. Maybe not just the outside."
+    n1 "You went on doing a PhD and your father still wears that apathetic face. At least he would if he’d been still there. You haven’t seen him for a long time..."
+    n1 "Or you have? You think you really have but you don’t remember when. Was it Yesterday? Last week? Last month?.. Last year, surely. It’s on the edge of your mind but something prevents you to remember."
+    n1 "Anyway, it shouldn’t have been that important if you can’t remember."
+    # n1 "At least, I wasn’t {b}bored."
+
+    pause 1.0
+
     n1 "The cold wind lulls the warm aspalth to sleep, still tired from the hundreds of travellers. But once again, the two wheels of the motorcycle rouse it back to life, annoyed."
-    n1 "Looking far into the horizon, the distant red-crimson sphere holds its path and claws its glaze in me. Enchanted from its invitation, I brace in its longing stare and return it with sweetness."
+    n1 "Looking far into the horizon, the distant red-crimson sphere holds its path and claws its glaze in you. Enchanted from its invitation, You brace in its longing stare and return it with sweetness."
     n1 "Even its cheerful cherry pink glinted reflections in the helmet visor wont't distract me from it. This time, I won't look away from the wonders of the world."
     # n1 "Mutiple minutes pass by and my eyelids weigh like a thousand of flowers, dried, withered away by the centuries."
     # n1 "Mutliples minutes pass by and my eyes sprout a thousand of flowers, stinging my eyes, demanding a desereved rest."
     n1 "Glimmers of a shining blue indigo and orange dance in the sky sprouting a thousand of flowers above, delivering a magnificient bouquet of shimmering colors."
-    n1 "I was melancholic of this spectacle, because I knew what it meant. The day is already done and all of this will die down to be replaced tomnorrow."
+    n1 "You were melancholic of this spectacle, because you knew what it meant. The day is already done and all of this will die down to be replaced tomnorrow."
     n1 "Soon enough, content from its demonstration of fantasies, the dying light of the sun disappears behind the horizon."
-    n1 "Once gone, my eyes start to get heavy, for all they have been doing today is enduring the long day of road I've made, relieved the bright peach light has flown away for another place, warmer and greener."
-    n1 "For a moment, I find myself complying with my inner desire and give in the call of slumber. Falling down, I meet with the peaceful world of Wonderland where the misery is shrinking away and complete bliss is growing closer."
+    n1 "Once gone, your eyes start to get heavy, for all they have been doing today is enduring the long day of road you've made, relieved the bright peach light has flown away for another place, warmer and greener."
+    n1 "For a moment, you find yourself complying with your inner desire and give in the call of slumber. Falling down, you meet with the peaceful world of Wonderland where the misery is shrinking away and complete bliss is growing closer."
 
     ## TODO: Add sfx (guess pause the musuc and all)
     am "Hey Gap? Are you sleepy?"
 
-    n1 "This deep voice calling for me awakens in me a surge of uncomfortable geyser and I come to find myself jumping and groaning, letting out some groans go."
+    n1 "This deep voice calling awakens in you a surge of uncomfortable geyser and you come to find myself jumping and groaning, letting out some groans go."
 
     am "Oh my god don't move like that!"
 
-    n1 "Despite hearing an agitated man, gesticulating and whining around, I'm still not quite out of my slumber; The landscapes are all blurry and I can’t really distinguish them from the road."
-    n1 "Sandpaper bags obstruct the path of my eyelids and every blink feels like pin and needles. The ruthless spikes pierce through the shutter lids veiling my view."
-    n1 "The weariness of the road made my legs drowsy and the numbness flows through my veins in every muscle of my body. Fighting against it, I blink even more."
-    n1 "Sootheness and comfort; every time I blink through it, the needles in my eyes fly through the wind, the shards of glass melt up from the spores of my skins between the strands of hair."
-    n1 "I am soon out of my reverie when Ammon speaks up again."
+    n1 "Despite hearing an agitated man, gesticulating and whining around, you’re still not quite out of your slumber; The landscapes are all blurry and you can’t really distinguish them from the road."
+    n1 "Sandpaper bags obstruct the path of your eyelids and every blink feels like pin and needles. The ruthless spikes pierce through the shutter lids veiling my view."
+    n1 "The weariness of the road made your legs drowsy and the numbness flows through your veins in every muscle of your body. Fighting against it, you blink even more."
+    n1 "Sootheness and comfort; every time you blink through it, the needles in my eyes fly through the wind, the shards of glass melt up from the spores of your skins between the strands of hair."
+    n1 "You are soon out of my reverie when Ammon speaks up again."
 
     am "Hey are you there??!"
 
-    n1 "Panicking for me, he thinks over how to get me out of it. His arms around my waist tighten and his chest draws nearer to me, and at this moment the warmness emanating from the torso of his invades every piece of hair of my body."
-    n1 "Boiling and beating his chest; A shiver runs through my spine, then another one. A old sentiment all too familiar grows inside of me and I don’t like it. I don’t want to find out what happens next if he keeps at it."
-    n1 "I shove him off."
+    n1 "Panicking for you, he thinks over how to get you out of it. His arms around your waist tighten and his chest draws nearer to me, and at this moment the warmness emanating from the torso of his invades every piece of hair of your body."
+    n1 "Boiling and beating his chest; A shiver runs through your spine, then another one. A old sentiment all too familiar grows inside of you and you don’t like it. you don’t want to find out what happens next if he keeps at it."
+    n1 "You shove him off."
 
     ga "Oh my god let go!!!"
 
-    n1 "My immediate reaction causes me to veer off track."
-    n1 "Slaloming and slaloming, I get hardly back the control of the motorcycle. It shakes us a lot. Now he’s squeezing me and won’t let go."
-    n1 "I manage to stabilise the vehicle quite fast but we’re still quite nauseated from the experience."
+    n1 "Your immediate reaction causes you to veer off track."
+    n1 "Slaloming and slaloming, you get hardly back the control of the motorcycle. It shakes you both a lot. Now he’s squeezing you and won’t let go."
+    n1 "You manage to stabilise the vehicle quite fast but you’re still quite nauseated from the experience."
 
     am "Oh good Lord…"
 
@@ -85,48 +94,48 @@ label prologue:
     pause 1.0
     play sound "audio/sounds/car_white_noise.ogg" loop fadein 1.0
 
-    n1 "After some time, a sort of strange quietness grew and loomed over the both of us. It was uncomfortable, wondering what might have caused all of this agitation early on."
-    n1 "The guiltiness start to take its toll over me, I didn't make a good job to keep focused on the road. A mingle of shame builds up in my throat and it’s stuck no matter how much I gulp."
-    n1 "I throw some quick looks in the mirror to see if there’s any casualties with Ammon. Apparently he’s fine so I start to relax a bit."
-    n1 "Although his undecypherable gaze under his helmet make it difficult to know for sure but his ominous aura penetrates all of my pores and tinges all of my hair."
-    n1 "At some point, the silente itches me; I want to stop driving and scratch the back of my head, his cold stare is staggering the back of my neck."
-    n1 "The hum of the vehicle barely barely fills the glacial air and no matter how much fast I go, the biting frost won’t stop nimbling on me."
-    n1 "With guiltiness crepping up, I fire more and more worried looks in the mirror to know if the situation has evolved."
-    n1 "Constating the situation hasn’t evolved—I could’ve not picked enough information given the situation anyway—I try to think up something to break the ice."
-    n1 "I hesitate, I didn’t do anything wrong right? I just was unfocused for a moment and got back in control pretty fast. Nothing to write home about."
-    n1 "I squeeze the handlebar, fearing the moment I’ll have to open my mouth about it. It couldn’t be that hard, am I right?"
-    n1 "I gather all of my courage and brace myself for the challenge to come."
-    n1 "I close my eyes, say those two words slowly."
+    n1 "After some time, a sort of strange quietness grew and loomed over the both of you two. It was uncomfortable, wondering what might have caused all of this agitation early on."
+    n1 "The guiltiness start to take its toll over you, you didn't make a good job to keep focused on the road. A mingle of shame builds up in your throat and it’s stuck no matter how much you gulp."
+    n1 "You throw some quick looks in the mirror to see if there’s any casualties with Ammon. Apparently he’s fine so you start to relax a bit."
+    n1 "Although his undecypherable gaze under his helmet makes it difficult to know for sure but his ominous aura penetrates all of your pores and tinges all of your hair."
+    n1 "At some point, the silente itches you; you want to stop driving and scratch the back of your head, his cold stare is staggering the back of your neck."
+    n1 "The hum of the vehicle barely barely fills the glacial air and no matter how much fast you go, the biting frost won’t stop nimbling on you."
+    n1 "With guiltiness crepping up, you fire more and more worried looks in the mirror to know if the situation has evolved."
+    n1 "Constating the situation hasn’t evolved—you could’ve not picked enough information given the situation anyway—you try to think up something to break the ice."
+    n1 "You hesitate, you didn’t do anything wrong right? You just was unfocused for a moment and got back in control pretty fast. Nothing to write home about."
+    n1 "You squeeze the handlebar, fearing the moment you’ll have to open your mouth about it. It couldn’t be that hard, could it?"
+    n1 "You gather all of your courage and brace yourself for the challenge to come."
+    n1 "You close your eyes, say those two words slowly."
 
-    ga "I apologise{nw}"
+    ga "{cps=10}I apologise{/cps}{nw}"
 
     am "I’m sorry."
 
-    n1 "Ammon interrupts me. I’m flabbergasted—what did he just say—my ears couldn’t hear it. They quiver and raise like an antenna looking for the signal; it shouldn’t be possible what I just heard."
+    n1 "Ammon interrupts you. You’re flabbergasted—what did he just say—your ears couldn’t hear it. They quiver and raise like an antenna looking for the signal; it shouldn’t be possible what you just heard."
 
     ga "What did you just say..?"
 
-    n1 "I can’t help myself but turn my head around. Maybe in front of me, I’ll see that I was mistaken."
+    n1 "you can’t help myself but turn your head around. Maybe in front of you, you’ll see that you were mistaken."
 
     am "I said I’m sorry{cps=3}...{/cps} for yelling at you. Are you happy?"
 
     play music "audio/music/Eleventh Hour - OneShot.mp3" fadein 1.0 loop
 
-    n1 "He reasserts himself. He crosses his arm sternly. It looks like his pride has been shamelessly plundered. He looks away and avoids my glaze. He shows a face of discomfort and akwardness."
-    n1 "That took him a lot of efforts, apparently—I mean, he’s the type to be a knucklehead about it—he wronged me a lot of times and he doesn’t usually own up to it."
+    n1 "He reasserts himself. He crosses his arm sternly. It looks like his pride has been shamelessly plundered. He looks away and avoids your glaze. He shows a face of discomfort and akwardness."
+    n1 "That took him a lot of efforts, apparently—I mean, he’s the type to be a knucklehead about it—he wronged you a lot of times and he doesn’t usually own up to it."
     ## TODO: maybe add a short anecdote here
-    n1 "I grin bittersweetly, realizing I have been cut off in my tremendous amends to make it up to him."
+    n1 "You grin bittersweetly, realizing you have been cut off in you tremendous amends to make it up to him."
 
     ga "Oooooooh looks like the Big Bad Wolf can be sorry sometimes?"
 
     am "Oh shut up and just drive."
 
-    ga "Ahah ok Big Baby Wolf"
+    ga "Ahah ok Big Baby Wolf."
 
-    n1 "He contorts himself in his place at my snickering, not pleased by my teasing."
-    n1 "It might have been uncalled for but I didn’t care; It was my way to get back at him to all of those years of mocking I endured. I might be the only one he does apologise to anyway."
-    n1 "Not that I am the Messiah or anything. I genuinely believe it’s more he doesn’t have a lot of people he could apologize to. His irritating attitude repels a lot of people and he also doesn’t like a lot of people."
-    n1 "Weirdly, one day, long ago, he set his sight on me and decided I was worthy of his friendship. A tad presomptuous, I’ll give it to you but nowadays I didn’t mind. I know very few people like this so it’s interesting."
+    n1 "He contorts himself in his place at your snickering, not pleased by your teasing."
+    n1 "It might have been uncalled for but you didn’t care; It was your way to get back at him to all of those years of mocking you endured. You might be the only one he does apologise to anyway."
+    n1 "Not that you are the Messiah or anything. You genuinely believe it’s more he doesn’t have a lot of people he could apologize to. His irritating attitude repels a lot of people and he also doesn’t like a lot of people."
+    n1 "Weirdly, one day, long ago, he set his sight on you and decided you were worthy of his friendship. A tad presomptuous but nowadays you didn’t mind. You know very few people like this so it’s interesting."
 
     am "You say one more word about it and I’ll push you off the bike."
 
@@ -134,33 +143,33 @@ label prologue:
 
     am "That’s it, you lost your driving privileges."
 
-    n1 "He jumps on me and starts tickling. I laugh uncontrollably."
+    n1 "He jumps on you and starts tickling. You laugh uncontrollably."
 
     ga "N–No please stop, it’s incredibly stupid what you’re doing!"
 
     am "You’re the one stupid, You should’ve known better."
 
-    n1 "I brake dryly, unable to withstand his tickling and take a time to catch back my breathing."
-    n1 "He truly acted like a child sometimes but I didn't mind, I did partake in his bickering. In not any circonstances, I would ever cut him off of his childishness."
-    n1 "I turn back to him, faking my exasperation to his behaviour, I pout and cross my arms with an exaggerated manner, it all makes me laugh inside."
+    n1 "You brake dryly, unable to withstand his tickling and take a time to catch back your breathing."
+    n1 "He truly acted like a child sometimes but you didn't mind, you did partake in his bickering. In not any circumstances, You would ever cut him off of his childishness."
+    n1 "You turn back to him, faking your exasperation to his behaviour, you pout and cross your arms with an exaggerated manner, it all makes you laugh inside."
 
-    n1 "But in the end this very, very, tall child needs to be put back in his place, he was becoming a bit too much bratty for my liking."
+    n1 "But in the end this very, very, tall child needs to be put back in his place, he was becoming a bit too much bratty for your liking."
     
     menu very_tall_child:
         "Abandon him here":
             $ ammon_score += 1
-            n1 "I gracefully get up from the seat. I will have to show him my grandeur so I make up my stance."
+            n1 "You gracefully get up from the seat. You will have to show him your grandeur so you make up your stance."
             ga "You know what? Get off the bike. I'm going alone."
             
             am "No you won't. It's my property, I'm staying on it, I won't budge from an inch."
             ga "This might be your bike but I'm driving it."
             am "Still."
-            n1 "I had predicted this outcome—Who would willingly let himself get abandonned on the road?—although I find myself annoyed. If only he submitted, everything would be easier,"
-            ga "Playing hard to get moved, huh? Be my gest then. I didn't want to come to that but I'm going to bust your fat behind."
-            n1 "Arms and legs spread; he provokes me and accept my challenge."
+            n1 "You had predicted this outcome—Who would willingly let himself get abandonned on the road?—although you find yourself annoyed. If only he submitted, everything would be easier,"
+            ga "Playing hard to get moved, huh? Be my guest then. I didn't want to come to that but I'm going to bust your fat behind."
+            n1 "Arms and legs spread; he provokes me and accept your challenge."
             am "Make me."
-            n1 "My resolve set, I dash to him and grab him from behind, leaving him no room to react. Ammon surprised, tries to wiggle out his way from this situation."
-            n1 "Unfortunately for him it's too late, for my claws have tighten the grasp on its prey any time soon."
+            n1 "Your resolve set, you dash to him and grab him from behind, leaving him no room to react. Ammon surprised, tries to wiggle out his way from this situation."
+            n1 "Unfortunately for him it's too late, for your claws have tighten the grasp on its prey. He won’t get out any time soon."
             am "Stop it! Let me go!"
             ga "No, you'll learn to respect me."
             am "Please, you will never be able to lift me."
@@ -168,52 +177,59 @@ label prologue:
             am "Never! Let me go or I'll bite!"
             ga "Go on!"
             n1 "It reached the point where Ammon became an eletric bolt, wiggling and biting in every directions."
-            n1 "Now's my last and only chance I might have to lift him off, therefore I put everything once of my strength and start the process."
+            n1 "Now's your last and only chance you might have to lift him off, therefore you put everything once of your strength and start the process."
             n1 "Oh no. He's heavy."
-            n1 "Very heavy. More than I thought. Maybe the workout between his studies really paid out. Or he was eating more than he lets on. Whatever may be the case, I find myself losing control of the big dog."
+            n1 "Very heavy. More than you thought. Maybe the workout between his studies really paid out. Or he was eating more than he lets on. Whatever may be the case, you find yourself losing control of the big dog."
             n1 "And the bike... I–It–It wont—"
             am "It won't stand up!"
-            n1 "Thusly, the bike loses its balance and the bike, the wiggling dog and I fall to our demise on the grey dirty road."
+            n1 "Thusly, the bike loses its balance and the bike, the wiggling dog and you fall to your demise on the grey dirty road."
         "Take him down":
             $ ammon_score += 1
-            n1 "I gracefully get up from the seat. I will have to show him my grandeur so I make up my stance."
+            n1 "You gracefully get up from the seat. You will have to show him your grandeur so you make up my stance."
             ga "You know what? Get off the bike. I'm going alone."
             
             am "No you won't. It's my property, I'm staying on it, I won't budge from an inch."
             ga "This might be your bike but I'm driving it."
             am "Still."
-            n1 "I had predicted this outcome—Who would willingly let himself get abandonned on the road?—although I find myself annoyed. If only he submitted, everything would be easier,"
-            ga "Playing hard to get moved, huh? Be my gest then. I didn't want to come to that but I'm going to take you down."
+            n1 "You had predicted this outcome—Who would willingly let himself get abandonned on the road?—although you find myself annoyed. If only he submitted, everything would be easier,"
+            ga "Playing hard to get moved, huh? Be my guest then. I didn't want to come to that but I'm going to take you down."
             n1 "Arms and legs spread; he provokes me and accept my challenge."
             am "Go on."
-            n1 "I come up with a plan: I need to lower his guard enough so I could approach him by behind. Then I'll be able to do whatever I want to him. Héll regret tickling me."
+            n1 "You come up with a plan: I need to lower his guard enough so I could approach him by behind. Then I'll be able to do whatever I want to him. He’ll regret tickling you."
             ga "Ok Ammon, you are right. I can't take you down."
-            n1 "Ammon raise an eyebrow. It's sort of sudden my change of mind but no time no time to smooth it over."
-            n1 "First step: Pretending admitting I was wrong; we're both stubborn. Doing that succeeded in confusing him at least."
+            n1 "Ammon rises an eyebrow. It's sort of sudden your change of mind but no time to smooth it over."
+            n1 "First step: Pretending admitting you were wrong; you're both stubborn. Doing that succeeded in confusing him at least."
             ga "Besides it wasn't so bad, you're good at tickling. Sure I was driving but I need some tickling from time to time."
             n1 "As he looking for a white and black cat named Gaspard, he only sees a stranger in front of him, casually walking closer to him."
             n1 "Step 3: Initiate contact."
             ga "Let me tickle you, then! You need some too!"
-            n1 "I jump on Ammon and assault him of tickles, destabilising him enough for him to laugh unconditionally."
+            n1 "you jump on Ammon and assault him of tickles, destabilising him enough for him to laugh unconditionally."
             am "Ahahah—Stop I can't take it anymore!—Ah ahAhhh."
-            n1 "I benefit from this window of opportunity for tackling him down on the bike with an armock of mine he won't get out of so easily."
+            n1 "You benefit from this window of opportunity for tackling him down on the bike with an armock of mine he won't get out of so easily."
             am "Ouch ouch, okay you've won Gap no need to–"
-            n1 "I reinforce the armlock shutting him down."
+            n1 "You reinforce the armlock shutting him down."
             ga "So who thought I couldn't take you down, huh?"
             am "Maybe I did... but did you think of that!"
-            n1 "He pushes the ground with this foot, making the bike fall on me."
-            n1 "Thusly, the bike loses its balance and the bike, the submitted dog and I fall to our demise on the grey dirty road."
+            n1 "He pushes the ground with this foot, making the bike fall on you."
+            n1 "Thusly, the bike loses its balance and the bike, the submitted dog and you fall to your demise on the grey dirty road."
             
         "Push him off":
-            n1 "I quickly get up from the bike and decided that someone needed to learn their lessons."
-            n1 "I silently get near him and stay there for a moment, getting Ammon uncomfortable more and more."
-            n1 " At my concerning sight, Ammon starts fidgeting with his helmet, lost for words. His boot tapping the ground reinforces his ominous presentiment."
+            n1 "You quickly get up from the bike and decided that someone needed to learn their lessons."
+            n1 "You silently get near him and stay there for a moment, getting Ammon uncomfortable more and more."
+            n1 "At your concerning sight, Ammon starts fidgeting with his helmet, lost for words. His boot tapping the ground reinforces his ominous presentiment."
             am "Are you alright, Gap?"
             ga "Yes, I am."
             am "Sooooo... what are you standing here for?"
-            n1 "I keep my mouth shut. He doesn't have to know what I'm about to do."
+            n1 "You keep my mouth shut. He doesn't have to know what you’re about to do."
             n1 "You slowly reach out your arms to him, innocently. He doesn't have a clue in the world, of your ill-intended thoughts. That'll make his fall even harder."
             am "A hug? I thought you didn't like being touch–"
+            n1 "As he spoke, you thrust him without any warning off the bike"
+            am "Oh motherfu–"
+            n1 "He violently hits the ground with a loud thud, the bike following him on his fall. He loudly moans and seethes. He’s hurt everywhere."
+            am "Dude, what the hell??? What was that for? Why have you done that??"
+            n1 "You fall silent. You clearly weren’t expecting this outcome. You won’t lie saying you didn’t appreciate seeing him on the ground, all dirty, whining, whimpering and howling."
+            n1 "But you’ve come to regret it: You didn’t plan to hurt him that far."
+            n1 "Very few moments pass until you mull over it and choose he needed help"
            
 
 
@@ -235,7 +251,7 @@ label prologue:
     am "Besides, the quietness was unsupportable. I couldn’t bear to be mad at you all of the trip and we just started."
     am "And it looks like you’re getting sleepy so I’ll get just right enough on your nerves to keep you awake."
 
-    ga "And you’re damn good at it because I already want to shut closed that mouthy trap of yours."
+    ga "And you’re damn good at it because I already want to shut close that mouthy trap of yours."
 
     n1 "As I grit my teeth holding back to steer us in the ditch on the side of the road to not hear his voice anymore, he slids his damp muzzle on my shoulder."
     n1 "I hadn’t noticed but he has raised his visor just jor the sake of this maneuver."
