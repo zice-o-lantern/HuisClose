@@ -38,7 +38,7 @@ label prologue:
     n1 "Roses, Tulipes, Lilies and Daffodils are blooming; Birds are singing the aftertales of the Spring and the wonders of life."
     n1 "On days like these where the sun goes so high in the sky it could reach the other stars; by which they admire it. Cats like me should be playing in the fields of grass."
     n1 "Although you are a bit too old to run around in fields of grass, you catch yourself wanting to play with a ball of yarn, wandering over all around ’till your feet wear out of exhaustion."
-    n1 "You mull about it for a moment, about this prospect, realizing you do miss those free-worries days, where you didn’t have any worries about your life, your future, your carrier."
+    n1 "You mull about it for a moment, about this prospect, realizing you do miss those days, where you didn’t have any worries about your life, your future, your carrier."
     n1 "One day, you woke up from bed and you decided that you’d be a doctor! A doctor you say? Some laughed at this sight of naiveté, Some supported your decision, but in the end they were sure unimpressed."
     n1 "Whether it had been whispered by Lady Fate or the fact that your father had said multiple times at this point that he’d be very happy if you were a doctor. You had truly no way of knowing which option was right."
     n1 "You remember going to Father to reveal him your latest epiphany. He went to a pensive state of mind. He’s going to succeed me, huh? He bore a lethargic expression on his face, not that it was exceptional. He always seems dead to the outside. Maybe not just the outside."
@@ -235,7 +235,17 @@ label prologue:
             n1 "No, no, I am good. I guess that's my retribution for tickling you."
             n1 "Tinges of sarcasm ooze off his words, accusing, incriminating."
             n1 "It was clear that you misbehaved here."
-           
+            n1 "Strips of blood drip off the wounds Ammon has got when he fell from the bike."
+            n1 "He sets at licking at it, very intensively."
+            ga "Maybe you shouldn't do that."
+            am "Maybe you shouldn't have thrown me off."
+            n1 "The silence grows heavier between the both of you, you genuinely not knowing how to own up to it."
+            am "... Let's just go."
+            n1 "He climbs back up on the bike and you follow his lead."
+            n1 "You take back the road and continue to your destination."
+    
+    if ammon_score >= 1:
+        n1 "Aftermath passed, you both lay on the road, still shaken up by the fall. You hear Ammon cough. You look at him worriedly, checking if he's hurt."
 
 
     ga "I forgive you.{w} I apologize too. I should’ve kept my eyes on the road. It’s been irresonsible of me."
