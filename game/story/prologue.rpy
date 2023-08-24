@@ -230,6 +230,11 @@ label prologue:
             n1 "You fall silent. You clearly weren’t expecting this outcome. You won’t lie saying you didn’t appreciate seeing him on the ground, all dirty, whining, whimpering and howling."
             n1 "But you’ve come to regret it: You didn’t plan to hurt him that far."
             n1 "Very few moments pass until you mull over it and choose he needed help"
+            n1 "You extend your hand to him, apologetically, trying to make up to him."
+            n1 "But he swats off your hand, get up without any help, dust his clothes off flee your glaze.."
+            n1 "No, no, I am good. I guess that's my retribution for tickling you."
+            n1 "Tinges of sarcasm ooze off his words, accusing, incriminating."
+            n1 "It was clear that you misbehaved here."
            
 
 
