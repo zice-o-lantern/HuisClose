@@ -246,6 +246,8 @@ label prologue:
     
     if ammon_score >= 1:
         n1 "Aftermath passed, you both lay on the road, still shaken up by the fall. You hear Ammon cough. You look at him worriedly, checking if he's hurt."
+        n1 "He doesn't look all bad, although he has bruises here and there. The next moment, you notice you are all bruised too. On your hands, arms, head, everywhere. Your clot are dirty and you feel bad because you had just washed them this morning."
+        n1 "Your primal instinct hits and you lick all of your injuries. Arms above your head, tongue in"
 
 
     ga "I forgive you.{w} I apologize too. I should’ve kept my eyes on the road. It’s been irresonsible of me."
