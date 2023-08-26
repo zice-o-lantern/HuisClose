@@ -290,22 +290,41 @@ label prologue:
 
         n1 "Ammon reaches his hand to you."
 
-        am "You know what? Let’s make truce. Let’s say we’ve both assholes. Deal?"
+        am "You know what? Let’s make a truce. Let’s say we’ve both assholes. Deal?"
 
         n1 "Too tired to even argue, I firmly grasp it and shake it confidently."
 
         ga "Deal."
 
         n1 "Like that, at a smooth pace, you climb back on the bike and set back on the road."
+    n1 "A bit of quiet followed, with the hum of the bike soothing your weary soul, your eyelids becoming heavu again, to your disliking."
+    n1 "It reminds you it already happened earlier, when the sun was setting. You had quite an argument with your friendly companion."
+    n1 "Then you remember that you never really apologised for what you did."
+    n1 "You gather your lost courage and you muster these words, caught in your throat."
+    
+    ga "Hey buddy?"
+    
+    am "Yeah pal?"
 
+    n1 "You sigh. You really don't want to do that but you have to."
+    
+    ga "Remember when I was falling asleep and you woke me up?"
+    
+    am "Yeaaaah..."
+    if ammon_score >= 1:
+        am "But you know, I haven't been correct to you either, you don't have to{nw}"
+    else:
+        n1 "Ammon just stands there, without saying a word, as if what you are going to say has been due to him for a long time ans he finally the colors of it."
+    
     ga "I forgive you.{w} I apologize too. I should’ve kept my eyes on the road. It’s been irresonsible of me."
 
     n1 "I lower my head of shame."
     n1 "I don’t know why I was so distracted but I guess we could’ve died both with my tomfoolery. But the fatigue keeps increasing."
 
     am "Ooh? Mister Responsible Goody Two–Shoes is sorry? Mister is ashamed of what he’s done and wants to atone for he has sinned?"
-
-    # n1 "{cps=20}Annnnd{/cps} there it is. My asshole of a friend I know."
+    
+    if ammon_score < 1:
+        n1 "{cps=20}Annnnd{/cps} there it is. My asshole of a friend I know."
 
     ga "Oh shut up. I will take back what I said"
 
