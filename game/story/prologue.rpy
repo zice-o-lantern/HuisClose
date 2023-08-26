@@ -251,7 +251,52 @@ label prologue:
         n1 "You contemplate a smirking, dirty dog, snickering. You fluster. He has already seen you doing that; what’s that so funny about it right now? I sulk and embarrassingly continue to lick at the wounds. But he still looks at me."
         
         ga "Could you stop looking at me? I don’t know what’s so interesting about it but it’s embarassing me."
+        
+        n1 "You turn away, fleeing eyes, wanting to put you into a mouse hole away from the judging world, from any peeping eyes of your unfortunate pulsions. Heats of wave overrun your cheeks and the then pure white turn into a cherry pink of embarassement."
+        n1 "All of the sudden, a raspy sound of tongue licking the filthy crusty fur pierces your eardrums and you can’t help but look at the source of the sound. The spectacle you see there is all intriguing—or you could say—captivating."
+        n1 "There before you beholds a filthy dog on the ground, wrist, above in the air, being licked that same raspy tonge you’ve heard. His damp muscle runs through all over and all abroad his wrist. He stops in his deed and raise his head, intrigued by your stare."
+        n1 "You share a meaningful glaze, could have lasted for centuries, if your limbs didn’t ache on every inches of your body."
+        n1 "Although the pain gradually fades away, Ammon, content of his little show, stares at you mischeviously."
 
+        ga "Care to explain?"
+
+        am "It’s just...{w} Everytime I look at you doing that, you start to fluster and get really awkward."
+
+        n1 "Ammon sits back on his behind, extends his legs and look at the sky and the clouds passing by, diamonds in his golden eyes."
+
+        am "I just thought I could cheer you up by showing that it wasnt’t that bad, that you shouldn’t feel so bad about it."
+        am "That it’s not that embarrassing, do you see what I mean?"
+        
+        n1 "At these words, You couln’t hold it any longer and muffled snickers escape your little nose. Soon it becomes a loud laughter as you unleashed the last strands of your joie de vivre."
+        n1 "He was being truly embarassing."
+        n1 "Ammon, amused by your sudden change from sultry to euphory, follows and you two lose yourself in the silliness of the situation, reminiscent of older times."
+        n1 "You finally calm yourself, wiping out your tears of laugther and you slowly get on two paws. You stretch out to get you back on track."
+        
+        ga "Ahah ok ammon let’s go–"
+
+        n1 "Ammon has not got up, he continues to lay there, eyes lost up above in the sky were the stars start to show themselves."
+
+        ga "Ammon, are you alright?"
+
+        n1 "You extends your hand to him, although no immediate reaction seems to get out of the pensive puppy. At last, he notices you and take up your offer and grabs your hand."
+
+        am "Yes I am..."
+
+        n1 "You manage to get him up, standing, despite his weight—or is it you that have really weak arms?— and you wait for the rest of his response."
+
+        am "... By the way thanks for dirtying me, you asshole?"
+        
+        ga "Me an asshole? It’s you and only you that brought it upon yourself."
+
+        n1 "Ammon reaches his hand to you."
+
+        am "You know what? Let’s make truce. Let’s say we’ve both assholes. Deal?"
+
+        n1 "Too tired to even argue, I firmly grasp it and shake it confidently."
+
+        ga "Deal."
+
+        n1 "Like that, at a smooth pace, you climb back on the bike and set back on the road."
 
     ga "I forgive you.{w} I apologize too. I should’ve kept my eyes on the road. It’s been irresonsible of me."
 
