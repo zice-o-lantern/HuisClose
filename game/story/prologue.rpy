@@ -297,7 +297,8 @@ label prologue:
         ga "Deal."
 
         n1 "Like that, at a smooth pace, you climb back on the bike and set back on the road."
-    n1 "A bit of quiet followed, with the hum of the bike soothing your weary soul, your eyelids becoming heavu again, to your disliking."
+
+    n1 "A bit of quiet followed, with the hum of the bike soothing your weary soul, your eyelids becoming heavy again, to your disliking."
     n1 "It reminds you it already happened earlier, when the sun was setting. You had quite an argument with your friendly companion."
     n1 "Then you remember that you never really apologised for what you did."
     n1 "You gather your lost courage and you muster these words, caught in your throat."
@@ -314,31 +315,31 @@ label prologue:
     if ammon_score >= 1:
         am "But you know, I haven't been correct to you either, you don't have to{nw}"
     else:
-        n1 "Ammon just stands there, without saying a word, as if what you are going to say has been due to him for a long time ans he finally the colors of it."
+        n1 "Ammon just stands there, without saying a thing, as if what you are going to say has been due to him for a long, long time ago and he was craving for it."
     
     ga "I forgive you.{w} I apologize too. I should’ve kept my eyes on the road. It’s been irresonsible of me."
 
-    n1 "I lower my head of shame."
-    n1 "I don’t know why I was so distracted but I guess we could’ve died both with my tomfoolery. But the fatigue keeps increasing."
+    n1 "You lower your head of shame."
+    n1 "You don’t know why you were so distracted but you could’ve died both with your tomfoolery. You won over the fatigue thanks to Ammon but will you be so lucky next time?"
 
     am "Ooh? Mister Responsible Goody Two–Shoes is sorry? Mister is ashamed of what he’s done and wants to atone for he has sinned?"
     
     if ammon_score < 1:
-        n1 "{cps=20}Annnnd{/cps} there it is. My asshole of a friend I know."
+        n1 "{cps=20}Annnnd{/cps} there it is. Your asshole of a friend you know."
 
     ga "Oh shut up. I will take back what I said"
 
     am "Nah, nah, don’t worry, I’ll stop teasing you about it."
 
-    n1 "He puts back his boiling arms over my waist to grab on me. I don’t push him back."
+    n1 "He puts back his boiling arms over your waist to tighten his grip. You don’t push him back as you value his safery more than your comfort."
 
     am "Besides, the quietness was unsupportable. I couldn’t bear to be mad at you all of the trip and we just started."
     am "And it looks like you’re getting sleepy so I’ll get just right enough on your nerves to keep you awake."
 
     ga "And you’re damn good at it because I already want to shut close that mouthy trap of yours."
 
-    n1 "As I grit my teeth holding back to steer us in the ditch on the side of the road to not hear his voice anymore, he slids his damp muzzle on my shoulder."
-    n1 "I hadn’t noticed but he has raised his visor just jor the sake of this maneuver."
+    n1 "As you grit your teeth holding back to steer you in the ditch on the side of the road to not hear his voice anymore, he slids his damp muzzle on your shoulder."
+    n1 "You hadn’t noticed but he has raised his visor just jor the sake of this maneuver."
 
     am "That’s the gist of it."
 
@@ -347,11 +348,29 @@ label prologue:
     am "Gueeeeessss."
 
     n1 "He wants to distract me."
+    n1 "Get at him, show him who the boss is—he's teasing you, he deserves it."
+    
+    am "Come on, Gue{nw}"
+    
+    n1 "He was about to finish this annoying phrase when a sneaky hand grabs his muzzle and squeeze his muzzle shut."
+    n1 "It seems you have run out of your clemency toward the teasing dog. A pretty long amount of time pass, interspersed by some squeaking and whining, before you estimate that the little sinner has understood and let him out."
 
-    ga "I won’t."
+    am "Aargh—"
+    
+    n1 "Falling out of balance, you squeeze his embrace tight over you to make him stay on the motorcycle."
 
-    n1 "I snicker sweetly and Ammon too as his jaw wiggles with squishiness on my shoulder."
-    n1 "Some pleasant quietness followeed, Ammon is busy looking for another topic of discussion gracing me for some respite."
+    am "What the hell was that??"
+    
+    ga "You shouldnt distract me, Ammon..."
+
+    am "... Get lost."
+    
+    ga "Yet, here I am, stuckn with you."
+    
+    am "Don't say to my face you don't enjoy my presence, Gappy."
+    
+    n1 "You must admit he has got a point. In your so dull life, your friendship with him shines through the in dark deep cloud tide."
+    n1 "You grin."
 
     am "Anyway, aren’t you excited?"
 
