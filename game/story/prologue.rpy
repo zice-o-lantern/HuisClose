@@ -60,6 +60,9 @@ label prologue:
 
     pause 1.0
 
+    "You close your eyes for a few seconds, in the never ending void, to get a little bit of rest, the road was long today and you’re not even arrived. It really desesperates you."
+    "Surely one or seconds of sleep won’t hurt, right?"
+
     # "The cold wind lulls the warm aspalth to sleep, still tired from the hundreds of travellers. But once again, the two wheels of the motorcycle rouse it back to life, annoyed."
     # "Looking far into the horizon, the distant red-crimson sphere holds its path and claws its glaze in you. Enchanted from its invitation, You brace in its longing stare and return it with sweetness."
     # "Even its cheerful cherry pink glinted reflections in the helmet visor wont't distract me from it. This time, I won't look away from the wonders of the world."
@@ -579,10 +582,13 @@ label rest_area_1:
     "Usually, it would’ve been the time where I deflect any sort of assistance and where after some trepident events, I would either succed the task or yield into the help."
     "But I didn’t have the strength to struggle so I give in to Ammon."
     ## TODO: REWRITE LATER AND ADD CHARA DESC
-    "Ammon removes the helmet."
-    "I notice a phone booth."
-    am "Anyway, gonna pee, if you’ll excuse myself."
-    ga "No problem, I’m gonna make a quick phone call."
+
+    # "Ammon removes the helmet."
+    # "I notice a phone booth."
+    # am "Anyway, gonna pee, if you’ll excuse myself."
+    # ga "No problem, I’m gonna make a quick phone call."
+
+    "You rarely see phone boothes out in city so to find one in a rest area is even more incredible. Technology goes fast, you think, nowadays."
     
     jump phone_booth
 
@@ -592,68 +598,86 @@ label phone_booth:
 
     play music "audio/music/night_sky.mp3" fadein 1.0 loop
 
-    # "I briskly reach the phone booth and enter inside."
-    # "I seal the door fast and I take a breath."
-    # "Now I need to make this phone call."
-    # "I take another deep breath."
-    # "Breathing out, I promptly grab the phone."
-    # "The phone numbers print themselves at high-speed on the station monitor."
-    # "Once the number dialed-in, I don’t wait for a second thought and press call."
-    # "The phone rings once..."
-    # "Twice..."
-    # "Thrice."
-    # "It keeps ringing."
-    # "Why isn't she answering?"
-    # "Have I called too late?"
-    # "I lower my head to look at my wrist watch"
-    # "Fifteen past three."
-    # "She should be at home."
-    # "It finally picks up."
-    # ga "Hello Julie!"
-    # "I nervously twirl the phone cable."
-    # ju "Oh hey Gas, how are you?"
-    # ga "I'm fine, I'm fine. A bit tired. And you?"
-    # ju "For the last days, pretty great."
-    # ju "Oh, by the way, you have left your toothbrush here."
-    # ga "Well I had to forget something, ahah…"
-    # ju "Has your trip been going well? Have you arrived at the hotel?"
-    # "I bring my watch out."
-    # "Seventeen past three. We’ve got around 3 hours until we get there."
-    # ga "No there’s still some time. But I don’t mind it, I like driving."
-    # ju "Oh great, that’s good for you…"
-    # "Some quiet follows. In all honesty, I forgot why I have called."
-    # ju "… Is everything alright?"
-    # ga "Yes, Yes, don't worry-"
-    # ju "Is it about what happened Saturday?"
-    # "ju isn't a girl you can easily lie to, she'll always find her way into your mind."
-    # ga "I said, everything's alright-"
-    # ju "Do you want to talk about it. I mean, your father."
-    # "I freeze. My fingers start to shake."
-    # "The sweat is making the thing I’m holding in my hand hard to hold it."
-    # "It is something I don’t want to talk about."
-    # ju "You’ve told me your father rang at the door but you’ve sade nothing about he told you. What did he say?"
-    # ju "You seem out of it since his visit."
-    # "By the tone of her voice, she’s concerned. She will keep asking about it until she gets the answer she wants."
-    # "I can’t stay calm anymore. With a trembling voice, I squeeze the phone."
-    # ga "I’ve got to go."
-    # ju "Wait, you still-"
-    # "A crash resonated in the booth."
-    # "My ears ring like the thunder om agitaded seas. The fog on the glass surrounds me."
-    # "I smashed the phone into the handset. Why did I do that."
-    # "I faze for a long period of time. My sense of time is so skewered I couldn’t even be bothered to look at my wristwatch."
-    # "I might have spent 10 seconds, 5 minutes, an hour or a week inside this booth. I didn’t really care."
-    # "I slump down in the phone booth. My hand attempt to get out of this suffocating box but it doesn’t work."
-    # "The claws scratch and bang the window pane but it won’t break. I’m stuck in my tomb and I grasp for air."
-    # "Someone is strangling me and it looks like the devil itself has come to finish the job"
-    # "The dripping sweat has formed a puddle so I could bathe in my misdeeds. I try to puff my guiltiness away but my thoat shuts to keep it inside my chest."
-    # "I want it to stop but it burns so I inhale all the air around but it keeps coming back stronger."
-    # "Now the box wants me dead so the pane gets closer and closer. No matter how I push them back, it won’t stop, it won’t stop ; it wasn’t supposed to happen like this."
-    # "But then, I look up and there is no one ; the box has stopped shrinking down"
-    # "At some point, I manage to soothe my breathing down."
-
     "You jog towards the deserted phone booth. You were excited about talking to her, your heart bounces from euphoria."
-    "Leaping over the door, you grab with a grand difficulty the knob, coudln't wait to penetrate into the dark cubicle."
+    "Leaping over the door, you grab with a grand difficulty the knob, not being able to wait any longer to penetrate into the dark cubicle."
     "You turn an inconsiderate amount of times the handle, at last, the dore opens when you shove into it."
+    "You mustn’t be in the right mindset to not notice that pulling a thousand times a door will not work on the 1001th time."
+    "But you couldn’t give more than a care, your enthusiasm peaking at its highest as you finally set paw in the somber void, pierced by rays of declining sunlight."
+    "Blind, by the low current luminosity of the place, you put a considerate time to even find the phone."
+    "On the phone box, on a little sign at the bottom of it, it is written \"10 francs for 10 minutes!\" You think the sign bargains a fair deal to you."
+    "You search your pockets looking for coins and you find one of 10 francs. Although you are not looking for long as you grab on a well—placed one. The coin has presended itself in your pocket in convenient circumstances you can’t explain."
+    "But you sure won’t complain as you slid it into the coin slot. Soon after, the phone screen lits up awaiting your input. You observe carefully as some featuers disturb you: they never had a screen before."
+    "With eagerness, you press the phone number on the keypad, with petite–size buttons but you manage to input it on your first try, like it has always been your purpose in life."
+    "You pick up the phone and wait for the ringing to come and let it resonate in the booth soothing the emptiness of the place. You liked the music tone and you daydream a bit of time."
+    "You’ve wandered in your head for a undefinite span of time, the ringing going on and on, the sound receding away in the dark void."
+    "You wonder why she puts this much amount of time to respond. Must it be the hour? Or is she’s not home right now? Maybe she has got an extended work shift and wasn’t still able to come this evening."
+    "Whatever the reason, it has to be a valid one. You mull over it a bit. She wouldn’t ignore you, would she? Perhaps she is ignoring you and is looking at the phone ringing right now."
+    "Suddenly a click travels from the other side of the line as to prove you wrong and make you guilty that she would ever be dishonest with you. You hear an inquisitve, quite sly, feminine voice answering the call."
+    
+    "???" "... Hello, who is it?"
+    
+    ga "Julie, it’s me, Gap!"
+    
+    ju "Gappounet! It’s really you! I’ve been waiting for your call all day long!"
+
+    "A deep sigh escapes of her long mouth, relieved to hear your voice."
+
+    ju "Have you reached the hotel, yet?"
+
+    ga "No, not yet."
+
+    ju "You’re still on the road? How did you do to contact me then?"
+
+    ga "Well apparently, they started to install phone booths on rest areas over the roads. Isn’t it amazing? Some day, I’ll be able to find phone booths everywhere and to call you anytime I want!"
+    ga "Imagine all of the possibilities! One day, maybe, we’ll truly never be apart. This is really wonderful! Technology is going so fast! Everything is going so fast!"
+    ga "Imagine for a second, how the americans reached the moon, {cps=120.0}how we will in the future be able to travel to space {cps=150.0}and also how we will be able to even eat without opening the mouth."
+    ga "{cps=200}don’tyouthinkit’sfantasticsometimesyouthinkwowtechnolgyandallh\nowrapiditwillreachveryhighstandads??it’sreallywonderfulwhenyouthinkaboutitIwanttoneverdietowitnessthis{nw}"
+
+    "You couldn’t hold my excitation anymore. The words leaving from your mouth were forming before your brain could even process the information you were spilling out at her. Your speaknig functions were not functioning anymore."
+
+    ju "Gap, Calm down! Calm down. You’re going to choke on your own words. Take a breath ok? Breathe with me, alright? At the count of three you’ll breathe out, ok?"
+
+    "You follow Julie’s instructions and soon enough, you manage to calm yourself down and in the end you are able to talk at steady pace."
+    "Once calmed down, your lungs stops contorting and burning the air within is able to bring you tranquility to you. Her voice helps you catch back and stand on your two paws."
+    "You’re finally able to talk normally now."
+
+    ga "Ahah, sorry, Juju. It’s been so long that I haven’t talked to you! It’s been like what? a week?"
+
+    ju "You’ve talked to me this morning, Honey. But I don’t mind, I love it when you get all worked up over me, my little kitten."
+    ju "I didn’t think that you’ll be missing me so much. You’ll only stay 3 day over there and you’re already panting your insides out not even having reached the hotel."
+    ju "You’re lucky that I was the one answering the phone. Had it been Dad or Mom, they would have teased the heck out of you. Don’t thank me huh? I almost didn’t answer given the hour."
+
+    ga "It’s not that late..."
+
+    ju "It’s like fifty to eight, at least it’s starting to get late, don’t you think? I don’t think I’ll answer later in the evening. Or my parents will. I don’t think you want to talk to them that late, huh?"
+
+    "She’s got a point. As much as you like her parents, the situation you would find yourself, head–to–head with them, not knowing what to say would be very akward."
+    "So you agree with her, not very much a lot you can do more to talk to her later."
+
+    ga "Yeah you are right..."
+
+    "Leaned on the booth glass, you twist and twist frenetically the phone cord, and from times to times, you brush your whiskers. A low purring swell up you chest and you try to contain it."
+
+    "You really liked her, she’s a wonderful girl and you wonder everyday how your life would have played out, had she not been in your life at all. But you chase that thought rapidly as it always sets you in a desesperate state."
+    "You are childhood friends and you were stuck together like hand in glove and never you has been seperated from her. She lived in your birth village, so you used to play together every day."
+    "For some reason, she could stand your presence, contrary to most of your peers of your age. That made her a precious friend. She was always fond of your fantaisies and your games, you had a lot of them when you were young."
+    "You would read a book about a boy in a green tunic going for adventures and you would pretend that you are this same boy reenacting the events of the book. Most kids would take you for a social case and most have."
+    "But not Julie. Julie partaked in your little pretend games and you really enjoyed her creativity to modify to the story to her liking, even if at first you really detested her interventions, it had to stay on the rails of the story."
+    "One day, a new boy moved in the village and he was a particular boy for sure. Rude, spiteful, trickster, troublemaker, always malicious to people. Everything you hated within a person. That boy was Ammon."
+    "Ammon was a friend of her and you really didn’t like him that much, he would often declare that your games were really lame. You would argue a lot without a satisfying conclusion. Still Julie really wanted to you get along."
+    "So we gradually stopped playing pretend and Julie brought out some board games his father got for her from his work or abroad. You were devastated of that because of that annoying dog, you weren’t able anymore to play what you want with Julie."
+    "So you set you ought to beat him at everything he does. Unfortunately he was no little player, crushing you at everything he does. That only managed to enrage you and make you hate him even more."
+    "You wonder how you are still friends with him."
+
+    ju "So um Gaspard, Gaspard, are you listening?"
+
+    "You wake up from your daydreaming, all of these memories coming back have had left you groggy and you are uncomfortably brought back to the current discussion, bitter as you wish to dwell more in your childhood."
+
+    ga "Yeah, Juju, you were saying?"
+
+    ju "... I was saying, do you remember when we first got together? Your enthusiasm"
+
+    
     
 
     jump rest_area_2
@@ -755,15 +779,15 @@ label rest_area_2:
 
     ## NOTE: Maybe smooth the transition here, a bit abrupt
 
-    "He shows me the inside of the box of cigarettes. Empty. It’s empty."
-    "Gapgap..? Gapgap??? Why he’s calling me like that? I hate this nickname."
-    "And what’s with him? He smokes like he breathes, I’m sure he has still some left and nonetheless here’s his response."
-    "The heat of this affront climbs up my head and sweat steans off my hair."
-    "My arms stiffen like rugged sturdy sticks, my fingers pressed against my palm that my claws makes it bleed."
-    "Did he just lie?"
-    "He’s lying. A damn liar. After all he’s just said, he dares to lie to me?"
-    "I know he’s lying. He wouldn’t go to a trip without refilling his stock of cigarettes; he’s addicted to it."
-    "I can see his shifty {b}guilty{/b} eyes avoid my mine."
+    # "He shows me the inside of the box of cigarettes. Empty. It’s empty."
+    # "Gapgap..? Gapgap??? Why he’s calling me like that? I hate this nickname."
+    # "And what’s with him? He smokes like he breathes, I’m sure he has still some left and nonetheless here’s his response."
+    # "The heat of this affront climbs up my head and sweat steans off my hair."
+    # "My arms stiffen like rugged sturdy sticks, my fingers pressed against my palm that my claws makes it bleed."
+    # "Did he just lie?"
+    # "He’s lying. A damn liar. After all he’s just said, he dares to lie to me?"
+    # "I know he’s lying. He wouldn’t go to a trip without refilling his stock of cigarettes; he’s addicted to it."
+    # "I can see his shifty {b}guilty{/b} eyes avoid my mine."
 
     am "What are you doing looking at me like that? You should’ve brought your own smokes."
     
@@ -773,16 +797,16 @@ label rest_area_2:
 
     ga "Ok, I’m going to look for a water bottle in the trunk."
 
-    am "Wait I need to get a drink too."
+    # am "Wait I need to get a drink too."
 
-    "Before I can stand up, he rushes towards the top—box and opens it."
-    "I’m a bit curious if he’s going to get a bottle of water so I slowly get up and patiently observe him."
-    "At first, I thought he was done with his task since I saw him grab something."
-    "However, he now rummages in his stuff and sometimes pulls out some items like some photos, his wallet and on and on."
-    "Confused, I question what he is really come to get but not until long, he closes the trunk and comes closer to me with a bottle of water in his hand."
-    "I reach for the bottle but then——"
+    # "Before I can stand up, he rushes towards the top—box and opens it."
+    # "I’m a bit curious if he’s going to get a bottle of water so I slowly get up and patiently observe him."
+    # "At first, I thought he was done with his task since I saw him grab something."
+    # "However, he now rummages in his stuff and sometimes pulls out some items like some photos, his wallet and on and on."
+    # "Confused, I question what he is really come to get but not until long, he closes the trunk and comes closer to me with a bottle of water in his hand."
+    # "I reach for the bottle but then——"
     
-    am "Oh sorry, it’s for me. I forgot to take one for you."
+    # am "Oh sorry, it’s for me. I forgot to take one for you."
 
     "He’s really starting to get on my nerves."
     label restarea_pointnclick_start:
