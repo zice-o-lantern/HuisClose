@@ -403,8 +403,8 @@ label prologue:
 
     am "Yeah you know, the hotel??"
 
-    "Yesterday I was grabbed by Ammon for he had something important to tell me. Apparently I’ve been \"broodier\" than usual——according to his words."
-    "So he presented a solution for me: he was invited to a trip to a luxurious hotel in Paris."
+    "Yesterday You were appalled by Ammon for he had something important to tell you. Apparently you’ve been \"broodier\" than usual——according to his words."
+    "So he presented a solution for you: he was invited to a trip to a luxurious hotel in Paris."
 
     am "Aren’t you a little curious about it?"
 
@@ -436,7 +436,7 @@ label prologue:
             am "It said I could bring a plus one…{w} So I choose you."
             am "You looked kinda down lately…"
 
-            "Having been told this repeatedly, I brush ofF this last comment and focus in the elephant in the room."
+            "Having been told this repeatedly, you brush off this last comment and focus in the elephant in the room."
 
             ga "Who invited you..?"
 
@@ -449,11 +449,11 @@ label prologue:
 
             am "I’ve made my research."
 
-            "That’s a pretty vague answer he just told. I can’t help myself but squint."
+            "That’s a pretty vague answer he just told. You can’t help myself but squint."
 
             am "I know it’s not clear——but trust me."
 
-            "Well I am already on this bike on the road of Paris so it’s bit late to turn around."
+            "Well you are already on this bike on the road of Paris so it’s bit late to turn around."
 
             ga "{cps=3}...{/cps} Alright."
 
@@ -462,12 +462,12 @@ label prologue:
 
             jump the_hotel
         
-        "Do we have to pay for something?":
+        "Do we have to pay for anything?":
             ga "I mean, I’m not really whealthy lately so I don’t know if I could pay it all."
 
             am "Think for a second, Gap."
 
-            "He locks his gaze in mine and I could only focus the periodic sunset simulated by his eyelids on his gold eyes."
+            "He locks his gaze in yours and yours could only focus the periodic sunset simulated by his eyelids on his gold eyes."
 
             am "It doen’t look you’re thinking, right now."
 
@@ -475,7 +475,7 @@ label prologue:
 
             "Ammon tilts his head quizically."
 
-            am "{cps=3}...{/cps} Anyway. What I meant to say, do you thinkk you would have to pay if you were invited to sleep to your friend’s house?"
+            am "{cps=3}...{/cps} Anyway. What I meant to say, do you think you would have to pay if you were invited to sleep to your friend’s house?"
 
             ga "Um… no. Because I was invited?"
 
@@ -529,15 +529,15 @@ label prologue:
 
     ga "If you say so…"
 
-    "While I say that, we pass in front of a road sign, indicating a rest area nearby."
+    "While you say that, you pass in front of a road sign, indicating a rest area nearby."
 
     am "Gapgap?"
 
-    "I can’t help myself but roll my eyes to the back of my head hearing this corny nickname that I hate."
+    "You can’t help yourself but roll my eyes to the back of your head hearing this corny nickname that you hate."
 
     ga "Yes Amoney..?"
 
-    "Not at all in the world fazed by the sweet nickname I just gave him, he jumps on his seat, his butt shaking moderately the bike, I could even hear his tail wiggling."
+    "Not at all in the world fazed by the sweet nickname I just gave him, he jumps on his seat, his butt shaking moderately the bike, your could even hear his tail wiggling."
     
     am "Can we make a stop? You are quite sleepy? And…"
     ga "And?"
@@ -549,15 +549,15 @@ label prologue:
     am "Thanks Gapgap!"
 
     ga "Stop saying that or I’ll break your knees and make you piss on yourself."
-
+    
     am "You wouldn’t dare Gapgap…"
 
-    ga "Make me, Amoney."
+    ga "Don’t test me, Ammon."
 
-    "And like that we exit the road."
-    jump rest_area
+    "And like that we leave the road onto the branching exit path."
+    jump rest_area_1
     
-label rest_area:
+label rest_area_1:
     
     stop music
     stop sound
@@ -578,74 +578,84 @@ label rest_area:
     am "Do you want some help? You look like you're having a hard time."
     "Usually, it would’ve been the time where I deflect any sort of assistance and where after some trepident events, I would either succed the task or yield into the help."
     "But I didn’t have the strength to struggle so I give in to Ammon."
-    ## TODO: REWRITE LATER
+    ## TODO: REWRITE LATER AND ADD CHARA DESC
     "Ammon removes the helmet."
     "I notice a phone booth."
     am "Anyway, gonna pee, if you’ll excuse myself."
     ga "No problem, I’m gonna make a quick phone call."
+    
+    jump phone_booth
 
+label phone_booth: 
+    stop music fadeout 0.5
+    scene phone_booth with fade
 
-    scene bg phoneBooth
-    with fade
+    play music "audio/music/night_sky.mp3" fadein 1.0 loop
 
-    "I briskly reach the phone booth and enter inside."
-    "I seal the door fast and I take a breath."
-    "Now I need to make this phone call."
-    "I take another deep breath."
-    "Breathing out, I promptly grab the phone."
-    "The phone numbers print themselves at high-speed on the station monitor."
-    "Once the number dialed-in, I don’t wait for a second thought and press call."
-    "The phone rings once..."
-    "Twice..."
-    "Thrice."
-    "It keeps ringing."
-    "Why isn't she answering?"
-    "Have I called too late?"
-    "I lower my head to look at my wrist watch"
-    "Fifteen past three."
-    "She should be at home."
-    "It finally picks up."
-    ga "Hello Julie!"
-    "I nervously twirl the phone cable."
-    ju "Oh hey Gas, how are you?"
-    ga "I'm fine, I'm fine. A bit tired. And you?"
-    ju "For the last days, pretty great."
-    ju "Oh, by the way, you have left your toothbrush here."
-    ga "Well I had to forget something, ahah…"
-    ju "Has your trip been going well? Have you arrived at the hotel?"
-    "I bring my watch out."
-    "Seventeen past three. We’ve got around 3 hours until we get there."
-    ga "No there’s still some time. But I don’t mind it, I like driving."
-    ju "Oh great, that’s good for you…"
-    "Some quiet follows. In all honesty, I forgot why I have called."
-    ju "… Is everything alright?"
-    ga "Yes, Yes, don't worry-"
-    ju "Is it about what happened Saturday?"
-    "ju isn't a girl you can easily lie to, she'll always find her way into your mind."
-    ga "I said, everything's alright-"
-    ju "Do you want to talk about it. I mean, your father."
-    "I freeze. My fingers start to shake."
-    "The sweat is making the thing I’m holding in my hand hard to hold it."
-    "It is something I don’t want to talk about."
-    ju "You’ve told me your father rang at the door but you’ve sade nothing about he told you. What did he say?"
-    ju "You seem out of it since his visit."
-    "By the tone of her voice, she’s concerned. She will keep asking about it until she gets the answer she wants."
-    "I can’t stay calm anymore. With a trembling voice, I squeeze the phone."
-    ga "I’ve got to go."
-    ju "Wait, you still-"
-    "A crash resonated in the booth."
-    "My ears ring like the thunder om agitaded seas. The fog on the glass surrounds me."
-    "I smashed the phone into the handset. Why did I do that."
-    "I faze for a long period of time. My sense of time is so skewered I couldn’t even be bothered to look at my wristwatch."
-    "I might have spent 10 seconds, 5 minutes, an hour or a week inside this booth. I didn’t really care."
-    "I slump down in the phone booth. My hand attempt to get out of this suffocating box but it doesn’t work."
-    "The claws scratch and bang the window pane but it won’t break. I’m stuck in my tomb and I grasp for air."
-    "Someone is strangling me and it looks like the devil itself has come to finish the job"
-    "The dripping sweat has formed a puddle so I could bathe in my misdeeds. I try to puff my guiltiness away but my thoat shuts to keep it inside my chest."
-    "I want it to stop but it burns so I inhale all the air around but it keeps coming back stronger."
-    "Now the box wants me dead so the pane gets closer and closer. No matter how I push them back, it won’t stop, it won’t stop ; it wasn’t supposed to happen like this."
-    "But then, I look up and there is no one ; the box has stopped shrinking down"
-    "At some point, I manage to soothe my breathing down."
+    # "I briskly reach the phone booth and enter inside."
+    # "I seal the door fast and I take a breath."
+    # "Now I need to make this phone call."
+    # "I take another deep breath."
+    # "Breathing out, I promptly grab the phone."
+    # "The phone numbers print themselves at high-speed on the station monitor."
+    # "Once the number dialed-in, I don’t wait for a second thought and press call."
+    # "The phone rings once..."
+    # "Twice..."
+    # "Thrice."
+    # "It keeps ringing."
+    # "Why isn't she answering?"
+    # "Have I called too late?"
+    # "I lower my head to look at my wrist watch"
+    # "Fifteen past three."
+    # "She should be at home."
+    # "It finally picks up."
+    # ga "Hello Julie!"
+    # "I nervously twirl the phone cable."
+    # ju "Oh hey Gas, how are you?"
+    # ga "I'm fine, I'm fine. A bit tired. And you?"
+    # ju "For the last days, pretty great."
+    # ju "Oh, by the way, you have left your toothbrush here."
+    # ga "Well I had to forget something, ahah…"
+    # ju "Has your trip been going well? Have you arrived at the hotel?"
+    # "I bring my watch out."
+    # "Seventeen past three. We’ve got around 3 hours until we get there."
+    # ga "No there’s still some time. But I don’t mind it, I like driving."
+    # ju "Oh great, that’s good for you…"
+    # "Some quiet follows. In all honesty, I forgot why I have called."
+    # ju "… Is everything alright?"
+    # ga "Yes, Yes, don't worry-"
+    # ju "Is it about what happened Saturday?"
+    # "ju isn't a girl you can easily lie to, she'll always find her way into your mind."
+    # ga "I said, everything's alright-"
+    # ju "Do you want to talk about it. I mean, your father."
+    # "I freeze. My fingers start to shake."
+    # "The sweat is making the thing I’m holding in my hand hard to hold it."
+    # "It is something I don’t want to talk about."
+    # ju "You’ve told me your father rang at the door but you’ve sade nothing about he told you. What did he say?"
+    # ju "You seem out of it since his visit."
+    # "By the tone of her voice, she’s concerned. She will keep asking about it until she gets the answer she wants."
+    # "I can’t stay calm anymore. With a trembling voice, I squeeze the phone."
+    # ga "I’ve got to go."
+    # ju "Wait, you still-"
+    # "A crash resonated in the booth."
+    # "My ears ring like the thunder om agitaded seas. The fog on the glass surrounds me."
+    # "I smashed the phone into the handset. Why did I do that."
+    # "I faze for a long period of time. My sense of time is so skewered I couldn’t even be bothered to look at my wristwatch."
+    # "I might have spent 10 seconds, 5 minutes, an hour or a week inside this booth. I didn’t really care."
+    # "I slump down in the phone booth. My hand attempt to get out of this suffocating box but it doesn’t work."
+    # "The claws scratch and bang the window pane but it won’t break. I’m stuck in my tomb and I grasp for air."
+    # "Someone is strangling me and it looks like the devil itself has come to finish the job"
+    # "The dripping sweat has formed a puddle so I could bathe in my misdeeds. I try to puff my guiltiness away but my thoat shuts to keep it inside my chest."
+    # "I want it to stop but it burns so I inhale all the air around but it keeps coming back stronger."
+    # "Now the box wants me dead so the pane gets closer and closer. No matter how I push them back, it won’t stop, it won’t stop ; it wasn’t supposed to happen like this."
+    # "But then, I look up and there is no one ; the box has stopped shrinking down"
+    # "At some point, I manage to soothe my breathing down."
+
+    "You jog towards the deserted phone booth. You were excited about"
+
+    jump rest_area_2
+
+label rest_area_2:
 
     scene parkingLot 
     with fade
