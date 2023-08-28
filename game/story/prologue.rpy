@@ -675,7 +675,10 @@ label phone_booth:
 
     ga "Yeah, Juju, you were saying?"
 
-    ju "... I was saying, do you remember when we first got together? Your enthusiasm"
+    ju "... I was saying, do you remember when we first got together? Your enthusiasm didn't die down since. It's warming to the heart to witness."
+    
+    "When you first got together, huh? Yes you do remember, how could you not? It was a very special day after all. (finish sentence)"
+    "You weren't expecting it. One day, all of the sudden, when you were in high school, 
 
     
     
