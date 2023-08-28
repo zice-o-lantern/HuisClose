@@ -5,11 +5,12 @@
 
 define ch = Character("Charles", color="#26222cff")
 
-define am = Character("Ammon", color="#f0ee7b")
+define am = Character("Ammon", color="#f0ee7b", callback=ammon_noise)
 
 define n1 = Character(name=None, what_italic=True)
+define narrator = Character(name=None, what_italic=True, what_color="#39f7dc", callback=narrator_noise)
 
-define ga = Character("Gasperd", color="#454b41")
+define ga = Character("Gaspard", color="#454b41", callback=gap_noise)
 
 define ju = Character("Julie", color="#aa6aca")
 
