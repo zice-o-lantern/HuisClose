@@ -651,7 +651,10 @@ label phone_booth:
     # "But then, I look up and there is no one ; the box has stopped shrinking down"
     # "At some point, I manage to soothe my breathing down."
 
-    "You jog towards the deserted phone booth. You were excited about"
+    "You jog towards the deserted phone booth. You were excited about talking to her, your heart bounces from euphoria."
+    "Leaping over the door, you grab with a grand difficulty the knob, coudln't wait to penetrate into the dark cubicle."
+    "You turn an inconsiderate amount of times the handle, at last, the dore opens when you shove into it."
+    
 
     jump rest_area_2
 
