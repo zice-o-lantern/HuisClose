@@ -658,6 +658,7 @@ label phone_booth:
 
     "Leaned on the booth glass, you twist and twist frenetically the phone cord, and from times to times, you brush your whiskers. A low purring swell up you chest and you try to contain it."
 
+    ## TODO: Illustrate this scene with village
     "You really liked her, she’s a wonderful girl and you wonder everyday how your life would have played out, had she not been in your life at all. But you chase that thought rapidly as it always sets you in a desesperate state."
     "You are childhood friends and you were stuck together like hand in glove and never you has been seperated from her. She lived in your birth village, so you used to play together every day."
     "For some reason, she could stand your presence, contrary to most of your peers of your age. That made her a precious friend. She was always fond of your fantaisies and your games, you had a lot of them when you were young."
@@ -678,7 +679,7 @@ label phone_booth:
     ju "... I was saying, do you remember when we first got together? Your enthusiasm didn't die down since. It's warming to the heart to witness."
     
     "When you first got together, huh? Yes you do remember, how could you not? It was a very special day after all. (finish sentence)"
-    "You weren't expecting it. One day, all of the sudden, when you were in high school, 
+    "You weren't expecting it. One day, all of the sudden, when you were eating at the cafeteria of your high school, you were approached by her, bringing an tense air on her way"
 
     
     
