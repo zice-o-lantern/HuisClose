@@ -656,6 +656,8 @@ label phone_booth:
 
     ga "Yeah you are right..."
 
+    ju "You know, your attidude earlier reminded me of the time where we fisrt–"
+
     "Leaned on the booth glass, you twist and twist frenetically the phone cord, and from times to times, you brush your whiskers. A low purring swell up you chest and you try to contain it."
 
     ## TODO: Illustrate this scene with village
@@ -672,14 +674,116 @@ label phone_booth:
 
     ju "So um Gaspard, Gaspard, are you listening?"
 
-    "You wake up from your daydreaming, all of these memories coming back have had left you groggy and you are uncomfortably brought back to the current discussion, bitter as you wish to dwell more in your childhood."
+    "You wake up from your daydreaming, all of these memories have had left you groggy and you are uncomfortably brought back to the current discussion, bitter as you wish to dwell more in your childhood."
 
     ga "Yeah, Juju, you were saying?"
 
-    ju "... I was saying, do you remember when we first got together? Your enthusiasm didn't die down since. It's warming to the heart to witness."
+    ju "... I was saying, do you remember when we first got together? Your enthusiasm didn't die down since. It's warming to the heart to witness it."
     
-    "When you first got together, huh? Yes you do remember, how could you not? It was a very special day after all. (finish sentence)"
-    "You weren't expecting it. One day, all of the sudden, when you were eating at the cafeteria of your high school, you were approached by her, bringing an tense air on her way"
+    ## TODO: scene highschool?
+    "When you first got together, huh? Yes you do remember, how could you not? It was a very special day after all."
+    "You weren't expecting it. One day, you were eating at the cafeteria of your high school. The usual crowd of the cafeteria flew away for an event you surely were not interested in so there were not a lot of people left here."
+    "You tapped weakly at the food in front of you. not really hungry. The unusual quietness, although, helped you focus and take some bites into your plate, but no matter how much you tried, your plate remained, for the most part, untouched."
+    "At your left, Ammon was laying on his chair, his tummy hurting him. He defied you earlier to an eating contest. You had accepted meekly, by principle, you’d never refuse any challenge thrown at you by your favorite troublemaker."
+    "But you didn’t have the heart—nor the stomach—to follow him up on the challenge. You had been surprised at his dedication, this day we had been fed hachis parmentier and we both had taken double rations so it weighed a lot on his stomach."
+    "He was so full, his shirt couln’t hold his belly any more, so you could admire his belly button and the lump the food had formed in his insides. Trying to cheer him up, you rubbed his abdomen and you were met with a pleasant squishiness."
+    "You couldn’t stop so you kept on rubbing, hoping to appease him. To your disbelief, Ammon didn’t mind and he even let out some squeak of laughter and satisfaction."
+
+    ga "Heheh, what do you think it’s gonna be?"
+
+    "Confusion roses on Ammon’s face, still contorted by pain mixed with pleasure."
+
+    am "I–I thiiiink it’s go– gonna be what?"
+
+    "I look at his tummy "
+
+    ga "A boy or a girl?"
+
+    am "A–A gir– *Buuuurrurp* oh shut u–up man."
+
+    "Ammon continued to burp uncontrollably so you remove your hand off of him, all disgusted by the show he had put on. You were less eager than before to finish your food so you mulled on the table, leaned on it, disturbed."
+    "It started to worry you: Julie still had not come to the cafeteria, today. You three alaways ate together for lunch so you wondered where she could be. Usually, she was never late, so her absence left you concerned about her whereabouts."
+    "Perhaps, she went to the match happening during lunch but she wasn’t really into the high school sports and she would have told you, if she were. Then her class might take longer than expected. But again, you didn’t think that was it."
+
+    ga "I wonder where she is..."
+    "Said out loud, you were expecting that Ammon was going to help you, or at least say where she was, but no response as Ammon laid now seemingly unconscious on his chair."
+    "All of the sudden, Julie approached you, bringing in no food but an tense air on her way. It stressed you as she got closer to you."
+    "Julie standed shut fast on the floor, very anxious, not knowing where to place herself. Her tail coulnd’t stop shaking; the nervosity of the situation got to me making your tail moving out of your own."
+    ## TODO: add Julie sprite?
+    ju "Hi Gap..."
+
+    ga "Hi Juju... Why are you late, what’s going on? Do you want to tell me something?"
+
+    "Julie raised her head, shocked, like she had been unmasked, as the end grew nearer with every second passing."
+
+    ju "Huh, what do you mean?"
+
+    ga "You’re all nervous. I never saw you like that. Did you break my stuff?"
+
+    ju "No I did not!! {w}Oh hi Ammon..."
+
+    "She finally noticed Ammon and his thick tummy. Hopeless at the scenery she was beholding, she ignored him and retuned her attention te me."
+
+    ju "Please let me finish, Gap."
+
+    "Sensing the seriousness of the situation, you laid down your tableware and looked at her in the eyes. You estimated that she needed your full attention, given the rarity of all this"
+    "The disheartened fox clasped her hands together, breathing in, trying to gather all the courage needed for the tremendous act she was about to do. She lingers here for a time wether she had made the right choice." 
+    "Not able to help her at this moment, you let her be. She had a lot on her mind and you see strands of doubt, confusion and determination twitching at the corner of her long snout."
+    "She rubs her eyelids one last time and Resolve rosed in her eyes, determined to get done with it."
+    
+    ju "You know, how we have been friend for a very long time, now, Gappy?"
+
+    ga "Yes I do?"
+
+    ju "Well I am really happy with our friendship right now, how you always have been there for me."
+
+    ga "And you always have been there for me! No need to sweat it o–"
+
+    ju "Just a second please...{w} What I meant to say is that you are a wonderful person and I enjoy every moment I spend with you."
+
+    "Ammon slowly raises from the dead, lending an interested ear to where the discussion was leading. In your heart, you knew where it was going and he knew too. You gaze at Julie, that day was supposed to be"
+
+    ju "But lately, I have felt a change inside me. I want to spend more time with you, I want to be closer to you. Closer than our current bond."
+    ju "Those last years, I’ve come to long for a more intimate relatinoship with you, something Friendship can’t offer. Those last months, I’ve been pondering the question."
+    ju "Is it really right? Do I need a closer relationship than what we have right now. Then I realised."
+
+    "While she pronounced all of that, she teared her dress down nervously, helping her to stay calm, at the gravity of what she showed to you. But her composure broke once her eyes met yours."
+    "Her face began to turn pinkish so she turned around, breaking the eye contact with you, making you unable to observe her facial features anymore. Your pierceful gaze caused her to get embarassed and she turned to prevent your gaze to reach her."
+    "Ammon at this point, was fully alert, listeninn on her every words, every sounds leaving her mouth, every finger movement, every anxious tics."
+    "You must have had put too much pressure on her because she yellep the next sentence."
+
+    ju "Stop staring at me!! You’re making me anxious. Fine! What I mean is..."
+    ju "I can’t go like this any longer. I need to know. I’m sure if I don’t have the response I want, I’m sure we will be able to go back at how things were."
+    ju "So... I wanted to know, if those feelings are reprocical and if you want to explore and figure out those feelings with me then I’d be really happy... What I really mean is:–"
+
+    "She clenched her dress hard, not wanting to let go her only last support with her. Ammon and you were both suspended at her lips waiting for her next actions. Is it really what you think it is?"
+
+    ju "... Will you be my boyfriend..?"
+
+    "In this point of time, something clicked within you. All of your relatives didn’t stop repeating to to you that Julie and you would make such a great couple. You never thought much of it, she was your closest friend, not a lover."
+    "But now that Julie thought so too, you pondered. How stupid of you to not have thought about it! It’s only natural and logical you’d end up together. You are a boy and a girl and you are so close to each other. Of course it has to be"
+    "Once the epiphany rushed through you head, you knew what to do. Julie is such a great person, she’s smart, she’s creative you want to be with her your entire life; and if being a couple meant that, then you’ll wholeheartedly agree to it."
+    "You dash to her and take her in your arms, in a loving embrace that can only mean one thing, and only one answer possible but can’t help it but say it aloud."
+
+    scene phone_booth with dissolve
+
+    ju "I’ll always remember what you said..."
+
+    # scene highschool
+
+    "Gaspard + Julie" "Of course, I’ll be your boyfriend! Why did we not do that sooner!"
+
+    am "I think I need to vomit..."
+
+    "Ammon abruptly stood up and rushed to the toilets."
+
+    scene phone_booth with dissolve
+
+    ga "I had to check up on him that day too... He shouldn’t have eaten that much."
+
+    ju "Actually Gappounet... I am the one who went check up on him, I made you stay at the table to keep guard of our stuff."
+
+    "A sense of discomfort and awkwardess emanates from Julie’s words like you were opening matryosshka dolls you shouldn’t have. She had to witness him bathing in his vomit after all. You wouldn’t want to be the one that had go that day."
 
     
     
