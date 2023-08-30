@@ -910,8 +910,9 @@ label phone_booth:
 
             ga "Juju, are you there? I can’t hear you anymore. Are you busy, I can call later if you want."
             
-            ju "No, no, I’m here."
-        
+            ju "No, no, I’m here. No need to call later, I'm alright."
+            
+            "You sense something in her voice, something she hides pretry well in her tone but you feel it nonetheless. Bittersweetness"
         "He’s been nice with me but his tricks are really bothering me" if ammon_score >= 2:
             ju "I had expected that much with you two"
         
