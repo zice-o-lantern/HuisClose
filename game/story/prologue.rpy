@@ -921,6 +921,7 @@ label phone_booth:
         
         "I wish you were with me, not him":
             ju "...Really?"
+    ga "Why is that? Have you noticed something has changed within me lately? what do you mean? I don't feel any different"
 
     
     
