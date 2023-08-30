@@ -888,7 +888,7 @@ label phone_booth:
 
     ju "Sure Gappounet."
     ju "Anything worthy telling me about him?"
-
+    
     menu what_do_you_think_of_ammon:
 
         "I’m having a great time with him and I love it" if ammon_score >= 2:
@@ -912,7 +912,7 @@ label phone_booth:
             
             ju "No, no, I’m here. No need to call later, I'm alright."
             
-            "You sense something in her voice, something she hides pretry well in her tone but you feel it nonetheless. Bittersweetness"
+            "You sense something in her voice, something she hides pretty well in her tone but you feel it nonetheless. Bittersweetness mixed Regret twirl into a gigantic conceiled typhon, menacing to break out every second her mouth stays shut."
         "He’s been nice with me but his tricks are really bothering me" if ammon_score >= 2:
             ju "I had expected that much with you two"
         
@@ -921,10 +921,25 @@ label phone_booth:
         
         "I wish you were with me, not him":
             ju "...Really?"
-    ga "Why is that? Have you noticed something has changed within me lately? what do you mean? I don't feel any different"
+    ga "Why is that? Have you noticed something has changed within me lately? what do you mean? I don't feel any different. I don’t act any different. I don’t look any different. I still have my four limbs."
 
-    
-    
+    ju "Ok Gaspard, that’s very good but I’m not talking about that. I’m talking about your behaviour lately."
+
+    "She sounds concerned. Have you been that out of it lately. You must admit that you had your up and down like everyone but you don’t consider it a matter to be discussed. At most, you felt a bit tired from the pressure but that’s all."
+    "She waits for your answer, expecting a thorough justification. You don’t have one. You’re utterly confused. You scratch the back of your head, hoping something will come out, but nothing. Only oblivion and the dark void."
+
+    ga "I genuinely don’t know what you’re talking about. I don’t recall anything noteworthy that happened earlier. Everything’s fine, alright?"
+
+    ju "For Jesus Christ, Gap?! Are you for real, Gap??? You’ve been rolling in your bed sheets all day long 13 days straight and you say to my face that everything’s fine?!! THAT YOU DON’T RECALL ANYTHING??"
+
+    "A burst of voice surges through the phone and you almost drop it. You regain composure. She is rarely mad at you and this time you don’t have a clue what may have released her wrath. You panick. What happened, for Jesus’ sake? You dig through you mind."
+    "Nothing. Just nothing. You’d be satisfied to just see a grain of sand in a sea of nothingness but you won’t even get that satisfaction. You’re in the void, your head absent, beholding a black box. You open it. Even more void. You’re afraid. You shouldn’t go deeper"
+    "You hand’s wet. Every second, you are to the point of letting it slip. You sweat profusely and you wipe, wipe, wipe and wipe but you can’t fight against the downfall of your mind, wrecking havoc on every light of your soul. You fall silent. Who are you."
+
+    ju "Gaspard! please answer to me, why are you like that?? I want to help you but I can’t do anything if you keep shutting me out!! Even, I say, shutting us out!!! Your mom is dead sick’ worried for you, don’t you see??"
+    ju "You really want me to remind you what eveything that had been on my mind lately? You do, don’t you? If you really don’t know maybe that’ll help refresh your damn mind!"
+
+
 
     jump rest_area_2
 
