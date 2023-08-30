@@ -901,8 +901,16 @@ label phone_booth:
             ju "I’m sure of it yeah."
 
             ga "Well not a lot, he shaked me as I was driving, he tickled me while I was driving, he licked himself to prove his point. I think... Ahah Ammon is such a mystery to me, I can’t wrap my head around him."
-            ga "One day, he’ll push me off in cliff filled with poisonous thorns and he’ll be laughing his ass off like the hyena and the other day, he’ll try to cheer me up by doing stupid stuff to ma’e me laugh and you know what? I don’t mind."
-            ga "This duality of him is very exciting and I’ll hope that I’ll go on more trips with him like that. "
+            ga "One day, he’ll push me off in cliff filled with poisonous thorns and he’ll be laughing his ass off like the hyena and the other day, he’ll try to cheer me up by doing stupid stuff to make me laugh and you know what? I don’t mind."
+            ga "It’s been so long he’s like that. Ever since we met him. It has become a charm of him. He swings the other way on a whim and this is a bit exciting. What would be our life without him, I wonder."
+
+            "A grin draws itself on your face as you talk all over the board about him, and eagerness and excitement dwell in your heat and it pump them through all your veins. You can’t hide it anymore and you ponder hou’ve come to be like that about him."
+            "He’s a really wonderful friend, you think, while you squeeze shut the receiver."
+            "But you sense something is amiss. A voice that should be there disappaered. Your chest tightens from the spleen sliding down your throat, burning it on its way."
+
+            ga "Juju, are you there? I can’t hear you anymore. Are you busy, I can call later if you want."
+            
+            ju "No, no, I’m here."
         
         "He’s been nice with me but his tricks are really bothering me" if ammon_score >= 2:
             ju "I had expected that much with you two"
