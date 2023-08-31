@@ -953,7 +953,9 @@ label phone_booth:
     
     ga "Please.... stop"
 
-    ju " Ohoohoh I sure won't stop, Gaspard Danbois. I {w=1.0}AM {w}FED UP. I won't stop until I'm finished. You will answer to my questions, Gaspard and you won't be able to avoid it."
+    ju " Ohoohoh I sure won't stop, Gaspard Danbois. I {w=1.0}AM {w}FED UP. I won't stop until I'm finished. You will answer to my questions, Gaspard and you won't be able to esacpe forever."
+    ju "We covered for you, we never asked any questions, we didn't want to put pressure on you. We let you breathe, rest, mourn, or even hell, agonize. But one day or sooner, you'll have to tell us what happened and I'm sick of not knowing the truth."
+    ju "So tell me Gaspard. What happened, last month, September Friday the 13th?"
     
 
 
