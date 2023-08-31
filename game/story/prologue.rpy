@@ -938,8 +938,11 @@ label phone_booth:
 
     ju "Gaspard! please answer to me, why are you like that?? I want to help you but I can’t do anything if you keep shutting me out!! Even, I say, shutting us out!!! Your mom is dead sick’ worried for you, don’t you see??"
     ju "It's this bad hub? You really don't remember? You really want me to remind you what eveything that had been on pur mind lately? You do, don’t you? Maybe that’ll help refresh your damn mind!"
-    ju "You are failing your PhD. You are failing your classes. You haven't been to any classes for a month. Whenever I go to college, teaWhere were you, you wonder then? You were at home, in your bedroom, either sitting or laying down on your bed, vacant, empty eyes. We would prod at you, implore you, to respond to us, something, anything."
-    
+    ju "You are failing your PhD. You are failing your classes. You haven't been to any classes for a month. Whenever I go to college, teachers ask me \"Where is Gaspard?\" \"Where is he? Why ins't he coming anymore? He's such a brilliant student though...\" 
+    ju "Where were you, you wonder then? You were at home, in your bedroom, either sitting or laying down on your bed, vacant, empty eyes. Your mom couldn't stand to see you like that anymore so she called Ammon and I to cheer you up. We would prod at you, implore you, to respond to us, something, anything."
+    ju "You'd rarely say one word or two, when you weren't too occupied at staring at the void, mumbling, muttering low and weak sentences that you and only you could understand. Once I tried to listen to the thread of words leaving your mouth, carefully, afraid to let it slip out of my ears. Literal nonsense."
+    ju "Just nonsense. Absolute nonsense. That's what you were this month: a lifeless puppet whose strings have been cut by his own dubious master."
+    ju "No, Gaspard, not everything's fine. It sure hasn't"
 
 
 
