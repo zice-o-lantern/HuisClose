@@ -937,7 +937,9 @@ label phone_booth:
     "You hand’s wet. Every second, you are to the point of letting it slip. You sweat profusely and you wipe, wipe, wipe and wipe but you can’t fight against the downfall of your mind, wrecking havoc on every light of your soul. You fall silent. Who are you."
 
     ju "Gaspard! please answer to me, why are you like that?? I want to help you but I can’t do anything if you keep shutting me out!! Even, I say, shutting us out!!! Your mom is dead sick’ worried for you, don’t you see??"
-    ju "You really want me to remind you what eveything that had been on my mind lately? You do, don’t you? If you really don’t know maybe that’ll help refresh your damn mind!"
+    ju "It's this bad hub? You really don't remember? You really want me to remind you what eveything that had been on pur mind lately? You do, don’t you? Maybe that’ll help refresh your damn mind!"
+    ju "You are failing your PhD. You are failing your classes. You haven't been to any classes for a month. Whenever I go to college, teaWhere were you, you wonder then? You were at home, in your bedroom, either sitting or laying down on your bed, vacant, empty eyes. We would prod at you, implore you, to respond to us, something, anything."
+    
 
 
 
