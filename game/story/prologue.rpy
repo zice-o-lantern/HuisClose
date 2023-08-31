@@ -704,10 +704,13 @@ label phone_booth:
 
     ga "Well apparently, they started to install phone booths on rest areas over the roads. Isn’t it amazing? Some day, I’ll be able to find phone booths everywhere and to call you anytime I want!"
     ga "Imagine all of the possibilities! One day, maybe, we’ll truly never be apart. This is really wonderful! Technology is going so fast! Everything is going so fast!"
+    
+    "For a very enigmatic reason, your passion for latest high-tech overhauled your usual gloominess and you find yourself very eager to indulge yourself in this pit of wonders, dreaming for the future of all living beings."
+
     ga "Imagine for a second, how the americans reached the moon, {cps=120.0}how we will in the future be able to travel to space {cps=150.0}and also how we will be able to even eat without opening the mouth."
     ga "{cps=200}don’tyouthinkit’sfantasticsometimesyouthinkwowtechnolgyandallh\nowrapiditwillreachveryhighstandads??it’sreallywonderfulwhenyouthinkaboutitIwanttoneverdietowitnessthis{nw}"
 
-    "You couldn’t hold my excitation anymore. The words leaving from your mouth were forming before your brain could even process the information you were spilling out at her. Your speaknig functions were not functioning anymore."
+    "You couldn’t hold my excitation anymore. The words leaving from your mouth were forming before your brain could even process the information you were spilling out at her. Your speaking functions were not functioning anymore."
 
     ju "Gap, Calm down! Calm down. You’re going to choke on your own words. Take a breath ok? Breathe with me, alright? At the count of three you’ll breathe out, ok?"
 
@@ -941,9 +944,17 @@ label phone_booth:
     ju "You are failing your PhD. You are failing your classes. You haven't been to any classes for a month. Whenever I go to college, teachers ask me \"Where is Gaspard?\" \"Where is he? Why ins't he coming anymore? He's such a brilliant student though...\" 
     ju "Where were you, you wonder then? You were at home, in your bedroom, either sitting or laying down on your bed, vacant, empty eyes. Your mom couldn't stand to see you like that anymore so she called Ammon and I to cheer you up. We would prod at you, implore you, to respond to us, something, anything."
     ju "You'd rarely say one word or two, when you weren't too occupied at staring at the void, mumbling, muttering low and weak sentences that you and only you could understand. Once I tried to listen to the thread of words leaving your mouth, carefully, afraid to let it slip out of my ears. Literal nonsense."
-    ju "Just nonsense. Absolute nonsense. That's what you were this month: a lifeless puppet whose strings have been cut by his own dubious master."
-    ju "No, Gaspard, not everything's fine. It sure hasn't"
+    ju "Just nonsense. Absolute nonsense. That's what you were this month: a lifeless puppet whose strings have been cut by his own dubious master. In short but tense spans of time, I look in the eyes and I see a ocean of darkness, void, nothingness, emptiness, torpor, lethargy and... Apathy. Sometimes I get scared of you."
+    ju "No, Gaspard, not everything's fine. It sure hasn't been lately. Everyone has been worried about you. It's not at random that Ammon picked you to go with him at Paris. He wants to help you go better. So please, help me, Gaspard... Please Gap, will you let me help you? Will you tell me what happened last month"
+    
+    ga "Last... Month?"
+    
+    "I asked confused. everything she says, you can't hear it. More Accurately, you can hear her perfectly but you refuse to hear it. The black box should never be opened and every attempt sends a throb trough your brain. You head hurts. You seethe. Please stop. Please stop, you can't take it anymore."
+    
+    ga "Please.... stop"
 
+    ju " Ohoohoh I sure won't stop, Gaspard Danbois. I {w=1.0}AM {w}FED UP. I won't stop until I'm finished. You will answer to my questions, Gaspard and you won't be able to avoid it."
+    
 
 
     jump rest_area_2
