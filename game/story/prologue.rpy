@@ -672,11 +672,11 @@ label phone_booth:
 
     play music "audio/music/night_sky.mp3" fadein 1.0 loop
 
-    "You jog towards the deserted phone booth. You were excited about talking to her, your heart bounces from euphoria."
-    "Leaping over the door, you grab with a grand difficulty the knob, not being able to wait any longer to penetrate into the dark cubicle."
+    "You jog towards the deserted phone booth. You hurry yourself to talk to her, to get it done."
+    "Dragging yourself the door, you grab with a grand difficulty the handle, not being able to find the motivation to penetrate into the dark cubicle."
     "You turn an inconsiderate amount of times the handle, at last, the dore opens when you shove into it."
     "You mustn’t be in the right mindset to not notice that pulling a thousand times a door will not work on the 1001th time."
-    "But you couldn’t give more than a care, your enthusiasm peaking at its highest as you finally set paw in the somber void, pierced by rays of declining sunlight."
+    "But you couldn’t give more than a care, your gloominess peaking at its highest as you finally set paw in the somber void, pierced by rays of declining sunlight."
     "Blind, by the low current luminosity of the place, you put a considerate time to even find the phone."
     "On the phone box, on a little sign at the bottom of it, it is written \"10 francs for 10 minutes!\" You think the sign bargains a fair deal to you."
     "You search your pockets looking for coins and you find one of 10 francs. Although you are not looking for long as you grab on a well—placed one. The coin has presended itself in your pocket in convenient circumstances you can’t explain."
