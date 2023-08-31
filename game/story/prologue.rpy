@@ -957,6 +957,8 @@ label phone_booth:
     ju "We covered for you, we never asked any questions, we didn't want to put pressure on you. We let you breathe, rest, mourn, or even hell, agonize. But one day or sooner, you'll have to tell us what happened and I'm sick of not knowing the truth."
     ju "So tell me Gaspard. What happened, last month, September Friday the 13th?"
     
+    "You panick even more. Friday the 13th, it hits a bell, a nefarious bell, a bell from hell. You realise. The box tightens even more. What happened that day must remain secret at all cost.
+    
 
 
     jump rest_area_2
