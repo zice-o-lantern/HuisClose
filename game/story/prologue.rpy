@@ -941,7 +941,7 @@ label phone_booth:
 
     ju "Gaspard! please answer to me, why are you like that?? I want to help you but I can’t do anything if you keep shutting me out!! Even, I say, shutting us out!!! Your mom is dead sick’ worried for you, don’t you see??"
     ju "It's this bad hub? You really don't remember? You really want me to remind you what eveything that had been on pur mind lately? You do, don’t you? Maybe that’ll help refresh your damn mind!"
-    ju "You are failing your PhD. You are failing your classes. You haven't been to any classes for a month. Whenever I go to college, teachers ask me \"Where is Gaspard?\" \"Where is he? Why ins't he coming anymore? He's such a brilliant student though...\" 
+    ju "You are failing your PhD. You are failing your classes. You haven't been to any classes for a month. Whenever I go to college, teachers ask me \"Where is Gaspard?\" \"Where is he? Why ins't he coming anymore? He's such a brilliant student though...\"" 
     ju "Where were you, you wonder then? You were at home, in your bedroom, either sitting or laying down on your bed, vacant, empty eyes. Your mom couldn't stand to see you like that anymore so she called Ammon and I to cheer you up. We would prod at you, implore you, to respond to us, something, anything."
     ju "You'd rarely say one word or two, when you weren't too occupied at staring at the void, mumbling, muttering low and weak sentences that you and only you could understand. Once I tried to listen to the thread of words leaving your mouth, carefully, afraid to let it slip out of my ears. Literal nonsense."
     ju "Just nonsense. Absolute nonsense. That's what you were this month: a lifeless puppet whose strings have been cut by his own dubious master. In short but tense spans of time, I look in the eyes and I see a ocean of darkness, void, nothingness, emptiness, torpor, lethargy and... Apathy. Sometimes I get scared of you."
@@ -967,10 +967,28 @@ label phone_booth:
     "The deluge of your body flows down on your sweaty palms. Your shaky hands tremble like a sinner to Judgment day. Your god with a disembodied voice continues to yell at you for what you have done and won't forgive you."
     "The phone slips out out of your hands and falls down; thus, its thud echoes heavily in the booth. You pick it up hastily and shove it into your by fear to annoy the Bringer of your Retributions, you are scared of it, you are scared of your Judgment, you are scared of the Truth."
     
-    ju "Don't you dare to try and slip away. If not today, I'll make you spill out on way or another, just wait for it."
+    ju "Don't you dare to try and slip away. If not today, I'll make you spill out on way or another, just wait for it. That could be today, but that could be tomorrow or after tomorrow or a week or a year, just wait for me."
     ju "I'll be more precise then, if you can't tell that much... Were you at home, this day? Just tell me please, it'll be faster that way."
     
-    "Yes you were at home, you can tell that much, you were preparing for a party, what type of party, you'll have to prod a bit more. 
+    "Yes you were at home, you can tell that much, you were preparing for a party, what type of party, you'll have to prod a bit more. You remember what it was, it was a birthday party, although you don’t remember who it was for, it should’ve been of your relatives surely."
+
+    ga "Yes I was at home I think... But I don’t know any more than that, I swear!"
+
+    ju "Ok then let me ask you another question: Someone ringed at your doorbell. Your mom told me she was going for to answer it but you’ve been faster than her so she let you alone. When she wanted to ask who it was, you were gone of the house."
+    ju "Gone, she said. Not went somewhere and come back. Not hidden out of her sight but gone! She went looking everywhere for you and she even had to ask Ammon and me to help her. So I think we deserve an explanation."
+    ju "Where were you that day? Who was it at the door step that make you go go missing? Don’t you think it’s really weird and out of place, Gaspard?"
+
+    "The stepdoor, the stepdoor, who was on the stepdoor. Everything is so blurry, and you can help but look deeper whereas your inner sense of danger always warned you."
+    "Crack. Something broke out within you. The box, it’s opened. You remember. The one at the stepdoor, it was your Father."
+
+    ga "Shut up."
+    
+    "You can’t stand up anymore. A fiery fever has taken over you. Your view blurs itself, and you trip. Hunched back on the phone booth, you can’t stop your accelerating breath. You have lost control of it. This is tot late. It’s coming."
+    "The walls of the cubicle close on you, pressing you. The previous cold air in the place flee at the increasing pression. Breathing in here is pain all accross your lungs and the heat rises considerably. Steam roses of your red cheeks and you huff to no end, pleading the air to come back. But it never came."
+    "The hot oven you are shut in heat up more and more, to your death. No matter how much you plead. No matter how much you apologise. No matter the value of your guiltiness, you’ll die in the fire of Hell and the Truth will come out."
+    
+    ju "×××××××××××××××××××××××"
+
 
 
     jump rest_area_2
