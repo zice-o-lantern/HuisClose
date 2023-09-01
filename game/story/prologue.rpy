@@ -965,8 +965,10 @@ label phone_booth:
     ju "I am sick of you with your \"I don't know\" \"I don't know\"! You lie to me as you breathe! You do know and I will get the truth about that day."
 
     "The deluge of your body flows down on your sweaty palms. Your shaky hands tremble like a sinner to Judgment day. Your god with a disembodied voice continues to yell at you for what you have done and won't forgive you."
-    "The phone slips out out of your hands and falls down and its thud echoes heavily in the booth. You pick it up hastily and shove it into your by fear to annoy the Bringer of your Retributions, you are scared of it, you are scared of your Judgment, you are scared of the Truth."
+    "The phone slips out out of your hands and falls down; thus, its thud echoes heavily in the booth. You pick it up hastily and shove it into your by fear to annoy the Bringer of your Retributions, you are scared of it, you are scared of your Judgment, you are scared of the Truth."
     
+    ju "Don't you dare to try and slip away. If not today, I'll make you spill out on way or another, just wait for it."
+    ju "I'll be more precise then, if you can't tell that much... Were you at home, this day? Just tell me please, it'll be faster that way."
 
 
     jump rest_area_2
