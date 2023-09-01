@@ -979,13 +979,21 @@ label phone_booth:
     ju "Where were you that day? Who was it at the door step that make you go go missing? Don’t you think it’s really weird and out of place, Gaspard?"
 
     "The stepdoor, the stepdoor, who was on the stepdoor. Everything is so blurry, and you can help but look deeper whereas your inner sense of danger always warned you."
-    "Crack. Something broke out within you. The box, it’s opened. You remember. The one at the stepdoor, it was your Father."
+    "Crack. Something broke out within you. The box, it’s opened. You remember."
 
     ga "Shut up."
     
     "You can’t stand up anymore. A fiery fever has taken over you. Your view blurs itself, and you trip. Hunched back on the phone booth, you can’t stop your accelerating breath. You have lost control of it. This is tot late. It’s coming."
     "The walls of the cubicle close on you, pressing you. The previous cold air in the place flee at the increasing pression. Breathing in here is pain all accross your lungs and the heat rises considerably. Steam roses of your red cheeks and you huff to no end, pleading the air to come back. But it never came."
     "The hot oven you are shut in heat up more and more, to your death. No matter how much you plead. No matter how much you apologise. No matter the value of your guiltiness, you’ll die in the fire of Hell and the Truth will come out."
+    
+    ju "Don't you tell me to shut up. Answer to me, Gaspard? Who was it?!"
+    
+    ga "Shut up, shut up!"
+    
+    ju "It was your father, wasn't 
+    
+    "The one at the stepdoor, yes it was."
     
     ju "×××××××××××××××××××××××"
 
