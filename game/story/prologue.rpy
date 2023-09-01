@@ -957,7 +957,15 @@ label phone_booth:
     ju "We covered for you, we never asked any questions, we didn't want to put pressure on you. We let you breathe, rest, mourn, or even hell, agonize. But one day or sooner, you'll have to tell us what happened and I'm sick of not knowing the truth."
     ju "So tell me Gaspard. What happened, last month, September Friday the 13th?"
     
-    "You panick even more. Friday the 13th, it hits a bell, a nefarious bell, a bell from hell. You realise. The box tightens even more. What happened that day must remain secret at all cost.
+    "You panick even more. Friday the 13th, it hits a bell, a nefarious bell, a bell from hell. You realise. The box tightens even more. What happened that day must remain secret at all cost. She mustn't go further in her crusade of questioning. You ought to make her shut her or you don't know what may become of you."
+    "She represents a menace to your tranquility. Your Apathy."
+    
+    ga "I tell you and tell you, I don't know! How many times do I have to tell you?!! I don't know, I don't know and I still don't know! How that goes for you!"
+    
+    ju "I am sick of you with your \"I don't know\" \"I don't know\"! You lie to me as you breathe! You do know and I will get the truth about that day."
+
+    "The deluge of your body flows down on your sweaty palms. Your shaky hands tremble like a sinner to Judgment day. Your god with a disembodied voice continues to yell at you for what you have done and won't forgive you."
+    "The phone slips out out of your hands and falls down and its thud echoes heavily in the booth. You pick it up hastily and shove it into your by fear to annoy the Bringer of your Retributions, you are scared of it, you are scared of your Judgment, you are scared of the Truth."
     
 
 
