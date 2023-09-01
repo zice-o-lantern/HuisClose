@@ -904,6 +904,7 @@ label phone_booth:
             ju "I’m sure of it yeah."
 
             ga "Well not a lot, he shaked me as I was driving, he tickled me while I was driving, he licked himself to prove his point. I think... Ahah Ammon is such a mystery to me, I can’t wrap my head around him."
+            ga "Can you believe he fucking tickled me while I was driving? But don’t"
             ga "One day, he’ll push me off in cliff filled with poisonous thorns and he’ll be laughing his ass off like the hyena and the other day, he’ll try to cheer me up by doing stupid stuff to make me laugh and you know what? I don’t mind."
             ga "It’s been so long he’s like that. Ever since we met him. It has become a charm of him. He swings the other way on a whim and this is a bit exciting. What would be our life without him, I wonder."
 
@@ -916,6 +917,14 @@ label phone_booth:
             ju "No, no, I’m here. No need to call later, I'm alright."
             
             "You sense something in her voice, something she hides pretty well in her tone but you feel it nonetheless. Bittersweetness mixed Regret twirl into a gigantic conceiled typhon, menacing to break out every second her mouth stays shut."
+
+            ga "Juju... Are you regretting you could not have come with us?"
+
+            ju "It’s just... It’s been so long that you hadn’t that good friends, ahah... It makes me a bit jealous I’ll have to admit ahah."
+
+            ga "Oh really..."
+
+            ju "Besides it’s also been so long since I haven’t seen you that lively, that happy."
         "He’s been nice with me but his tricks are really bothering me" if ammon_score >= 2:
             ju "I had expected that much with you two"
         
@@ -983,7 +992,7 @@ label phone_booth:
 
     ga "Shut up."
     
-    "You can’t stand up anymore. A fiery fever has taken over you. Your view blurs itself, and you trip. Hunched back on the phone booth, you can’t stop your accelerating breath. You have lost control of it. This is tot late. It’s coming."
+    "You can’t stand up anymore. A fiery fever takes over you. Your view blurs itself, and you trip. Hunched back on the phone booth, you can’t stop your accelerating breath. You have lost control of it. This is tot late. It’s coming."
     "The walls of the cubicle close on you, pressing you. The previous cold air in the place flee at the increasing pression. Breathing in here is pain all accross your lungs and the heat rises considerably. Steam roses of your red cheeks and you huff to no end, pleading the air to come back. But it never came."
     "The hot oven you are shut in heat up more and more, to your death. No matter how much you plead. No matter how much you apologise. No matter the value of your guiltiness, you’ll die in the fire of Hell and the Truth will come out."
     
@@ -993,19 +1002,32 @@ label phone_booth:
     
     ju "It was your father, wasn't it?"
     
-    "The one at the stepdoor, yes it was. He didn't even try to look after you. He left. He doesn't care about you. You doesn't care about him. You hate him."
+    "The one at the stepdoor, yes it was. He went missing. He didn't even try to look after you. He left. He doesn't care about you. You doesn't care about him. You hate him."
     "You followed him on the pavement. Did you follow him further? You think so. It doesn't matter. He shouldn't have come. He had to shut it. She has to shut it now. Shut it, shut it, shut it"
     
-    ju "Why do you meet up with him then we find him later around your house?"
+    ju "Why when you meet up with him, we find him later around your house?"
     
-    
-    ×××××××××××××××××××××××"
+    ga "Huh you found him?? You really found my father?"
+
+    ju "What do you mean we found him?? Of course, we found him. Don’t try to fool me, Gaspard, this is serious. I mean, we found you with him, numb, unresponsive, away..." 
+    "...After all, we found him ×××××××××××××××××××××××{nw}"
+
+    ga "No... No, shut up shut up, shut up, shut up, shut up, shut up"
+
+    ju "Gaspard?.. Are you alright? Maybe I pushed you too f–"
+
+    ga "Shut up. Shut it. Shut up, shut it, shut up, shut it, shut up shut it shut it shut up shut up shut up"
+    ga "SHUT THE FUCK UP"
+
+    "A loud crash echoes and resonates within the phone booth. Slumped down, you don’t move anymore. Your head’s empty but a shrill and piercing white noise in your ears. You’re clawed to the ground and won’t get anymore."
+    "When your bloodied vision sets back into focus, you observe with a dead eye the destroyed–to—thousand—pieces receiver on the ground, you come to wonder what has guided you to this point. You rise your hands at eye–level vision to watch the blood spill out of your hands." 
+    "What happened that has come to you bloodying them. {w} What happened Semptember Friday the 13th?"
 
 
 
     jump rest_area_2
 
-	label" rest_area_2:
+label rest_area_2:
 
     scene parkingLot 
     with fade
