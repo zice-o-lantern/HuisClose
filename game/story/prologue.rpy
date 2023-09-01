@@ -991,17 +991,21 @@ label phone_booth:
     
     ga "Shut up, shut up!"
     
-    ju "It was your father, wasn't 
+    ju "It was your father, wasn't it?"
     
-    "The one at the stepdoor, yes it was."
+    "The one at the stepdoor, yes it was. He didn't even try to look after you. He left. He doesn't care about you. You doesn't care about him. You hate him."
+    "You followed him on the pavement. Did you follow him further? You think so. It doesn't matter. He shouldn't have come. He had to shut it. She has to shut it now. Shut it, shut it, shut it"
     
-    ju "×××××××××××××××××××××××"
+    ju "Why do you meet up with him then we find him later around your house?"
+    
+    
+    ×××××××××××××××××××××××"
 
 
 
     jump rest_area_2
 
-label rest_area_2:
+	label" rest_area_2:
 
     scene parkingLot 
     with fade
