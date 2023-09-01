@@ -969,6 +969,8 @@ label phone_booth:
     
     ju "Don't you dare to try and slip away. If not today, I'll make you spill out on way or another, just wait for it."
     ju "I'll be more precise then, if you can't tell that much... Were you at home, this day? Just tell me please, it'll be faster that way."
+    
+    "Yes you were at home, you can tell that much, you were preparing for a party, what type of party, you'll have to prod a bit more. 
 
 
     jump rest_area_2
