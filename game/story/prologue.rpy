@@ -674,12 +674,25 @@ label rest_area_1:
             
             "Ammon wipes out his tears of laughter and approches, triumphing, over you. His wicked smile pierces his helmet as he hands you your helmet and reach a hand to you."
   
-            am "Okay you crybaby, keep whining all you want. But if you stay on the ground, you won't get anywhere, will you?"
+            am "Okay you crykitten, keep whining all you want. But if you stay on the ground, you won't get anywhere, will you?"
       
             "You grit your teeth as you clutch his hand. He carries you off the ground that you find yourself levitating. You often forget his undog force and that comforts as you can trust your dear friend."
         
         "I can do it on my own, no thanks":
             "you be prick"
+
+    "You scramble out of the grass and rush toward the rear mirror of the motorcycle to watch your face and check any scratches that might have landed there."
+    ## TODO: Illustration of gap looking in the mirror
+    "As you look into it, you behold a scrawny cat in his twenties, with a medium stature, not really delighted but a bit grumpy. You sigh. You would not to be a relative of this cat. Then you have to remember. It's you."
+    "Unfortunately you were not so lucky and your usual pure white–crystal hair face is tainted by some dirt and injuries. You lament yourself on your state. Other than your scratches, you don't look so good either."
+    "Your tired eyes look like you haven't slept for a week—and you might not have—as the dark rings under your eyes draw themselves on a too much big surface. You scrub them, however they remain unchanged and any try to make it go make clear that they won't go away."
+    "You check your red eye, swollen by the fatigue, you prod the inferior eyelid at it. The blood capillaries running through your green sclera. The unknown entity froming through those capillairies takes place of your eyeballs and look directly at you through them."
+    "It surveys you. It judges you. It's going to create problems for you as your intimacy is its too and will make what it wants about it. You are annoyed at it and even more you are scared of it."
+    "The newt moment, it disappears and you are then alone with your no better thoughts, still uncomfortable that someone might be watching you. Just a wrong step and you're done for. Don't ever misstep, you hear me? Not ever. You are a deviant and you know it.
+
+    am "Hum Gap, what are you looking at? You've been staring it for quite some time now."
+   
+    "Ammon tilts his head from the other side of the motorcycle to look at your reflection in the mirror, searching for the thing you've been looking at with a fierce intensity. Obviously he doesn't find it so he tilts back his head uninterested."
 
     "You rarely see phone boothes out in city so to find one in a rest area is even more incredible. Technology goes fast, you think, nowadays."
     
