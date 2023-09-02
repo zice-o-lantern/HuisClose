@@ -635,22 +635,40 @@ label rest_area_1:
     with fade
     play sound "audio/sounds/bird_chirping.ogg"
     
-    "The moto steers over on the parking lot."
-    "The wind has taken his liking over his liking over a blade of grass and a can of soda."
-    "With a lazy eye, I follow those lost souls. I hope for them that they'll find a place to rest."
-    "The trash passes in front of some restrooms, deserted of all life and not very well maintained." 
-    "The leaves fly, of trees that has seen more I could ever account for them into the breeze then onto the vast lands of grass."
-    "I clumsily stumble out of motorcycle and take a lot of time to get rid of my helmet"
-    "My huge ears are stuck in it and the motivation to get them ebb away to the shores of my mind."
-    "Eventually, Ammon, who had stripped away his helmet since a long time ago, notices me."
+    "The moto steers over on the parking lot. The wind has taken his liking over his liking over a blade of grass and a can of soda."
+    "With a lazy eye, you follow those lost souls. I hope for them that they'll find a place to rest. The trash passes in front of some restrooms, deserted of all life and not very well maintained." 
+    "The leaves fly, of trees that has seen more you could ever account for them into the breeze then onto the vast lands of grass."
+    "You clumsily stumble out of motorcycle and try to get rid of my helmet in vain"
+    "Your ears are stuck in it and the motivation to get them ebb away to the shores of your mind."
+    "Eventually, Ammon, who had stripped away his helmet since a long time ago, notices you."
 
     am "Do you want some help? You look like you're having a hard time."
 
     menu let_ammon_help_you:
         "Please, yes, can you help?":
             $ ammon_score += 1 
-            "Usually, it would’ve been the time where I deflect any sort of assistance and where after some trepident events, I would either succed the task or yield into the help."
-            "But I didn’t have the strength to struggle so I give in to Ammon."
+            "Usually, it would’ve been the time where you deflect any sort of assistance and where after some trepident events, you would either succed the task or yield into submission. So you lower your head and present it to Ammon."
+            ga "Alright, go on."
+            "You didn’t have the strength to struggle nor protest like the proud man you are so you give in to Ammon. His bulky hands grab the base of your helmet and his nails brush the tip of your neck hair, surprising you, not liking being touched."
+            "But him being the one doing it doesn't mind you interestingly. Nonetheless, he gets troubles too to rid your feline head of the helmet. He pulls harder and harder on you and the pain gradually increases and you don't see the end of it."
+            ga "Oh my god, Ammon, be softer!! Less harder! You're going to hurt me!"
+            
+            am "If you weren't so such tight!"
+            
+            ga "What did you say?!"
+
+            am "I said, if you didn't have a such tight helmet... And such a big head!"
+            
+            ga "You can talk with your long big snout!"
+            
+            am "If you don't stop talking right now, I'll pull your helmet off in any way possible, with or without your head."
+            
+            ga "Stop talking with your long snout and just do what you just said, we'll both be better off!"
+            
+            "For a moment Ammon still struggles to remove your helmet. The pain is really insufferable and you both pull like idiots trying to pull out Excalibur. You yell out of pain and he apologises hoarsely."
+            "At some point, you feel with your united combined effort, you have made a difference on the helmet and is ready to give in. Suddenly there's a pop and you fly out of the helmet on the grass rolling for a considerate amount of time."
+            "When your frenetic charge comes to stop"
+    
         
         "I can do it on my own, no thanks":
             "you be prick"
