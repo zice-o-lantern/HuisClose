@@ -667,7 +667,14 @@ label rest_area_1:
             
             "For a moment Ammon still struggles to remove your helmet. The pain is really insufferable and you both pull like idiots trying to pull out Excalibur. You yell out of pain and he apologises hoarsely."
             "At some point, you feel with your united combined effort, you have made a difference on the helmet and is ready to give in. Suddenly there's a pop and you fly out of the helmet on the grass rolling for a considerate amount of time."
-            "When your frenetic charge comes to stop"
+            "When your frenetic charge comes to stop, you cough out the dirt and the blades of grasses caught in your mouth. You shake up your head so your blood flows back in it. When you come back to your senses, you are met with a laughing dog unable to stop."
+            "His piercing laughter overwhelm your space and you get red of embarrassement irresistibly, despite you. You clutch the grass and pluck it out of rage. You throw some at him to make him shut its long snout trap that serves him as a mouth."
+            
+            ga "Oh my god, you irritating imbecile! I told you you shouldn't pull that hard! I'm all scratched and dirty now. I hate you, you hear me??"
+            
+            "Ammon wipes out his tears of laughter and approches, triumphing, over you. His wicked smile pierces his helmet"
+  
+            am "Okay you crybaby
     
         
         "I can do it on my own, no thanks":
