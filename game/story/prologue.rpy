@@ -672,20 +672,14 @@ label rest_area_1:
             
             ga "Oh my god, you irritating imbecile! I told you you shouldn't pull that hard! I'm all scratched and dirty now. I hate you, you hear me??"
             
-            "Ammon wipes out his tears of laughter and approches, triumphing, over you. His wicked smile pierces his helmet"
+            "Ammon wipes out his tears of laughter and approches, triumphing, over you. His wicked smile pierces his helmet as he hands you your helmet and reach a hand to you."
   
-            am "Okay you crybaby
-    
+            am "Okay you crybaby, keep whining all you want. But if you stay on the ground, you won't get anywhere, will you?"
+      
+            "You grit your teeth as you clutch his hand. He carries you off the ground that you find yourself levitating. You often forget his undog force and that comforts as you can trust your dear friend."
         
         "I can do it on my own, no thanks":
             "you be prick"
-        
-    ## TODO: REWRITE LATER AND ADD CHARA DESC
-
-    # "Ammon removes the helmet."
-    # "I notice a phone booth."
-    # am "Anyway, gonna pee, if you’ll excuse myself."
-    # ga "No problem, I’m gonna make a quick phone call."
 
     "You rarely see phone boothes out in city so to find one in a rest area is even more incredible. Technology goes fast, you think, nowadays."
     
