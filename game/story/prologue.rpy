@@ -886,11 +886,11 @@ label phone_booth:
 
     ga "Heheh, what do you think it’s gonna be?"
 
-    "Confusion roses on Ammon’s face, still contorted by pain mixed with pleasure."
+    "Confusion roses on Ammon’s face, still contorted by pain mixed with sootheness."
 
     am "I–I thiiiink it’s go– gonna be what?"
 
-    "I look at his tummy "
+    "I look at his tummy."
 
     ga "A boy or a girl?"
 
@@ -1015,7 +1015,7 @@ label phone_booth:
             ga "One day, he’ll push me off in cliff filled with poisonous thorns and he’ll be laughing his ass off like the hyena and the other day, he’ll try to cheer me up by doing stupid stuff to make me laugh and you know what? I don’t mind."
             ga "It’s been so long he’s like that. Ever since we met him. It has become a charm of him. He swings the other way on a whim and this is a bit exciting. What would be our life without him, I wonder."
 
-            "A grin draws itself on your face as you talk all over the board about him, and eagerness and excitement dwell in your heat and it pump them through all your veins. You can’t hide it anymore and you ponder hou’ve come to be like that about him."
+            "A grin draws itself on your face as you talk all over the board about him, and eagerness and excitement dwell in your heat and it pump them through all your veins. You can’t hide it anymore and you ponder you’ve come to be like that about him."
             "He’s a really wonderful friend, you think, while you squeeze shut the receiver."
             "But you sense something is amiss. A voice that should be there disappaered. Your chest tightens from the spleen sliding down your throat, burning it on its way."
 
@@ -1032,14 +1032,46 @@ label phone_booth:
             ga "Oh really..."
 
             ju "Besides it’s also been so long since I haven’t seen you that lively, that happy."
+
         "He’s been nice with me but his tricks are really bothering me" if ammon_score >= 2:
-            ju "I had expected that much with you two"
+            ju "I had expected that much with you two."
+            ju "I mean, I know you often expressed how you hate all of his antics, ahah."
+
+            ga "I do, can you tell him again that he stops his doing his little tricks? I’m really getting bored at his stuff. I’m going to have a headache."
+
+            ju "No I don’t think so, Gappounet."
+
+            ga "Huh?! What do you mean you don’t think so?? I’m not joking, stop saying that!!"
+
+            "Inconsciously, despite you and your attempts to stay calm, you stomp your feet on the ground hoping you can convey your annoyance through the phone."
+
+            ju "Exactly what I said. You don’t mind at all his pranks do you? You pester and seethe in the moment but you laugh with him in the end or you retaliate even harder."
+
+            ga "This is true..."
+
+            "You admit to yourself. You have been too hard on Ammon. Even though, it can be annoying at tines, you always find yourelf enjoying his games in the end."
+
+            ga "Alright, you are not wrong. I still partake in his tricks. I can’t help myself! His deameanor needs to be put back on place sometimes!"
+
+            "Julie chuckles loudly over the phone. Looks like your justification amuses her."
+
+            ju "I haven’t you seen that heated for so long."
+
+
         
         "I can tolerate him" if ammon_score >= 1:
             ga "He’s been supportable so far"
+
+            ju "Supportable you say? Don’t you have more things to say about him?"
+            
+            ga "What do you mean? He’s acting like usual. Pulling pranks on me and all. That’s been annoying so far but I can tolerate it?"
+
+            ju "You can tolerate it? I see you’re no different than your weird mood..."
         
         "I wish you were with me, not him":
             ju "...Really?"
+            ju "Wow that trip really hasn’t helped you change your weird mood..."
+            
     ga "Why is that? Have you noticed something has changed within me lately? what do you mean? I don't feel any different. I don’t act any different. I don’t look any different. I still have my four limbs."
 
     ju "Ok Gaspard, that’s very good but I’m not talking about that. I’m talking about your behaviour lately."
@@ -1047,7 +1079,10 @@ label phone_booth:
     "She sounds concerned. Have you been that out of it lately. You must admit that you had your up and down like everyone but you don’t consider it a matter to be discussed. At most, you felt a bit tired from the pressure but that’s all."
     "She waits for your answer, expecting a thorough justification. You don’t have one. You’re utterly confused. You scratch the back of your head, hoping something will come out, but nothing. Only oblivion and the dark void."
 
-    ga "I genuinely don’t know what you’re talking about. I don’t recall anything noteworthy that happened earlier. Everything’s fine, alright?"
+    ga "I genuinely don’t know what you’re talking about. I don’t recall anything noteworthy that happened earlier. Everything’s fine, alr–"
+
+    stop music
+    play music "audio/music/anger.mp3" 
 
     ju "For Jesus Christ, Gap?! Are you for real, Gap??? You’ve been rolling in your bed sheets all day long 13 days straight and you say to my face that everything’s fine?!! THAT YOU DON’T RECALL ANYTHING??"
 
@@ -1135,6 +1170,7 @@ label phone_booth:
     jump rest_area_2
 
 label rest_area_2:
+    stop music
 
     scene parkingLot 
     with fade
@@ -1181,80 +1217,7 @@ label rest_area_2:
 
     am "Well if you need anything, tell me huh? I ’ll always be there."
     
-    "He pats me on the shoulder."
-    # "In this moment, I wanted to embrace him, pour my heart out to him, open it so he can see all of its content,\nso he can finally unsterdand me, \nso he can finally see mo for who I am."
-    "Deep down, a little voice whispers to me \"Just open up\" \"What are you waiting for\" \"He won’t be always there for you\" and my arms move on their own towards the reassuring friend."
-    "A puddle of emotions rains down my throat and dwells deep in my stomach. Some butterflies care not to get close of it, fly away to not be seen again. All of a sudden, my limbs fall dead, the threads maintaining them alive and up, slashed through, unfairly."
-    "Nothing remains in my throat but a fragile cry and I mutter it."
-
-    ga "Ok."
-
-    "His message conveyed, he turns back and goes away, satsified."
-
-    ga "Thank you... Amo."
-
-    am "No problem, Gap"
-
-    "Some time passes and the tension in my clenched fists start to gradually loosen. Catching my breath has become easier and I am able to relax at this point."
-    "When I can discern at least discern my breathing out of my heartbeat, I observe the landscapes, happy that my surroundings are peaceful."
-    "I notice Ammon leaning against the bike, admiring too the sceneries. His look wanders over the horizon, maybe reaching for its end, leaping over the mountains and the clouds."
-    "He’s conviced that, if you look hard enough, you should find it no matter how much time you spent; I smile."
-    "I mull over the fact that I’ve been hard with Ammon. Maybe I put too much pressure on him. Lately, I do have a lot of tantrums. But I don’t know where it’s coming from."
-    "Every time I try to dig deeper, I am met with an impenetrable wall, high, very high like the Rappunzel tower, pleading me to get up but I find myself just standing there, not able to process what’s in front."
-    "I am scared of what’s over yonder that wall, what I could find.{w} Maybe that’s why it is so high…"
-    "Lost in thought, I realise Ammon has been looking at me, his back still in my view. He shivers a bit because of the cold air——it is starting to be late."
-    "Once gazes met, he wears for me a sad smile, meaning a thousand words and everything and the same time, I don’t get him."
-    "I wonder to what he really thinks about. His aspirations, his dreams? Behind that Iron mask I wish I could see his genuine smile more otften."
-    "Unfortunately, I know he doen’t open up to me that much. The key to his heart has been trampled on, stolen long ago by his relatives, and me unable to do anything about it." 
-    "I return the smile, trying to cheer him up, despite knowing it’s ineffective for the statue of stone there."
-    "By the time, my breathing stabilised and I feel the tiredness building up my spine, like the gravity inviting me to sleep on the comfortable ground."
-
-    am "Do you think you will be able to take back the road? You’re a bit sleepy."
     
-    ga "Right know, I don’t think so."
-
-    am "Alright, take some rest."
-
-    "I take his advice and sit on the grass, falling asleep."
-    ## TODO: Do a blink animation.
-    "But I jerk my eyes open when I hear a familiar sound in the vicinity of Ammon"
-    "He brings out a box of cigarettes out of his breast pocket and pulls one out."
-    "I eye it enviously, hopelessy searching for calming down, I forgot mine so I am happy that he still has some."
-
-    ga "Hey can I have a smoke?"
-
-    am "Sorry it’s my last one, gapgap."
-
-    ## NOTE: Maybe smooth the transition here, a bit abrupt
-
-    # "He shows me the inside of the box of cigarettes. Empty. It’s empty."
-    # "Gapgap..? Gapgap??? Why he’s calling me like that? I hate this nickname."
-    # "And what’s with him? He smokes like he breathes, I’m sure he has still some left and nonetheless here’s his response."
-    # "The heat of this affront climbs up my head and sweat steans off my hair."
-    # "My arms stiffen like rugged sturdy sticks, my fingers pressed against my palm that my claws makes it bleed."
-    # "Did he just lie?"
-    # "He’s lying. A damn liar. After all he’s just said, he dares to lie to me?"
-    # "I know he’s lying. He wouldn’t go to a trip without refilling his stock of cigarettes; he’s addicted to it."
-    # "I can see his shifty {b}guilty{/b} eyes avoid my mine."
-
-    am "What are you doing looking at me like that? You should’ve brought your own smokes."
-    
-    "A sip of smoke whisks away from his long dirty satisfied muzzle. He really thinks that I won’t do anything?"
-    "That’s it. I’m going to bust you up, Ammon. I’m going to make you pay for this affront. You well regret having the nerve to do that."
-    "All of the sudden, My throat feels like sandpaper. I’m thirsty. My revenge can wait."
-
-    ga "Ok, I’m going to look for a water bottle in the trunk."
-
-    # am "Wait I need to get a drink too."
-
-    # "Before I can stand up, he rushes towards the top—box and opens it."
-    # "I’m a bit curious if he’s going to get a bottle of water so I slowly get up and patiently observe him."
-    # "At first, I thought he was done with his task since I saw him grab something."
-    # "However, he now rummages in his stuff and sometimes pulls out some items like some photos, his wallet and on and on."
-    # "Confused, I question what he is really come to get but not until long, he closes the trunk and comes closer to me with a bottle of water in his hand."
-    # "I reach for the bottle but then——"
-    
-    # am "Oh sorry, it’s for me. I forgot to take one for you."
 
     "He’s really starting to get on my nerves."
     label restarea_pointnclick_start:
