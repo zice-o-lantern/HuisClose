@@ -640,7 +640,7 @@ label rest_area_1:
     "The leaves fly, of trees that has seen more you could ever account for them into the breeze then onto the vast lands of grass."
     "You clumsily stumble out of motorcycle and try to get rid of my helmet in vain"
     "Your ears are stuck in it and the motivation to get them ebb away to the shores of your mind."
-    "Eventually, Ammon, who had stripped away his helmet since a long time ago, notices you."
+    # "Eventually, Ammon, who had stripped away his helmet since a long time ago, notices you."
 
     am "Do you want some help? You look like you're having a hard time."
 
@@ -679,7 +679,31 @@ label rest_area_1:
             "You grit your teeth as you clutch his hand. He carries you off the ground that you find yourself levitating. You often forget his undog force and that comforts as you can trust your dear friend."
         
         "I can do it on my own, no thanks":
-            "you be prick"
+            "You don't need the help of that prick. You already did it without his help before, so why couldn't you do it again now... or did you?"
+            ga "I don't need your help. I can deal with it on my own."
+            
+            am "Alright... Suit yourself."
+            
+            "You don't wait for him to try removing yout helmet. However you are met with a very concerning issue: It really is stuck. No matter how much you pull or the angle you use, your ears won't budge so it won't come off."
+            "As you panick, you wiggle out in every directions possible, almost rushing in the motorcycle or Ammon, concerned by the show you're putting on."
+     
+            am "Are you sure you don't need any help? you sure look like so."
+
+            ga "I'm fine! I don't your help or anyone help! I'm going to do it alone like I used to!"
+            
+            am "Um, ok... I guess?"
+
+            "In your wrestle against the helmet, you keep spinning around until you get nauseated from the all over experience."
+            "By a thread of luck or misfortune, you manage to get rid of your helmet. However with all your dances and twirling, you lost sense of directions and you lose balance making you fall into the grass."
+            "When your frenetic charge comes to stop, you cough out the dirt and the blades of grasses caught in your mouth. You shake up your head so your blood flows back in it. When you come back to your senses, you are met with a laughing dog unable to stop."
+        
+            am "Deserved it, jackass."
+      
+            ga "What did you say?"
+ 
+            am "Nothing. Just get up. You won't get anywhere like this."
+            
+            "You get up. You rub your head out of pain and you can feel a nasty bump on your head. Maybe you should've asked for Ammon."
 
     "You scramble out of the grass and rush toward the rear mirror of the motorcycle to watch your face and check any scratches that might have landed there."
     ## TODO: Illustration of gap looking in the mirror
