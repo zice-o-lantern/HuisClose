@@ -694,6 +694,16 @@ label rest_area_1:
    
     "Ammon tilts his head from the other side of the motorcycle to look at your reflection in the mirror, searching for the thing you've been looking at with a fierce intensity. Obviously he doesn't find it so he tilts back his head uninterested."
 
+    am "You've got to stop looking at yourself like thar. You look like you are on the brink of murdering your wife."
+
+    "With this disturbing statement, Ammon goes on to get rid of his helmet. Realising he has got some points, you cut off your sight from your other you and you look at him inquisitively, wondering where he might have had this idea. You weren't that unhinged, were you?"
+    
+    ga "Do you need help with your helmet, Ammon? You may use some given.. your head shape..."
+    
+    am "It's alright, pal. I can deal with it on my own. I'm used to."
+
+    "The cocky dog removes his helmet elegantly without any issues nor events whatsoever. He wiggles his head finally free from his protective plastic jail. What a show–off. But a good show–off."
+    "The thing to catch your eyes within him is his eyes. His priceless golden eyes shining more than any sun you've seen. You find yourself mesmerising in these luxurious jewels 
     "You rarely see phone boothes out in city so to find one in a rest area is even more incredible. Technology goes fast, you think, nowadays."
     
     jump phone_booth
