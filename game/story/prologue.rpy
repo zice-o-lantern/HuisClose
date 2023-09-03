@@ -633,13 +633,12 @@ label rest_area_1:
 
     scene parkingLot
     with fade
-    play sound "audio/sounds/bird_chirping.ogg"
+    play sound "audio/sounds/bird_chirping.ogg" loop
     
     "The moto steers over on the parking lot. The wind has taken his liking over his liking over a blade of grass and a can of soda."
-    "With a lazy eye, you follow those lost souls. I hope for them that they'll find a place to rest. The trash passes in front of some restrooms, deserted of all life and not very well maintained." 
-    "The leaves fly, of trees that has seen more you could ever account for them into the breeze then onto the vast lands of grass."
-    "You clumsily stumble out of motorcycle and try to get rid of my helmet in vain"
-    "Your ears are stuck in it and the motivation to get them ebb away to the shores of your mind."
+    # "With a lazy eye, you follow those lost souls. I hope for them that they'll find a place to rest. The trash passes in front of some restrooms, deserted of all life and not very well maintained." 
+    # "The leaves fly, of trees that has seen more you could ever account for them into the breeze then onto the vast lands of grass."
+    "You clumsily stumble out of motorcycle and try to get rid of my helmet in vain. Your ears are stuck in it and the motivation to get them ebb away to the shores of your mind."
     # "Eventually, Ammon, who had stripped away his helmet since a long time ago, notices you."
 
     am "Do you want some help? You look like you're having a hard time."
@@ -712,13 +711,13 @@ label rest_area_1:
     "Your tired eyes look like you haven't slept for a week—and you might not have—as the dark rings under your eyes draw themselves on a too much big surface. You scrub them, however they remain unchanged and any try to make it go make clear that they won't go away."
     "You check your red eye, swollen by the fatigue, you prod the inferior eyelid at it. The blood capillaries running through your green sclera. The unknown entity froming through those capillairies takes place of your eyeballs and look directly at you through them."
     "It surveys you. It judges you. It's going to create problems for you as your intimacy is its too and will make what it wants about it. You are annoyed at it and even more you are scared of it."
-    "The newt moment, it disappears and you are then alone with your no better thoughts, still uncomfortable that someone might be watching you. Just a wrong step and you're done for. Don't ever misstep, you hear me? Not ever. You are a deviant and you know it.
+    "The newt moment, it disappears and you are then alone with your no better thoughts, still uncomfortable that someone might be watching you. Just a wrong step and you're done for. Don't ever misstep, you hear me? Not ever. You are a deviant and you know it."
 
     am "Hum Gap, what are you looking at? You've been staring it for quite some time now."
    
     "Ammon tilts his head from the other side of the motorcycle to look at your reflection in the mirror, searching for the thing you've been looking at with a fierce intensity. Obviously he doesn't find it so he tilts back his head uninterested."
 
-    am "You've got to stop looking at yourself like thar. You look like you are on the brink of murdering your wife."
+    am "You've got to stop looking at yourself like that. You look like you are on the brink of murdering your wife."
 
     "With this disturbing statement, Ammon goes on to get rid of his helmet. Realising he has got some points, you cut off your sight from your other you and you look at him inquisitively, wondering where he might have had this idea. You weren't that unhinged, were you?"
     
@@ -727,8 +726,52 @@ label rest_area_1:
     am "It's alright, pal. I can deal with it on my own. I'm used to."
 
     "The cocky dog removes his helmet elegantly without any issues nor events whatsoever. He wiggles his head finally free from his protective plastic jail. What a show–off. But a good show–off."
-    "The thing to catch your eyes within him is his eyes. His priceless golden eyes shining more than any sun you've seen. You find yourself mesmerising in these luxurious jewels 
+    "The thing to catch your attention within him is his eyes. His priceless golden eyes shining more than any sun you've seen. You find yourself mesmerising in these luxurious jewels." 
+    "These piercing cruel eyes look through your soul and you are read like a dirty open book. At any time, if he feels like so, he can pick an excerpt from it and study it attentively to your expense and guess who you are from it alone."
+    "One thing you are grateful for is that he isn’t your enemy. He’d bring you down in an instant and you hate it so you always bicker with him to make you forget that he is objectively better than you in every domain possible."
+    "He is handsome, he is charming, he is charismatic, he has a sense a sense of style you try to copy but you have utimately not. You may want to say that to him but he’d say that you’re being too emotional and being girly so you always shut yourself."
+    "He often wears biker suits because that fits his life style he told me. He rocks it and he knows it so his outfit justifies his usual cockiness and his smiling mug. He also wears golden face piercing. It really amplifies his rebel attitude."
+    "He happened to be a black pharaoh hound and he loves ancient egyptian history so during his teenage years he fully embraced the imagery of it and it suits him so well that you can’t separate Ammon of his extravagant jewelry."
+    "You wish you could be as extravagant as him and take crazy risks but you are not as bold as him so you keep to your little classic shirt with your tie but it goes well on you so you don’t try to be original, scared to get ridiculed."
+    "You hope, one day, you’ll break the ties that roots you to your plain life and take the chance to be as free, as liveful as liberated as him. But waiting for that moment, you admire him from afar, sleeping in his shadows."
+    
+    "Despite your fixation on Ammon, you come to notice the deserted rest area you just stop in. Dead leaves piled up on the border of the roads, signaling the fall has come and taken his toll on Nature." 
+    "The brownish orangey landscape contrasted with the bright green of Summer. The mourning trees stand there, waiting for better times, not expecting for what they’ll have to fight against the hard cold of the winter."
+    "Sooner or lather, even their melancholic colours will be replaced by scarcerd branches and the glacial white tucking them to their warm sleep. Tall grasses remain nonetheless undefeated by the time passing. Some sunflowers still resist, searching for their lead."
+    "The usual restrooms stick out of the surrounding nature. They are not at all well–maintained and you come to pity whomever has a pressing desire. They’ll have to make some concessions and sacrifices on their hygiene and dignity."
+    "You stand, wordless, to this pitiful scenery, slowly veiled by the surrounding darkness, the sun setting itself for their desereved sleep. You wished you had come sooner, as in the present moment, only agonising cries reach over your ears"
+    "However, a ghost of future times rises within the dead landscape. A tall metallic structure stand out with all this misery, a shine, a beacon of what lies ahead. You have seen them a handful of times. A phone booth." 
     "You rarely see phone boothes out in city so to find one in a rest area is even more incredible. Technology goes fast, you think, nowadays."
+
+    ga "Hey look, Ammon! They have a phone booth around here. Isn’t that wonderful?"
+
+    am "Huh? Oh yeah... sure."
+
+    "Ammon doesn’t seem very interested in these incredible structure. You lower your gaze and notice his hand pressing his crotch, clutching his fist at a gradually faster pace. This explains his lack of interest, you guess."
+
+    am "So you’re going to use it, right? Who you gonna call?"
+
+    "You mull over the question, even though you don’t know a lot of people who owns a phone at home. Only two persons comes to mind."
+
+    am "Is it gonna be you mom?.. Or... Julie?"
+
+    "He says the last word with a lot of emphasis as it was only obvious from both of them you’re going to pick. A annoyed tone comes with and that disturbs you, as Ammon being genuinely annoyed is rare."
+
+    ga "Yes I’m going to call her."
+
+    am "Ok, suit yourself."
+    am "I’m going to pee. Wait for me and don’t go far ok?"
+
+    "Ammon quicly deflects the topic of discussion and comes back to the pressing matter at hand. You watch him waddling in place, jumping like a late hare and you find yourself hard to not comply with his request."
+
+    ga "Ok, don’t lose yourself on the way!"
+
+    am "Don’t worry! See ya!"
+
+    "As soon as he finishes his sentence, you see him sprint towards the forsaken restroom and you chuckle. As he disappears from your vision, you are now alone with your thoughts... and the phone booth. It attracts, implore you to come."
+    "So you stare at it longingly. For a moment, you can only stand there, in front of the cubicle, as your eyes runs through it, intrigued."
+
+
     
     jump phone_booth
 
@@ -738,10 +781,8 @@ label phone_booth:
 
     play music "audio/music/night_sky.mp3" fadein 1.0 loop
 
-    "You jog towards the deserted phone booth. You hurry yourself to talk to her, to get it done."
-    "Dragging yourself the door, you grab with a grand difficulty the handle, not being able to find the motivation to penetrate into the dark cubicle."
-    "You turn an inconsiderate amount of times the handle, at last, the dore opens when you shove into it."
-    "You mustn’t be in the right mindset to not notice that pulling a thousand times a door will not work on the 1001th time."
+    "You jog towards the deserted phone booth. You hurry yourself to talk to her, to get it done. Dragging yourself the door, you grab with a grand difficulty the handle, not being able to find the motivation to penetrate into the dark cubicle."
+    "You turn an inconsiderate amount of times the handle, at last, the dore opens when you shove into it. You mustn’t be in the right mindset to not notice that pulling a thousand times a door will not work on the 1001th time."
     "But you couldn’t give more than a care, your gloominess crashing down at its lowest as you finally set paw in the somber void, pierced by rays of declining sunlight."
     "Blind, by the low current luminosity of the place, you put a considerate time to even find the phone."
     "On the phone box, on a little sign at the bottom of it, it is written \"10 francs for 10 minutes!\" You think the sign bargains a fair deal to you."
