@@ -635,33 +635,99 @@ label rest_area_1:
     with fade
     play sound "audio/sounds/bird_chirping.ogg"
     
-    "The moto steers over on the parking lot."
-    "The wind has taken his liking over his liking over a blade of grass and a can of soda."
-    "With a lazy eye, I follow those lost souls. I hope for them that they'll find a place to rest."
-    "The trash passes in front of some restrooms, deserted of all life and not very well maintained." 
-    "The leaves fly, of trees that has seen more I could ever account for them into the breeze then onto the vast lands of grass."
-    "I clumsily stumble out of motorcycle and take a lot of time to get rid of my helmet"
-    "My huge ears are stuck in it and the motivation to get them ebb away to the shores of my mind."
-    "Eventually, Ammon, who had stripped away his helmet since a long time ago, notices me."
+    "The moto steers over on the parking lot. The wind has taken his liking over his liking over a blade of grass and a can of soda."
+    "With a lazy eye, you follow those lost souls. I hope for them that they'll find a place to rest. The trash passes in front of some restrooms, deserted of all life and not very well maintained." 
+    "The leaves fly, of trees that has seen more you could ever account for them into the breeze then onto the vast lands of grass."
+    "You clumsily stumble out of motorcycle and try to get rid of my helmet in vain"
+    "Your ears are stuck in it and the motivation to get them ebb away to the shores of your mind."
+    # "Eventually, Ammon, who had stripped away his helmet since a long time ago, notices you."
 
     am "Do you want some help? You look like you're having a hard time."
 
     menu let_ammon_help_you:
         "Please, yes, can you help?":
             $ ammon_score += 1 
-            "Usually, it would’ve been the time where I deflect any sort of assistance and where after some trepident events, I would either succed the task or yield into the help."
-            "But I didn’t have the strength to struggle so I give in to Ammon."
+            "Usually, it would’ve been the time where you deflect any sort of assistance and where after some trepident events, you would either succed the task or yield into submission. So you lower your head and present it to Ammon."
+            ga "Alright, go on."
+            "You didn’t have the strength to struggle nor protest like the proud man you are so you give in to Ammon. His bulky hands grab the base of your helmet and his nails brush the tip of your neck hair, surprising you, not liking being touched."
+            "But him being the one doing it doesn't mind you interestingly. Nonetheless, he gets troubles too to rid your feline head of the helmet. He pulls harder and harder on you and the pain gradually increases and you don't see the end of it."
+            ga "Oh my god, Ammon, be softer!! Less harder! You're going to hurt me!"
+            
+            am "If you weren't so such tight!"
+            
+            ga "What did you say?!"
+
+            am "I said, if you didn't have a such tight helmet... And such a big head!"
+            
+            ga "You can talk with your long big snout!"
+            
+            am "If you don't stop talking right now, I'll pull your helmet off in any way possible, with or without your head."
+            
+            ga "Stop talking with your long snout and just do what you just said, we'll both be better off!"
+            
+            "For a moment Ammon still struggles to remove your helmet. The pain is really insufferable and you both pull like idiots trying to pull out Excalibur. You yell out of pain and he apologises hoarsely."
+            "At some point, you feel with your united combined effort, you have made a difference on the helmet and is ready to give in. Suddenly there's a pop and you fly out of the helmet on the grass rolling for a considerate amount of time."
+            "When your frenetic charge comes to stop, you cough out the dirt and the blades of grasses caught in your mouth. You shake up your head so your blood flows back in it. When you come back to your senses, you are met with a laughing dog unable to stop."
+            "His piercing laughter overwhelm your space and you get red of embarrassement irresistibly, despite you. You clutch the grass and pluck it out of rage. You throw some at him to make him shut its long snout trap that serves him as a mouth."
+            
+            ga "Oh my god, you irritating imbecile! I told you you shouldn't pull that hard! I'm all scratched and dirty now. I hate you, you hear me??"
+            
+            "Ammon wipes out his tears of laughter and approches, triumphing, over you. His wicked smile pierces his helmet as he hands you your helmet and reach a hand to you."
+  
+            am "Okay you crykitten, keep whining all you want. But if you stay on the ground, you won't get anywhere, will you?"
+      
+            "You grit your teeth as you clutch his hand. He carries you off the ground that you find yourself levitating. You often forget his undog force and that comforts as you can trust your dear friend."
         
         "I can do it on my own, no thanks":
-            "you be prick"
+            "You don't need the help of that prick. You already did it without his help before, so why couldn't you do it again now... or did you?"
+            ga "I don't need your help. I can deal with it on my own."
+            
+            am "Alright... Suit yourself."
+            
+            "You don't wait for him to try removing yout helmet. However you are met with a very concerning issue: It really is stuck. No matter how much you pull or the angle you use, your ears won't budge so it won't come off."
+            "As you panick, you wiggle out in every directions possible, almost rushing in the motorcycle or Ammon, concerned by the show you're putting on."
+     
+            am "Are you sure you don't need any help? you sure look like so."
+
+            ga "I'm fine! I don't your help or anyone help! I'm going to do it alone like I used to!"
+            
+            am "Um, ok... I guess?"
+
+            "In your wrestle against the helmet, you keep spinning around until you get nauseated from the all over experience."
+            "By a thread of luck or misfortune, you manage to get rid of your helmet. However with all your dances and twirling, you lost sense of directions and you lose balance making you fall into the grass."
+            "When your frenetic charge comes to stop, you cough out the dirt and the blades of grasses caught in your mouth. You shake up your head so your blood flows back in it. When you come back to your senses, you are met with a laughing dog unable to stop."
         
-    ## TODO: REWRITE LATER AND ADD CHARA DESC
+            am "Deserved it, jackass."
+      
+            ga "What did you say?"
+ 
+            am "Nothing. Just get up. You won't get anywhere like this."
+            
+            "You get up. You rub your head out of pain and you can feel a nasty bump on your head. Maybe you should've asked for Ammon."
 
-    # "Ammon removes the helmet."
-    # "I notice a phone booth."
-    # am "Anyway, gonna pee, if you’ll excuse myself."
-    # ga "No problem, I’m gonna make a quick phone call."
+    "You scramble out of the grass and rush toward the rear mirror of the motorcycle to watch your face and check any scratches that might have landed there."
+    ## TODO: Illustration of gap looking in the mirror
+    "As you look into it, you behold a scrawny cat in his twenties, with a medium stature, not really delighted but a bit grumpy. You sigh. You would not to be a relative of this cat. Then you have to remember. It's you."
+    "Unfortunately you were not so lucky and your usual pure white–crystal hair face is tainted by some dirt and injuries. You lament yourself on your state. Other than your scratches, you don't look so good either."
+    "Your tired eyes look like you haven't slept for a week—and you might not have—as the dark rings under your eyes draw themselves on a too much big surface. You scrub them, however they remain unchanged and any try to make it go make clear that they won't go away."
+    "You check your red eye, swollen by the fatigue, you prod the inferior eyelid at it. The blood capillaries running through your green sclera. The unknown entity froming through those capillairies takes place of your eyeballs and look directly at you through them."
+    "It surveys you. It judges you. It's going to create problems for you as your intimacy is its too and will make what it wants about it. You are annoyed at it and even more you are scared of it."
+    "The newt moment, it disappears and you are then alone with your no better thoughts, still uncomfortable that someone might be watching you. Just a wrong step and you're done for. Don't ever misstep, you hear me? Not ever. You are a deviant and you know it.
 
+    am "Hum Gap, what are you looking at? You've been staring it for quite some time now."
+   
+    "Ammon tilts his head from the other side of the motorcycle to look at your reflection in the mirror, searching for the thing you've been looking at with a fierce intensity. Obviously he doesn't find it so he tilts back his head uninterested."
+
+    am "You've got to stop looking at yourself like thar. You look like you are on the brink of murdering your wife."
+
+    "With this disturbing statement, Ammon goes on to get rid of his helmet. Realising he has got some points, you cut off your sight from your other you and you look at him inquisitively, wondering where he might have had this idea. You weren't that unhinged, were you?"
+    
+    ga "Do you need help with your helmet, Ammon? You may use some given.. your head shape..."
+    
+    am "It's alright, pal. I can deal with it on my own. I'm used to."
+
+    "The cocky dog removes his helmet elegantly without any issues nor events whatsoever. He wiggles his head finally free from his protective plastic jail. What a show–off. But a good show–off."
+    "The thing to catch your eyes within him is his eyes. His priceless golden eyes shining more than any sun you've seen. You find yourself mesmerising in these luxurious jewels 
     "You rarely see phone boothes out in city so to find one in a rest area is even more incredible. Technology goes fast, you think, nowadays."
     
     jump phone_booth
