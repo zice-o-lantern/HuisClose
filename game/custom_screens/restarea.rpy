@@ -28,7 +28,7 @@ screen restarea(screen_active=True):
         idle 'trunk'
         hover 'trunk_hovered'
         action Call("restarea_trunk")
-        sensitive screen_active
+        sensitive button_available(screen_active)
         
         at custom_zoom
 
@@ -48,7 +48,7 @@ screen restareatrunk(screen_active=True):
         idle 'ammon_bag'
         hover 'ammon_bag_hover'
         action Call("restarea_bag")
-        sensitive screen_active
+        sensitive button_available(screen_active)
     
     imagebutton:
         pos (900, 700)
@@ -57,7 +57,7 @@ screen restareatrunk(screen_active=True):
         idle 'bottle'
         hover 'bottle_hovered'
         action Call("restarea_bottle")
-        sensitive screen_active
+        sensitive button_available(screen_active)
 
     if not got_notebook:
         imagebutton:
@@ -66,10 +66,10 @@ screen restareatrunk(screen_active=True):
             idle 'notebook'
             hover 'notebook_hovered'
             action Call("restarea_notebook")
-            sensitive screen_active
+            sensitive button_available(screen_active)
             at custom_zoom
     
-    if screen_active and not renpy.get_screen("inventory") and not renpy.get_screen("notebook"):
+    if button_available(screen_active):
         imagebutton auto "backbutton_%s.png" action Show("restarea", _layer="master", transition=dissolve):
             style 'bottom'
             at custom_zoom
@@ -93,13 +93,18 @@ screen restarea_padlock(screen_active=True):
                 xalign 0.5
                 imagebutton auto "gui/padlock_leftbutton_%s.png" action [SetDict(padlock_code, i, (padlock_code[i] - 1) % 10), Function(check_code)]:
                     at c_zoom
-                    sensitive screen_active
+                    sensitive button_available(screen_active)
 
                 text str(padlock_code[i])
 
                 imagebutton auto "gui/padlock_rightbutton_%s.png" action [SetDict(padlock_code, i, (padlock_code[i] + 1) % 10), Function(check_code)]:
                     at c_zoom
-                    sensitive screen_active
+                    sensitive button_available(screen_active)
+
+    if button_available(screen_active):
+        imagebutton auto "backbutton_%s.png" action Return():
+            style 'bottom'
+            at custom_zoom
 
 label restarea_padlock_loop:
     window hide
@@ -158,6 +163,7 @@ label restarea_ammon:
 label restarea_trunk:
     $ renpy.show_screen("restareatrunk", _layer="master", screen_active=False)
     $ renpy.transition(dissolve)
+    
     pause 0.5
     if not trunk_explored:
         n1 "I open the little trunk in the back of the motorcycle."
@@ -168,17 +174,23 @@ label restarea_trunk:
 
 label restarea_bag:
     $ renpy.show_screen(current_screen, _layer="master", screen_active=False)
-    n1 "Ammon's wallet was sitting there, accessible to anyone's eyes, unaware of what it may happen."
-    n1 "It has been previously opened by, I guess, the annoying dog smoking over there."
-    n1 "Curious of its content, I peek over to see if he's distracted and assured he is, reach for it."
-    n1 "Feeling no guilt, determined to get at the bottom of this, I grab it and open it."
-    n1 "Maybe he hid some smokes in it. I run through all of his papers and documents he keeps in it but no such luck."
-    ## TODO: Rewrite later
-    n1 "Maybe "
-    n1 "Interested by the photos I take them but I notice a box of cigarettes under the photos."
-    n1 "Ahah knew he was lying."
+    
+    "Doubting Ammon’s sayings veracity, you sneakily get at a close distance of your friend’s bag and you try to open it. You cast some quick looks at Ammon while doing your little crime but he seems distracted smoking."
+    "Being discreet, you can’t force the bag to open, so you notice something that will prevent you from going any further without making a fuss."
+
+    $ renpy.show_screen("restarea_padlock", screen_active=False)
+    $ renpy.transition(dissolve)
+
+    pause 1.0
+
+    "his damn lock"
+    
+    call screen restarea_padlock(screen_active=True)
+
+    "Well no luck"
 
     $ ga_inventory.append(ammon_wallet)
+    $ empty_inventory = False
     # $ ga_inventory.append(wallet)
 
     "(You can go see Ammon now)"
@@ -196,7 +208,8 @@ label restarea_notebook:
     "Oh here is your beloved notebook you bring with you everywhere."
     
     $ ga_inventory.append(notebook)
-    $ check_inventory_empty()
+    # $ check_inventory_empty()
+    $ empty_inventory = False
     $ got_notebook = True
 
     return

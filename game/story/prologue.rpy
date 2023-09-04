@@ -1280,7 +1280,6 @@ label rest_area_2:
             ammon_talked = 0
             current_screen = "restarea"
             trunk_explored = False
-            got_notebook = False
 
             padlock_code = [6, 1, 5, 3]
 
@@ -1296,8 +1295,7 @@ label confront_him:
         del trunk_explored
         del padlock_code
         del good_code
-        del got_notebook
-        
+
         current_screen = "" 
 
     jump first_act_part_1

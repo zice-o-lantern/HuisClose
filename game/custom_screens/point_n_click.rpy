@@ -1,3 +1,8 @@
+init python:
+    def button_available(screen_active):
+        return screen_active and not renpy.get_screen("inventory") and not renpy.get_screen("notebook")
+
+
 label pointnclick_interact_loop:
     window hide
     $ renpy.call_screen(current_screen, _layer="master", screen_active=True)
