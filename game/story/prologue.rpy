@@ -1341,5 +1341,7 @@ label confront_him:
     am "I am sure. It’s just this time... I forgot to bring more and only brought one. Nothing more to that."
 
     "He scratches the back of his head. He doesn’t have anything more to say to you. You almost feel pity for him. If you had not discovered it, you would have trusted him. But you can’t anymore."
+    
+    "Like that, all of the sudden, in an unexpected chain of events, Ammon is laid down in the grass, defenseless"
     jump first_act_part_1
     
