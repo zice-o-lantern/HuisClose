@@ -1071,12 +1071,12 @@ label phone_booth:
         "I wish you were with me, not him":
             ju "...Really?"
             ju "Wow that trip really hasn’t helped you change your weird mood..."
-            
+
     ga "Why is that? Have you noticed something has changed within me lately? what do you mean? I don't feel any different. I don’t act any different. I don’t look any different. I still have my four limbs."
 
-    ju "Ok Gaspard, that’s very good but I’m not talking about that. I’m talking about your behaviour lately."
+    ju "I’m not talking about that. I’m talking about your behaviour lately."
 
-    "She sounds concerned. Have you been that out of it lately. You must admit that you had your up and down like everyone but you don’t consider it a matter to be discussed. At most, you felt a bit tired from the pressure but that’s all."
+    "She sounds concerned. Irritated. Have you been that out of it lately? You must admit that you had your up and down like everyone but you don’t consider it a matter to be discussed. At most, you felt a bit tired from the pressure but that’s all."
     "She waits for your answer, expecting a thorough justification. You don’t have one. You’re utterly confused. You scratch the back of your head, hoping something will come out, but nothing. Only oblivion and the dark void."
 
     ga "I genuinely don’t know what you’re talking about. I don’t recall anything noteworthy that happened earlier. Everything’s fine, alr–"
@@ -1084,8 +1084,10 @@ label phone_booth:
     stop music
     play music "audio/music/anger.mp3" 
 
-    ju "For Jesus Christ, Gap?! Are you for real, Gap??? You’ve been rolling in your bed sheets all day long 13 days straight and you say to my face that everything’s fine?!! THAT YOU DON’T RECALL ANYTHING??"
+    ju "Oh my god, for Jesus Christ?! Are you for real, Gap??? You’ve been rolling in your bed sheets all day long 13 days straight and you say to my face that everything’s fine?!! THAT YOU DON’T RECALL ANYTHING??"
+    ga "Huh..."
 
+    "Confusion roses into you."
     "A burst of voice surges through the phone and you almost drop it. You regain composure. She is rarely mad at you and this time you don’t have a clue what may have released her wrath. You panick. What happened, for Jesus’ sake? You dig through you mind."
     "Nothing. Just nothing. You’d be satisfied to just see a grain of sand in a sea of nothingness but you won’t even get that satisfaction. You’re in the void, your head absent, beholding a black box. You open it. Even more void. You’re afraid. You shouldn’t go deeper"
     "You hand’s wet. Every second, you are to the point of letting it slip. You sweat profusely and you wipe, wipe, wipe and wipe but you can’t fight against the downfall of your mind, wrecking havoc on every light of your soul. You fall silent. Who are you."
@@ -1163,7 +1165,7 @@ label phone_booth:
 
     "A loud crash echoes and resonates within the phone booth. Slumped down, you don’t move anymore. Your head’s empty but a shrill and piercing white noise in your ears. You’re clawed to the ground and won’t get anymore."
     "When your bloodied vision sets back into focus, you observe with a dead eye the destroyed–to—thousand—pieces receiver on the ground, you come to wonder what has guided you to this point. You rise your hands at eye–level vision to watch the blood spill out of your hands." 
-    "What happened that has come to you bloodying them. {w} What happened Semptember Friday the 13th?"
+    "What happened that has come to you to bloody them. {w} What happened Semptember Friday the 13th?"
 
 
 
@@ -1216,6 +1218,56 @@ label rest_area_2:
     "He helps me set back my sweater. It’s embarrassing coming from him that my cheeks get warm."
 
     am "Well if you need anything, tell me huh? I ’ll always be there."
+
+    play music "audio/music/griff.mp3" loop fadein 2.0
+
+    "All of the sudden, he takes you in his comforting embrace. You are pressed against his breathing chest and his periodic huffing and puffing lulls you head and you forget with every going and coming why you were in such distress earlier."
+    "His chiseled–out arms go around, under your armpits so his warmth travel in every tinges of your skin and it soothes you, relaxed more and more by his reassuring heat. His embrace was comparable to a loving brooding hen."
+    "He scratches you under the neck, your weak spot and you start purring. The low hum of your sound of sootheness resonates in his chest helps him uncontract his muscles making that you finally make one with him."
+    "You breathe out a sigh of relief, happy that you are not alone in this world. If it was only you two right now, you’d still be satisfield."
+    "Ammon breaks the silence with comforting words."
+
+    am "Listen, Gaspard. I don’t know what happened with Julie but my guess is that she bothered you with the events reganding your father, right?"
+
+    "Your heart sunkens when your hear that word. You really don’t want to talk about it."
+
+    am "Don’t worry, I won’t prod at you about it... Just know that she has their reasons. What happenned that day really marked her. Please don’t hold that up against her."
+    am "Just now, that I won’t be asking any questions. Until you are ready. Until then, you’ll always be safe around me. Please do not worry. Everything’s fine, see?"
+    am "Remember also that if you want to tell me anything, I won’t judge you. I will even help you. You have nothing to fear with me ok?"
+    am "I can feel you carry a very heavy burden. You shut everyone out because of that. You don’t want to bother us. Buc you don’t bother me. As grumpy, bratty you can be, you don’t bother me. I like my little grumpy cat, heheh."
+
+    "Ammon laughs melancholicly. Everything he said sounds like a distand memory, very far away from him."
+
+    am "So please, no matter what happens, don’t leave, ok?"
+
+    "Deep down, a little voice whispers to me \"Just open up\" \"What are you waiting for\" \"He won’t be always there for you\" and my arms move on their own towards the reassuring friend."
+    "A puddle of emotions rains down my throat and dwells deep in my stomach. Some butterflies care not to get close of it, fly away to not be seen again. All of a sudden, my limbs fall dead, the threads maintaining them alive and up, slashed through, unfairly."
+    "Nothing remains in my throat but a fragile cry and I mutter it."
+
+    ga "Ok."
+
+    am "Great."
+
+    "He releases you and turns away toward the bike top–box. You wish you stayed like that longer but you know better to not abuse his gentleness so you let him go."
+    "You check your pulse. It came back to a normal pace. You’re relieved. You couldn’t bear any longer the throbbing pain in your chest but the horrible headache hits you like a lift and you rub your temples."
+    "You need something to relax you even more. You look for an aspirin in your pockets but you can’t find any. With all the fatigue and the pain, you wonder how you’re going to take back the road. You look at Ammon."
+
+    ga "Hey Ammon, do you have anything for headaches? It’s really hurting right now. I don’t even know I can stand."
+
+    "He scratches his head hair and search his trousers for any medicine able to help me. Unfortunately nothing comes out of his search."
+
+    am "Sorry Gap, I have nothing on me. I mighgt have a cigarette though. Smoking some helps me relaxing. Perhaps it could help with your headache? Do you want some?"
+    
+    "I consider his proposition. You doubt of Ammon’s statements veracity but you don’t have any better option and you, in your inner soul, crave for some cigarettes. Ammon had initiad to this early this year and you must addict it can be pretty addicting."
+
+    ga "I do want some. I don’t have nothing better to do anyway..."
+
+    am "Okay cool, let me check my bag, I think I have left some in it. It’ll be quick don’t worry ahah."
+
+    "He grins at me with his biggest smile and opens the top box on the motorcycle you were driving earlier. As it was going to be quite a trip, you both crammed everything you could in such a tight space. You were proud of your space management."
+    "The gentle hound rumbles around for his stuff and after some long seconds of noises of every kind, he finally finds it. A little padlock contained private the contents of his bag. Paris was a big city with all kinds of thieves and pickpockets so you’d never know."
+    "He fiddles with it not for long "
+
     
     
 
@@ -1228,6 +1280,10 @@ label rest_area_2:
             ammon_talked = 0
             current_screen = "restarea"
             trunk_explored = False
+            got_notebook = False
+
+            padlock_code = [6, 1, 5, 3]
+
         
         # show screen custom_quickbar
         jump pointnclick_interact_loop 
@@ -1238,6 +1294,10 @@ label confront_him:
     python:
         del ammon_talked
         del trunk_explored
+        del padlock_code
+        del good_code
+        del got_notebook
+        
         current_screen = "" 
 
     jump first_act_part_1

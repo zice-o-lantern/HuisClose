@@ -15,7 +15,7 @@ default selected_item = ""
 default notebook = Item("Notebook", "notebook", "My beloved notebook. I bring it out with me everywhere.")
 default water_bottle = Item("Water Bottle", "bottle", "A water bottle that rehydrates! To be honest, \nI’m pretty honest, I’m pretty thirsty.", "water_bottle_examine")
 default cigarette = Item("Cigarette", "cigarette", "I knew Ammon was hiding some from me.")
-default ammon_stuff = Item("Ammon’s Stuff", "portefeuille_clark", "I don’t even feel bad about prying into his stuff. He’ll get what’s coming", "ammon_stuff_examine")
+default ammon_wallet = Item("Ammon’s Wallet", "portefeuille_clark", "I don’t even feel bad about prying into his stuff. He’ll get what’s coming", "ammon_wallet_examine")
 
 default presented_item = ""
 
@@ -99,8 +99,7 @@ label water_bottle_examine:
     call screen inventory
     return
 
-label ammon_stuff_examine:
+label ammon_wallet_examine:
     "Bitch be lying to me"
-    $ ga_inventory.append(cigarette)
     call screen inventory
     return

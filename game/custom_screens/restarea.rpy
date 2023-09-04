@@ -45,12 +45,10 @@ screen restareatrunk(screen_active=True):
         pos (350, 800)
         anchor (.5, .5)
 
-        idle 'portefeuille_clark'
-        hover 'portefeuille_clark_hovered'
-        action Call("restarea_wallet")
+        idle 'ammon_bag'
+        hover 'ammon_bag_hover'
+        action Call("restarea_bag")
         sensitive screen_active
-
-        at custom_zoom
     
     imagebutton:
         pos (900, 700)
@@ -60,23 +58,61 @@ screen restareatrunk(screen_active=True):
         hover 'bottle_hovered'
         action Call("restarea_bottle")
         sensitive screen_active
+
+    if not got_notebook:
+        imagebutton:
+            pos (1400, 800)
+            anchor (.5, .5)
+            idle 'notebook'
+            hover 'notebook_hovered'
+            action Call("restarea_notebook")
+            sensitive screen_active
+            at custom_zoom
     
-    imagebutton:
-        pos (1400, 800)
-        anchor (.5, .5)
-        idle 'notebook'
-        hover 'notebook_hovered'
-        action Call("restarea_notebook")
-        sensitive screen_active
-        at custom_zoom
-    
-    if screen_active:
+    if screen_active and not renpy.get_screen("inventory") and not renpy.get_screen("notebook"):
         imagebutton auto "backbutton_%s.png" action Show("restarea", _layer="master", transition=dissolve):
             style 'bottom'
             at custom_zoom
 
+transform start_code:
+    pos (1005, 520)
+
+init python:
+    def check_code():
+        good_code = [1, 3, 0, 9]
+        if padlock_code == good_code:
+            renpy.jump("ammon_padlock_good_code")
+
+screen restarea_padlock(screen_active=True):
+    add "padlock"
+    vbox:
+        at start_code
+        spacing 45
+        for i in range(4):
+            hbox:
+                xalign 0.5
+                imagebutton auto "gui/padlock_leftbutton_%s.png" action [SetDict(padlock_code, i, (padlock_code[i] - 1) % 10), Function(check_code)]:
+                    at c_zoom
+                    sensitive screen_active
+
+                text str(padlock_code[i])
+
+                imagebutton auto "gui/padlock_rightbutton_%s.png" action [SetDict(padlock_code, i, (padlock_code[i] + 1) % 10), Function(check_code)]:
+                    at c_zoom
+                    sensitive screen_active
+
+label restarea_padlock_loop:
+    window hide
+    call screen restarea_padlock(screen_active=True)
+    label ammon_padlock_good_code:
+        show screen restarea_padlock(screen_active=False)
+        "Congrats"
+        return
+
 transform custom_zoom:
     zoom 0.2
+transform c_zoom:
+    zoom 0.05
 
 
 label restarea_ammon:
@@ -130,7 +166,7 @@ label restarea_trunk:
         $ trunk_explored = True
     return
 
-label restarea_wallet:
+label restarea_bag:
     $ renpy.show_screen(current_screen, _layer="master", screen_active=False)
     n1 "Ammon's wallet was sitting there, accessible to anyone's eyes, unaware of what it may happen."
     n1 "It has been previously opened by, I guess, the annoying dog smoking over there."
@@ -142,7 +178,7 @@ label restarea_wallet:
     n1 "Interested by the photos I take them but I notice a box of cigarettes under the photos."
     n1 "Ahah knew he was lying."
 
-    $ ga_inventory.append(cigarette)
+    $ ga_inventory.append(ammon_wallet)
     # $ ga_inventory.append(wallet)
 
     "(You can go see Ammon now)"
@@ -157,6 +193,10 @@ label restarea_bottle:
 
 label restarea_notebook:
     $ renpy.show_screen(current_screen, _layer="master", screen_active=False)
-    "Cock"
+    "Oh here is your beloved notebook you bring with you everywhere."
+    
+    $ ga_inventory.append(notebook)
+    $ check_inventory_empty()
+    $ got_notebook = True
 
     return
