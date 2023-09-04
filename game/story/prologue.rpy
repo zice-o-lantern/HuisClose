@@ -1300,5 +1300,7 @@ label confront_him:
         
         current_screen = "" 
 
+    
+    "Like that, all of the sudden, in an unexpected chain of events, Ammon is laid down in the grass, defenseless"
     jump first_act_part_1
     
