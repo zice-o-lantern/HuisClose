@@ -1266,22 +1266,53 @@ label rest_area_2:
 
     "He grins at me with his biggest smile and opens the top box on the motorcycle you were driving earlier. As it was going to be quite a trip, you both crammed everything you could in such a tight space. You were proud of your space management."
     "The gentle hound rumbles around for his stuff and after some long seconds of noises of every kind, he finally finds it. A little padlock contained private the contents of his bag. Paris was a big city with all kinds of thieves and pickpockets so you’d never know."
-    "He fiddles with it not for long "
+    "You are tempted to peek into the code of his secrets but you don’t see the purpose of this action, he’s going to bring you what you want anyway. You decide to respect his privacy."
+    "He fiddles with it not for a long time. A small click rings out and he removes it. He immediately grabs a box of cigarettes like his precious meal and pulls out his lighter in a swift motion. Once lighted, he shoves it into his mouth."
+    "Then he cleans the inside of his bag and zip it shut. He takes back the defensor of his belongings on the opening. But for some reason, he puts a concerning amount of time locking it."
+    "As you were about to ask him about the issue he was having, another click roses out of the padlock and he wears a satisfied smile. You sigh, relieved." 
+    "He shuffles out the numbers and, as expected, he puts another span of time trying to fit back into the trunk. You think to when you’ll have to get out your bag and you gulp."
+    "Ammon approaches you and when he sets his sight, his face goes from content to worried. That makes you concerned."
 
-    
-    
+    ga "Sooo... Do you have one for me? My headache still really hurts."
 
-    "He’s really starting to get on my nerves."
+    am "Shhh... Yeah about that."
+
+    "He hands you an already empty box of cigarettes. You eye it, utterly disappointed. You raise you head back to Ammon and he can’t stand you sorry look."
+    "He turns away his head, in a guilty motion, crossed arms, compressing his chest out of embarrassement. Every time you try to get his compassion, he flees away"
+
+    am "I’m sorry, Gapgap. I really thought I had one for you. I should have thought I had pretty much smoked everything last time."
+
+    "You observe his elusive face, unable to withstand you. He grimaces in embrassement and cast you some rare looks and looks away as soos as he sets an eye in you gaze."
+    "Something is off. Ammon is not someone who’d forget his stock of cigarettes the day of your big trip. Usually, he has around 3 box of smokes ready for every occasion."
+    "He’s also the type to own up to his mistakes and puff his chest, not afraid of the repercussions. His current states makes you think to a sorry puppy who has done a very bad mistake."
+    "Is he lying? But you don’t see why he would be lying to you. After all, he wouldn’t prevent you to soothe you pain. He can be cruel but not that cruel. You find yourself disturbed and confused, not knowing if you should trust your guts or your friend."
+
+    am "Anyway, I don’t think a cigarette would help you anyway. You should get some water. That should tone down your headache better in the end."
+    
+    ga "But I wanted to smoke with you..."
+    
+    am "Ahah maybe another day then. I have seen bottles in the bike trunk. Go get some ok?"
+
+    "He pats me on the shoulder, making me understand it was time that I turn the page. Defeated, you cross over him and go towards the bike."
+
+    am "Oh by the way, could you bring me a bottle too? I’m thirsty."
+
+    ga "Sure Amm."
+
     label restarea_pointnclick_start:
-        "Ok so I guess I should start getting on my way"
+        "Ok so you should start getting on your way"
+        "Perhaps, he’s right. Perhaps drinking water will really make you head gets better."
         # "Even though I’m not that thirsty..."
-        "I am curious to what he was doing with the top—box"
+        "You are curious to what he was doing with the top—box, anyway."
         python:
             ammon_talked = 0
             current_screen = "restarea"
             trunk_explored = False
 
             padlock_code = [6, 1, 5, 3]
+            checked_padlock = 0 
+            
+            got_water = False 
 
         
         # show screen custom_quickbar
@@ -1295,8 +1326,20 @@ label confront_him:
         del trunk_explored
         del padlock_code
         del good_code
+        del checked  
+        del got_water
 
         current_screen = "" 
+    ga "So Ammon, I have a question for you"
 
+    stop music fadeout 1.5
+    play music "audio/music/suspense.mp3" loop fadein 0.5
+    "The daydreaming dog turns his, intrigued. You might have taken a deep tone because concern and worriedness get read all over his face. You feel you are on the good track."
+
+    ga "Are you sure you don’t have any cigarettes for me. I mean, you always bring more than one, don’t you."
+
+    am "I am sure. It’s just this time... I forgot to bring more and only brought one. Nothing more to that."
+
+    "He scratches the back of his head. He doesn’t have anything more to say to you. You almost feel pity for him. If you had not discovered it, you would have trusted him. But you can’t anymore."
     jump first_act_part_1
     
