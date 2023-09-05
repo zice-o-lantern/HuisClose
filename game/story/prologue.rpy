@@ -1275,6 +1275,8 @@ label rest_area_2:
 
     ga "Sooo... Do you have one for me? My headache still really hurts."
 
+    "He breathes through his teath."
+
     am "Shhh... Yeah about that."
 
     "He hands you an already empty box of cigarettes. You eye it, utterly disappointed. You raise you head back to Ammon and he can’t stand you sorry look."
@@ -1285,7 +1287,8 @@ label rest_area_2:
     "You observe his elusive face, unable to withstand you. He grimaces in embrassement and cast you some rare looks and looks away as soos as he sets an eye in you gaze."
     "Something is off. Ammon is not someone who’d forget his stock of cigarettes the day of your big trip. Usually, he has around 3 box of smokes ready for every occasion."
     "He’s also the type to own up to his mistakes and puff his chest, not afraid of the repercussions. His current states makes you think to a sorry puppy who has done a very bad mistake."
-    "Is he lying? But you don’t see why he would be lying to you. After all, he wouldn’t prevent you to soothe you pain. He can be cruel but not that cruel. You find yourself disturbed and confused, not knowing if you should trust your guts or your friend."
+    "Is he lying? But you don’t see why he would be lying to you. After all, he wouldn’t prevent you to soothe you pain. He can be cruel but not that cruel." 
+    "You find yourself disturbed and confused, not knowing if you should trust your guts or your friend."
 
     am "Anyway, I don’t think a cigarette would help you anyway. You should get some water. That should tone down your headache better in the end."
     
@@ -1312,7 +1315,8 @@ label rest_area_2:
             padlock_code = [6, 1, 5, 3]
             checked_padlock = 0 
             
-            got_water = False 
+            got_water = False
+            good_code = ""
 
         
         # show screen custom_quickbar
@@ -1326,7 +1330,7 @@ label confront_him:
         del trunk_explored
         del padlock_code
         del good_code
-        del checked  
+        del checked_padlock  
         del got_water
 
         current_screen = "" 
@@ -1334,14 +1338,199 @@ label confront_him:
 
     stop music fadeout 1.5
     play music "audio/music/suspense.mp3" loop fadein 0.5
-    "The daydreaming dog turns his, intrigued. You might have taken a deep tone because concern and worriedness get read all over his face. You feel you are on the good track."
+    "The daydreaming dog turns his, intrigued. Your grave tone might have shaken him because concern and worriedness covered all over his face. You feel you are on the good track."
 
     ga "Are you sure you don’t have any cigarettes for me. I mean, you always bring more than one, don’t you."
 
-    am "I am sure. It’s just this time... I forgot to bring more and only brought one. Nothing more to that."
+    am "I am sure. It’s just this time... I forgot some at home and only brought one. Nothing more to that."
 
     "He scratches the back of his head. He doesn’t have anything more to say to you. You almost feel pity for him. If you had not discovered it, you would have trusted him. But you can’t anymore."
+
+    ga "Are you really sure?"
+
+    am "Yes, I am."
+
+    ga "Are you really {b}really{/b} sure?!"
+
+    am "Yes!!"
+
+    ga "Ok then do you have an idea of what this is?"
+
+    "You pocket out, the heart of your sorrows, the epicenter of your troubles, the one responsible for that all, the box of cigarette in the center of your palm so he could clearly see it."
+
+    ga "Do you recognise this?"
+
+    "As soon as Ammon sets his eyes on the object, he slumps his shoulders, his face defeated."
+
+    am "I recognise it, yeah... It’s the box of cigarettes that was in my bag."
+
+    ga "Yes it is. Do you know what it means?"
+
+    am "Yes."
+
+    ga "Then why did you purposefully hide it from me?"
+
+    am "... I don’t know."
+
+    ga "You don’t know? You don’t know?? More like you don’t want to tell me, you liar."
+
+    am "I’m not a liar."
+
+    ga "You’re not a liar, what do you mean you’re not a liar? Then what does that mean, these damn cigarettes!"
+
+    "Ammon raises his head defiantly, biting his lip. You’re pissing him off and he’s going to make you understand that you should back off. But you don’t care, that he comes at you! You can take all of his charges"
+
+    am "I never said I didn’t have another box of cigarettes, I just said that the one I showed you was empty. Nothing more. You never asked if there was any more."
+
+    ga "Don’t play on the words, you trickster, you deceived while I was at my lowest."
+
+    am "Don’t make it a fuss."
+
+    ga "A fuss, a fuss?? I am the one making a fuss??!"
+
+    am "Yes you are."
+
+    ga "So you{size=50} should’ve had given me some, we wouldn’t be here then!"
+
+    "You yell out at the tops of your lungs in the exposed ears of the elusive dog. They shivers out of the loud sound."
+    "Ammon stays silent, boiling. He contains himself to retaliate, but it is a hard task for a loud proud barking dog. His fists are clenched."
+    "You stick yourself to him, only centimeters away. You press his chest with you finger to bug him even more. You want to make him crack, he’s got to pay."
+
+    ga "Give me your lighter."
+
+    am "Give you my what?"
+
+    ga "You’ve heard me. Give me your lighter. I wont repeat myself. I need it for smoking."
+
+    "The cornered hound rolls his eye but eventually, reluctantly, reaches for his jacket breast pocket and takes it into hands. For some moments, his gaze lingers in the void."
+    "Taking avandtage of his moment of distraction, you snatch it from his hands and wave it into his face. He shows an irritated expression."
+    "He gnarls his teeth at me but, ultimately, decides to do nothing about your annoying behaviour."
+
+    am "Go on if you wanted it that much..."
+
+    "You follow his lead and you pull out a cigarette from your now–yours box and you attempt to light it with difficulty as you are not used it." 
+    "There are snickers in your back but you can’t hear them, you’ve finally got what you wanted. After a few tries, you manage to light it."
+    "You huff your smoke and let it whisk away in the air in a majestic small cloud of your worries."
+    "You wait for the adrenaline and the pleasure to kick in but you find yourself empty, of any sensations—worse, you didn’t think you’d say that—but it intensifies the throbbing pain in your head."
+    "Clutching your head for salvation, you hear a taunting and provocative voice just behind you."
+
+    am "Hey, have you ever thought that I planned, of you, that you’d do that?"
+
+    "You turn your head, caught short by his intervention."
+
+    ga "planned... that I’d do what?"
+
+    am "Exactly what you just did. Snoop around my stuff because you can’t trust me when I tell you something."
+    am "I mean, I couldn’t believe my eyes. As soon as I turn my back, I find you rummaging through my stuff and toying with my padlock."
+
+    ga "I did not–"
+
+    am "Why are you trying to deny it?! Those cigarettes didn’t end up in your hands by coincidence, did they?"
+
+    "You shut yourself. He was right. You did snoop around his stuff. In retrospective, you went overboard with what you did." 
+    "No good friend would just put his nose in private stuff just for a cigarette. But the urge was stronger than you, you couldn’t help it. Your cheeks get red and you boil out of shame."
+
+    am "Well that’s not like that was the first time you did that. You always loooooooved snoop around my stuff anyway. I’m not really surprised."
+    am "I just wanted to see if you really trusted today. After the last month where I wasn’t able to see you at all, because you’d shut yourself inside, I was confused about the state of our friendship."
+    am "So I made a test, a little game of mine... and you failed miserably, congratulations"
+
+    "He claps his hands, slowly, sarcastically with an apathetic face, bored of your antics. You couldn’t believe yourself. How were you able to be such a fool to fall into his trick that easily."
+
+    am "Anyway, I still want to play our game, so I can give you a second chance."
+
+    "Confused, you tilt your head at him. You had no intentions to partake one more time into his game. But still, a second chance for what?"
+
+    am "So here it is: Can you guess why did I change the padlock code?"
     
-    "Like that, all of the sudden, in an unexpected chain of events, Ammon is laid down in the grass, defenseless"
+    ga "You.. you’ve changed the code?"
+
+    am "Why yes! you don’t think that the code to my belongings would be that easy, do you?  Did you think that I would set a code that much easy to crack??"
+
+    "He sets his piercing gaze in mind, with an a expectant smirk up his ears on his face. You gulp. That doesn’t sound good."
+
+    am "Well not anybody could crack it. Only a few people, those people being intimate relatives, that only they would know about me. I don’t know, my closest friend for example?"
+    am "So tell me, Gaspard, why did I change the code?"
+
+    menu why_did_he_change_the_code:
+
+        "To see if I knew your real name":
+            am "... What?"
+
+            ga "Yes Ammon, in reality... You’re not named Ammon... but Éric!!"
+
+            am "... Yes and?"
+
+            ga "And?"
+
+            am "Yeah sure my name isn’t really Ammon, it’s a nickname {b}you{/b}’ve come up with because of my apparence."
+            am "But what does that have to do with the code?"
+
+            "... He’s right. It’s totally out of topic"
+
+            jump why_did_he_change_the_code
+        
+        "To see if I knew your birthday":
+            am "... Yes you are right."
+
+        "To see if I knew your location of birth":
+            am "... And what do you do with my location of birth?"
+
+            ga "You take the department number to input it into the padlock!"
+
+            am "Honestly that’d be a good guess if the department number wasn’t just two digits. The padlock makes 4 digits..."
+            am "Good guess... I guess?"
+
+            jump why_did_he_change_the_code
+    
+    am "The reason I change the code was to check if a friend of mine knew my birthday. Heheh..."
+
+    "You start to feel uncomfortable. A sharp and extreme mingle builds up inside of your abdomen. Your throat gets tighter every second."
+
+    am "So let me ask you another question. I’m sure you don’t mind anyway right?"
+    am "You love playing my games anyway so be prepared."
+    stop music fadeout 0.5
+    play music "audio/music/anger.mp3" loop fadein 0.1
+    am "Why the hell did you steal my wallet?"
+
+    "A growing rage fumes out of his ears. His fists are so clenched bloods spills out of his nails. You lose your nerves, coming up with your best innocent impression."
+
+    ga "Huh– No—no Absolutely not! Why would–would I do that?"
+
+    "You stumble on every one of your words. You didn’t expect Ammon to pick on your larceny. You tremble, he musn’t know it’s you."
+
+    ga "Maybe you’ve dropped it on the road?"
+
+    am "Bullshit! You know damn well I didn’t drop it, you liar."
+
+    "He slowly approaches you. Every step he takes, you recoil. Every breath he breathes, you gulp, Every piercing glance he casts you, you look away, unable to withstand him."
+    "When he reaches "
+    
+
+    
+    stop music fadeout 0.5
+    play music "audio/music/uboa.mp3" loop
+
+    "Like that, all of the sudden, in an unexpected chain of events, Ammon is laid down in the grass, defenseless, his face contorting in pain. He’s out of breath, imploring for air."
+    "You, on the other hand, sits on top of him, astride. You watch his unbeckled belt and you can see the tip of his underpants though his fly. You think this would be a thrilling position in any other context."
+    "Unfortunately, the more you go up though his body, the more you realise the horror of the situation."
+    "His disheveled, torn down, shirt and his black dirty jacket were no different, no the thing that disturbs you were your arms compressing his chest down."
+    "This must hurt him so you should stop but your arms keep pressing down and his cries of pain fill your ears. But you keep pressing down, no matter how much he seethes."
+    "Even more disturbing, Ammon hits your arms with all his strength but that reveals in vain, your arms planted there like statues, unmovable, whatever may happened."
+    "Despite his determination and his fierceness, the fists grew gradually weaker to the point where the wind, passing, judging hits you as hard as him, you couldn’t differentiate whomever was beating you."
+    "The knee strikes, beforehand, as piercing as spears, in your back, became bumps comparable to tickles. Although the situation didn’t leave any room for laughter or any kind of foolishness."
+    "Then you understand. Your hands are wrapped around the thick neck of your weakening friend."
+    "You squeeze and squeeze his squishy throat crushing every chance that air revigorates him. You can feel his adam apple fighting for its freedom but you would prevent that at all cost."
+    "You find yourself loving touching his flim skin, and its rough texture. You wished you had done it sooner."
+    "Ammon’s face turns pale as you writhe him of his last strands of energy. Drool bubbles out of his mouth, his teeth gritted to keep the remaining air in his mouth."
+    "Another thread of drool drops on Ammon and this time, it only comes from you. Your eyes are exorbitated from rage. You have become a feral animal."
+    "All of the sudden, you feel a loving touch on your arm. The dying hound shares a gaze with you as his last sparkles of life exit those sad eyes."
+
+    am "Pl–please stop."
+
+    "You manage to make up words from the low raspy sound coming out of his throat."
+
+
+
+
     jump first_act_part_1
     

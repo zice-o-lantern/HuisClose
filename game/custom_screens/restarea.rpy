@@ -159,7 +159,7 @@ label restarea_ammon:
         "I want to talk about something with you":
             "What is it?"
         
-        "I’ve got to something for you."
+        "I’ve got to something for you.":
 
             am "What do you "
 
