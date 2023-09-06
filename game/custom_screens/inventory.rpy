@@ -14,8 +14,8 @@ default rows_nb = 3
 default selected_item = ""
 default notebook = Item("Notebook", "notebook", "My beloved notebook. I bring it out with me everywhere.")
 default water_bottle = Item("Water Bottle", "bottle", "A water bottle that rehydrates! To be honest, \nI’m pretty honest, I’m pretty thirsty.", "water_bottle_examine")
-default cigarette = Item("Cigarette", "cigarette", "I knew Ammon was hiding some from me.")
-default ammon_wallet = Item("Ammon’s Wallet", "portefeuille_clark", "I don’t even feel bad about prying into his stuff. He’ll get what’s coming", "ammon_wallet_examine")
+default cigarette = Item("Cigarette", "cigarette", "I knew Ammon was hiding some from me.", "cigarette_examine")
+default ammon_wallet = Item("Ammon’s Wallet", "portefeuille_clark", "Ammon’s wallet. You might find \nsome interesting informations about him", "ammon_wallet_examine")
 
 default presented_item = ""
 
@@ -98,8 +98,17 @@ label water_bottle_examine:
     ga "I’m not anymore"
     call screen inventory
     return
-
+label cigarette_examine:
+    "You’d light one but you don’t have a lighter."
+    "Seems like you’ll have to see Ammon anyway."
+    call screen inventory
+    return
 label ammon_wallet_examine:
-    "Bitch be lying to me"
+    ga "I should be able to find some informations on Ammon."
+    "You search through his wallet and you pull out his ID card"
+    show ammon_id
+    pause 2.0
+    "Well here his birthday, you should be able to open the padlock now"
+    hide ammon_id
     call screen inventory
     return

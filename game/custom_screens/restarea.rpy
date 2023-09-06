@@ -11,7 +11,7 @@ screen restarea(screen_active=True):
     add 'parking'
 
     imagebutton:
-        pos (100, 200)
+        pos (300, 400)
         anchor (.5, .5)
 
         idle 'ammon'
@@ -119,7 +119,12 @@ screen restarea_padlock(screen_active=True):
 
 label ammon_padlock_good_code:
     show screen restarea_padlock(screen_active=False)
-    "Congrats"
+    "Finally you open the padlock. Time to rummage throug his stuff then."
+    "Well you didn’t have long to do before opening the bag and seeing a full box of cigarette there, sitting."
+    "You are utterly shocked... Why did Ammon conceal you them."
+    "Looks like it’s time to have a discussion with your friend."
+    $ ga_inventory.append(cigarette)
+    hide screen restarea_padlock
     return
 label ammon_padlock_nice_code:
     show screen restarea_padlock(screen_active=False)
@@ -153,15 +158,130 @@ transform c_zoom:
 label restarea_ammon:
     $ renpy.show_screen(current_screen, _layer="master",screen_active=False)
 
-    ga "Hi Gappy. What is it?"
+    am "Hi Gappy. What is it?"
+
+    if checked_padlock >= 1:
+        "You notice he has his wallet in his pants on his back pockets."
+        "You’re sure it has valuable information about the padlock code. Like his ID with his birthday on it."
+        "If you’re willing to steal his wallet..."
 
     menu:
         "I want to talk about something with you":
-            "What is it?"
-        
-        "I’ve got to something for you.":
+            am "What is it?"
 
-            am "What do you "
+            menu ammon_questions:
+
+                "Are you sure you don’t have any cigarettes?":
+                    am "Yes I am sure."
+
+                    ga "Not any tiney bitey one for me?"
+
+                    am "No Gap, no matter how much you ask, the answer will stay the same."
+                    am "Do you want me to shake the deep bottom of the box so you can see I’m not lying."
+
+                    ga "No..."
+
+                    am "So stop asking."
+
+                    "He’s really acting weird. I need to get at the bottom of this."
+                    return
+                "What’s your favourite number" if checked_padlock >= 1:
+                    ga "Hey Ammon, do you have a favourite number?"
+
+                    am "... What do you mean?"
+
+                    ga "Like a 4 digits number, you know like 4562? 6512? 2313? Those are cool numbers! Really cool numbers..."
+
+                    am "Hum no? Why would I have a favourite 4 digits number? This is just stupid?"
+
+                    ga "I don’t know, I do have a favourite 5 digits number! So why not 4 digits?"
+
+                    am "... Which it is..?"
+
+                    ga "Huuuuuh, 6... 8... 83.. 1"
+
+                    am "Greaaaaaat...."
+
+                    ga "But I also have a favourite 2 digits number!"
+
+                    am "Yeah I know this one. It’s very nice."
+
+                    ga "Oh ok..."
+
+                    return 
+
+        
+        "I’ve got to something for you." if ga_inventory != []:
+
+            am "What you got?"
+
+            label ammon_item_present:
+                $ evidence_needed = True
+                call screen inventory
+
+                if selected_item.name == "Water Bottle":
+
+                    ga "Here is your water bottle, Ammo"
+
+                    am "Hey thanks!"
+
+                    "He brings the water bottle to his mouth and gulp it down in seconds."
+                    if checked_padlock >= 1:
+                        "You would have tried to steal his wallet if he wasn’t gulping down that bottle so fast."
+                        "You have to find another distraction..."
+                    "Then he hands you back the bottle, empty."
+
+                    am "You’re a real help!"
+
+                    ga "No problem."
+                
+                elif selected_item.name == "Notebook":
+
+                    ga "Heeeeeeey, Ammmo"
+
+                    "Ammon sighs. He sees what you got in your hands."
+
+                    am "Is it again your notebook? Are you aware you’ve showed it to me like ten times this morning."
+
+                    ga "Yes I am awaaare... but you haven’t been attentive enough the ten previous times."
+
+                    am "Fiiiiine but this is the last time you’re showing it to me ok?"
+
+                    ga "Ok!"
+
+                    "You hand him the notebook and he opens it, grumpily, slogging through the pages."
+                    "You stick to him on his side to better appreciate your little sketches. You’re proud of your silly drawings. You hope him too."
+                    "From times to times, you point out some sketch reminding you some memories. Some you made at college. Some made at Julie’s. Some at Ammon’s, etc"
+                    "Despite Ammon’s initial reservations, you see a big grin drawn on his illuminated face."
+                    if checked_padlock >= 1:
+                        "Okay this is the time to make your move."
+                        "You slid your arms in his back, stealthily reaching for his back pocket. You can’t get uncovered so you’ve got to do it slow."
+                        "After long painful seconds, you finally penetrate his pocket. Suddenly, you realise the situation is very awkward. Your hand only millimeters of his behind."
+                        "You’d never think you’d do that to a friend... well that and stealing his wallet."
+                        "The initial shock passed, you grab his wallet and quickly bring it out to you."
+                        ## TODO: Show item gettings
+                        "(You should examine the wallet in your inventory.)"
+                    
+                    "Ammon closes the notebook and hands it back to you."
+                    am "Happy?"
+
+                    ga "Yes, great thank you!"
+
+                    am "Don’t ever bring out that notebook to me anymore."
+
+                    $ ga_inventory.append(ammon_wallet)
+                
+                elif selected_item.name == "Ammon’s Wallet":
+                    "Wait!!!!! Don’t do that!!"
+                    "Are you a total moron? Put that back."
+                
+                elif selected_item.name == "Cigarette":
+                    jump confront_him
+                
+                else:
+                    "Nice."
+        
+    return
 
 label restarea_trunk:
     $ renpy.show_screen("restareatrunk", _layer="master", screen_active=False)
@@ -251,6 +371,11 @@ label restarea_bottle:
 label restarea_notebook:
     $ renpy.show_screen(current_screen, _layer="master", screen_active=False)
     "Oh here is your beloved notebook you bring with you everywhere."
+    "Studies can be really exhausting. If you dedicated all your life, you’d already jumped over a window."
+    "So you got a hobby of yours to distract you. When you’re bored at classes in the amphitheater, you take out your notebook and start sketching in them."
+    "Over the years, you estimate you got really good at it. You can’t resist showing it to your friends. Julie loves your drawings. She encourages you into an artist carrer."
+    "You also show it a lot to Ammon. He likes what you do but at this point, he’s got fed up that you show it to him every minute."
+    "You should show it to him again. You could also keep sketching in it. Bring it with you."
     
     $ ga_inventory.append(notebook)
     # $ check_inventory_empty()

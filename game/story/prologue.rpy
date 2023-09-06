@@ -15,12 +15,11 @@ label prologue:
     play music "audio/music/griff.mp3" fadein 1.0 loop
 
     # TODO: Add more glitches
+    ## TODO: Rewrite it to be more personal.
     "Before you condemn me of lethargy, I would like to do my mea-culpa and warn you that I know nothing in life and I am not in anyway qualified to submit a verdict." 
     "It just happened that I am on a branching path where I can’t cower behind my hide and must take on the complex dilemma that I have been defied with."
     "Is Boredom a crime? Let me rephrase: Can my lethargy cause irreparable wrongdoings for the world around me. By all means, I’ve tried and I’ve succeded to not hurt anyone."
     "Is my dullness the root of all the issues I experienced since I’ve set foot on this forsaken Earth while I couldn’t see anything for my obliviousness?"
-    # "{swap=Test phrase@Test Druugs@1.0}Test phrase{/swap}"
-    # "{chaos}Also a test lol{/chaos}"
     "{sc=0.5}No I don’t think so; trust me, please, I’ve been pondering about \nit for a long time ; Being bored isn’t a crime as other form of \nboredom like Indifference, Lethargy or even Apathy.{/sc}"
     "{sc=0.75}My Apathy won’t be a tragedy.{w=.25}.{w=.25}.{w=1.} My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy.{/sc}"
     "{sc=1.0}{cps=60.}My Apathy won’t be a Tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a Tragedy{/sc}" (what_font = "gui/fonts/RifficFree-Bold.ttf", what_color="#000", what_outlines=[ (10, "#FFF") ])
@@ -77,31 +76,31 @@ label prologue:
     ## TODO: Add sfx (guess pause the musuc and all)
     am "Hey Gap? Are you sleepy?"
 
-    "This deep voice calling awakens in you a surge of uncomfortable geyser and you come to find myself jumping and groaning, letting out some groans go."
+    "This deep voice calling awakens in you a surge of uncomfortable geyser and you come to find myself jumping and groaning, letting out some squealings go."
 
     am "Oh my god don't move like that!"
 
     "Despite hearing an agitated man, gesticulating and whining around, you’re still not quite out of your slumber; The landscapes are all blurry and you can’t really distinguish them from the road."
     "Sandpaper bags obstruct the path of your eyelids and every blink feels like pin and needles. The ruthless spikes pierce through the shutter lids veiling my view."
     "The weariness of the road made your legs drowsy and the numbness flows through your veins in every muscle of your body. Fighting against it, you blink even more."
-    "Sootheness and comfort; every time you blink through it, the needles in my eyes fly through the wind, the shards of glass melt up from the spores of your skins between the strands of hair."
+    "Sootheness and comfort; every time you blink through it, the needles in my eyes fly through the wind, the shards of glass melt up from the spores of your skin between the strands of hair."
     "You are soon out of my reverie when Ammon speaks up again."
 
     am "Hey are you there??!"
 
     "Panicking for you, he thinks over how to get you out of it. His arms around your waist tighten and his chest draws nearer to me, and at this moment the warmness emanating from the torso of his invades every piece of hair of your body."
-    "Boiling and beating his chest; A shiver runs through your spine, then another one. A old sentiment all too familiar grows inside of you and you don’t like it. you don’t want to find out what happens next if he keeps at it."
+    "Boiling and beating his chest; A shiver runs through your spine, then another one runs though. A old sentiment all too familiar grows inside of you and you don’t like it. you don’t want to find out what happens next if he keeps at it."
     "You shove him off."
 
     ga "Oh my god let go!!!"
 
     "Your immediate reaction causes you to veer off track."
-    "Slaloming and slaloming, you get hardly back the control of the motorcycle. It shakes you both a lot. Now he’s squeezing you and won’t let go."
-    "You manage to stabilise the vehicle quite fast but you’re still quite nauseated from the experience."
+    "Slaloming and slaloming, you get hardly back the control of the motorcycle. It shakes you both a lot. Now he’s squeezing you even more and won’t let go."
+    "You manage to stabilise the vehicle pretty fast but you’re still quite nauseated from the experience."
 
     am "Oh good Lord…"
 
-    n1 "He lets go."
+    "He lets go."
 
     stop music
 
@@ -110,13 +109,13 @@ label prologue:
 
     "After some time, a sort of strange quietness grew and loomed over the both of you two. It was uncomfortable, wondering what might have caused all of this agitation early on."
     "The guiltiness start to take its toll over you, you didn't make a good job to keep focused on the road. A mingle of shame builds up in your throat and it’s stuck no matter how much you gulp."
-    "You throw some quick looks in the mirror to see if there’s any casualties with Ammon. Apparently he’s fine so you start to relax a bit."
-    "Although his undecypherable gaze under his helmet makes it difficult to know for sure but his ominous aura penetrates all of your pores and tinges all of your hair."
-    "At some point, the silente itches you; you want to stop driving and scratch the back of your head, his cold stare is staggering the back of your neck."
-    "The hum of the vehicle barely barely fills the glacial air and no matter how much fast you go, the biting frost won’t stop nimbling on you."
-    "With guiltiness crepping up, you fire more and more worried looks in the mirror to check on him."
+    "You throw some quick looks in the mirror to see if there’s any casualties with Ammon. Apparently he’s fine so you relax a bit."
+    "Although his undecypherable gaze under his helmet makes it difficult to know for sure but his ominous aura penetrates all of your pores and tinges all of your body."
+    "At some point, the silence itches you; you want to stop driving and scratch the back of your head, his cold stare is staggering your neck."
+    "The hum of the vehicle barely fills the glacial air and no matter how much fast you go, the biting frost won’t stop nimbling on you."
+    "With guiltiness creeping up, you fire more and more worried looks in the mirror to check on him."
     "Constating the situation hasn’t evolved—you could’ve not picked enough information given the situation anyway—you try to think up something to break the ice."
-    "You hesitate, you didn’t do anything wrong right? You just was unfocused for a moment and got back in control pretty fast. Nothing to write home about."
+    "You hesitate, you didn’t do anything wrong right? You just were unfocused for a moment and got back in control pretty fast. Nothing to write home about."
     "You squeeze the handlebar, fearing the moment you’ll have to open your mouth about it. It couldn’t be that hard, could it?"
     "You gather all of your courage and brace yourself for the challenge to come."
     "You close your eyes, say those two words slowly."
@@ -129,14 +128,14 @@ label prologue:
 
     ga "What did you just say..?"
 
-    "you can’t help myself but turn your head around. Maybe in front of you, you’ll see that you were mistaken."
+    "You can’t help myself but turn your head around. Maybe in front of you, you’ll see that you were mistaken."
 
     am "I said I’m sorry{cps=3}...{/cps} for yelling at you. Are you happy?"
 
     play music "audio/music/Eleventh Hour - OneShot.mp3" fadein 1.0 loop
 
     "He reasserts himself. He crosses his arm sternly. It looks like his pride has been shamelessly plundered. He looks away and avoids your glaze. He shows a face of discomfort and akwardness."
-    "That took him a lot of efforts, apparently—I mean, he’s the type to be a knucklehead about it—he wronged you a lot of times and he doesn’t usually own up to it."
+    "That took him a lot of efforts, apparently—he’s the type to be a knucklehead about it—he wronged you a lot of times and he doesn’t usually own up to it."
     ## TODO: maybe add a short anecdote here
     "You grin bittersweetly, realizing you have been cut off in you tremendous amends to make it up to him."
 
@@ -148,7 +147,7 @@ label prologue:
 
     "He contorts himself in his place at your snickering, not pleased by your teasing."
     "It might have been uncalled for but you didn’t care; It was your way to get back at him to all of those years of mocking you endured. You might be the only one he does apologise to anyway."
-    "Not that you are the Messiah or anything. You genuinely believe it’s more he doesn’t have a lot of people he could apologize to. His irritating attitude repels a lot of people and he also doesn’t like a lot of people."
+    "Not that you are the Messiah or anything. You genuinely believe it’s more he doesn’t have a plenty of friends he could apologize to. His irritating attitude repels a lot of people and he also doesn’t like a lot of people."
     "Weirdly, one day, long ago, he set his sight on you and decided you were worthy of his friendship. A tad presomptuous but nowadays you didn’t mind. You know very few people like this so it’s interesting."
 
     am "You say one more word about it and I’ll push you off the bike."
@@ -165,7 +164,7 @@ label prologue:
 
     "You brake dryly, unable to withstand his tickling and take a time to catch back your breathing."
     ## TODO: add a bit of between
-    "He truly acted like a child sometimes but you didn't mind, you did partake in his bickering. In not any circumstances, You would ever cut him off of his childishness."
+    "(change ça)He truly acted like a child sometimes but you didn't mind, you did partake in his bickering. In not any circumstances, You would ever cut him off of his childishness."
     "You turn back to him, faking your exasperation to his behaviour, you pout and cross your arms with an exaggerated manner, it all makes you laugh inside."
 
     ga "Ok Ammon, you should’t DEFINITELY not tickling me while I drive!"
@@ -265,11 +264,11 @@ label prologue:
             
             ga "Let me tickle you, then! You need some too!"
             
-            "you jump on Ammon and assault him of tickles, destabilising him enough for him to laugh unconditionally."
+            "You jump on Ammon and assault him of tickles, destabilising him enough for him to laugh unconditionally."
             
             am "Ahahah—Stop I can't take it anymore!—Ah ahAhhh."
             
-            "You benefit from this window of opportunity for tackling him down on the bike with an armock of mine he won't get out of so easily."
+            "You benefit from this window of opportunity for tackling him down on the bike with an armlock of yours he won't get out of so easily."
             
             am "Ouch ouch, okay you've won Gap no need to–"
             
@@ -334,16 +333,20 @@ label prologue:
             "You take back the road and continue to your destination."
     
     if ammon_score >= 1:
-        "Aftermath passed, you both lay on the road, still shaken up by the fall. You hear Ammon cough. You look at him worriedly, checking if he's hurt."
-        "He doesn't look all bad, although he has bruises here and there. The next moment, you notice you are all bruised too. On your hands, arms, head, everywhere. Your clot are dirty and you feel bad because you had just washed them this morning."
+        "Aftermath passed, you both lay on the road. You hear Ammon cough. You look at him worriedly. Is he hurt?"
+        "He doesn't look all bad, although he has bruises here and there. The next moment, you notice you are all bruised too. On your hands, arms, head, everywhere." 
+        "Your clothes are dirty and you feel bad because you had just washed them this morning."
         "Your primal instinct hits and you lick all of your injuries. Arms above your head, tongue in your armpit; A longing stare hammers at you so you spin toward the source."
-        "You contemplate a smirking, dirty dog, snickering. You fluster. He has already seen you doing that; what’s that so funny about it right now? I sulk and embarrassingly continue to lick at the wounds. But he still looks at me."
+        "You contemplate a smirking, dirty dog, snickering. You fluster. He has already seen you doing that; what’s that so funny about it right now? You sulk and embarrassingly continue to lick at the wounds. But he still looks at me."
         
         ga "Could you stop looking at me? I don’t know what’s so interesting about it but it’s embarassing me."
         
-        "You turn away, fleeing eyes, wanting to put you into a mouse hole away from the judging world, from any peeping eyes of your unfortunate pulsions. Heats of wave overrun your cheeks and the then pure white turn into a cherry pink of embarassement."
-        "All of the sudden, a raspy sound of tongue licking the filthy crusty fur pierces your eardrums and you can’t help but look at the source of the sound. The spectacle you see there is all intriguing—or you could say—captivating."
-        "There before you beholds a filthy dog on the ground, wrist, above in the air, being licked that same raspy tonge you’ve heard. His damp muscle runs through all over and all abroad his wrist. He stops in his deed and raise his head, intrigued by your stare."
+        "You turn away, fleeing eyes, wanting to put you into a mouse hole away from the judging world, from any peeping eyes of your unfortunate pulsions."
+        "Heats of wave overrun your cheeks and the then pure white turn into a cherry pink of embarassement."
+        "All of the sudden, a raspy sound of tongue licking the filthy crusty fur pierces your eardrums and you can’t help but look at the source of the sound." 
+        "The spectacle you see there is all intriguing—or you could say—captivating."
+        "There before you beholds a filthy dog on the ground, wrist, above in the air, being licked that same raspy tonge you’ve heard." 
+        "His damp muscle runs through all over and all abroad his wrist. He stops in his deed and raise his head, interested by your stare."
         "You share a meaningful glaze, could have lasted for centuries, if your limbs didn’t ache on every inches of your body."
         "Although the pain gradually fades away, Ammon, content of his little show, stares at you mischeviously."
 
@@ -354,13 +357,16 @@ label prologue:
         "Ammon sits back on his behind, extends his legs and look at the sky and the clouds passing by, diamonds in his golden eyes. You look for the meaning of his words in his sunflowers that he uses to see. But I only see a glint of "
 
         am "When you lick yourself, when you purr, when I throw a ball of yarn at you and you start rolling around fighting to death, I find myself enjoying those moments when you let your guard down, when you show that you are not a stuck–up dork."
-        am "But afterwards you always become this grumpy cat ashamed of what he is. I just thought I could cheer you up by showing that it wasnt’t that bad, that you shouldn’t feel so bad about it. That it’s not that embarrassing, do you see what I mean?"
+        am "But afterwards you always become this grumpy cat ashamed of what he is." 
+        am "I just thought I could cheer you up by showing that it wasnt’t that bad, that you shouldn’t feel so bad about it. That it’s not that embarrassing, do you see what I mean?"
         
         "At these words, You couln’t hold it any longer and muffled snickers escape your little nose. Soon it becomes a loud laughter as you unleashed the last strands of your joie de vivre."
         "He was being truly embarassing."
         "Ammon, amused by your sudden change from sultry to euphory, follows and you two lose yourself in the silliness of the situation, reminiscent of older times."
-        "You finally calm yourself, wiping out your tears of laugther and you slowly get on two paws. You stretch out to get you back on track. You purr out of satisfaction for you had not brawled like that for a long time."
-        "You realise that the time where you would fight like that with Ammon died long ago, and you only regret now. The studies and annual exams overflowed your world and you have come to forget your support when you drowned slowly."
+        "You finally calm yourself, wiping out your tears of laugther and you slowly get on two paws. You stretch out to get you back on track." 
+        "You purr out of satisfaction. You had not brawled like that for a long time."
+        "You realise that the time where you would fight like that with Ammon died long ago, and you only regret now." 
+        "The studies and annual exams overflowed your world and you have come to forget your support when you drowned slowly."
         
         ga "Ahah ok ammon let’s go–"
 
@@ -1316,10 +1322,13 @@ label rest_area_2:
             checked_padlock = 0 
             
             got_water = False
+            got_notebook = False
             good_code = ""
 
         
         # show screen custom_quickbar
+        stop music
+        play music "audio/music/moment_orange.mp3" loop fadein 1.0
         jump pointnclick_interact_loop 
 
 
@@ -1338,11 +1347,11 @@ label confront_him:
 
     stop music fadeout 1.5
     play music "audio/music/suspense.mp3" loop fadein 0.5
-    "The daydreaming dog turns his, intrigued. Your grave tone might have shaken him because concern and worriedness covered all over his face. You feel you are on the good track."
+    "The daydreaming dog spins his head, intrigued. Your grave tone might have shaken him because concern and worriedness covered all over his face. You feel you are on the good track."
 
     ga "Are you sure you don’t have any cigarettes for me. I mean, you always bring more than one, don’t you."
 
-    am "I am sure. It’s just this time... I forgot some at home and only brought one. Nothing more to that."
+    am "I am sure. It’s just this time... I forgot some at home and only brought one. Nothing more to that."
 
     "He scratches the back of his head. He doesn’t have anything more to say to you. You almost feel pity for him. If you had not discovered it, you would have trusted him. But you can’t anymore."
 
@@ -1492,25 +1501,108 @@ label confront_him:
     play music "audio/music/anger.mp3" loop fadein 0.1
     am "Why the hell did you steal my wallet?"
 
-    "A growing rage fumes out of his ears. His fists are so clenched bloods spills out of his nails. You lose your nerves, coming up with your best innocent impression."
+    "A growing rage fumes out of his ears. His fists are so clenched bloods spills out of his nails. A violent shock bursts through you. He noticed?" 
+    "You lose your nerves, coming up with your best innocent impression."
 
     ga "Huh– No—no Absolutely not! Why would–would I do that?"
 
-    "You stumble on every one of your words. You didn’t expect Ammon to pick on your larceny. You tremble, he musn’t know it’s you."
+    "You stumble on every one of your words. You didn’t expect Ammon to pick on your larceny. You tremble, he musn’t know it was you."
 
     ga "Maybe you’ve dropped it on the road?"
 
     am "Bullshit! You know damn well I didn’t drop it, you liar."
 
     "He slowly approaches you. Every step he takes, you recoil. Every breath he breathes, you gulp, Every piercing glance he casts you, you look away, unable to withstand him."
-    "When he reaches "
+    "When he reaches a close–enough distance that your whiskers could rub his snout, he pokes and prods at your chest in a similar fashion you were accusing him of concealing his belongings."
+
+    am "At first, I was confused. Why would Gaspard ask me to watch his notebook for the thousandth time? I figured you were just recovering your own way."
+    am "Then I felt your warm on your arm on my back... then your warm hand in my jeans’ pocket. What was he doing I was thinking at the moment."
     
+    "He wears a sad smile. Bittersweetness and regrets ooze out of his words."
+
+    am "You weren’t that stealthy. You could’ve gone for my pants, it would’ve felt the same."
+
+    "His meek smile disappears for his frowned and scrunchy eyebrows to take place. He’s deeply mad at you. There’s no coming back from that."
+
+    am "But then, here it comes. You take out your hand. My wallet is gone."
+    am "I was lost. What could you do with my wallet. For a moment, I thought it was your crooked—out way to play a trick on me or make me a surprise."
+
+    "His words before soft, emanating a deeper irratation, became primal growls. His foul breath moves every hair of your face."
+
+    am "Suddenly, an awful thought came to mind. It couldn’t be possible, you wouldn’t dip dowm that low, would you?"
+    am "And there I see you, toying back with that bloody padlock and finally unlocking it."
+
+    "His sharp drooling teeth fill your vision. That reminds you that it was foolish to even believe you could have the upperhand on him."
+
+    am "So this is why I’ve learned today: you don’t trust me any bit that you are willing to snoop around in my stuff, nose deep down, like a vulture."
+    am "Next that you don’t even {size=50}fucking{/size} remember my {b}birthday{/b} and that you don’t mind pickpocketting me and steal my wallet."
+    am "You really had to look at my ID to guess my birthday? You know you could’ve asked me? Oh no I forgot. You are a sad distrustful scavenger willing to go through my shit to get what he wants."
+
+    "You’re lost for words. You were mistaken on every level and now, your then close friends was tossing at you everything is wrong with you, utterly disappointed."
+    "You stare at the ground, in a dead trance, not able to reflect anymore because of your blans mind, this mind ravaged by the missiles launched at you."
+    "Arms dangling, you had no purpose in life anymore. Once again, you return to your puppet with no master state, lifeless."
+
+    am "I don’t recognise you anymore, Gaspard. I can’t recognise you since the day you missed my birthday."
+    am "It’s like the day of my birth... You’ve died. What really happened that day?"
+    am "I know I’ve said I’ll never ask you questions about it. But then, you’ve demonstrated you don’t trust me anymore.{w} So I don’t trust you anymore either."
+
+    "Your mind breaks at his words. Is he going to reject you? Is he going to never approach him again?"
+    "You can’t stand that. You can’t stand that Ammon, your childhood friend, the one you’d think you never lose, that always be with you no matter both of your antics, is going to cut ties with you."
+    "You have to find something to make him stay. He can’t leave you, otherwise you’ll be alone with your thoughts. With that day in loop."
+
+    ga "Wait! Huu–Huuh I didn’t steal you wallet for that!"
+
+    "You interrupt his plea. You caught his attention. Don’t waste it. You scramble in your mind to think of a good enough excuse."
+
+    ga "I ste— I’ve taken your wallet to make you a surprise, to cheer you up, ok?! I never forgot your birthday, all right??!"
+
+    "You gesticulate around like a madman, with vivid desesperate motions, and your exorbitated eyes, crazed, frenzied. You’d scare yourself."
+    "Those same eyes implore him to believe you in vain."
+
+    ga "So please don’t leave me ok? I beg of you!"
+
+    am "Give me back my wallet."
+
+    "Ammon answers sternly, arms crossed, closed, unsensitive to your pleadings."
+
+    am "With all of the shit you’ve put me through, you surely had the time to make your little surprise. I want to see it."
+
+    ga "It’s– It’s not done!"
+
+    am "Don’t care. It’s my wallet anyway. I have the right to get it back any time and I’ve decided that it was right now."
+
+    "Ammon, in an isntant, dashes for your pockets. No you can’t let him, you won’t be able to go back if he puts his hands on it. You have to prevent him at all cost."
+
+    ga "Wait, I’m not done!"
+
+    am "I don’t care! Give it to me!"
+
+    "Ammon grabs the wallet but there is too much at stake to let it go so you clutch his hand like you’d hold for your life."
+    "You wrestle for your life to get the wallet back. This is your last chance to set things right so you scratch at him, hiss at him, and even bites him."
+    "On the other hand, Ammon won’t let go either. He barks at you, jerks his head in all directions. He’s slipping through your fingers the more you pull that wallet."
+    
+    ga "Please Ammon!! Trust me!!!"
+
+    "You put you hand out to him, to his shoulder. He might understand if you can grab a hold of him."
+
+    am "{size=60}BACK OFF{/size}"
+
+    "The next moment, his fist connects to your eyebrows arch and you blast through the air on his motorcycle."
+    "The wallets sits on the floor, its contents spilled in the grass, last relic of your fleeting friendship, trampled"
+    "You hit your head hard on the frame of the motorcycle. Blood trickles down from it. You pass your head on your wound. Just blood."
+
+    am "FUCK, sorry, I didn’t mean to! Let me hel–"
+
+    ga "{size=60}YOU FUCKING BASTARD{/size}"
+
+    "You spring on Ammon. You both roll on the grass. After that it’s a bit of a blur. You don’t remember everything."
+
 
     
     stop music fadeout 0.5
     play music "audio/music/uboa.mp3" loop
 
-    "Like that, all of the sudden, in an unexpected chain of events, Ammon is laid down in the grass, defenseless, his face contorting in pain. He’s out of breath, imploring for air."
+    "All you remember, is Ammon laid down in the grass, defenseless, his face contorting in pain. He’s out of breath, imploring for air."
     "You, on the other hand, sits on top of him, astride. You watch his unbeckled belt and you can see the tip of his underpants though his fly. You think this would be a thrilling position in any other context."
     "Unfortunately, the more you go up though his body, the more you realise the horror of the situation."
     "His disheveled, torn down, shirt and his black dirty jacket were no different, no the thing that disturbs you were your arms compressing his chest down."
@@ -1524,13 +1616,57 @@ label confront_him:
     "Ammon’s face turns pale as you writhe him of his last strands of energy. Drool bubbles out of his mouth, his teeth gritted to keep the remaining air in his mouth."
     "Another thread of drool drops on Ammon and this time, it only comes from you. Your eyes are exorbitated from rage. You have become a feral animal."
     "All of the sudden, you feel a loving touch on your arm. The dying hound shares a gaze with you as his last sparkles of life exit those sad eyes."
+    "Close to the death, he had an epiphany."
 
     am "Pl–please stop."
 
-    "You manage to make up words from the low raspy sound coming out of his throat."
+    "You suceed to make up words from the low raspy sound coming out of his throat."
+    
+    am "I believ–believe you, ok? You are my friend and I won’t want leave you, ok?"
+    am "I know you’re having hard times, so I won’t hold you to what you’re doing right now, I promise."
+    
+    "His grip weakens, all colours drain out of his face. His throat before, contracting and moving, goes more and more inert."
+    
+    am "You’re n–not dea–dead. You always ha–have been the s–same cat I met years ago."
+    
+    "He grins at you, tears streaming down the corner of his lips."
+    am "I don’t want to ever leave you. You’re the favourite person I love to trick to."
+    am "So... I know it’s not you so stop doing that, I beg you."
+    am "Remove your hands... Please."
 
-
-
+    "His hands fall down, unmoving. He doesn’t breathe a lot anymore."
+    if ammon_score == 0:
+        "But you didn’t care. All you want it to keep strangling his squishy little throat. It brings within you forbidden pleasures."
+        "You loved every rictus of pain on his face. You drool even more and these strings mix with his."
+        "Your pleasure is indiscernible from his pain. You hate him. You hate him and you hope he suffers enough." 
+        "He’s going to regret ever thinking about leaving you."
+        "Then a memory goes through your mind. Your hands are also wrapped around his neck. But not your dying friend right here. Your father."
+        "You remember everything. The pavement, the fence, the rocks, the blood in the grass mixing in the dirt."
+        "You remove your hands. Blood on your hands. Nausea goes up your torso. You feel light–headed. You stand up."
+        "He doesn’t breathe anymore."
+        "At least you think."
+        "You puke."
+    
+    else:
+        "Then you remenmber. All the times Ammon bring up your spirits. All the times you cried out of exhaustion and he was there for you."
+        "All the times, he took your yogurt at lunch at middle school and toyed with you for minutes. In the instant, you hated it but in the end, you’d laugh."
+        "The time you feel nauseated at this lame party and he came take you home even though he told you not to."
+        "The times where he didn’t feel good so you watched over him for day and nights so he’d go better."
+        "You grin. You couldn’t have a better friend than him. He was the only one able to fully understand you. Then you realise."
+        "You’re strangling him. Your hands are wrapped his neck. What are you doing. What you’re doing is bad, forbidden. You’re committing a crime."
+        "You remove you hands of his neck and you stand up so fast, you’re striked with the vertigo."
+        "Ammon let out a seething gasp, finally air filling his lungs. However he stays on the ground, too puny of your assault."
+        
+        if ammon_score >= 1:
+            am "Thanks Gap..."
+            am "I like you {w}a lot."
+            if ammon_score == 3:
+                am "No. I lo–"
+        
+        "He doesn’t talk anymore. He has fallen unconcious."
+    
+    "Your headache assaults you with greater intensity. You clutch you head. You lose your balance."
+    "You collapse."
 
     jump first_act_part_1
     
