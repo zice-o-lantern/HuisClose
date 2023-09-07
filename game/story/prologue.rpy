@@ -1054,7 +1054,7 @@ label phone_booth:
 
 
         
-        "I can tolerate him" if ammon_score >= 1:
+        "I can tolerate him" if ammon_score >= 1:                                                                                                                                                                                                           
             ga "He’s been supportable so far"
         
         "I wish you were with me, not him":
