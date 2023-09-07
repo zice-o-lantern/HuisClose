@@ -12,7 +12,7 @@ define narrator = Character(name=None, what_italic=True, what_color="#39f7dc", c
 
 define ga = Character("Gaspard", color="#454b41", callback=gap_noise)
 
-define ju = Character("Julie", color="#aa6aca")
+define mj = Character("Marie–Jil", color="#aa6aca")
 
 # Declare images
 

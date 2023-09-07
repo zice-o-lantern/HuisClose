@@ -4,6 +4,14 @@ default current_screen = ""
 
 default ammon_score = 0
 
+default got_notebook = False
+default empty_inventory = True
+
+# init python:
+#     def check_inventory_empty():
+#         if len(ga_inventory) > 0:
+#             empty_inventory = False
+
 default evidence_needed = False
 default evidence_selected = ""
 default evid_label_to_go = ""
