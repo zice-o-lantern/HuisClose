@@ -34,7 +34,7 @@ label prologue:
 
     "You wake up at the hum of the radio, a bit shaken up, with drool staining your helmet visor — Fortunately there’s not enough to hide your vision."
     "Where, before you were stranded away in the milky way, comtemplating about the mysteries of the universe, where the shining stars watched over you, you find yourself on a motorcycle."
-    "A sharp pain pervades your whole being like a blooming rose planting her thorny roots in every part of your spirit."
+    "A sharp feeling pervades your whole being like a blooming rose planting her thorny roots in every part of your spirit."
     "The radio was blastering loud some song from a rock band you appreciated a lot, although you dare not admit it in public, as it was strongly frowned upon among your elders."
     "It’s alright, you think; nobody’s here to disturb you in your little trance."
 
@@ -52,6 +52,10 @@ label prologue:
     "You remember going to Father to reveal him your latest epiphany. He went to a pensive state of mind. He’s going to succeed me, huh? \nHe bore a lethargic expression on his face–"
     "—not that it was exceptional. \nHe always seems dead to the outside."
     "Maybe not just to the outside."
+    
+    az "Fuck this guy."
+    az "You should forget him."
+
     "You went on doing a PhD and your father still wears that apathetic face. At least he would if he’d been still there. You haven’t seen him for a long time..."
     "Or you have? You think you really have but you don’t remember when. Was it Yesterday? Last week? Last month?.. Last year, surely. It’s on the edge of your mind but something prevents you to remember."
     "Anyway, it shouldn’t have been that important if you can’t remember."
@@ -1070,16 +1074,16 @@ label phone_booth:
 
     ga "Huh, okay? What is it? What does this have to do with me?"
 
-    ju "I–I wanted to talk about your behaviour lately."
+    mj "I–I wanted to talk about your behaviour lately."
 
     "Unsettled, she struggles to find words on her thoughts. Her overall attitude disturbs you. You haven’t seen her a lot like that."
     "She grows impatient. You let her explain herself."
 
-    ju "Are you alright?"
+    mj "Are you alright?"
 
     ga "What do you mean? You’re making me confused."
 
-    ju "With you trip, were you able to think about your... moods, clean your thoughts, to reflect on what happened recently."
+    mj "With you trip, were you able to think about your... moods, clean your thoughts, to reflect on what happened recently."
 
     "She sounds concerned. Irritated. Have you been that out of it lately? You must admit that you had your up and down like everyone but you don’t consider it a matter to be discussed." 
     "At most, you felt a bit tired from the pressure but that’s all."

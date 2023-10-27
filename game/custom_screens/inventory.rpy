@@ -94,8 +94,8 @@ label default_examine:
     return
 
 label water_bottle_examine:
-    ga "I’m thisrty"
-    ga "I’m not anymore"
+    "I should bring it to Ammon. {w}He might get impatient. I care no less if he’s pissed."
+    "But I don’t have to deal his prick attitude, right now."
     call screen inventory
     return
 label cigarette_examine:

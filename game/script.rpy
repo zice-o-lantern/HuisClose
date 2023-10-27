@@ -7,8 +7,8 @@ define ch = Character("Charles", color="#26222cff")
 
 define am = Character("Ammon", color="#f0ee7b", callback=ammon_noise)
 
-define n1 = Character(name=None, what_italic=True)
-define narrator = Character(name=None, what_italic=True, what_color="#39f7dc", callback=narrator_noise)
+define narrator = Character(name=None, what_color="#39f7dc", what_font="gui/fonts/ApercuItalic.otf", callback=narrator_noise)
+define az = Character(name="???", image="azzy", color="#714c8f", what_italic=True, who_italic=True, what_color = "#714c8f", what_font="gui/fonts/lydianbi.ttf", who_font="gui/fonts/lydianbi.ttf")
 
 define ga = Character("Gaspard", color="#454b41", callback=gap_noise)
 
