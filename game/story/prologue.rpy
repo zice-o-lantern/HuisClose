@@ -3,36 +3,111 @@ label prologue:
     # Black scene
     scene black
     pause 1.
-    "Honestly{w=0.5}, I couldn’t believe me strangling my father at the stepdoor."
-    "Or was it the stepdoor? {w}Maybe it was on the pavement." 
-    "Or the grass. {w=1.0}You know what?"
-    "{sc=1}It doesn’t matter anymore."
+    "Honestly{w=0.5}, I couldn’t believe me strangling my father"
+    "Or maybe I was hugging him. {w}I always wanted to get him close to me so I could feel, behind that cold carapace, his warmth. His beating heart."
+    "To determine that, when I’ll come upon his empty shell, I’ll know wether it is a slaughter.{w}\nOr a murder."
     
     pause 1.
 
     scene sky_of_stars with dissolve
 
-    play music "audio/music/griff.mp3" fadein 1.0 loop
+    # play music "audio/music/griff.mp3" fadein 1.0 loop
+    play audio "sounds/cold_wind.mp3" fadein 2.0 loop
 
     # TODO: Add more glitches
     ## TODO: Rewrite it to be more personal.
-    "Before you condemn me of lethargy, I would like to do my mea-culpa and warn you that I know nothing in life and I am not in anyway qualified to submit a verdict." 
-    "It just happened that I am on a branching path where I can’t cower behind my hide and must take on the complex dilemma that I have been defied with."
-    "Is Boredom a crime? Let me rephrase: Can my lethargy cause irreparable wrongdoings for the world around me. By all means, I’ve tried and I’ve succeded to not hurt anyone."
-    "Is my dullness the root of all the issues I experienced since I’ve set foot on this forsaken Earth while I couldn’t see anything for my obliviousness?"
-    "{sc=0.5}No I don’t think so; trust me, please, I’ve been pondering about \nit for a long time ; Being bored isn’t a crime as other form of \nboredom like Indifference, Lethargy or even Apathy.{/sc}"
-    "{sc=0.75}My Apathy won’t be a tragedy.{w=.25}.{w=.25}.{w=1.} My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy.{/sc}"
-    "{sc=1.0}{cps=60.}My Apathy won’t be a Tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a Tragedy{/sc}" (what_font = "gui/fonts/RifficFree-Bold.ttf", what_color="#000", what_outlines=[ (10, "#FFF") ])
-    "{sc=1.25}{cps=80.}My Apathy won’t be a Tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a tragedy. My Apathy won’t be a{/sc}{nw}"
-    "{sc=1.5}{cps=100.} My Apathy won’t be a tragedyMy Apathy won’t be a tragedyMy Apathy won’t be a tragedyMy Apathy won’t be a tragedyMy Apathy won’t be a tragedyMy Apathy won’t be a tragedyMy Apathy won’t be a tragedyMy Apathy won’t be a tragedy{/sc}{nw}"
-    "{sc=2.0}{cps=110.} my apathy won’t be a tragedymy apathy won’t be a tragedymy apathy won’t be a tragedymyapathywon’tbeatragedymyapathywon’tbeatragedymyapathywon’tbeatragedymyapa{/sc}{nw}"
+    "At the frontiers of the forest, in the clearing of my misery, I lay there, overwhelmed, breathless. I breathe and breathe but the hot air burns my throat."
+    "But then I feel your reassuring presence, I’m reminded that I’m not alone.{w} So I take deep breaths and finally my thumping torso lowers down to a steady pace."
+    "Between two relieved exhalations, I look down and my eyes meet him, someone I know really well, someone I’ll never forget, someone I wish to forget, a heartless monster."
+    "I stare deep through him but the glimmering shines in his eyes disappered long ago{w}, if there ever were any."
+    "Sometimes I wonder if my life could have gone differently, what I should have done to not end up in a forest, in the middle of night, beaten up, with this worthless being."
+    "Had he smiled more at me, had he spoken more to me, had he taken me more in his arms, had he cared more, had he done all of that, perhaps, just perhaps, I would have felt pity."
+    "Pity when he was seething though his teeth, guffing, gurgling, retching."
+    "Regret when he was pleading to remember all the good times."
+    "Remorse when he was imploring to let him go, that he won’t talk what happened tonight"
+    "But I wouldn’t.{w} I wouldn’t have felt anything for him."
+    "During those lasting moments, where, with his last strands of energy, he clenched my arm, {w=.5}there was nothing."
+    "No sadness, no pleading, no torment, no anger, no rage, no wrath, no nothing.{w}\nWhile I stood there, I craved for any kind of sign that he was a warm conscious being. Something, just anything"
+    "No. Just dead eyes. No matter how hard I look, I still see those same dead eyes. Looking at me."
+    "I wished those weren’t the same eyes. I wish I could say a chill run through me, that sorrow overflown me when all of this unwinded."
+    "No just dead eyes, for the past years and now forever.{w} Or at least I failed to perceive it. Like a lot of things in my life."
+    "I wished he had cared for me, that he had taken me in his arms, he’d spoken to me more than a dozens of words in my entire life.{w}\nI wish he could smile at me right now."
+    "Except now, it’s too late. He’ll keep that dead expression."
+    "All these wishes, answers, aspirations, wishful thinking, buried with him."
+    "I guess I’ll never know."
+
+    pause 1.0
+
+    "The cooling breeze strokes down my long ears , the surnatural howling of the wind cools me down but my throat still burns."
+    "Every gulp, thousands of needles stuff down through it.{w}\nI need water."
+    "So I difficultly make my way towards him and I search for something to soothe my thirst."
+    "I am able to find some flask. I uncork it and stuff it down my dirty throat so the lukewarm water can flow."
+    "With every gulp, it wash down a bit more."
+    "That mucus obstruating my throat."
+    "That warm hot itch that resided there."
+    "That distress that had built up over the years."
+    "Those regrets that I didn’t do good enough for him."
+    "That guiltiness that I failed him, that I am not worthy."
+    "That shame that I wasn’t good enough for him."
+    "The only thing remaining is the overbearing numbness of my life."
+    "I need more water."
+
+    pause 0.5
+
+    "I look, in distress, in the surroundings and not far from me, there stands a pond five meters away from me."
+    "I crawled desesperately to it and chug down the water."
+    "But even my filthy soul can’t take this foul water and I regurgitate everything in the pond."
+    "Drool hanging from my muzzle, Tears streaming down my face, I collapse in the grass, drained of all my energy."
+    "My vision stays stuck on the middle of this pond."
+    "A little hill with a hundred of fireflies projects over me, offering me a spectacle that I’d never forget. Something I thought I would never see."
+    "A beacon of longing light in the all–surrounding crushing darkness of the night that gets me alive."
+    "It would almost make me forget the towering tree at the top of the hill, projecting his shadow over me, watching me. {w} Judging me."
+    "Wait{w=0.5}, that’s not the tree who’s judging me..."
+
+    pause 2.0
+
+    "Hey I have a question."
+    "Do you think Apathy is a crime? Do you think my Boredom would turn into a tragedy?"
+    "Do you think that the numbness I feel everyday in my life could cause problems for the people that I love and love me?"
+    "Do you think that my inactivity, my tendency to not act, to endure, to stay where I am, where I should be could lead me to hurt the people around me?"
+
+    menu:
+        "Yes":
+            ""
+        "No":
+            ""
     
-    stop music
-    scene ruralRoad
+    "Wait, don’t answer."
+    "I think I already know the answer."
+
+    pause 1.0
+
+    "Hey you know what?"
+    "Thanks for listening."
+    "Yes, you.{w} The one’s watching me.{w} The one that scrutinises me.{w}\nThe one judging me."
+    "You."
+
+    stop audio
+    scene ruralRoad with fade
     # play sound 'audio/sounds/car_white_noise.ogg' loop
+    
     play music "audio/music/The Beatles - Here Comes The Sun (2019 Mix).mp3" fadein 5.0 loop
 
-    "You wake up at the hum of the radio, a bit shaken up, with drool staining your helmet visor — Fortunately there’s not enough to hide your vision."
+
+    "You wake up from your reverie at the cold hands of someone grabbing your shoulder."
+    ga "Aaaaaah!"
+    
+    am "Hey were you sleeping?"
+    
+    ga "Huh—whuu?"
+    
+    am "Yes you were. Sorry I had to stop and wake you."
+    am "I was starting to feel your head on top of my back and you wouldn’t budge and that didn’t help me drive."
+
+    ga "Oh... Sorry Ammon I didn’t mean to."
+
+    am "No worries Howl. I think I’ll stop next stop, I’m starting to get weary too."
+    # "You wake up at the hum of the radio, a bit shaken up, with drool staining your helmet visor — Fortunately there’s not enough to hide your vision."
     "Where, before you were stranded away in the milky way, comtemplating about the mysteries of the universe, where the shining stars watched over you, you find yourself on a motorcycle."
     "A sharp feeling pervades your whole being like a blooming rose planting her thorny roots in every part of your spirit."
     "The radio was blastering loud some song from a rock band you appreciated a lot, although you dare not admit it in public, as it was strongly frowned upon among your elders."
