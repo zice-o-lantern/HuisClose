@@ -3,8 +3,8 @@ label prologue:
     # Black scene
     scene black
     pause 1.
-    "Honestly{w=0.5}, I couldn’t believe me strangling my father"
-    "Or maybe I was hugging him. {w}I always wanted to get him close to me so I could feel, behind that cold carapace, his warmth. His beating heart."
+    "Honestly{w=0.5}, I couldn’t believe you strangling him that hard."
+    "Or maybe I just coudn't. {w}I always wanted to get him close to me so I could feel, behind that cold carapace, his warmth. His beating heart."
     "To determine that, when I’ll come upon his empty shell, I’ll know wether it is a slaughter.{w}\nOr a murder."
     
     pause 1.
@@ -61,12 +61,18 @@ label prologue:
     "My vision stays stuck on the middle of this pond."
     "A little hill with a hundred of fireflies projects over me, offering me a spectacle that I’d never forget. Something I thought I would never see."
     "A beacon of longing light in the all–surrounding crushing darkness of the night that gets me alive."
-    "It would almost make me forget the towering tree at the top of the hill, projecting his shadow over me, watching me. {w} Judging me."
+    "It would almost make me forget the towering tree at the top of the hill, projecting its shadow over me, watching me. {w} Judging me."
     "Wait{w=0.5}, that’s not the tree who’s judging me..."
+    
+    pause 1.0
+    
+    "Hey I have a question."
+    "The one watching me. The one judging me."
+    "Yes. You.{w} Don't pretend you're not concerned."
 
     pause 2.0
 
-    "Hey I have a question."
+    "Hey I have another question.{w} Well it's more complex that that."
     "Do you think Apathy is a crime? Do you think my Boredom would turn into a tragedy?"
     "Do you think that the numbness I feel everyday in my life could cause problems for the people that I love and love me?"
     "Do you think that my inactivity, my tendency to not act, to endure, to stay where I am, where I should be could lead me to hurt the people around me?"
@@ -84,8 +90,6 @@ label prologue:
 
     "Hey you know what?"
     "Thanks for listening."
-    "Yes, you.{w} The one’s watching me.{w} The one that scrutinises me.{w}\nThe one judging me."
-    "You."
 
     stop audio
     scene ruralRoad with fade
