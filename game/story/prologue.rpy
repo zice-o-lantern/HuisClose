@@ -4,7 +4,7 @@ label prologue:
     scene black
     pause 1.
     "Honestly{w=0.5}, I couldn’t believe you strangling him that hard."
-    "Or maybe I just coudn't. {w}I always wanted to get him close to me so I could feel, behind that cold carapace, his warmth. His beating heart."
+    "Or maybe because I just coudn't do it myself. {w}I always wanted to get him close to me so I could feel, behind that cold carapace, his warmth. His beating heart."
     "To determine that, when I’ll come upon his empty shell, I’ll know wether it is a slaughter.{w}\nOr a murder."
     
     pause 1.
@@ -69,6 +69,16 @@ label prologue:
     "Hey I have a question."
     "The one watching me. The one judging me."
     "Yes. You.{w} Don't pretend you're not concerned."
+    "Did you like what you just did ? Has that satisfied you?"
+
+    menu:
+        "I did":
+            ""
+        "I did not":
+            ""
+    
+    "I think I did. I didn't want to. But I never felt more free than now."
+    "I don't like it."
 
     pause 2.0
 
@@ -91,6 +101,8 @@ label prologue:
     "Hey you know what?"
     "Thanks for listening."
 
+    "(Here’s is supposed to be a cut to the game title then next scene)"
+
     stop audio
     scene ruralRoad with fade
     # play sound 'audio/sounds/car_white_noise.ogg' loop
@@ -109,6 +121,8 @@ label prologue:
     am "I was starting to feel your head on top of my back and you wouldn’t budge and that didn’t help me drive."
 
     ga "Oh... Sorry Ammon I didn’t mean to."
+
+    "You can stop reading here I didn’t rewrite the next part"
 
     am "No worries Howl. I think I’ll stop next stop, I’m starting to get weary too."
     # "You wake up at the hum of the radio, a bit shaken up, with drool staining your helmet visor — Fortunately there’s not enough to hide your vision."
