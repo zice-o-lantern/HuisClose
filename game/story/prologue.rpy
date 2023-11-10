@@ -77,8 +77,7 @@ label prologue:
         "I did not":
             ""
     
-    "I think I did. I didn't want to. But I never felt more free than now."
-    "I don't like it."
+    "I think I did. I didn't want to.{w}\nI don't like it."
 
     pause 2.0
 
@@ -100,6 +99,8 @@ label prologue:
 
     "Hey you know what?"
     "Thanks for listening."
+    "You've always been there for me."
+    "I love you."
 
     "(Here’s is supposed to be a cut to the game title then next scene)"
 
