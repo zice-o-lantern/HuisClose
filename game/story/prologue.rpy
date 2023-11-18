@@ -2,109 +2,138 @@ label prologue:
     
     # Black scene
     scene black
-    pause 1.
-    "Honestly{w=0.5}, I couldn’t believe you strangling him that hard."
-    "Or maybe because I just coudn't do it myself. {w}I always wanted to get him close to me so I could feel, behind that cold carapace, his warmth. His beating heart."
-    "To determine that, when I’ll come upon his empty shell, I’ll know wether it is a slaughter.{w}\nOr a murder."
+    pause 1.0
+    cl "Honestly{w=0.5}, I cant’t believe you could strangle him that hard."
+    cl "Or maybe it’s not that complicated. Maybe I’m just too weak. Perhaps you’re just used to it." 
+    cl "You’re lucky. To be able to feel his beating heart. His cold carapace heating up with your hands."
+    cl "I know I couldn’t{cps=3}...{/cps} {w=1.0}I think."
+    cl "God, why do I feel like this. {w}Why, when, for once, I feel alive, must it be so grim? It makes me sick.{w}\nI’m sick of it.{w} I’m a monster."
+    cl "God, why? Why must it be me. Stuck in a never-ending cycle of boredom, regrets and suffering where Death isn’t an escape to your macabre plays. {w}Did you have to be so hard with me?"
+    cl "I hope that, one day, when I’ll come upon the wicked and wretched god that bestowed me of this condition..."
+    cl "I’ll be able to writhe him out every strands of life he ever had."
+    cl "That I’ll be able to strangle you harder than you ever could."
     
     pause 1.
 
-    scene sky_of_stars with dissolve
+    show clearing with dissolve
 
     # play music "audio/music/griff.mp3" fadein 1.0 loop
     play audio "sounds/cold_wind.mp3" fadein 2.0 loop
-
-    # TODO: Add more glitches
-    ## TODO: Rewrite it to be more personal.
-    "At the frontiers of the forest, in the clearing of my misery, I lay there, overwhelmed, breathless. I breathe and breathe but the hot air burns my throat."
-    "But then I feel your reassuring presence, I’m reminded that I’m not alone.{w} So I take deep breaths and finally my thumping torso lowers down to a steady pace."
-    "Between two relieved exhalations, I look down and my eyes meet him, someone I know really well, someone I’ll never forget, someone I wish to forget, a heartless monster."
-    "I stare deep through him but the glimmering shines in his eyes disappered long ago{w}, if there ever were any."
-    "Sometimes I wonder if my life could have gone differently, what I should have done to not end up in a forest, in the middle of night, beaten up, with this worthless being."
-    "Had he smiled more at me, had he spoken more to me, had he taken me more in his arms, had he cared more, had he done all of that, perhaps, just perhaps, I would have felt pity."
-    "Pity when he was seething though his teeth, guffing, gurgling, retching."
-    "Regret when he was pleading to remember all the good times."
-    "Remorse when he was imploring to let him go, that he won’t talk what happened tonight"
-    "But I wouldn’t.{w} I wouldn’t have felt anything for him."
-    "During those lasting moments, where, with his last strands of energy, he clenched my arm, {w=.5}there was nothing."
-    "No sadness, no pleading, no torment, no anger, no rage, no wrath, no nothing.{w}\nWhile I stood there, I craved for any kind of sign that he was a warm conscious being. Something, just anything"
-    "No. Just dead eyes. No matter how hard I look, I still see those same dead eyes. Looking at me."
-    "I wished those weren’t the same eyes. I wish I could say a chill run through me, that sorrow overflown me when all of this unwinded."
-    "No just dead eyes, for the past years and now forever.{w} Or at least I failed to perceive it. Like a lot of things in my life."
-    "I wished he had cared for me, that he had taken me in his arms, he’d spoken to me more than a dozens of words in my entire life.{w}\nI wish he could smile at me right now."
-    "Except now, it’s too late. He’ll keep that dead expression."
-    "All these wishes, answers, aspirations, wishful thinking, buried with him."
-    "I guess I’ll never know."
+    cl "{w=1.0}At the frontiers of the forest, in the clearing of my misery, I lay there, overwhelmed, breathless. I breathe as much as I can but the hot air burns my throat."
+    cl "Then I feel your reassuring presence, I’m reminded that I’m not alone. That you are here with me.{w} So I take deep breaths and finally my thumping torso lowers down to a steady pace."
+    cl "Between two relieved exhalations, I look around in search for you and my eyes meet with him, someone I know really well, someone I’ll never forget, someone I wish to forget, a heartless monster."
+    cl "I stare deep through him but the glimmering shines in his eyes disappeared long ago{w}, if there ever were any."
+    cl "Sometimes I wonder if my life could have gone differently, what I should have done to not end up in a forest, in the middle of the night, beaten up, with this worthless being."
+    cl "Had he smiled more at me, had he spoken more to me, had he taken me more in his arms, had he cared more, had he done all of that, perhaps, just perhaps, I would have felt pity."
+    cl "Pity when you made him seethe though his teeth, guffing, gurgling, retching."
+    cl "Regret when he was pleading to remember all the good times."
+    cl "Remorse when he was imploring to you let him go, that he won’t talk what happened tonight."
+    cl "But I wouldn’t.{w} I wouldn’t have felt anything for him."
+    cl "During those lasting moments, where, with his last string of energy, he clenched my arm, {w=.5}there was nothing."
+    cl "No sadness, no pleading, no torment, no anger, no rage, no wrath, no nothing.{w}\nWhile I stood there, I craved for any kind of sign that he was a warm conscious being. Something, just anything"
+    cl "No. Just dead eyes. No matter how hard I look, I still see those same dead eyes. Looking at me."
+    cl "I wished those weren’t the same eyes. I wish I could say a chill run through me, that sorrow overflown me when all of this unwinded."
+    cl "No just dead eyes, for the past years and now forever.{w} Or at least I failed to perceive it. Like a lot of things in my life."
+    cl "Every retching, I wished he had cared for me." 
+    cl "That he had taken me in his arms, he’d spoken to me more than a dozens of words in my entire life."
+    cl "I wish he could smile at me right now."
+    cl "Except he can’t. He’ll keep that dead expression."
+    cl "All these wishes, answers, aspirations, wishful thinking, buried with him."
+    cl "I guess I’ll never know."
 
     pause 1.0
 
-    "The cooling breeze strokes down my long ears , the surnatural howling of the wind cools me down but my throat still burns."
-    "Every gulp, thousands of needles stuff down through it.{w}\nI need water."
-    "So I difficultly make my way towards him and I search for something to soothe my thirst."
-    "I am able to find some flask. I uncork it and stuff it down my dirty throat so the lukewarm water can flow."
-    "With every gulp, it wash down a bit more."
-    "That mucus obstruating my throat."
-    "That warm hot itch that resided there."
-    "That distress that had built up over the years."
-    "Those regrets that I didn’t do good enough for him."
-    "That guiltiness that I failed him, that I am not worthy."
-    "That shame that I wasn’t good enough for him."
-    "The only thing remaining is the overbearing numbness of my life."
-    "I need more water."
+    cl"The cooling breeze strokes down my long ears , the surnatural howling of the wind cools me down but my throat still burns."
+    cl "I try to make it go away but the thousands of needles stuffed down protest.{w}\nI need water."
+    cl"So I difficultly make my way towards him and I search for something to soothe my thirst."
+    cl"I am able to find some flask. I uncork it and stuff it down my dirty throat so the lukewarm water can flow."
+    cl"With every gulp, it wash down a bit more."
+    cl"That mucus obstruating my throat."
+    cl"That warm hot itch that resided there."
+    cl"That distress that had built up over the years."
+    cl"Those regrets that I didn’t do good enough for him."
+    cl"That guiltiness that I failed him, that I am not worthy."
+    cl"That shame that I wasn’t good enough for him."
+    cl"The only thing remaining is the overbearing numbness of my life."
+    cl"I need more water."
 
     pause 0.5
 
-    "I look, in distress, in the surroundings and not far from me, there stands a pond five meters away from me."
-    "I crawled desesperately to it and chug down the water."
-    "But even my filthy soul can’t take this foul water and I regurgitate everything in the pond."
-    "Drool hanging from my muzzle, Tears streaming down my face, I collapse in the grass, drained of all my energy."
-    "My vision stays stuck on the middle of this pond."
-    "A little hill with a hundred of fireflies projects over me, offering me a spectacle that I’d never forget. Something I thought I would never see."
-    "A beacon of longing light in the all–surrounding crushing darkness of the night that gets me alive."
-    "It would almost make me forget the towering tree at the top of the hill, projecting its shadow over me, watching me. {w} Judging me."
-    "Wait{w=0.5}, that’s not the tree who’s judging me..."
+    cl "I look, in the surroundings and not far from me, there stands a pond five meters away from me."
+    cl "I crawled desesperately to it and chug down the water."
+    cl "But even my filthy soul can’t take this foul water and I regurgitate everything in the pond."
+    cl "Drool hanging from my muzzle, Tears streaming down my face, I collapse in the grass, drained of all my energy."
+    cl "My vision stays stuck on the middle of this pond."
+    cl "A little hill with a hundred of fireflies projects over me, offering me a spectacle that I’d never forget. Something I thought I would never see."
+    cl "A beacon of longing light in the all–surrounding crushing darkness of the night that gets me alive."
+    cl "It would almost make me forget the towering tree at the top of the hill, projecting its shadow over me, watching me. {w} Judging me."
+    cl "Wait{w=0.5}, that’s not the tree who’s judging me..."
     
     pause 1.0
     
-    "Hey I have a question."
-    "The one watching me. The one judging me."
-    "Yes. You.{w} Don't pretend you're not concerned."
-    "Did you like what you just did ? Has that satisfied you?"
+    cl "Hey I have a question."
+    cl "The one watching me. The one judging me."
+    cl "Yes. You.{w} Don't pretend You're not concerned."
+    cl "Has that satisfied You? Did You like what you just did?"
 
     menu:
         "I did":
-            ""
+            jump i_did
         "I did not":
-            ""
-    
-    "I think I did. I didn't want to.{w}\nI don't like it."
+            jump i_did
+    label i_did:
+        cl "That doesn’t surprise me. I sure did.\n{w}I’ll do it again any day."
 
     pause 2.0
 
-    "Hey I have another question.{w} Well it's more complex that that."
-    "Do you think Apathy is a crime? Do you think my Boredom would turn into a tragedy?"
-    "Do you think that the numbness I feel everyday in my life could cause problems for the people that I love and love me?"
-    "Do you think that my inactivity, my tendency to not act, to endure, to stay where I am, where I should be could lead me to hurt the people around me?"
+    cl "Hey I have another question.{w} Well it's more complex that that."
+    cl "Do You think Apathy is a crime? Do you think my Boredom would turn into a tragedy?"
+    cl "Do You think that the numbness I feel everyday in my life could cause problems for the people that I love and love me?"
+    cl "Do You think that my inactivity, my tendency to not act, to endure, to stay where I am, where I should be could lead me to hurt the people around me?"
 
     menu:
         "Yes":
-            ""
+            jump dont_answer
         "No":
-            ""
+            jump dont_answer
     
-    "Wait, don’t answer."
-    "I think I already know the answer."
+    label dont_answer:
+        cl "Wait, don’t say anything."
+        cl "I think I already know the answer."
 
     pause 1.0
 
-    "Hey you know what?"
-    "Thanks for listening."
-    "You've always been there for me."
-    "I love you."
+    show eyes:
+        alpha 0.0
+        xalign 0.5
+        yalign 0.5
+        ease 30 alpha 1.0
+    show clearing:
+        alpha 1.0
+        ease 30 alpha 0.05
 
-    "(Here’s is supposed to be a cut to the game title then next scene)"
+    play music "audio/music/build_up.mp3" fadein 30 loop
 
-    stop audio
+    cl "Hey You know what? Perhaps he loved me. Perhaps he never did. But he won’t be an issue anymore. He can’t hurt us anymore."
+    cl "Perhaps You’re responsible for what happened but I am just as guilty as You."
+    cl "Let’s just put all that behind us."
+    cl "The time where he brought me to the fun fair and that he got me that sweet lollipop."
+    cl "He would often crack a smile when he crossed a word on his daily newspapers."
+    cl "He’d laugh anytime I grimaced."
+    cl "{w=1.0}{cps=35}The time where he left me."
+    cl "Let’s forget all of that."
+    cl "Perhaps he truly loved me. but I don’t care."
+    cl "Maybe I am a monster. Maybe I shouldn’t feel like that. Maybe I am like that because of you{w}, but I couldn’t care any less."
+    cl "In the end I liked it. {w}In the end, I enjoyed it with every inch of my being. And also..."
+    cl "Because You love the way I am, You love who I am. You love me"
+    cl "And I love You."
+
+    pause 1.0
+
+    cl "Perhaps, more than I thought"
+    stop music
+    extend ", I need You."
+    scene black
     scene ruralRoad with fade
     # play sound 'audio/sounds/car_white_noise.ogg' loop
     
@@ -112,16 +141,16 @@ label prologue:
 
 
     "You wake up from your reverie at the cold hands of someone grabbing your shoulder."
-    ga "Aaaaaah!"
+    hl "Aaaaaah!"
     
     am "Hey were you sleeping?"
     
-    ga "Huh—whuu?"
+    hl "Huh—whuu?"
     
     am "Yes you were. Sorry I had to stop and wake you."
     am "I was starting to feel your head on top of my back and you wouldn’t budge and that didn’t help me drive."
 
-    ga "Oh... Sorry Ammon I didn’t mean to."
+    hl "Oh... Sorry Ammon I didn’t mean to."
 
     "You can stop reading here I didn’t rewrite the next part"
 
@@ -178,7 +207,7 @@ label prologue:
     "Boiling and beating his chest; A shiver runs through your spine, then another one runs though. A old sentiment all too familiar grows inside of you and you don’t like it. you don’t want to find out what happens next if he keeps at it."
     "You shove him off."
 
-    ga "Oh my god let go!!!"
+    hl "Oh my god let go!!!"
 
     "Your immediate reaction causes you to veer off track."
     "Slaloming and slaloming, you get hardly back the control of the motorcycle. It shakes you both a lot. Now he’s squeezing you even more and won’t let go."
@@ -206,13 +235,13 @@ label prologue:
     "You gather all of your courage and brace yourself for the challenge to come."
     "You close your eyes, say those two words slowly."
 
-    ga "{cps=10}I apologise{/cps}{nw}"
+    hl "{cps=10}I apologise{/cps}{nw}"
 
     am "I’m sorry."
 
     "Ammon interrupts you. You’re flabbergasted—what did he just say—your ears couldn’t hear it. They quiver and raise like an antenna looking for the signal; it shouldn’t be possible what you just heard."
 
-    ga "What did you just say..?"
+    hl "What did you just say..?"
 
     "You can’t help myself but turn your head around. Maybe in front of you, you’ll see that you were mistaken."
 
@@ -225,11 +254,11 @@ label prologue:
     ## TODO: maybe add a short anecdote here
     "You grin bittersweetly, realizing you have been cut off in you tremendous amends to make it up to him."
 
-    ga "Oooooooh looks like the Big Bad Wolf can be sorry sometimes?"
+    hl "Oooooooh looks like the Big Bad Wolf can be sorry sometimes?"
 
     am "Oh shut up and just drive."
 
-    ga "Ahah ok Big Baby Wolf."
+    hl "Ahah ok Big Baby Wolf."
 
     "He contorts himself in his place at your snickering, not pleased by your teasing."
     "It might have been uncalled for but you didn’t care; It was your way to get back at him to all of those years of mocking you endured. You might be the only one he does apologise to anyway."
@@ -238,13 +267,13 @@ label prologue:
 
     am "You say one more word about it and I’ll push you off the bike."
 
-    ga "You wouldn’t dare, you pussycat."
+    hl "You wouldn’t dare, you pussycat."
 
     am "That’s it, you lost your driving privileges."
 
     "He jumps on you and starts tickling. You laugh uncontrollably."
 
-    ga "N–No please stop, it’s incredibly stupid what you’re doing!"
+    hl "N–No please stop, it’s incredibly stupid what you’re doing!"
 
     am "You’re the one stupid, You should’ve known better."
 
@@ -253,11 +282,11 @@ label prologue:
     "He truly acted like a child sometimes but this didn’t bother you, you did partake in his bickering. In not any circumstances, You would ever cut him off of his childishness."
     "You turn back to him, faking your exasperation to his behaviour, you pout and cross your arms with an exaggerated manner, it all makes you laugh inside."
 
-    ga "Ok Ammon, you should’t DEFINITELY not tickling me while I drive!"
+    hl "Ok Ammon, you should’t DEFINITELY not tickling me while I drive!"
 
     am "Why should I not?"
 
-    ga "BECAUSE IT’S DANGEROUS YOU MORON."
+    hl "BECAUSE IT’S DANGEROUS YOU MORON."
 
     am "Not the one driving, not my problem."
 
@@ -272,18 +301,18 @@ label prologue:
             $ ammon_score += 1
             "You gracefully get up from the seat. You will have to show him your grandeur so you make up your stance."
             
-            ga "You know what? Get off the bike. I'm going alone."
+            hl "You know what? Get off the bike. I'm going alone."
             
             am "No you won't. It's my property, I'm staying on it, I won't budge from an inch."
             
-            ga "This might be your bike but I'm driving it."
+            hl "This might be your bike but I'm driving it."
             
             am "Still."
             
             
             "You had predicted this outcome—Who would willingly let himself get abandonned on the road?—although you find yourself annoyed. If only he submitted, everything would be easier,"
             
-            ga "Playing hard to get moved, huh? Be my guest then. I didn't want to come to that but I'm going to bust your fat behind."
+            hl "Playing hard to get moved, huh? Be my guest then. I didn't want to come to that but I'm going to bust your fat behind."
             
             "Arms and legs spread; he provokes me and accept your challenge."
             
@@ -294,15 +323,15 @@ label prologue:
             
             am "Stop it! Let me go!"
             
-            ga "No, you'll learn to respect me."
+            hl "No, you'll learn to respect me."
             
             am "Please, you will never be able to lift me."
             
-            ga "I might! And I might stop if you apologize for tickling me."
+            hl "I might! And I might stop if you apologize for tickling me."
             
             am "Never! Let me go or I'll bite!"
             
-            ga "Go on!"
+            hl "Go on!"
             
             "It reached the point where Ammon became an eletric bolt, wiggling and biting in every directions."
             "Now's your last and only chance you might have to lift him off, therefore you put everything once of your strength and start the process."
@@ -321,18 +350,18 @@ label prologue:
             
             "You gracefully get up from the seat. You will have to show him your grandeur so you make up my stance."
             
-            ga "You know what? Get off the bike. I'm going alone."
+            hl "You know what? Get off the bike. I'm going alone."
             
             
             am "No you won't. It's my property, I'm staying on it, I won't budge from an inch."
             
-            ga "This might be your bike but I'm driving it."
+            hl "This might be your bike but I'm driving it."
             
             am "Still."
             
             "You had predicted this outcome—Who would willingly let himself get abandonned on the road?—although you find myself annoyed. If only he submitted, everything would be easier,"
             
-            ga "Playing hard to get moved, huh? Be my guest then. I didn't want to come to that but I'm going to take you down."
+            hl "Playing hard to get moved, huh? Be my guest then. I didn't want to come to that but I'm going to take you down."
             
             "Arms and legs spread; he provokes me and accept my challenge."
             
@@ -340,19 +369,19 @@ label prologue:
             
             "You come up with a plan: I need to lower his guard enough so I could approach him by behind. Then I'll be able to do whatever I want to him. He’ll regret tickling you."
             
-            ga "Ok Ammon, you are right. I can't take you down."
+            hl "Ok Ammon, you are right. I can't take you down."
             
             "Ammon rises an eyebrow. It's sort of sudden your change of mind but no time to smooth it over."
             
             "First step: Pretending admitting you were wrong; you're both stubborn. Doing that succeeded in confusing him at least."
             
-            ga "Besides it wasn't so bad, you're good at tickling. Sure I was driving but I need some tickling from time to time."
+            hl "Besides it wasn't so bad, you're good at tickling. Sure I was driving but I need some tickling from time to time."
             
             "As he looking for a white and black cat named Gaspard, he only sees a stranger in front of him, casually walking closer to him."
             
             "Step 3: Initiate contact."
             
-            ga "Let me tickle you, then! You need some too!"
+            hl "Let me tickle you, then! You need some too!"
             
             "You jump on Ammon and assault him of tickles, destabilising him enough for him to laugh unconditionally."
             
@@ -364,7 +393,7 @@ label prologue:
             
             "You reinforce the armlock shutting him down."
             
-            ga "So who thought I couldn't take you down, huh?"
+            hl "So who thought I couldn't take you down, huh?"
             
             am "Maybe I did... but did you think of that!"
             
@@ -378,7 +407,7 @@ label prologue:
             
             am "Are you alright, Gap?"
             
-            ga "Yes, I am."
+            hl "Yes, I am."
             
             am "Sooooo... what are you standing here for?"
             
@@ -409,7 +438,7 @@ label prologue:
             "Strips of blood drip off the wounds Ammon has got when he fell from the bike."
             "He sets at licking at it, very intensively."
             
-            ga "Maybe you shouldn't do that."
+            hl "Maybe you shouldn't do that."
             
             am "Maybe you shouldn't have thrown me off."
             
@@ -428,7 +457,7 @@ label prologue:
         "Your primal instinct hits and you lick all of your injuries. Arms above your head, tongue in your armpit; A longing stare hammers at you so you spin toward the source."
         "You contemplate a smirking, dirty dog, snickering. You fluster. He has already seen you doing that; what’s that so funny about it right now? You sulk and embarrassingly continue to lick at the wounds. But he still looks at me."
         
-        ga "Could you stop looking at me? I don’t know what’s so interesting about it but it’s embarassing me."
+        hl "Could you stop looking at me? I don’t know what’s so interesting about it but it’s embarassing me."
         
         "You turn away, fleeing eyes, wanting to put you into a mouse hole away from the judging world, from any peeping eyes of your unfortunate pulsions."
         "Heats of wave overrun your cheeks and the then pure white turn into a cherry pink of embarassement."
@@ -439,7 +468,7 @@ label prologue:
         "You share a meaningful glaze, could have lasted for centuries, if your limbs didn’t ache on every inches of your body."
         "Although the pain gradually fades away, Ammon, content of his little show, stares at you mischeviously."
 
-        ga "Care to explain?"
+        hl "Care to explain?"
 
         am "It’s just...{w} Everytime I look at you doing that, you start to fluster and get really awkward."
 
@@ -457,11 +486,11 @@ label prologue:
         "You realise that the time where you would fight like that with Ammon died long ago, and you only regret now." 
         "The studies and annual exams overflowed your world and you have come to forget your support when you drowned slowly."
         
-        ga "Ahah ok ammon let’s go–"
+        hl "Ahah ok ammon let’s go–"
 
         "Ammon has not got up, he continues to lay there, eyes lost up above in the sky were the stars start to show themselves."
 
-        ga "Ammon, are you alright?"
+        hl "Ammon, are you alright?"
 
         "You extends your hand to him, although no immediate reaction seems to get out of the pensive puppy. At last, he notices you and take up your offer and grabs your hand."
 
@@ -471,7 +500,7 @@ label prologue:
 
         am "... By the way thanks for dirtying me, you asshole?"
         
-        ga "Me an asshole? It’s you and only you that brought it upon yourself. If you weren’t teasing me so much, I would have to hit you."
+        hl "Me an asshole? It’s you and only you that brought it upon yourself. If you weren’t teasing me so much, I would have to hit you."
 
         "Ammon reaches his hand to you."
 
@@ -479,7 +508,7 @@ label prologue:
 
         "Too tired to even argue, I firmly grasp it and shake it confidently."
 
-        ga "Deal."
+        hl "Deal."
 
         "Like that, at a smooth pace, you climb back on the bike and set back on the road."
 
@@ -488,13 +517,13 @@ label prologue:
     "Then you remember that you never really apologised for what you did."
     "You gather your lost courage and you muster these words, caught in your throat."
     
-    ga "Hey buddy?"
+    hl "Hey buddy?"
     
     am "Yeah pal?"
 
     "You sigh. You really don't want to do that but you have to."
     
-    ga "Remember when I was falling asleep and you woke me up?"
+    hl "Remember when I was falling asleep and you woke me up?"
     
     am "Yeaaaah..."
     if ammon_score >= 1:
@@ -502,7 +531,7 @@ label prologue:
     else:
         "Ammon just stands there, without saying a thing, as if what you are going to say has been due to him for a long, long time ago and he was craving for it."
     
-    ga "I forgive you.{w} I apologize too. I should’ve kept my eyes on the road. It’s been irresonsible of me."
+    hl "I forgive you.{w} I apologize too. I should’ve kept my eyes on the road. It’s been irresonsible of me."
 
     "You lower your head of shame."
     "You don’t know why you were so distracted but you could’ve died both with your tomfoolery. You won over the fatigue thanks to Ammon but will you be so lucky next time?"
@@ -512,7 +541,7 @@ label prologue:
     if ammon_score < 1:
         "{cps=20}Annnnd{/cps} there it is. Your asshole of a friend you know."
 
-    ga "Oh shut up. I will take back what I said"
+    hl "Oh shut up. I will take back what I said"
 
     am "Nah, nah, don’t worry, I’ll stop teasing you about it."
 
@@ -521,14 +550,14 @@ label prologue:
     am "Besides, the quietness was unsupportable. I couldn’t bear to be mad at you all of the trip and we just started."
     am "And it looks like you’re getting sleepy so I’ll get just right enough on your nerves to keep you awake."
 
-    ga "And you’re damn good at it because I already want to shut close that mouthy trap of yours."
+    hl "And you’re damn good at it because I already want to shut close that mouthy trap of yours."
 
     "As you grit your teeth holding back to steer you in the ditch on the side of the road to not hear his voice anymore, he slids his damp muzzle on your shoulder."
     "You hadn’t noticed but he has raised his visor just jor the sake of this maneuver."
 
     am "That’s the gist of it."
 
-    ga "Ammon, I don’t know anymore if you’re trying to help or distract me."
+    hl "Ammon, I don’t know anymore if you’re trying to help or distract me."
 
     am "Gueeeeessss."
 
@@ -546,11 +575,11 @@ label prologue:
 
     am "What the hell was that??"
     
-    ga "You shouldnt distract me, Ammon..."
+    hl "You shouldnt distract me, Ammon..."
 
     am "... Get lost."
     
-    ga "Yet, here I am, stuckn with you."
+    hl "Yet, here I am, stuckn with you."
     
     am "Don't say to my face you don't enjoy my presence, Gappy."
     
@@ -559,11 +588,11 @@ label prologue:
 
     am "Anyway, aren’t you excited?"
 
-    ga "For what?"
+    hl "For what?"
 
     am "For what??? Do you really know where you’re going???"
 
-    ga "Yes yes, I know… Oh yeah right."
+    hl "Yes yes, I know… Oh yeah right."
 
     am "Yeah you know, the hotel??"
 
@@ -572,26 +601,26 @@ label prologue:
 
     am "Aren’t you a little curious about it?"
 
-    ga "Yes I am…"
+    hl "Yes I am…"
 
     am "So what do you want me to tell you?"
 
     menu the_hotel:
 
         "How did you get it?":
-            ga "I mean, you’ve come out of nowhere and brought it up"
-            ga "I’m just wondering how possibly you could’ve get a trip to an very fancy hotel."
-            ga "I’m a bit confused, no matter how many times you say it to me."
+            hl "I mean, you’ve come out of nowhere and brought it up"
+            hl "I’m just wondering how possibly you could’ve get a trip to an very fancy hotel."
+            hl "I’m a bit confused, no matter how many times you say it to me."
 
             am "Ahah it’s a {cps=10}secreeeet{/cps}."
 
-            ga "Oh please stop being mysterious and just tell me."
+            hl "Oh please stop being mysterious and just tell me."
 
             "He takes a pause for a moment, his eyes looking around."
 
             am "{cps=5}I...{/cps} I got invited to it."
 
-            ga "You got invited? What do you mean? Have you been selected to a lottery or something like that?"
+            hl "You got invited? What do you mean? Have you been selected to a lottery or something like that?"
 
             am "Not exactly… I’ve received a letter saying I’ve been selected."
 
@@ -602,14 +631,14 @@ label prologue:
 
             "Having been told this repeatedly, you brush off this last comment and focus in the elephant in the room."
 
-            ga "Who invited you..?"
+            hl "Who invited you..?"
 
             am "… Nicolas Lecloq."
-            ga "Nicolas Lecloq??? {b}THE{/b} bilionaire?."
+            hl "Nicolas Lecloq??? {b}THE{/b} bilionaire?."
 
             am "Him in person."
 
-            ga "How’d you know it’s not fake?"
+            hl "How’d you know it’s not fake?"
 
             am "I’ve made my research."
 
@@ -619,7 +648,7 @@ label prologue:
 
             "Well you are already on this bike on the road of Paris so it’s bit late to turn around."
 
-            ga "{cps=3}...{/cps} Alright."
+            hl "{cps=3}...{/cps} Alright."
 
             am "Good."
             am "Have you any other questions?"
@@ -627,7 +656,7 @@ label prologue:
             jump the_hotel
         
         "Do we have to pay for anything?":
-            ga "I mean, I’m not really whealthy lately so I don’t know if I could pay it all."
+            hl "I mean, I’m not really whealthy lately so I don’t know if I could pay it all."
 
             am "Think for a second, Gap."
 
@@ -635,31 +664,31 @@ label prologue:
 
             am "It doen’t look you’re thinking, right now."
 
-            ga "Yeah, I was thinking of a sunset."
+            hl "Yeah, I was thinking of a sunset."
 
             "Ammon tilts his head quizically."
 
             am "{cps=3}...{/cps} Anyway. What I meant to say, do you think you would have to pay if you were invited to sleep to your friend’s house?"
 
-            ga "Um… no. Because I was invited?"
+            hl "Um… no. Because I was invited?"
 
             am "Exactly Gap, so do you really think we’d have to pay when we were invited to a hotel?"
 
-            ga "I don’t know, Am… all is not very clear…"
+            hl "I don’t know, Am… all is not very clear…"
 
             am "I’m going to reassure you: it’s all fees included even the food and the drinks."
 
-            ga "Ok…"
+            hl "Ok…"
 
             am "Anyway do you have any other questions?"
             jump the_hotel
 
         "What’s so interesting about it":
-            ga "I mean, you seem very excited by all of it."
+            hl "I mean, you seem very excited by all of it."
 
             am "Why should’t I? You’re the one who isn’t enough excited for me."
 
-            ga "What’s in this hotel that gets you so much hyped up?"
+            hl "What’s in this hotel that gets you so much hyped up?"
 
             am "Do you listen to me sometimes? This isn’t just a simple hotel. It’s like a fancy complex!"
 
@@ -668,11 +697,11 @@ label prologue:
 
             am "There’s a pool, a theatre, a casino and most importantly an exposition!"
 
-            ga "An exposition? About what?"
+            hl "An exposition? About what?"
 
             am "Oh many things but more importantly, about World War II!"
 
-            ga "Oh right... for you PhD in History."
+            hl "Oh right... for you PhD in History."
 
             "To be honest, it wasn’t just for the studies. Ammon is usually very passionate about History."
             "But the span of time he is the most passionate about is the 39—45 period."
@@ -687,11 +716,11 @@ label prologue:
             jump the_hotel
         
         "I’m all good.":
-            ga "I think I’m all filled in."
+            hl "I think I’m all filled in."
 
     am "Well if you haven’t anymore questions, you sure are all filled in!"
 
-    ga "If you say so…"
+    hl "If you say so…"
 
     "While you say that, you pass in front of a road sign, indicating a rest area nearby."
 
@@ -699,24 +728,24 @@ label prologue:
 
     "You can’t help yourself but roll my eyes to the back of your head hearing this corny nickname that you hate."
 
-    ga "Yes Amoney..?"
+    hl "Yes Amoney..?"
 
     "Not at all in the world fazed by the sweet nickname I just gave him, he jumps on his seat, his butt shaking moderately the bike, your could even hear his tail wiggling."
     
     am "Can we make a stop? You are quite sleepy? And…"
-    ga "And?"
+    hl "And?"
 
     am "I need to take a piss."
 
-    ga "Fiiiiiiine, we’ll make a stop. I do need it."
+    hl "Fiiiiiiine, we’ll make a stop. I do need it."
 
     am "Thanks Gapgap!"
 
-    ga "Stop saying that or I’ll break your knees and make you piss on yourself."
+    hl "Stop saying that or I’ll break your knees and make you piss on yourself."
     
     am "You wouldn’t dare Gapgap…"
 
-    ga "Don’t test me, Ammon."
+    hl "Don’t test me, Ammon."
 
     "And like that we leave the road onto the branching exit path."
     jump rest_area_1
@@ -742,29 +771,29 @@ label rest_area_1:
         "Please, yes, can you help?":
             $ ammon_score += 1 
             "Usually, it would’ve been the time where you deflect any sort of assistance and where after some trepident events, you would either succed the task or yield into submission. So you lower your head and present it to Ammon."
-            ga "Alright, go on."
+            hl "Alright, go on."
             "You didn’t have the strength to struggle nor protest like the proud man you are so you give in to Ammon. His bulky hands grab the base of your helmet and his nails brush the tip of your neck hair, surprising you, not liking being touched."
             "But him being the one doing it doesn't mind you interestingly. Nonetheless, he gets troubles too to rid your feline head of the helmet. He pulls harder and harder on you and the pain gradually increases and you don't see the end of it."
-            ga "Oh my god, Ammon, be softer!! Less harder! You're going to hurt me!"
+            hl "Oh my god, Ammon, be softer!! Less harder! You're going to hurt me!"
             
             am "If you weren't so such tight!"
             
-            ga "What did you say?!"
+            hl "What did you say?!"
 
             am "I said, if you didn't have a such tight helmet... And such a big head!"
             
-            ga "You can talk with your long big snout!"
+            hl "You can talk with your long big snout!"
             
             am "If you don't stop talking right now, I'll pull your helmet off in any way possible, with or without your head."
             
-            ga "Stop talking with your long snout and just do what you just said, we'll both be better off!"
+            hl "Stop talking with your long snout and just do what you just said, we'll both be better off!"
             
             "For a moment Ammon still struggles to remove your helmet. The pain is really insufferable and you both pull like idiots trying to pull out Excalibur. You yell out of pain and he apologises hoarsely."
             "At some point, you feel with your united combined effort, you have made a difference on the helmet and is ready to give in. Suddenly there's a pop and you fly out of the helmet on the grass rolling for a considerate amount of time."
             "When your frenetic charge comes to stop, you cough out the dirt and the blades of grasses caught in your mouth. You shake up your head so your blood flows back in it. When you come back to your senses, you are met with a laughing dog unable to stop."
             "His piercing laughter overwhelm your space and you get red of embarrassement irresistibly, despite you. You clutch the grass and pluck it out of rage. You throw some at him to make him shut its long snout trap that serves him as a mouth."
             
-            ga "Oh my god, you irritating imbecile! I told you you shouldn't pull that hard! I'm all scratched and dirty now. I hate you, you hear me??"
+            hl "Oh my god, you irritating imbecile! I told you you shouldn't pull that hard! I'm all scratched and dirty now. I hate you, you hear me??"
             
             "Ammon wipes out his tears of laughter and approches, triumphing, over you. His wicked smile pierces his helmet as he hands you your helmet and reach a hand to you."
   
@@ -774,7 +803,7 @@ label rest_area_1:
         
         "I can do it on my own, no thanks":
             "You don't need the help of that prick. You already did it without his help before, so why couldn't you do it again now... or did you?"
-            ga "I don't need your help. I can deal with it on my own."
+            hl "I don't need your help. I can deal with it on my own."
             
             am "Alright... Suit yourself."
             
@@ -783,7 +812,7 @@ label rest_area_1:
      
             am "Are you sure you don't need any help? you sure look like so."
 
-            ga "I'm fine! I don't your help or anyone help! I'm going to do it alone like I used to!"
+            hl "I'm fine! I don't your help or anyone help! I'm going to do it alone like I used to!"
             
             am "Um, ok... I guess?"
 
@@ -793,7 +822,7 @@ label rest_area_1:
         
             am "Deserved it, jackass."
       
-            ga "What did you say?"
+            hl "What did you say?"
  
             am "Nothing. Just get up. You won't get anywhere like this."
             
@@ -823,7 +852,7 @@ label rest_area_1:
     "With this disturbing statement, Ammon goes on to get rid of his helmet." 
     "Realising he has got some points, you cut off your sight from your other you and you look at him inquisitively, wondering where he might have had this idea. You weren't that unhinged, were you?"
     
-    ga "Do you need help with your helmet, Ammo? You may use some given.. your head shape..."
+    hl "Do you need help with your helmet, Ammo? You may use some given.. your head shape..."
     
     am "It's alright, pal. I can deal with it on my own. I'm used to."
 
@@ -857,7 +886,7 @@ label rest_area_1:
     "A tall metallic structure stand out with all this misery, a shine, a beacon of what lies ahead. You have seen them a handful of times. A phone booth." 
     "You rarely see phone boothes out in city so to find one in a rest area is even more incredible. Technology goes fast, you think, nowadays."
 
-    ga "Hey look, Ammon! They have a phone booth around here. Isn’t that wonderful?"
+    hl "Hey look, Ammon! They have a phone booth around here. Isn’t that wonderful?"
 
     am "Huh? Oh yeah... sure."
 
@@ -873,7 +902,7 @@ label rest_area_1:
     "He says the last word with a lot of emphasis as it was only obvious from both of them you’re going to pick." 
     "A annoyed tone comes with and that disturbs you, as Ammon being genuinely annoyed is rare."
 
-    ga "Yes I’m going to call her."
+    hl "Yes I’m going to call her."
 
     am "Ok, suit yourself."
     am "I’m going to pee. Wait for me and don’t go far ok?"
@@ -881,7 +910,7 @@ label rest_area_1:
     "Ammon quicly deflects the topic of discussion and comes back to the pressing matter at hand." 
     "You watch him waddling in place, jumping like a late hare and you find yourself hard to not comply with his request."
 
-    ga "Ok, don’t lose yourself on the way!"
+    hl "Ok, don’t lose yourself on the way!"
 
     am "Don’t worry! See ya!"
 
@@ -915,7 +944,7 @@ label phone_booth:
     
     "???" "... Hello, who is it?"
     
-    ga "Marie–Jil, it’s me, Gap!"
+    hl "Marie–Jil, it’s me, Gap!"
     
     mj "Gappounet! It’s really you! I’ve been waiting for your call all day long!"
 
@@ -923,17 +952,17 @@ label phone_booth:
 
     mj "Have you reached the hotel, yet?"
 
-    ga "No, not yet."
+    hl "No, not yet."
 
     mj "You’re still on the road? How did you do to contact me then?"
 
-    ga "Well apparently, they started to install phone booths on rest areas over the roads. Isn’t it amazing? Some day, I’ll be able to find phone booths everywhere and to call you anytime I want!"
-    ga "Imagine all of the possibilities! One day, maybe, we’ll truly never be apart. This is really wonderful! Technology is going so fast! Everything is going so fast!"
+    hl "Well apparently, they started to install phone booths on rest areas over the roads. Isn’t it amazing? Some day, I’ll be able to find phone booths everywhere and to call you anytime I want!"
+    hl "Imagine all of the possibilities! One day, maybe, we’ll truly never be apart. This is really wonderful! Technology is going so fast! Everything is going so fast!"
     
     "For a very enigmatic reason, your passion for latest high-tech overhauled your usual gloominess and you find yourself very eager to indulge yourself in this pit of wonders, dreaming for the future of all living beings."
 
-    ga "Imagine for a second, how the americans reached the moon, {cps=120.0}how we will in the future be able to travel to space {cps=150.0}and also how we will be able to even eat without opening the mouth."
-    ga "{cps=200}don’tyouthinkit’sfantasticsometimesyouthinkwowtechnolgyandallh\nowrapiditwillreachveryhighstandads??it’sreallywonderfulwhenyouthinkaboutitIwanttoneverdietowitnessthis{nw}"
+    hl "Imagine for a second, how the americans reached the moon, {cps=120.0}how we will in the future be able to travel to space {cps=150.0}and also how we will be able to even eat without opening the mouth."
+    hl "{cps=200}don’tyouthinkit’sfantasticsometimesyouthinkwowtechnolgyandallh\nowrapiditwillreachveryhighstandads??it’sreallywonderfulwhenyouthinkaboutitIwanttoneverdietowitnessthis{nw}"
 
     "You couldn’t hold my excitation anymore. The words leaving from your mouth were forming before your brain could even process the information you were spilling out at her. Your speaking functions were not functioning anymore."
 
@@ -943,29 +972,29 @@ label phone_booth:
     "Once calmed down, your lungs stops contorting and burning the air within is able to bring you tranquility to you. Her voice helps you catch back and stand on your two paws."
     "You’re finally able to talk normally now."
 
-    ga "Ahah, sorry, MJ. It’s been so long that I haven’t talked to you! It’s been like what? a week?"
+    hl "Ahah, sorry, MJ. It’s been so long that I haven’t talked to you! It’s been like what? a week?"
 
     mj "You’ve talked to me this morning, Honey. But I don’t mind, I love it when you get all worked up over me, my little kitten."
     mj "I didn’t think that you’ll be missing me so much. You’ll only stay 3 day over there and you’re already panting your insides out not even having reached the hotel."
     mj "You’re lucky that I was the one answering the phone. Had it been Dad or Mom, they would have teased the heck out of you. Don’t thank me huh? I almost didn’t answer given the hour."
 
-    ga "It’s not that late..."
+    hl "It’s not that late..."
 
     mj "It’s like fifty to eight, at least it’s starting to get late, don’t you think? I don’t think I’ll answer later in the evening. Or my parents will. I don’t think you want to talk to them that late, huh?"
 
     "She’s got a point. As much as you like her parents, the situation you would find yourself, head–to–head with them, not knowing what to say would be very akward."
     "So you agree with her, not very much a lot you can do more to talk to her later."
 
-    ga "Yeah you are right..."
-    ga "Hey, you should’ve come too, to the trip with us! I really miss you!"
+    hl "Yeah you are right..."
+    hl "Hey, you should’ve come too, to the trip with us! I really miss you!"
 
     mj "Me? You’re doing great without me, don’t worry. And I wanted to come but you know I can’t, I’ve got to work tomorrow. Have to help out Mom with her restaurant."
     
-    ga "You could’ve explained the situation to her. I’m sure she would have let you come."
+    hl "You could’ve explained the situation to her. I’m sure she would have let you come."
 
     mj "It’s not like that, Gap. She just opened her restaurant. I can’t let her down like that. She really needs me, I don’t have the time to travel to a luxuous hotel unfortunately."
 
-    ga "Alright... but next time, you gotta come!"
+    hl "Alright... but next time, you gotta come!"
 
     "She softly chuckles at your liveliness."
 
@@ -997,7 +1026,7 @@ label phone_booth:
 
     "You wake up from your daydreaming, all of these memories have had left you groggy and you are uncomfortably brought back to the current discussion, bitter as you wish to dwell more in your childhood."
 
-    ga "Yeah, MJ, you were saying?"
+    hl "Yeah, MJ, you were saying?"
 
     mj "... I was saying, do you remember when we first got together? Your enthusiasm didn't die down since. It's warming to the heart to witness it."
     
@@ -1015,7 +1044,7 @@ label phone_booth:
     "Trying to cheer him up, you rubbed his abdomen and you were met with a pleasant squishiness."
     "You couldn’t stop so you kept on rubbing, hoping to appease him. To your disbelief, Ammon didn’t mind and he even let out some squeak of laughter and satisfaction."
 
-    ga "Heheh, what do you think it’s gonna be?"
+    hl "Heheh, what do you think it’s gonna be?"
 
     "Confusion roses on Ammon’s face, still contorted by pain mixed with sootheness."
 
@@ -1023,7 +1052,7 @@ label phone_booth:
 
     "I look at his tummy."
 
-    ga "A boy or a girl?"
+    hl "A boy or a girl?"
 
     am "A–A gir– *Buuuurrurp* oh shut u–up man."
 
@@ -1034,20 +1063,20 @@ label phone_booth:
     "Perhaps, she went to the match happening during lunch but she wasn’t really into the high school sports and she would have told you, if she were." 
     "Then her class might take longer than expected. But again, you didn’t think that was it."
 
-    ga "I wonder where she is..."
+    hl "I wonder where she is..."
     "Said out loud, you were expecting that Ammon was going to help you, or at least say where she was, but no response as Ammon laid now seemingly unconscious on his chair."
     "All of the sudden, Marie–Jil approached you, bringing in no food but an tense air on her way. It stressed you as she got closer to you."
     "Marie–Jil stood shut fast on the floor, very anxious, not knowing where to place herself. Her tail coulnd’t stop shaking; the nervosity of the situation got to me making your tail moving out of your own."
     ## TODO: add Marie–Jil sprite?
     mj "Hi Gap..."
 
-    ga "Hi MJ... Why are you late, what’s going on? Do you want to tell me something?"
+    hl "Hi MJ... Why are you late, what’s going on? Do you want to tell me something?"
 
     "Marie–Jil raised her head, shocked, like she had been unmasked, as the end grew nearer with every second passing."
 
     mj "Huh, what do you mean?"
 
-    ga "You’re all nervous. I never saw you like that. Did you break my stuff?"
+    hl "You’re all nervous. I never saw you like that. Did you break my stuff?"
 
     mj "No I did not!! {w}Oh hi Ammon..."
     mj "Ammon could you leave Gap and I alo–"
@@ -1064,11 +1093,11 @@ label phone_booth:
     
     mj "You know, how we have been friend for a very long time, now, Gappy?"
 
-    ga "Yes I do?"
+    hl "Yes I do?"
 
     mj "Well I am really happy with our friendship right now, how you always have been there for me."
 
-    ga "And you always have been there for me! No need to sweat it o–"
+    hl "And you always have been there for me! No need to sweat it o–"
 
     mj "Just a second please...{w} What I meant to say is that you are a wonderful person and I enjoy every moment I spend with you."
 
@@ -1119,7 +1148,7 @@ label phone_booth:
     # scene phone_booth with dissolve
     hide canteen with dissolve
 
-    ga "I had to check up on him that day too... He shouldn’t have eaten that much."
+    hl "I had to check up on him that day too... He shouldn’t have eaten that much."
 
     mj "Actually Gappounet... I am the one who went check up on him, I made you stay at the table to keep guard of our stuff."
 
@@ -1127,13 +1156,13 @@ label phone_booth:
     
     mj "By the way, while we are talking about him, is everythin alright with Ammon?"
 
-    ga "What do you mean by that?"
+    hl "What do you mean by that?"
 
     mj "I know he can be exhausting, sometimes. You didn’t do anything reckless with him, did you?"
     
     "A concerned voice comes out out of the receiver. You always become bold with the jackass dog around, so her worries were founded and justified by earlier events and tricks he pulled on you…"
 
-    ga "No, nothing of the sort, thankfully."
+    hl "No, nothing of the sort, thankfully."
 
     "Silence fills the air as it reeks with your poor fabricated lie. Marie–Jil returns you an doubting laugh, with multiple layers of sarcasm, suspicion and reservation. She was, with a lack of better words, able to see right through you."
 
@@ -1153,20 +1182,20 @@ label phone_booth:
 
         
         "I can tolerate him" if ammon_score >= 1:                                                                                                                                                                                                           
-            ga "He’s been supportable so far"
+            hl "He’s been supportable so far"
         
         "I wish you were with me, not him":
             mj "...Really?"
     
     mj "Well anyway, I wanted to talk to you about something that was bothering me lately..."
 
-    ga "Huh what is it? Have you had another argument with your parents?"
+    hl "Huh what is it? Have you had another argument with your parents?"
 
     mj "No it’s not that. It’s something that concerns you. Something going on lately."
 
     "She grasps more tightly on the phone than before. The matter had been clinging on her heart for a good time."
 
-    ga "Huh, okay? What is it? What does this have to do with me?"
+    hl "Huh, okay? What is it? What does this have to do with me?"
 
     mj "I–I wanted to talk about your behaviour lately."
 
@@ -1175,7 +1204,7 @@ label phone_booth:
 
     mj "Are you alright?"
 
-    ga "What do you mean? You’re making me confused."
+    hl "What do you mean? You’re making me confused."
 
     mj "With you trip, were you able to think about your... moods, clean your thoughts, to reflect on what happened recently."
 
@@ -1184,7 +1213,7 @@ label phone_booth:
     "She waits for your answer, expecting a thorough justification. You don’t have one. You’re utterly confused." 
     "You scratch the back of your head, hoping something will come out, but nothing. Only oblivion and the dark void."
 
-    ga "I genuinely don’t know what you’re talking about. I don’t recall anything noteworthy that happened earlier. Everything’s fine, alr–"
+    hl "I genuinely don’t know what you’re talking about. I don’t recall anything noteworthy that happened earlier. Everything’s fine, alr–"
 
     stop music
     play music "audio/music/anger.mp3" 
@@ -1192,7 +1221,7 @@ label phone_booth:
     mj "Oh my god, for Jesus Christ?!" 
     mj "Are you for real, Gap??? You’ve been rolling in your bed sheets all day long 13 days straight and you say to my face that everything’s fine?!! THAT YOU DON’T RECALL ANYTHING??"
     
-    ga "Huh..."
+    hl "Huh..."
 
     "Confusion roses into you."
     "A burst of voice surges through the phone and you almost drop it. You regain composure. She is rarely mad at you and this time you don’t have a clue what may have released her wrath." 
@@ -1217,12 +1246,12 @@ label phone_booth:
     mj "No, Gaspard, not everything's fine. It sure hasn't been lately. Everyone has been worried about you. It's not at random that Ammon picked you to go with him at Paris. He wants to help you go better." 
     mj "So please, help me, Gaspard... Please Gap, will you let me help you? Will you tell me what happened last month"
     
-    ga "Last... Month?"
+    hl "Last... Month?"
     
     "I asked confused. everything she says, you can't hear it. More Accurately, you can hear her perfectly but you refuse to hear it. The black box should never be opened and every attempt sends a throb trough your brain." 
     "You head hurts. You seethe. Please stop. Please stop, you can't take it anymore."
     
-    ga "Please.... stop"
+    hl "Please.... stop"
 
     mj " Ohoohoh I sure won't stop, Gaspard Danbois. I {w=1.0}AM {w}FED UP. I won't stop until I'm finished." 
     mj "You will answer to my questions, Gaspard and you won't be able to esacpe forever."
@@ -1234,7 +1263,7 @@ label phone_booth:
     "She mustn't go further in her crusade of questioning. You ought to make her shut her or you don't know what may become of you."
     "She represents a menace to your tranquility. Your Apathy."
     
-    ga "I tell you and tell you, I don't know! How many times do I have to tell you?!! I don't know, I don't know and I still don't know! How that goes for you!"
+    hl "I tell you and tell you, I don't know! How many times do I have to tell you?!! I don't know, I don't know and I still don't know! How that goes for you!"
     
     mj "I am sick of you with your \"I don't know\" \"I don't know\"! You lie to me as you breathe! You do know and I will get the truth about that day."
 
@@ -1248,7 +1277,7 @@ label phone_booth:
     "Yes you were at home, you can tell that much, you were preparing for a party, what type of party, you'll have to prod a bit more." 
     "You remember what it was, it was a birthday party, although you don’t remember who it was for, it should’ve been of your relatives surely."
 
-    ga "Yes I was at home I think... But I don’t know any more than that, I swear!"
+    hl "Yes I was at home I think... But I don’t know any more than that, I swear!"
 
     mj "Ok then let me ask you another question: Someone ringed at your doorbell. Your mom told me she was going for to answer it but you’ve been faster than her so she let you alone." 
     mj "When she wanted to ask who it was, you were gone of the house."
@@ -1259,7 +1288,7 @@ label phone_booth:
     "The stepdoor, the stepdoor, who was on the stepdoor. Everything is so blurry, and you can help but look deeper whereas your inner sense of danger always warned you."
     "Crack. Something broke out within you. The box, it’s opened. You remember."
 
-    ga "Shut up."
+    hl "Shut up."
     
     "You can’t stand up anymore. A fiery fever takes over you. Your view blurs itself, and you trip." 
     "Hunched back on the phone booth, you can’t stop your accelerating breath. You have lost control of it. This is tot late. It’s coming."
@@ -1269,7 +1298,7 @@ label phone_booth:
     
     mj "Don't you tell me to shut up. Answer to me, Gaspard? Who was it?!"
     
-    ga "Shut up, shut up!"
+    hl "Shut up, shut up!"
     
     mj "It was your father, wasn't it?"
     
@@ -1278,21 +1307,21 @@ label phone_booth:
     
     mj "Why when you meet up with him, we find him later around your house?"
     
-    ga "Huh you found him?? You really found my father?"
+    hl "Huh you found him?? You really found my father?"
 
     mj "What do you mean we found him?? Of course, we found him. Don’t try to fool me, Gaspard, this is serious. I mean, we found you with him, numb, unresponsive, away..." 
     "...After all, we found him ×××××××××××××××××××××××{nw}"
     
-    ga "No... No... No ! No no no no no no no nononono"
+    hl "No... No... No ! No no no no no no no nononono"
 
     mj "What are you saying?!"
 
-    ga "No... No, shut up shut up, shut up, shut up, shut up, shut up"
+    hl "No... No, shut up shut up, shut up, shut up, shut up, shut up"
 
     mj "Gaspard?.. Are you alright? Maybe I pushed you too f–"
 
-    ga "Shut up. Shut it. Shut up, shut it, shut up, shut it, shut up shut it shut it shut up shut up shut up"
-    ga "{size=60}SHUT THE FUCK UP{/size}"
+    hl "Shut up. Shut it. Shut up, shut it, shut up, shut it, shut up shut it shut it shut up shut up shut up"
+    hl "{size=60}SHUT THE FUCK UP{/size}"
 
     "A loud crash echoes and resonates within the phone booth. Slumped down, you don’t move anymore. Your head’s empty but a shrill and piercing white noise in your ears. You’re clawed to the ground and won’t get anymore."
     "When your bloodied vision sets back into focus, you observe with a dead eye the destroyed–to—thousand—pieces receiver on the ground, you come to wonder what has guided you to this point." 
@@ -1328,11 +1357,11 @@ label rest_area_2:
 
     am "Who did you call? Was it Marie–Jil? What did she tell you?"
 
-    ga "Your fly."
+    hl "Your fly."
 
     am "My... what?"
 
-    ga "Your fly’s opened."
+    hl "Your fly’s opened."
 
     "Ammon looks down, confused, to notice that, indeed, his fly is opened. He zips it up and raises his head back with an unamused look."
 
@@ -1340,14 +1369,14 @@ label rest_area_2:
 
     "You quickly search for an excuse and determine that his proposition is the best outcome."
 
-    ga "Exactly... {w} I was making a little jog to make me stay awake."
+    hl "Exactly... {w} I was making a little jog to make me stay awake."
 
     "Ammon approaches me, maintaning the gaze as if just looking away will break the link between us."
     "At close range, he lays down his hand on my shoulder. His claws soflty brush my jacket. I know it is a very arduous task for him to be that considerate."
 
     am "Do you want to talk about what just happened?"
 
-    ga "No… I’m alright."
+    hl "No… I’m alright."
 
     "He helps me set back my sweater. It’s embarrassing coming from him that my cheeks get warm."
 
@@ -1380,7 +1409,7 @@ label rest_area_2:
     "All of a sudden, my limbs fall dead, the threads maintaining them alive and up, slashed through, unfairly."
     "Nothing remains in my throat but a fragile cry and I mutter it."
 
-    ga "Ok."
+    hl "Ok."
 
     am "Great."
 
@@ -1388,7 +1417,7 @@ label rest_area_2:
     "You check your pulse. It came back to a normal pace. You’re relieved. You couldn’t bear any longer the throbbing pain in your chest but the horrible headache hits you like a lift and you rub your temples."
     "You need something to relax you even more. You look for an aspirin in your pockets but you can’t find any. With all the fatigue and the pain, you wonder how you’re going to take back the road. You look at Ammon."
 
-    ga "Hey Ammon, do you have anything for headaches? It’s really hurting right now. I don’t even know I can stand."
+    hl "Hey Ammon, do you have anything for headaches? It’s really hurting right now. I don’t even know I can stand."
 
     "He scratches his head hair and search his trousers for any medicine able to help me. Unfortunately nothing comes out of his search."
 
@@ -1396,7 +1425,7 @@ label rest_area_2:
     
     "I consider his proposition. You doubt of Ammon’s statements veracity but you don’t have any better option and you, in your inner soul, crave for some cigarettes. Ammon had initiad to this early this year and you must addict it can be pretty addicting."
 
-    ga "I do want some. I don’t have nothing better to do anyway..."
+    hl "I do want some. I don’t have nothing better to do anyway..."
 
     am "Okay cool, let me check my bag, I think I have left some in it. It’ll be quick don’t worry ahah."
 
@@ -1411,7 +1440,7 @@ label rest_area_2:
     "He shuffles out the numbers and, as expected, he puts another span of time trying to fit back into the trunk. You think to when you’ll have to get out your bag and you gulp."
     "Ammon approaches you and when he sets his sight, his face goes from content to worried. That makes you concerned."
 
-    ga "Sooo... Do you have one for me? My headache still really hurts."
+    hl "Sooo... Do you have one for me? My headache still really hurts."
 
     "He breathes through his teath."
 
@@ -1430,7 +1459,7 @@ label rest_area_2:
 
     am "Anyway, I don’t think a cigarette would help you anyway. You should get some water. That should tone down your headache better in the end."
     
-    ga "But I wanted to smoke with you..."
+    hl "But I wanted to smoke with you..."
     
     am "Ahah maybe another day then. I have seen bottles in the bike trunk. Go get some ok?"
 
@@ -1438,7 +1467,7 @@ label rest_area_2:
 
     am "Oh by the way, could you bring me a bottle too? I’m thirsty."
 
-    ga "Sure Amm."
+    hl "Sure Amm."
 
     label restarea_pointnclick_start:
         "Ok so you should start getting on your way"
@@ -1475,70 +1504,70 @@ label confront_him:
         del got_water
 
         current_screen = "" 
-    ga "So Ammon, I have a question for you"
+    hl "So Ammon, I have a question for you"
 
     stop music fadeout 1.5
     play music "audio/music/suspense.mp3" loop fadein 0.5
     "The daydreaming dog spins his head, intrigued. Your grave tone might have shaken him because concern and worriedness covered all over his face. You feel you are on the good track."
 
-    ga "Are you sure you don’t have any cigarettes for me. I mean, you always bring more than one, don’t you."
+    hl "Are you sure you don’t have any cigarettes for me. I mean, you always bring more than one, don’t you."
 
     am "I am sure. It’s just this time... I forgot some at home and only brought one. Nothing more to that."
 
     "He scratches the back of his head. He doesn’t have anything more to say to you. You almost feel pity for him. If you had not discovered it, you would have trusted him. But you can’t anymore."
 
-    ga "Are you really sure?"
+    hl "Are you really sure?"
 
     am "Yes, I am."
 
-    ga "Are you really {b}really{/b} sure?!"
+    hl "Are you really {b}really{/b} sure?!"
 
     am "Yes!!"
 
-    ga "Ok then do you have an idea of what this is?"
+    hl "Ok then do you have an idea of what this is?"
 
     "You pocket out, the heart of your sorrows, the epicenter of your troubles, the one responsible for that all, the box of cigarette in the center of your palm so he could clearly see it."
 
-    ga "Do you recognise this?"
+    hl "Do you recognise this?"
 
     "As soon as Ammon sets his eyes on the object, he slumps his shoulders, his face distorted in an unpleasant expression."
 
     am "I recognise it, yeah... It’s the box of cigarettes that was in my bag."
 
-    ga "Yes it is. Do you know what it means?"
+    hl "Yes it is. Do you know what it means?"
 
     am "Yes."
 
     "He stands there, akwardly, arms dangling, waiting for your response carefully."
 
-    ga "Then why did you purposefully hide it from me?"
+    hl "Then why did you purposefully hide it from me?"
 
     am "... I don’t know."
 
-    ga "You don’t know? You don’t know?? More like you don’t want to tell me, you liar."
+    hl "You don’t know? You don’t know?? More like you don’t want to tell me, you liar."
 
     am "I’m not a liar."
 
-    ga "You’re not a liar, what do you mean you’re not a liar? Then what does that mean, these damn cigarettes!"
+    hl "You’re not a liar, what do you mean you’re not a liar? Then what does that mean, these damn cigarettes!"
 
     "Ammon raises his head defiantly, biting his lip. You’re pissing him off and he’s going to make you understand that you should back off." 
     "But you don’t care, that he comes at you! You can take all of his charges"
 
     am "I never said I didn’t have another box of cigarettes, I just said that the one I showed you was empty. Nothing more. You never asked if there was any more."
 
-    ga "Don’t play on the words, you trickster, you deceived while I was at my lowest."
+    hl "Don’t play on the words, you trickster, you deceived while I was at my lowest."
 
     am "Don’t make it a fuss."
 
-    ga "A fuss, a fuss?? I am the one making a fuss??!"
+    hl "A fuss, a fuss?? I am the one making a fuss??!"
 
     am "Yes you are."
 
-    ga "So you{size=50} should’ve had given me some, we wouldn’t be here then!"
+    hl "So you{size=50} should’ve had given me some, we wouldn’t be here then!"
 
     am "Jeez, calm down, it’s just cigarettes..."
 
-    ga "IT’S NOT JUST CIGARTTES, IT’S CIGARETTES YOU’VE HIDDEN FROM ME."
+    hl "IT’S NOT JUST CIGARTTES, IT’S CIGARETTES YOU’VE HIDDEN FROM ME."
 
     "You yell out at the top of your lungs in the exposed ears of the elusive dog. They shivers out of the loud sound."
     "Ammon takes a step back, startled by your outburst."
@@ -1552,11 +1581,11 @@ label confront_him:
     "Ammon stays silent, boiling. He contains himself to retaliate, but it is a hard task for a loud proud barking dog. His fists are clenched."
     "You stick yourself to him, only centimeters away. You press his chest with you finger to bug him even more. You want to make him crack, he’s got to pay."
 
-    ga "Give me your lighter."
+    hl "Give me your lighter."
 
     am "Give you my what?"
 
-    ga "You’ve heard me. Give me your lighter. I wont repeat myself. I need it for smoking."
+    hl "You’ve heard me. Give me your lighter. I wont repeat myself. I need it for smoking."
 
     "The cornered hound rolls his eye but eventually, reluctantly, reaches for his jacket breast pocket and takes it into hands. For some moments, his gaze lingers in the void."
     "Taking avandtage of his moment of distraction, you snatch it from his hands and wave it into his face. He shows an irritated expression."
@@ -1574,12 +1603,12 @@ label confront_him:
 
     "You turn your head, caught short by his intervention."
 
-    ga "planned... that I’d do what?"
+    hl "planned... that I’d do what?"
 
     am "Exactly what you just did. Snoop around my stuff because you can’t trust me when I tell you something."
     am "I mean, I couldn’t believe my eyes. As soon as I turn my back, I find you rummaging through my stuff and toying with my padlock."
 
-    ga "I did not–"
+    hl "I did not–"
 
     am "Why are you trying to deny it?! Those cigarettes didn’t end up in your hands by coincidence, did they?"
 
@@ -1598,7 +1627,7 @@ label confront_him:
 
     am "So here it is: Can you guess why did I change the padlock code?"
     
-    ga "You.. you’ve changed the code?"
+    hl "You.. you’ve changed the code?"
 
     am "Why yes! you don’t think that the code to my belongings would be that easy, do you?  Did you think that I would set a code that much easy to crack??"
 
@@ -1612,11 +1641,11 @@ label confront_him:
         "To see if I knew your real name":
             am "... What?"
 
-            ga "Yes Ammon, in reality... You’re not named Ammon... but Éric!!"
+            hl "Yes Ammon, in reality... You’re not named Ammon... but Éric!!"
 
             am "... Yes and?"
 
-            ga "And?"
+            hl "And?"
 
             am "Yeah sure my name isn’t really Ammon, it’s a nickname {b}you{/b}’ve come up with because of my apparence."
             am "But what does that have to do with the code?"
@@ -1631,7 +1660,7 @@ label confront_him:
         "To see if I knew your location of birth":
             am "... And what do you do with my location of birth?"
 
-            ga "You take the department number to input it into the padlock!"
+            hl "You take the department number to input it into the padlock!"
 
             am "Honestly that’d be a good guess if the department number wasn’t just two digits. The padlock makes 4 digits..."
             am "Good guess... I guess?"
@@ -1651,11 +1680,11 @@ label confront_him:
     "A growing rage fumes out of his ears. His fists are so clenched bloods spills out of his nails. A violent shock bursts through you. He noticed?" 
     "You lose your nerves, coming up with your best innocent impression."
 
-    ga "Huh– No—no Absolutely not! Why would–would I do that?"
+    hl "Huh– No—no Absolutely not! Why would–would I do that?"
 
     "You stumble on every one of your words. You didn’t expect Ammon to pick on your larceny. You tremble, he musn’t know it was you."
 
-    ga "Maybe you’ve dropped it on the road?"
+    hl "Maybe you’ve dropped it on the road?"
 
     am "Bullshit! You know damn well I didn’t drop it, you liar."
 
@@ -1697,16 +1726,16 @@ label confront_him:
     "You can’t stand that. You can’t stand that Ammon, your childhood friend, the one you’d think you never lose, that always be with you no matter both of your antics, is going to cut ties with you."
     "You have to find something to make him stay. He can’t leave you, otherwise you’ll be alone with your thoughts. With that day in loop."
 
-    ga "Wait! Huu–Huuh I didn’t steal you wallet for that!"
+    hl "Wait! Huu–Huuh I didn’t steal you wallet for that!"
 
     "You interrupt his plea. You caught his attention. Don’t waste it. You scramble in your mind to think of a good enough excuse."
 
-    ga "I ste— I’ve taken your wallet to make you a surprise, to cheer you up, ok?! I never forgot your birthday, all right??!"
+    hl "I ste— I’ve taken your wallet to make you a surprise, to cheer you up, ok?! I never forgot your birthday, all right??!"
 
     "You gesticulate around like a madman, with vivid desesperate motions, and your exorbitated eyes, crazed, frenzied. You’d scare yourself."
     "Those same eyes implore him to believe you in vain."
 
-    ga "So please don’t leave me ok? I beg of you!"
+    hl "So please don’t leave me ok? I beg of you!"
 
     am "Give me back my wallet."
 
@@ -1714,13 +1743,13 @@ label confront_him:
 
     am "With all of the shit you’ve put me through, you surely had the time to make your little surprise. I want to see it."
 
-    ga "It’s– It’s not done!"
+    hl "It’s– It’s not done!"
 
     am "Don’t care. It’s my wallet anyway. I have the right to get it back any time and I’ve decided that it was right now."
 
     "Ammon, in an isntant, dashes for your pockets. No you can’t let him, you won’t be able to go back if he puts his hands on it. You have to prevent him at all cost."
 
-    ga "Wait, I’m not done!"
+    hl "Wait, I’m not done!"
 
     am "I don’t care! Give it to me!"
 
@@ -1728,7 +1757,7 @@ label confront_him:
     "You wrestle for your life to get the wallet back. This is your last chance to set things right so you scratch at him, hiss at him, and even bites him."
     "On the other hand, Ammon won’t let go either. He barks at you, jerks his head in all directions. He’s slipping through your fingers the more you pull that wallet."
     
-    ga "Please Ammon!! Trust me!!!"
+    hl "Please Ammon!! Trust me!!!"
 
     "You put you hand out to him, to his shoulder. He might understand if you can grab a hold of him."
 
@@ -1740,7 +1769,7 @@ label confront_him:
 
     am "FUCK, sorry, I didn’t mean to! Let me hel–"
 
-    ga "{size=60}YOU FUCKING BASTARD{/size}"
+    hl "{size=60}YOU FUCKING BASTARD{/size}"
 
     "You spring on Ammon. You both roll on the grass. After that it’s a bit of a blur. You don’t remember everything."
 

@@ -5,22 +5,17 @@
 
 define ch = Character("Charles", color="#26222cff")
 
+##TODO: Change the name
+define cl = Character("Clair", what_font = "gui/fonts/lydianbi.ttf",  image="clair", callback=clair_noise)
+
 define am = Character("Ammon", color="#f0ee7b", callback=ammon_noise, image="ammon")
 
 define narrator = Character(name=None, what_color="#39f7dc", what_font="gui/fonts/ApercuItalic.otf", callback=narrator_noise)
-define az = Character(name="???", image="azzy", color="#714c8f", what_italic=True, who_italic=True, what_color = "#714c8f", what_font="gui/fonts/lydianbi.ttf", who_font="gui/fonts/lydianbi.ttf")
+define az = Character(name="???", image="azzy", color="#714c8f", what_italic=True, who_italic=True, what_color = "#714c8f", what_font="gui/fonts/lydianbi.ttf")
 
-define ga = Character("Gaspard", color="#454b41", callback=gap_noise)
+define hl = Character("Howl", color="#454b41", callback=gap_noise)
 
 define mj = Character("Marie–Jil", color="#aa6aca")
-
-# Declare images
-
-image ruralRoad = At("bg/ruralRoad.webp")
-image parkingLot = At("bg/bg restArea.jpg")
-
-define dissolve = Dissolve(.5)
-define fade = Fade(1., 1., 1.)
 
 
 # The game starts here.
