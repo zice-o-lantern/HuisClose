@@ -205,7 +205,11 @@ label little_road:
             
             dk "But you can't."
         "It isn't new":
-            hl "I mean"
+            hl "I mean, I could see the same landscapes from my bedroom at home. I would often observe them as a child."
+            
+            am "Didn't you have anything better to do?"
+            
+            "You lower your head meekly and consider carefully the question"
     
     label ammon_distract:
 
