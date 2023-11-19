@@ -102,12 +102,6 @@ label prologue:
         cl "I think I already know the answer."
 
     pause 1.0
-
-    show eyes:
-        alpha 0.0
-        xalign 0.5
-        yalign 0.5
-        ease 30 alpha 1.0
     show clearing:
         alpha 1.0
         ease 30 alpha 0.05
@@ -117,6 +111,13 @@ label prologue:
     cl "Hey You know what? Perhaps he loved me. Perhaps he never did. But he won’t be an issue anymore. He can’t hurt us anymore."
     cl "Perhaps You’re responsible for what happened but I am just as guilty as You."
     cl "Let’s just put all that behind us."
+
+    show eyes:
+        alpha 0.0
+        xalign 0.5
+        yalign 0.5
+        easein 30 alpha 1.0
+    
     cl "The time where he brought me to the fun fair and that he got me that sweet lollipop."
     cl "He would often crack a smile when he crossed a word on his daily newspapers."
     cl "He’d laugh anytime I grimaced."
@@ -135,7 +136,7 @@ label prologue:
     stop audio
     extend ", I need You."
     scene black
-    scene ruralRoad with fade
+    scene ruralRoad with Fade(0.5, 4.0, .5)
     # play sound 'audio/sounds/car_white_noise.ogg' loop
     
     play music "audio/music/The Beatles - Here Comes The Sun (2019 Mix).mp3" fadein 5.0 loop
@@ -159,7 +160,7 @@ label prologue:
     # "You wake up at the hum of the radio, a bit shaken up, with drool staining your helmet visor — Fortunately there’s not enough to hide your vision."
     hide ammon
     with dissolve
-    "Where, before you were stranded away in the milky way, comtemplating about the mysteries of the universe, where the shining stars watched over you, you find yourself on a motorcycle."
+    "Ammon "
     "A sharp feeling pervades your whole being like a blooming rose planting her thorny roots in every part of your spirit."
     "The radio was blastering loud some song from a rock band you appreciated a lot, although you dare not admit it in public, as it was strongly frowned upon among your elders."
     "It’s alright, you think; nobody’s here to disturb you in your little trance."
@@ -182,6 +183,33 @@ label prologue:
     # az "You should forget him."
 
     az "It sure is a beautiful view"
+    az "Such a shame he’s blocking the view with his big back. You should try to get a better look, you’ll never know when you’ll see that again."
+
+    menu move_ammon:
+        "Contort your body on the bike so you can appreciate it better":
+            $ azzy_score += 1
+            "You start to move and wiggle your body on the bike because you don’t want to miss a piece of what the nature has to offer you."
+            "Doing such, you shake the bike a little every attempt, but the more you try the more you get that it was a foolish idea. You don’t possess enough mobility to override the main issue: his back."
+            "You even end up brushing it with your torso in your quest of landscape."
+            
+            az "Nice."
+
+            show ammon
+            am "Howl."
+
+            hl "{cps=3}...{/cps} Yes ?"
+
+            am "What are you doing."
+
+            hl "... Appreciating the view."
+
+            am right e_disgusted j_disgusted "{cps=3}...{/cps}{w} Ok?"
+
+        "Let him be":
+            "You realise it’s a very foolish idea to wiggle on a bike just so you can appreciate you"
+            az "Jeez. You are no fun."
+    
+
 
     # "You went on doing a PhD and your father still wears that apathetic face. At least he would if he’d been still there. You haven’t seen him for a long time..."
     # "Or you have? You think you really have but you don’t remember when. Was it Yesterday? Last week? Last month?.. Last year, surely. It’s on the edge of your mind but something prevents you to remember."

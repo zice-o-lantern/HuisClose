@@ -3,6 +3,7 @@ init offset = -5
 default current_screen = ""
 
 default ammon_score = 0
+default azzy_score = 0
 
 default got_notebook = False
 default empty_inventory = True
