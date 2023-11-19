@@ -162,7 +162,7 @@ label little_road:
     # "You wake up at the hum of the radio, a bit shaken up, with drool staining your helmet visor — Fortunately there’s not enough to hide your vision."
     hide ammon
     with dissolve
-    "Ammon "
+    "Ammon restarts the bike and you're back on the road."
     "A sharp feeling pervades your whole being like a blooming rose planting her thorny roots in every part of your spirit."
     "The radio was blastering loud some song from a rock band you appreciated a lot, although you dare not admit it in public, as it was strongly frowned upon among your elders."
     "It’s alright, you think; nobody’s here to disturb you in your little trance."
@@ -183,124 +183,21 @@ label little_road:
     
     # az "Fuck this guy."
     # az "You should forget him."
-
-    az "It sure is a beautiful view"
-    az "Such a shame he’s blocking the view with his big back. You should try to get a better look, you’ll never know when you’ll see that again."
     
+    show ammon
+
+    am "Hey Howl? Don't you think it's nice around here?"
     
-    # "You went on doing a PhD and your father still wears that apathetic face. At least he would if he’d been still there. You haven’t seen him for a long time..."
-    # "Or you have? You think you really have but you don’t remember when. Was it Yesterday? Last week? Last month?.. Last year, surely. It’s on the edge of your mind but something prevents you to remember."
-    # "Anyway, it shouldn’t have been that important if you can’t remember."
-    # "At least, I wasn’t {b}bored."
+    az "It sure is a beautiful view."
+    
+    dk "It reminds you of your childhood."
+    
+    menu:
+        "I do think so":
+            hl " I haven't had the opportunity to observe
+    
+    label ammon_distract:
 
-    pause 1.0
-
-    # "You close your eyes for a few seconds, in the never ending void, to get a little bit of rest, the road was long today and you’re not even arrived. It really desesperates you."
-    # "Surely one or seconds of sleep won’t hurt, right?"
-
-    # am "Hey Gap? Are you sleepy?"
-
-    # "This deep voice calling awakens in you a surge of uncomfortable geyser and you come to find myself jumping and groaning, letting out some squealings go."
-
-    # am "Oh my god don't move like that!"
-
-    # "Despite hearing an agitated man, gesticulating and whining around, you’re still not quite out of your slumber; The landscapes are all blurry and you can’t really distinguish them from the road."
-    # "Sandpaper bags obstruct the path of your eyelids and every blink feels like pin and needles. The ruthless spikes pierce through the shutter lids veiling my view."
-    # "The weariness of the road made your legs drowsy and the numbness flows through your veins in every muscle of your body. Fighting against it, you blink even more."
-    # "Sootheness and comfort; every time you blink through it, the needles in my eyes fly through the wind, the shards of glass melt up from the spores of your skin between the strands of hair."
-    # "You are soon out of my reverie when Ammon speaks up again."
-
-    # am "Hey are you there??!"
-
-    # "Panicking for you, he thinks over how to get you out of it. His arms around your waist tighten and his chest draws nearer to me, and at this moment the warmness emanating from the torso of his invades every piece of hair of your body."
-    # "Boiling and beating his chest; A shiver runs through your spine, then another one runs though. A old sentiment all too familiar grows inside of you and you don’t like it. you don’t want to find out what happens next if he keeps at it."
-    # "You shove him off."
-
-    # hl "Oh my god let go!!!"
-
-    # "Your immediate reaction causes you to veer off track."
-    # "Slaloming and slaloming, you get hardly back the control of the motorcycle. It shakes you both a lot. Now he’s squeezing you even more and won’t let go."
-    # "You manage to stabilise the vehicle pretty fast but you’re still quite nauseated from the experience."
-
-    # am "Oh good Lord…"
-
-    # "He lets go."
-
-    # stop music
-
-    # pause 1.0
-    # play sound "audio/sounds/car_white_noise.ogg" loop fadein 1.0
-
-    "After some time, a sort of strange quietness grew and loomed over the both of you two. It was uncomfortable, wondering what might have caused all of this agitation early on."
-    "The guiltiness start to take its toll over you, you didn't make a good job to keep focused on the road. A mingle of shame builds up in your throat and it’s stuck no matter how much you gulp."
-    "You throw some quick looks in the mirror to see if there’s any casualties with Ammon. Apparently he’s fine so you relax a bit."
-    "Although his undecypherable gaze under his helmet makes it difficult to know for sure but his ominous aura penetrates all of your pores and tinges all of your body."
-    "At some point, the silence itches you; you want to stop driving and scratch the back of your head, his cold stare is staggering your neck."
-    "The hum of the vehicle barely fills the glacial air and no matter how much fast you go, the biting frost won’t stop nimbling on you."
-    "With guiltiness creeping up, you fire more and more worried looks in the mirror to check on him."
-    "Constating the situation hasn’t evolved—you could’ve not picked enough information given the situation anyway—you try to think up something to break the ice."
-    "You hesitate, you didn’t do anything wrong right? You just were unfocused for a moment and got back in control pretty fast. Nothing to write home about."
-    "You squeeze the handlebar, fearing the moment you’ll have to open your mouth about it. It couldn’t be that hard, could it?"
-    "You gather all of your courage and brace yourself for the challenge to come."
-    "You close your eyes, say those two words slowly."
-
-    hl "{cps=10}I apologise{/cps}{nw}"
-
-    am "I’m sorry."
-
-    "Ammon interrupts you. You’re flabbergasted—what did he just say—your ears couldn’t hear it. They quiver and raise like an antenna looking for the signal; it shouldn’t be possible what you just heard."
-
-    hl "What did you just say..?"
-
-    "You can’t help myself but turn your head around. Maybe in front of you, you’ll see that you were mistaken."
-
-    am "I said I’m sorry{cps=3}...{/cps} for yelling at you. Are you happy?"
-
-    play music "audio/music/Eleventh Hour - OneShot.mp3" fadein 1.0 loop
-
-    "He reasserts himself. He crosses his arm sternly. It looks like his pride has been shamelessly plundered. He looks away and avoids your glaze. He shows a face of discomfort and akwardness."
-    "That took him a lot of efforts, apparently—he’s the type to be a knucklehead about it—he wronged you a lot of times and he doesn’t usually own up to it."
-    ## TODO: maybe add a short anecdote here
-    "You grin bittersweetly, realizing you have been cut off in you tremendous amends to make it up to him."
-
-    hl "Oooooooh looks like the Big Bad Wolf can be sorry sometimes?"
-
-    am "Oh shut up and just drive."
-
-    hl "Ahah ok Big Baby Wolf."
-
-    "He contorts himself in his place at your snickering, not pleased by your teasing."
-    "It might have been uncalled for but you didn’t care; It was your way to get back at him to all of those years of mocking you endured. You might be the only one he does apologise to anyway."
-    "Not that you are the Messiah or anything. You genuinely believe it’s more he doesn’t have a plenty of friends he could apologize to. His irritating attitude repels a lot of people and he also doesn’t like a lot of people."
-    "Weirdly, one day, long ago, he set his sight on you and decided you were worthy of his friendship. A tad presomptuous but nowadays you didn’t mind. You know very few people like this so it’s interesting."
-
-    am "You say one more word about it and I’ll push you off the bike."
-
-    hl "You wouldn’t dare, you pussycat."
-
-    am "That’s it, you lost your driving privileges."
-
-    "He jumps on you and starts tickling. You laugh uncontrollably."
-
-    hl "N–No please stop, it’s incredibly stupid what you’re doing!"
-
-    am "You’re the one stupid, You should’ve known better."
-
-    "You brake dryly, unable to withstand his tickling and take a time to catch back your breathing."
-    ## TODO: add a bit of between
-    "He truly acted like a child sometimes but this didn’t bother you, you did partake in his bickering. In not any circumstances, You would ever cut him off of his childishness."
-    "You turn back to him, faking your exasperation to his behaviour, you pout and cross your arms with an exaggerated manner, it all makes you laugh inside."
-
-    hl "Ok Ammon, you should’t DEFINITELY not tickling me while I drive!"
-
-    am "Why should I not?"
-
-    hl "BECAUSE IT’S DANGEROUS YOU MORON."
-
-    am "Not the one driving, not my problem."
-
-    "He pretends to be offended and put his arms over his chest, his face closed to any discussions."
-    "But in the end this very, very, tall child needs to be put back in his place, he was becoming a bit too much bratty for your liking."
 
     $ take_him_out = False
     
