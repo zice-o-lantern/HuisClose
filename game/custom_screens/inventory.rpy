@@ -94,8 +94,8 @@ label default_examine:
     return
 
 label water_bottle_examine:
-    ga "I’m thisrty"
-    ga "I’m not anymore"
+    "I should bring it to Ammon. {w}He might get impatient. I care no less if he’s pissed."
+    "But I don’t have to deal his prick attitude, right now."
     call screen inventory
     return
 label cigarette_examine:
@@ -105,7 +105,10 @@ label cigarette_examine:
     return
 label ammon_wallet_examine:
     ga "I should be able to find some informations on Ammon."
-    "You search through his wallet and you pull out his ID card"
+    "You search through his wallet"
+    "There’s some money, gift cards and coupons for some groceries store. Not really interesting to you to be, honest."
+    "Then you spot the thin you was searching for."
+
     show ammon_id
     pause 2.0
     "Well here his birthday, you should be able to open the padlock now"

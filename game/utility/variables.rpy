@@ -3,6 +3,7 @@ init offset = -5
 default current_screen = ""
 
 default ammon_score = 0
+default azzy_score = 0
 
 default got_notebook = False
 default empty_inventory = True
@@ -33,5 +34,11 @@ init python:
     def ammon_noise(event, interact=True, **kwargs):
         if event == "show":
             renpy.sound.play("audio/sounds/beeps/deep_1_normal.ogg", channel="sound", loop=True)
+        elif event == "slow_done":
+            renpy.sound.play("audio/sounds/beeps/silence.wav", channel="sound", loop=True)
+    
+    def clair_noise(event, interact=True, **kwargs):
+        if event == "show":
+            renpy.sound.play("audio/sounds/beeps/clair_1_normal.ogg", channel="sound", loop=True)
         elif event == "slow_done":
             renpy.sound.play("audio/sounds/beeps/silence.wav", channel="sound", loop=True)
