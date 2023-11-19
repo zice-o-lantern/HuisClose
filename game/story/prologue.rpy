@@ -194,7 +194,18 @@ label little_road:
     
     menu:
         "I do think so":
-            hl " I haven't had the opportunity to observe
+            hl "I haven't had the opportunity to observe lately."
+            
+            am "... Because of your studies?"
+            
+            hl "Pretty much."
+            
+            "You sigh. You rub your eyes. This subject flashes those long nights where you roll your head on exasperating papers."
+            "You wish you could do otherwise and throw all of your lessons in the trash bin."
+            
+            dk "But you can't."
+        "It isn't new":
+            hl "I mean"
     
     label ammon_distract:
 
