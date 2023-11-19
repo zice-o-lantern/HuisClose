@@ -138,7 +138,9 @@ label prologue:
     scene black
     scene ruralRoad with Fade(0.5, 4.0, .5)
     # play sound 'audio/sounds/car_white_noise.ogg' loop
-    
+    jump little_road
+
+label little_road:
     play music "audio/music/The Beatles - Here Comes The Sun (2019 Mix).mp3" fadein 5.0 loop
 
 
@@ -184,33 +186,8 @@ label prologue:
 
     az "It sure is a beautiful view"
     az "Such a shame he’s blocking the view with his big back. You should try to get a better look, you’ll never know when you’ll see that again."
-
-    menu move_ammon:
-        "Contort your body on the bike so you can appreciate it better":
-            $ azzy_score += 1
-            "You start to move and wiggle your body on the bike because you don’t want to miss a piece of what the nature has to offer you."
-            "Doing such, you shake the bike a little every attempt, but the more you try the more you get that it was a foolish idea. You don’t possess enough mobility to override the main issue: his back."
-            "You even end up brushing it with your torso in your quest of landscape."
-            
-            az "Nice."
-
-            show ammon
-            am "Howl."
-
-            hl "{cps=3}...{/cps} Yes ?"
-
-            am "What are you doing."
-
-            hl "... Appreciating the view."
-
-            am right e_disgusted j_disgusted "{cps=3}...{/cps}{w} Ok?"
-
-        "Let him be":
-            "You realise it’s a very foolish idea to wiggle on a bike just so you can appreciate you"
-            az "Jeez. You are no fun."
     
-
-
+    
     # "You went on doing a PhD and your father still wears that apathetic face. At least he would if he’d been still there. You haven’t seen him for a long time..."
     # "Or you have? You think you really have but you don’t remember when. Was it Yesterday? Last week? Last month?.. Last year, surely. It’s on the edge of your mind but something prevents you to remember."
     # "Anyway, it shouldn’t have been that important if you can’t remember."
