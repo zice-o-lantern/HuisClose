@@ -132,6 +132,7 @@ label prologue:
 
     cl "Perhaps, more than I thought"
     stop music
+    stop audio
     extend ", I need You."
     scene black
     scene ruralRoad with fade
@@ -142,85 +143,88 @@ label prologue:
 
     "You wake up from your reverie at the cold hands of someone grabbing your shoulder."
     hl "Aaaaaah!"
+
+    show ammon with dissolve
     
     am "Hey were you sleeping?"
     
     hl "Huh—whuu?"
     
     am "Yes you were. Sorry I had to stop and wake you."
-    am "I was starting to feel your head on top of my back and you wouldn’t budge and that didn’t help me drive."
+    am right "I was starting to feel your head on top of my back and you wouldn’t budge and that didn’t help me drive."
 
     hl "Oh... Sorry Ammon I didn’t mean to."
 
-    "You can stop reading here I didn’t rewrite the next part"
-
-    am "No worries Howl. I think I’ll stop next stop, I’m starting to get weary too."
+    am e_smug j_noway "No worries Howl. I think I’ll stop next stop, I’m starting to get weary too."
     # "You wake up at the hum of the radio, a bit shaken up, with drool staining your helmet visor — Fortunately there’s not enough to hide your vision."
+    hide ammon
+    with dissolve
     "Where, before you were stranded away in the milky way, comtemplating about the mysteries of the universe, where the shining stars watched over you, you find yourself on a motorcycle."
     "A sharp feeling pervades your whole being like a blooming rose planting her thorny roots in every part of your spirit."
     "The radio was blastering loud some song from a rock band you appreciated a lot, although you dare not admit it in public, as it was strongly frowned upon among your elders."
     "It’s alright, you think; nobody’s here to disturb you in your little trance."
 
-    "In your little world, you were no more significant than a grain of salt swept over by the wind on a sunny beach. No matter you’ll end up, you’ll be content with the result."
     "The dying sun at the horizon sends you its adieu and lays down behind the horizon at slow but certain pace."
     "The last glimmers of lights highlights the majestic landscapes the road has to offer. \nThere were multiple sceneries you could transfer onto a pellicule for everyone to admire at home."
     "Some black forest, deep as the never–ending void where no light never escapes, some striking high mountains, candidates to the siege of the Olympus."
     "Some sunflowers, dispersed in the grand lands of tall grasses, don’t know anymore where to turn their head to, their leader gone astray, to never be seen again."
-    "All these landscapes appear gorgeous and alluring to you on the road but they were even more exquisite from your moderate village, where you have resided from as long as you can recollect your memories."
-    "You remember, observing them, from the window of your lonely bedroom, dreaming of one day, going on a journey to find an unestimate treasure."
-    "You lived quite some adventures in this very room. Afraid of the outside, your little journey didn’t go very far."
-    "It happenend often that you wake up and decide that you’d be a cook or an explorer, or any revelation you had on this particular day."
-    "One day, you woke up from bed and you decided that you’d be a doctor! A doctor you say? Some laughed at this sight of naiveté, Some supported your decision, but in the end they were sure unimpressed."
-    "Whether it had been whispered by Lady Fate or the fact that your father had said multiple times at this point that he’d be very happy if you were a doctor. You had truly no way of knowing which option was right."
-    "You remember going to Father to reveal him your latest epiphany. He went to a pensive state of mind. He’s going to succeed me, huh? \nHe bore a lethargic expression on his face–"
-    "—not that it was exceptional. \nHe always seems dead to the outside."
-    "Maybe not just to the outside."
+    # "All these landscapes appear gorgeous and alluring to you on the road but they were even more exquisite from your moderate village, where you have resided from as long as you can recollect your memories."
+    # "You remember, observing them, from the window of your lonely bedroom, dreaming of one day, going on a journey to find an unestimate treasure."
+    # "You lived quite some adventures in this very room. Afraid of the outside, your little journey didn’t go very far."
+    # "It happenend often that you wake up and decide that you’d be a cook or an explorer, or any revelation you had on this particular day."
+    # "One day, you woke up from bed and you decided that you’d be a doctor! A doctor you say? Some laughed at this sight of naiveté, Some supported your decision, but in the end they were sure unimpressed."
+    # "Whether it had been whispered by Lady Fate or the fact that your father had said multiple times at this point that he’d be very happy if you were a doctor. You had truly no way of knowing which option was right."
+    # "You remember going to Father to reveal him your latest epiphany. He went to a pensive state of mind. He’s going to succeed me, huh? \nHe bore a lethargic expression on his face–"
+    # "—not that it was exceptional. \nHe always seems dead to the outside."
+    # "Maybe not just to the outside."
     
-    az "Fuck this guy."
-    az "You should forget him."
+    # az "Fuck this guy."
+    # az "You should forget him."
 
-    "You went on doing a PhD and your father still wears that apathetic face. At least he would if he’d been still there. You haven’t seen him for a long time..."
-    "Or you have? You think you really have but you don’t remember when. Was it Yesterday? Last week? Last month?.. Last year, surely. It’s on the edge of your mind but something prevents you to remember."
-    "Anyway, it shouldn’t have been that important if you can’t remember."
+    az "It sure is a beautiful view"
+
+    # "You went on doing a PhD and your father still wears that apathetic face. At least he would if he’d been still there. You haven’t seen him for a long time..."
+    # "Or you have? You think you really have but you don’t remember when. Was it Yesterday? Last week? Last month?.. Last year, surely. It’s on the edge of your mind but something prevents you to remember."
+    # "Anyway, it shouldn’t have been that important if you can’t remember."
     # "At least, I wasn’t {b}bored."
 
     pause 1.0
 
-    "You close your eyes for a few seconds, in the never ending void, to get a little bit of rest, the road was long today and you’re not even arrived. It really desesperates you."
-    "Surely one or seconds of sleep won’t hurt, right?"
+    # "You close your eyes for a few seconds, in the never ending void, to get a little bit of rest, the road was long today and you’re not even arrived. It really desesperates you."
+    # "Surely one or seconds of sleep won’t hurt, right?"
 
-    am "Hey Gap? Are you sleepy?"
+    # am "Hey Gap? Are you sleepy?"
 
-    "This deep voice calling awakens in you a surge of uncomfortable geyser and you come to find myself jumping and groaning, letting out some squealings go."
+    # "This deep voice calling awakens in you a surge of uncomfortable geyser and you come to find myself jumping and groaning, letting out some squealings go."
 
-    am "Oh my god don't move like that!"
+    # am "Oh my god don't move like that!"
 
-    "Despite hearing an agitated man, gesticulating and whining around, you’re still not quite out of your slumber; The landscapes are all blurry and you can’t really distinguish them from the road."
-    "Sandpaper bags obstruct the path of your eyelids and every blink feels like pin and needles. The ruthless spikes pierce through the shutter lids veiling my view."
-    "The weariness of the road made your legs drowsy and the numbness flows through your veins in every muscle of your body. Fighting against it, you blink even more."
-    "Sootheness and comfort; every time you blink through it, the needles in my eyes fly through the wind, the shards of glass melt up from the spores of your skin between the strands of hair."
-    "You are soon out of my reverie when Ammon speaks up again."
+    # "Despite hearing an agitated man, gesticulating and whining around, you’re still not quite out of your slumber; The landscapes are all blurry and you can’t really distinguish them from the road."
+    # "Sandpaper bags obstruct the path of your eyelids and every blink feels like pin and needles. The ruthless spikes pierce through the shutter lids veiling my view."
+    # "The weariness of the road made your legs drowsy and the numbness flows through your veins in every muscle of your body. Fighting against it, you blink even more."
+    # "Sootheness and comfort; every time you blink through it, the needles in my eyes fly through the wind, the shards of glass melt up from the spores of your skin between the strands of hair."
+    # "You are soon out of my reverie when Ammon speaks up again."
 
-    am "Hey are you there??!"
+    # am "Hey are you there??!"
 
-    "Panicking for you, he thinks over how to get you out of it. His arms around your waist tighten and his chest draws nearer to me, and at this moment the warmness emanating from the torso of his invades every piece of hair of your body."
-    "Boiling and beating his chest; A shiver runs through your spine, then another one runs though. A old sentiment all too familiar grows inside of you and you don’t like it. you don’t want to find out what happens next if he keeps at it."
-    "You shove him off."
+    # "Panicking for you, he thinks over how to get you out of it. His arms around your waist tighten and his chest draws nearer to me, and at this moment the warmness emanating from the torso of his invades every piece of hair of your body."
+    # "Boiling and beating his chest; A shiver runs through your spine, then another one runs though. A old sentiment all too familiar grows inside of you and you don’t like it. you don’t want to find out what happens next if he keeps at it."
+    # "You shove him off."
 
-    hl "Oh my god let go!!!"
+    # hl "Oh my god let go!!!"
 
-    "Your immediate reaction causes you to veer off track."
-    "Slaloming and slaloming, you get hardly back the control of the motorcycle. It shakes you both a lot. Now he’s squeezing you even more and won’t let go."
-    "You manage to stabilise the vehicle pretty fast but you’re still quite nauseated from the experience."
+    # "Your immediate reaction causes you to veer off track."
+    # "Slaloming and slaloming, you get hardly back the control of the motorcycle. It shakes you both a lot. Now he’s squeezing you even more and won’t let go."
+    # "You manage to stabilise the vehicle pretty fast but you’re still quite nauseated from the experience."
 
-    am "Oh good Lord…"
+    # am "Oh good Lord…"
 
-    "He lets go."
+    # "He lets go."
 
-    stop music
+    # stop music
 
-    pause 1.0
-    play sound "audio/sounds/car_white_noise.ogg" loop fadein 1.0
+    # pause 1.0
+    # play sound "audio/sounds/car_white_noise.ogg" loop fadein 1.0
 
     "After some time, a sort of strange quietness grew and loomed over the both of you two. It was uncomfortable, wondering what might have caused all of this agitation early on."
     "The guiltiness start to take its toll over you, you didn't make a good job to keep focused on the road. A mingle of shame builds up in your throat and it’s stuck no matter how much you gulp."
