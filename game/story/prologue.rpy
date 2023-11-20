@@ -196,7 +196,7 @@ label little_road:
     
     menu:
         "I do think so":
-            hl "I haven't had the opportunity to observe lately."
+            hl "I haven't had the opportunity to look at them lately."
             
             am "... Because of your studies?"
             
@@ -240,7 +240,11 @@ label little_road:
     
     am "Yeah pretty much. I don't want you to drool all over onto my new jacket."
 
-    hl "But I have an helmet."
+    hl "But I wear an helmet."
+    
+    am "Then I don't want you to drown in your own drool."
+
+    "A bit crude, he's always been like that ; you aren't fazed by his harshness though you aren't used to it anymore."
 
 
     $ take_him_out = False
