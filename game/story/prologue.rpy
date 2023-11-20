@@ -212,13 +212,15 @@ label little_road:
         "It isn't new":
             hl "I mean, I could see the same landscapes from my bedroom at home. I would often observe them as a child."
             
-            am "Didn't you have anything better to do?"
+            ## TODO: Redo smug front expression
+            am right e_smug "Didn't you have anything better to do?"
             
             "You lower your head meekly and consider carefully the question."
             "The thing is you can't remember you had anything better to do and that concerns you."
             "Ammon, picking up your long silence as an answer, scoffs and roll his eyes before smiling bitterly."
             
-            am e_smug j_happy "You really are a dork."
+            ## TODO: Add happy jaw right
+            am "You really are a dork."
             
             "You are suprised by his reaction and prepare yourself to argue back but..."
             
@@ -227,6 +229,17 @@ label little_road:
     hl "Wait a minute, I thought you weren't the type of guy that enjoys sceneries! You just looked at me, confused, whenever I'd stop for looking landscapes."
     
     am right e_smug j_disgusted "This is because that would happen anywhere, anytime, this was annoying at some point."
+    am "If I could have, I would have put you on leash and drag your ass around so you could stop fanwning on everything."
+    
+    hl "Well you couldn't."
+
+    show ammon front e_neutral
+
+    "Ammon hears your tone of defiance and even from behind his terrifying aura oozes from his shoulders, shivering. Might have struck a nerve."
+
+    am "If I were you, I wouldn't push my luck."
+
+    az "You absolutely should."
     
     "He looks down, melancholically, at his hands, surely reminescing our little outings together some time ago."
     
@@ -245,12 +258,45 @@ label little_road:
     am "Then I don't want you to drown in your own drool."
 
     "A bit crude, he's always been like that ; you aren't fazed by his harshness though you aren't used to it anymore."
-    "Even in your own usual moodiness, he would find ways to even lower it. A true pain in the neck.
+    "Even in your own usual moodiness, he would find ways to even lower it. A true pain in the neck."
     
     if azzy_score >= 1:
-      az "But you like it."
+        az "But you like it."
     
-    "However with all those years spent with him, you've come to understand his language, what he means behind 
+    "However with all those years spent with him, you've come to understand his language, what he means behind his unpleasant comments, his bitter venom."
+    "He doesn't want you to fall off the bike. When you fall asleep, you lose control of your body, of your mind. Who knows what will happen to you once your eyes closed."
+    "In the end, he bears a wall of bitterness and acerbity but he's kind of heart."
+    "At least that's what you think."
+    "It helps you teasing him."
+
+    hl "Well I guess I'll just remove my helmet so I won't drown then. And stain a bit your jacket but I'm sure you don't mind it."
+
+    am right "Urgh stop it. That's disgusting. And keep your helmet that's not the point."
+
+    hl "What's the point then?"
+
+    ## TODO: Fix an issue with this expression below
+    #am front e_angry j_growl "Just stay awake !"
+    am front e_neutral j_neutral "Just stay awake !"
+
+    hl "Alright, alright, don't get mad, jeez."
+    hl "... But I'm still sleepy."
+
+    am "Do what you want but I don't want to feel your head on my back, it's cold."
+
+    "Your sleepiness starts to invade your senses and they start to numb. If you don't do something quick, you'll succumb to nothingness."
+
+    az "Don't try to fight it. Think of his big bulky back as a softy pillow. Ignore Ammon's threats, that's what you want anyway."
+    
+    dk "Noooooo don't! {w}If you do that you'll only anger him more."
+
+    az "That's what's been said. You want that anyway."
+
+    dk "Ask him to continue to talk to you, to keep you awake. Also, maybe you'll be able to catch up what you missed with him and the old good times."
+
+    menu:
+        63
+        
 
 
     $ take_him_out = False
