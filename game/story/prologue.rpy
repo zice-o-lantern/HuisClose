@@ -208,6 +208,7 @@ label little_road:
             dk "But you can't."
             
             am "You should get out of your house sometime..."
+            
         "It isn't new":
             hl "I mean, I could see the same landscapes from my bedroom at home. I would often observe them as a child."
             
@@ -223,7 +224,23 @@ label little_road:
             
             dk "You are."
     
-    label ammon_distract:
+    hl "Wait a minute, I thought you weren't the type of guy that enjoys sceneries! You just looked at me, confused, whenever I'd stop for looking landscapes."
+    
+    am right e_smug j_disgusted "This is because that would happen anywhere, anytime, this was annoying at some point."
+    
+    "He looks down, melancholically, at his hands, surely reminescing our little outings together some time ago."
+    
+    az "You really enjoyed them{w}, Hehe."
+
+    dk "Such a shame it had come to an end."
+    
+    am j_neutral "But yeah you are right, I don't really care. I was just trying to make you stay awake, you know."
+    
+    hl "Really?"
+    
+    am "Yeah pretty much. I don't want you to drool all over onto my new jacket."
+
+    hl "But I have an helmet."
 
 
     $ take_him_out = False
