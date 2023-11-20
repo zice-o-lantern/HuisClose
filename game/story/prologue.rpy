@@ -171,28 +171,24 @@ label little_road:
     "The last glimmers of lights highlights the majestic landscapes the road has to offer. \nThere were multiple sceneries you could transfer onto a pellicule for everyone to admire at home."
     "Some black forest, deep as the never–ending void where no light never escapes, some striking high mountains, candidates to the siege of the Olympus."
     "Some sunflowers, dispersed in the grand lands of tall grasses, don’t know anymore where to turn their head to, their leader gone astray, to never be seen again."
-    # "All these landscapes appear gorgeous and alluring to you on the road but they were even more exquisite from your moderate village, where you have resided from as long as you can recollect your memories."
-    # "You remember, observing them, from the window of your lonely bedroom, dreaming of one day, going on a journey to find an unestimate treasure."
-    # "You lived quite some adventures in this very room. Afraid of the outside, your little journey didn’t go very far."
-    # "It happenend often that you wake up and decide that you’d be a cook or an explorer, or any revelation you had on this particular day."
-    # "One day, you woke up from bed and you decided that you’d be a doctor! A doctor you say? Some laughed at this sight of naiveté, Some supported your decision, but in the end they were sure unimpressed."
-    # "Whether it had been whispered by Lady Fate or the fact that your father had said multiple times at this point that he’d be very happy if you were a doctor. You had truly no way of knowing which option was right."
-    # "You remember going to Father to reveal him your latest epiphany. He went to a pensive state of mind. He’s going to succeed me, huh? \nHe bore a lethargic expression on his face–"
-    # "—not that it was exceptional. \nHe always seems dead to the outside."
-    # "Maybe not just to the outside."
+    "All these landscapes appear gorgeous and alluring to you on the road but they were even more exquisite from your moderate village, where you have resided from as long as you can recollect your memories."
+    "You remember, observing them, from the window of your lonely bedroom, dreaming of one day, going on a journey to find an unestimate treasure."
+    "You lived quite some adventures in this very room. Afraid of the outside, your little journey didn’t go very far."
+    "It happenend often that you wake up and decide that you’d be a cook or an explorer, or any revelation you had on this particular day."
+    "One day, you woke up from bed and you decided that you’d be a doctor! A doctor you say? Some laughed at this sight of naiveté, Some supported your decision, but in the end they were sure unimpressed."
+    "Whether it had been whispered by Lady Fate or the fact that your father had said multiple times at this point that he’d be very happy if you were a doctor. You had truly no way of knowing which option was right."
+    "You remember going to Father to reveal him your latest epiphany. He went to a pensive state of mind. He’s going to succeed me, huh? \nHe bore a lethargic expression on his face–"
+    "—not that it was exceptional. \nHe always seems dead to the outside."
+    "Maybe not just to the outside."
     
-    # az "Fuck this guy."
-    # az "You should forget him."
+    az "Fuck this guy."
+    az "You should forget him."
     
     show ammon
 
     am "Hey Howl? Don't you think it's nice around here?"
     
-    "Ammon gestures his head towards the scenery, that, funny enough, you've been looking at for some time."
-    
-    az "It sure is a beautiful view."
-    
-    dk "It reminds you of your childhood."
+    "Ammon, interrupting to your train of thought, gestures his head towards the scenery, that, funny enough, you've been looking at for some time."
     
     menu:
         "I do think so":
@@ -295,322 +291,31 @@ label little_road:
     dk "Ask him to continue to talk to you, to keep you awake. Also, maybe you'll be able to catch up what you missed with him and the old good times."
 
     menu:
-        63
-        
+        "Sleep on his back":
+            jump sleep_on_his_back
+        "Ask him about what he's been doing":
+            jump talk_with_ammon
+
+label talk_with_ammon:
+    $ derek_score += 1
+
+label sleep_on_his_back:
+    $ azzy_score += 1
+
+    scene black with dissolve
+
+    "You can't resist anymore."
+    "You can't help but let your head fall first into the soft pilloz in front of you."
+    "Loud screams and whining fill your ears but it doesnt bother you a bit. You are dragged into the abbyss of your sleep."
+    "The overwhelming void of your mind lulls you up and fragments of your life flashes through you; You don't care, you're too week to care"
+    "You just wish to be alone and the comforting void invites you to."
+    ## TODO: Add an impact sound
+    "However your sleep is of short term when you collide with a fragment."
+
+    "Your vision is filled with a blinding light "
 
 
-    $ take_him_out = False
-    
-    menu very_tall_child:
-        "Abandon him here":
-            
-            $ ammon_score += 1
-            "You gracefully get up from the seat. You will have to show him your grandeur so you make up your stance."
-            
-            hl "You know what? Get off the bike. I'm going alone."
-            
-            am "No you won't. It's my property, I'm staying on it, I won't budge from an inch."
-            
-            hl "This might be your bike but I'm driving it."
-            
-            am "Still."
-            
-            
-            "You had predicted this outcome—Who would willingly let himself get abandonned on the road?—although you find yourself annoyed. If only he submitted, everything would be easier,"
-            
-            hl "Playing hard to get moved, huh? Be my guest then. I didn't want to come to that but I'm going to bust your fat behind."
-            
-            "Arms and legs spread; he provokes me and accept your challenge."
-            
-            am "Make me."
-            
-            "Your resolve set, you dash to him and grab him from behind, leaving him no room to react. Ammon surprised, tries to wiggle out his way from this situation."
-            "Unfortunately for him it's too late, for your claws have tighten the grasp on its prey. He won’t get out any time soon."
-            
-            am "Stop it! Let me go!"
-            
-            hl "No, you'll learn to respect me."
-            
-            am "Please, you will never be able to lift me."
-            
-            hl "I might! And I might stop if you apologize for tickling me."
-            
-            am "Never! Let me go or I'll bite!"
-            
-            hl "Go on!"
-            
-            "It reached the point where Ammon became an eletric bolt, wiggling and biting in every directions."
-            "Now's your last and only chance you might have to lift him off, therefore you put everything once of your strength and start the process."
-            "Oh no. He's heavy."
-            "Very heavy. More than you thought. Maybe the workout between his studies really paid out. Or he was eating more than he lets on. Whatever may be the case, you find yourself losing control of the big dog."
-            "And the bike... I–It–It wont—"
-            
-            am "It won't stand up!"
-            
-            "Thusly, the bike loses its balance and the bike, the wiggling dog and you fall to your demise on the grey dirty road."
-        
-        "Take him down":
-            $ ammon_score += 1
-            
-            $ take_him_out = True
-            
-            "You gracefully get up from the seat. You will have to show him your grandeur so you make up my stance."
-            
-            hl "You know what? Get off the bike. I'm going alone."
-            
-            
-            am "No you won't. It's my property, I'm staying on it, I won't budge from an inch."
-            
-            hl "This might be your bike but I'm driving it."
-            
-            am "Still."
-            
-            "You had predicted this outcome—Who would willingly let himself get abandonned on the road?—although you find myself annoyed. If only he submitted, everything would be easier,"
-            
-            hl "Playing hard to get moved, huh? Be my guest then. I didn't want to come to that but I'm going to take you down."
-            
-            "Arms and legs spread; he provokes me and accept my challenge."
-            
-            am "Go on."
-            
-            "You come up with a plan: I need to lower his guard enough so I could approach him by behind. Then I'll be able to do whatever I want to him. He’ll regret tickling you."
-            
-            hl "Ok Ammon, you are right. I can't take you down."
-            
-            "Ammon rises an eyebrow. It's sort of sudden your change of mind but no time to smooth it over."
-            
-            "First step: Pretending admitting you were wrong; you're both stubborn. Doing that succeeded in confusing him at least."
-            
-            hl "Besides it wasn't so bad, you're good at tickling. Sure I was driving but I need some tickling from time to time."
-            
-            "As he looking for a white and black cat named Gaspard, he only sees a stranger in front of him, casually walking closer to him."
-            
-            "Step 3: Initiate contact."
-            
-            hl "Let me tickle you, then! You need some too!"
-            
-            "You jump on Ammon and assault him of tickles, destabilising him enough for him to laugh unconditionally."
-            
-            am "Ahahah—Stop I can't take it anymore!—Ah ahAhhh."
-            
-            "You benefit from this window of opportunity for tackling him down on the bike with an armlock of yours he won't get out of so easily."
-            
-            am "Ouch ouch, okay you've won Gap no need to–"
-            
-            "You reinforce the armlock shutting him down."
-            
-            hl "So who thought I couldn't take you down, huh?"
-            
-            am "Maybe I did... but did you think of that!"
-            
-            "He pushes the ground with his foot, making the bike fall on you."
-            "Thusly, the bike loses its balance and the bike, the submitted dog and you fall to your demise on the grey dirty road."
-            
-        "Push him off":
-            "You quickly get up from the bike and decided that someone needed to learn their lessons."
-            "You silently get near him and stay there for a moment, getting Ammon uncomfortable more and more."
-            "At your concerning sight, Ammon starts fidgeting with his helmet, lost for words. His boot tapping the ground reinforces his ominous presentiment."
-            
-            am "Are you alright, Gap?"
-            
-            hl "Yes, I am."
-            
-            am "Sooooo... what are you standing here for?"
-            
-            "You keep my mouth shut. He doesn't have to know what you’re about to do."
-            "You slowly reach out your arms to him, innocently. He doesn't have a clue in the world, of your ill-intended thoughts. That'll make his fall even harder."
-            
-            am "A hug? I thought you didn't like being touch–"
-            
-            "As he spoke, you thrust him without any warning off the bike"
-            
-            am "Oh motherfu–"
-            
-            "He violently hits the ground with a loud thud, the bike following him on his fall. He loudly moans and seethes. He’s hurt everywhere."
-            
-            am "Dude, what the hell??? What was that for? Why have you done that??"
-            
-            "You fall silent. You clearly weren’t expecting this outcome. You won’t lie saying you didn’t appreciate seeing him on the ground, all dirty, whining, whimpering and howling."
-            "But you’ve come to regret it: You didn’t plan to hurt him that far."
-            "Very few moments pass until you mull over it and choose he needed help"
-            "You extend your hand to him, apologetically, trying to make up to him."
-            
-            "But he swats off your hand, get up without any help, dust his clothes off flee your glaze.."
-            
-            am "No, no, I am good. I guess that's my retribution for tickling you."
-            
-            "Tinges of sarcasm ooze off his words, accusing, incriminating."
-            "It was clear that you misbehaved here."
-            "Strips of blood drip off the wounds Ammon has got when he fell from the bike."
-            "He sets at licking at it, very intensively."
-            
-            hl "Maybe you shouldn't do that."
-            
-            am "Maybe you shouldn't have thrown me off."
-            
-            "The silence grows heavier between the both of you, you genuinely not knowing how to own up to it."
-            
-            am "... Let's just go."
-            
-            "He climbs back up on the bike and you follow his lead. You drag your paws on the ground, a bit regretful to return on it. You wished you hadn’t pushed him off but the misdeed is done, no return possible."
-            
-            "You take back the road and continue to your destination."
-    
-    if ammon_score >= 1:
-        "Aftermath passed, you both lay on the road. You hear Ammon cough. You look at him worriedly. Is he hurt?"
-        "He doesn't look all bad, although he has bruises here and there. The next moment, you notice you are all bruised too. On your hands, arms, head, everywhere." 
-        "Your clothes are dirty and you feel bad because you had just washed them this morning."
-        "Your primal instinct hits and you lick all of your injuries. Arms above your head, tongue in your armpit; A longing stare hammers at you so you spin toward the source."
-        "You contemplate a smirking, dirty dog, snickering. You fluster. He has already seen you doing that; what’s that so funny about it right now? You sulk and embarrassingly continue to lick at the wounds. But he still looks at me."
-        
-        hl "Could you stop looking at me? I don’t know what’s so interesting about it but it’s embarassing me."
-        
-        "You turn away, fleeing eyes, wanting to put you into a mouse hole away from the judging world, from any peeping eyes of your unfortunate pulsions."
-        "Heats of wave overrun your cheeks and the then pure white turn into a cherry pink of embarassement."
-        "All of the sudden, a raspy sound of tongue licking the filthy crusty fur pierces your eardrums and you can’t help but look at the source of the sound." 
-        "The spectacle you see there is all intriguing—or you could say—captivating."
-        "There before you beholds a filthy dog on the ground, wrist, above in the air, being licked that same raspy tonge you’ve heard." 
-        "His damp muscle runs through all over and all abroad his wrist. He stops in his deed and raise his head, interested by your stare."
-        "You share a meaningful glaze, could have lasted for centuries, if your limbs didn’t ache on every inches of your body."
-        "Although the pain gradually fades away, Ammon, content of his little show, stares at you mischeviously."
-
-        hl "Care to explain?"
-
-        am "It’s just...{w} Everytime I look at you doing that, you start to fluster and get really awkward."
-
-        "Ammon sits back on his behind, extends his legs and look at the sky and the clouds passing by, diamonds in his golden eyes. You look for the meaning of his words in his sunflowers that he uses to see. But I only see a glint of "
-
-        am "When you lick yourself, when you purr, when I throw a ball of yarn at you and you start rolling around fighting to death, I find myself enjoying those moments when you let your guard down, when you show that you are not a stuck–up dork."
-        am "But afterwards you always become this grumpy cat ashamed of what he is." 
-        am "I just thought I could cheer you up by showing that it wasnt’t that bad, that you shouldn’t feel so bad about it. That it’s not that embarrassing, do you see what I mean?"
-        
-        "At these words, You couln’t hold it any longer and muffled snickers escape your little nose. Soon it becomes a loud laughter as you unleashed the last strands of your joie de vivre."
-        "He was being truly embarassing."
-        "Ammon, amused by your sudden change from sultry to euphory, follows and you two lose yourself in the silliness of the situation, reminiscent of older times."
-        "You finally calm yourself, wiping out your tears of laugther and you slowly get on two paws. You stretch out to get you back on track." 
-        "You purr out of satisfaction. You had not brawled like that for a long time."
-        "You realise that the time where you would fight like that with Ammon died long ago, and you only regret now." 
-        "The studies and annual exams overflowed your world and you have come to forget your support when you drowned slowly."
-        
-        hl "Ahah ok ammon let’s go–"
-
-        "Ammon has not got up, he continues to lay there, eyes lost up above in the sky were the stars start to show themselves."
-
-        hl "Ammon, are you alright?"
-
-        "You extends your hand to him, although no immediate reaction seems to get out of the pensive puppy. At last, he notices you and take up your offer and grabs your hand."
-
-        am "Yes I am..."
-
-        "You manage to get him up, standing, despite his weight—or is it you that have really weak arms?— and you wait for the rest of his response."
-
-        am "... By the way thanks for dirtying me, you asshole?"
-        
-        hl "Me an asshole? It’s you and only you that brought it upon yourself. If you weren’t teasing me so much, I would have to hit you."
-
-        "Ammon reaches his hand to you."
-
-        am "You know what? Let’s make a truce. Let’s say we’ve both assholes. Deal?"
-
-        "Too tired to even argue, I firmly grasp it and shake it confidently."
-
-        hl "Deal."
-
-        "Like that, at a smooth pace, you climb back on the bike and set back on the road."
-
-    "A bit of quiet followed, with the hum of the bike soothing your weary soul, your eyelids becoming heavy again, to your disliking."
-    "It reminds you it already happened earlier, when the sun was setting. You had quite an argument with your friendly companion."
-    "Then you remember that you never really apologised for what you did."
-    "You gather your lost courage and you muster these words, caught in your throat."
-    
-    hl "Hey buddy?"
-    
-    am "Yeah pal?"
-
-    "You sigh. You really don't want to do that but you have to."
-    
-    hl "Remember when I was falling asleep and you woke me up?"
-    
-    am "Yeaaaah..."
-    if ammon_score >= 1:
-        am "But you know, I haven't been correct to you either, you don't have to{nw}"
-    else:
-        "Ammon just stands there, without saying a thing, as if what you are going to say has been due to him for a long, long time ago and he was craving for it."
-    
-    hl "I forgive you.{w} I apologize too. I should’ve kept my eyes on the road. It’s been irresonsible of me."
-
-    "You lower your head of shame."
-    "You don’t know why you were so distracted but you could’ve died both with your tomfoolery. You won over the fatigue thanks to Ammon but will you be so lucky next time?"
-
-    am "Ooh? Mister Responsible Goody Two–Shoes is sorry? Mister is ashamed of what he’s done and wants to atone for he has sinned?"
-    
-    if ammon_score < 1:
-        "{cps=20}Annnnd{/cps} there it is. Your asshole of a friend you know."
-
-    hl "Oh shut up. I will take back what I said"
-
-    am "Nah, nah, don’t worry, I’ll stop teasing you about it."
-
-    "He puts back his boiling arms over your waist to tighten his grip. You don’t push him back as you value his safery more than your comfort."
-
-    am "Besides, the quietness was unsupportable. I couldn’t bear to be mad at you all of the trip and we just started."
-    am "And it looks like you’re getting sleepy so I’ll get just right enough on your nerves to keep you awake."
-
-    hl "And you’re damn good at it because I already want to shut close that mouthy trap of yours."
-
-    "As you grit your teeth holding back to steer you in the ditch on the side of the road to not hear his voice anymore, he slids his damp muzzle on your shoulder."
-    "You hadn’t noticed but he has raised his visor just jor the sake of this maneuver."
-
-    am "That’s the gist of it."
-
-    hl "Ammon, I don’t know anymore if you’re trying to help or distract me."
-
-    am "Gueeeeessss."
-
-    "He wants to distract me."
-    "Get at him, show him who the boss is—he's teasing you, he deserves it."
-    
-    am "Come on, Gue{nw}"
-    
-    "He was about to finish this annoying phrase when a sneaky hand grabs his muzzle and squeeze his muzzle shut."
-    "It seems you have run out of your clemency toward the teasing dog. A pretty long amount of time pass, interspersed by some squeaking and whining, before you estimate that the little sinner has understood and let him out."
-
-    am "Aargh—"
-    
-    "Falling out of balance, you squeeze his embrace tight over you to make him stay on the motorcycle."
-
-    am "What the hell was that??"
-    
-    hl "You shouldnt distract me, Ammon..."
-
-    am "... Get lost."
-    
-    hl "Yet, here I am, stuckn with you."
-    
-    am "Don't say to my face you don't enjoy my presence, Gappy."
-    
-    "You must admit he has got a point. In your so dull life, your friendship with him shines through the in dark deep cloud tide."
-    "You grin."
-
-    am "Anyway, aren’t you excited?"
-
-    hl "For what?"
-
-    am "For what??? Do you really know where you’re going???"
-
-    hl "Yes yes, I know… Oh yeah right."
-
-    am "Yeah you know, the hotel??"
-
-    "Yesterday You were appalled by Ammon for he had something important to tell you. Apparently you’ve been \"broodier\" than usual——according to his words."
-    "So he presented a solution for you: he was invited to a trip to a luxurious hotel in Paris."
-
-    am "Aren’t you a little curious about it?"
-
-    hl "Yes I am…"
-
-    am "So what do you want me to tell you?"
-
+label questions_about_hotel:
     menu the_hotel:
 
         "How did you get it?":
