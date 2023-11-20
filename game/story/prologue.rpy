@@ -11,7 +11,7 @@ label prologue:
     cl "God, why? Why must it be me. Stuck in a never-ending cycle of boredom, regrets and suffering where Death isn’t an escape to your macabre plays. {w}Did you have to be so hard with me?"
     cl "I hope that, one day, when I’ll come upon the wicked and wretched god that bestowed me of this condition..."
     cl "I’ll be able to writhe him out every strands of life he ever had."
-    cl "That I’ll be able to strangle you harder than you ever could."
+    cl "That I’ll be able to choke you harder than you ever could."
     
     pause 1.
 
@@ -188,13 +188,15 @@ label little_road:
 
     am "Hey Howl? Don't you think it's nice around here?"
     
+    "Ammon gestures his head towards the scenery, that, funny enough, you've been looking at for some time."
+    
     az "It sure is a beautiful view."
     
     dk "It reminds you of your childhood."
     
     menu:
         "I do think so":
-            hl "I haven't had the opportunity to observe lately."
+            hl "I haven't had the opportunity to look at them lately."
             
             am "... Because of your studies?"
             
@@ -204,14 +206,51 @@ label little_road:
             "You wish you could do otherwise and throw all of your lessons in the trash bin."
             
             dk "But you can't."
+            
+            am "You should get out of your house sometime..."
+            
         "It isn't new":
             hl "I mean, I could see the same landscapes from my bedroom at home. I would often observe them as a child."
             
             am "Didn't you have anything better to do?"
             
-            "You lower your head meekly and consider carefully the question"
+            "You lower your head meekly and consider carefully the question."
+            "The thing is you can't remember you had anything better to do and that concerns you."
+            "Ammon, picking up your long silence as an answer, scoffs and roll his eyes before smiling bitterly."
+            
+            am e_smug j_happy "You really are a dork."
+            
+            "You are suprised by his reaction and prepare yourself to argue back but..."
+            
+            dk "You are."
     
-    label ammon_distract:
+    hl "Wait a minute, I thought you weren't the type of guy that enjoys sceneries! You just looked at me, confused, whenever I'd stop for looking landscapes."
+    
+    am right e_smug j_disgusted "This is because that would happen anywhere, anytime, this was annoying at some point."
+    
+    "He looks down, melancholically, at his hands, surely reminescing our little outings together some time ago."
+    
+    az "You really enjoyed them{w}, Hehe."
+
+    dk "Such a shame it had come to an end."
+    
+    am j_neutral "But yeah you are right, I don't really care. I was just trying to make you stay awake, you know."
+    
+    hl "Really?"
+    
+    am "Yeah pretty much. I don't want you to drool all over onto my new jacket."
+
+    hl "But I wear an helmet."
+    
+    am "Then I don't want you to drown in your own drool."
+
+    "A bit crude, he's always been like that ; you aren't fazed by his harshness though you aren't used to it anymore."
+    "Even in your own usual moodiness, he would find ways to even lower it. A true pain in the neck.
+    
+    if azzy_score >= 1:
+      az "But you like it."
+    
+    "However with all those years spent with him, you've come to understand his language, what he means behind 
 
 
     $ take_him_out = False
