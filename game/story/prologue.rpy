@@ -245,6 +245,12 @@ label little_road:
     am "Then I don't want you to drown in your own drool."
 
     "A bit crude, he's always been like that ; you aren't fazed by his harshness though you aren't used to it anymore."
+    "Even in your own usual moodiness, he would find ways to even lower it. A true pain in the neck.
+    
+    if azzy_score >= 1:
+      az "But you like it."
+    
+    "However with all those years spent with him, you've come to understand his language, what he means behind 
 
 
     $ take_him_out = False
