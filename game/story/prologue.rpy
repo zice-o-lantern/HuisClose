@@ -190,8 +190,14 @@ label little_road:
                    hl "Thanks Ammon."
                    am "Don't thank me."
                    hide ammon
-                   "He grumbles
+                   "He grumbles, turns the radio off and sets back to look at the horizon."
+                   "Relieved, your muscles relax and you let the hum of the bike fills your ears. You didn't have a headache, but it might as well give you if that kept going on."
+                   az "Good job"
                "I don't like it."
+                   "Ammon stares at you in disbelief. His furrowed eyebrows lets you know that it doesn't rally bother him."
+                   am "So what? I like it."
+                   
+                   
        "Incredible":
     
     show ammon
