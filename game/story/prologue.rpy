@@ -170,39 +170,42 @@ label little_road:
     "You find it..."
 
     menu:
-       "Annoying":
-           az "Turn that off."
-           "Compelled by your inner self, you lean to Ammon and tap him on the shoulder; you don't know if he will listen to you but you might still ask it."
-           show ammon right
-           "Ammon begrudgingly turns his head toward you, visibly annoyed. Perhaps not the better idea."
-           dk "It was expected."
-           hl "Hey could you turn the radio off?"
-           am "... why?"
-           menu:
-               "It gives me an headache.":
-                   am "Well it didnt gave me one."
-                   "You grip your tighs. Is he that inconsiderate?"
-                   hl "Please, pretty please... Traveling for me is already hard enough as it is."
-                   "You lock eyes with Ammon. In spite of you, he is already probing inside you with those yellow eyes.
-                   "It's a tendency of his so you maintain the contact as always."
-                   "At some point he releases you, sighs and leans to the radio."
-                   am "Hmpf, you're right, I'll turn the radio off."
-                   hl "Thanks Ammon."
-                   am "Don't thank me."
-                   hide ammon
-                   "He grumbles, turns the radio off and sets back to look at the horizon."
-                   "Relieved, your muscles relax and you let the hum of the bike fills your ears. You didn't have a headache, but it might as well give you if that kept going on."
-                   az "Good job"
-               "I don't like it."
-                   "Ammon stares at you in disbelief. His furrowed eyebrows lets you know that it doesn't really bother him."
-                   am "So what? I like it."
-                   hl "Oh come on ! Can't you make an effort?"
-                   am "For what? It's my bike so it's my radio."
-                   am "I get to pick the song I want. Deal with it."
-                   "He cut short to 
+        "Annoying":
+            az "Turn that off."
+            "Compelled by your inner self, you lean to Ammon and tap him on the shoulder; you don't know if he will listen to you but you might still ask it."
+            show ammon right
+            "Ammon begrudgingly turns his head toward you, visibly annoyed. Perhaps not the better idea."
+            dk "It was expected."
+            hl "Hey could you turn the radio off?"
+            am "... why?"
+            menu:
+                "It gives me an headache.":
+                    am "Well it didnt gave me one."
+                    "You grip your tighs. Is he that inconsiderate?"
+                    hl "Please, pretty please... Traveling for me is already hard enough as it is."
+                    "You lock eyes with Ammon. In spite of you, he is already probing inside you with those yellow eyes."
+                    "It's a tendency of his so you maintain the contact as always."
+                    "At some point he releases you, sighs and leans to the radio."
+                    am "Hmpf, you're right, I'll turn the radio off."
+                    hl "Thanks Ammon."
+                    am "Don't thank me."
+                    hide ammon
+                    "He grumbles, turns the radio off and sets back to look at the horizon."
+                    "Relieved, your muscles relax and you let the hum of the bike fills your ears. You didn't have a headache, but it might as well give you if that kept going on."
+                    az "Good job"
+                "I don't like it."
+                    "Ammon stares at you in disbelief. His furrowed eyebrows lets you know that it doesn't really bother him."
+                    am "So what? I like it."
+                    hl "Oh come on ! Can't you make an effort?"
+                    am "For what? It's my bike so it's my radio."
+                    am "I get to pick the song I want. Deal with it."
+                    "He cuts short to the discussion and sets back to driving and looking at the horizon."
+                    dk "What a prick."
+
+                    "You grumble back to driving" 
                    
                    
-       "Incredible":
+        "Incredible":
     
     show ammon
 
