@@ -429,8 +429,8 @@ label sleep_on_his_back:
     am "Alright..."
     
     "Ammon scratches his head."
-
     
+    am "So how's school recently? Been able to scrape up by ?"
 
 
 
