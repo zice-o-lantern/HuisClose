@@ -162,27 +162,30 @@ label little_road:
     # "You wake up at the hum of the radio, a bit shaken up, with drool staining your helmet visor — Fortunately there’s not enough to hide your vision."
     hide ammon
     with dissolve
-    "Ammon restarts the bike and you're back on the road."
-    "A sharp feeling pervades your whole being like a blooming rose planting her thorny roots in every part of your spirit."
-    "The radio was blastering loud some song from a rock band you appreciated a lot, although you dare not admit it in public, as it was strongly frowned upon among your elders."
-    "It’s alright, you think; nobody’s here to disturb you in your little trance."
+    "You rub your eyes as Ammon restarts the bike and goes on its way."
+    "Well you would rub your eyes if it weren't for the fact that you're wearing an helmet."
+    "So you opt to blink your eyes until the numbing grain salts flow out of your eyelids."
+    "Although, as much as you want, the sleepiness is still quite there. At the shores, coming in waves."
+    "You might be sleepy but the rock song blasting out of the radio."
+    "You find it..."
 
-    "The dying sun at the horizon sends you its adieu and lays down behind the horizon at slow but certain pace."
-    "The last glimmers of lights highlights the majestic landscapes the road has to offer. \nThere were multiple sceneries you could transfer onto a pellicule for everyone to admire at home."
-    "Some black forest, deep as the never–ending void where no light never escapes, some striking high mountains, candidates to the siege of the Olympus."
-    "Some sunflowers, dispersed in the grand lands of tall grasses, don’t know anymore where to turn their head to, their leader gone astray, to never be seen again."
-    "All these landscapes appear gorgeous and alluring to you on the road but they were even more exquisite from your moderate village, where you have resided from as long as you can recollect your memories."
-    "You remember, observing them, from the window of your lonely bedroom, dreaming of one day, going on a journey to find an unestimate treasure."
-    "You lived quite some adventures in this very room. Afraid of the outside, your little journey didn’t go very far."
-    "It happenend often that you wake up and decide that you’d be a cook or an explorer, or any revelation you had on this particular day."
-    "One day, you woke up from bed and you decided that you’d be a doctor! A doctor you say? Some laughed at this sight of naiveté, Some supported your decision, but in the end they were sure unimpressed."
-    "Whether it had been whispered by Lady Fate or the fact that your father had said multiple times at this point that he’d be very happy if you were a doctor. You had truly no way of knowing which option was right."
-    "You remember going to Father to reveal him your latest epiphany. He went to a pensive state of mind. He’s going to succeed me, huh? \nHe bore a lethargic expression on his face–"
-    "—not that it was exceptional. \nHe always seems dead to the outside."
-    "Maybe not just to the outside."
-    
-    az "Fuck this guy."
-    az "You should forget him."
+    menu:
+       "Annoying":
+           az "Turn that off."
+           "Compelled by your inner self, you lean to Ammon and tap him on the shoulder; you don't know if he will listen to you but you might still ask it."
+           show ammon right
+           "Ammon begrudgingly turns his head toward you, visibly annoyed. Perhaps not the better idea."
+           dk "It was expected."
+           hl "Hey could you turn the radio off?"
+           am "... why?"
+           menu:
+               "It gives me an headache.":
+                   am "Well it didnt gave me one."
+                   "You grip your tighs. Is he that inconsiderate?"
+                   hl "Please, pretty please... Traveling for me is already hard enough as it is."
+                   "You lock eyes with Ammon. In spite of you, he is probing your 
+               "I don't like it."
+       "Incredible":
     
     show ammon
 
