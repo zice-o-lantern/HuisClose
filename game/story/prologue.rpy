@@ -183,7 +183,14 @@ label little_road:
                    am "Well it didnt gave me one."
                    "You grip your tighs. Is he that inconsiderate?"
                    hl "Please, pretty please... Traveling for me is already hard enough as it is."
-                   "You lock eyes with Ammon. In spite of you, he is probing your 
+                   "You lock eyes with Ammon. In spite of you, he is already probing inside you with those yellow eyes.
+                   "It's a tendency of his so you maintain the contact as always."
+                   "At some point he releases you, sighs and leans to the radio."
+                   am "Hmpf, you're right, I'll turn the radio off."
+                   hl "Thanks Ammon."
+                   am "Don't thank me."
+                   hide ammon
+                   "He grumbles
                "I don't like it."
        "Incredible":
     
