@@ -411,7 +411,7 @@ label sleep_on_his_back:
     "A large patch of grass expands in front of you. The trees swings to the wind. The birds chirp happily. You notice that you are on a hill."
     "You lay down under a big tree. You should be hot with the burning sun but fortunately you are covered by the tree's shadow."
     "You look down the hill and you can see some water surrounding it. You can only think it's surely a pond. No flowers in sight."
-    "Wait, where's comming from the smell of lavender then?"
+    "Wait, where's comming the smell of lavender from then?"
 
     am "Oh you're awake Hurle?"
 
