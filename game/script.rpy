@@ -15,6 +15,7 @@ define az = Character(name="Passion", image="azzy", color="#714c8f", what_italic
 define dk = Character(name="Prudence", image="derek", color="#4c6f8f", what_italic=True, who_italic=True, what_color = "#4c6f8f", what_font="gui/fonts/lydianbi.ttf")
 
 define hl = Character("Howl", color="#454b41", callback=gap_noise)
+define hl1 = Character("Hurles", color="#454b41", callback=gap_noise)
 
 define mj = Character("Marie–Jil", color="#aa6aca")
 

@@ -133,7 +133,7 @@ label prologue:
 
     cl "Perhaps, more than I thought"
     stop music
-    stop audio
+    stop sound
     extend ", I need You."
     scene black
     scene ruralRoad with Fade(0.5, 4.0, .5)
@@ -160,8 +160,10 @@ label little_road:
 
     am e_smug j_noway "No worries Howl. I think I’ll stop next stop, I’m starting to get weary too."
     # "You wake up at the hum of the radio, a bit shaken up, with drool staining your helmet visor — Fortunately there’s not enough to hide your vision."
+    
     hide ammon
     with dissolve
+    
     "You rub your eyes as Ammon restarts the bike and goes on its way."
     "Well you would rub your eyes if it weren't for the fact that you're wearing an helmet."
     "So you opt to blink your eyes until the numbing grain salts flow out of your eyelids."
@@ -169,48 +171,113 @@ label little_road:
     "You might be sleepy but the rock song blasting out of the radio."
     "You find it..."
 
+    $ radio_on = True
+
     menu:
         "Annoying":
             az "Turn that off."
+            
             "Compelled by your inner self, you lean to Ammon and tap him on the shoulder; you don't know if he will listen to you but you might still ask it."
+            
             show ammon right
+            
             "Ammon begrudgingly turns his head toward you, visibly annoyed. Perhaps not the better idea."
+            
             dk "It was expected."
+            
             hl "Hey could you turn the radio off?"
+            
             am "... why?"
+            
             menu:
                 "It gives me an headache.":
                     am "Well it didnt gave me one."
+                    
                     "You grip your tighs. Is he that inconsiderate?"
+                    
                     hl "Please, pretty please... Traveling for me is already hard enough as it is."
+                    
                     "You lock eyes with Ammon. In spite of you, he is already probing inside you with those yellow eyes."
                     "It's a tendency of his so you maintain the contact as always."
                     "At some point he releases you, sighs and leans to the radio."
+                    
                     am "Hmpf, you're right, I'll turn the radio off."
+                    
                     hl "Thanks Ammon."
+                    
                     am "Don't thank me."
+                    
                     hide ammon
+                    
                     "He grumbles, turns the radio off and sets back to look at the horizon."
                     "Relieved, your muscles relax and you let the hum of the bike fills your ears. You didn't have a headache, but it might as well give you if that kept going on."
+                    
                     az "Good job"
-                "I don't like it."
+                    
+                    $ radio_on = False
+                    $ azzy_score += 1
+                
+                "I don't like it.":
+                    
                     "Ammon stares at you in disbelief. His furrowed eyebrows lets you know that it doesn't really bother him."
+                    
                     am "So what? I like it."
+                    
                     hl "Oh come on ! Can't you make an effort?"
+                    
                     am "For what? It's my bike so it's my radio."
                     am "I get to pick the song I want. Deal with it."
+                    
                     "He cuts short to the discussion and sets back to driving and looking at the horizon."
+                    
                     dk "What a prick."
+                    
+                    $ derek_score += 1
 
-                    "You grumble back to driving" 
+                    "You grumble back to a slouched posture. Nothing you can do about it, he's the one driving after all." 
                    
                    
         "Incredible":
-    
-    show ammon
+            "You lay down on the bike as the loud drums fill your world."
+            "Your bang your head up and down to the rythm. With it, your finger taps on the frame."
+            "As the trees run up to you, you watch them scale down behind you, toward the horizon."
+            "The dying light of the sun highlights the silhouette of the dog with a helmet in front of you. He projects a shadow over you."
+            "You don't mind. You like the cold and you want to be bitten by the glacial air."
+            "The cold, the music and the roaring of the engine make your eyelids more and more heavy."
+            "Maybe you can try to fall asleep without Ammon noticing?"
+            
+            menu:
+                "Try to sleep":
+                    "You decide that it's the best moment to take a nap. Surely he won't notice."
+                    
+                    ## TODO: Replace with eyelids animation
+                    show black 
+                    with dissolve
+                    
+                    "You let your tired eyelids be pulled by the unforgiving gravity and you doze off."
+                    "And little by little your mind ascends to Wonderland."
+                    "Away from the cold, away from the shadows, away from your ennui...{w} Away from everything"
+                
+                "Stay awake":
+                    "You decide that it's better to stay awake. You don't know but it could be really dangerous to fall asleep on a bike."
+                    "A wrong move and you fall head first on the asphalt at full speed."
+                    "The thought of it strangely infuses life into you and you find the idea of sleeping not so appealing anymore."
+
+                    am "Still dozing off?."
+
+                    hl "Hmm? um, yeah ahah."
+
+                    am "Ok..."
+
+                    "An uncomfortable silence follows. Ammon looks for something to say but is lost for words."
+                    "More the time passes, more the threat of falling off the bike doesn't bother you anymore. You have to sleep."
 
     am "Hey Howl? Don't you think it's nice around here?"
     
+    hide black with dissolve
+    show ammon
+    
+
     "Ammon, interrupting to your train of thought, gestures his head towards the scenery, that, funny enough, you've been looking at for some time."
     
     menu:
@@ -245,7 +312,8 @@ label little_road:
             
             dk "You are."
     
-    hl "Wait a minute, I thought you weren't the type of guy that enjoys sceneries! You just looked at me, confused, whenever I'd stop for looking landscapes."
+    hl "Wait a minute, I thought you weren't the type of guy that enjoys sceneries!" 
+    hl "You just looked at me, confused, whenever I'd stop for looking landscapes."
     
     am right e_smug j_disgusted "This is because that would happen anywhere, anytime, this was annoying at some point."
     am "If I could have, I would have put you on leash and drag your ass around so you could stop fanwning on everything."
@@ -283,7 +351,7 @@ label little_road:
         az "But you like it."
     
     "However with all those years spent with him, you've come to understand his language, what he means behind his unpleasant comments, his bitter venom."
-    "He doesn't want you to fall off the bike. When you fall asleep, you lose control of your body, of your mind. Who knows what will happen to you once your eyes closed."
+    "He doesn't want you to fall off the bike."
     "In the end, he bears a wall of bitterness and acerbity but he's kind of heart."
     "At least that's what you think."
     "It helps you teasing him."
@@ -330,12 +398,28 @@ label sleep_on_his_back:
     "You can't resist anymore."
     "You can't help but let your head fall first into the soft pilloz in front of you."
     "Loud screams and whining fill your ears but it doesnt bother you a bit. You are dragged into the abbyss of your sleep."
-    "The overwhelming void of your mind lulls you up and fragments of your life flashes through you; You don't care, you're too week to care"
+    "The overwhelming void of your mind lulls you up and fragments of your life flashes through you; You don't care, you're too frail to care"
     "You just wish to be alone and the comforting void invites you to."
     ## TODO: Add an impact sound
-    "However your sleep is of short term when you collide with a fragment."
+    "However the smell of lavander gets hold of your nose and you tempted to open again your eyes."
+    "The odor becomes overbearring but you want to be left alone."
+    "So you fight and ponder for a long time. You ought to discover where this comes from, it reminds you of the past, something you have forgotten."
+    "This perfume reminds you of some of your most treasured memories and is almost divine to you."
+    "At last, you give in and, entranced by this divine smell; you open your eyes slowly and the sun light gently penetrates your eyes."
+    "Blinded at first, you take some time to get used to the sudden change of luminosity. How is it possible?"
+    "It was only dusk one minute ago, it couldn't be so bright."
+    "A large patch of grass expands in front of you. The trees swings to the wind. The birds chirp happily. You notice that you are on a hill."
+    "You lay down under a big tree. You should be hot with the burning sun but fortunately you are covered by the tree's shadow."
+    "You look down the hill and you can see some water surrounding it. You can only think it's surely a pond. No flowers in sight."
+    "Wait, where's comming from the smell of lavender then?"
 
-    "Your vision is filled with a blinding light "
+    am "Oh you're awake Hurle?"
+
+    hl1 "Hmm yeah I guess."
+
+    "You still search "
+
+
 
 
 label questions_about_hotel:
@@ -552,34 +636,35 @@ label rest_area_1:
 
             "In your wrestle against the helmet, you keep spinning around until you get nauseated from the all over experience."
             "By a thread of luck or misfortune, you manage to get rid of your helmet. However with all your dances and twirling, you lost sense of directions and you lose balance making you fall into the grass."
-            "When your frenetic charge comes to stop, you cough out the dirt and the blades of grasses caught in your mouth. You shake up your head so your blood flows back in it. When you come back to your senses, you are met with a laughing dog unable to stop."
+            "When your frenetic charge comes to stop, you cough out the dirt and the blades of grasses caught in your mouth. When you come back to your senses, you are met with a laughing dog unable to stop."
         
             am "Deserved it, jackass."
       
             hl "What did you say?"
  
-            am "Nothing. Just get up. You won't get anywhere like this."
+            am "You heard. Just get up. You won't get anywhere like this."
             
             "You get up. You rub your head out of pain and you can feel a nasty bump on your head. Maybe you should've asked for Ammon."
 
-    "You scramble out of the grass and rush toward the rear mirror of the motorcycle to watch your face and check any scratches that might have landed there."
+    "You scramble out of the grass and rush toward the rear mirror of the motorcycle to watch your face and check any scratches."
     ## TODO: Illustration of gap looking in the mirror
-    "As you look into it, you behold a scrawny cat in his twenties, with a medium stature, not really delighted but a bit grumpy." 
-    "You sigh. You would not want to be a relative of this cat. Then you have to remember. It's you."
+    "As you look into it, you behold a scrawny cat in his twenties, with a medium stature, not delighted and grumpy." 
+    "You sigh. You wouldn't be friend with him."
+    dk "Never forget, it's you and will always be you."
     "Unfortunately you were not so lucky and your usual pure white–crystal hair face is tainted by some dirt and injuries." 
     "You lament yourself on your state. Other than your scratches, you don't look so good either."
     "Your tired eyes look like you haven't slept for a week—and you might not have—as the dark rings under your eyes draw themselves on a too much big surface." 
     "You scrub them, however they remain unchanged and any try to make it go make clear that they won't go away."
-    "You check your red eye, swollen by the fatigue, you prod the inferior eyelid at it. The capillaries running through your green jade eyes sclera pulse a like a living entity."
-    "It surveys you. It judges you. It's going to create problems for you as your intimacy is its too and will make what it wants about it." 
+    "You check your red eye, swollen by the fatigue, you prod the inferior eyelid at it." 
+    "The capillaries running through your green jade eyes sclera pulse a like a living entity."
+    
     "You are annoyed at it and even more you are scared of it."
-    "The newt moment, it disappears and you are then alone with your no better thoughts, still uncomfortable that someone might be watching you." 
-    "Just a wrong step and you're done for. Don't ever misstep, you hear me? Not ever. You are a deviant and you know it."
+    "The next moment, it disappears and you are then alone with your no better thoughts, still uncomfortable that someone might be watching you." 
+    cl "Just a wrong step and you're done for. Don't ever misstep, you hear me? Not ever. {w}You are a deviant and you know it."
 
-    am "Hum Gap, what are you looking at? You've been staring it for quite some time now."
+    am "Hum Gap, what are you looking at? You've been staring for quite some time now."
    
-    "Ammon tilts his head from the other side of the motorcycle to look at your reflection in the mirror, searching for the thing you've been looking at with a fierce intensity." 
-    "Obviously he doesn't find it so he tilts back his head uninterested."
+    "Ammon tilts his head from the other side of the motorcycle to look at your reflection in the mirror"
 
     am "You've got to stop looking at yourself like that. You look like you are on the brink of murdering your wife."
 
@@ -665,7 +750,7 @@ label phone_booth:
     "You jog towards the deserted phone booth. You hurry yourself to talk to her, to get it done. Dragging yourself the door, you grab with a grand difficulty the handle, not being able to find the motivation to penetrate into the dark cubicle."
     "You turn an inconsiderate amount of times the handle, at last, the dore opens when you shove into it. You mustn’t be in the right mindset to not notice that pulling a thousand times a door will not work on the 1001th time."
     "But you couldn’t give more than a care, your gloominess crashing down at its lowest as you finally set paw in the somber void, pierced by rays of declining sunlight."
-    "Blind, by the low current luminosity of the place, you put a considerate time to even find the phone."
+    "Blind, by the low current luminosity of the place, you put some time to even find the phone."
     "On the phone box, on a little sign at the bottom of it, it is written \"10 francs for 10 minutes!\" You think the sign bargains a fair deal to you."
     "You search your pockets looking for coins and you find one of 10 francs. Although you are not looking for long as you grab on a well—placed one. The coin has presended itself in your pocket in convenient circumstances you can’t explain."
     "But you sure won’t complain as you slid it into the coin slot. Soon after, the phone screen lits up awaiting your input. You observe carefully as some featuers disturb you: they never had a screen before."
