@@ -3,7 +3,7 @@ label prologue:
     # Black scene
     scene black
     pause 1.0
-    cl "Honestly{w=0.5}, I cant’t believe you could strangle him that hard."
+    cl "Honestly{w=0.5}, I cant’t believe you can strangle him that hard."
     cl "Or maybe it’s not that complicated. Maybe I’m just too weak. Perhaps you’re just used to it." 
     cl "You’re lucky. To be able to feel his beating heart. His cold carapace heating up with your hands."
     cl "I know I couldn’t{cps=3}...{/cps} {w=1.0}I think."
