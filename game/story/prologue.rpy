@@ -417,7 +417,20 @@ label sleep_on_his_back:
 
     hl1 "Hmm yeah I guess."
 
-    "You still search "
+    "You still search for the smell. It drives you mad."
+    "You crawl toward Ammon and then you finally understand."
+    
+    am "So I take you like my new perfume?"
+    
+    "On four legs over Ammon's torso sniffing, you sit back to your spot."
+    
+    hl1 "Just a bit."
+
+    am "Alright..."
+    
+    "Ammon scratches his head."
+
+    
 
 
 
