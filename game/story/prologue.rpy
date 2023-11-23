@@ -469,7 +469,65 @@ label talk_with_ammon:
     am "But you wanted so much to go astray from your usual life, I guess at the time."
     am "Well the night came fast and we were stranded in the forest without any direction or signs."
     am "I was relying on your night vision but you couldn't really find the way back even with your ability. You were really lost that day."
-    am "But I don't really blame you. It's hard to locate yourself when you're surrounded by trees "
+    am "But I don't really blame you. It's hard to locate yourself when you're surrounded by trees."
+    am "You know this is the night where we find our favorite spot."
+    am "Honestly, it came out of nowhere. We never thought this could be so close to us."
+    am "We loved this clearing, I don't even know how you found it. For once, I can thank your night vision."
+    am "We'd always lay down under the tree on the hill. Somtimes we'd take some snacks and all. We even brought MJ times to times."
+    am "It became our usual hangout, you know."
+    
+    hl "{cps=3}...{/cps} Yeah I remember now."
+
+    am "Do you remember what happened at the hill? Under the tree?"
+
+    "Ammon looks at you expectantly, as if he's trying to jog up a memory for you. You can feel his stare through the helmet."
+    "Unfortunately, you don't understand what he's trying to refer to."
+    
+    hl "Hum no sorry I only have bits here and there about. Nothing in particular."
+
+    am "Oh alright, well don't worry about it, it's nothing important."
+
+    hl "Really?"
+
+    am "Yeah it's just... There I could say and do everything with both of you."
+    am "I just wanted to laugh at the goofy stuff I've done there... ahah."
+
+    if azzy_score >= 1:
+        az "He's lying. He wanted you to remember something you've done with him."
+        az "Such a shame you've forgotten."
+    else if derek_score >= 1:
+        dk "He looks so sad."
+        dk "I think you have disappointed him."
+        dk "Such a shame you can't remember what happened at the tree."
+    
+    am "Hey by the way, good job for staying awake! I didn't have to wake you up again... yet."
+
+    hl "Huh thanks..."
+
+    am "Looks like we're on the point of getting to the rest area."
+
+    hl "Oh right."
+
+    am "Ready to take a break, you sleepyhead?"
+
+    hl "Alright..."
+
+    "Thus, the motorbike takes the next exit for your next stop..."
+
+
+    stop music
+    stop sound
+
+    scene parkingLot
+    with fade
+    play sound "audio/sounds/bird_chirping.ogg" loop
+    
+    "The moto steers over on the parking lot. The wind has taken his liking over his liking over a blade of grass and a can of soda."
+    # "With a lazy eye, you follow those lost souls. I hope for them that they'll find a place to rest. The trash passes in front of some restrooms, deserted of all life and not very well maintained." 
+    # "The leaves fly, of trees that has seen more you could ever account for them into the breeze then onto the vast lands of grass."
+    "You clumsily stumble out of motorcycle and try to get rid of my helmet in vain. Your ears are stuck in it and the motivation to get them ebb away to the shores of your mind."
+
+    jump rest_area_1
 
 
 label sleep_on_his_back:
@@ -584,21 +642,14 @@ label sleep_on_his_back:
     "You reach out your hand to him."
     "With unease, he grabs your hand and put you on your two paws."
 
+    "Drool all over your face; Sleeping with a helmet isn't a good idea."
+    "Clumsily you try to take off the helmet."
+
+    jump rest_area_1
+
 
     
 label rest_area_1:
-    
-    stop music
-    stop sound
-
-    scene parkingLot
-    with fade
-    play sound "audio/sounds/bird_chirping.ogg" loop
-    
-    "The moto steers over on the parking lot. The wind has taken his liking over his liking over a blade of grass and a can of soda."
-    # "With a lazy eye, you follow those lost souls. I hope for them that they'll find a place to rest. The trash passes in front of some restrooms, deserted of all life and not very well maintained." 
-    # "The leaves fly, of trees that has seen more you could ever account for them into the breeze then onto the vast lands of grass."
-    "You clumsily stumble out of motorcycle and try to get rid of my helmet in vain. Your ears are stuck in it and the motivation to get them ebb away to the shores of your mind."
     # "Eventually, Ammon, who had stripped away his helmet since a long time ago, notices you."
 
     am "Do you want some help? You look like you're having a hard time."
