@@ -389,6 +389,50 @@ label little_road:
 
 label talk_with_ammon:
     $ derek_score += 1
+    hl "Alright if you want me to keep awake, I'll stay awake."
+    
+    am "Great, then"
+    
+    hl "So, um Ammon..."
+
+    "He turns his head inquisitively."
+
+    am "Hum yes?"
+    
+    hl "How's life recently? Been able to scape up by?"
+
+    "For a reason unknown to you, Ammon giggles under his helmet."
+
+    hl "What's so funny about what I said?"
+
+    am "Hmpf, nothing in particular."
+    
+    "He looks in front of him, reminiscing about what you said."
+
+    am "So do you want since High School or since I left?"
+
+    "You ponder the question. Yes that is true that he stayed at your village for some years before leaving."
+    "Yet you have no recollection of this moment in your life. It worries you a bit as this is the first time you notice this blank in your memories."
+    
+    "The dog with the helmet takes your silence as an answer and sighs."
+
+    am "No worries, I figured you wouldn't want me to talk about after High School."
+    
+    "The sentence he just said disturbs you."
+    "Why can't you remember what happened back then after High School."
+    "You can't pinpoint an event that could lead this sort of amnesia."
+    "But you're not amnesiac, right? At this point, you thought you remembered everything pretty much, but your mind begins to crumble the more you think about it."
+    dk "Let's just forget."
+
+    menu:
+        "Ask him after High School":
+            hl "Um, actually couid you start dinc high school?"
+        "Stay silent":
+           $ derek_score += 1
+           "You don't want to find out about this anymore."
+           "Some things are better left forgotten."
+           am "Well it's easier to tell what happened since High School."
+           am "But don't worry I will go over it the fastest I can."
 
 label sleep_on_his_back:
     $ azzy_score += 1
