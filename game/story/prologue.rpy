@@ -415,25 +415,92 @@ label sleep_on_his_back:
 
     am "Oh you're awake Hurle?"
 
-    hl1 "Hmm yeah I guess."
-
+    "You take a pause and notice Ammon. But it doesn't last long"
     "You still search for the smell. It drives you mad."
     "You crawl toward Ammon and then you finally understand."
     
     am "So I take you like my new perfume?"
     
     "On four legs over Ammon's torso sniffing, you sit back to your spot."
-    
-    hl1 "Just a bit."
 
     am "Alright..."
     
     "Ammon scratches his head."
     
-    am "So how's school recently? Been able to scrape up by ?"
+    am "So how's school recently? Been able to scrape up by?"
 
+    "You nod your head silently. You're not feeling much like talking right now. The smell is all that you can think of."
 
+    am "Hmpf, why am I even asking this? You're kind of a genius, aren't you?"
 
+    "At this statement, you feel compelled to retort back, not let him say that."
+    "Sure you have some aptitudes in the logical-mathematical intellingence."
+    "But that doesn't mean that you got easy in life. You know it more than anybody."
+    "So you won't let him say that."
+    "However, your muzzle opened, no sound leaves off of it."
+    "You raise your hand to your throat. Weird. As long as your mouth is opened, your throat tightens."
+    "You start to hyperventilate, or you try, but you can't even have that. You heave as much as you can but no air comes out. Nothing."
+    "Meanwhile, Ammon looks at you with a compassionate smile."
+    "He snickers."
+
+    am "Ahah. You're so silly, Hurle"
+
+    "You reach out your hand toward him, imploring to help you, the panic rising into your eyes."
+    "But he continues to gently smile at you."
+
+    am "Don't you think it's ironic? {w}For a boy named Hurle, you're not even able to howl."
+    am "Go on, tell me what you want to say, don't be afraid, tell me what's on your mind."
+    am "Howl me what's in your heart."
+
+    "As much as you want to comply with what is saying Ammon, you still can't breathe."
+    "Your world starts to fill with black as the lack of air starts to be felt. You're choking right now, aren't you ?"
+    "While your mind wander elsewehre, your last sight is the one of the smiing box watching you suffer."
+    "And Lavender."
+
+    show black with dissolve
+
+    scene black
+
+    show parkingLot
+    with dissolve
+
+    "You wake up at the smell of Lavender."
+    
+    show ammon
+    with dissolve
+    
+    "You don't need to search for long the culprit as he is above you"
+    "Laid on the grass, Ammon blocks the light from reaching, presenting as a imposing silhouette"
+    
+    am "Wake up, dummy"
+
+    "Laid on the grass, you grumble, just out from your stupor and you sit difficultly."
+
+    hl "Uuuurgh, what happened?"
+
+    am "You can't remember??"
+
+    "Ammon sighs out of exasperation."
+
+    am "You fell asleep on the bike."
+    am "And I could scream and wiggle all I want, you wouldn't budge."
+    am "So I drove off to the next rest area I could find, in order to get you off of me."
+    
+    "Well that doesn't explain why you're laid in the grass."
+
+    hl "Then why am I not on the bike? Did I magically appear here when you turned off the engine?"
+
+    am "Well not quite..."
+
+    "You stare at him with doubt. With every word he says, you begin having issues trusting his version of the events."
+
+    am "When I went up to you to wake you up, I have maybe shaked you too much and that made you fell out of the bike..."
+    am "... In the grass."
+
+    hl "Okay, understood. Just help me up please?"
+
+    "You reach out your hand to him."
+    "With unease, he grabs your hand and put you on your two legs."
 
 label questions_about_hotel:
     menu the_hotel:
