@@ -428,16 +428,49 @@ label talk_with_ammon:
         "Ask him after High School":
             hl "Um, actually couid you start since high school?"
             
-            am "Alright if you want to.
+            am "Alright if you want to".
             am "It's actually easier for me, but don't worry, I will go over it the fastest I can."
         "Stay silent":
-           $ derek_score += 1
-           "You don't want to find out about this anymore."
-           "Some things are better left forgotten."
-           am "Well it's easier to tell what happened since High School."
-           am "But don't worry I will go over it the fastest I can."
+            $ derek_score += 1
+            "You don't want to find out about this anymore."
+            "Some things are better left forgotten."
+            am "Well it's easier to tell what happened since High School."
+            am "But don't worry I will go over it the fastest I can."
 
-    am "Alright, when we graduated 
+    am "Alright, when we graduated, we had to choose a work career and the studies for it."
+    am "You know, I acted big and tough then, I was not that sure about it."
+    am "Nothing was really fitting me so I just took the subject I had the best grades at."
+    am "I guess at the time I was very good at Physics. So I went to a Technical College. It was the one the nearer to our village."
+    am "The thing is{cps=3}...{/cps}{w} I hated it. It was one thing to be good at Physics but making it my career. I really couldn't bear it."
+    am "... So I dropped out of College. For some months, almost a year, I brooded a lot. What was I good at?"
+    am "I wanted to tell you that back then. But..."
+    
+    "Ammon looks up the sky."
+    
+    am "You were a bit out there. I couldn't get a hold onto you..."
+
+    "You fidget yourself. You try again to unravel this moment of your life. No dice."
+
+    am "Anyway, I was a bit lost. But then..."
+    am "But then, I remembered that I always had a thing for History and Ancient History at that."
+    am "I was average at best at school so I couldn't think I could study it."
+    am "But I passed the test at La Sorbonnes and got in it."
+    am "So yeah, I moved out to Paris for some time. I needed it."
+    am "It could sound like I am justifying myself but you asked so here it is. That's why you haven't seen me for long I guess."
+
+    hl "I see. Well I never blamed you for leaving. The village is a bit of a shithole."
+
+    "You giggle softly. Sure it was a \"shithole\" but you had some good time, nonetheless"
+
+    am "By the way, do you remember the time where we got lost in the forest? It was frightening at first."
+    am "We decided to trek yet again in the forest near the village. Only this time you asked me that we go beyond further the usual path."
+    am "I was bored at the time, I didn't see the issue. Thinking back to it, it was not really a good idea." 
+    am "Even more in our case, it was a pretty fucking shitty idea."
+    am "But you wanted so much to go astray from your usual life, I guess at the time."
+    am "Well the night came fast and we were stranded in the forest without any direction or signs."
+    am "I was relying on your night vision but you couldn't really find the way back even with your ability. You were really lost that day."
+    am "But I don't really blame you. It's hard to locate yourself when you're surrounded by trees "
+
 
 label sleep_on_his_back:
     $ azzy_score += 1
@@ -549,153 +582,9 @@ label sleep_on_his_back:
     hl "Okay, understood. Just help me up please?"
 
     "You reach out your hand to him."
-    "With unease, he grabs your hand and put you on your two legs."
+    "With unease, he grabs your hand and put you on your two paws."
 
-label questions_about_hotel:
-    menu the_hotel:
 
-        "How did you get it?":
-            hl "I mean, you’ve come out of nowhere and brought it up"
-            hl "I’m just wondering how possibly you could’ve get a trip to an very fancy hotel."
-            hl "I’m a bit confused, no matter how many times you say it to me."
-
-            am "Ahah it’s a {cps=10}secreeeet{/cps}."
-
-            hl "Oh please stop being mysterious and just tell me."
-
-            "He takes a pause for a moment, his eyes looking around."
-
-            am "{cps=5}I...{/cps} I got invited to it."
-
-            hl "You got invited? What do you mean? Have you been selected to a lottery or something like that?"
-
-            am "Not exactly… I’ve received a letter saying I’ve been selected."
-
-            "He shifts uncomfortably in his place, searching for a better position."
-
-            am "It said I could bring a plus one…{w} So I choose you."
-            am "You looked kinda down lately…"
-
-            "Having been told this repeatedly, you brush off this last comment and focus in the elephant in the room."
-
-            hl "Who invited you..?"
-
-            am "… Nicolas Lecloq."
-            hl "Nicolas Lecloq??? {b}THE{/b} bilionaire?."
-
-            am "Him in person."
-
-            hl "How’d you know it’s not fake?"
-
-            am "I’ve made my research."
-
-            "That’s a pretty vague answer he just told. You can’t help myself but squint."
-
-            am "I know it’s not clear——but trust me."
-
-            "Well you are already on this bike on the road of Paris so it’s bit late to turn around."
-
-            hl "{cps=3}...{/cps} Alright."
-
-            am "Good."
-            am "Have you any other questions?"
-
-            jump the_hotel
-        
-        "Do we have to pay for anything?":
-            hl "I mean, I’m not really whealthy lately so I don’t know if I could pay it all."
-
-            am "Think for a second, Gap."
-
-            "He locks his gaze in yours and yours could only focus the periodic sunset simulated by his eyelids on his gold eyes."
-
-            am "It doen’t look you’re thinking, right now."
-
-            hl "Yeah, I was thinking of a sunset."
-
-            "Ammon tilts his head quizically."
-
-            am "{cps=3}...{/cps} Anyway. What I meant to say, do you think you would have to pay if you were invited to sleep to your friend’s house?"
-
-            hl "Um… no. Because I was invited?"
-
-            am "Exactly Gap, so do you really think we’d have to pay when we were invited to a hotel?"
-
-            hl "I don’t know, Am… all is not very clear…"
-
-            am "I’m going to reassure you: it’s all fees included even the food and the drinks."
-
-            hl "Ok…"
-
-            am "Anyway do you have any other questions?"
-            jump the_hotel
-
-        "What’s so interesting about it":
-            hl "I mean, you seem very excited by all of it."
-
-            am "Why should’t I? You’re the one who isn’t enough excited for me."
-
-            hl "What’s in this hotel that gets you so much hyped up?"
-
-            am "Do you listen to me sometimes? This isn’t just a simple hotel. It’s like a fancy complex!"
-
-            "Yeah the name gives the mood much——{i}Le Jardin d’Éden{/i} or The Garden of Eden."
-            "Pretty obnoxious name."
-
-            am "There’s a pool, a theatre, a casino and most importantly an exposition!"
-
-            hl "An exposition? About what?"
-
-            am "Oh many things but more importantly, about World War II!"
-
-            hl "Oh right... for you PhD in History."
-
-            "To be honest, it wasn’t just for the studies. Ammon is usually very passionate about History."
-            "But the span of time he is the most passionate about is the 39—45 period."
-            "For a long time, even talking about it was frowned upon. It was a clear taboo of our society"
-            "It was clearly an effort of our traumatised population to get over it, to turn the page so not talking about it was easier."
-            "The only thing it was talked about was the Resistance and its wonderful endeavors to fight off the invaders out of our country."
-            "However lately people have started to bring this thorny and touchy topic back on the table."
-            "Hence this exhibit somehow."
-            "It looks like Ammon wants to take part into this endeavour."
-
-            am "Anyway, do you have any other questions?"
-            jump the_hotel
-        
-        "I’m all good.":
-            hl "I think I’m all filled in."
-
-    am "Well if you haven’t anymore questions, you sure are all filled in!"
-
-    hl "If you say so…"
-
-    "While you say that, you pass in front of a road sign, indicating a rest area nearby."
-
-    am "Gapgap?"
-
-    "You can’t help yourself but roll my eyes to the back of your head hearing this corny nickname that you hate."
-
-    hl "Yes Amoney..?"
-
-    "Not at all in the world fazed by the sweet nickname I just gave him, he jumps on his seat, his butt shaking moderately the bike, your could even hear his tail wiggling."
-    
-    am "Can we make a stop? You are quite sleepy? And…"
-    hl "And?"
-
-    am "I need to take a piss."
-
-    hl "Fiiiiiiine, we’ll make a stop. I do need it."
-
-    am "Thanks Gapgap!"
-
-    hl "Stop saying that or I’ll break your knees and make you piss on yourself."
-    
-    am "You wouldn’t dare Gapgap…"
-
-    hl "Don’t test me, Ammon."
-
-    "And like that we leave the road onto the branching exit path."
-    jump rest_area_1
     
 label rest_area_1:
     
