@@ -426,13 +426,18 @@ label talk_with_ammon:
 
     menu:
         "Ask him after High School":
-            hl "Um, actually couid you start dinc high school?"
+            hl "Um, actually couid you start since high school?"
+            
+            am "Alright if you want to.
+            am "It's actually easier for me, but don't worry, I will go over it the fastest I can."
         "Stay silent":
            $ derek_score += 1
            "You don't want to find out about this anymore."
            "Some things are better left forgotten."
            am "Well it's easier to tell what happened since High School."
            am "But don't worry I will go over it the fastest I can."
+
+    am "Alright, when we graduated 
 
 label sleep_on_his_back:
     $ azzy_score += 1
