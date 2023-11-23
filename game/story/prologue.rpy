@@ -783,7 +783,7 @@ label rest_area_1:
 
     "You mull over the question, even though you don’t know a lot of people who owns a phone at home. Only two persons comes to mind."
 
-    am "Is it gonna be you mom?.. Or... Marie–Jil?"
+    am "Is it gonna be you mom?.. Or... MJ?"
 
     "He says the last word with a lot of emphasis as it was only obvious from both of them you’re going to pick." 
     "A annoyed tone comes with and that disturbs you, as Ammon being genuinely annoyed is rare."
@@ -801,7 +801,7 @@ label rest_area_1:
     am "Don’t worry! See ya!"
 
     "As soon as he finishes his sentence, you see him sprint towards the forsaken restroom and you chuckle." 
-    "As he disappears from your vision, you are now alone with your thoughts... and the phone booth. It attracts, implore you to come."
+    "As he disappears from your vision, you are now alone... Not quite... There's the phone booth. It attracts, implore you to come."
     "So you stare at it longingly. For a moment, you can only stand there, in front of the cubicle, as your eyes runs through it, intrigued."
 
 
@@ -814,25 +814,27 @@ label phone_booth:
 
     play music "audio/music/night_sky.mp3" fadein 1.0 loop
 
-    "You jog towards the deserted phone booth. You hurry yourself to talk to her, to get it done. Dragging yourself the door, you grab with a grand difficulty the handle, not being able to find the motivation to penetrate into the dark cubicle."
-    "You turn an inconsiderate amount of times the handle, at last, the dore opens when you shove into it. You mustn’t be in the right mindset to not notice that pulling a thousand times a door will not work on the 1001th time."
+    "You jog towards the deserted phone booth. You hurry yourself to talk to her, to get it done." 
+    "Dragging yourself the door, you grab with a grand difficulty the handle, not being able to find the motivation to penetrate into the dark cubicle."
+    "You turn an inconsiderate amount of times the handle, at last, the dore opens when you shove into it." 
+    "You mustn’t be in the right mindset to not notice that pulling a thousand times a door will not work on the 1001th time."
     "But you couldn’t give more than a care, your gloominess crashing down at its lowest as you finally set paw in the somber void, pierced by rays of declining sunlight."
     "Blind, by the low current luminosity of the place, you put some time to even find the phone."
     "On the phone box, on a little sign at the bottom of it, it is written \"10 francs for 10 minutes!\" You think the sign bargains a fair deal to you."
-    "You search your pockets looking for coins and you find one of 10 francs. Although you are not looking for long as you grab on a well—placed one. The coin has presended itself in your pocket in convenient circumstances you can’t explain."
-    "But you sure won’t complain as you slid it into the coin slot. Soon after, the phone screen lits up awaiting your input. You observe carefully as some featuers disturb you: they never had a screen before."
-    "With slothness, you press the phone number on the keypad, with petite–size buttons but you manage to input it on your first try, like it has always been your purpose in life."
+    "You get a coin from your pocket and you slid it into the coin slot. Soon after, the phone screen lits up awaiting your input." 
+    "You observe carefully as some featuers disturb you: they never had a screen before."
+    "With slothness, you press the phone number on the keypad, with petite–size buttons but you manage to input it on your first try."
     "You pick up the phone and wait for the ringing to come and let it resonate in the booth soothing the emptiness of the place. You liked the music tone and you daydream a bit of time."
     "You’ve wandered in your head for a undefinite span of time, the ringing going on and on, the sound receding away in the dark void."
     "You wonder why she puts this much amount of time to respond. Must it be the hour? Or is she’s not home right now? Maybe she has got an extended work shift and wasn’t still able to come this evening."
     "Whatever the reason, it has to be a valid one. You mull over it a bit. She wouldn’t ignore you, would she? Perhaps she is ignoring you and is looking at the phone ringing right now."
-    "Suddenly a click travels from the other side of the line as to prove you wrong and make you guilty that she would ever be dishonest with you. You hear an inquisitve, quite sly, feminine voice answering the call."
+    "Suddenly a click travels from the other side of the line as to prove you wrong. You hear an inquisitve, quite sly, feminine voice answering the call."
     
     "???" "... Hello, who is it?"
     
-    hl "Marie–Jil, it’s me, Gap!"
+    hl "Marie–Jil, it’s me, Hurle!"
     
-    mj "Gappounet! It’s really you! I’ve been waiting for your call all day long!"
+    mj "Howly! It’s really you! I’ve waited for your call all day long, you know that?."
 
     "A deep sigh escapes of her long mouth, relieved to hear your voice."
 
@@ -842,17 +844,19 @@ label phone_booth:
 
     mj "You’re still on the road? How did you do to contact me then?"
 
-    hl "Well apparently, they started to install phone booths on rest areas over the roads. Isn’t it amazing? Some day, I’ll be able to find phone booths everywhere and to call you anytime I want!"
+    hl "Well apparently, they started to install phone booths on rest areas over the roads. Isn’t it amazing?" 
+    hl "Some day, I’ll be able to find phone booths everywhere and to call you anytime I want!"
     hl "Imagine all of the possibilities! One day, maybe, we’ll truly never be apart. This is really wonderful! Technology is going so fast! Everything is going so fast!"
     
-    "For a very enigmatic reason, your passion for latest high-tech overhauled your usual gloominess and you find yourself very eager to indulge yourself in this pit of wonders, dreaming for the future of all living beings."
+    "For a very enigmatic reason, your passion for latest high-tech overhauled your usual gloominess." 
+    "You find yourself very eager to indulge yourself in this pit of wonders, dreaming for the future of all living beings."
 
     hl "Imagine for a second, how the americans reached the moon, {cps=120.0}how we will in the future be able to travel to space {cps=150.0}and also how we will be able to even eat without opening the mouth."
     hl "{cps=200}don’tyouthinkit’sfantasticsometimesyouthinkwowtechnolgyandallh\nowrapiditwillreachveryhighstandads??it’sreallywonderfulwhenyouthinkaboutitIwanttoneverdietowitnessthis{nw}"
 
     "You couldn’t hold my excitation anymore. The words leaving from your mouth were forming before your brain could even process the information you were spilling out at her. Your speaking functions were not functioning anymore."
 
-    mj "Gap, Calm down! Calm down. You’re going to choke on your own words. Take a breath ok? Breathe with me, alright? At the count of three you’ll breathe out, ok?"
+    mj "Howl, Calm down! Calm down, for god's sake. You’re going to choke on your own words. Take a breath ok? Breathe with me, alright? At the count of three you’ll breathe out, ok?"
 
     "You follow Marie—Jil’s instructions and soon enough, you manage to calm yourself down and in the end you are able to talk at steady pace."
     "Once calmed down, your lungs stops contorting and burning the air within is able to bring you tranquility to you. Her voice helps you catch back and stand on your two paws."
@@ -861,12 +865,14 @@ label phone_booth:
     hl "Ahah, sorry, MJ. It’s been so long that I haven’t talked to you! It’s been like what? a week?"
 
     mj "You’ve talked to me this morning, Honey. But I don’t mind, I love it when you get all worked up over me, my little kitten."
-    mj "I didn’t think that you’ll be missing me so much. You’ll only stay 3 day over there and you’re already panting your insides out not even having reached the hotel."
-    mj "You’re lucky that I was the one answering the phone. Had it been Dad or Mom, they would have teased the heck out of you. Don’t thank me huh? I almost didn’t answer given the hour."
+    mj "I didn’t think that you’ll be missing me so much. You’ll only stay 3 day over there and you’re already panting your insides out" "
+    mj "You didn't even reach the hotel."
+    mj "You’re lucky that I was the one answering the phone." 
+    mj "Had it been Dad or Mom, they would have teased the heck out of you. Don’t thank me huh? I almost didn’t answer given the hour."
 
     hl "It’s not that late..."
 
-    mj "It’s like fifty to eight, at least it’s starting to get late, don’t you think? I don’t think I’ll answer later in the evening. Or my parents will. I don’t think you want to talk to them that late, huh?"
+    mj "It’s like fifty to 8, at least it’s starting to get late, don’t you think? I don’t think I’ll answer later in the evening. Or my parents will. I don’t think you want to talk to them that late, huh?"
 
     "She’s got a point. As much as you like her parents, the situation you would find yourself, head–to–head with them, not knowing what to say would be very akward."
     "So you agree with her, not very much a lot you can do more to talk to her later."
@@ -878,15 +884,20 @@ label phone_booth:
     
     hl "You could’ve explained the situation to her. I’m sure she would have let you come."
 
-    mj "It’s not like that, Gap. She just opened her restaurant. I can’t let her down like that. She really needs me, I don’t have the time to travel to a luxuous hotel unfortunately."
+    mj "It’s not like that, Howl. She just opened her restaurant. I can’t let her down like that. She really needs me, I don’t have the time to travel to a luxuous hotel unfortunately."
 
     hl "Alright... but next time, you gotta come!"
 
     "She softly chuckles at your liveliness."
 
-    mj "You know, your attidude earlier reminded me of the time where we fisrt–"
+    mj "You know, your attidude earlier reminded me of the time where we fisrt–{nw}"
 
-    "Leaned on the booth glass, you twist and twist frenetically the phone cord, and from times to times, you brush your whiskers. A low purring swell up you chest and you try to contain it."
+    az "There she goes. On her rant like always."
+    
+    dk "Well it'd be rude to interrupt her don't you think?"
+     
+    az "Then don't"
+    az "Think of something else."
 
     ## TODO: Illustrate this scene with village
     "You really liked her, she’s a wonderful girl and you wonder everyday how your life would have played out, had she not been in your life at all." 
@@ -898,19 +909,10 @@ label phone_booth:
     "You would read a book about a boy in a green tunic going for adventures and you would pretend that you are this same boy reenacting the events of the book." 
     "Most kids would take you for a social case and most have."
     "But not Marie–Jil. Marie–Jil played with you in your little pretend games." 
-    "You really enjoyed her creativity to modify to the story to her liking, even if at first you really detested her interventions, it had to stay on the rails of the story."
-    "One day, a new boy moved in the village and he was a particular boy for sure. Rude, spiteful, trickster, troublemaker, always malicious to people." 
-    "Everything you hated within a person. That boy was Ammon."
-    "Ammon was a friend of her and you really didn’t like him that much, he would often declare that your games were really lame." 
-    "You would argue a lot without a satisfying conclusion. Still Marie–Jil really wanted to you get along."
-    "So we gradually stopped playing pretend and Marie–Jil brought out some board games his father got for her from his work or abroad." 
-    "You were devastated of that because of that annoying dog, you weren’t able anymore to play what you want with Marie–Jil."
-    "So you set you ought to beat him at everything he does. Unfortunately he was no little player, crushing you at everything he does. That only managed to enrage you and make you hate him even more."
-    "You wonder how you are still friends with him."
 
     mj "So um Gaspard, Gaspard, are you listening?"
 
-    "You wake up from your daydreaming, all of these memories have had left you groggy and you are uncomfortably brought back to the current discussion, bitter as you wish to dwell more in your childhood."
+    "You wake up from your daydreaming, all of these memories have had left you groggy"
 
     hl "Yeah, MJ, you were saying?"
 
