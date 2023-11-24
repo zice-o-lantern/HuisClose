@@ -689,17 +689,18 @@ label rest_area_1:
             "You grit your teeth as you clutch his hand. He carries you off the ground that you find yourself levitating. You often forget his undog force and that comforts as you can trust your dear friend."
         
         "I can do it on my own, no thanks":
-            "You don't need the help of that prick. You already did it without his help before, so why couldn't you do it again now... or did you?"
+            "You don't need the help of that prick."
             hl "I don't need your help. I can deal with it on my own."
             
             am "Alright... Suit yourself."
             
-            "You don't wait for him to try removing yout helmet. However you are met with a very concerning issue: It really is stuck. No matter how much you pull or the angle you use, your ears won't budge so it won't come off."
-            "As you panick, you wiggle out in every directions possible, almost rushing in the motorcycle or Ammon, concerned by the show you're putting on."
+            "You don't wait for his signal."
+            "However something's wrong: It really is stuck. No matter how much you pull or the angle you use, your ears won't budge so it won't come off."
+            "As you panic, you wiggle out in every directions possible, almost rushing in the motorcycle or Ammon."
      
             am "Are you sure you don't need any help? you sure look like so."
 
-            hl "I'm fine! I don't your help or anyone help! I'm going to do it alone like I used to!"
+            hl "I'm fine! I don't need your help or anyone's help!"
             
             am "Um, ok... I guess?"
 
@@ -1059,21 +1060,17 @@ label phone_booth:
     
     menu what_do_you_think_of_ammon:
 
-        "I’m having a great time with him and I love it" if ammon_score >= 2:
-            $ ammon_score += 1
-
-            mj "Oh really? Surprising... I wouldn’t have expected that you two would get so much along together."
-
-        "He’s been nice with me but his tricks are really bothering me" if ammon_score >= 2:
-            mj "I had expected that much with you two."
-
-
-        
-        "I can tolerate him" if ammon_score >= 1:                                                                                                                                                                                                           
-            hl "He’s been supportable so far"
-        
-        "I wish you were with me, not him":
-            mj "...Really?"
+        "Nothing special":
+           hl "I mean we just rode the road. Nothing really exciting."
+           mj "You sure? Nothing with Ammon? Don't you say nothing special happened when you travel with THE Ammon?"
+           "You pause."
+           hl "{cps=3}...{/cps} No, I can't remember  anything special nor specific."
+           mj "{cps=3}...{/cps} You can't remember..."
+        "Ammon is a prick" if radio_on:
+            hl "Ammon is an asshole."
+            mj "What did he do again."
+            hl "Well I was starting to get a headache because of his music."
+           
     
     mj "Well anyway, I wanted to talk to you about something that was bothering me lately..."
 
