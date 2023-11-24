@@ -675,16 +675,26 @@ label rest_area_1:
             
             hl "Stop talking with your long snout and just do what you just said, we'll both be better off!"
             
-            "For a moment Ammon still struggles to remove your helmet. The pain is really insufferable and you both pull like idiots trying to pull out Excalibur. You yell out of pain and he apologises hoarsely."
-            "At some point, you feel with your united combined effort, you have made a difference on the helmet and is ready to give in. Suddenly there's a pop and you fly out of the helmet on the grass rolling for a considerate amount of time."
-            "When your frenetic charge comes to stop, you cough out the dirt and the blades of grasses caught in your mouth. You shake up your head so your blood flows back in it. When you come back to your senses, you are met with a laughing dog unable to stop."
-            "His piercing laughter overwhelm your space and you get red of embarrassement irresistibly, despite you. You clutch the grass and pluck it out of rage. You throw some at him to make him shut its long snout trap that serves him as a mouth."
+            "For a moment Ammon still struggles to remove your helmet. The pain is really insufferable and you both pull like idiots trying to pull out Excalibur." 
+            "You yell and he apologises hoarsely."
+            "At some point, you feel with your united combined effort, the helmet is ready to give in. Suddenly there's a pop and you fly out of the helmet on the grass rolling for a considerate amount of time."
+            "When your frenetic charge comes to stop, you cough out the dirt and the blades of grasses caught in your mouth." 
+            "You shake up your head so your blood flows back in it. When you come back to your senses, you are met with a laughing dog unable to stop."
+            "His piercing laughter overwhelm your space and you get red of embarrassement irresistibly, despite you. You clutch the grass."
+            menu:
+                "Throw some grass at him.":
+                    "You pluck out some grass and you throw some at him to make him shut its long snout trap that serves him as a mouth."
+                    hl "Fucking moron !! I told you you shouldn't pull that hard! I'm all scratched and dirty now. I hate you, you hear me??"
             
-            hl "Oh my god, you irritating imbecile! I told you you shouldn't pull that hard! I'm all scratched and dirty now. I hate you, you hear me??"
+                    "Ammon wipes out his tears of laughter and approches, triumphing, over you. His wicked smile pierces his helmet as he hands you your helmet and reach a hand to you."
+        
+                    am "Okay you crykitten, keep whining all you want. But if you stay on the ground, you won't get anywhere, will you?"
+                
+                "Stay calm": 
+                    "You clutch the grass harder and harder. You want to unleash your rage on him, to throw grass and dirt at him."
+                    "But you can't. You're too weak for that. He'd only laugh at you harder. {w}You hate him."
             
-            "Ammon wipes out his tears of laughter and approches, triumphing, over you. His wicked smile pierces his helmet as he hands you your helmet and reach a hand to you."
-  
-            am "Okay you crykitten, keep whining all you want. But if you stay on the ground, you won't get anywhere, will you?"
+            
       
             "You grit your teeth as you clutch his hand. He carries you off the ground that you find yourself levitating. You often forget his undog force and that comforts as you can trust your dear friend."
         
@@ -746,7 +756,7 @@ label rest_area_1:
     
     am "It's alright, pal. I can deal with it on my own. I'm used to."
 
-    "The cocky dog removes his helmet elegantly without any issues nor events whatsoever. 
+    "The cocky dog removes his helmet elegantly without any issues nor events whatsoever." 
     "He wiggles his head finally free from his protective plastic jail." 
     "What a show–off. But a good show–off."
     "The thing to catch your attention within him is his eyes. His priceless golden eyes shining more than any sun you've seen." 
@@ -866,7 +876,7 @@ label phone_booth:
     hl "Ahah, sorry, MJ. It’s been so long that I haven’t talked to you! It’s been like what? a week?"
 
     mj "You’ve talked to me this morning, Honey. But I don’t mind, I love it when you get all worked up over me, my little kitten."
-    mj "I didn’t think that you’ll be missing me so much. You’ll only stay 3 day over there and you’re already panting your insides out" "
+    mj "I didn’t think that you’ll be missing me so much. You’ll only stay 3 day over there and you’re already panting your insides out"
     mj "You didn't even reach the hotel."
     mj "You’re lucky that I was the one answering the phone." 
     mj "Had it been Dad or Mom, they would have teased the heck out of you. Don’t thank me huh? I almost didn’t answer given the hour."
@@ -900,24 +910,34 @@ label phone_booth:
     az "Then don't"
     az "Think of something else."
 
-    ## TODO: Illustrate this scene with village
-    "You really liked her, she’s a wonderful girl and you wonder everyday how your life would have played out, had she not been in your life at all." 
-    "But you chase that thought rapidly as it always sets you in a desesperate state."
-    "You are childhood friends and you were stuck together like hand in glove and never you has been seperated from her." 
-    "She lived in your birth village, so you used to play together every day."
-    "For some reason, she could stand your presence, contrary to most of your peers of your age. That made her a precious friend." 
-    "She was always fond of your fantaisies and your games, you had a lot of them when you were young."
-    "You would read a book about a boy in a green tunic going for adventures and you would pretend that you are this same boy reenacting the events of the book." 
-    "Most kids would take you for a social case and most have."
-    "But not Marie–Jil. Marie–Jil played with you in your little pretend games." 
+    menu:
+        "Listen to her":
+            $ derek_score += 1
+            mj "-we first went to the beach?"
 
-    mj "So um Gaspard, Gaspard, are you listening?"
+            hl "Yes I do."
 
-    "You wake up from your daydreaming, all of these memories have had left you groggy"
+            mj 
 
-    hl "Yeah, MJ, you were saying?"
+        "Think of something else":
+            $ azzy_score += 1
+            "You really liked her, she’s a wonderful girl and you wonder everyday how your life would have played out, had she not been in your life at all." 
+            "But you chase that thought rapidly as it always sets you in a desesperate state."
+            "You are childhood friends and you were stuck together like hand in glove and never you has been seperated from her." 
+            "She lived in your birth village, so you used to play together every day."
+            "For some reason, she could stand your presence, contrary to most of your peers of your age. That made her a precious friend." 
+            "She was always fond of your fantaisies and your games, you had a lot of them when you were young."
+            "You would read a book about a boy in a green tunic going for adventures and you would pretend that you are this same boy reenacting the events of the book." 
+            "Most kids would take you for a social case and most have."
+            "But not Marie–Jil. Marie–Jil played with you in your little pretend games." 
 
-    mj "... I was saying, do you remember when we first got together? Your enthusiasm didn't die down since. It's warming to the heart to witness it."
+            mj "So um Gaspard, Gaspard, are you listening?"
+
+            "You wake up from your daydreaming, all of these memories have had left you groggy"
+
+            hl "Yeah, MJ, you were saying?"
+
+            mj "... I was saying, do you remember when we first got together? Your enthusiasm didn't die down since. It's warming to the heart to witness it."
     
     show canteen with dissolve
     "When you first got together, huh? Yes you do remember, how could you not? It was a very special day after all."
@@ -982,7 +1002,7 @@ label phone_booth:
     
     mj "You know, how we have been friend for a very long time, now, Gappy?"
 
-    hl "Yes I do?"
+    hl "Yes I do?"
 
     mj "Well I am really happy with our friendship right now, how you always have been there for me."
 
@@ -1061,15 +1081,24 @@ label phone_booth:
     menu what_do_you_think_of_ammon:
 
         "Nothing special":
-           hl "I mean we just rode the road. Nothing really exciting."
-           mj "You sure? Nothing with Ammon? Don't you say nothing special happened when you travel with THE Ammon?"
-           "You pause."
-           hl "{cps=3}...{/cps} No, I can't remember  anything special nor specific."
-           mj "{cps=3}...{/cps} You can't remember..."
+            hl "I mean we just rode the road. Nothing really exciting."
+            mj "You sure? Nothing with Ammon? Don't you say nothing special happened when you travel with THE Ammon?"
+            "You pause."
+            hl "{cps=3}...{/cps} No, I can't remember  anything special nor specific."
+            mj "{cps=3}...{/cps} You can't remember..."
         "Ammon is a prick" if radio_on:
             hl "Ammon is an asshole."
             mj "What did he do again."
-            hl "Well I was starting to get a headache because of his music."
+            hl "Well I was starting to get a headache because of his music. So I asked him to turn off the radio. He asked me why."
+            mj "What did you answer then?"
+            hl "That I didn't like the music, I wasn't feeling like telling him it was bothering me so I said that."
+            mj "Well I figured. You should've just told him you had a headache he would have understood."
+
+            "It's too late to fix it, don't bother with it."
+
+            mj "Don't tell me you have forgotten how he could be stubborn about his preferences?"
+            hl "Maybe I have."
+            mj "You don't remember huh?"
            
     
     mj "Well anyway, I wanted to talk to you about something that was bothering me lately..."
