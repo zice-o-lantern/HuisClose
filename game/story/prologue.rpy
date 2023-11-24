@@ -1109,13 +1109,12 @@ label phone_booth:
     hl "Huh..."
 
     "Confusion roses into you."
-    "A burst of voice surges through the phone and you almost drop it. You regain composure. She is rarely mad at you and this time you don’t have a clue what may have released her wrath." 
+    "A burst of voice surges through the phone and you almost drop it." 
     "You panic. What happened, for Jesus’ sake? You dig through you mind."
-    "Nothing. Just nothing. You’d be satisfied to just see a grain of sand in a sea of nothingness but you won’t even get that satisfaction." 
     "You’re in the void, your head absent, beholding a black box. You open it. Even more void. You’re afraid. You shouldn’t go deeper"
     "You hand’s wet. Every second, you are to the point of letting it slip." 
-    "You sweat profusely and you wipe, wipe, wipe and wipe but you can’t fight against the downfall of your mind, wrecking havoc on every light of your soul."
-    "You fall silent. Who are you."
+    "You sweat profusely. Your throat tightens."
+    "You fall silent."
 
     mj "Gaspard! please answer to me, why are you like that?? I want to help you but I can’t do anything if you keep shutting me out!! Even, I say, shutting us out!!!" 
     mj "Your mom is dead sick’ worried for you, don’t you see??"
