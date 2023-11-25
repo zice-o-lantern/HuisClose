@@ -917,7 +917,20 @@ label phone_booth:
 
             hl "Yes I do."
 
-            mj 
+            mj "Well Ammon always liked acting like a goofball to tease you; and I must agree with him that your reactions were worth it."
+            mj "This day, Ammon decided that he was going to dance on rocks and provoke you to come and get him..."
+            mj "That was at least what it looked from afar."
+            mj "Anyway I think at some point it worked and you charged him. He got so scared that he fell of the rock and sprained his ankle. I don’t think the pebbles helped."
+            mj "Fortunately your dad that drove us to the beach was around because he was able to provide first medical care before getting to a doctor."
+            mj "Well it kind of ruined our litte outing but thinking back then, Ammon and you were always at your throats but you went everything though thick and thin."
+            mj "It’s fascinating how you managed to stay together."
+
+            az "His misbehaviours only made him more interesting."
+            az "Why ditch him."
+
+            dk "He has a way to get on your nerves."
+
+            mj "Oh by the way, do you remember when we first got together?"
 
         "Think of something else":
             $ azzy_score += 1
@@ -977,7 +990,7 @@ label phone_booth:
     "All of the sudden, Marie–Jil approached you, bringing in no food but an tense air on her way. It stressed you as she got closer to you."
     "Marie–Jil stood shut fast on the floor, very anxious, not knowing where to place herself. Her tail coulnd’t stop shaking; the nervosity of the situation got to me making your tail moving out of your own."
     ## TODO: add Marie–Jil sprite?
-    mj "Hi Gap..."
+    mj "Hi Howl..."
 
     hl "Hi MJ... Why are you late, what’s going on? Do you want to tell me something?"
 
@@ -1059,9 +1072,9 @@ label phone_booth:
 
     hl "I had to check up on him that day too... He shouldn’t have eaten that much."
 
-    mj "Actually Gappounet... I am the one who went check up on him, I made you stay at the table to keep guard of our stuff."
+    mj "Actually Gappounet... I am the one who went check up on him, I made you stay at the table to keep watch on our stuff."
 
-    "A sense of discomfort and awkwardess emanates from Marie—Jil’s words like you were opening matryosshka dolls you were highly forbidden to. She had to witness him bathing in his vomit after all. You wouldn’t want to be the one that had go that day."
+    "A sense of discomfort and awkwardess emanates from Marie—Jil’s words like opening matriochka dolls. She had to witness him bathing in his vomit after all. You wouldn’t want to be the one that had go that day."
     
     mj "By the way, while we are talking about him, is everythin alright with Ammon?"
 
@@ -1078,8 +1091,7 @@ label phone_booth:
     mj "Sure Gappounet."
     mj "Anything worthy telling me about him?"
     
-    menu what_do_you_think_of_ammon:
-
+    menu:
         "Nothing special":
             hl "I mean we just rode the road. Nothing really exciting."
             mj "You sure? Nothing with Ammon? Don't you say nothing special happened when you travel with THE Ammon?"
@@ -1120,9 +1132,9 @@ label phone_booth:
 
     hl "What do you mean? You’re making me confused."
 
-    mj "With you trip, were you able to think about your... moods, clean your thoughts, to reflect on what happened recently."
+    mj "With you trip, were you able to think about your... moods, clear your thoughts, to reflect on what happened recently."
 
-    "She sounds concerned. Irritated. Have you been that out of it lately? You must admit that you had your up and down like everyone but you don’t consider it a matter to be discussed." 
+    "She sounds concerned. Irritated. Have you been that out of it lately?" 
     "At most, you felt a bit tired from the pressure but that’s all."
     "She waits for your answer, expecting a thorough justification. You don’t have one. You’re utterly confused." 
     "You scratch the back of your head, hoping something will come out, but nothing. Only oblivion and the dark void."
@@ -1133,7 +1145,7 @@ label phone_booth:
     play music "audio/music/anger.mp3" 
 
     mj "Oh my god, for Jesus Christ?!" 
-    mj "Are you for real, Gap??? You’ve been rolling in your bed sheets all day long 13 days straight and you say to my face that everything’s fine?!! THAT YOU DON’T RECALL ANYTHING??"
+    mj "Are you for real, Gap??? You’ve been rolling in your bed sheets all day long 13 days straight and you say to my face that everything’s fine!??"
     
     hl "Huh..."
 
@@ -1145,34 +1157,40 @@ label phone_booth:
     "You sweat profusely. Your throat tightens."
     "You fall silent."
 
-    mj "Gaspard! please answer to me, why are you like that?? I want to help you but I can’t do anything if you keep shutting me out!! Even, I say, shutting us out!!!" 
+    mj "Hurle! please answer to me!" 
     mj "Your mom is dead sick’ worried for you, don’t you see??"
-    mj "It's this bad hub? You really don't remember? You really want me to remind you what eveything that had been on pur mind lately? You do, don’t you? Maybe that’ll help refresh your damn mind!"
-    mj "You are failing your PhD. You are failing your classes. You haven't been to any classes for a month." 
+    mj "You are failing your PhD, can’t you see??. You are failing your classes. You haven't been to any classes for a month." 
     mj "Whenever I go to college, teachers ask me \"Where is Gaspard?\" \"Where is he? Why ins't he coming anymore? He's such a brilliant student though...\"" 
-    mj "Where were you, you wonder then? You were at home, in your bedroom, either sitting or laying down on your bed, vacant, empty eyes." 
+    mj "Where were you, you wonder then? At home, in your bedroom, either sitting or laying down on your bed, vacant, empty eyes." 
     mj "Your mom couldn't stand to see you like that anymore so she called Ammon and I to cheer you up. We would prod at you, implore you, to respond to us, something, anything."
-    mj "You'd rarely say one word or two, when you weren't too occupied at staring at the void, mumbling, muttering low and weak sentences that you and only you could understand."
-    mj "Once I tried to listen to the thread of words leaving your mouth, carefully, afraid to let it slip out of my ears. Literal nonsense."
-    mj "Just nonsense. Absolute nonsense. That's what you were this month: a lifeless puppet whose strings have been cut by his own dubious master." 
+    mj "You'd rarely say one word or two, when you weren't too occupied at staring at the void, mumbling, muttering low and weak sentencesU that you and only you could understand."
+    mj "Once I tried to listen to the thread of words leaving your mouth, carefully, afraid to let it slip out of my ears.{w} Nonsense."
+    mj "Just nonsense. Absolute nonsense. Literally Nonsense!" 
     mj "Quickly, I look in your eyes and I see a ocean of darkness, void, nothingness, emptiness, torpor, lethargy and... Apathy. Sometimes I get scared of you."
-    mj "No, Gaspard, not everything's fine. It sure hasn't been lately. Everyone has been worried about you. It's not at random that Ammon picked you to go with him at Paris. He wants to help you go better." 
+    mj "No, Howl, not everything's fine. It sure hasn't been lately. Everyone has been worried about you. It's not at random that Ammon picked you to go with him at Paris. He wants to help you go better." 
     mj "So please, help me, Gaspard... Please Gap, will you let me help you? Will you tell me what happened last month"
     
     hl "Last... Month?"
     
-    "I asked confused. everything she says, you can't hear it. More Accurately, you can hear her perfectly but you refuse to hear it. The black box should never be opened and every attempt sends a throb trough your brain." 
+    "I asked confused. everything she says, you can't hear it. More accurately, you can hear her perfectly but you refuse to hear it. The black box should never be opened and every attempt sends a throb trough your brain." 
     "You head hurts. You seethe. Please stop. Please stop, you can't take it anymore."
     
-    hl "Please.... stop"
+    menu:
+        "Make her stop":
+            hl "Please.... stop."
+            mj " Ohoohoh I sure won't stop, Hurles Danbois. I {w=1.0}AM {w}FED UP. I won't stop until I'm finished." 
+        
+        "Try to change the subject":
+            hl "Can’t... we talk about something else?"
+            mj "NO WE WON’T. I AM FED UP. You let me finish."
 
-    mj " Ohoohoh I sure won't stop, Gaspard Danbois. I {w=1.0}AM {w}FED UP. I won't stop until I'm finished." 
+    
     mj "You will answer to my questions, Gaspard and you won't be able to esacpe forever."
     mj "We covered for you, we never asked any questions, we didn't want to put pressure on you. We let you breathe, rest, mourn, or even hell, agonize." 
     mj "But one day or sooner, you'll have to tell us what happened and I'm sick of not knowing the truth."
-    mj "So tell me Gaspard. What happened, last month, September Friday the 13th?"
+    mj "So tell me Gaspard. What happened, last month, the day you went missing in the forest?"
     
-    "You panic even more. Friday the 13th, it hits a bell, a nefarious bell, a bell from hell. You realise. The box tightens even more. What happened that day must remain secret at all cost." 
+    "You panic even more. Went missing, it hits a bell. You realise. The box tightens even more. What happened that day must remain secret at all cost." 
     "She mustn't go further in her crusade of questioning. You ought to make her shut her or you don't know what may become of you."
     "She represents a menace to your tranquility. Your Apathy."
     
@@ -1180,59 +1198,66 @@ label phone_booth:
     
     mj "I am sick of you with your \"I don't know\" \"I don't know\"! You lie to me as you breathe! You do know and I will get the truth about that day."
 
-    "The deluge of your body flows down on your sweaty palms. Your shaky hands tremble like a sinner to Judgment day. Your god with a disembodied voice continues to yell at you for what you have done and won't forgive you."
+    "The deluge of your body flows down on your sweaty palms. Your shaky hands tremble like a sinner to Judgment day."
     "The phone slips out out of your hands and falls down; thus, its thud echoes heavily in the booth. You pick it up hastily and shove it into your by fear to annoy the Bringer of your Retributions." 
     "You are scared of it, you are scared of your Judgment, you are scared of the Truth."
     
     mj "Don't you dare to try and slip away. If not today, I'll make you spill out on way or another, just wait for it. That could be today, but that could be tomorrow or after tomorrow or a week or a year, just wait for me."
-    mj "I'll be more precise then, if you can't tell that much... Were you at home, this day? Just tell me please, it'll be faster that way."
+    mj "I mean, for fuck’s sake, you were gone for a week?? A whole week and you weren’t even injured."
     
-    "Yes you were at home, you can tell that much, you were preparing for a party, what type of party, you'll have to prod a bit more." 
-    "You remember what it was, it was a birthday party, although you don’t remember who it was for, it should’ve been of your relatives surely."
+    mj "What were you doing Semptember the 13th?{w} Were you with ×××××××××××××××××××××××{nw}"
 
-    hl "Yes I was at home I think... But I don’t know any more than that, I swear!"
+    "It hits you like a truck. This date. You didn’t want to hear it."
 
-    mj "Ok then let me ask you another question: Someone ringed at your doorbell. Your mom told me she was going for to answer it but you’ve been faster than her so she let you alone." 
-    mj "When she wanted to ask who it was, you were gone of the house."
-    mj "Gone, she said. Not went somewhere and come back. Not hidden out of her sight but gone!" 
-    mj "She went looking everywhere for you and she even had to ask Ammon and me to help her. So I think we deserve an explanation."
-    mj "Where were you that day? Who was it at the door step that make you go go missing? Don’t you think it’s really weird and out of place, Gaspard?"
+    dk "This is starting to get out of hands...{w} Like always."
 
-    "The stepdoor, the stepdoor, who was on the stepdoor. Everything is so blurry, and you can help but look deeper whereas your inner sense of danger always warned you."
-    "Crack. Something broke out within you. The box, it’s opened. You remember."
-
-    hl "Shut up."
+    az "The box is getting loose."
     
-    "You can’t stand up anymore. A fiery fever takes over you. Your view blurs itself, and you trip." 
-    "Hunched back on the phone booth, you can’t stop your accelerating breath. You have lost control of it. This is tot late. It’s coming."
-    "The walls of the cubicle close on you, pressing you. The previous cold air in the place flee at the increasing pression. Breathing in here is pain all accross your lungs and the heat rises considerably." 
-    "Steam roses of your red cheeks and you huff to no end, pleading the air to come back. But it never came."
-    "The hot oven you are shut in heat up more and more, to your death. No matter how much you plead. No matter how much you apologise. No matter the value of your guiltiness, you’ll die in the fire of Hell and the Truth will come out."
+    menu:
+        "Let loose.":
+            jump you_dont_understand
+        "Keep it contained at all costs":
+            jump you_dont_understand
     
-    mj "Don't you tell me to shut up. Answer to me, Gaspard? Who was it?!"
+    label you_dont_understand:
+            az "I don’t think you understand."
+            
+            dk "You’re not the one who decides around here"
     
-    hl "Shut up, shut up!"
-    
-    mj "It was your father, wasn't it?"
-    
-    "The one at the stepdoor, yes it was. He went missing. He didn't even try to look after you. He left. He doesn't care about you. You doesn't care about him. You hate him."
-    "You followed him on the pavement. Did you follow him further? You think so. It doesn't matter. He shouldn't have come. He had to shut it. She has to shut it now. Shut it, shut it, shut it"
-    
-    mj "Why when you meet up with him, we find him later around your house?"
-    
-    hl "Huh you found him?? You really found my father?"
+    "You look down. You’re holding the box. You let it slip. The box opens."
+    "You are beholding the hill. He was expecting you. You brought someone. He is pleased."
+    "You’re pleased too. You’ve done what He asked."
+    "He brushes your cheek. A surge of adrenaline rushes through you. You want his hand forever, that he never leaves your skin."
+    "You want his embrace more than anything. You’re willing to do anything for it. He knows how to fill your sick heart. Your deviant heart."
+    "You know that you’re already a forsaken case so you let him corrupt you even further. What were good in you to begin with anyway."
+    "You present him your partner. He gladly accepts the offering."
+    "You take a step back to admire fully the demonstration he’s going to put for you."
+    "He wraps his hands around his neck. {w} You like it.{nw}"
 
-    mj "What do you mean we found him?? Of course, we found him. Don’t try to fool me, Gaspard, this is serious. I mean, we found you with him, numb, unresponsive, away..." 
-    "...After all, we found him ×××××××××××××××××××××××{nw}"
+    hl "No."
+
+    "You liked it."
     
-    hl "No... No... No ! No no no no no no no nononono"
+    hl "No..."
 
-    mj "What are you saying?!"
+    "You liked it."
 
-    hl "No... No, shut up shut up, shut up, shut up, shut up, shut up"
+    hl "No................."
 
-    mj "Gaspard?.. Are you alright? Maybe I pushed you too f–"
+    "You liked it."
 
+    hl "NO I DIDN’T."
+    hl "I DIDN’T LIKE IT."
+
+    mj "Wait, Howl, what’s going on?? What are you on about???"
+
+    hl "I DIDN’T LIKE IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIT."
+
+    "...{w} You loved it."
+    
+    hl "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH"
+    hl "SHUT UP I’M NOT A MONSTER"
+  
     hl "Shut up. Shut it. Shut up, shut it, shut up, shut it, shut up shut it shut it shut up shut up shut up"
     hl "{size=60}SHUT THE FUCK UP{/size}"
 
@@ -1483,12 +1508,7 @@ label confront_him:
     hl "IT’S NOT JUST CIGARTTES, IT’S CIGARETTES YOU’VE HIDDEN FROM ME."
 
     "You yell out at the top of your lungs in the exposed ears of the elusive dog. They shivers out of the loud sound."
-    "Ammon takes a step back, startled by your outburst."
-    if take_him_out:
-        extend " \n Once again, his concerned eyes look in vain. Only a stranger stands in front of him."
-    
-    else:
-        extend " \n His concerned eyes look for a black and white cat named Gaspard. However, only a stranger stands in front of him"
+    "Ammon takes a step back, startled by your outburst.\n{w} His concerned eyes look for a black and white cat named Gaspard. However, only a stranger stands in front of him"
 
     $ del take_him_out
     "Ammon stays silent, boiling. He contains himself to retaliate, but it is a hard task for a loud proud barking dog. His fists are clenched."
