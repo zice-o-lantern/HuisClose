@@ -1,27 +1,58 @@
 label prologue:
     
+    queue sound "sounds/cold_wind.mp3" fadein 2.0 loop
     # Black scene
     scene black
-    pause 1.0
-    cl "Honestly{w=0.5}, I cant’t believe you can strangle him that hard."
-    cl "Or maybe it’s not that complicated. Maybe I’m just too weak. Perhaps you’re just used to it." 
-    cl "You’re lucky. To be able to feel his beating heart. His cold carapace heating up with your hands."
+    pause 3.0
+    cl "Honestly{w=0.5}, I cant’t believe you could strangle him that hard."
     cl "I know I couldn’t{cps=3}...{/cps} {w=1.0}I think."
-    cl "God, why do I feel like this. {w}Why, when, for once, I feel alive, must it be so grim? It makes me sick.{w}\nI’m sick of it.{w} I’m a monster."
-    cl "Stuck in a never-ending cycle of boredom, regrets and suffering where Death isn’t an escape to your macabre plays. {w}Did you have to be so hard with me?"
-    cl "I hope that, one day, when I’ll come upon the wicked and wretched god that bestowed me of this condition..."
-    cl "I’ll be able to writhe him out every strands of life he ever had."
+    cl "And even then it wasn’t enough to make him shut."
+    play sfx "sounds/rope_squeak.ogg" fadein 3.0 loop volume 0.3
+    extend " You had to use other means."
+    cl "God, why do I enjoy it. I knew him. I knew him and I loved him.{w} So why, when I watch him, I only feel pleased."
+    cl "You made me like that. You made me a monster.{w} You’re a monster."
+
+    cl "Stuck in your never-ending cycle of boredom, regrets and suffering where Death isn’t an escape to your macabre plays, {w}did you have to be so hard with me?"
+    cl "I hope that, one day, when I’ll come upon the wicked and wretched God that bestowed me of this condition..."
+    cl "I’ll be able to writhe him out of every strands of life he ever had."
     cl "That I’ll be able to choke you harder than you ever could."
     
-    pause 1.
+    stop sfx
+    window hide
+    pause 1.0
+    camera:
+        perspective True
+        subpixel True
+        zpos -300
+        ease 1 ypos 125
+        ease 1 ypos 100
+        repeat
+    pause 0.5
+    show clearing:
+        ease 1 blur 128
+        ease 1 blur 32
+        repeat
+    with dissolve
 
-    show clearing with dissolve
-
+    pause 0.5
     # play music "audio/music/griff.mp3" fadein 1.0 loop
-    play audio "sounds/cold_wind.mp3" fadein 2.0 loop
-    cl "{w=1.0}At the frontiers of the forest, in the clearing of my misery, I lay there, overwhelmed, breathless. I breathe as much as I can but the hot air burns my throat."
-    cl "Then I feel your reassuring presence, I’m reminded that I’m not alone. That you are here with me.{w} So I take deep breaths and finally my thumping torso lowers down to a steady pace."
-    cl "Between two relieved exhalations, I look around in search for you and my eyes meet with him, someone I know really well, someone I’ll never forget, someone I wish to forget, a heartless monster."
+    window show
+    
+    cl "{w=1.0}At the frontiers of the forest, in the clearing, I lay there, overwhelmed, breathless. I breathe as much as I can but the hot air burns my throat."
+    cl "Then I feel your reassuring presence, I’m reminded that I’m not alone. That you are here with me."
+    camera:
+        ease 1 ypos 125
+        ease 1.15 ypos 105
+        ease 1.30 ypos 125
+        ease 1.5 ypos 115
+        ease 2.0 ypos 125
+    
+    show clearing:
+        blur 128
+        linear 5.0 blur 32
+
+    extend "So I take deep breaths and finally my thumping torso lowers down to a steady pace."
+    cl "Between two relieved exhalations, I look around for you and my eyes meet with him, someone I know really well, someone I’ll never forget, someone I wish to forget, a heartless monster."
     cl "I stare deep through him but the glimmering shines in his eyes disappeared long ago{w}, if there ever were any."
     cl "Sometimes I wonder if my life could have gone differently, what I should have done to not end up in a forest, in the middle of the night, beaten up, with this worthless being."
     cl "Had he smiled more at me, had he spoken more to me, had he taken me more in his arms, had he cared more, had he done all of that, perhaps, just perhaps, I would have felt pity."
@@ -30,18 +61,33 @@ label prologue:
     cl "Remorse when he was imploring to you let him go, that he won’t talk what happened tonight."
     cl "But I wouldn’t.{w} I wouldn’t have felt anything for him."
     cl "During those lasting moments, where, with his last string of energy, he clenched my arm, {w=.5}there was nothing."
-    cl "No sadness, no pleading, no torment, no anger, no rage, no wrath, no nothing.{w}\nWhile I stood there, I craved for any kind of sign that he was a warm conscious being. Something, just anything"
+    cl "No sadness, no pleading, no torment, no anger, no rage, no wrath."
+    cl "While I stood there, I craved for any kind of sign that he was a warm conscious being. Something, just anything"
     cl "No. Just dead eyes. No matter how hard I look, I still see those same dead eyes. Looking at me."
     cl "I wished those weren’t the same eyes. I wish I could say a chill run through me, that sorrow overflown me when all of this unwinded."
     cl "No just dead eyes, for the past years and now forever.{w} Or at least I failed to perceive it. Like a lot of things in my life."
-    cl "Every retching, I wished he had cared for me." 
+    play sfx "sounds/rope_squeak.ogg" fadein 0.5 volume 0.3
+    show clearing:
+        ease 1 blur 128
+        ease 1 blur 16
+    cl "Every retching, I wished he had cared for me."
+    stop sfx fadeout 1.0
     cl "That he had taken me in his arms, he’d spoken to me more than a dozens of words in my entire life."
+    play sfx "sounds/rope_squeak.ogg" fadein 0.5 volume 0.3
+    show clearing:
+        ease 1 blur 128
+        ease 1 blur 16
     cl "I wish he could smile at me right now."
+    stop sfx fadeout 1.0
     cl "Except he can’t. He’ll keep that dead expression."
     cl "All these wishes, answers, aspirations, wishful thinking, buried with him."
-    cl "I guess I’ll never know."
+    window hide
 
     pause 1.0
+
+    window show
+    show clearing:
+        ease 2 blur 0
 
     cl"The cooling breeze strokes down my long ears , the surnatural howling of the wind cools me down but my throat still burns."
     cl "I try to make it go away but the thousands of needles stuffed down protest.{w}\nI need water."
@@ -60,16 +106,178 @@ label prologue:
     pause 0.5
 
     cl "I look, in the surroundings and not far from me, there stands a pond five meters away from me."
+    camera:
+        ease 0.5 zpos -280
+        ease 1 zpos -350
+        ease 0.5 zpos -320
+        ease 1 zpos -200
+        ease 0.5 zpos -370
+        ease 1 zpos -450
     cl "I crawled desesperately to it and chug down the water."
     cl "But even my filthy soul can’t take this foul water and I regurgitate everything in the pond."
+    camera:
+        ease 0.5 ypos 150
     cl "Drool hanging from my muzzle, Tears streaming down my face, I collapse in the grass, drained of all my energy."
     cl "My vision stays stuck on the middle of this pond."
+
+    ##NOTE: Spawning fireflies
+    
+    $ xpo = renpy.random.randint(500, 1300)
+    $ ypo = renpy.random.randint(200, 640)
+    $ margin = 10
+
+    show firefly:
+        alpha 0.0
+        xpos xpo
+        ypos ypo
+
+        easein 1.0 alpha 1.0
+    show firefly:
+        parallel:
+            ease 1.0 alpha 0.0
+            ease 1.0 alpha 1.0
+        parallel:
+            ease 1 xpos xpo-margin
+            ease 1 xpos xpo+margin
+            ease 1 xpos xpo-margin
+            # ease 1 xpos xpo+margin
+        
+        parallel:
+            ease 1 ypos ypo-margin
+            ease 1 ypos ypo+margin
+
+        repeat
+        
+    $ xpo = renpy.random.randint(500, 1300)
+    $ ypo = renpy.random.randint(200, 640)
+
+    show firefly as firefly1:
+        alpha 0.0
+        linear 2 alpha 0.0
+        xpos xpo
+        ypos ypo
+
+        easein 1.0 alpha 1.0
+    
+    show firefly as firefly1:
+        linear 2 alpha 0.0
+        parallel:
+            ease 1.0 alpha 0.0
+            ease 1.0 alpha 1.0
+        parallel:
+            ease 1 xpos xpo-margin
+            ease 1 xpos xpo+margin
+            ease 1 xpos xpo-margin
+            # ease 1 xpos xpo+margin
+        
+        parallel:
+            ease 1 ypos ypo-margin
+            ease 1 ypos ypo+margin
+
+        repeat
+    
+    $ xpo = renpy.random.randint(500, 1300)
+    $ ypo = renpy.random.randint(200, 640)
+
+    show firefly as firefly2:
+        alpha 0.0
+        linear 4 alpha 0.0
+        xpos xpo
+        ypos ypo
+
+        easein 1.0 alpha 1.0
+    
+    show firefly as firefly2:
+        linear 4 alpha 0.0
+        parallel:
+            ease 1.0 alpha 0.0
+            ease 1.0 alpha 1.0
+        parallel:
+            ease 1 xpos xpo-margin
+            ease 1 xpos xpo+margin
+            ease 1 xpos xpo-margin
+            # ease 1 xpos xpo+margin
+        
+        parallel:
+            ease 1 ypos ypo-margin
+            ease 1 ypos ypo+margin
+
+        repeat
+    
+    $ xpo = renpy.random.randint(500, 1300)
+    $ ypo = renpy.random.randint(200, 640)
+
+    show firefly as firefly3:
+        alpha 0.0
+        linear 7 alpha 0.0
+        xpos xpo
+        ypos ypo
+
+        easein 1.0 alpha 1.0
+    
+    show firefly as firefly3:
+        linear 7 alpha 0.0
+        parallel:
+            ease 1.0 alpha 0.0
+            ease 1.0 alpha 1.0
+        parallel:
+            ease 1 xpos xpo-margin
+            ease 1 xpos xpo+margin
+            ease 1 xpos xpo-margin
+            # ease 1 xpos xpo+margin
+        
+        parallel:
+            ease 1 ypos ypo-margin
+            ease 1 ypos ypo+margin
+
+        repeat
+    
+    $ xpo = renpy.random.randint(500, 1300)
+    $ ypo = renpy.random.randint(200, 640)
+
+    show firefly as firefly4:
+        alpha 0.0
+        linear 9 alpha 0.0
+        xpos xpo
+        ypos ypo
+
+        easein 6.2 alpha 1.0
+    
+    show firefly as firefly4:
+        linear 9 alpha 0.0
+        parallel:
+            ease 1.0 alpha 0.0
+            ease 1.0 alpha 1.0
+        parallel:
+            ease 1 xpos xpo-margin
+            ease 1 xpos xpo+margin
+            ease 1 xpos xpo-margin
+            # ease 1 xpos xpo+margin
+        
+        parallel:
+            ease 1 ypos ypo-margin
+            ease 1 ypos ypo+margin
+
+        repeat
+    
     cl "A little hill with a hundred of fireflies projects over me, offering me a spectacle that I’d never forget. Something I thought I would never see."
     cl "A beacon of longing light in the all–surrounding crushing darkness of the night that gets me alive."
+    
+    camera:
+        ease 5 ypos -100 
+
     cl "It would almost make me forget the towering tree at the top of the hill, projecting its shadow over me, watching me. {w} Judging me."
     cl "Wait{w=0.5}, that’s not the tree who’s judging me..."
+    window hide
     
     pause 1.0
+
+    window show
+    camera:
+        parallel:
+            easein 5 zpos 0
+        parallel:
+            easein 5 ypos 0
     
     cl "Hey I have a question."
     cl "The one watching me. The one judging me."
@@ -91,6 +299,11 @@ label prologue:
     cl "Do You think that the numbness I feel everyday in my life could cause problems for the people that I love and love me?"
     cl "Do You think that my inactivity, my tendency to not act, to endure, to stay where I am, where I should be could lead me to hurt the people around me?"
 
+    $ time = 2
+    $ timer_jump = "dont_answer"
+
+    show screen countdown
+
     menu:
         "Yes":
             jump dont_answer
@@ -98,6 +311,7 @@ label prologue:
             jump dont_answer
     
     label dont_answer:
+        hide screen countdown
         cl "Wait, don’t say anything."
         cl "I think I already know the answer."
 
@@ -191,7 +405,7 @@ label little_road:
             
             menu:
                 "It gives me an headache.":
-                    am "Well it didnt gave me one."
+                    am front j_disgusted "Well it didnt gave me one."
                     
                     "You grip your tighs. Is he that inconsiderate?"
                     
@@ -201,7 +415,7 @@ label little_road:
                     "It's a tendency of his so you maintain the contact as always."
                     "At some point he releases you, sighs and leans to the radio."
                     
-                    am "Hmpf, you're right, I'll turn the radio off."
+                    am right "Hmpf, you're right, I'll turn the radio off."
                     
                     hl "Thanks Ammon."
                     
@@ -235,8 +449,8 @@ label little_road:
                     $ derek_score += 1
 
                     "You grumble back to a slouched posture. Nothing you can do about it, he's the one driving after all." 
-                   
-                   
+
+
         "Incredible":
             "You lay down on the bike as the loud drums fill your world."
             "Your bang your head up and down to the rythm. With it, your finger taps on the frame."
@@ -428,7 +642,7 @@ label talk_with_ammon:
         "Ask him after High School":
             hl "Um, actually couid you start since high school?"
             
-            am "Alright if you want to".
+            am "Alright if you want to."
             am "It's actually easier for me, but don't worry, I will go over it the fastest I can."
         "Stay silent":
             $ derek_score += 1
@@ -495,7 +709,7 @@ label talk_with_ammon:
     if azzy_score >= 1:
         az "He's lying. He wanted you to remember something you've done with him."
         az "Such a shame you've forgotten."
-    else if derek_score >= 1:
+    elif derek_score >= 1:
         dk "He looks so sad."
         dk "I think you have disappointed him."
         dk "Such a shame you can't remember what happened at the tree."
@@ -695,7 +909,7 @@ label rest_area_1:
                     "But you can't. You're too weak for that. He'd only laugh at you harder. {w}You hate him."
             
             
-      
+
             "You grit your teeth as you clutch his hand. He carries you off the ground that you find yourself levitating. You often forget his undog force and that comforts as you can trust your dear friend."
         
         "I can do it on my own, no thanks":
@@ -707,7 +921,7 @@ label rest_area_1:
             "You don't wait for his signal."
             "However something's wrong: It really is stuck. No matter how much you pull or the angle you use, your ears won't budge so it won't come off."
             "As you panic, you wiggle out in every directions possible, almost rushing in the motorcycle or Ammon."
-     
+
             am "Are you sure you don't need any help? you sure look like so."
 
             hl "I'm fine! I don't need your help or anyone's help!"
@@ -719,9 +933,9 @@ label rest_area_1:
             "When your frenetic charge comes to stop, you cough out the dirt and the blades of grasses caught in your mouth. When you come back to your senses, you are met with a laughing dog unable to stop."
         
             am "Deserved it, jackass."
-      
+
             hl "What did you say?"
- 
+
             am "You heard. Just get up. You won't get anywhere like this."
             
             "You get up. You rub your head out of pain and you can feel a nasty bump on your head. Maybe you should've asked for Ammon."
@@ -743,7 +957,7 @@ label rest_area_1:
     cl "Just a wrong step and you're done for. Don't ever misstep, you hear me? Not ever. {w}You are a deviant and you know it."
 
     am "Hum Gap, what are you looking at? You've been staring for quite some time now."
-   
+
     "Ammon tilts his head from the other side of the motorcycle to look at your reflection in the mirror"
 
     am "You've got to stop looking at yourself like that. You look like you are on the brink of murdering someone."
@@ -906,7 +1120,7 @@ label phone_booth:
     az "There she goes. On her rant like always."
     
     dk "Well it'd be rude to interrupt her don't you think?"
-     
+
     az "Then don't"
     az "Think of something else."
 
@@ -1072,7 +1286,7 @@ label phone_booth:
 
     hl "I had to check up on him that day too... He shouldn’t have eaten that much."
 
-    mj "Actually Gappounet... I am the one who went check up on him, I made you stay at the table to keep watch on our stuff."
+    mj "Actually Howly... I am the one who went check up on him, I made you stay at the table to keep watch on our stuff."
 
     "A sense of discomfort and awkwardess emanates from Marie—Jil’s words like opening matriochka dolls. She had to witness him bathing in his vomit after all. You wouldn’t want to be the one that had go that day."
     
@@ -1088,7 +1302,7 @@ label phone_booth:
 
     "Silence fills the air as it reeks with your poor fabricated lie. Marie–Jil returns you an doubting laugh, with multiple layers of sarcasm, suspicion and reservation. She was, with a lack of better words, able to see right through you."
 
-    mj "Sure Gappounet."
+    mj "Sure Howl."
     mj "Anything worthy telling me about him?"
     
     menu:
@@ -1111,7 +1325,6 @@ label phone_booth:
             mj "Don't tell me you have forgotten how he could be stubborn about his preferences?"
             hl "Maybe I have."
             mj "You don't remember huh?"
-           
     
     mj "Well anyway, I wanted to talk to you about something that was bothering me lately..."
 
@@ -1257,11 +1470,11 @@ label phone_booth:
     
     hl "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH"
     hl "SHUT UP I’M NOT A MONSTER"
-  
-    hl "Shut up. Shut it. Shut up, shut it, shut up, shut it, shut up shut it shut it shut up shut up shut up"
+
+    hl "Shut up. Shut it. Shut up, shut it, shut up, shut it, shut it up shut it shut it shut up shut up shut up"
     hl "{size=60}SHUT THE FUCK UP{/size}"
 
-    "A loud crash echoes and resonates within the phone booth. Slumped down, you don’t move anymore. Your head’s empty but a shrill and piercing white noise in your ears. You’re clawed to the ground and won’t get anymore."
+    "A loud crash echoes and resonates within the phone booth. Slumped down, you don’t move anymore. Your head’s empty but a shrill and piercing white noise in your ears. You’re clawed to the ground and won’t get up anymore."
     "When your bloodied vision sets back into focus, you observe with a dead eye the destroyed–to—thousand—pieces receiver on the ground, you come to wonder what has guided you to this point." 
     "You rise your hands at eye–level vision to watch the blood spill out of your hands." 
     "What happened that has come to you to bloody them. {w} What happened Semptember Friday the 13th?"
@@ -1276,142 +1489,134 @@ label rest_area_2:
     scene parkingLot 
     with fade
 
-    "You rush back towards the bike in hope to flee the burning rising inside the glacial heart of yours you wish you could shut out." 
-    "The more you run, The more the distance between you and the vehicle stretches to unreasonable length, the cicadas, witnessing this pitiful performance, coulnd’t hold back their laughter."
-    "Heinous hyenas; that’s what they are. You could mistake them for buzzing, singing, drilling or cries, but I hear them very well: it was a loud sarcastic cackle."
-    "Sweat drops blur my vision. Or maybe it was tears. Either way, the distorted landscapes didn’t come back once I’ve run through the kilometers to reach the bike."
-    "The metallic frame as my only support, I huff and huff, grasping for air." 
-    "The tie tightening my neck for a long time, decided it was time to choke me. Not able to bear it anymore, I start to get rid of my blazer that was imprisoning and suffocating me."
-
-    am "Huh, Gaspard? Are you alright?"
-
-    "A familar voice and the sound of a belt swinging around rise my ears like antenna and stops me dead in my tracks. I slowly turn around my head to be met with the concerned face of a dog with his belt unbuckled."
-    "An embarrassing contest of glances followed and I coulnd’t break the glaze. He finally buckles it up but that expression mixed with fear and inquisitiveness doesn’t disappear at all."
-
-    am "Were you...{w} undressing? Why do you sweat so much?"
-    ## TODO: Make him joke about undressing (it’s not a contest)
-
-    "He drowns me with questions."
-
-    am "Who did you call? Was it Marie–Jil? What did she tell you?"
-
-    hl "Your fly."
-
-    am "My... what?"
-
-    hl "Your fly’s opened."
-
-    "Ammon looks down, confused, to notice that, indeed, his fly is opened. He zips it up and raises his head back with an unamused look."
-
-    am "… Anyway, have you been running?"
-
-    "You quickly search for an excuse and determine that his proposition is the best outcome."
-
-    hl "Exactly... {w} I was making a little jog to make me stay awake."
-
-    "Ammon approaches me, maintaning the gaze as if just looking away will break the link between us."
-    "At close range, he lays down his hand on my shoulder. His claws soflty brush my jacket. I know it is a very arduous task for him to be that considerate."
-
-    am "Do you want to talk about what just happened?"
-
-    hl "No… I’m alright."
-
-    "He helps me set back my sweater. It’s embarrassing coming from him that my cheeks get warm."
-
-    am "Well if you need anything, tell me huh? I ’ll always be there."
-
-    play music "audio/music/griff.mp3" loop fadein 2.0
-
-    "All of the sudden, he takes you in his comforting embrace." 
-    "You are pressed against his breathing chest and his periodic huffing and puffing lulls you head and you forget with every going and coming why you were in such distress earlier."
-    "His chiseled–out arms go around, under your armpits so his warmth travel in every tinges of your skin and it soothes you, relaxed more and more by his reassuring heat. His embrace was comparable to a loving brooding hen."
-    "He scratches you under the neck, your weak spot and you start purring. The low hum of your sound of sootheness resonates in his chest helps him uncontract his muscles making that you finally make one with him."
-    "You breathe out a sigh of relief, happy that you are not alone in this world. If it was only you two right now, you’d still be satisfield."
-    "Ammon breaks the silence with comforting words."
-
-    am "Listen, Gaspard. I don’t know what happened with Marie–Jil but my guess is that she bothered you with the events reganding your father, right?"
-
-    "Your heart sunkens when your hear that word. You really don’t want to talk about it."
-
-    am "Don’t worry, I won’t prod at you about it... Just know that she has their reasons. What happenned that day really marked her. Please don’t hold that up against her."
-    am "Just now, that I won’t be asking any questions. Until you are ready. Until then, you’ll always be safe around me. Please do not worry. Everything’s fine, see?"
-    am "Remember also that if you want to tell me anything, I won’t judge you. I will even help you. You have nothing to fear with me ok?"
-    am "I can feel you carry a very heavy burden. You shut everyone out because of that. You don’t want to bother us. Buc you don’t bother me. As grumpy, bratty you can be, you don’t bother me. I like my little grumpy cat, heheh."
-
-    "Ammon laughs melancholicly. Everything he said sounds like a distand memory, very far away from him."
-
-    am "So please, no matter what happens, don’t leave, ok?"
-
-    "Deep down, a little voice whispers to me \"Just open up\" \"What are you waiting for\" \"He won’t be always there for you\" and my arms move on their own towards the reassuring friend."
-    "A puddle of emotions rains down my throat and dwells deep in my stomach. Some butterflies care not to get close of it, fly away to not be seen again." 
-    "All of a sudden, my limbs fall dead, the threads maintaining them alive and up, slashed through, unfairly."
-    "Nothing remains in my throat but a fragile cry and I mutter it."
-
-    hl "Ok."
-
-    am "Great."
-
-    "He releases you and turns away toward the bike top–box. You wish you stayed like that longer but you know better to not abuse his gentleness so you let him go."
-    "You check your pulse. It came back to a normal pace. You’re relieved. You couldn’t bear any longer the throbbing pain in your chest but the horrible headache hits you like a lift and you rub your temples."
-    "You need something to relax you even more. You look for an aspirin in your pockets but you can’t find any. With all the fatigue and the pain, you wonder how you’re going to take back the road. You look at Ammon."
-
-    hl "Hey Ammon, do you have anything for headaches? It’s really hurting right now. I don’t even know I can stand."
-
-    "He scratches his head hair and search his trousers for any medicine able to help me. Unfortunately nothing comes out of his search."
-
-    am "Sorry Gap, I have nothing on me. I mighgt have a cigarette though. Smoking some helps me relaxing. Perhaps it could help with your headache? Do you want some?"
+    "You lay down onto the frame of the bike. You can’t stand anymore. Dragging yourself here from the booth was already hard enough as it is."
+    "The tiredness and your recent agitated behaviour set you into a second state — there but quite not there."
+    "You rub your eyes. If you were feeling sleepy, you don’t anymore. You’re just nauseated and want to get home as soon as possible."
+    "But you won’t. So you just comatose around. Waiting for Ammon."
     
-    "I consider his proposition. You doubt of Ammon’s statements veracity but you don’t have any better option and you, in your inner soul, crave for some cigarettes. Ammon had initiad to this early this year and you must addict it can be pretty addicting."
+    am "Huh you alright Howl?"
 
-    hl "I do want some. I don’t have nothing better to do anyway..."
+    "You feel a hand on your shoulder. You’re about to raise your head but a the dog crouches to eye–level."
+    "Having his face close to yours sets you uncomfortable but you gulp and stare him back."
 
-    am "Okay cool, let me check my bag, I think I have left some in it. It’ll be quick don’t worry ahah."
+    am "You don’t look fine. Were you able to sleep? Well surely not."
+    am "I’m sorry I took so much time. I had some matters to take care of. I didn’t think it would take that long."
+    am "Maybe we need to take a longer break. Just go take a nap, ok?"
 
-    "He grins at me with his biggest smile and opens the top box on the motorcycle you were driving earlier. As it was going to be quite a trip, you both crammed everything you could in such a tight space. You were proud of your space management."
-    "The gentle hound rumbles around for his stuff and after some long seconds of noises of every kind, he finally finds it." 
-    "A little padlock contained private the contents of his bag. Paris was a big city with all kinds of thieves and pickpockets so you’d never know."
-    "You are tempted to peek into the code of his secrets but you don’t see the purpose of this action, he’s going to bring you what you want anyway. You decide to respect his privacy."
-    "He fiddles with it not for a long time. A small click rings out and he removes it." 
-    "He immediately grabs a box of cigarettes like his precious meal and pulls out his lighter in a swift motion. Once lighted, he shoves it into his mouth."
-    "Then he cleans the inside of his bag and zip it shut. He takes back the defensor of his belongings on the opening. But for some reason, he puts a concerning amount of time locking it."
-    "As you were about to ask him about the issue he was having, another click roses out of the padlock and he wears a satisfied smile. You sigh, relieved." 
-    "He shuffles out the numbers and, as expected, he puts another span of time trying to fit back into the trunk. You think to when you’ll have to get out your bag and you gulp."
-    "Ammon approaches you and when he sets his sight, his face goes from content to worried. That makes you concerned."
+    "You swat his hand away."
 
-    hl "Sooo... Do you have one for me? My headache still really hurts."
+    hl "I’m fine, I’m fine, just let me breathe."
 
-    "He breathes through his teath."
+    am "... What happened between you and MJ? Did you get into an argument?"
 
-    am "Shhh... Yeah about that."
+    hl "No... I did not."
 
-    "He hands you an already empty box of cigarettes. You eye it, utterly disappointed. You raise you head back to Ammon and he can’t stand you sorry look."
-    "He turns away his head, in a guilty motion, crossed arms, compressing his chest out of embarrassement. Every time you try to get his compassion, he flees away"
+    am "Say it with less enthusiasm next time.{w} I almost didn’t believe you."
 
-    am "I’m sorry, Gapgap. I really thought I had one for you. I should have thought I had pretty much smoked everything last time."
+    hl "Right. Anyway I am fine."
 
-    "You observe his elusive face, unable to withstand you. He grimaces in embrassement and cast you some rare looks and looks away as soos as he sets an eye in you gaze."
-    "Something is off. Ammon is not someone who’d forget his stock of cigarettes the day of your big trip. Usually, he has around 3 box of smokes ready for every occasion."
-    "He’s also the type to own up to his mistakes and puff his chest, not afraid of the repercussions. His current states makes you think to a sorry puppy who has done a very bad mistake."
-    "Is he lying? But you don’t see why he would be lying to you. After all, he wouldn’t prevent you to soothe you pain. He can be cruel but not that cruel." 
-    "You find yourself disturbed and confused, not knowing if you should trust your guts or your friend."
+    "Ammon’s mouth twists. He gives you his usual stare."
 
-    am "Anyway, I don’t think a cigarette would help you anyway. You should get some water. That should tone down your headache better in the end."
+    am "Trust me, you look like shit. You should at least rest."
+
+    "Ammon’s sudden careness for you gets on your nerves. He has been cold to you all ride long. Why care about you now."
+
+    hl "Ammon I swear I am fine."
+
+    "You stand up. Proving a point to Ammmon, you forgot your weak state and latent nausea, the world spins gradually around you."
+
+    "The dusk sky, who was empty until now, fills with stars all of colours, it reminds you of the strange colour artefacts that you can find on low–quality photographs."
+    "A sudden headache takes hold of your head like a vice tightening it."
+    "Your stomach churns. Your legs tremble and can’t support your weight any longer. They give out."
+
+    am "Howl!"
+
+    "He catches you before you hit the ground."
+
+    am "I told you you were not fine. Don’t do stuff like that on me, alright?"
+
+    "His muscled arms wrapu around you. A smell of lavender spread through your nose."
     
-    hl "But I wanted to smoke with you..."
+    if azzy_score >= 1:
+        az "You should pass out more often"
+    "He helps you sit on the grass. He crouches yet again and take you with both hands."
+
+    am "What’s going on!?"
+
+    hl "My head hurts."
+
+    "You brush your forehead and your pulsating skull heats up your hand."
+
+    am "Let me see."
+
+    "He puts his hand on your forehead too."
+
+    am "Ok I don’t feel like you have a fever but we’ve got to treat your headache."
+    am "I think I have some aspirins in my stuff, let me get it."
+
+    "Ammon stands up and walks towards the topbox of the motorbike."
+    "Still nauseated, you can’t much more than sit back and watch."
+    "He opens the top—box and get his traveling bag. It is of medium—size, large enough for a 3—day trip."
+    "However, you can’t but notice something familiar with one of his belongings."
+    "Something cylindrical, something blue."
+    "Finally, Ammon pulls out a box of medicines of his bag and gives it to you."
+
+    am "Here, with that, your head will hurt a bit less than before."
+
+    hl "Thanks."
+
+    "You grab the little box."
+
+    am "Wait you’ll surely need some water. Let me fetch some for you."
+
+    "He starts walking to the top—box then stops midway."
+    "He ponders for some moment, for a strange amount of time then turns around."
+
+    am "I just remembered I don’t have any water. There are some faucets in the restrooms, let me you get—"
+
+    hl "That’s alright you’ve already done enough for me."
+
+    "You swallow down the aspirin in one fell swoop."
+
+    if azzy_score >= 2:
+        az "Show off"
     
-    am "Ahah maybe another day then. I have seen bottles in the bike trunk. Go get some ok?"
+    hl "I’m used to take them without water..."
 
-    "He pats me on the shoulder, making me understand it was time that I turn the page. Defeated, you cross over him and go towards the bike."
+    am "Huh I see... Well that’s great. No need to get to the restroom then."
+    am "Well take your time then... We’ll leave when you’re ready."
 
-    am "Oh by the way, could you bring me a bottle too? I’m thirsty."
+    "The discussion drops silent. You’re too tired to get it alive anyway."
+    "You try to rest a bit, but gradually something’s starting to bother you."
+    "You’ve already seen this thing that Ammon had in his bag."
+    "It shouldnt’t catch your attention like that. After all, it’s just his bag. Nonetheless..."
+    "You bite your lip. The more you look at it, the more it doesn’t make sense. Your world revolves, no, distorts around it."
+    "It mesmerises you. You are drawn to it. You can’t let the bag out of your sight anymore. The moth within has to follow this firefly."
 
-    hl "Sure Amm."
+    "You need to check this bag."
+    "Still quite dizzy, you manage to get up. You have to use the bike as a support. You shouldn’t push yourself too much."
+    "But you still get up."
+
+    hl "Hey you know what? I’m thirsty. I think I have some water left in my bag."
+
+    am "Are you sure, you don’t want me to get it for you. You don’t look like you can stand up in your state."
+
+    hl "I feel better now. I’ll feel even better when I’ll drink water, won’t I?"
+
+    am "Sure..."
+
+    hl "Look, I can stand! I’m a big boy aren’t I."
+
+    "Ammon looks at you, unamused. Your attempts at teasing him fall on deaf ears. You roll your eyes."
+    "You sigh and you pinch the bridge between your eyes."
+
+    hl "Ok, I’ll just get the water."
+
+    am "Right."
 
     label restarea_pointnclick_start:
-        "Ok so you should start getting on your way"
-        "Perhaps, he’s right. Perhaps drinking water will really make you head gets better."
-        # "Even though I’m not that thirsty..."
-        "You are curious to what he was doing with the top—box, anyway."
+        "Ammon is definitely hiding something to you."
+        "Your interest has only grown bigger."
         python:
             ammon_talked = 0
             current_screen = "restarea"
@@ -1420,7 +1625,7 @@ label rest_area_2:
             padlock_code = [6, 1, 5, 3]
             checked_padlock = 0 
             
-            got_water = False
+            got_stick = False
             got_notebook = False
             good_code = ""
 
@@ -1432,263 +1637,67 @@ label rest_area_2:
 
 
 label confront_him:
-    scene parkingLot
     python:
         del ammon_talked
         del trunk_explored
         del padlock_code
         del good_code
         del checked_padlock  
-        del got_water
+        del got_stick
 
         current_screen = "" 
-    hl "So Ammon, I have a question for you"
+    am "Can I help you?"
 
     stop music fadeout 1.5
-    play music "audio/music/suspense.mp3" loop fadein 0.5
-    "The daydreaming dog spins his head, intrigued. Your grave tone might have shaken him because concern and worriedness covered all over his face. You feel you are on the good track."
+    play music "audio/music/anger.mp3" loop fadein 0.5
+    "There stands an angry dog"
+    am "Mby I know what are you doing with my bag?"
 
-    hl "Are you sure you don’t have any cigarettes for me. I mean, you always bring more than one, don’t you."
+    "You shiver out of fear. Why did he have to see you do this. If only you could fly very far away from here."
 
-    am "I am sure. It’s just this time... I forgot some at home and only brought one. Nothing more to that."
+    hl "That’s... not what you think, Ammon..."
 
-    "He scratches the back of his head. He doesn’t have anything more to say to you. You almost feel pity for him. If you had not discovered it, you would have trusted him. But you can’t anymore."
+    am "Then what are you doing with my {$picked_from_the_bag} in your hand?"
 
-    hl "Are you really sure?"
+    hl "I don’t know I just took it, I swear!"
 
-    am "Yes, I am."
+    "Ammon yells at you."
 
-    hl "Are you really {b}really{/b} sure?!"
+    am "You just took it??? The padlock just disappeared then??? That’s what you’re going to tell me?"
+    am "Because, if you are, don’t even show your shitty face to me anymore."
+    am "You fucking cracked the padlock, you asshole."
+    am "Well I’m glad you remember my birthday now, bastard. Hope it helped you crack the code."
+    an "I would’ve prefered you remember a fucking month ago??? Don’t you think?!"
+    am "Why did you even do that?? You can’t trust me that much??"
+    am "You’ve pissed me off all day and I’ve tried everything to set you comfortable, even comforting when you were bitching and doing one of your too many whims."
+    am "And that’s how you thank me back?? By snooping my stuff??"
 
-    am "Yes!!"
-
-    hl "Ok then do you have an idea of what this is?"
-
-    "You pocket out, the heart of your sorrows, the epicenter of your troubles, the one responsible for that all, the box of cigarette in the center of your palm so he could clearly see it."
-
-    hl "Do you recognise this?"
-
-    "As soon as Ammon sets his eyes on the object, he slumps his shoulders, his face distorted in an unpleasant expression."
-
-    am "I recognise it, yeah... It’s the box of cigarettes that was in my bag."
-
-    hl "Yes it is. Do you know what it means?"
-
-    am "Yes."
-
-    "He stands there, akwardly, arms dangling, waiting for your response carefully."
-
-    hl "Then why did you purposefully hide it from me?"
-
-    am "... I don’t know."
-
-    hl "You don’t know? You don’t know?? More like you don’t want to tell me, you liar."
-
-    am "I’m not a liar."
-
-    hl "You’re not a liar, what do you mean you’re not a liar? Then what does that mean, these damn cigarettes!"
-
-    "Ammon raises his head defiantly, biting his lip. You’re pissing him off and he’s going to make you understand that you should back off." 
-    "But you don’t care, that he comes at you! You can take all of his charges"
-
-    am "I never said I didn’t have another box of cigarettes, I just said that the one I showed you was empty. Nothing more. You never asked if there was any more."
-
-    hl "Don’t play on the words, you trickster, you deceived while I was at my lowest."
-
-    am "Don’t make it a fuss."
-
-    hl "A fuss, a fuss?? I am the one making a fuss??!"
-
-    am "Yes you are."
-
-    hl "So you{size=50} should’ve had given me some, we wouldn’t be here then!"
-
-    am "Jeez, calm down, it’s just cigarettes..."
-
-    hl "IT’S NOT JUST CIGARTTES, IT’S CIGARETTES YOU’VE HIDDEN FROM ME."
-
-    "You yell out at the top of your lungs in the exposed ears of the elusive dog. They shivers out of the loud sound."
-    "Ammon takes a step back, startled by your outburst.\n{w} His concerned eyes look for a black and white cat named Gaspard. However, only a stranger stands in front of him"
-
-    $ del take_him_out
-    "Ammon stays silent, boiling. He contains himself to retaliate, but it is a hard task for a loud proud barking dog. His fists are clenched."
-    "You stick yourself to him, only centimeters away. You press his chest with you finger to bug him even more. You want to make him crack, he’s got to pay."
-
-    hl "Give me your lighter."
-
-    am "Give you my what?"
-
-    hl "You’ve heard me. Give me your lighter. I wont repeat myself. I need it for smoking."
-
-    "The cornered hound rolls his eye but eventually, reluctantly, reaches for his jacket breast pocket and takes it into hands. For some moments, his gaze lingers in the void."
-    "Taking avandtage of his moment of distraction, you snatch it from his hands and wave it into his face. He shows an irritated expression."
-    "He gnarls his teeth at me but, ultimately, decides to do nothing about your annoying behaviour."
-
-    am "Go on if you want it that much..."
-
-    "You follow his lead and you pull out a cigarette from your now–yours box and you attempt to light it with difficulty as you are not used it." 
-    "There are snickers in your back but you can’t hear them, you’ve finally got what you wanted. After a few tries, you manage to light it."
-    "You huff your smoke and let it whisk away in the air in a majestic small cloud of your worries."
-    "You wait for the adrenaline and the pleasure to kick in but you find yourself empty, of any sensations—worse, you didn’t think you’d say that—but it intensifies the throbbing pain in your head."
-    "Clutching your head for salvation, you hear a taunting and provocative voice just behind you."
-
-    am "Hey, have you ever thought that I planned, of you, that you’d do that?"
-
-    "You turn your head, caught short by his intervention."
-
-    hl "planned... that I’d do what?"
-
-    am "Exactly what you just did. Snoop around my stuff because you can’t trust me when I tell you something."
-    am "I mean, I couldn’t believe my eyes. As soon as I turn my back, I find you rummaging through my stuff and toying with my padlock."
-
-    hl "I did not–"
-
-    am "Why are you trying to deny it?! Those cigarettes didn’t end up in your hands by coincidence, did they?"
-
-    "You shut yourself. He was right. You did snoop around his stuff. In retrospective, you went overboard with what you did." 
-    "No good friend would just put his nose in private stuff just for a cigarette. But the urge was stronger than you, you couldn’t help it. Your cheeks get red and you boil out of shame."
-
-    am "Well that’s not like that was the first time you did that. You always loooooooved snoop around my stuff anyway. I’m not really surprised."
-    am "I just wanted to see if you really trusted today. After the last month where I wasn’t able to see you at all, because you’d shut yourself inside, I was confused about the state of our friendship."
-    am "So I made a test, a little game of mine... and you failed miserably, congratulations"
-
-    "He claps his hands, slowly, sarcastically with an apathetic face, bored of your antics. You couldn’t believe yourself. How were you able to be such a fool to fall into his trick that easily."
-
-    am "Anyway, I still want to play our game, so I can give you a second chance."
-
-    "Confused, you tilt your head at him. You had no intentions to partake one more time into his game. But still, a second chance for what?"
-
-    am "So here it is: Can you guess why did I change the padlock code?"
+    "You stay shut. Tears overflow your eyes. You didn’t want to do that."
     
-    hl "You.. you’ve changed the code?"
+    dk "Why did you even do it."
 
-    am "Why yes! you don’t think that the code to my belongings would be that easy, do you?  Did you think that I would set a code that much easy to crack??"
+    hl "Please understand me! I was just–"
 
-    "He sets his piercing gaze in mind, with an a expectant smirk up his ears on his face. You gulp. That doesn’t sound good."
+    am "What is there to understand?? DON’T FUCKING TOUCH MY STUFF YOU UNDERSTAND??"
 
-    am "Well not anybody could crack it. Only a few people, those people being intimate relatives, that only they would know about me. I don’t know, my closest friend for example?"
-    am "So tell me, Gaspard, why did I change the code?"
+    "Tears stream down your cheeks."
+    "You tighten the {$picked_from_the_bag}. This is your last anchor of your relationship. The last thing standing for both of you."
 
-    menu why_did_he_change_the_code:
+    az "Cling onto it."
 
-        "To see if I knew your real name":
-            am "... What?"
+    dk "Do not let it go."
 
-            hl "Yes Ammon, in reality... You’re not named Ammon... but Éric!!"
+    am "Give it back to me."
 
-            am "... Yes and?"
+    hl "... What–"
 
-            hl "And?"
+    am "GIVE BACK WHAT YOU STOLE FROM ME."
 
-            am "Yeah sure my name isn’t really Ammon, it’s a nickname {b}you{/b}’ve come up with because of my apparence."
-            am "But what does that have to do with the code?"
+    "All of the sudden, Ammon charges."
 
-            "... He’s right. It’s totally out of topic"
-
-            jump why_did_he_change_the_code
-        
-        "To see if I knew your birthday":
-            am "... Yes you are right."
-
-        "To see if I knew your location of birth":
-            am "... And what do you do with my location of birth?"
-
-            hl "You take the department number to input it into the padlock!"
-
-            am "Honestly that’d be a good guess if the department number wasn’t just two digits. The padlock makes 4 digits..."
-            am "Good guess... I guess?"
-
-            jump why_did_he_change_the_code
-    
-    am "The reason I change the code was to check if a friend of mine knew my birthday. Heheh..."
-
-    "You start to feel uncomfortable. A sharp and extreme mingle builds up inside of your abdomen. Your throat gets tighter every second."
-
-    am "So let me ask you another question. I’m sure you don’t mind anyway right?"
-    am "You love playing my games anyway so be prepared."
-    stop music fadeout 0.5
-    play music "audio/music/anger.mp3" loop fadein 0.1
-    am "Why the hell did you steal my wallet?"
-
-    "A growing rage fumes out of his ears. His fists are so clenched bloods spills out of his nails. A violent shock bursts through you. He noticed?" 
-    "You lose your nerves, coming up with your best innocent impression."
-
-    hl "Huh– No—no Absolutely not! Why would–would I do that?"
-
-    "You stumble on every one of your words. You didn’t expect Ammon to pick on your larceny. You tremble, he musn’t know it was you."
-
-    hl "Maybe you’ve dropped it on the road?"
-
-    am "Bullshit! You know damn well I didn’t drop it, you liar."
-
-    "He slowly approaches you. Every step he takes, you recoil. Every breath he breathes, you gulp, Every piercing glance he casts you, you look away, unable to withstand him."
-    "When he reaches a close–enough distance that your whiskers could rub his snout, he pokes and prods at your chest in a similar fashion you were accusing him of concealing his belongings."
-
-    am "At first, I was confused. Why would Gaspard ask me to watch his notebook for the thousandth time? I figured you were just recovering your own way."
-    am "Then I felt your warm on your arm on my back... then your warm hand in my jeans’ pocket. What was he doing I was thinking at the moment."
-    
-    "He wears a sad smile. Bittersweetness and regrets ooze out of his words."
-
-    am "You weren’t that stealthy. You could’ve gone for my pants, it would’ve felt the same."
-
-    "His meek smile disappears for his frowned and scrunchy eyebrows to take place. He’s deeply mad at you. There’s no coming back from that."
-
-    am "But then, here it comes. You take out your hand. My wallet is gone."
-    am "I was lost. What could you do with my wallet. For a moment, I thought it was your crooked—out way to play a trick on me or make me a surprise."
-
-    "His words before soft, emanating a deeper irratation, became primal growls. His foul breath moves every hair of your face."
-
-    am "Suddenly, an awful thought came to mind. It couldn’t be possible, you wouldn’t dip dowm that low, would you?"
-    am "And there I see you, toying back with that bloody padlock and finally unlocking it."
-
-    "His sharp drooling teeth fill your vision. That reminds you that it was foolish to even believe you could have the upperhand on him."
-
-    am "So this is why I’ve learned today: you don’t trust me any bit that you are willing to snoop around in my stuff, nose deep down, like a vulture."
-    am "Next that you don’t even {size=50}fucking{/size} remember my {b}birthday{/b} and that you don’t mind pickpocketting me and steal my wallet."
-    am "You really had to look at my ID to guess my birthday? You know you could’ve asked me? Oh no I forgot. You are a sad distrustful scavenger willing to go through my shit to get what he wants."
-
-    "You’re lost for words. You were mistaken on every level and now, your then close friends was tossing at you everything is wrong with you, utterly disappointed."
-    "You stare at the ground, in a dead trance, not able to reflect anymore because of your blans mind, this mind ravaged by the missiles launched at you."
-    "Arms dangling, you had no purpose in life anymore. Once again, you return to your puppet with no master state, lifeless."
-
-    am "I don’t recognise you anymore, Gaspard. I can’t recognise you since the day you missed my birthday."
-    am "It’s like the day of my birth... You’ve died. What really happened that day?"
-    am "I know I’ve said I’ll never ask you questions about it. But then, you’ve demonstrated you don’t trust me anymore.{w} So I don’t trust you anymore either."
-
-    "Your mind breaks at his words. Is he going to reject you? Is he going to never approach him again?"
-    "You can’t stand that. You can’t stand that Ammon, your childhood friend, the one you’d think you never lose, that always be with you no matter both of your antics, is going to cut ties with you."
-    "You have to find something to make him stay. He can’t leave you, otherwise you’ll be alone with your thoughts. With that day in loop."
-
-    hl "Wait! Huu–Huuh I didn’t steal you wallet for that!"
-
-    "You interrupt his plea. You caught his attention. Don’t waste it. You scramble in your mind to think of a good enough excuse."
-
-    hl "I ste— I’ve taken your wallet to make you a surprise, to cheer you up, ok?! I never forgot your birthday, all right??!"
-
-    "You gesticulate around like a madman, with vivid desesperate motions, and your exorbitated eyes, crazed, frenzied. You’d scare yourself."
-    "Those same eyes implore him to believe you in vain."
-
-    hl "So please don’t leave me ok? I beg of you!"
-
-    am "Give me back my wallet."
-
-    "Ammon answers sternly, arms crossed, closed, unsensitive to your pleadings."
-
-    am "With all of the shit you’ve put me through, you surely had the time to make your little surprise. I want to see it."
-
-    hl "It’s– It’s not done!"
-
-    am "Don’t care. It’s my wallet anyway. I have the right to get it back any time and I’ve decided that it was right now."
-
-    "Ammon, in an isntant, dashes for your pockets. No you can’t let him, you won’t be able to go back if he puts his hands on it. You have to prevent him at all cost."
-
-    hl "Wait, I’m not done!"
-
-    am "I don’t care! Give it to me!"
-
-    "Ammon grabs the wallet but there is too much at stake to let it go so you clutch his hand like you’d hold for your life."
-    "You wrestle for your life to get the wallet back. This is your last chance to set things right so you scratch at him, hiss at him, and even bites him."
-    "On the other hand, Ammon won’t let go either. He barks at you, jerks his head in all directions. He’s slipping through your fingers the more you pull that wallet."
+    "Ammon grabs the {$picked_from_the_bag} but there is too much at stake to let it go so you clutch his hand"
+    "You wrestle for your life to get the {$picked_from_the_bag} back. This is your last chance to set things right so you scratch at him, hiss at him, and even bites him."
+    "On the other hand, Ammon won’t let go either. He barks at you, jerks his head in all directions. He’s slipping through your fingers the more you pull that {$picked_from_the_bag}."
     
     hl "Please Ammon!! Trust me!!!"
 
@@ -1697,7 +1706,7 @@ label confront_him:
     am "{size=60}BACK OFF{/size}"
 
     "The next moment, his fist connects to your eyebrows arch and you blast through the air on his motorcycle."
-    "The wallets sits on the floor, its contents spilled in the grass, last relic of your fleeting friendship, trampled"
+    "The {$picked_from_the_bag} sits on the floor, its contents spilled in the grass, last relic of your fleeting friendship, trampled"
     "You hit your head hard on the frame of the motorcycle. Blood trickles down from it. You pass your head on your wound. Just blood."
 
     am "FUCK, sorry, I didn’t mean to! Let me hel–"

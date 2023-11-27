@@ -112,8 +112,8 @@ define config.window = "auto"
 
 ## Transitions used to show and hide the dialogue window
 
-define config.window_show_transition = Dissolve(1.0)
-define config.window_hide_transition = Dissolve(1.0)
+define config.window_show_transition = Dissolve(0.2)
+define config.window_hide_transition = Dissolve(0.2)
 
 
 ## Preference defaults #########################################################
@@ -208,3 +208,8 @@ init python:
 ## by a slash.
 
 # define build.itch_project = "renpytom/test-project"
+
+# Create a channel for beeps so they don’t interrupt sfx
+init python:
+    renpy.music.register_channel("beeps", "sound")
+    renpy.music.register_channel("sfx", "sound")

@@ -22,24 +22,24 @@ default evid_label_to_go = ""
 init python:
     def narrator_noise(event, interact=True, **kwargs):
         if event == "show":
-            renpy.sound.play("audio/sounds/beeps/cell_noise.ogg", channel="sound", loop=True)
+            renpy.sound.play("audio/sounds/beeps/cell_noise.ogg", channel="beeps", loop=True)
         elif event == "slow_done":
-            renpy.sound.play("audio/sounds/beeps/silence.wav", channel="sound", loop=True)
+            renpy.sound.play("audio/sounds/beeps/silence.wav", channel="beeps", loop=True)
     
     def gap_noise(event, interact=True, **kwargs):
         if event == "show":
-            renpy.sound.play("audio/sounds/beeps/howl_1_normal.ogg", channel="sound", loop=True)
+            renpy.sound.play("audio/sounds/beeps/howl_1_normal.ogg", channel="beeps", loop=True)
         elif event == "slow_done":
-            renpy.sound.play("audio/sounds/beeps/silence.wav", channel="sound", loop=True)
+            renpy.sound.play("audio/sounds/beeps/silence.wav", channel="beeps", loop=True)
     
     def ammon_noise(event, interact=True, **kwargs):
         if event == "show":
-            renpy.sound.play("audio/sounds/beeps/deep_1_normal.ogg", channel="sound", loop=True)
+            renpy.sound.play("audio/sounds/beeps/deep_1_normal.ogg", channel="beeps", loop=True)
         elif event == "slow_done":
-            renpy.sound.play("audio/sounds/beeps/silence.wav", channel="sound", loop=True)
+            renpy.sound.play("audio/sounds/beeps/silence.wav", channel="beeps", loop=True)
     
     def clair_noise(event, interact=True, **kwargs):
         if event == "show":
-            renpy.sound.play("audio/sounds/beeps/clair_1_normal.ogg", channel="sound", loop=True)
+            renpy.sound.play("audio/sounds/beeps/clair_1_normal.ogg", channel="beeps", loop=True)
         elif event == "slow_done":
-            renpy.sound.play("audio/sounds/beeps/silence.wav", channel="sound", loop=True)
+            renpy.sound.play("audio/sounds/beeps/silence.wav", channel="beeps", loop=True)

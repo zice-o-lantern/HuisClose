@@ -1,14 +1,15 @@
 label test:
-    show ammon no_clothes
-    am "Hey testing sprites don’t mind me"
-    show skyyyyy behind ammon
-    with dissolve
-    am right "doing another test"
-    show ammon biker with dissolve
-    show layer master at move_right
-    am j_noway "Not flashing anymore"
-    show skyyyyy
-    show ammon
-    with move
-    # show ammon front with dissolve
-    am e_neutral j_neutral "Look at me in the eyes"
+    "Hello testing timer"
+    $ time = 5
+    $ timer_range = 0
+    $ timer_jump = "run_out_of_time"
+
+    show screen countdown
+    menu:
+        "Test":
+            "you made it"
+        "Please":
+            "ts’a.uirts"
+
+label run_out_of_time:
+    "well that’s bad"
