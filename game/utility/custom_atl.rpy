@@ -59,9 +59,21 @@ transform zpos_bg:
     zoom 2.535
     align (0.5, 0.5)
 
+transform zpos_camera:
+    parallel:
+        easein 1 zpos 1920
+    parallel:
+        easein 1 ypos 0
+
 transform american_shot:
     xalign 0.5
     yalign 0.25
+
+transform close_shot:
+    parallel:
+        ease 2 zpos 700
+    parallel:
+        ease 2 ypos -500
 
 transform WiggleVision:
     xcenter 0.5

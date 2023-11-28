@@ -5,7 +5,7 @@ init python:
     y_eye_offset = 0
 
     eye_right = 30 
-    eye_left = -50 
+    eye_left = -25 
     eye_up = -50 
     eye_down = 20 
 
