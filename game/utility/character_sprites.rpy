@@ -1,8 +1,15 @@
 init offset = -4
 
+init python:
+    x_eye_offset = 0
+    y_eye_offset = 0
+
+    eye_right = 30 
+    eye_left = -50 
+    eye_up = -50 
+    eye_down = 20 
+
 layeredimage ammon:
-    zoom 0.4
-    anchor (0.5, 0.6)
     group body:
         attribute body default "ammon_body_neutral" 
     group head:
@@ -28,8 +35,24 @@ layeredimage ammon:
     
     group pupils if_any["right"]:
         attribute pupils default "ammon_face_right_pupils"
+        attribute pupils_right "ammon_face_right_pupils":
+            xpos eye_right
+        attribute pupils_left "ammon_face_right_pupils":
+            xpos eye_left
+        attribute pupils_down "ammon_face_right_pupils":
+            ypos eye_down
+        attribute pupils_up "ammon_face_right_pupils":
+            ypos eye_up
     group pupils if_any["front"]:
         attribute pupils default "ammon_face_front_pupils"
+        attribute pupils_right "ammon_face_front_pupils":
+            xpos eye_right
+        attribute pupils_left "ammon_face_front_pupils":
+            xpos eye_left
+        attribute pupils_down "ammon_face_front_pupils":
+            ypos eye_down
+        attribute pupils_up "ammon_face_front_pupils":
+            ypos eye_up
 
     group eyes if_any["right"]:
         attribute e_neutral default "ammon_face_right_eyes_neutral"

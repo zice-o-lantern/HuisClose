@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("HuisClose")
+define config.name = _("TheFireflyWithin")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -38,7 +38,7 @@ I want a daddy to lull me to sleep.
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "HuisClose"
+define build.name = "TheFireflyWithin"
 
 
 ## Sounds and music ############################################################

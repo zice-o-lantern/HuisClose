@@ -7,7 +7,7 @@ label prologue:
     cl "Honestly{w=0.5}, I cant’t believe you could strangle him that hard."
     cl "I know I couldn’t{cps=3}...{/cps} {w=1.0}I think."
     cl "And even then it wasn’t enough to make him shut."
-    play sfx "sounds/rope_squeak.ogg" fadein 3.0 loop volume 0.3
+    play sfx "sounds/rope_squeak.ogg" fadein 0.5 loop volume 0.3
     extend " You had to use other means."
     cl "God, why do I enjoy it. I knew him. I knew him and I loved him.{w} So why, when I watch him, I only feel pleased."
     cl "You made me like that. You made me a monster.{w} You’re a monster."
@@ -110,7 +110,7 @@ label prologue:
         ease 0.5 zpos -280
         ease 1 zpos -350
         ease 0.5 zpos -320
-        ease 1 zpos -200
+        ease 1 zpos -400
         ease 0.5 zpos -370
         ease 1 zpos -450
     cl "I crawled desesperately to it and chug down the water."
@@ -349,26 +349,33 @@ label prologue:
     stop music
     stop sound
     extend ", I need You."
-    scene black
-    scene ruralRoad with Fade(0.5, 4.0, .5)
+    camera:
+        zpos 1920
+    scene black at zpos_bg
+    pause 1.5
     # play sound 'audio/sounds/car_white_noise.ogg' loop
     jump little_road
 
 label little_road:
+    # show ruralRoad
+    # with Fade(0.5, 4.0, 0.5)
     play music "audio/music/The Beatles - Here Comes The Sun (2019 Mix).mp3" fadein 5.0 loop
 
+    show ruralRoad at zpos_bg
+    with Fade(0.5, 4.0, 0.5)
 
     "You wake up from your reverie at the cold hands of someone grabbing your shoulder."
     hl "Aaaaaah!"
 
-    show ammon with dissolve
-    
+    show ammon at american_shot
+    with dissolve
     am "Hey were you sleeping?"
     
     hl "Huh—whuu?"
-    
+
+    $ x_eye_offset = 50
     am "Yes you were. Sorry I had to stop and wake you."
-    am right "I was starting to feel your head on top of my back and you wouldn’t budge and that didn’t help me drive."
+    am right pupils_right "I was starting to feel your head on top of my back and you wouldn’t budge and that didn’t help me drive."
 
     hl "Oh... Sorry Ammon I didn’t mean to."
 
@@ -379,21 +386,31 @@ label little_road:
     with dissolve
     
     "You rub your eyes as Ammon restarts the bike and goes on its way."
-    "Well you would rub your eyes if it weren't for the fact that you're wearing an helmet."
+    "Well you would rub your eyes if it weren't for the fact that you're wearing a helmet."
     "So you opt to blink your eyes until the numbing grain salts flow out of your eyelids."
     "Although, as much as you want, the sleepiness is still quite there. At the shores, coming in waves."
-    "You might be sleepy but the rock song blasting out of the radio."
+    "The road under your feet moves gradually until it becomes a blur and you’re back in the motion to your destination."
+    "You wish you could just teleport to the hotel you’re both going. You’re quite car sick so you could use less trips in vehicles."
+    "Unfortunately, there are no thousands possibilites to get over there and Ammon insisted. You quote \"Don’t worry, Howl, It’ll be fun you’ll see. That’ll change from your moody daily life.\""
+    "You still fail to see what’s so fun about it but too tired to protest, you accepted."
+    "You try to set you comfortable, leaning on your back, eyes up above the sky, on the bike but no such luck until now."
+    "You’re tempted to grab Ammon and use him as support, so your back will stop hurting."
+    "But considering the fact that Ammon just waked you up so you don’t use him as a support and that you would feel akward about it, you decide it was a wrong good idea, against your better judgement."
+    "All the while you were looking for to rest, a rock song is blasting out of the radio..."
     "You find it..."
 
     $ radio_on = True
+    $ asked_to_turn_off = False
+    $ trying_to_sleep = False
 
     menu:
         "Annoying":
+            $ asked_to_turn_off = True
             az "Turn that off."
             
             "Compelled by your inner self, you lean to Ammon and tap him on the shoulder; you don't know if he will listen to you but you might still ask it."
             
-            show ammon right
+            show ammon right at american_shot
             
             "Ammon begrudgingly turns his head toward you, visibly annoyed. Perhaps not the better idea."
             
@@ -407,9 +424,9 @@ label little_road:
                 "It gives me an headache.":
                     am front j_disgusted "Well it didnt gave me one."
                     
-                    "You grip your tighs. Is he that inconsiderate?"
+                    "You grip your thighs. Is he that inconsiderate?"
                     
-                    hl "Please, pretty please... Traveling for me is already hard enough as it is."
+                    hl "Please, pretty please... Travelling for me is already hard enough as it is."
                     
                     "You lock eyes with Ammon. In spite of you, he is already probing inside you with those yellow eyes."
                     "It's a tendency of his so you maintain the contact as always."
@@ -419,9 +436,13 @@ label little_road:
                     
                     hl "Thanks Ammon."
                     
-                    am "Don't thank me."
+                    am e_smug "Don't mention it."
                     
                     hide ammon
+                    stop music fadeout 2.0
+                    $ radio_on = False
+
+                    play sound "audio/sounds/bike_white_noise.ogg" fadein 5.0 loop
                     
                     "He grumbles, turns the radio off and sets back to look at the horizon."
                     "Relieved, your muscles relax and you let the hum of the bike fills your ears. You didn't have a headache, but it might as well give you if that kept going on."
@@ -433,14 +454,17 @@ label little_road:
                 
                 "I don't like it.":
                     
-                    "Ammon stares at you in disbelief. His furrowed eyebrows lets you know that it doesn't really bother him."
+                    show ammon front e_disgusted j_disgusted
+                    "Ammon stares at you in disbelief. His furrowed eyebrows lets you know that he doesn’t get your demand."
                     
-                    am "So what? I like it."
+                    am e_neutral "So what? I like it."
                     
                     hl "Oh come on ! Can't you make an effort?"
                     
                     am "For what? It's my bike so it's my radio."
-                    am "I get to pick the song I want. Deal with it."
+                    am right "I get to pick the song I want. Deal with it."
+                    
+                    hide ammon with dissolve
                     
                     "He cuts short to the discussion and sets back to driving and looking at the horizon."
                     
@@ -462,11 +486,13 @@ label little_road:
             
             menu:
                 "Try to sleep":
+                    $ trying_to_sleep = True
+                    show eye_lid at zpos_bg
+                    with dissolve
                     "You decide that it's the best moment to take a nap. Surely he won't notice."
                     
-                    ## TODO: Replace with eyelids animation
-                    show black 
-                    with dissolve
+                    show expression "#000" at zpos_bg
+                    with blink_reverse
                     
                     "You let your tired eyelids be pulled by the unforgiving gravity and you doze off."
                     "And little by little your mind ascends to Wonderland."
@@ -477,7 +503,7 @@ label little_road:
                     "A wrong move and you fall head first on the asphalt at full speed."
                     "The thought of it strangely infuses life into you and you find the idea of sleeping not so appealing anymore."
 
-                    am "Still dozing off?."
+                    am "Still dozing off?"
 
                     hl "Hmm? um, yeah ahah."
 
@@ -485,17 +511,40 @@ label little_road:
 
                     "An uncomfortable silence follows. Ammon looks for something to say but is lost for words."
                     "More the time passes, more the threat of falling off the bike doesn't bother you anymore. You have to sleep."
-
+    
     am "Hey Howl? Don't you think it's nice around here?"
     
-    hide black with dissolve
-    show ammon
-    
+    if not trying_to_sleep:
+        show ammon right e_smug j_noway at american_shot
+        with dissolve
 
-    "Ammon, interrupting to your train of thought, gestures his head towards the scenery, that, funny enough, you've been looking at for some time."
+    "Ammon, interrupts your train of thought."
+
+    if radio_on and asked_to_turn_off:
+        "Coming out of him that’s rich." 
+        "You just asked him to turn off the radio and he’s pretending nothing happened."
+        "But you don’t want to get on his bad side even further so you let it pass."
+    elif not radio_on and asked_to_turn_off:
+        "You suppose that now the radio’s turned off, he wants to fill in the silence."
+        "You don’t mind so you answer his question."
+    elif trying_to_sleep:
+        show ammon right e_smug j_noway behind eye_lid at american_shot
+        with dissolve 
+        hide expression "#000" at zpos_bg
+        with blink_transition
+
+        hide eye_lid with dissolve
+
+
+        "Well so much for trying."
+        "You wish he let you just alone but that won’t be possible. He must be trying to fill in the silence between the two of you."
+        "You straighten up your back and you rub your eyes yet again."
+
+        az "Let’s just answer his question."
     
     menu:
         "I do think so":
+            show ammon j_neutral
             hl "I haven't had the opportunity to look at them lately."
             
             am "... Because of your studies?"
@@ -510,27 +559,30 @@ label little_road:
             am "You should get out of your house sometime..."
             
         "It isn't new":
+            show ammon j_neutral
             hl "I mean, I could see the same landscapes from my bedroom at home. I would often observe them as a child."
             
             ## TODO: Redo smug front expression
-            am right e_smug "Didn't you have anything better to do?"
+            am front e_neutral j_disgusted "Didn't you have anything better to do?"
             
             "You lower your head meekly and consider carefully the question."
             "The thing is you can't remember you had anything better to do and that concerns you."
             "Ammon, picking up your long silence as an answer, scoffs and roll his eyes before smiling bitterly."
             
             ## TODO: Add happy jaw right
-            am "You really are a dork."
+            am j_happy "You really are a dork."
             
             "You are suprised by his reaction and prepare yourself to argue back but..."
             
             dk "You are."
     
+    show ammon j_neutral
+
     hl "Wait a minute, I thought you weren't the type of guy that enjoys sceneries!" 
-    hl "You just looked at me, confused, whenever I'd stop for looking landscapes."
+    hl "In the past, you just looked at me, confused, whenever I'd stop for looking landscapes."
     
     am right e_smug j_disgusted "This is because that would happen anywhere, anytime, this was annoying at some point."
-    am "If I could have, I would have put you on leash and drag your ass around so you could stop fanwning on everything."
+    am "If I could have, I would have put you on leash and drag your ass around so you could stop fawning on everything."
     
     hl "Well you couldn't."
 
@@ -538,7 +590,9 @@ label little_road:
 
     "Ammon hears your tone of defiance and even from behind his terrifying aura oozes from his shoulders, shivering. Might have struck a nerve."
 
-    am "If I were you, I wouldn't push my luck."
+    ### TODO: Fix smug expression
+    # am j_smug "If I were you, I wouldn't push my luck."
+    am j_happy "If I were you, I wouldn't push my luck."
 
     az "You absolutely should."
     
@@ -548,7 +602,9 @@ label little_road:
 
     dk "Such a shame it had come to an end."
     
-    am j_neutral "But yeah you are right, I don't really care. I was just trying to make you stay awake, you know."
+    am j_noway "But yeah you are right, I don't really care. I was just trying to make you stay awake, you know."
+    
+    show ammon j_neutral
     
     hl "Really?"
     
@@ -556,10 +612,12 @@ label little_road:
 
     hl "But I wear an helmet."
     
-    am "Then I don't want you to drown in your own drool."
+    ### TODO: Fix front smug eyes
+    # am e_smug "Then I don't want you to drown in your own drool."
+    am e_neutral "Then I don't want you to drown in your own drool."
 
     "A bit crude, he's always been like that ; you aren't fazed by his harshness though you aren't used to it anymore."
-    "Even in your own usual moodiness, he would find ways to even lower it. A true pain in the neck."
+    "Even in your own usual moodiness, he would always find ways to even lower it. A true pain in the neck."
     
     if azzy_score >= 1:
         az "But you like it."
@@ -583,13 +641,13 @@ label little_road:
     hl "Alright, alright, don't get mad, jeez."
     hl "... But I'm still sleepy."
 
-    am "Do what you want but I don't want to feel your head on my back, it's cold."
+    am right e_smug "Do what you want but I don't want to feel your head on my back, it's cold."
 
     "Your sleepiness starts to invade your senses and they start to numb. If you don't do something quick, you'll succumb to nothingness."
 
     az "Don't try to fight it. Think of his big bulky back as a softy pillow. Ignore Ammon's threats, that's what you want anyway."
     
-    dk "Noooooo don't! {w}If you do that you'll only anger him more."
+    dk "No don't! {w}If you do that you'll only anger him more."
 
     az "That's what's been said. You want that anyway."
 
@@ -609,6 +667,7 @@ label talk_with_ammon:
     
     hl "So, um Ammon..."
 
+    show ammon front e_neutral
     "He turns his head inquisitively."
 
     am "Hum yes?"
@@ -623,15 +682,17 @@ label talk_with_ammon:
     
     "He looks in front of him, reminiscing about what you said."
 
-    am "So do you want since High School or since I left?"
+    am "So do you want me to tell you since High School or since I left?"
 
     "You ponder the question. Yes that is true that he stayed at your village for some years before leaving."
     "Yet you have no recollection of this moment in your life. It worries you a bit as this is the first time you notice this blank in your memories."
     
+    show ammon right e_smug
     "The dog with the helmet takes your silence as an answer and sighs."
 
-    am "No worries, I figured you wouldn't want me to talk about after High School."
-    
+    am j_noway "No worries, I figured you wouldn't want me to talk about after High School."
+
+    show ammon j_neutral
     "The sentence he just said disturbs you."
     "Why can't you remember what happened back then after High School."
     "You can't pinpoint an event that could lead this sort of amnesia."
@@ -652,7 +713,7 @@ label talk_with_ammon:
             am "But don't worry I will go over it the fastest I can."
 
     am "Alright, when we graduated, we had to choose a work career and the studies for it."
-    am "You know, I acted big and tough then, I was not that sure about it."
+    am "You know, I acted big and tough and shit then, but I was not that sure about it."
     am "Nothing was really fitting me so I just took the subject I had the best grades at."
     am "I guess at the time I was very good at Physics. So I went to a Technical College. It was the one the nearer to our village."
     am "The thing is{cps=3}...{/cps}{w} I hated it. It was one thing to be good at Physics but making it my career. I really couldn't bear it."
@@ -670,42 +731,46 @@ label talk_with_ammon:
     am "I was average at best at school so I couldn't think I could study it."
     am "But I passed the test at La Sorbonnes and got in it."
     am "So yeah, I moved out to Paris for some time. I needed it."
-    am "It could sound like I am justifying myself but you asked so here it is. That's why you haven't seen me for long I guess."
+    am front e_neutral "It could sound like I am justifying myself but you asked so here it is. That's why you haven't seen me for long I guess."
 
     hl "I see. Well I never blamed you for leaving. The village is a bit of a shithole."
+    if azzy_score >= 1:
+        az "Liar."
 
     "You giggle softly. Sure it was a \"shithole\" but you had some good time, nonetheless"
 
     am "By the way, do you remember the time where we got lost in the forest? It was frightening at first."
     am "We decided to trek yet again in the forest near the village. Only this time you asked me that we go beyond further the usual path."
-    am "I was bored at the time, I didn't see the issue. Thinking back to it, it was not really a good idea." 
+    am "I was bored at the time, I didn't see the issue. Thinking back to it, it was not your brightest idea." 
     am "Even more in our case, it was a pretty fucking shitty idea."
     am "But you wanted so much to go astray from your usual life, I guess at the time."
     am "Well the night came fast and we were stranded in the forest without any direction or signs."
     am "I was relying on your night vision but you couldn't really find the way back even with your ability. You were really lost that day."
     am "But I don't really blame you. It's hard to locate yourself when you're surrounded by trees."
-    am "You know this is the night where we find our favorite spot."
+    am "You know, this is the night where we find our favorite spot."
     am "Honestly, it came out of nowhere. We never thought this could be so close to us."
     am "We loved this clearing, I don't even know how you found it. For once, I can thank your night vision."
-    am "We'd always lay down under the tree on the hill. Somtimes we'd take some snacks and all. We even brought MJ times to times."
-    am "It became our usual hangout, you know."
+    am "We'd always lay down under the tree on the hill. Sometimes we'd take some snacks and all. We even brought MJ times to times."
+    am "It became our usual hangout, in the end."
     
     hl "{cps=3}...{/cps} Yeah I remember now."
 
-    am "Do you remember what happened at the hill? Under the tree?"
+    am right e_smug "Do you remember what happened at the hill? Under the tree?"
 
     "Ammon looks at you expectantly, as if he's trying to jog up a memory for you. You can feel his stare through the helmet."
     "Unfortunately, you don't understand what he's trying to refer to."
     
     hl "Hum no sorry I only have bits here and there about. Nothing in particular."
 
-    am "Oh alright, well don't worry about it, it's nothing important."
+    am front e_neutral "Oh alright, well don't worry about it, it's nothing important."
 
     hl "Really?"
 
     am "Yeah it's just... There I could say and do everything with both of you."
-    am "I just wanted to laugh at the goofy stuff I've done there... ahah."
+    am pupils_down j_noway "I just wanted to laugh at the goofy stuff I was doing back then... ahah."
+    show ammon j_neutral
 
+    ## TODO: Move eyes
     if azzy_score >= 1:
         az "He's lying. He wanted you to remember something you've done with him."
         az "Such a shame you've forgotten."
@@ -714,7 +779,7 @@ label talk_with_ammon:
         dk "I think you have disappointed him."
         dk "Such a shame you can't remember what happened at the tree."
     
-    am "Hey by the way, good job for staying awake! I didn't have to wake you up again... yet."
+    am pupils "Hey by the way, good job for staying awake! I didn't have to wake you up again... yet."
 
     hl "Huh thanks..."
 
@@ -732,14 +797,14 @@ label talk_with_ammon:
     stop music
     stop sound
 
-    scene parkingLot
+    scene parkingLot at zpos_bg
     with fade
     play sound "audio/sounds/bird_chirping.ogg" loop
     
     "The moto steers over on the parking lot. The wind has taken his liking over his liking over a blade of grass and a can of soda."
     # "With a lazy eye, you follow those lost souls. I hope for them that they'll find a place to rest. The trash passes in front of some restrooms, deserted of all life and not very well maintained." 
     # "The leaves fly, of trees that has seen more you could ever account for them into the breeze then onto the vast lands of grass."
-    "You clumsily stumble out of motorcycle and try to get rid of my helmet in vain. Your ears are stuck in it and the motivation to get them ebb away to the shores of your mind."
+    "You clumsily stumble out of motorcycle and try to get rid of my helmet in vain."
 
     jump rest_area_1
 
@@ -747,10 +812,19 @@ label talk_with_ammon:
 label sleep_on_his_back:
     $ azzy_score += 1
 
-    scene black with dissolve
+    show eye_lid at zpos_bg 
+    with dissolve
 
     "You can't resist anymore."
-    "You can't help but let your head fall first into the soft pilloz in front of you."
+    
+    show expression "#000" at zpos_bg 
+    with blink_reverse
+
+    stop sound fadeout 5.0
+    play music "audio/music/griff.mp3" fadein 5.0
+    scene black at zpos_bg
+
+    "You can't help but let your head fall first into the soft pillow in front of you."
     "Loud screams and whining fill your ears but it doesnt bother you a bit. You are dragged into the abbyss of your sleep."
     "The overwhelming void of your mind lulls you up and fragments of your life flashes through you; You don't care, you're too frail to care"
     "You just wish to be alone and the comforting void invites you to."
@@ -760,6 +834,8 @@ label sleep_on_his_back:
     "So you fight and ponder for a long time. You ought to discover where this comes from, it reminds you of the past, something you have forgotten."
     "This perfume reminds you of some of your most treasured memories and is almost divine to you."
     "At last, you give in and, entranced by this divine smell; you open your eyes slowly and the sun light gently penetrates your eyes."
+    show clearing_day at WiggleVision 
+    with blink_transition
     "Blinded at first, you take some time to get used to the sudden change of luminosity. How is it possible?"
     "It was only dusk one minute ago, it couldn't be so bright."
     "A large patch of grass expands in front of you. The trees swings to the wind. The birds chirp happily. You notice that you are on a hill."
@@ -769,13 +845,15 @@ label sleep_on_his_back:
 
     am "Oh you're awake Hurle?"
 
-    "You take a pause and notice Ammon. But it doesn't last long"
-    "You still search for the smell. It drives you mad."
+    show clearing_day at WiggleVisionAwake
+
+    "You take a pause and notice Ammon. But you don’t look longer than a few seconds before going back to your search."
+    "You’re still engrossed to the smell. It drives you mad."
     "You crawl toward Ammon and then you finally understand."
     
     am "So I take you like my new perfume?"
     
-    "On four legs over Ammon's torso sniffing, you sit back to your spot."
+    "On four legs over Ammon's torso, sniffing, you sit back to your spot."
 
     am "Alright..."
     
@@ -788,16 +866,21 @@ label sleep_on_his_back:
     am "Hmpf, why am I even asking this? You're kind of a genius, aren't you?"
 
     "At this statement, you feel compelled to retort back, not let him say that."
-    "Sure you have some aptitudes in the logical-mathematical intellingence."
+    "Sure you have some aptitudes in the logical-mathematical intelligence."
     "But that doesn't mean that you got easy in life. You know it more than anybody."
     "So you won't let him say that."
+    stop music fadeout 30.0
     "However, your muzzle opened, no sound leaves off of it."
+    show clearing_day at WiggleVision
+
     "You raise your hand to your throat. Weird. As long as your mouth is opened, your throat tightens."
     "You start to hyperventilate, or you try, but you can't even have that. You heave as much as you can but no air comes out. Nothing."
     "Meanwhile, Ammon looks at you with a compassionate smile."
     "He snickers."
 
     am "Ahah. You're so silly, Hurle"
+
+    play sound "audio/sounds/cold_wind.mp3" fadein 1.0
 
     "You reach out your hand toward him, imploring to help you, the panic rising into your eyes."
     "But he continues to gently smile at you."
@@ -811,16 +894,14 @@ label sleep_on_his_back:
     "While your mind wander elsewehre, your last sight is the one of the smiing box watching you suffer."
     "And Lavender."
 
-    show black with dissolve
+    scene black with dissolve
+    stop sound
 
-    scene black
-
-    show parkingLot
-    with dissolve
+    show parkingLot at zpos_bg with fade
 
     "You wake up at the smell of Lavender."
     
-    show ammon
+    show ammon at american_shot
     with dissolve
     
     "You don't need to search for long the culprit as he is above you"
@@ -828,7 +909,7 @@ label sleep_on_his_back:
     
     am "Wake up, dummy"
 
-    "Laid on the grass, you grumble, just out from your stupor and you sit difficultly."
+    "You grumble, just out from your stupor and you sit difficultly."
 
     hl "Uuuurgh, what happened?"
 
@@ -1477,7 +1558,7 @@ label phone_booth:
     "A loud crash echoes and resonates within the phone booth. Slumped down, you don’t move anymore. Your head’s empty but a shrill and piercing white noise in your ears. You’re clawed to the ground and won’t get up anymore."
     "When your bloodied vision sets back into focus, you observe with a dead eye the destroyed–to—thousand—pieces receiver on the ground, you come to wonder what has guided you to this point." 
     "You rise your hands at eye–level vision to watch the blood spill out of your hands." 
-    "What happened that has come to you to bloody them. {w} What happened Semptember Friday the 13th?"
+    "What happened that has come to you to bloody them. {w}What happened Semptember Friday the 13th?"
 
 
 

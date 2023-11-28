@@ -54,3 +54,58 @@ transform alpha_dissolve:
 
     on hide:
         linear 0.5 alpha 0.0
+
+transform zpos_bg:
+    zoom 2.535
+    align (0.5, 0.5)
+
+transform american_shot:
+    xalign 0.5
+    yalign 0.25
+
+transform WiggleVision:
+    xcenter 0.5
+    ycenter 0.5
+    zoom 1.5
+    parallel:
+        easein 2 xoffset 25
+        easein 2 xoffset -25
+        repeat
+    parallel:
+        easein 3 yoffset 50
+        easein 3 yoffset -50
+        repeat
+    parallel:
+        linear 2 blur(20)
+        linear 2 blur(0)
+        repeat
+
+transform WiggleVisionAwake:
+    xcenter 0.5
+    ycenter 0.5
+    zoom 1.3
+    parallel:
+        easein 2 xoffset 3
+        easein 2 xoffset -3
+        repeat
+    parallel:
+        easein 3 yoffset 2
+        easein 3 yoffset -2
+        repeat
+    parallel:
+        linear 2 blur(0)
+        linear 2 blur(0)
+        repeat
+
+# transform zpos_black
+
+    #############
+    ## Effects ##
+    #############
+
+define blink_speed = 0.5
+define rl_speed = 128
+define dot_transition = ImageDissolve("Effects/dot_transition.png", 0.5, 320)
+define blink_transition = ImageDissolve("Effects/eye_blink.png", blink_speed, ramplen=rl_speed)
+define blink_reverse = ImageDissolve("Effects/eye_blink.png", blink_speed, ramplen=rl_speed, reverse=True)
+define eye_lid = Image("Effects/eye_lid.png")

@@ -18,6 +18,8 @@ default evidence_needed = False
 default evidence_selected = ""
 default evid_label_to_go = ""
 
+default c_black = Color("#000")
+
 
 init python:
     def narrator_noise(event, interact=True, **kwargs):
