@@ -125,5 +125,8 @@
                 }
             }
         ]
-    }
+    },
+    "cSpell.enableFiletypes": [
+        "renpy"
+    ]
 }

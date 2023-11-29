@@ -56,7 +56,7 @@ label prologue:
     cl "I stare deep through him but the glimmering shines in his eyes disappeared long ago{w}, if there ever were any."
     cl "Sometimes I wonder if my life could have gone differently, what I should have done to not end up in a forest, in the middle of the night, beaten up, with this worthless being."
     cl "Had he smiled more at me, had he spoken more to me, had he taken me more in his arms, had he cared more, had he done all of that, perhaps, just perhaps, I would have felt pity."
-    cl "Pity when you made him seethe though his teeth, guffing, gurgling, retching."
+    cl "Pity when you made him seethe though his teeth, gulfing, gurgling, retching."
     cl "Regret when he was pleading to remember all the good times."
     cl "Remorse when he was imploring to you let him go, that he won’t talk what happened tonight."
     cl "But I wouldn’t.{w} I wouldn’t have felt anything for him."
@@ -64,7 +64,7 @@ label prologue:
     cl "No sadness, no pleading, no torment, no anger, no rage, no wrath."
     cl "While I stood there, I craved for any kind of sign that he was a warm conscious being. Something, just anything"
     cl "No. Just dead eyes. No matter how hard I look, I still see those same dead eyes. Looking at me."
-    cl "I wished those weren’t the same eyes. I wish I could say a chill run through me, that sorrow overflown me when all of this unwinded."
+    cl "I wished those weren’t the same eyes. I wish I could say a chill run through me, that sorrow overflown me when all of this unwound."
     cl "No just dead eyes, for the past years and now forever.{w} Or at least I failed to perceive it. Like a lot of things in my life."
     play sfx "sounds/rope_squeak.ogg" fadein 0.5 volume 0.3
     show clearing:
@@ -89,12 +89,12 @@ label prologue:
     show clearing:
         ease 2 blur 0
 
-    cl"The cooling breeze strokes down my long ears , the surnatural howling of the wind cools me down but my throat still burns."
+    cl"The cooling breeze strokes down my long ears , the supernatural howling of the wind cools me down but my throat still burns."
     cl "I try to make it go away but the thousands of needles stuffed down protest.{w}\nI need water."
     cl "So I difficultly make my way towards him and I search for something to soothe my thirst."
     cl "I am able to find some flask. I uncork it and stuff it down my dirty throat so the lukewarm water can flow."
     cl "With every gulp, it wash down a bit more."
-    cl "That mucus obstruating my throat."
+    cl "That mucus obstructing my throat."
     cl "That warm hot itch that resided there."
     cl "That distress that had built up over the years."
     cl "Those regrets that I didn’t do good enough for him."
@@ -119,146 +119,8 @@ label prologue:
         ease 0.5 ypos 150
     cl "Drool hanging from my muzzle, Tears streaming down my face, I collapse in the grass, drained of all my energy."
     cl "My vision stays stuck on the middle of this pond."
-
-    ##NOTE: Spawning fireflies
     
-    $ xpo = renpy.random.randint(500, 1300)
-    $ ypo = renpy.random.randint(200, 640)
-    $ margin = 10
-
-    show firefly:
-        alpha 0.0
-        xpos xpo
-        ypos ypo
-
-        easein 1.0 alpha 1.0
-    show firefly:
-        parallel:
-            ease 1.0 alpha 0.0
-            ease 1.0 alpha 1.0
-        parallel:
-            ease 1 xpos xpo-margin
-            ease 1 xpos xpo+margin
-            ease 1 xpos xpo-margin
-            # ease 1 xpos xpo+margin
-        
-        parallel:
-            ease 1 ypos ypo-margin
-            ease 1 ypos ypo+margin
-
-        repeat
-        
-    $ xpo = renpy.random.randint(500, 1300)
-    $ ypo = renpy.random.randint(200, 640)
-
-    show firefly as firefly1:
-        alpha 0.0
-        linear 2 alpha 0.0
-        xpos xpo
-        ypos ypo
-
-        easein 1.0 alpha 1.0
-    
-    show firefly as firefly1:
-        linear 2 alpha 0.0
-        parallel:
-            ease 1.0 alpha 0.0
-            ease 1.0 alpha 1.0
-        parallel:
-            ease 1 xpos xpo-margin
-            ease 1 xpos xpo+margin
-            ease 1 xpos xpo-margin
-            # ease 1 xpos xpo+margin
-        
-        parallel:
-            ease 1 ypos ypo-margin
-            ease 1 ypos ypo+margin
-
-        repeat
-    
-    $ xpo = renpy.random.randint(500, 1300)
-    $ ypo = renpy.random.randint(200, 640)
-
-    show firefly as firefly2:
-        alpha 0.0
-        linear 4 alpha 0.0
-        xpos xpo
-        ypos ypo
-
-        easein 1.0 alpha 1.0
-    
-    show firefly as firefly2:
-        linear 4 alpha 0.0
-        parallel:
-            ease 1.0 alpha 0.0
-            ease 1.0 alpha 1.0
-        parallel:
-            ease 1 xpos xpo-margin
-            ease 3 xpos xpo+margin
-            ease 1 xpos xpo-margin
-            # ease 1 xpos xpo+margin
-        
-        parallel:
-            ease 3 ypos ypo-margin
-            ease 1.4 ypos ypo+margin
-
-        repeat
-    
-    $ xpo = renpy.random.randint(500, 1300)
-    $ ypo = renpy.random.randint(200, 640)
-
-    show firefly as firefly3:
-        alpha 0.0
-        linear 7 alpha 0.0
-        xpos xpo
-        ypos ypo
-
-        easein 1.0 alpha 1.0
-    
-    show firefly as firefly3:
-        linear 7 alpha 0.0
-        parallel:
-            ease 1.0 alpha 0.0
-            ease 1.0 alpha 1.0
-        parallel:
-            ease 1 xpos xpo-margin
-            ease 1 xpos xpo+margin
-            ease 1 xpos xpo-margin
-            # ease 1 xpos xpo+margin
-        
-        parallel:
-            ease 1.4 ypos ypo-margin
-            ease .9 ypos ypo+margin
-
-        repeat
-    
-    $ xpo = renpy.random.randint(500, 1300)
-    $ ypo = renpy.random.randint(200, 640)
-
-    show firefly as firefly4:
-        alpha 0.0
-        linear 9 alpha 0.0
-        xpos xpo
-        ypos ypo
-
-        easein 6.2 alpha 1.0
-    
-    show firefly as firefly4:
-        linear 9 alpha 0.0
-        parallel:
-            ease 1.0 alpha 0.0
-            ease 1.0 alpha 1.0
-        parallel:
-            ease 1 xpos xpo-margin
-            ease 1 xpos xpo+margin
-            ease 1 xpos xpo-margin
-            # ease 1 xpos xpo+margin
-        
-        parallel:
-            ease 2 ypos ypo-margin
-            ease 2 ypos ypo+margin
-
-        repeat
+    call spawn_fireflies from _call_spawn_fireflies
     
     cl "A little hill with a hundred of fireflies projects over me, offering me a spectacle that I’d never forget. Something I thought I would never see."
     cl "A beacon of longing light in the all–surrounding crushing darkness of the night that gets me alive."
@@ -390,11 +252,11 @@ label little_road:
     "Although, as much as you want, the sleepiness is still quite there. At the shores, coming in waves."
     "The road under your feet moves gradually until it becomes a blur and you’re back in the motion to your destination."
     "You wish you could just teleport to the hotel you’re both going. You’re quite car sick so you could use less trips in vehicles."
-    "Unfortunately, there are no thousands possibilites to get over there and Ammon insisted. You quote \"Don’t worry, Howl, It’ll be fun you’ll see. That’ll change from your moody daily life.\""
+    "Unfortunately, there are no thousands possibilities to get over there and Ammon insisted. You quote \"Don’t worry, Howl, It’ll be fun you’ll see. That’ll change from your moody daily life.\""
     "You still fail to see what’s so fun about it but too tired to protest, you accepted."
     "You try to set you comfortable, leaning on your back, eyes up above the sky, on the bike but no such luck until now."
     "You’re tempted to grab Ammon and use him as support, so your back will stop hurting."
-    "But considering the fact that Ammon just waked you up so you don’t use him as a support and that you would feel akward about it, you decide it was a wrong good idea, against your better judgement."
+    "But considering the fact that Ammon just waked you up so you don’t use him as a support and that you would feel awkward about it, you decide it was a wrong good idea, against your better judgement."
     "All the while you were looking for to rest, a rock song is blasting out of the radio..."
     "You find it..."
 
@@ -421,11 +283,11 @@ label little_road:
             
             menu:
                 "It gives me an headache.":
-                    am front j_disgusted "Well it didnt gave me one."
+                    am front j_disgusted "Well it didn't gave me one."
                     
                     "You grip your thighs. Is he that inconsiderate?"
                     
-                    hl "Please, pretty please... Travelling for me is already hard enough as it is."
+                    hl "Please, pretty please... Traveling for me is already hard enough as it is."
                     
                     "You lock eyes with Ammon. In spite of you, he is already probing inside you with those yellow eyes."
                     "It's a tendency of his so you maintain the contact as always."
@@ -476,7 +338,7 @@ label little_road:
 
         "Incredible":
             "You lay down on the bike as the loud drums fill your world."
-            "Your bang your head up and down to the rythm. With it, your finger taps on the frame."
+            "Your bang your head up and down to the rhythm. With it, your finger taps on the frame."
             "As the trees run up to you, you watch them scale down behind you, toward the horizon."
             "The dying light of the sun highlights the silhouette of the dog with a helmet in front of you. He projects a shadow over you."
             "You don't mind. You like the cold and you want to be bitten by the glacial air."
@@ -541,11 +403,6 @@ label little_road:
 
         az "Let’s just answer his question."
     
-    python:
-        del radio_on
-        del asked_to_turn_off
-        del trying_to_sleep
-    
     menu:
         "I do think so":
             show ammon j_neutral
@@ -601,7 +458,7 @@ label little_road:
     az "You absolutely should."
     
     show ammon pupils_down j_neutral
-    "He looks down, melancholically, at his hands, surely reminescing our little outings together some time ago."
+    "He looks down, melancholically, at his hands, surely reminiscing our little outings together some time ago."
     
     az "You really enjoyed them{w}, Hehe."
 
@@ -706,7 +563,7 @@ label talk_with_ammon:
 
     menu:
         "Ask him after High School":
-            hl "Um, actually couid you start since high school?"
+            hl "Um, actually could you start since high school?"
             
             am "Alright if you want to."
             am "It's actually easier for me, but don't worry, I will go over it the fastest I can."
@@ -828,11 +685,11 @@ label sleep_on_his_back:
     scene black at zpos_bg
 
     "You can't help but let your head fall first into the soft pillow in front of you."
-    "Loud screams and whining fill your ears but it doesnt bother you a bit. You are dragged into the abbyss of your sleep."
+    "Loud screams and whining fill your ears but it doesn’t bother you a bit. You are dragged into the abyss of your sleep."
     "The overwhelming void of your mind lulls you up and fragments of your life flashes through you; You don't care, you're too frail to care"
     "You just wish to be alone and the comforting void invites you to."
-    "However the smell of lavander gets hold of your nose and you tempted to open again your eyes."
-    "The odor becomes overbearring but you want to be left alone."
+    "However the smell of lavender gets hold of your nose and you tempted to open again your eyes."
+    "The odor becomes overbearing but you want to be left alone."
     "So you fight and ponder for a long time. You ought to discover where this comes from, it reminds you of the past, something you have forgotten."
     "This perfume reminds you of some of your most treasured memories and is almost divine to you."
     "At last, you give in and, entranced by this divine smell; you open your eyes slowly and the sun light gently penetrates your eyes."
@@ -843,7 +700,7 @@ label sleep_on_his_back:
     "A large patch of grass expands in front of you. The trees swings to the wind. The birds chirp happily. You notice that you are on a hill."
     "You lay down under a big tree. You should be hot with the burning sun but fortunately you are covered by the tree's shadow."
     "You look down the hill and you can see some water surrounding it. You can only think it's surely a pond. No flowers in sight."
-    "Wait, where's comming the smell of lavender from then?"
+    "Wait, where's coming the smell of lavender from then?"
 
     am "Oh you're awake Hurle?"
 
@@ -893,7 +750,7 @@ label sleep_on_his_back:
 
     "As much as you want to comply with what is saying Ammon, you still can't breathe."
     "Your world starts to fill with black as the lack of air starts to be felt. You're choking right now, aren't you ?"
-    "While your mind wander elsewehre, your last sight is the one of the smiing box watching you suffer."
+    "While your mind ascends up high, your last sight is the one of the smiling box watching you suffer."
     "And Lavender."
 
     scene black with dissolve
@@ -931,7 +788,7 @@ label sleep_on_his_back:
 
     "You stare at him with doubt. With every word he says, you begin having issues trusting his version of the events."
 
-    am "When I went up to you to wake you up, I have maybe shaked you too much and that made you fell out of the bike..."
+    am "When I went up to you to wake you up, I have maybe shaken you too much and that made you fell out of the bike..."
     am "... In the grass."
 
     hl "Okay, understood. Just help me up please?"
@@ -987,7 +844,7 @@ label rest_area_1:
             "When your frenetic charge comes to stop, you cough out the dirt and the blades of grasses stuck in your mouth."
             show ammon front e_happy j_noway
             "You shake up your head so your blood flows back in it. When you come back to your senses, you are met with a laughing dog unable to stop."
-            "His piercing laughter overwhelm your space and you get red of embarrassement irresistibly, despite you. You clutch the grass."
+            "His piercing laughter overwhelm your space and you get red of embarrassment irresistibly, despite you. You clutch the grass."
 
             menu:
                 "Throw some grass at him.":
@@ -996,9 +853,9 @@ label rest_area_1:
                     hl "Fucking moron !! I told you you shouldn't pull that hard! I'm all scratched and dirty now. I hate you, you hear me??"
 
                     show ammon j_neutral
-                    "Ammon wipes out his tears of laughter and approches, triumphing, over you. His wicked smile pierces his helmet as he hands you your helmet and reach a hand to you."
+                    "Ammon wipes out his tears of laughter and approaches, triumphing, over you. His wicked smile pierces his helmet as he hands you your helmet and reach a hand to you."
         
-                    am e_neutral  "Okay you crykitten, keep whining all you want. But if you stay on the ground, you won't get anywhere, will you?"
+                    am e_neutral  "Okay you cry kitten, keep whining all you want. But if you stay on the ground, you won't get anywhere, will you?"
 
                     "You grit your teeth as you clutch his hand. He carries you off the ground that you find yourself levitating. You often forget his undogly force."
                 
@@ -1007,7 +864,7 @@ label rest_area_1:
                     "But you can't. You're too weak for that. He'd only laugh at you harder. {w}You hate him."
 
                     show ammon j_neutral
-                    "Ammon wipes out his tears of laughter and approches, triumphing, over you. His wicked smile pierces his helmet as he looks at you."
+                    "Ammon wipes out his tears of laughter and approaches, triumphing, over you. His wicked smile pierces his helmet as he looks at you."
 
                     am e_noway "Hum, are you alright? Were you hurt? You look tense."
 
@@ -1043,7 +900,7 @@ label rest_area_1:
 
             "In your wrestle against the helmet, you keep spinning around until you get nauseated from the all over experience."
             "By a thread of luck or misfortune, you manage to get rid of your helmet. However with all your dances and twirling, you lost sense of directions and you lose balance making you fall into the grass."
-            "When your frenetic charge comes to stop, you cough out the dirt and the blades of grasses caught in your mouth. AsFgreen you come back to your senses, you are met with a laughing dog unable to stop."
+            "When your frenetic charge comes to stop, you cough out the dirt and the blades of grasses caught in your mouth. As you come back to your senses, you are met with a laughing dog unable to stop."
         
             am pupils_left j_smug "Deserved it, jackass."
 
@@ -1065,7 +922,7 @@ label rest_area_1:
     "Your tired eyes look like you haven't slept for a week—and you might not have—as the dark rings under your eyes draw themselves on a too much big surface." 
     "You scrub them, however they remain unchanged and any try to make it go make clear that they won't go away."
     "You check your red eye, swollen by the fatigue, you prod the inferior eyelid at it." 
-    "The capillaries running through your blue saphirr eyes sclera pulse a like a living entity."
+    "The capillaries running through your blue sapphire eyes sclera pulse a like a living entity."
     
     "You are annoyed at them and even more you are scared of them."
     "The next moment, they disappear and you are then alone with your no better thoughts, still uncomfortable that someone might be watching you." 
@@ -1111,7 +968,7 @@ label rest_area_1:
     "He often wears biker suits because that fits his life style he told you." 
     "You wish you could be as extravagant as him and take crazy risks" 
     "You are not as bold as him so you keep to your little classic shirt with your tie."
-    "You hope, one day, you’ll break the ties that roots you to your plain life and take the chance to be as free, as liveful as liberated as him."
+    "You hope, one day, you’ll break the ties that roots you to your plain life and take the chance to be as free, as lifeful as liberated as him."
 
     am "What are you staring at?"
 
@@ -1142,7 +999,7 @@ label rest_area_1:
     "Dead leaves piled up on the border of the roads, signaling the fall has come and taken his toll on Nature." 
     "The brownish orangey landscape contrasted with the bright green of Summer." 
     "The mourning trees stand there, waiting for better times"
-    "Sooner or later, even their melancholic colours will be replaced by scarced branches and the glacial white tucking them to their warm sleep." 
+    "Sooner or later, even their melancholic colours will be replaced by scarce branches and the glacial white tucking them to their warm sleep." 
     "Tall grasses remain nonetheless undefeated by the time passing. Some sunflowers still resist, searching for their lead."
     "The usual restrooms stick out of the surrounding nature. They are not at all well–maintained..."
     "A tall metallic structure stand out with all this misery, a shine, a beacon of what lies ahead. You have seen them a handful of times. A phone booth." 
@@ -1177,7 +1034,7 @@ label rest_area_1:
     am "Ok, suit yourself."
     am "I’m going to pee. Wait for me and don’t go far ok?"
 
-    "Ammon quicly deflects the topic of discussion and comes back to the pressing matter at hand." 
+    "Ammon quickly deflects the topic of discussion and comes back to the pressing matter at hand." 
     "You watch him waddling in place, jumping like a late hare and you find yourself hard to not comply with his request."
 
     hl "Ok, don’t lose yourself on the way!"
@@ -1209,13 +1066,13 @@ label phone_booth:
     "Blind, by the low current luminosity of the place, you put some time to even find the phone."
     "On the phone box, on a little sign at the bottom of it, it is written \"10 francs for 10 minutes!\" You think the sign bargains a fair deal to you."
     "You get a coin from your pocket and you slid it into the coin slot. Soon after, the phone screen lits up awaiting your input." 
-    "You observe carefully as some featuers disturb you: they never had a screen before."
-    "With slothness, you press the phone number on the keypad, with petite–size buttons but you manage to input it on your first try."
+    "You observe carefully as some features disturb you: they never had a screen before."
+    "With slowness, you press the phone number on the keypad, with petite–size buttons but you manage to input it on your first try."
     "You pick up the phone and wait for the ringing to come and let it resonate in the booth soothing the emptiness of the place. You liked the music tone and you daydream a bit of time."
-    "You’ve wandered in your head for a undefinite span of time, the ringing going on and on, the sound receding away in the dark void."
+    "You’ve wandered in your head for a undefined span of time, the ringing going on and on, the sound receding away in the dark void."
     "You wonder why she puts this much amount of time to respond. Must it be the hour? Or is she’s not home right now? Maybe she has got an extended work shift and wasn’t still able to come this evening."
     "Whatever the reason, it has to be a valid one. You mull over it a bit. She wouldn’t ignore you, would she? Perhaps she is ignoring you and is looking at the phone ringing right now."
-    "Suddenly a click travels from the other side of the line as to prove you wrong. You hear an inquisitve, quite sly, feminine voice answering the call."
+    "Suddenly a click travels from the other side of the line as to prove you wrong. You hear an inquisitive, quite sly, feminine voice answering the call."
     
     "???" "... Hello, who is it?"
     
@@ -1277,7 +1134,7 @@ label phone_booth:
 
     "She softly chuckles at your liveliness."
 
-    mj "You know, your attidude earlier reminded me of the time where we fisrt–{nw}"
+    mj "You know, your attitude earlier reminded me of the time where we first–{nw}"
 
     az "There she goes. On her rant like always."
     
@@ -1299,7 +1156,7 @@ label phone_booth:
             mj "That was at least what it looked from afar."
             mj "Anyway I think at some point it worked and you charged him. He got so scared that he fell of the rock and sprained his ankle. I don’t think the pebbles helped."
             mj "Fortunately your dad that drove us to the beach was around because he was able to provide first medical care before getting to a doctor."
-            mj "Well it kind of ruined our litte outing but thinking back then, Ammon and you were always at each others’ throats but you went everything though thick and thin."
+            mj "Well it kind of ruined our little outing but thinking back then, Ammon and you were always at each others’ throats but you went everything though thick and thin."
             mj "It’s fascinating how you managed to stay together."
 
             az "His misbehaviours only made him more interesting."
@@ -1311,17 +1168,19 @@ label phone_booth:
 
         "Think of something else":
             $ azzy_score += 1
-            "You really liked her, she’s a wonderful girl and you wonder everyday how your life would have played out, had she not been in your life at all." 
-            "But you chase that thought rapidly as it always sets you in a desesperate state."
-            "You are childhood friends and you were stuck together like hand in glove and never you has been seperated from her." 
+            "You let your mind wander elsewhere. You’ve already been there. Listening to her unending rants. You never were able to focus more than a minute."
+            "So this time, you give up instantly, too tired to fight against your boredom."
+            "That didn’t mean you didn’t appreciate her."
+            "You liked her, she’s a wonderful girl" 
+            "You are childhood friends and you were stuck together like hand in glove and never you has been separated from her." 
             "She lived in your birth village, so you used to play together every day."
             "For some reason, she could stand your presence, contrary to most of your peers of your age. That made her a precious friend." 
-            "She was always fond of your fantaisies and your games, you had a lot of them when you were young."
+            "She was always fond of your fantasies and your games, you had a lot of them when you were young."
             "You would read a book about a boy in a green tunic going for adventures and you would pretend that you are this same boy reenacting the events of the book." 
             "Most kids would take you for a social case and most have."
             "But not Marie–Jil. Marie–Jil played with you in your little pretend games." 
 
-            mj "So um Gaspard, Gaspard, are you listening?"
+            mj "So um Howl, Howl, are you listening?"
 
             "You wake up from your daydreaming, all of these memories have had left you groggy"
 
@@ -1341,13 +1200,13 @@ label phone_booth:
     "You had accepted meekly, by principle, you’d never refuse any challenge thrown at you by your favorite troublemaker."
     "But you didn’t have the heart—nor the stomach—to follow him up on the challenge." 
     "You had been surprised at his dedication, this day you had been fed hachis parmentier and you both had taken double rations so it weighed a lot on his stomach."
-    "He was so full, his shirt couln’t hold his belly any more, so you could admire his belly button and the lump the food had formed in his insides." 
-    "Trying to cheer him up, you rubbed his abdomen and you were met with a pleasant squishiness."
+    "He was so full, his shirt couldn't hold his belly any more, so you could admire his belly button and the lump the food had formed in his insides." 
+    "Trying to cheer him up, you rubbed his abdomen and you were met with a pleasant slushiness."
     "You couldn’t stop so you kept on rubbing, hoping to appease him. To your disbelief, Ammon didn’t mind and he even let out some squeak of laughter and satisfaction."
 
     hl "Heheh, what do you think it’s gonna be?"
 
-    "Confusion roses on Ammon’s face, still contorted by pain mixed with sootheness."
+    "Confusion roses on Ammon’s face, still contorted by pain mixed with softness."
 
     am "I–I thiiiink it’s go– gonna be what?"
 
@@ -1367,7 +1226,7 @@ label phone_booth:
     hl "I wonder where she is..."
     "Said out loud, you were expecting that Ammon was going to answer you, or at least say something, but no response as Ammon laid now seemingly unconscious on his chair."
     "All of the sudden, Marie–Jil approached you, bringing in no food but an tense air on her way. As she got closer to you, you started shivering from stress."
-    "Marie–Jil stood shut fast on the floor, very anxious, not knowing where to place herself. Her tail coulnd’t stop shaking; the nervosity of the situation got you making your tail moving out of your own."
+    "Marie–Jil stood shut fast on the floor, very anxious, not knowing where to place herself. Her tail couldn’t stop shaking; the nervosity of the situation got you making your tail moving out of your own."
     ## TODO: add Marie–Jil sprite?
     mj "Hi Howl..."
 
@@ -1382,7 +1241,7 @@ label phone_booth:
     mj "No I did not!! {w}Oh hi Ammon..."
     mj "Ammon could you leave Howl and I alo–"
 
-    "She finally noticed Ammon and his thick tummy. Hopeless at the scenery she was beholding, she ignored him and retuned her attention to you."
+    "She finally noticed Ammon and his thick tummy. Hopeless at the scenery she was beholding, she ignored him and returned her attention to you."
 
     mj "Please let me finish, Howl."
 
@@ -1410,13 +1269,13 @@ label phone_booth:
 
     "While she pronounced all of that, she teared her dress down nervously, helping her to stay calm. But her composure broke once her eyes met yours."
     "Her face began to turn pinkish so she turned around, breaking the eye contact with you, making you unable to observe her facial features anymore." 
-    "Your pierceful gaze caused her to get embarassed and she turned to prevent your gaze to reach her."
+    "Your piercing gaze caused her to get embarrassed and she turned to prevent your gaze to reach her."
     "Ammon at this point, was fully alert, listening on her every words, every sounds leaving her mouth, every finger movement, every anxious tics."
     "You must have had put too much pressure on her because she yelled the next sentence."
 
     mj "Stop staring at me!! You’re making me anxious. Fine! What I mean is..."
     mj "I can’t go like this any longer. I need to know. I’m sure that, if I don’t have the response I want, we will be able to go back at how things were."
-    mj "So... I wanted to know, if those feelings are reprocical and if you want to explore and figure out those feelings with me then I’d be really happy... What I really mean is:–"
+    mj "So... I wanted to know, if those feelings are reciprocal and if you want to explore and figure out those feelings with me then I’d be really happy... What I really mean is:–"
 
     "She clenched her dress hard, not wanting to let go her only last support. Ammon and you were both suspended at her lips waiting for her next words."
 
@@ -1453,7 +1312,7 @@ label phone_booth:
 
     mj "Actually Howly... I am the one who went check up on him, I made you stay at the table to keep watch of our stuff."
 
-    "A sense of discomfort and awkwardess emanates from Marie—Jil’s words like opening matriochka dolls. She had to witness him bathing in his vomit after all. You wouldn’t want to be the one that had go that day."
+    "A sense of discomfort and awkwardness emanates from Marie—Jil’s words like opening matriochka dolls. She had to witness him bathing in his vomit after all. You wouldn’t want to be the one that had go that day."
     
     mj "By the way, while we are talking about him, is everything alright with Ammon?"
 
@@ -1510,7 +1369,7 @@ label phone_booth:
 
     hl "What do you mean? You’re making me confused."
 
-    mj "With you trip, were you able to think about your... moods, clear your thoughts, to reflect on what happened recently."
+    mj "With you trip, were you able to think back, clear your thoughts, to reflect on what happened recently."
 
     "She sounds concerned. Irritated. Have you been that out of it lately?" 
     "At most, you felt a bit tired from the pressure but that’s all."
@@ -1522,8 +1381,8 @@ label phone_booth:
     stop music
     play music "audio/music/anger.mp3" 
 
-    mj "Oh my god, for Jesus Christ?!" 
-    mj "Are you for real, Howl??? You’ve been pretending for a month and you say to my face that everything’s fine!??"
+    mj "Oh my god, for Jesus Christ." 
+    mj "Are you for real, Howl??? You’ve been pretending for a month everything’s fine and you expect me to believe you!??"
     
     hl "Huh..."
 
@@ -1551,14 +1410,14 @@ label phone_booth:
     menu:
         "Make her stop":
             hl "Please.... stop."
-            mj " Ohoohoh I sure won't stop, Hurles Danbois. I {w=1.0}AM {w}FED UP. I won't stop until I'm finished." 
+            mj " ... I won't stop. I {w=1.0}am {w}fed up. I won't stop until I'm finished." 
         
         "Try to change the subject":
             hl "Can’t... we talk about something else?"
-            mj "NO WE WON’T. I AM FED UP. You let me finish."
+            mj "no we won’t. I am fed up. You let me finish."
 
     
-    mj "You will answer to my questions, Hurle and you won't be able to esacpe forever."
+    mj "You will answer to my questions, Hurle and you won't be able to escape forever."
     mj "We never asked any questions, we didn't want to put pressure on you. We let you breathe, rest, mourn, or even hell, agonize." 
     mj "But I’m sick of it."
     mj "But one day or sooner, you'll have to tell us what happened and I'm sick of not knowing the truth."
@@ -1578,14 +1437,15 @@ label phone_booth:
     "You are scared of it, you are scared of your Judgment, you are scared of the Truth."
     
     mj "Don't you dare to try and slip away. If not today, I'll make you spill out on way or another, just wait for it. That could be today, but that could be tomorrow or after tomorrow or a week or a year, just wait for me."
-    mj "I mean, for fuck’s sake, you were gone missing for a week?? A whole week and you weren’t even injured."
+    mj "I mean, for fuck’s sake, you were gone missing for a week?? A whole week and you weren’t even hurt."
     mj "It never happens! Do you understand that??? We all thought you were fucking dead."
     mj "Ammon couldn’t sleep a night, your mom cried all day non–stop, and I searched everywhere for you in this god damn forest."
     mj "I just couldn’t stop.{w} Just the thought of you, maybe alive, in the dark, alone, in the woods was driving me mad."
-    mj "But no matter how much we searched, we could never find you. The whole village searched for you!"
-    mj "I could believe you didn’t exist anymore..."
+    mj "But no matter how much we searched, we never found you. The whole village searched for you!"
+    mj "I could almost believe you didn’t exist anymore..."
     mj "Then out of nowhere, you reappear like nothing happened??"
-    mj "Ininjured, with no consequences, whatsoever! It’s like you never disappeared??"
+    mj "Not 
+    injured, with no consequences, whatsoever! It’s like you never disappeared??"
     mj "Do you know how much it’s fucking strange??"
     mj "You had nothing on you, do you expect me that you didn’t drink or eat for a whole fucking week??"
     mj "How did you survive??"
@@ -1613,7 +1473,7 @@ label phone_booth:
 
     hl "Please... Don’t do that."
     
-    mj "What were you doing Semptember the 13th?{w} Were you with him,"
+    mj "What were you doing September the 13th?{w} Were you with him,"
     stop music
     extend "with ×××××××××××××××××××××××{nw}"
 
@@ -1637,10 +1497,10 @@ label phone_booth:
     "You look down. You’re holding the box. You let it slip. The box opens."
     "You are beholding the hill. He was expecting you. You brought someone. He is pleased."
     "You’re pleased too. You’ve done what He asked."
-    "He brushes your cheek. A surge of adrenaline rushes through you. You want his hand forever, that he never leaves your skin."
-    "You want his embrace more than anything. You’re willing to do anything for it. He knows how to fill your sick heart. Your deviant heart."
-    "You know that you’re already a forsaken case so you let him corrupt you even further. What were good in you to begin with anyway."
-    "You present him your partner. He gladly accepts the offering."
+    "He brushes your cheek. A surge of adrenaline rushes through you. You want His hand forever, that It never leaves your skin."
+    "You want His embrace more than anything. You’re willing to do anything for It. He knows how to fill your sick heart. Your deviant heart."
+    "You know that you’re already a forsaken case so you let Him corrupt you even further. What were good in you to begin with anyway."
+    "You present Him your partner. He gladly accepts the offering."
     "You take a step back to admire fully the demonstration he’s going to put for you."
     "He wraps his hands around his neck. {w} You like it.{nw}"
 
@@ -1671,26 +1531,51 @@ label phone_booth:
 
     "..." 
     cl "You loved it."
+
     play music "audio/music/uboa.mp3"
+
+    show phone_booth at shaking
     
     hl "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH"
+    show phone_booth:
+        xoffset 0
+        yoffset 0
+
     hl "SHUT UP I’M NOT A MONSTER"
+
+    show phone_booth:
+        easein 0.5 blur 96
+        easein 0.5 blur 128
+        repeat
 
     mj "What’s going on, Hurle, I don’t understand."
     mj "You are rambling like a mad man!!"
     mj "Are you insane??"
 
-    hl "Shut up. Shut it. Shut up, shut it, shut up, shut it, shut it up shut it shut it shut up shut up shut up"
+    hl "I’m not a monster, I am not a monster I am not a monster."
+    hl "i’m just going to breathe in and out and everything’s going to be fine"
+    hl "friendly fleas and fireflies friendly fleas and fireflies"
+    hl "friendly fleas and fireflies friendly fireflies and fleas"
+    hl "friendly fireflies and fleas friendly fireflies and fleasfriendly fireflies and fleas fireflies fleas and friendly"
+    hl "friendly fleas fleas fleas fleas fleas fleas fleas fleas fleas fleas fleas fleas fleas fleas fleas fleas fleas fleas fleas fleas fleas fleas fleas fleas fleas"
 
+
+    mj "What are you even saying???"
     mj "Just listen to me{nw}"
 
     hl "{size=60}SHUT THE FUCK UP{/size}"
     stop music
 
+    pause 2.0
+
     play sound "audio/sounds/glass_breaking.ogg"
     ### TODO: Drunk effect
     show phone_booth:
         ease 2 blur 128
+    with sshake
+    
+    play sfx "audio/sounds/ear_ringing.ogg" fadein 0.5 volume 0.3
+    
     show expression "#F00":
         alpha 0.0
         zoom 2.535
@@ -1698,13 +1583,14 @@ label phone_booth:
         ease 2 alpha 0.5
     pause 2.0
     
-    play sfx "audio/sounds/ear_ringing.ogg" fadein 2.0 volume 0.3
-    "A loud crash echoes and resonates within the phone booth. Slumped down, you don’t move anymore. Your head’s empty but a shrill and piercing white noise in your ears. You’re clawed to the ground and won’t get up anymore."
+    "A loud crash echoes and resonates within the phone booth." 
+    "Slumped down, you don’t move anymore." 
+    "Your head’s empty but a shrill and piercing white noise in your ears. You’re clawed to the ground and won’t get up anymore."
     show phone_booth:
         ease 1 blur 32
     "When your bloodied vision sets back into focus, you observe with a dead eye the destroyed–to—thousand—pieces receiver on the ground, you come to wonder what has guided you to this point." 
     "You rise your hands at eye–level sight to watch the blood spill out of your hands." 
-    "What happened that has come to you to bloody them. {w}What happened Semptember Friday the 13th."
+    "What happened that has come to you to bloody them. {w}What happened September Friday the 13th."
 
 
 
@@ -1712,19 +1598,23 @@ label phone_booth:
 
 label rest_area_2:
     stop music
-    stop sfx
+    stop sfx fadeout 10.0
 
     scene parkingLot at zpos_bg
     with Fade(0.5, 6.0, 0.5)
 
-    "You lay down onto the frame of the bike. You can’t stand anymore. Dragging yourself here from the booth was already hard enough as it is."
+    "You lay down onto the frame of the bike. You can’t stand. Dragging yourself here from the booth was already hard enough as it is."
     "The tiredness and your recent agitated behaviour set you into a second state — there but quite not there."
     "You rub your eyes. If you were feeling sleepy, you don’t anymore. You’re just nauseated and want to get home as soon as possible."
     "But you won’t. So you just comatose around. Waiting for Ammon."
     
     am "Huh you alright Howl?"
 
-    "You feel a hand on your shoulder. You’re about to raise your head but a the dog crouches to eye–level."
+    show ammon at american_shot with dissolve
+
+    "You feel a hand on your shoulder. You’re about to raise your head"
+    camera at close_shot
+    extend " but a the dog crouches to eye–level."
     "Having his face close to yours sets you uncomfortable but you gulp and stare him back."
 
     am "You don’t look fine. Were you able to sleep? Well surely not."
@@ -1735,43 +1625,68 @@ label rest_area_2:
 
     hl "I’m fine, I’m fine, just let me breathe."
 
-    am "... What happened between you and MJ? Did you get into an argument?"
+    am e_noway "... What happened" 
+    
+    hl "Nothing."
+    
+    # angry
+    am right e_angry "Your hands are full of blood."
+
+    show ammon e_neutral pupils_right
+    
+    "He looks at the phone booth."
+
+    am "Did you smash the glass???"
 
     hl "No... I did not."
 
-    am "Say it with less enthusiasm next time.{w} I almost didn’t believe you."
+    am e_smug pupils "Say it with less enthusiasm next time.{w} I almost didn’t believe you."
+    am j_noway "Seriously. What the hell???"
 
     hl "Right. Anyway I am fine."
 
+    show ammon front e_neutral j_disgusted
     "Ammon’s mouth twists. He gives you his usual stare."
 
-    am "Trust me, you look like shit. You should at least rest."
+    am j_noway "No you’re not."
+    am j_disgusted "Trust me, you look like shit. You should at least rest."
 
-    "Ammon’s sudden careness for you gets on your nerves. He has been cold to you all ride long. Why care about you now."
+    "Ammon’s sudden attention for you gets on your nerves. He has been cold to you all ride long. Why care about you now."
 
     hl "Ammon I swear I am fine."
 
-    "You stand up. Proving a point to Ammmon, you forgot your weak state and latent nausea, the world spins gradually around you."
+    "You stand up. Proving a point to Ammon, you forgot your weak state and latent nausea, the world spins gradually around you."
 
-    "The dusk sky, who was empty until now, fills with stars all of colours, it reminds you of the strange colour artefacts that you can find on low–quality photographs."
+    ### TODO: Drunk
+
+    "The dusk sky, who was empty until now, fills with stars all of colours, it reminds you of the strange colour artifacts that you can find on low–quality photographs."
     "A sudden headache takes hold of your head like a vice tightening it."
+    show ammon e_noway j_disgusted
     "Your stomach churns. Your legs tremble and can’t support your weight any longer. They give out."
 
-    am "Howl!"
+    am j_noway "Howl!"
 
     "He catches you before you hit the ground."
 
     am "I told you you were not fine. Don’t do stuff like that on me, alright?"
 
-    "His muscled arms wrapu around you. A smell of lavender spread through your nose."
+    show ammon e_neutral pupils_right j_neutral
+
+    "His muscled arms wrap around you. A smell of lavender spread through your nose."
     
     if azzy_score >= 1:
         az "You should pass out more often"
+        az "Or break grass"
+
+    show ammon pupils
+
     "He helps you sit on the grass. He crouches yet again and take you with both hands."
 
     am "What’s going on!?"
 
     hl "My head hurts."
+
+    am "Maybe the blood loss doing that to you. Well I’m not sure you’ve lost that much blood but it’s better to patch it up."
 
     "You brush your forehead and your pulsating skull heats up your hand."
 
@@ -1779,21 +1694,32 @@ label rest_area_2:
 
     "He puts his hand on your forehead too."
 
-    am "Ok I don’t feel like you have a fever but we’ve got to treat your headache."
-    am "I think I have some aspirins in my stuff, let me get it."
+    am j_disgusted pupils_left "Ok I don’t feel like you have a fever but we’ve got to treat your headache and your hands."
+    am "I think I have some aspirins and bandages in my stuff, let me get it."
 
-    "Ammon stands up and walks towards the topbox of the motorbike."
+    hide ammon with dissolve
+
+    "Ammon stands up and walks towards the top box of the motorbike."
     "Still nauseated, you can’t much more than sit back and watch."
     "He opens the top—box and get his traveling bag. It is of medium—size, large enough for a 3—day trip."
     "However, you can’t but notice something familiar with one of his belongings."
     "Something cylindrical, something blue."
-    "Finally, Ammon pulls out a box of medicines of his bag and gives it to you."
+    "Finally, Ammon pulls out a box of medicines and bandages of his bag and gives it to you."
+
+    show ammon at american_shot with dissolve
 
     am "Here, with that, your head will hurt a bit less than before."
 
     hl "Thanks."
 
     "You grab the little box."
+
+    am "And now let me patch that."
+
+    "He takes your hand one by one and starts to roll the tissue around the wounds."
+    "He knows what he’s doing. It’s like he’s already done that before."
+
+    am "I don’t have any antiseptic solutions but I couldn’t let that bleed."
 
     am "Wait you’ll surely need some water. Let me fetch some for you."
 
@@ -1817,11 +1743,12 @@ label rest_area_2:
     "The discussion drops silent. You’re too tired to get it alive anyway."
     "You try to rest a bit, but gradually something’s starting to bother you."
     "You’ve already seen this thing that Ammon had in his bag."
-    "It shouldnt’t catch your attention like that. After all, it’s just his bag. Nonetheless..."
+    "It shouldn’t catch your attention like that. After all, it’s just his bag. Nonetheless..."
     "You bite your lip. The more you look at it, the more it doesn’t make sense. Your world revolves, no, distorts around it."
     "It mesmerises you. You are drawn to it. You can’t let the bag out of your sight anymore. The moth within has to follow this firefly."
 
     "You need to check this bag."
+    camera at zpos_camera
     "Still quite dizzy, you manage to get up. You have to use the bike as a support. You shouldn’t push yourself too much."
     "But you still get up."
 
@@ -1834,6 +1761,8 @@ label rest_area_2:
     am "Sure..."
 
     hl "Look, I can stand! I’m a big boy aren’t I."
+
+    show ammon j_disgusted
 
     "Ammon looks at you, unamused. Your attempts at teasing him fall on deaf ears. You roll your eyes."
     "You sigh and you pinch the bridge between your eyes."
@@ -1861,7 +1790,7 @@ label rest_area_2:
         # show screen custom_quickbar
         stop music
         play music "audio/music/moment_orange.mp3" loop fadein 1.0
-        jump pointnclick_interact_loop 
+        jump pointnclick_interact_loop
 
 
 label confront_him:
