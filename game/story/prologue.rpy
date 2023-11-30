@@ -211,8 +211,7 @@ label prologue:
     stop music
     stop sound
     extend ", I need You."
-    camera at zpos_camera
-    scene black at zpos_bg
+    scene black
     pause 1.5
     # play sound 'audio/sounds/car_white_noise.ogg' loop
     jump little_road
@@ -222,13 +221,13 @@ label little_road:
     # with Fade(0.5, 4.0, 0.5)
     play music "audio/music/The Beatles - Here Comes The Sun (2019 Mix).mp3" fadein 5.0 loop
 
-    show ruralRoad at zpos_bg
+    show ruralRoad
     with Fade(0.5, 4.0, 0.5)
 
     "You wake up from your reverie at the cold hands of someone grabbing your shoulder."
     hl "Aaaaaah!"
 
-    show ammon at american_shot
+    show ammon at american_shot:
     with dissolve
     am "Hey were you sleeping?"
     
@@ -240,7 +239,7 @@ label little_road:
 
     hl "Oh... Sorry Ammon I didn’t mean to."
 
-    am e_smug j_noway "No worries Howl. I think I’ll stop next stop, I’m starting to get weary too."
+    am e_smug j_noway pupils "No worries Howl. I think I’ll stop next stop, I’m starting to get weary too."
     # "You wake up at the hum of the radio, a bit shaken up, with drool staining your helmet visor — Fortunately there’s not enough to hide your vision."
     
     hide ammon
@@ -657,7 +656,8 @@ label talk_with_ammon:
     stop music
     stop sound
 
-    scene parkingLot at zpos_bg
+    scene parkingLot:
+        zoom 1.25
     with fade
     play sound "audio/sounds/bird_chirping.ogg" loop
     
@@ -756,7 +756,7 @@ label sleep_on_his_back:
     scene black with dissolve
     stop sound
 
-    show parkingLot at zpos_bg with fade
+    show parkingLot with fade
 
     "You wake up at the smell of Lavender."
     
@@ -951,6 +951,9 @@ label rest_area_1:
     show ammon pupils_right 
     "What a show–off. But a good show–off."
     camera at close_shot
+    show parkingLot:
+        parallel:
+            easeout 1 blur 64
     "The thing that always catches your attention in him is his eyes. His priceless golden eyes shining more than any sun you've seen." 
     "You find yourself mesmerising in these luxurious jewels."
     show ammon pupils 
@@ -961,7 +964,7 @@ label rest_area_1:
     dk "He can guess who you are from it alone."
     "He is objectively better than you in every domain possible."
     camera:
-        easeout 15 ypos 700
+        easeout 15 ypos 400
     "He is handsome, he is charming, he is charismatic, he has a sense a sense of style you will never have." 
     "He also wears golden face piercing. It really amplifies his rebel attitude."
     "You may want to say that to him but he’d say that you’re being too emotional so you always shut yourself."
@@ -975,7 +978,7 @@ label rest_area_1:
     pause 0.5
 
     camera:
-        easein .5 ypos -500
+        easein .5 ypos -200
     
     show ammon pupils e_smug
 
@@ -990,7 +993,11 @@ label rest_area_1:
     am "{cps=3}...{/cps} ok, thanks, I guess?"
     am pupils_right "{size=20} you weirdo"
     
-    camera at zpos_camera
+    camera:
+        parallel:
+            ease 2 zpos 0
+        parallel:
+            ease 2 ypos 0
 
     pause 1.0
 
@@ -1054,7 +1061,7 @@ label rest_area_1:
 label phone_booth: 
     stop music fadeout 0.5
     stop sound
-    scene phone_booth at zpos_bg with fade
+    scene phone_booth with fade
 
     play music "audio/music/night_sky.mp3" fadein 1.0 loop
 
@@ -1600,7 +1607,8 @@ label rest_area_2:
     stop music
     stop sfx fadeout 10.0
 
-    scene parkingLot at zpos_bg
+    scene parkingLot:
+        zoom 1.25
     with Fade(0.5, 6.0, 0.5)
 
     "You lay down onto the frame of the bike. You can’t stand. Dragging yourself here from the booth was already hard enough as it is."
@@ -1787,47 +1795,81 @@ label rest_area_2:
             good_code = ""
 
         
-        # show screen custom_quickbar
+        # show screen custom_quickbarç
+        camera:
+            # perspective False
+            zpos 0
+            perspective False
+        hide ammon
+        scene black
         stop music
         play music "audio/music/moment_orange.mp3" loop fadein 1.0
         jump pointnclick_interact_loop
 
 
 label confront_him:
-    python:
-        del ammon_talked
-        del trunk_explored
-        del padlock_code
-        del good_code
-        del checked_padlock  
-        del got_stick
+    # python:
+    #     del ammon_talked
+    #     del trunk_explored
+    #     del padlock_code
+    #     del good_code
+    #     del checked_padlock  
+    #     del got_stick
 
-        current_screen = "" 
+    #     current_screen = "" 
+    stop music fadeout 1.5
     am "Can I help you?"
 
-    stop music fadeout 1.5
+    
+    show parkingLot:
+        xpos -2144
+    show ammon at american_shot:
+        xpos -1073
+    
+    pause 0.5
+
+    camera:
+        perspective True
+        easeout 3 xpos -2032
+
+    pause 1.5
+    
+    
     play music "audio/music/anger.mp3" loop fadein 0.5
     "There stands an angry dog"
-    am "Mby I know what are you doing with my bag?"
+    camera:
+        perspective False 
+        xpos 0
+    
+    scene black
+    show parkingLot
+    show ammon at american_shot
+    am "May I know what are you doing with my bag?"
 
     "You shiver out of fear. Why did he have to see you do this. If only you could fly very far away from here."
 
     hl "That’s... not what you think, Ammon..."
 
-    am "Then what are you doing with my {$picked_from_the_bag} in your hand?"
+    ### TODO: Expand the conditions with picked objects
+
+    am j_growl "Then what are you doing with my [picked_from_the_bag] in your hand?"
 
     hl "I don’t know I just took it, I swear!"
 
     "Ammon yells at you."
 
-    am "You just took it??? The padlock just disappeared then??? That’s what you’re going to tell me?"
-    am "Because, if you are, don’t even show your shitty face to me anymore."
-    am "You fucking cracked the padlock, you asshole."
+    am j_yell "You just took it??? The padlock just disappeared then??? That’s what you’re going to tell me?"
+    am j_disgusted "Because, if you are, don’t even show your shitty face to me anymore."
+    am j_growl "You fucking cracked the padlock, you asshole."
     am "Well I’m glad you remember my birthday now, bastard. Hope it helped you crack the code."
-    an "I would’ve prefered you remember a fucking month ago??? Don’t you think?!"
+    am "I would’ve prefered you remember a fucking month ago??? Don’t you think?!"
     am "Why did you even do that?? You can’t trust me that much??"
-    am "You’ve pissed me off all day and I’ve tried everything to set you comfortable, even comforting when you were bitching and doing one of your too many whims."
-    am "And that’s how you thank me back?? By snooping my stuff??"
+    am "You’ve pissed me off enough times that you possibly could{w} and even then, I’ve tried everything to set you comfortable, even comforting when you were bitching and doing one of your too many whims."
+    am pupils_down j_disgusted "Bandaged you up..."
+    am pupils "I went along with your hysteric behaviour all day long."
+    am j_yell "And that’s how you thank me back?? By snooping my stuff??"
+
+    show ammon j_growl
 
     "You stay shut. Tears overflow your eyes. You didn’t want to do that."
     
@@ -1835,40 +1877,148 @@ label confront_him:
 
     hl "Please understand me! I was just–"
 
-    am "What is there to understand?? DON’T FUCKING TOUCH MY STUFF YOU UNDERSTAND??"
+    ### TODO: Maybe expand the argument
+
+    am j_yell "What is there to understand?? DON’T FUCKING TOUCH MY STUFF YOU UNDERSTAND??"
 
     "Tears stream down your cheeks."
-    "You tighten the {$picked_from_the_bag}. This is your last anchor of your relationship. The last thing standing for both of you."
+    "You tighten the [picked_from_the_bag]. This is your last anchor of your relationship. The last thing standing for both of you."
 
     az "Cling onto it."
 
     dk "Do not let it go."
 
-    am "Give it back to me."
+    am j_growl "I’ve tried everything I swear, Howl. I’ve tried everything so you could stop brooding."
+    am "I’ve been there for you, everytime you were having hard time."
+    am "And fucking God, with you, it’s all the time, it’s like I’m caretaking a baby, not a grown man!"
+    am "With Marie–Jil, we might as well be your surrogate parents, with how you let her babysit you."
+    am "You’re supposed to be a couple, remember?? She’s not your mom!"
+    am "So for once, just grow a pair and stop moping around."
+    am "You won’t even look at her. She’s not happy with you and never will be."
+    am "With you around, we both won’t ever be! You life—energy vaccuum."
+
+    "The deluge of critiscm and reproach overwhelm you. You want to retort, to make him shut his mouth."
+    "But you can’t find anything to say. Because..."
+    "He’s right, isn’t he?"
+
+    am "You know what? You should have never come back, then."
+
+    hl "... What?"
+
+    am "You shouldn’t have come back from those woods."
+    am j_yell "I can’t deal with you anymore. You’re dragging me down. You’re intoxicating!!"
+    am j_growl "Everytime you’re around my life is a fucking nightmare."
+    am right e_smug j_disgusted "Why did you come back? I can’t understand why."
+    am pupils_right "Why you and not him??"
+
+    show ammon pupils_down
+    
+    "He falls silent."
+
+    am pupils "... I can’t help but think Life is simply unfair when I look at you."
+
+    "You cluch your pants. You can only mutter those words."
+
+    hl "Why... why would you say that?.."
+    hl "What did I do to deserve that?.."
+
+    am front e_neutral "I won’t even bother with answering you. It isn’t even worth it."
+    am j_growl "You don’t deserve it. You’re insufferable."
+
+    am j_noway "But I will say one thing. Why didn’t you come for my birthday?"
+
+    hl "..."
+
+    am j_growl "I was expecting you. I couldn’t wait one more second. For this day, I only wished for one thing, only one thing!"
+    am "That you were there. With me. That was my only wish."
+    am "I wanted to give you one last chance..."
+
+    hl "But you know I couldn’t have, this day..."
+    hl "This is not my fault... That’s not fair..."
+
+    am "..."
+    am "... You never went missing didn’t you?"
+
+    hl "huh–"
+
+    am "You went in the forest by yourself, didn’t you?"
+    am "Well, not by yourself right?"
+
+    hl "That’s not true, I just can’t rememb–"
+
+    am "Don’t bother. I just know it. You were never honest anyway."
+    am "This is your fault... I mean:"
+
+    am "Do you even look at yourself sometimes! You’re a fucking walking corpse! A Monster!"
+    am "So that you came back or not made no difference. You may be walking..."
+    am "But you should’ve stayed dead. Back then. In the woods.{w} Where I wouldn’t have to watch your sad pathetic excuse of a face anymore."
+    am "No..."
+    am "You know what? You’re already dead to me."
+    am j_yell "Scram."
+
+    am j_growl "No wait. Give me back my stuff then you’ll scram."
+    am "I don’t want you to see me anymore. I don’t want to see you anymore..."
+    am "Please just leave..."
+
+    "Ammon turns around towards the bike."
+    
+    hl "Wait! Please!.."
+
+    "You reach a hand out to him."
+    "You can’t give his [picked_from_the_bag] back. He’d leave you for good if you did."
+
+    hl "Please don’t leave... Where will I go if you leave!.."
+    hl "I beg you Ammon, please stay... I am nothing without you!.."
+    hl "What do you want me to do?"
+
+    "Ammon freezes in place. He doesn’t say a word for an agonising amount of time."
+
+    am "... I am fed up with you."
+
+    "He turns back."
+
+    am j_growl "Give it back to me."
 
     hl "... What–"
 
-    am "GIVE BACK WHAT YOU STOLE FROM ME."
+    ### TODO: Add an expression where he has exorbitated eyes
 
+    am j_yell "GIVE BACK WHAT YOU STOLE FROM ME."
+
+    hide ammon with dissolve
     "All of the sudden, Ammon charges."
 
-    "Ammon grabs the {$picked_from_the_bag} but there is too much at stake to let it go so you clutch his hand"
-    "You wrestle for your life to get the {$picked_from_the_bag} back. This is your last chance to set things right so you scratch at him, hiss at him, and even bites him."
-    "On the other hand, Ammon won’t let go either. He barks at you, jerks his head in all directions. He’s slipping through your fingers the more you pull that {$picked_from_the_bag}."
+    "Ammon grabs the [picked_from_the_bag] but there is too much at stake to let it go so you clutch his hand"
+    "You wrestle for your life to get the [picked_from_the_bag] back. This is your last chance to set things right so you scratch at him, hiss at him, and even bites him."
+    "On the other hand, Ammon won’t let go either. He barks at you, jerks his head in all directions. He’s slipping through your fingers the more you pull that [picked_from_the_bag]."
     
     hl "Please Ammon!! Trust me!!!"
+    hl "Please believe me!{w} Please that someone believes me for once!"
+    hl "I’m tired of repeating myself!"
+    hl "Please believe me!"
 
     "You put you hand out to him, to his shoulder. He might understand if you can grab a hold of him."
 
     am "{size=60}BACK OFF{/size}"
 
+    play sound "audio/sounds/punch.mp3"
+    
+    
+    show expression "#F00" at alpha_dissolve:
+        easeout 1.5 alpha 0.7
+    show parkingLot with sshake
+
     "The next moment, his fist connects to your eyebrows arch and you blast through the air on his motorcycle."
-    "The {$picked_from_the_bag} sits on the floor, its contents spilled in the grass, last relic of your fleeting friendship, trampled"
+    "The [picked_from_the_bag] sits on the floor, its contents spilled in the grass, last relic of your fleeting friendship, trampled"
     "You hit your head hard on the frame of the motorcycle. Blood trickles down from it. You pass your head on your wound. Just blood."
 
     am "FUCK, sorry, I didn’t mean to! Let me hel–"
 
     hl "{size=60}YOU FUCKING BASTARD{/size}"
+
+    show parkingLot with sshake
+
+    scene black with dissolve
 
     "You spring on Ammon. You both roll on the grass. After that it’s a bit of a blur. You don’t remember everything."
 
@@ -1877,27 +2027,35 @@ label confront_him:
     stop music fadeout 0.5
     play music "audio/music/uboa.mp3" loop
 
+    show parkingLot with dissolve
+    show expression "#F00" at alpha_dissolve:
+        easeout 1.5 alpha 0.7
+
     "All you remember, is Ammon laid down in the grass, defenseless, his face contorting in pain. He’s out of breath, imploring for air."
-    "You, on the other hand, sits on top of him, astride. You watch his unbeckled belt and you can see the tip of his underpants though his fly. You think this would be a thrilling position in any other context."
-    "Unfortunately, the more you go up though his body, the more you realise the horror of the situation."
+    "You, on the other hand, sits on top of him, astride. You watch his unbeckled belt and you can see the tip of his underpants though his fly."
+    "You gulp."
+    if azzy_score >= 2:
+        az "Why that now..."
+    "Unfortunately, the more you go up though his body, the more you wish you stayed down there."
     "His disheveled, torn down, shirt and his black dirty jacket were no different, no the thing that disturbs you were your arms compressing his chest down."
     "This must hurt him so you should stop but your arms keep pressing down and his cries of pain fill your ears. But you keep pressing down, no matter how much he seethes."
     "Even more disturbing, Ammon hits your arms with all his strength but that reveals in vain, your arms planted there like statues, unmovable, whatever may happened."
-    "Despite his determination and his fierceness, the fists grew gradually weaker to the point where the wind, passing, judging hits you as hard as him, you couldn’t differentiate whomever was beating you."
-    "The knee strikes, beforehand, as piercing as spears, in your back, became bumps comparable to tickles. Although the situation didn’t leave any room for laughter or any kind of foolishness."
+    "Despite his determination and his fierceness, the fists grew gradually weaker to the point where the wind hits you as hard as him."
+    "The knee strikes, beforehand, as piercing as spears, in your back, became bumps comparable to tickles."
     "Then you understand. Your hands are wrapped around the thick neck of your weakening friend."
-    "You squeeze and squeeze his squishy throat crushing every chance that air revigorates him. You can feel his adam apple fighting for its freedom but you would prevent that at all cost."
+    "You squeeze and squeeze his squishy throat crushing every chance that air revigorates him. His adam apple convulsing under your thumb gives you a wave of nausea. However..."
+    pause 1.0
     "You find yourself loving touching his flim skin, and its rough texture. You wished you had done it sooner."
     "Ammon’s face turns pale as you writhe him of his last strands of energy. Drool bubbles out of his mouth, his teeth gritted to keep the remaining air in his mouth."
-    "Another thread of drool drops on Ammon and this time, it only comes from you. Your eyes are exorbitated from rage. You have become a feral animal."
+    "Another thread of drool drops on Ammon. Your eyes are exorbitated from rage. You have become a feral animal."
     "All of the sudden, you feel a loving touch on your arm. The dying hound shares a gaze with you as his last sparkles of life exit those sad eyes."
-    "Close to the death, he had an epiphany."
+    "Close to Death, he says:"
 
     am "Pl–please stop."
 
-    "You suceed to make up words from the low raspy sound coming out of his throat."
+    "You succeed to make up words from the low raspy sound coming out of his throat."
     
-    am "I believ–believe you, ok? You are my friend and I won’t want leave you, ok?"
+    am "I believ–believe you, ok? You are my friend and I won’t leave you, ok?"
     am "I know you’re having hard times, so I won’t hold you to what you’re doing right now, I promise."
     
     "His grip weakens, all colours drain out of his face. His throat before, contracting and moving, goes more and more inert."
@@ -1905,7 +2063,11 @@ label confront_him:
     am "You’re n–not dea–dead. You always ha–have been the s–same cat I met years ago."
     
     "He grins at you, tears streaming down the corner of his lips."
-    am "I don’t want to ever leave you. You’re the favourite person I love to trick to."
+    am "I don’t want to ever leave you."
+    am "I’ve said a—ll"
+    "He coughs and drool leaks on your hands. You don’t budge."
+    am "a–all those horri—horrible things to you, but I never thought them."
+    am "You’re one of my favourite persons"
     am "So... I know it’s not you so stop doing that, I beg you."
     am "Re—remove your h—hands... Please."
 
@@ -1915,30 +2077,36 @@ label confront_him:
         "You loved every rictus of pain on his face. You drool even more and these strings mix with his."
         "Your pleasure is indiscernible from his pain. You hate him. You hate him and you hope he suffers enough." 
         "He’s going to regret ever thinking about leaving you."
-        "Then a memory goes through your mind. Your hands are also wrapped around his neck. But not your dying friend right here. Your father."
-        "You remember everything. The pavement, the fence, the rocks, the blood in the grass mixing in the dirt."
-        "You remove your hands. Blood on your hands. Nausea goes up your torso. You feel light–headed. You stand up."
-        "He doesn’t breathe anymore."
-        "At least you think."
+        stop music
+        cl "Told you so."
+        cl "You love it."
+        cl "You loved it."
+        cl "You’re not at all a living being."
+        cl "You’re a beast. {w}You are a Monster."
+
+        "You remove your hands."
+        hl "... Why."
+
+        "A wave of nausea overflows you."
         "You puke."
     
-    else:
-        "Then you remenmber. All the times Ammon bring up your spirits. All the times you cried out of exhaustion and he was there for you."
-        "All the times, he took your yogurt at lunch at middle school and toyed with you for minutes. In the instant, you hated it but in the end, you’d laugh."
-        "The time you feel nauseated at this lame party and he came take you home even though he told you not to."
-        "The times where he didn’t feel good so you watched over him for day and nights so he’d go better."
-        "You grin. You couldn’t have a better friend than him. He was the only one able to fully understand you. Then you realise."
-        "You’re strangling him. Your hands are wrapped his neck. What are you doing. What you’re doing is bad, forbidden. You’re committing a crime."
-        "You remove you hands of his neck and you stand up so fast, you’re striked with the vertigo."
-        "Ammon let out a seething gasp, finally air filling his lungs. However he stays on the ground, too puny of your assault."
+    # else:
+    #     "Then you remenmber. All the times Ammon bring up your spirits. All the times you cried out of exhaustion and he was there for you."
+    #     "All the times, he took your yogurt at lunch at middle school and toyed with you for minutes. In the instant, you hated it but in the end, you’d laugh."
+    #     "The time you feel nauseated at this lame party and he came take you home even though he told you not to."
+    #     "The times where he didn’t feel good so you watched over him for day and nights so he’d go better."
+    #     "You grin. You couldn’t have a better friend than him. He was the only one able to fully understand you. Then you realise."
+    #     "You’re strangling him. Your hands are wrapped his neck. What are you doing. What you’re doing is bad, forbidden. You’re committing a crime."
+    #     "You remove you hands of his neck and you stand up so fast, you’re striked with the vertigo."
+    #     "Ammon let out a seething gasp, finally air filling his lungs. However he stays on the ground, too puny of your assault."
         
-        if ammon_score >= 1:
-            am "Thanks Gap..."
-            am "I like you {w}a lot."
-            if ammon_score == 3:
-                am "No. I lo–"
+    #     if ammon_score >= 1:
+    #         am "Thanks Gap..."
+    #         am "I like you {w}a lot."
+    #         if ammon_score == 3:
+    #             am "No. I lo–"
         
-        "He doesn’t talk anymore. He has fallen unconcious."
+        "He doesn’t talk anymore. Does he breathe anymore?"
     
     "Your headache assaults you with greater intensity. You clutch you head. You lose your balance."
     "You collapse."

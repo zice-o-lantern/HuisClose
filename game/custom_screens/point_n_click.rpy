@@ -18,3 +18,8 @@ label present_evidence_loop:
     else:
         "Wrong one"
         jump present_evidence_loop
+
+label pointnclick_screen:
+    if renpy.get_screen(current_screen):
+        $ renpy.show_screen(current_screen, _layer="master",screen_active=False)
+    return

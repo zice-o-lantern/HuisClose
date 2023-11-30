@@ -8,14 +8,14 @@ screen restarea(screen_active=True):
     on "show" action SetVariable("current_screen", "restarea")
     on "replace" action SetVariable("current_screen", "restarea")
 
-    add 'parking'
+    add 'parking' at zpos_bg
 
     imagebutton:
         pos (300, 400)
         anchor (.5, .5)
 
-        idle 'ammon'
-        hover 'ammon_hovered'
+        idle 'ammon_pn'
+        hover 'ammon_pn_hovered'
         action Call("restarea_ammon")
         sensitive screen_active
 
@@ -119,7 +119,13 @@ screen restarea_padlock(screen_active=True):
 
 label ammon_padlock_good_code:
     show screen restarea_padlock(screen_active=False)
-    "Finally you open the padlock. Time to rummage throug his stuff then."
+    
+    play sound "audio/sounds/unlock.ogg"
+
+    "Finally you open the padlock. Time to rummage through his stuff then."
+
+    hide screen restarea_padlock with dissolve
+
     "You find some clothes, the usual cleaning hygiene stuff and an unusual amount of medicines of all kind and you think is his notebook?"
     "You notice another thing. A blue flask. You’ve already seen this flask."
 
@@ -135,7 +141,9 @@ label ammon_padlock_good_code:
             $ picked_from_the_bag = "medicine"
             "The medicine is what piqued your interest the most."
             "You grab one of them, and sure, it is a antipyretic. Nothing out of the ordinary. Nowadays it is used to treat mild pain."
-            "You put it back. It still remains a lot of medicines you have to check out. Just the fact that he has so many different types medications is concerning."
+            "You put it back. It still remains a lot of medicines you have to check out." 
+            "Just the fact that he has so many different types medications is concerning."
+            "Not everyone has a first aid kit available on them every second."
             "Then you stumble one very interesting. You recognize the brand."
             "You grab it and turn it in every direction in the case you were mistaken. You have already taken some."
             "It’s an antidepressant."
@@ -154,7 +162,7 @@ label ammon_padlock_good_code:
             "In all of this you manage to decipher Ammon’s writing and you’re able to read some parts of it."
             "A particular page catches your eye. You start to read it."
             ###TODO:Maybe set it in nvl mode.
-            "\"Saturday, 14th Semptember 1975\""
+            "\"Saturday, 14th September 1975\""
             "\"Dear Diary,\""
             "\"{cps=50}Today Howl ki{nw}\""
 
@@ -166,8 +174,14 @@ label ammon_padlock_good_code:
             "You carefully turn it around, still not able to believe what you have in front of your eyes."
             "You struggle to remember where you have seen it. It itches in the back of your brain. It sets you uncomfortable. You can’t put it down anymore."
             "You have to find where it comes from."
+            show eye_lid
+            show expression "#000" with blink_reverse
             "So you take a deep breath, close your eyes and rub your temples. You should be able to remember, right?"
             "You clear your mind. You need every inch of your energy. You concentrate on the itching. A centipede crawls around your skull."
+            "You breathe in slowly."
+            "You breathe out."
+            stop music fadeout 1.0
+            "You are ready."
             "You plunge your hand deep into your ear and you hit the cage of your brain. You wiggle your claws around, randomly. It’s squishy." 
             "It’s more arduous than you thought. Although you’re more determined than that. It won’t be able to escape your grasp any longer."
             "Finally, you grab one of its legs and you pull without a warning. But it won’t give out easily. It scratches every surfaces it can cling onto. It is desperate."
@@ -175,13 +189,17 @@ label ammon_padlock_good_code:
             "You writhe out your suffering but you won’t give up. You have to remember."
             "You extract the rampant from your ear and hold it still and keep it in your control. It convulses. You have to keep going."
             "You wrap your fingers around the insect. You want to throw it onto the ground. Its thousand legs wiggles under your skin so much that your stomach begins to churn."
-            "But you hould still. You have to."
-            "Then you crush it. It doesn’t move anymore. You’ve succeded."
+            "But you hold still. You have to."
+            "Then you crush it. It doesn’t move anymore. You’ve succeeded."
             "The before hot and squishy insides of the insect turns solid cold. You’re confused. You open your clutch."
             "A beautiful cocoon sits there. You admire it. The centipede morphed."
             "As you get closer of it, a ray of light beams in your eyes and you let it go, to hide your eyes of it."
             "When you reopen them, a beautiful firefly illuminates the your world. You can’t move, mouth agape."
             "And like that, the firefly gently lands."
+            show eye_lid
+            hide expression "#000" with blink_transition
+            play music "audio/music/moment_orange.mp3" fadein 0.5
+            hide eye_lid with dissolve
             "Wait. You remember now."
             "Why does Ammon have your Father’s flask."
             jump confront_him
@@ -215,7 +233,11 @@ transform c_zoom:
 label restarea_ammon:
     $ renpy.show_screen(current_screen, _layer="master",screen_active=False)
 
-    am "Hi Gappy. What is it?"
+    show ammon at american_shot
+    with dissolve
+
+    am "Hi Howly. Do you need anything?"
+    am "Have you found what you want?   "
 
     if checked_padlock >= 1:
         "You notice he has his wallet in his pants on his back pockets."
@@ -229,41 +251,43 @@ label restarea_ammon:
             menu ammon_questions:
 
                 "Are you sure you don’t have any water?":
-                    hl "I’m thisty."
+                    hl "I’m thirsty."
 
                     am "Yes I am sure."
 
                     hl "Not any tiney bitey one for me?"
 
                     am "No Howl, no matter how much you ask, the answer will stay the same."
-                    am "Do you want me to shake the deep bottom of my bag so you can see I’m not lying."
+                    am e_disgusted "Do you want me to shake the deep bottom of my bag so you can see I’m not lying?"
 
                     hl "No..."
 
-                    am "So stop asking."
+                    am e_neutral "So stop asking."
 
-                    "He’s really acting weird. I need to get at the bottom of this."
-                    return
+                    "He’s really acting weird. You need to get at the bottom of this."
+
                 "What’s your favourite number" if checked_padlock >= 1:
                     hl "Hey Ammon, do you have a favourite number?"
 
-                    am "... What do you mean?"
+                    am e_disgusted "... What do you mean?"
 
                     hl "Like a 4 digits number, you know like 4562? 6512? 2313? Those are cool numbers! Really cool numbers..."
 
-                    am "Hum no? Why would I have a favourite 4 digits number? This is just stupid?"
+                    am j_noway "Hum no? Why would I have a favourite 4 digits number? This is just stupid?"
+
+                    show ammon j_neutral
 
                     hl "I don’t know, I do have a favourite 5 digits number! So why not 4 digits?"
 
                     am "... Which it is..?"
 
-                    hl "Huuuuuh, 6... 8... 83.. 1"
+                    hl "Huuuuuh, {cps=5}6... 8...{cps=2} 83.. 1"
 
-                    am "Greaaaaaat...."
+                    am right e_smug j_disgusted "Greaaaaaat...."
 
                     hl "But I also have a favourite 2 digits number!"
 
-                    am "Yeah I know this one. You don’t have to tell me."
+                    am j_noway "Yeah I know this one. You don’t have to tell me."
 
                     az "But it’s so funny..."
 
@@ -271,7 +295,34 @@ label restarea_ammon:
 
                     hl "Oh ok..."
 
-                    return 
+                "When’s your birthday?" if checked_padlock >= 1:
+                    "What are you doing???"
+
+                    az "Sounds like someone wants to get beaten by Ammon"
+                    az "That’s exciting."
+
+                    dk "... Could you not do that?"
+
+                    "Anyway, you won’t say that."
+                
+
+                "Hand me your wallet" if checked_padlock >= 1:
+
+                    am e_disgusted j_disgusted "{cps=3}...{/cps}"
+                    show ammon j_noway
+                    extend " What?"
+
+                    hl "You know, the square thing you have in your back pocket?"
+                    hl "It can be used for storing money, cards, id–"
+
+                    am e_neutral "I know what a wallet is."
+                    am e_neutral j_neutral "What’s bothering me is why you’re \"asking\" me my wallet."
+                    am "You have no use for my wallet."
+
+                    hl "It’s because you didn’t think hard enough."
+
+                    am e_disgusted "..."
+                    am "I’m going to ignore what you just said if that’s fine by you."
 
         
         "I’ve got to something for you." if ga_inventory != []:
@@ -289,7 +340,7 @@ label restarea_ammon:
                     "Ammon sighs. He sees what you got in your hands."
 
                     am "Is it your notebook. It’s true that you like drawing on your part time."
-                    am "Why are you showing me this? I’ve already seen it."
+                    am right "Why are you showing me this? I’ve already seen it."
 
                     hl "Yes I am aware... I feel like you can give me some advice on one of my sketches."
 
@@ -301,9 +352,12 @@ label restarea_ammon:
 
                     hl "Ok!"
 
+                    show ammon front e_neutral j_neutral
+
                     "You hand him the notebook and he opens it, grumpily, slogging through the pages."
                     "You stick to him on his side to better appreciate your little sketches. You’re proud of your silly drawings. You hope him too."
-                    "From times to times, you point out some sketch reminding you some memories. Some you made at college. Some made at Julie’s. Some at Ammon’s, etc"
+                    "From times to times, you point out some sketch reminding you some memories. Some you made at college. Some made at MJ’s. Some at Ammon’s, etc"
+                    show ammon pupils_down j_happy
                     "Despite Ammon’s initial reservations, you see a big grin drawn on his illuminated face."
                     
                     am "Honestly I don’t even know why you’re asking me this, all of these are great."
@@ -311,33 +365,38 @@ label restarea_ammon:
                         "Meanwhile, you lean into him, trying to grab the wallet in his pocket."
                         "The thing is you’re not really sneaky, discreet or anything."
                         "So you just end up gluing your body onto his, creating a pretty embarrassing situation."
+                        show ammon j_disgusted e_disgusted pupils
                         "Ammon raises an eyebrow."
+
                         
                         am "Um, what are you doing? Is there something wrong?"
 
                         hl "No– No! I just wanted to get a better look at it that’s all. It was hard to see from where I was."
 
-                        am "Hum okay?"
+                        am j_noway "Hum okay?"
 
-                        "You quickly retrieve your hand from his back. No need to make it more akward."
+                        show ammon j_neutral
+
+                        "You quickly retrieve your hand from his back. No need to make it more awkward."
 
                         az "You should try to steal more often."
                         dk "Do not encourage him."
                         
                     
+                    show ammon right e_neutral j_neutral
                     "Ammon closes the notebook and hands it back to you."
                     am "Happy?"
 
                     hl "Yes, great thank you!"
 
-                    am "Well I’m happy than I was able to help."
+                    am front "Well I’m happy than I was able to help."
 
                 elif selected_item.name == "Stick":
                     hl "I have something for you, Ammon!"
 
-                    am "... What?"
+                    am e_disgusted "... What?"
 
-                    hl "Quick, go fecth, good dog!"
+                    hl "Quick, go fetch, good dog!"
 
                     "You throw the stick in the grass behind him. Confused he turns his back to you."
                     "You take the opportunity to slip your hand into his back pocket. You manage to grab onto it."
@@ -352,7 +411,7 @@ label restarea_ammon:
 
                     hl "... Go fetch it?"
 
-                    am "... I’m going to politely ignore this."
+                    am e_neutral j_disgusted "... I’m going to politely ignore this."
                 
                 elif selected_item.name == "Ammon’s Wallet":
                     "Wait!!!!! Don’t do that!!"
@@ -360,7 +419,7 @@ label restarea_ammon:
                 
                 else:
                     "Nice."
-        
+    hide ammon with dissolve
     return
 
 label restarea_trunk:
@@ -380,8 +439,8 @@ label restarea_bag:
 
     if checked_padlock == 0:
         
-        "Doubting Ammon’s sayings veracity, you sneakily get at a close distance of your friend’s bag and you try to open it. You cast some quick looks at Ammon while doing your little crime but he seems distracted smoking."
-        "Being discreet, you can’t force the bag to open, so you notice something that will prevent you from going any further without making a fuss."
+        "You sneakily get at a close distance of your friend’s bag and you try to open it. You cast some quick looks at Ammon while doing your little crime but he seems distracted, elsewhere."
+        "Being discreet, you can’t force the bag to open, so you notice something that preventing you from going any further without making a fuss."
 
         $ renpy.show_screen("restarea_padlock", screen_active=False)
         $ renpy.transition(dissolve)
@@ -389,7 +448,9 @@ label restarea_bag:
         pause 1.0
 
         "You remember that Ammon is a pretty cautious guy so obviously, he has set a code padlock on his trip belongings. Taking a peek in it will demonstrate harder that you thought."
-        "You check the bag if it has a hole or any openings, making you able to bypass his security. Unfortunately no such luck. No tearings, no manifacturing defects, no hole, nothing. You shake the bag. It’s filled to the brim."
+        "You check the bag if it has a hole or any openings, making you able to bypass his security." 
+        "Unfortunately no such luck. No tearing, no manufacturing defects, no hole, nothing." 
+        "You shake the bag.{w} It’s filled to the brim."
         "You mull about a time, it shouldn’t hurt to try some combinations before giving up"
     
     elif checked_padlock == 1:
@@ -409,7 +470,7 @@ label restarea_bag:
 
         "Well what were you thinking anyway? Do you really ponder he’d put a random number into his padlock? No that can’t be it. Ammon surely set a code like a date dear to him or something."
         "Perhaps his birthday. Should be easy enough. You just have to put his birthday into the padlock and you’ll be able to unlock, right? Go on, do it. You are{cps=3}...{/cps} able to do{cps=3}...{/cps} it..."
-        "{cps=3}...{/cps} Wait. Did you really forget, Ammon’s birthday? You’re utterly ashamed. What a great friend you are. Forgetting the birthday of you are. Great job."
+        "{cps=3}...{/cps} Wait. Did you really forget, Ammon’s birthday? You’re utterly ashamed. What a great friend you are. Forgetting his birthday. Great job."
         "Alright, let’s go on. You know what to do. You should look for his birthday. But don’t ask him directly. He {b}will{/b} get mad. It’d be better if you could find it in secret."
         
         $ checked_padlock += 1
@@ -442,7 +503,7 @@ label restarea_notebook:
     "Oh here is your beloved notebook you bring with you everywhere."
     "Studies can be really exhausting. If you dedicated all your life, you’d already jumped over a window."
     "So you got a hobby of yours to distract you. When you’re bored at classes in the amphitheater, you take out your notebook and start sketching in them."
-    "Over the years, you estimate you got really good at it. You can’t resist showing it to your friends. Julie loves your drawings. She encourages you into an artist carrer."
+    "Over the years, you estimate you got really good at it. You can’t resist showing it to your friends. Julie loves your drawings. She encourages you into an artist career."
     "You also show it a lot to Ammon. He likes what you do but at this point, he’s got fed up that you show it to him every minute."
     "You should show it to him again. You could also keep sketching in it. Bring it with you."
     

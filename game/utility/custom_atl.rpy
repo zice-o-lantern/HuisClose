@@ -245,6 +245,13 @@ label spawn_fireflies:
         repeat
     return
 
+
+label set_perspective(b):
+    $ boo = b
+    camera at zpos_camera:
+        perspective boo
+    return
+
 transform shiver_image(e=0.05, x=10,b=0):
     easein e xoffset b-x
     easein e xoffset b+x
@@ -297,19 +304,20 @@ transform zpos_bg:
 
 transform zpos_camera:
     parallel:
-        easein 1 zpos 1920
+        easein 1 zpos 0
     parallel:
         easein 1 ypos 0
 
 transform american_shot:
-    xalign 0.5
-    yalign 0.25
+    zoom .4
+    xcenter 0.5
+    ycenter 0.85
 
 transform close_shot:
     parallel:
-        ease 2 zpos 700
+        ease 2 zpos -500
     parallel:
-        ease 2 ypos -500
+        ease 2 ypos -200
 
 transform WiggleVision:
     xcenter 0.5
