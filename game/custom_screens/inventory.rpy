@@ -14,8 +14,9 @@ default rows_nb = 3
 default selected_item = ""
 default notebook = Item("Notebook", "notebook", "My beloved notebook. I bring it out with me everywhere.")
 default water_bottle = Item("Water Bottle", "bottle", "A water bottle that rehydrates! To be honest, \nI’m pretty honest, I’m pretty thirsty.", "water_bottle_examine")
-default cigarette = Item("Cigarette", "cigarette", "I knew Ammon was hiding some from me.", "cigarette_examine")
-default ammon_wallet = Item("Ammon’s Wallet", "portefeuille_clark", "Ammon’s wallet. You might find \nsome interesting informations about him", "ammon_wallet_examine")
+# default cigarette = Item("Cigarette", "cigarette", "I knew Ammon was hiding some from me.", "cigarette_examine")
+default ammon_wallet = Item("Ammon’s Wallet", "portefeuille_clark", "Ammon’s wallet. You might find \nsome interesting information about him", "ammon_wallet_examine")
+default stick = Item("Stick", "stick", "This is a stick. Ammon might like it.")
 
 default presented_item = ""
 
@@ -89,26 +90,41 @@ screen get_item(item):
                 text item.description size 40
 
 label default_examine:
-    n1 "Nothing special about it."
+    call pointnclick_screen from _call_pointnclick_screen
+    "Nothing special about it."
     call screen inventory
     return
 
 label water_bottle_examine:
-    ga "I’m thisrty"
-    ga "I’m not anymore"
+    call pointnclick_screen from _call_pointnclick_screen_1
+    "I should bring it to Ammon. {w}He might get impatient. I care no less if he’s pissed."
+    "But I don’t have to deal his prick attitude, right now."
     call screen inventory
     return
 label cigarette_examine:
+    call pointnclick_screen from _call_pointnclick_screen_2
     "You’d light one but you don’t have a lighter."
     "Seems like you’ll have to see Ammon anyway."
     call screen inventory
     return
 label ammon_wallet_examine:
-    ga "I should be able to find some informations on Ammon."
-    "You search through his wallet and you pull out his ID card"
+    call pointnclick_screen from _call_pointnclick_screen_3
+    hl "I should be able to find some information on Ammon."
+    "You search through his wallet"
+    "There’s some money, gift cards and coupons for some groceries store. Not really interesting to you to be, honest."
+    "Then you spot the thin you was searching for."
+
     show ammon_id
     pause 2.0
     "Well here his birthday, you should be able to open the padlock now"
     hide ammon_id
+    call screen inventory
+    return
+
+label stick_examine:
+    call pointnclick_screen from _call_pointnclick_screen_4
+    "This is a stick. Nothing more to it..."
+    "Though it could interest Ammon." 
+    "You know, how he’s a dog and all..."
     call screen inventory
     return

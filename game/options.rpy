@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("HuisClose")
+define config.name = _("TheFireflyWithin")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "0.0.6"
+define config.version = "0.0.7"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -38,7 +38,7 @@ I want a daddy to lull me to sleep.
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "HuisClose"
+define build.name = "TheFireflyWithin"
 
 
 ## Sounds and music ############################################################
@@ -112,8 +112,8 @@ define config.window = "auto"
 
 ## Transitions used to show and hide the dialogue window
 
-define config.window_show_transition = Dissolve(.2)
-define config.window_hide_transition = Dissolve(.2)
+define config.window_show_transition = Dissolve(0.2)
+define config.window_hide_transition = Dissolve(0.2)
 
 
 ## Preference defaults #########################################################
@@ -208,3 +208,8 @@ init python:
 ## by a slash.
 
 # define build.itch_project = "renpytom/test-project"
+
+# Create a channel for beeps so they don’t interrupt sfx
+init python:
+    renpy.music.register_channel("beeps", "sound")
+    renpy.music.register_channel("sfx", "sound")
