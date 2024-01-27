@@ -90,25 +90,25 @@ screen get_item(item):
                 text item.description size 40
 
 label default_examine:
-    call pointnclick_screen
+    call pointnclick_screen from _call_pointnclick_screen
     "Nothing special about it."
     call screen inventory
     return
 
 label water_bottle_examine:
-    call pointnclick_screen
+    call pointnclick_screen from _call_pointnclick_screen_1
     "I should bring it to Ammon. {w}He might get impatient. I care no less if he’s pissed."
     "But I don’t have to deal his prick attitude, right now."
     call screen inventory
     return
 label cigarette_examine:
-    call pointnclick_screen
+    call pointnclick_screen from _call_pointnclick_screen_2
     "You’d light one but you don’t have a lighter."
     "Seems like you’ll have to see Ammon anyway."
     call screen inventory
     return
 label ammon_wallet_examine:
-    call pointnclick_screen
+    call pointnclick_screen from _call_pointnclick_screen_3
     hl "I should be able to find some information on Ammon."
     "You search through his wallet"
     "There’s some money, gift cards and coupons for some groceries store. Not really interesting to you to be, honest."
@@ -122,7 +122,7 @@ label ammon_wallet_examine:
     return
 
 label stick_examine:
-    call pointnclick_screen
+    call pointnclick_screen from _call_pointnclick_screen_4
     "This is a stick. Nothing more to it..."
     "Though it could interest Ammon." 
     "You know, how he’s a dog and all..."
