@@ -4,16 +4,19 @@ style bottom:
 
 screen restarea(screen_active=True):
     tag restarea
+    layer "farback"
 
-    on "show" action SetVariable("current_screen", "restarea")
-    on "replace" action SetVariable("current_screen", "restarea")
+    on "show" action [SetVariable("current_screen", "restarea"), Show("restarea_butt")]
+    on "show" action [SetVariable("current_screen", "restarea"), Show("restarea_butt")]
+    on "hide" action Hide("restarea_butt")
 
     add 'parking' at zpos_bg
 
+screen restarea_butt(screen_active=True):
+    layer "front"
     imagebutton:
         pos (300, 400)
         anchor (.5, .5)
-
         idle 'ammon_pn'
         hover 'ammon_pn_hovered'
         action Call("restarea_ammon")

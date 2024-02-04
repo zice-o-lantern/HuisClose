@@ -44,13 +44,13 @@ label little_road:
     "Il reprend sa typique posture, croisant les bras, tapant du pied."
     show ammon with dissolve
     
-    "???" "En train de pioncer, hein ?"
+    "???" "En train de pioncer, n’est–ce pas ?"
 
     hl "Huh, de quoi ?"
 
     "Il te laisse reprendre tes esprits à ton rythme."
     "Tu enlèves le casque, te compressant la tête. Ces fichues longues oreilles ne te facilitent pas la tâche."
-    "Après avoir remué tes petites moustaches, et toute pilosité faciale qui te reste, tu te frottes les yeux."
+    "Après avoir remué tes petites moustaches, et toute pilosité faciale qui te reste, tu retires tes lunettes de ton petits museau et tu te frottes les yeux."
     
     hl "Quelle heure il est ? Il est tard, non ?"
 
@@ -60,6 +60,10 @@ label little_road:
     "Homme au casque" "Tu peux bien rester éveillé quelques heures de plus non ?"
 
     "Tu baisses les yeux et étonnamment, tu te trouves sur une moto, assis."
+    "Sortant ton chiffon, tu essuies la buée qui obstrue les verres de tes lunettes." 
+    "Tu aimes penser que tu n’as pas une si mauvaise vue mais tu ne peux qu’admettre que, sans elles, tu aurais dû mal à te concentrer, amplifiant la constante fatigue mentale sur tes épaules."
+    "Une fois les lunettes posées sur mon visage, l’écriture en face de toi, auparavant trouble, devient clair, la mise en point moins laborieuse qu’avant."
+    "Tu peux y lire la marque de la moto et tu ne retiens guère le nom, les automobiles ne faisant pas partie de tes intérêts."
     "Tu tournes ta tête pour observer les alentours. Des étendues de champs de tournesol. Une route déserte mal entretenue avec des crevasses à gauche et à droite."
     "Au loin, dans ton dos, tu aperçois des chaînes de montagnes survolant les horizons. Cela semble si loin de chez toi."
 
@@ -75,7 +79,7 @@ label little_road:
     "Tu ravales les remarques acerbes que tu allais lui lancer et tu te contentes d’un claquement de langue."
 
     az "C’est vrai que t’es long à la détente, au fond."
-    dk "Mais c’est nécessaire, tu as besoin d’avoir toutes les cartes en main avant d’agir, n’est–ce pas ?"
+    dk "Mais cela est nécessaire, tu as besoin d’avoir toutes les cartes en main avant d’agir, n’est–ce pas ?"
 
     "Homme au casque" "Par contre, je peux pas te laisser te rendormir."
     "Homme au casque" "Tu commençais à piquer du nez et je n’apprécie pas les gros objets lourds et froids qui me martèlent le dos pendant que je conduis."
@@ -94,10 +98,122 @@ label little_road:
     "Surpris par la soudaine vitesse, tu agrippes à la veste de l’homme masqué."
 
     "Après quelques minutes de secousses et valdingues causées par la prudente conduite d’Ammon, vous vous retrouvez à une allure soutenue."
-    "Le vent " 
+    "Le vent parcourt ton corps et s’infiltre dans toutes les petites ouvertures de tes vêtements. La blaze, virevoltant à la brise, noir n’offre que peu de protection."
+    "Tu aurais voulu qu’Ammon te laisse plus de temps pour te préparer et fermer ce blazer."
+    "La cravate autour de ton cou, contrairement à ce que tu t’attendais, ne bouge pas tant que ça."
+    "Tu peux remercier le dos grand et large d’Ammon t’offrant une protection à la vitesse, dont la cravate est coincée entre lui et ton torse."
+    "Cependant cela ne lui dérange pas d’être compressée, pouvant bénéficier de la chaleur de l’homme froid."
 
+    am "Tu pourrais me lâcher s’il te plaît ?"
 
+    "Réalisant que tu es toujours accroché à sa taille, gêné, tu le relâches maladroitement."
 
+    az "C’était agréable le temps que ça a duré."
+
+    dk "Ce n’aurait pas pu durer pour toujours."
+    dk "Tout a une fin."
+
+    am "Merci."
+
+    "Ne savant plus où mettre tes mains, tu les places à côté de tes jambes, sur le siège, les bras tendues et tu observes le paysage d’un regard inattentif."
+    "Ta gorge se noue. Tu connais Ammon et il n’est pas tès tactile. Tu l’as sûrement énervé plus qu’il ne l’était."
+
+    dk "Arrête de te triturer le cerveau sur ça. Ce n’était pas voulu, tu le sais bien."
+
+    "Il n’empêche que le mur de glace se formant entre vous deux ne cesse de grandir. Son casque d’un noir froid occupe de plus en plus de place dans ton champ de vision."
+    "Toutes tes tentatives de regarder au loin, dans l’horizon, où que ce soit, juste n’importe où, se révèlent infructueuses, tes yeux finissant par se poser sur la tête d’Ammon, impassible."
+    "Tu déglutis, gesticulant inconfortablement sur ton siège."
+
+    am "Euh, Howl ?"
+
+    "Tu sursautes à sa voix, t’apprêtant à recevoir une autre remarque désagréable."
+
+    hl "Oui ?"
+
+    am "Ça te dirait que je mette un peu de musique ?"
+
+    hl "De musique ?"
+
+    am "Oui... J’ai une autoradio sur ma moto.{w} En cas de longs trajets."
+    am "Et il s’avère que ce trajet est plutôt long, tu vois ?"
+
+    hl "Oui je vois..."
+
+    "Tes muscles se décontractent, réfléchissant une réponse à la question."
+
+    $ radio_on = False
+
+    menu radio:
+        "Pourquoi pas":
+            hl "Euh oui, je veux bien."
+            hl "{cps=3}...{/cps} Enfin si tu veux, hein"
+
+            am "D’accord."
+            
+            "Ammon se baisse et enclenche la radio sur son tableau de bord."
+            "Malgré la radio, le silence assourdissant entre vous ne fait que peser encore plus sur tes épaules."
+
+            $ radio_on = True
+
+            ## TODO: Radio Music without lyrics 
+
+        
+        "Non merci":
+            hl "Ça va, j’aime bien le son de la moto, au final."
+            
+            am "C’est comme tu veux"
+
+            "Le silence assourdissant entre vous est amplifié par ton refus de le combler."
+            "Tu te sens stupide."
+    
+    "Tu cherches désespérément un sujet de conversation pour passer le temps."
+    "Tout autre personne aurait été à ta place, peut–être aurait–elle pensé sage de plutôt profiter du rafraîchissant air, pour une fois que tu sors de chez toi."
+    "Cependant, pour toi, cela se montre impossible. Tu ne peux pas le quitter des yeux."
+    "Tu continues de fixer ce casque."
+
+    az "Tu ne peux plus détourner le regard. Il aspire ton champ de vision."
+    az "Tu l’as enfin devant toi.{w} Toutes ces années tu as rêvé de ce moment.{w} Toutes ces années tu souhaitais enfin pouvoir l’atteindre"
+    az "Pourtant aucun de tes mots ne lui parvient.{w} Que c’est misérable."
+
+    dk "Il représente tout pour toi."
+    dk "C’est ton emblème{cps=3}...{/cps}{w} de ton échec{w}, de tes échecs"
+
+    am "Howl ?"
+    
+    hl "Oui ?"
+
+    "Tu lèves la tête avec appréhension."
+
+    am "Tu pourrais arrêter de te tortiller dans tous les sens, comme ça ? Ça me déconcentre."
+
+    hl "Ah d’accord..."
+
+    "Tu t’affaisses vaincu. Maintenant c’est sûr, tout est fini. Ce voyage va être très douloureux."
+
+    am "Tu as mal quelque part ?"
+
+    hl "Hein ?"
+
+    am "Il y a bien une raison pour laquelle tu te tortilles comme ça non..."
+
+    az "Si tu lui dis que t’es frustré parce que t’arrives pas à aligner plus de deux mots avec lui, il va te prendre pour un cas."
+    az "{w}Pas que ce soit très compliqué à voir, de toute façon."
+    az "Mens–lui."
+
+    dk "Lui mentir ne fera qu’augmenter la distance entre vous."
+    dk "Sois franc."
+    dk "Et non tu n’es pas un cas..."
+
+    menu excuse:
+        "Mon casque me démange":
+            #block of code to run
+        "Les sièges sont inconfortables":
+            #block of code to run
+        "La radio me dérange, au final." if radio_on:
+            
+        "C’est juste que ça fait longtemps qu’on s’est pas vu.":
+
+    
 
 label talk_with_ammon:
     $ derek_score += 1
@@ -684,7 +800,7 @@ label phone_booth:
     hl "Imagine for a second, how the americans reached the moon, {cps=120.0}how we will in the future be able to travel to space {cps=150.0}and also how we will be able to even eat without opening the mouth."
     hl "{cps=200}don’tyouthinkit’sfantasticsometimesyouthinkwowtechnolgyandallh\nowrapiditwillreachveryhighstandads??it’sreallywonderfulwhenyouthinkaboutitIwanttoneverdietowitnessthis{nw}"
 
-    "You couldn’t hold my excitation anymore. The words leaving from your mouth were forming before your brain could even process the information you were spilling out at her. Your speaking functions were not functioning anymore."
+    "You couldn’t hold your excitation anymore. The words leaving from your mouth were forming before your brain could even process the information you were spilling out at her. Your speaking functions were not functioning anymore."
 
     mj "Howl, Calm down! Calm down, for god's sake. You’re going to choke on your own words. Take a breath ok? Breathe with me, alright? At the count of three you’ll breathe out, ok?"
 
@@ -946,7 +1062,7 @@ label phone_booth:
 
     hl "Huh, okay? What is it? What does this have to do with me?"
 
-    mj "I–I wanted to talk about your behaviour lately."
+    mj "I–I wanted to talk about your behavior lately."
 
     "Unsettled, she struggles to find words on her thoughts. Her overall attitude disturbs you."
     "She grows impatient. You let her explain herself."
@@ -1332,7 +1448,7 @@ label rest_area_2:
     "You’ve already seen this thing that Ammon had in his bag."
     "It shouldn’t catch your attention like that. After all, it’s just his bag. Nonetheless..."
     "You bite your lip. The more you look at it, the more it doesn’t make sense. Your world revolves, no, distorts around it."
-    "It mesmerises you. You are drawn to it. You can’t let the bag out of your sight anymore. The moth within has to follow this firefly."
+    "It mesmerizes you. You are drawn to it. You can’t let the bag out of your sight anymore. The moth within has to follow this firefly."
 
     "You need to check this bag."
     camera at zpos_camera
