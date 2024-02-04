@@ -206,12 +206,34 @@ label little_road:
 
     menu excuse:
         "Mon casque me démange":
-            #block of code to run
-        "Les sièges sont inconfortables":
-            #block of code to run
-        "La radio me dérange, au final." if radio_on:
+            "Tu lèves ta main pour te frotter le menton, comme à ton habitude, lorsque tu veux réfléchir."
+            "Cependant, elle se heurte à ton casque.{w} De là te vient une idée."
             
+            hl "C’est juste que mon casque me démange un peu ahah."
+            hl "Je n’ai pas vraiment l’habitude d’en mettre, tu sais."
+            hl "Je ne sors pas souvent en moto, ahah."
+            hl "Puis tu sais avec mes oreilles et tout, c’est pas super facile."
+
+            am "Tu sais que j’ai de plus grandes oreilles que toi ?"
+
+            hl "Oui mais quand même ahah."
+
+            "Tu ne peux t’empêcher de rire inconfortablement. Oui le casque est un peu inconfortable mais pas à ce point."
+
+            am "Si tu veux on pourra faire une pause sur le chemin ? Comme ça je pourrais t’aider avec ton casque, que t’aies plus mal."
+
+            hl "Je t’assure que je n’ai pas mal Ammon !{w} Mais je voudrais bien qu’on s’arrête sur le chemin si c’est possible..."
+            hl "Je suis un peu fatigué."
+            
+            am "...{w} Pas de problème, Howl. Moi aussi je pense avoir besoin d’une pause."
+
+        "Les sièges sont inconfortables":
+            "Dans ton panique pour trouver un assez bon mensonge tu teu"
+        "La radio me dérange, au final." if radio_on:
+            "test"
+
         "C’est juste que ça fait longtemps qu’on s’est pas vu.":
+            "test"
 
     
 
