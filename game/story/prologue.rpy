@@ -266,8 +266,21 @@ label little_road:
             "test"
 
         "C’est juste que ça fait longtemps qu’on s’est pas vu.":
-            "test"
+            $ derek_score += 1
+            $ ammon_score += 1
 
+            "Tu as beau réfléchir mais rien ne te vient."
+            "Plus précisément, plus tu y réfléchis, plus une douleur aiguë se forme au centre de ta poitrine."
+            "Telle une longue aiguille s'enfonçant dans ton cœur, tu hisses à travers les dents."
+            "Ta gorge se noue. Tu ne peux pas lui faire ça."
+            
+            hl "Honnêtement...{w} est-ce que tu veux que je sois là ?"
+
+            am "Hein ? Qu'est-ce que tu dis ?"
+            
+            hl "C'est juste que j'ai l'impression...{w} que je te dérange."
+            hl "Chaque chose que je fais, t'en profites pour me railler."
+            hl "Ou tu"
     
 
 label talk_with_ammon:
