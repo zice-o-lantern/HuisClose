@@ -206,6 +206,7 @@ label little_road:
 
     menu excuse:
         "Mon casque me démange":
+            $ azzy_score += 1
             "Tu lèves ta main pour te frotter le menton, comme à ton habitude, lorsque tu veux réfléchir."
             "Cependant, elle se heurte à ton casque.{w} De là te vient une idée."
             
@@ -228,7 +229,25 @@ label little_road:
             am "...{w} Pas de problème, Howl. Moi aussi je pense avoir besoin d’une pause."
 
         "Les sièges sont inconfortables":
-            "Dans ton panique pour trouver un assez bon mensonge tu teu"
+            "Dans ta panique pour trouver un assez bon mensonge tu te tortilles encore plus."
+            "Malgré le cuir les enveloppant, tu réalises que les sièges sont vraiment durs."
+            
+            hl "C'est juste que... ça fait plusieurs heures qu'on roule donc avec la rigidité de mon siège, disons que..."
+            hl "Que je commence à avoir mal."
+
+            "Ammon ricane."
+
+            am "Quoi ? Le siège de mon humble moto ne lui sied guère à Monsieur le Monarque ?"
+            am "Sa Majesté voudrait un coussin pour son popotin, peut-être ?"
+            
+            "Ses remarques sarcastiques te tapent sur les nerfs."
+            
+            dk "Ne peut-il pas te prendre 5 min au sérieux ?"
+            
+            az "Ne t'inquiète pas, c'est sa façon d'aimer, tu le sais bien."
+
+            "Tu ne réponds pas. Que tu n'aies rien à dire ou que tu ne souhaites pas
+
         "La radio me dérange, au final." if radio_on:
             "test"
 
