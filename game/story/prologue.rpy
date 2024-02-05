@@ -246,7 +246,16 @@ label little_road:
             
             az "Ne t'inquiète pas, c'est sa façon d'aimer, tu le sais bien."
 
-            "Tu ne réponds pas. Que tu n'aies rien à dire ou que tu ne souhaites pas
+            "Tu ne réponds pas. Que tu n'aies rien à dire ou que tu n'estimes que cette réponse ne mérite pas ton attention..."
+            "Tu restes silencieux."
+            "Ammon ne réagit pas en premier lieu. Puis ses épaules se baissent, quoi que légèrement."
+            "Il reste dans cette position pendant quelque temps. Finalement il prend une grande inspiration et soupire doucement, exaspéré."
+
+            am "Je t'ai vexé, n'est-ce pas ?"
+            
+            hl "Non."
+
+           
 
         "La radio me dérange, au final." if radio_on:
             "test"
