@@ -255,7 +255,12 @@ label little_road:
             
             hl "Non."
 
-           
+            am "... Bref, que ce soit vrai ou non, je peux pas faire grand-chose à ton problème."
+            am "Mais on peut s'arrêter faire une pause, tu sais le temps de reposer tes fefesses ?"
+
+            "Tu glousses malgré toi."
+
+            hl "...D'accord. Ça me pose pas de problème."
 
         "La radio me dérange, au final." if radio_on:
             "test"
