@@ -333,9 +333,35 @@ label little_road:
 
     "Ammon te dévisage, confus"
 
-    am "Comment ça on va où exactement ?"
+    am "Comment ça, on va où exactement ?"
 
-    hl "Eh bien on va où où, tu sais le lieu ?"
+    hl "Eh bien on va où, où, tu sais... le lieu ?"
+
+    am "... Tu es en train de me dire que tu es monté sur une moto sans savoir où tu allais."
+    
+    hl "Non...{w} Enfin oui mais je pensais que tu l'allais me le dire au bout d'un moment."
+
+    am "Mais je te l'ai déjà dit !{w} La veille je te l'ai dit"
+
+    hl "Vraiment ?"
+
+    "Tu te frottes la tête, tu n'as aucun souvenir d'avoir eu cette discussion avec lui."
+    "D'ailleurs, tu n'as également aucun souvenir de la veille."
+    
+    "Ton cou te démange."
+
+    am "Oui... Tu es sûr que tu ne te souviens pas ?"
+
+    hl "Oui je suis sûr, Ammon.{w} Je ne t'aurais pas demandé si je m'en souvenais..."
+
+    am "C'est un peu inquiétant... Après j'aurais dû m'en douter tu n'es pas très concentré."
+
+    "Ammon triture un temps avec le col de sa veste avant de reprendre le guidon."
+
+    am "J'imagine que tu veux vraiment savoir où on va, hein ?"
+
+    hl "Eh bien tout ce que j'ai compris c'est qu'on allait à un hôtel..."
+
 
 label rest_area_1:
     # "Eventually, Ammon, who had stripped away his helmet since a long time ago, notices you."
