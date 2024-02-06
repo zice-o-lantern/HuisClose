@@ -398,12 +398,22 @@ label little_road:
 
             jump hotel_questions
 
-        "Pourquoi là-bas ?" if why_there:
-        
-        "Il y a quoi dan"
-
-        "Pourquoi il y a un hotel dans une si petite ville"
+        "Pourquoi là-bas ?" if why_there
+            $ why_there = False
+            hl "Pourquoi on va cet hôtel ?"
             
+            am "Hein ? Pour prendre des vacances, se reposer."
+
+            hl "Non mais... Pourquoi la Normandie ? Pourquoi cet hôtel en particulier ?"
+            hl "Je ne me rappelle pas que tu aies vraiment mentionné ce plan de voyage, tu sais."
+
+            am "Mais c'est bien la Normandie ! Puis l'hôtel se trouve dans une ville au bord d'une plage de galets !"
+        
+        "Il y a quoi dans cette ville ?":
+
+        "Pourquoi il y a un hotel dans une si petite ville":
+            
+        "Qui t'a invité ?":
         
 
 
