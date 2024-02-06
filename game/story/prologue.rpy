@@ -362,6 +362,50 @@ label little_road:
 
     hl "Eh bien tout ce que j'ai compris c'est qu'on allait à un hôtel..."
 
+    am "Oui, au moins tu n'es pas si perdu que tu ne le laisses entendre."
+
+    "Tu te retiens de dire que s'il ne l'avait pas mentionné plus tôt, tu ne le saurais pas non plus."
+
+    am "Bon tu veux savoir quoi sur cet hôtel"
+
+    ## NOTE: Set up choices variables
+
+    $ where_it_is = True
+    $ why_there = False
+
+    menu hotel_questions:
+        "Questions sur l'hôtel"
+        "Où il est ?" if where_it_is:
+            $ where_it_is = False
+            hl "Où il se trouve, cet hôtel ?"
+            hl "Je veux dire, on roule depuis un bon bout de temps quand même."
+
+            am "N'abuse pas, ça ne fait que deux ou trois heures."
+
+            hl "C'est assez long..."
+
+            am "Pour répondre à ta question, on va à Sainte-Mère Cathédrale."
+
+            hl "Sainte-Mère quoi ?{w} C'est le nom d'une ville, ça ?"
+
+            am "...{w} Oui ça l'est. C'est en Normandie."
+
+            "Quelque chose te chiffonne."
+            "Jamais Ammon n'a mentionné qu'il s'intéressait à la Normandie. Ni qu'il y était déjà allé, d'ailleurs."
+
+            $ why_there = True
+            $ what_is_there = False
+
+            jump hotel_questions
+
+        "Pourquoi là-bas ?" if why_there:
+        
+        "Il y a quoi dan"
+
+        "Pourquoi il y a un hotel dans une si petite ville"
+            
+        
+
 
 label rest_area_1:
     # "Eventually, Ammon, who had stripped away his helmet since a long time ago, notices you."
