@@ -58,6 +58,7 @@ label little_road:
 
     "Homme au casque" "Il est environ 18h, il est pas si tard."
     "Homme au casque" "Tu peux bien rester éveillé quelques heures de plus non ?"
+    "Homme au casque" "Je voulais arriver à la Maison avant la tombée de la nuit mais c'est un peu tard pour ça"
 
     "Tu baisses les yeux et étonnamment, tu te trouves sur une moto, assis."
     "Sortant ton chiffon, tu essuies la buée qui obstrue les verres de tes lunettes." 
@@ -83,7 +84,7 @@ label little_road:
 
     "Homme au casque" "Par contre, je peux pas te laisser te rendormir."
     "Homme au casque" "Tu commençais à piquer du nez et je n’apprécie pas les gros objets lourds et froids qui me martèlent le dos pendant que je conduis."
-    "Homme au casque" "Donc tu vas garder tes petites mirettes ouvertes le temps qu’on arrive à l’hôtel, compris ?"
+    "Homme au casque" "Donc tu vas garder tes petites mirettes ouvertes le temps qu’on arrive à la Maison, compris ?"
 
     hl "D’accord...{w} Ammon."
 
@@ -229,6 +230,7 @@ label little_road:
             am "...{w} Pas de problème, Howl. Moi aussi je pense avoir besoin d’une pause."
 
         "Les sièges sont inconfortables":
+            $ azzy_score += 1
             "Dans ta panique pour trouver un assez bon mensonge tu te tortilles encore plus."
             "Malgré le cuir les enveloppant, tu réalises que les sièges sont vraiment durs."
             
@@ -264,7 +266,7 @@ label little_road:
 
         "La radio me dérange, au final." if radio_on:
             $ azzy_score += 1
-            "Essayant de réfléchir à une excuse valable, la musique, auparavant innofensive tambourine graduellement tes tympans."
+            "Essayant de réfléchir à une excuse valable, la musique, auparavant inoffensive tambourine graduellement tes tympans."
             "Plus tu cherches plus tu ne peux qu'entendre les paroles niaises des chansons pop qui passent à la radio."
             "Tu serres les poings. Tu serres les dents."
 
@@ -276,16 +278,16 @@ label little_road:
 
             "Lorsque tu trouves le courage d'affronter Ammon, deux grands yeux jaunes ronds écarquillés te dévisagent."
             "Pendant un court instant vous croisez le regard, son air abasourdi te submergeant, tu voudrais t'enfouir dans un terrier de lapin."
-            "Mais tu maintiens le regard. Tu ne peux détourner le regard de ces deux feux ardents céléstes."
+            "Mais tu maintiens le regard. Tu ne peux détourner le regard de ces deux feux ardents célestes."
             "Soudainement, Ammon se retourne."
             
             am "... Compris, je vais arrêter la radio."
 
-            "En silence, tu aquiesces. Tu n'oses plus dire plus."
+            "En silence, tu acquiesces. Tu n'oses plus dire plus."
 
             am "Je pense qu'on va bientôt faire une pause. Je sens qu'on est tous les deux fatigués."
 
-            "Les yeux baissés, tu fixes le châssis de la moto, non particulièremeent intéressant."
+            "Les yeux baissés, tu fixes le châssis de la moto, non particulièrement intéressant."
 
 
         "Lui dire la vérité":
@@ -360,60 +362,130 @@ label little_road:
 
     am "J'imagine que tu veux vraiment savoir où on va, hein ?"
 
-    hl "Eh bien tout ce que j'ai compris c'est qu'on allait à un hôtel..."
+    hl "Eh bien tout ce que j'ai compris c'est qu'on allait à la... Maison ?"
 
-    am "Oui, au moins tu n'es pas si perdu que tu ne le laisses entendre."
+    am "... Je vois, à ce point ?"
 
-    "Tu te retiens de dire que s'il ne l'avait pas mentionné plus tôt, tu ne le saurais pas non plus."
+    "Tu te retiens de lui hurler de garder ses commentaires pour lui."
 
-    am "Bon tu veux savoir quoi sur cet hôtel"
+    am "Bon tu veux savoir quoi sur \"La Maison\" ?"
 
     ## NOTE: Set up choices variables
 
     $ where_it_is = True
     $ why_there = False
+    $ work = False
+    $ what_else = False
+    $ been_there = False
+    $ real_reason = False
 
-    menu hotel_questions:
-        "Questions sur l'hôtel"
-        "Où il est ?" if where_it_is:
+    menu destination_questions:
+        "Questions sur la Maison"
+
+        "Où elle est ?" if where_it_is:
             $ where_it_is = False
-            hl "Où il se trouve, cet hôtel ?"
+            hl "Où elle se trouve, la Maison ?"
             hl "Je veux dire, on roule depuis un bon bout de temps quand même."
+            hl "Je ne me rappelle pas qu'aller chez moi ou chez toi était si long."
 
-            am "N'abuse pas, ça ne fait que deux ou trois heures."
+            am "N’exagère pas, ça ne fait que deux ou trois heures."
 
-            hl "C'est assez long..."
+            "Tu baisses les yeux, tu n'as jamais roulé aussi longtemps de ta vie en moto."
+            "Même c'est la première fois que quelqu'un t'emmène en moto. Tu ne t'attendais pas pas à la rigidité des sièges."
+            "Aux picotements qui commencent à monter dans ton postérieur, tu décides de te remettre plus confortablement sur le siège."
+            "Cependant tu as beau t'asseoir de plusieurs manières différentes, les vives douleurs comparables à des punaise restent bien logées."
+            "Dans une dernière tentative désespérée, tu saisis ta queue et la tires autant que tu le puisses, comptant sur ces étirements pour apaiser des douleurs... {w}Sans succès."
+            "Ammon, t'observant jouer avec ta queue, soupire."
 
-            am "Pour répondre à ta question, on va à Sainte-Mère Cathédrale."
+            am "...{w} Bref, pour répondre à ta question, on va à Sainte-Mère."
 
-            hl "Sainte-Mère quoi ?{w} C'est le nom d'une ville, ça ?"
+            hl "Sainte-Mère ?"
 
-            am "...{w} Oui ça l'est. C'est en Normandie."
+            "Ce nom ne te dit rien. Il devrait rien te dire."
+            "Pourtant tu te retrouves à te gratter la nuque.{w} Ça démange."
+
+            am "...{w} Oui. C'est en Normandie. Tu y es déjà allé,{w} en Normandie ?"
 
             "Quelque chose te chiffonne."
             "Jamais Ammon n'a mentionné qu'il s'intéressait à la Normandie. Ni qu'il y était déjà allé, d'ailleurs."
 
+            hl "Non..."
+            hl "On va y rester combien de temps d'ailleurs ?"
+
+            am "Une semaine environ."
+
+            "Tu comprimes un petit cri de surprise. Peux-tu vraiment faire un séjour d'une semaine à l'autre bout du pays sans répercussion ?"
+            "La Toussaint arrive à grands pas donc tu peines à voir ce que tu fais ici.{w} Tu peines à voir ce qu'Ammon fait ici. N'a-t-il pas un travail ?"
+
             $ why_there = True
-            $ what_is_there = False
+            $ work = True 
+            $ been_there = True
 
-            jump hotel_questions
+            jump destination_questions
 
-        "Pourquoi là-bas ?" if why_there
+        "Pourquoi là-bas ?" if why_there:
             $ why_there = False
-            hl "Pourquoi on va cet hôtel ?"
-            
-            am "Hein ? Pour prendre des vacances, se reposer."
+            hl "Du coup, pourquoi on va là-bas ?"
 
-            hl "Non mais... Pourquoi la Normandie ? Pourquoi cet hôtel en particulier ?"
-            hl "Je ne me rappelle pas que tu aies vraiment mentionné ce plan de voyage, tu sais."
+            hl "Non mais... Pourquoi la Normandie ? Pourquoi cette ville en particulier ?"
+            hl "Je ne me rappelle pas que tu aies vraiment mentionné vouloir aller là-bas, tu sais."
 
-            am "Mais c'est bien la Normandie ! Puis l'hôtel se trouve dans une ville au bord d'une plage de galets !"
+            am " Euuuh... Je te l'ai dit, pour prendre le bon air ?{w} Il y a une plage où tu peux t'y promener."
+            am "J'aime bien les plages de la Manche. Elles sont rafraîchissantes, Elles ont une ambiance particulière en hiver."
+            am "J'aime bien les prendre en photo."
+            am "Les gens sont souvent repoussés par le temps grisâtre mais pas moi.{w} Moi, ça me plaît."
+            am "Le bruit blanc des grains de sables et des rochers s'apprêtent parfaitement pour mon appareil photo. Personne ne pense à saisir ces instants, oui moroses, mais nécessaires."
+            am "Tu peux t'asseoir, laisser tes doigts se faufiler entre les galets et écouter les bruits des vagues trépassant à l'horizon. Et personne te dérangera."
+
+            "Il marque une pause. Tu le regardes, surpris. Tu ne t'attendais pas qu'Ammon soit si sentimental pour des plages."
+            "Cependant, ne voulant pas le contrarier, ni l'interrompre dans ce moment vulnérable, ni dégrader sa passion, tu te retiens tout commentaire."
+            "Ammon aimait bien faire des photos quand tu sortais avec lui, dans la nature. Tu es content qu'il n'ait pas abandonné la photographie"
+
+            am "Puis aussi, il n'y a pas beaucoup de gens parce que l'eau de ces plages là-bas sont très froides."
+            am "Donc si jamais tu as envie, je t'y pousserai volontiers."
+
+            "Ammon se retourne. Tu ne peux pas le voir, mais son sourire malsain transperce la visière de son casque. Les yeux jaunes narquois qui te fixent n'aident pas."
+            "Tu glousses, te frottant le derrière du crâne, implorant intérieurement que son invitation à la baignade glaciale forcée ne soit qu'une plaisanterie."
+            "Malheureusement avec lui, la possibilité que ce ne soit qu'une blague ne prédomine pas."
+
+            dk "Tiens-toi loin de l'eau en sa présence, ça vaudra mieux pour toi."
+
+            az "Non, au contraire, tiens-toi très près de l'eau. Puis quand il se faufilera derrière toi, contre-attaque et emmène le avec toi dans l'eau !"
+            az "Il verra s'il ose retenter ce genre de cachotteries."
+
+            hl "Donc tu veux dire que t'es venu exclusivement à Sainte-Mère pour...{w} la plage ?"
+
+            am "Pas qu'exclusivement mais c'est l'idée."
+
+            "Tu as du mal à croire qu'Ammon se déplace aussi loin juste pour des plages. Mais tu l'acceptes."
+            "Pourtant, tu te ronges les griffes. Les marques de griffes sur ta nuque brûlent de plus en plus."
+
+            $ what_else = True
+            $ been_there = True
+            $ real_reason = True
+
+            jump destination_questions
+
         
-        "Il y a quoi dans cette ville ?":
+        "Il y a quoi dans cette ville ?" if what_else:
 
-        "Pourquoi il y a un hotel dans une si petite ville":
-            
-        "Qui t'a invité ?":
+            $ what_else = False
+
+            hl "Il y a quoi d'autre dans cette ville ? Il n'a pas que des plages, n'est-ce pas ?"
+            hl ""
+            jump destination_questions
+        
+        "Tu y as déjà été ?" if been_there:
+            $ been_there = False
+            jump destination_questions
+
+        "Ça ne pose pas problème qu'on aille là-bas ?" if work:
+            $ work = False
+            jump destination_questions
+
+        "La vrai raison" if real_reason:
+            $ real_reason = False
+            jump destination_questions
         
 
 
