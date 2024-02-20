@@ -650,7 +650,15 @@ label little_road:
 
             "Une vive douleur survient dans ton torse. Ta respiration se coupe pendant un temps."
             "Il vient de te donner un coup de coude." 
+            
+            hl "Hé, d'où ça vient ?"
 
+            am "Elle fait pas deux centimètres, elle en fait vingt !"
+            am "Mais oui je comprends ce que tu veux dire..."
+            
+            hl "C'est décidé, alors."
+
+            "Tu t'accroches à son pantalon et t'endors."
         # "Ça ne pose pas problème qu'on aille là-bas ?" if work:
         #     $ work = False
 
