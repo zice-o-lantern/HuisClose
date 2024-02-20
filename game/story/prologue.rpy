@@ -374,7 +374,7 @@ label little_road:
 
     $ where_it_is = True
     $ why_there = False
-    $ work = False
+    # $ work = False
     $ what_else = False
     $ been_there = False
     $ real_reason = False
@@ -417,9 +417,26 @@ label little_road:
             "Tu comprimes un petit cri de surprise. Peux-tu vraiment faire un séjour d'une semaine à l'autre bout du pays sans répercussion ?"
             "La Toussaint arrive à grands pas donc tu peines à voir ce que tu fais ici.{w} Tu peines à voir ce qu'Ammon fait ici. N'a-t-il pas un travail ?"
 
+            hl "Elle est à toi, la Maison, alors ?"
+
+            am "Non elle n'est pas à moi. Elle est à un ami."
+
+            "À travers son dos noir, un vent glacial caresse tes moustaches et tu frissonnes. L'air devient de plus en plus froid."
+
+            hl "Et cet ami, il s'appelle ?..."
+
+            am "Pas tes oignons."
+
+            "Le froid polaire te mord les bras et tu les frottes en vain."
+
+            hl "Joli nom..."
+
+            "Même le sarcasme ne peut t'aider contre la froideur."
+
+
+
             $ why_there = True
-            $ work = True 
-            $ been_there = True
+            # $ work = True 
 
             jump destination_questions
 
@@ -432,10 +449,10 @@ label little_road:
 
             am " Euuuh... Je te l'ai dit, pour prendre le bon air ?{w} Il y a une plage où tu peux t'y promener."
             am "J'aime bien les plages de la Manche. Elles sont rafraîchissantes, Elles ont une ambiance particulière en hiver."
-            am "J'aime bien les prendre en photo."
+            am "Je ne peux pas m'empêcher de les prendre en photo."
             am "Les gens sont souvent repoussés par le temps grisâtre mais pas moi.{w} Moi, ça me plaît."
             am "Le bruit blanc des grains de sables et des rochers s'apprêtent parfaitement pour mon appareil photo. Personne ne pense à saisir ces instants, oui moroses, mais nécessaires."
-            am "Tu peux t'asseoir, laisser tes doigts se faufiler entre les galets et écouter les bruits des vagues trépassant à l'horizon. Et personne te dérangera."
+            am "Tu peux t'asseoir, laisser tes doigts se faufiler entre les galets et écouter les bruits des vagues trépassant à l'horizon. Et personne te sera là pour te casser les pieds."
 
             "Il marque une pause. Tu le regardes, surpris. Tu ne t'attendais pas qu'Ammon soit si sentimental pour des plages."
             "Cependant, ne voulant pas le contrarier, ni l'interrompre dans ce moment vulnérable, ni dégrader sa passion, tu te retiens tout commentaire."
@@ -449,7 +466,6 @@ label little_road:
             "Malheureusement avec lui, la possibilité que ce ne soit qu'une blague ne prédomine pas."
 
             dk "Tiens-toi loin de l'eau en sa présence, ça vaudra mieux pour toi."
-
             az "Non, au contraire, tiens-toi très près de l'eau. Puis quand il se faufilera derrière toi, contre-attaque et emmène le avec toi dans l'eau !"
             az "Il verra s'il ose retenter ce genre de cachotteries."
 
@@ -457,8 +473,8 @@ label little_road:
 
             am "Pas qu'exclusivement mais c'est l'idée."
 
-            "Tu as du mal à croire qu'Ammon se déplace aussi loin juste pour des plages. Mais tu l'acceptes."
-            "Pourtant, tu te ronges les griffes. Les marques de griffes sur ta nuque brûlent de plus en plus."
+            "Tu as du mal à croire qu'Ammon se déplace aussi loin juste pour des plages."
+            "Tu te ronges les griffes. Les marques de griffes sur ta nuque brûlent de plus en plus."
 
             $ what_else = True
             $ been_there = True
@@ -472,20 +488,178 @@ label little_road:
             $ what_else = False
 
             hl "Il y a quoi d'autre dans cette ville ? Il n'a pas que des plages, n'est-ce pas ?"
-            hl ""
+            hl "Il y a sûrement autre chose dans cette ville."
+
+            am "Hum, je suppose que c'est vrai. Je suis aussi venu pour le Chateau du Gris."
+
+            hl "Le Château du Gris ? C'est un château qui est tout gris ?"
+
+            am "... {w} Bref, ils font aussi hôtel."
+
+            hl "Pourquoi on y va pas alors ?"
+
+            am "Parce qu'on a déjà un endroit où dormir ?{w} Puis je n'aime pas les hôtels."
+
+            hl "Comment ça ?"
+
+            "Ammon serre le guidon. Sous son casque, ses oreilles se relèvent d'exaspération. Il semble que tes questions incessantes ne lui plaisent pas."
+
+            am "T'en as d'autres questions pertinentes comme ça ?"
+
+            hl "Désolé ...{w} C'est juste que je suis vraiment dans le noir, ici."
+
+            am "Si tu faisais attention autour de toi plus de 5 secondes, on n'en serait pas là."
+
+            "La brise du morne Automne reprend de plus belle. {w}Tu pondères la raison pour laquelle tu ne sais, au final, rien de la personne que tu appelais ton meilleur ami il y a des années."
+            "Aussi pourquoi tu n'as pas pris le temps de te renseigner d'où il t'emmenait."
+            "Tu supposes l'instant où il t'a proposé, tu as sauté sur l'occasion sans même y réfléchir une seconde."
+            "Que pensais-tu qu'il allait arriver ? Un mec bizarre qui n'aligne pas deux mots et une connard irritable sur une moto ensemble, ça n'amène rien de bon."
+
+            az "Pas que bizarre."
+
+            dk "Et pas qu'irritable."
+
+            if azzy_score >= 1:
+                az "Irritable, peut-être mais tu adores ça."
+                az "Tu ne veux pas te l'admettre mais si tu pouvais — Non — si tu le voulais, tu lui répondrais tel une vipère."
+                az "Vous vous plaisiez, vous vous baigniez dans vos toxines. Vous adoriez ça. Marie-Jil avait beau essayer de rabibocher votre relation, finalement elle ne la comprenait pas."
+                az "Elle était impuissante, car elle n'était pas digne de votre don. Elle est aveugle au lien qui vous relie tous les deux."
+                az "Un lien maintenu dans les échanges virulents, les mensonges, les petits jeux de supercherie... {w}la haine."
+                az "Tu le haïssais et tu adorais ça."
+
+                dk "Mais ça c'était avant, tu n'es plus comme ça."
+
+                az "Exactement. Qu'est-ce qu'il s'est passé pour que tu deviennes un chaton apeuré, effrayé de dire un mot de travers au mec que tu détestes"
+                az "Ah oui, t'as une idée non ? C'est parce qu'il prend ses médicaments le bon toutou."
+                az "Parfois, ne te demande-tu pas qui est la chienne de vous deux ?"
+
+                dk "..."
+
+            "Un moment de silence. Le chien reprend la parole."
+
+            am "... C'est comme ça."
+
+            hl "... Hein ?"
+
+            am "Je n'aime pas les hôtels c'est comme ça. Je ne me sens pas à l'aise dans des endroits inconnus et encore moins y dormir."
+            am "On ne sait jamais qui était là avant."
+
+            hl "Je vois..."
+
+            am "Sinon, il y aura aussi une exposition sur l'Anniversaire du Débarquement."
+
+            "Tu pouffes discrètement. Tu t'attendais à qu'il soit toujours obsédé avec la Seconde Guerre Mondiale, donc tu ne comprends pas ta surprise ni ton amusement."
+            "Néanmoins, tu n'étais pas vraiment enthousiaste. Si tu voulais qu'il lâche une passion en particulier, c'était bien la Seconde Guerre Mondiale."
+            "Même de nos jours, la population est toujours traumatisée donc avoir quelqu'un dans les parages s'extasiant en reconnaissant des modèles précis de casque utilisé par l'armée allemande te mettait mal à l'aise."
+            "Tu ne voulais pas lui reprocher ça parce que tu sais qu'avec tes obsessions, tu étais encore pire que lui. Cependant cela n'atténuait pas ta gorge nouée."
+            "Tu n'avais vraiment pas envie de passer tes congés à regarder des chars d'assaut ou des bombes pouvant rayer des villes de la carte,{w} ayant déjà le cafard sans aide."
+            "À force d’y réfléchir, tu te rends compte que quelque chose cloche."
+            "En effet, le Débarquement c'était en Juin."
+
+            am "Avant que tu ne dises quelque chose, oui ce n'est plus l'anniversaire depuis au moins 4 mois mais elle est toujours là pour une raison ou une autre."
+            am "Il y a aussi une autre exposition... une exposition de biscuits."
+
+            "Ammon ricane."
+
+            am "Incongru ne pense-tu pas ?"
+
+            hl "Bon au moins, entre deux bombes, on pourra se manger un petit BN, c'est pas si mal."
+
+            "Ammon pouffe."
+
+            am "Bref, celle des biscuits est permanente donc c'est pas comme s'ils avaient le choix."
+
+            "Plus tu discutes avec Ammon, plus tu réalises qu'il a une définition anormal de vacances."
+<
             jump destination_questions
         
         "Tu y as déjà été ?" if been_there:
             $ been_there = False
-            jump destination_questions
 
-        "Ça ne pose pas problème qu'on aille là-bas ?" if work:
-            $ work = False
-            jump destination_questions
+            hl "Au passage, Ammon, tu y as déjà été ?"
 
-        "La vrai raison" if real_reason:
-            $ real_reason = False
+            am "Où ça ?"
+
+            hl "Bah à Sainte-Mère."
+            hl "Tu en parles comme si tu y es déjà allé{nw}"
+
+            am "Non jamais."
+
+            "La voix d'Ammon résonne dans ta tête."
+            "Perturbé par son interjection, tu restes silencieux."
+
+            hl "... Tu es sûr ?"
+
+            am "Oui je suis sûr."
+
+            hl "Tu ne parlais pas la super plage de la ville ? Tu avais l'air de l'apprécier un peu quand même non ?"
+
+            am "Il y a d'autres plages en Normandie, il y en a pas qu'à Sainte-Mère."
+
+            hl "... Donc tu es déjà allé en Normandie ? T'aimes bien y prendre des photos, j'ai cru comprendre. C'était pour un petit boulot de photographie, c'est ça ?"
+
+            am "Je ne suis pas assez bon pour que je m'amuse à faire des photos à droite et à gauche de la France pour de l'argent."
+
+            hl "...D'accord."
+
+            "Ammon se renferme sur lui, une carapace impénétrable."
+            "Tu retournes la précédente discussion dans tous les angles, à la recherche de la chose déplacée que tu aies dite."
+            "Mais rien. Ce n'est pas inhabituel d'Ammon de te couper dans tes tentatives d'approche."
+            "Les épaules retroussées, le chien brut ne bouge plus d'un pouce. Sa queue, qui se remuait il y a encore quelque temps, se durcit comme du marble."
+            "Tu regardes tes griffes. De le peau, des poils arrachés et du sang frais s'accumulent sous tes ongles. Ta nuque te brûle."
+            "Tu resserres fermement le châssis."
+
             jump destination_questions
+        
+        "Après toutes les questions, tu te sens épuisé."
+        "La somnolence que tu avais contenu jusque-là, charge à pleine force à nouveau."
+        "Bientôt tes paupières deviennent lourdes et la gravité jusque-là inoffensive t'arrache de la moto."
+        "Ta tête se heurte au dos du grincheux chien."
+
+        am "Hé, fais attention !{w} Qu'est-ce qui te prend de frapper comme ça ?!"
+
+        if ammon_score >= 1:
+            hl "Désolé... Je me suis laissé emporter par la fatigue."
+
+            am "Tu es si fatigué que ça ?"
+
+            "N'ayant plus d'énergie, tu hoches de la tête, savant pertinemment qu'il ne pourrait pas le voir."
+            "Cependant il comprit——notamment grâce aux frottements du casque sur sa veste——et une pensée lui vient en tête."
+            "Hésitant à le dire, il se décida subitement."
+
+            am "Attrape-moi la queue."
+
+            hl "... Hein ?"
+
+            am "Attrape-moi la queue."
+
+            "Même la deuxième fois, tu n'arrives pas à assimiler le sens de ce  qu'il vient de dire."
+
+            am "Pour que tu puisses t'accrocher à quelque chose, pendant que tu dors..."
+
+            hl "Pourquoi spécialement la queue... ?"
+
+            am "Parce que c'est plus facile..."
+
+            hl "T'as pas horreur qu'on te touche la queue ?"
+
+            am "Si... mais si c'est pour ta sécurité je veux bien faire des concessions."
+            am "Tu vas dormir de toute façon donc autant que tu tiennes quelque chose."
+
+            hl "... Je pourrais m'accrocher à mon pantalon. C'est plus sûr que ta queue de deux centimètres."
+
+            "Une vive douleur survient dans ton torse. Ta respiration se coupe pendant un temps."
+            "Il vient de te donner un coup de coude." 
+
+        # "Ça ne pose pas problème qu'on aille là-bas ?" if work:
+        #     $ work = False
+
+        #     hl "Ça ne pose pas problème ?"
+
+        #     am "De quoi ?"
+
+        #     "Tu n'as pas ton travail "
+        #     jump destination_questions
         
 
 
