@@ -606,7 +606,7 @@ label little_road:
             "Plus tu discutes avec Ammon, plus tu réalises qu'il a une définition anormal de vacances."
             "Des expositions sur des bombes et des biscuits ? Ce qui est sûr, c'est que ce n'est pas ta tasse de thé."
             "Ammon doit vraiment vouloir partager ça avec toi, pour t'avoir emmené avec toi."
-            "... Ta nuque brûle incandescendemment, les plaies exposées souffrant à l'air pur et froid."
+            "... Ta nuque brûle, incandescent, les plaies exposées souffrant à l'air pur et froid."
             "Tu dois creuser."
 
             jump destination_questions
@@ -634,7 +634,22 @@ label little_road:
 
             am "Il y a d'autres plages en Normandie, il y en a pas qu'à Sainte-Mère."
 
-            hl "... Donc tu es déjà allé en Normandie ? T'aimes bien y prendre des photos, j'ai cru comprendre. C'était pour un petit boulot de photographie, c'est ça ?"
+            "Peut-être que tu as mal compris au final. Peut-être qu'il est déjà allé en Normandie mais pas spécialement Sainte-Mère"
+            "Sa passion des photos de plages grises ne vient pas de nulle part."
+.
+            hl "... Donc tu es déjà allé en Normandie ? T'aimes bien y prendre des photos, j'ai cru comprendre."
+
+            am "... Oui j'y ai déjà été."
+
+            hl "Alors ?"
+
+            am "... Alors quoi ?"
+
+            hl "Bah c'était bien ? Tu y as fait quoi à part de la photo ?"
+
+            am "Pas grand chose..."
+
+            hl "Donc c'était pour un petit boulot ? Tu y as fait de la photographie ?"
 
             am "Je ne suis pas assez bon pour que je m'amuse à faire des photos à droite et à gauche de la France pour de l'argent."
 
@@ -656,7 +671,14 @@ label little_road:
 
         "Tu n'as pas un travail ?" if work:
             hl "Dis Ammon ?"
-        
+
+            am "Oui ?"
+
+            hl "Tu es professeur d'Histoire à l'Université, non ?"
+
+            am "Pas exactement mais c'est l'idée, oui."
+
+            hl "Tu ne devrais pas être à l'université alors ?"        
         "La vraie raison" if real_reason and not been_there and not why_there and not what_else:
             $ real_reason = False
             "Ammon, il n'y a pas une autre raison pour laquelle on y va ?"
