@@ -14,13 +14,14 @@ label prologue:
     cl "L’insecte dormant en mon cœur se réveille, enfin... ou avait–il ouvert ses yeux auparavant ?" 
     cl "Peut–être que ce cœur ne m’appartient pas, finalement."
     cl "Quoi qu’il en soit, ces sentiments familiers, que Dieu m’a maudit avec, fourmillent en moi. Je ne peux plus le nier."
-    cl "Je sais que ces feux follets avec lesquels tu m’épies, me scrutes ne sont qu’illusions.{w} Des leurres pour corrompre le peu qui reste de moi."
+    cl "Je sais que ces deux feux follets avec lesquels tu m’épies, me scrutes ne sont qu’illusions.{w} Des leurres pour corrompre le peu qui reste de moi."
     cl "Je sais, cependant, que ton pouvoir, ta lumière, ton don..." 
     cl "Il peut les apprivoiser, les recueillir, ces monstres de l’au–delà, au sein de ton phare au milieu de la mer déchaînée."
     cl "{cps=3}...{/cps}{w} Combler ce vide qui ronge cet être{w}——Mon être——{w}flétrissant."
     cl "C’est pour cela que,{w} jusqu’à présent,{w} et pour toujours..."
     cl "Je t’aime{w}, Charles"
     scene black
+    stop sound
     pause 1.5
     # play sound 'audio/sounds/car_white_noise.ogg' loop
     jump little_road
@@ -31,6 +32,7 @@ label little_road:
 
     show ruralRoad
     with Fade(0.5, 4.0, 0.5)
+    camera at zpos_camera
 
     "Tu te réveilles, au toucher glacial qui s’empare de ta nuque."
 
@@ -38,26 +40,26 @@ label little_road:
 
     "???" "Je vois que je ne me trompais pas, au final."
 
-    "Tu lèves les yeux et malgré le voile noire recouvrant ta vue, tu arrives toujours à distinguer les traits de ton interlocuteur."
-    "Il porte un casque et une veste de motard noirs. Impossible de voir son visage. Mais tu n’as pas vraiment besoin de le voir."
-    "Tu sais qui il est."
-    "Il reprend sa typique posture, croisant les bras, tapant du pied."
-    show ammon with dissolve
+    "Tu lèves les yeux et malgré le voile noire recouvrant ta vue, tu arrives toujours à distinguer les traits de la personne en face de toi."
+    "Elle porte un casque et une veste de motard noirs. Impossible de voir son visage. Mais tu n’as pas vraiment besoin de le voir."
+    "Tu sais qui elle est."
+    "Elle reprend sa typique posture, croisant les bras, tapant du pied."
+    show ammon at american_shot with dissolve
     
     "???" "En train de pioncer, n’est–ce pas ?"
 
     hl "Huh, de quoi ?"
 
-    "Il te laisse reprendre tes esprits à ton rythme."
+    "Elle te laisse reprendre tes esprits à ton rythme."
     "Tu enlèves le casque, te compressant la tête. Ces fichues longues oreilles ne te facilitent pas la tâche."
-    "Après avoir remué tes petites moustaches, et toute pilosité faciale qui te reste, tu retires tes lunettes de ton petits museau et tu te frottes les yeux."
+    "Après avoir remué tes petites moustaches, et toute pilosité faciale qui te reste, tu retires tes lunettes de ton fin museau et tu te frottes les yeux."
     
     hl "Quelle heure il est ? Il est tard, non ?"
 
     "L’homme au casque pouffe."
 
     "Homme au casque" "Il est environ 18h, il est pas si tard."
-    "Homme au casque" "Tu peux bien rester éveillé quelques heures de plus non ?"
+    "Homme au casque" "Tu peux bien rester éveillé quelques heures de plus non ?"
     "Homme au casque" "Je voulais arriver à la Maison avant la tombée de la nuit mais c'est un peu tard pour ça"
 
     "Tu baisses les yeux et étonnamment, tu te trouves sur une moto, assis."
@@ -74,7 +76,7 @@ label little_road:
 
     "Homme au casque" "T’es un peu long à la détente, tu le sais ça ?"
 
-    hl "Arrête de dire ça, je l’entends bien trop souvent."
+    hl "Arrête de dire ça, je l’entends trop souvent."
 
     "Homme au casque" "Comme tu veux mais si tu rêvassais moins souvent, peut–être que j’aurais moins à le dire." 
     "Tu ravales les remarques acerbes que tu allais lui lancer et tu te contentes d’un claquement de langue."
@@ -98,8 +100,11 @@ label little_road:
     "D’un coup de pédale, Ammon redémarre brusquement la moto."
     "Surpris par la soudaine vitesse, tu agrippes à la veste de l’homme masqué."
 
+    hide window
+    pause 1.0
+
     "Après quelques minutes de secousses et valdingues causées par la prudente conduite d’Ammon, vous vous retrouvez à une allure soutenue."
-    "Le vent parcourt ton corps et s’infiltre dans toutes les petites ouvertures de tes vêtements. La blaze, virevoltant à la brise, noir n’offre que peu de protection."
+    "Le vent parcourt ton corps et s’infiltre dans toutes les petites ouvertures de tes vêtements. Le blazer, virevoltant à la brise, noir n’offre que peu de protection."
     "Tu aurais voulu qu’Ammon te laisse plus de temps pour te préparer et fermer ce blazer."
     "La cravate autour de ton cou, contrairement à ce que tu t’attendais, ne bouge pas tant que ça."
     "Tu peux remercier le dos grand et large d’Ammon t’offrant une protection à la vitesse, dont la cravate est coincée entre lui et ton torse."
@@ -146,6 +151,7 @@ label little_road:
 
     menu radio:
         "Pourquoi pas":
+            $ ammon_score += 1
             hl "Euh oui, je veux bien."
             hl "{cps=3}...{/cps} Enfin si tu veux, hein"
 
@@ -198,7 +204,7 @@ label little_road:
     am "Il y a bien une raison pour laquelle tu te tortilles comme ça non..."
 
     az "Si tu lui dis que t’es frustré parce que t’arrives pas à aligner plus de deux mots avec lui, il va te prendre pour un cas."
-    az "{w}Pas que ce soit très compliqué à voir, de toute façon."
+    az "{w}Pas que ce soit déjà le cas, de toute façon."
     az "Mens–lui."
 
     dk "Lui mentir ne fera qu’augmenter la distance entre vous."
@@ -218,13 +224,23 @@ label little_road:
 
             am "Tu sais que j’ai de plus grandes oreilles que toi ?"
 
-            hl "Oui mais quand même ahah."
+            hl "Oui mais quand même tu sais comment je suis, ahah."
 
             "Tu ne peux t’empêcher de rire inconfortablement. Oui le casque est un peu inconfortable mais pas à ce point."
 
-            am "Si tu veux on pourra faire une pause sur le chemin ? Comme ça je pourrais t’aider avec ton casque, que t’aies plus mal."
+            am "Sensible à un point que tu ne peux pas porter un casque plus de 5 minutes ?"
 
-            hl "Je t’assure que je n’ai pas mal Ammon !{w} Mais je voudrais bien qu’on s’arrête sur le chemin si c’est possible..."
+            hl "... Ce n'est pas ce que je voulais dire mais si tu le dis{nw}"
+
+            am "Mais malgré ça, tu ne dis pas ce que tu penses et laisses les choses s'empirer jusqu'à que tu craques et fasses des caprices ?"
+            am "Oui, je sais comment tu es."
+
+            "Ammon se tait, impassible comme toujours. Les mots qu'il vient juste de déverser, teintés d'un macérant venin se heurtent à ton égo."
+            "Tu retournes les phrases dans tous les sens pendant un bon moment avant que tu ne réentendes la voix, certainement coupable, du chien grincheux."
+
+            am "... Si tu veux on pourra faire une pause sur le chemin ? Comme ça je pourrais t’aider avec ton casque, que t’aies plus mal."
+
+            hl "Je t’assure que je n’ai pas mal Ammon ...{w} Mais je voudrais bien qu’on s’arrête sur le chemin si c’est possible..."
             hl "Je suis un peu fatigué."
             
             am "...{w} Pas de problème, Howl. Moi aussi je pense avoir besoin d’une pause."
@@ -266,6 +282,7 @@ label little_road:
 
         "La radio me dérange, au final." if radio_on:
             $ azzy_score += 1
+            $ ammon_score -= 1
             "Essayant de réfléchir à une excuse valable, la musique, auparavant inoffensive tambourine graduellement tes tympans."
             "Plus tu cherches plus tu ne peux qu'entendre les paroles niaises des chansons pop qui passent à la radio."
             "Tu serres les poings. Tu serres les dents."
@@ -326,6 +343,8 @@ label little_road:
             hl "Oui ce serait sympa merci."
 
             "Tu souris légèrement{w}, content d'avoir pu transmettre ce que tu ressentais à Ammon"
+    
+    pause 1.0
 
     hl "En parlant du voyage..."
 
@@ -333,13 +352,13 @@ label little_road:
 
     hl "On va où exactement ?"
 
-    "Ammon te dévisage, confus"
+    "Ammon te dévisage, confus."
 
     am "Comment ça, on va où exactement ?"
 
     hl "Eh bien on va où, où, tu sais... le lieu ?"
 
-    am "... Tu es en train de me dire que tu es monté sur une moto sans savoir où tu allais."
+    am "...{w} Tu es en train de me dire que tu es monté sur ma moto sans savoir où tu allais."
     
     hl "Non...{w} Enfin oui mais je pensais que tu l'allais me le dire au bout d'un moment."
 
@@ -356,7 +375,7 @@ label little_road:
 
     hl "Oui je suis sûr, Ammon.{w} Je ne t'aurais pas demandé si je m'en souvenais..."
 
-    am "C'est un peu inquiétant... Après j'aurais dû m'en douter tu n'es pas très concentré."
+    am "C'est un peu inquiétant... Après j'aurais dû m'en douter que tu n'es pas très concentré."
 
     "Ammon triture un temps avec le col de sa veste avant de reprendre le guidon."
 
@@ -391,7 +410,7 @@ label little_road:
             am "N’exagère pas, ça ne fait que deux ou trois heures."
 
             "Tu baisses les yeux, tu n'as jamais roulé aussi longtemps de ta vie en moto."
-            "Même c'est la première fois que quelqu'un t'emmène en moto. Tu ne t'attendais pas pas à la rigidité des sièges."
+            "Même c'est la première fois que quelqu'un t'emmène en moto. Tu ne t'attendais pas à la rigidité des sièges."
             "Aux picotements qui commencent à monter dans ton postérieur, tu décides de te remettre plus confortablement sur le siège."
             "Cependant tu as beau t'asseoir de plusieurs manières différentes, les vives douleurs comparables à des punaise restent bien logées."
             "Dans une dernière tentative désespérée, tu saisis ta queue et la tires autant que tu le puisses, comptant sur ces étirements pour apaiser des douleurs... {w}Sans succès."
@@ -431,9 +450,12 @@ label little_road:
 
             hl "Joli nom..."
 
-            "Même le sarcasme ne peut t'aider contre la froideur."
+            "Même le sarcasme ne peut t'aider contre la froideur de l'Automne."
+            
+            pause 1.5
 
-
+            "Quelque chose te tracasse. Ammon n'est pas très bavard. Tu as l'impression qu'il n'en a pas envie d'en parler."
+            "Tu as besoin d'en savoir plus sur cette ville. Tu te grattes la nuque, ça te démange."
 
             $ why_there = True
             # $ work = True 
@@ -444,18 +466,23 @@ label little_road:
             $ why_there = False
             hl "Du coup, pourquoi on va là-bas ?"
 
-            hl "Non mais... Pourquoi la Normandie ? Pourquoi cette ville en particulier ?"
+            hl "Pourquoi la Normandie ? Pourquoi cette ville en particulier ?"
             hl "Je ne me rappelle pas que tu aies vraiment mentionné vouloir aller là-bas, tu sais."
 
-            am " Euuuh... Je te l'ai dit, pour prendre le bon air ?{w} Il y a une plage où tu peux t'y promener."
-            am "J'aime bien les plages de la Manche. Elles sont rafraîchissantes, Elles ont une ambiance particulière en hiver."
+            am " Euuuh... Je te l'ai dit, pour se distraire de la vie en général ?{w} Il y a une plage où tu peux t'y promener."
+
+            hl "T'es en train de me dire qu'on fait tout ce chemin juste pour se promener ? Pas mal."
+            hl "Mais on aurait pu se promener dans les bois autour du village{w}, comme avant."
+
+            am "Peut-être. Mais je voulais faire quelque chose de nouveau avec toi."
+            am "Et puis, j'aime bien les plages de la Manche. Elles sont rafraîchissantes, Elles ont une ambiance particulière en hiver."
             am "Je ne peux pas m'empêcher de les prendre en photo."
             am "Les gens sont souvent repoussés par le temps grisâtre mais pas moi.{w} Moi, ça me plaît."
-            am "Le bruit blanc des grains de sables et des rochers s'apprêtent parfaitement pour mon appareil photo. Personne ne pense à saisir ces instants, oui moroses, mais nécessaires."
+            am "Le bruit blanc des grains de sables et des rochers tout ça, c'est parfait pour mon appareil photo. Personne ne pense à saisir ces instants, oui moroses, mais nécessaires."
             am "Tu peux t'asseoir, laisser tes doigts se faufiler entre les galets et écouter les bruits des vagues trépassant à l'horizon. Et personne te sera là pour te casser les pieds."
 
             "Il marque une pause. Tu le regardes, surpris. Tu ne t'attendais pas qu'Ammon soit si sentimental pour des plages."
-            "Cependant, ne voulant pas le contrarier, ni l'interrompre dans ce moment vulnérable, ni dégrader sa passion, tu te retiens tout commentaire."
+            "Cependant, ne voulant pas le contrarier, ni l'interrompre dans ce moment vulnérable, tu te retiens tout commentaire."
             "Ammon aimait bien faire des photos quand tu sortais avec lui, dans la nature. Tu es content qu'il n'ait pas abandonné la photographie"
 
             am "Puis aussi, il n'y a pas beaucoup de gens parce que l'eau de ces plages là-bas sont très froides."
@@ -474,6 +501,8 @@ label little_road:
             am "Pas qu'exclusivement mais c'est l'idée."
 
             "Tu as du mal à croire qu'Ammon se déplace aussi loin juste pour des plages."
+            "Il ne peut pas y avoir que des plages dans cette fichue ville de Sainte Mère. Il doit y avoir quelque chose de vraiment très important pour lui."
+            "Étant donné la façon dont il en parle, il a l'air d'y avoir déjà été.{w} Il faut que tu creuses."
             "Tu te ronges les griffes. Les marques de griffes sur ta nuque brûlent de plus en plus."
 
             $ what_else = True
@@ -487,12 +516,15 @@ label little_road:
 
             $ what_else = False
 
-            hl "Il y a quoi d'autre dans cette ville ? Il n'a pas que des plages, n'est-ce pas ?"
+            hl "Il y a quoi d'autre dans cette ville ? Il n'y a pas que des plages, n'est-ce pas ?"
             hl "Il y a sûrement autre chose dans cette ville."
 
             am "Hum, je suppose que c'est vrai. Je suis aussi venu pour le Chateau du Gris."
 
             hl "Le Château du Gris ? C'est un château qui est tout gris ?"
+
+            "Ammon ne bouge pas. Tu regardes dans le rétroviseur de la moto. Un regard perçant te fixe sans mouvement ni clins d'œil."
+            "Il te semble qu'il ne soit pas fan de ta blague."
 
             am "... {w} Bref, ils font aussi hôtel."
 
@@ -554,14 +586,16 @@ label little_road:
             "Tu ne voulais pas lui reprocher ça parce que tu sais qu'avec tes obsessions, tu étais encore pire que lui. Cependant cela n'atténuait pas ta gorge nouée."
             "Tu n'avais vraiment pas envie de passer tes congés à regarder des chars d'assaut ou des bombes pouvant rayer des villes de la carte,{w} ayant déjà le cafard sans aide."
             "À force d’y réfléchir, tu te rends compte que quelque chose cloche."
-            "En effet, le Débarquement c'était en Juin."
+            "Tu n'es pas le meilleur en histoire mais si tu te rappelles bien de tes cours..."
+            "Juste une seconde..."
 
             am "Avant que tu ne dises quelque chose, oui ce n'est plus l'anniversaire depuis au moins 4 mois mais elle est toujours là pour une raison ou une autre."
             am "Il y a aussi une autre exposition... une exposition de biscuits."
 
             "Ammon ricane."
 
-            am "Incongru ne pense-tu pas ?"
+            am "Incongru tu penses pas ?"
+            
 
             hl "Bon au moins, entre deux bombes, on pourra se manger un petit BN, c'est pas si mal."
 
@@ -570,7 +604,7 @@ label little_road:
             am "Bref, celle des biscuits est permanente donc c'est pas comme s'ils avaient le choix."
 
             "Plus tu discutes avec Ammon, plus tu réalises qu'il a une définition anormal de vacances."
-<
+
             jump destination_questions
         
         "Tu y as déjà été ?" if been_there:
@@ -611,54 +645,101 @@ label little_road:
 
             jump destination_questions
         
-        "Après toutes les questions, tu te sens épuisé."
-        "La somnolence que tu avais contenu jusque-là, charge à pleine force à nouveau."
-        "Bientôt tes paupières deviennent lourdes et la gravité jusque-là inoffensive t'arrache de la moto."
-        "Ta tête se heurte au dos du grincheux chien."
+        ## TODO: Faire une question Real Reason
+        ## TODO: Faire une question Work
 
+        "Tu n'as pas un travail ?" if work:
+            hl "Dis Ammon ?"
+        
+        "La vraie raison" if real_reason and not been_there and not why_there and not what_else:
+            $ real_reason = False
+            "Ammon, il n'y a pas une autre raison pour laquelle on y va ?"
+        
+    "Après toutes les questions, tu te sens épuisé."
+    "La somnolence que tu avais contenu jusque-là, charge à pleine force à nouveau."
+    "Bientôt tes paupières deviennent lourdes et la gravité jusque-là inoffensive t'arrache de la moto."
+    "Ta tête se heurte au dos du grincheux chien."
+
+    if ammon_score >= 1:
         am "Hé, fais attention !{w} Qu'est-ce qui te prend de frapper comme ça ?!"
+        
+        hl "Désolé... Je me suis laissé emporter par la fatigue."
 
-        if ammon_score >= 1:
-            hl "Désolé... Je me suis laissé emporter par la fatigue."
+        am "Tu es si fatigué que ça ?"
 
-            am "Tu es si fatigué que ça ?"
+        "N'ayant plus d'énergie, tu hoches de la tête, savant pertinemment qu'il ne pourrait pas le voir."
+        "Cependant il comprit——notamment grâce aux frottements du casque sur sa veste——et une pensée lui vient en tête."
+        "Hésitant à le dire, il se décida subitement."
 
-            "N'ayant plus d'énergie, tu hoches de la tête, savant pertinemment qu'il ne pourrait pas le voir."
-            "Cependant il comprit——notamment grâce aux frottements du casque sur sa veste——et une pensée lui vient en tête."
-            "Hésitant à le dire, il se décida subitement."
+        am "Attrape-moi la queue."
 
-            am "Attrape-moi la queue."
+        hl "... Hein ?"
 
-            hl "... Hein ?"
+        am "Attrape-moi la queue."
 
-            am "Attrape-moi la queue."
+        "Même la deuxième fois, tu n'arrives pas à assimiler le sens de ce  qu'il vient de dire."
 
-            "Même la deuxième fois, tu n'arrives pas à assimiler le sens de ce  qu'il vient de dire."
+        am "Pour que tu puisses t'accrocher à quelque chose, pendant que tu dors..."
 
-            am "Pour que tu puisses t'accrocher à quelque chose, pendant que tu dors..."
+        hl "Pourquoi spécialement la queue... ?"
 
-            hl "Pourquoi spécialement la queue... ?"
+        am "Parce que c'est plus facile..."
 
-            am "Parce que c'est plus facile..."
+        hl "T'as pas horreur qu'on te touche la queue ?"
 
-            hl "T'as pas horreur qu'on te touche la queue ?"
+        am "Si... mais si c'est pour ta sécurité je veux bien faire des concessions."
+        am "Tu vas dormir de toute façon donc autant que tu tiennes quelque chose."
 
-            am "Si... mais si c'est pour ta sécurité je veux bien faire des concessions."
-            am "Tu vas dormir de toute façon donc autant que tu tiennes quelque chose."
+        hl "... Je pourrais m'accrocher à mon pantalon. C'est plus sûr que ta queue de deux centimètres."
 
-            hl "... Je pourrais m'accrocher à mon pantalon. C'est plus sûr que ta queue de deux centimètres."
+        "Une vive douleur survient dans ton torse. Ta respiration se coupe pendant un temps."
+        "Il vient de te donner un coup de coude." 
+        
+        hl "Hé, d'où ça vient ?"
 
-            "Une vive douleur survient dans ton torse. Ta respiration se coupe pendant un temps."
-            "Il vient de te donner un coup de coude." 
-            
-            hl "Hé, d'où ça vient ?"
+        am "...{w}Elle fait pas deux centimètres, elle en fait vingt !"
+        am "Mais oui je comprends ce que tu veux dire..."
+        am "T'accrocher à mon pantalon est sûrement plus efficace que de tenir un truc pas très long..."
+        am "Tout compte fait, peut-être que te proposer ma queue était un peu bizarre. J'aurais dû te proposer mon pantalon."
 
-            am "Elle fait pas deux centimètres, elle en fait vingt !"
-            am "Mais oui je comprends ce que tu veux dire..."
-            
-            hl "C'est décidé, alors."
+        "Tu ricanes."
 
-            "Tu t'accroches à son pantalon et t'endors."
+        if azzy_score >= 1:
+            az "Il a été plutôt rapide à proposer ça, ne penses-tu pas ?"
+        elif derek_score >= 1:
+            dk "Mais à quoi il pensait ?"
+        
+        hl "C'est décidé, alors."
+        hl "Réveille-moi quand on est arrivé."
+
+        am "Oh t'inquiètes, je te réveillerai avant."
+
+        "Ignorant sa dernière remarque, tu poses ta tête contre long dos du canidé."
+        "Le casque te sépare de sa veste en cuir mais tu supposes qu'il est dur et inconfortable."
+        "Néanmoins tu aurais préféré sans le casque."
+        "Agrippant son pantalon rugueux, tu laisses les bras de Morphée t'emporter."
+
+    else:
+        "Malgré le chien gesticulant et pestant, te criant dessus, tu nne trouves plus la force d'y faire attention."
+        "Plutôt, à ce point, si tu voulais t'en soucier, tu l'aurais fait."
+        "Pourtant, te voilà, ignorant les plaintes de ton ami, touchant enfin du bout du doigt, une paix longtemps perdue."
+        "Il t'a baladé à droite et à gauche sans jamais prendre en considération ton ressenti."
+        "Parfois tu te demandes pourquoi tu l'as suivi. Il n'a pas changé d'un pouce."
+        "Toujours brut, toujours peu soucieux de son environnement, toujours une attitude rebelle exécrable à son âge."
+        "Il ne t'a jamais regardé, et ne le fera jamais. Il t'a sûrement invité pour mieux te tourmenter."
+        "Pourtant tu restes. Tu ne t'en vas pas. Tu ne t'enfuis pas. Tu aurais pu à tout moment refuser son invitation et retourner tes préoccupations."
+        "Mais non. Tu as accepté sur le champ. Le moment où il a remis un pied dans ta vie, tu t'es jeté aux siens."
+        "...{w} Pourquoi."
+
+        az "Parce que vous ne pouvez pas vivre l'un sans l'autre. Au fond de ton cœur, tu le sais."
+        az "Tu as essayé de l'oublier plusieurs fois, en vain. Il t'a laissé tout seul, il t'a abandonné. Il t'a fait souffrir."
+        az "Tous les jours, tu espérais qu'il souffre aussi, autant que toi. Il n'avait pas le droit de partir sans tracas, toi laissé derrière à ton compte, immergé par la Solitude."
+        az "Au fond de toi, tu savais qu'il n'en allait pas autrement. Tu savais ce qu'il se passerait lorsqu'il reviendrait. Vous êtes liés, que tu le veuilles ou non. {w}La Fatalité en a décidé ainsi. Tu es trop faible pour y lutter"
+        az "Destinés à se baigner dans votre incompréhension de l'autre mais incapable de comprendre les bénéfices de la distance entre deux personnes incompatibles."
+        az "En espérant que tu as eu ce que tu voulais{w}, lâche."
+
+        "Sur ces mots, le néant t'emporte et bientôt ta conscience s'y fond."
+
         # "Ça ne pose pas problème qu'on aille là-bas ?" if work:
         #     $ work = False
 
