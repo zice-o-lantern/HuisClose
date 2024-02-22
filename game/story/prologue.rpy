@@ -604,6 +604,10 @@ label little_road:
             am "Bref, celle des biscuits est permanente donc c'est pas comme s'ils avaient le choix."
 
             "Plus tu discutes avec Ammon, plus tu réalises qu'il a une définition anormal de vacances."
+            "Des expositions sur des bombes et des biscuits ? Ce qui est sûr, c'est que ce n'est pas ta tasse de thé."
+            "Ammon doit vraiment vouloir partager ça avec toi, pour t'avoir emmené avec toi."
+            "... Ta nuque brûle incandescendemment, les plaies exposées souffrant à l'air pur et froid."
+            "Tu dois creuser."
 
             jump destination_questions
         
@@ -639,7 +643,9 @@ label little_road:
             "Ammon se renferme sur lui, une carapace impénétrable."
             "Tu retournes la précédente discussion dans tous les angles, à la recherche de la chose déplacée que tu aies dite."
             "Mais rien. Ce n'est pas inhabituel d'Ammon de te couper dans tes tentatives d'approche."
-            "Les épaules retroussées, le chien brut ne bouge plus d'un pouce. Sa queue, qui se remuait il y a encore quelque temps, se durcit comme du marble."
+            "Les épaules retroussées, le chien brut ne bouge plus d'un pouce. Sa queue, qui se remuait il y a encore quelque temps, se durcit comme du marbre."
+            "Il a aucune raison d'être autant sur la défensive. Ça ne t'aurait pas dérangé qu'il y soit déjà allé sans toi."
+            "Tu es de plus en plus confus par sa réaction."
             "Tu regardes tes griffes. De le peau, des poils arrachés et du sang frais s'accumulent sous tes ongles. Ta nuque te brûle."
             "Tu resserres fermement le châssis."
 
