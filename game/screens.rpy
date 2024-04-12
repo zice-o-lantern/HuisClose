@@ -292,7 +292,11 @@ screen navigation():
         style_prefix "navigation"
 
         xpos gui.navigation_xpos
-        yalign 0.5
+        
+        if main_menu:
+            yalign 0.75
+        else:
+            yalign 0.5
 
         spacing gui.navigation_spacing
 
@@ -358,6 +362,8 @@ screen main_menu():
 
     add gui.main_menu_background
 
+    add gui.main_menu_title
+
     ## This empty frame darkens the main menu.
     frame:
         style "main_menu_frame"
@@ -388,7 +394,7 @@ style main_menu_frame:
     xsize 420
     yfill True
 
-    background "gui/overlay/main_menu.png"
+    # background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
     xalign 1.0
