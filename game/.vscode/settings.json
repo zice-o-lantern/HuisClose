@@ -128,5 +128,9 @@
     },
     "cSpell.enableFiletypes": [
         "renpy"
+    ],
+    "cSpell.words": [
+        "hbox",
+        "imagebutton"
     ]
 }
