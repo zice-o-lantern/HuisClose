@@ -14,7 +14,7 @@ label prologue:
     cl "L’insecte dormant en mon cœur se réveille, enfin... ou avait–il ouvert ses yeux auparavant ?" 
     cl "Peut–être que ce cœur ne m’appartient pas, finalement."
     cl "Quoi qu’il en soit, ces sentiments familiers, que Dieu m’a maudit avec, fourmillent en moi. Je ne peux plus le nier."
-    cl "Je sais que ces deux feux follets avec lesquels tu m’épies, me scrutes ne sont qu’illusions.{w} Des leurres pour corrompre le peu qui reste de moi."
+    cl "Je sais que ces deux feux follets avec lesquels tu m’épies, me scrutes ne sont que des illusions.{w} Des leurres pour corrompre le peu qui reste de moi."
     cl "Je sais, cependant, que ton pouvoir, ta lumière, ton don..." 
     cl "Il peut les apprivoiser, les recueillir, ces monstres de l’au–delà{w}, au sein de ton phare au milieu de la mer déchaînée."
     cl "{cps=3}...{/cps}{w} Combler ce vide qui ronge cet être{w}——Mon être——{w}flétrissant."
@@ -38,6 +38,10 @@ label little_road:
 
     hl "Ahhhh—"
 
+    show turn ammon1 at american_shot with dissolve
+
+    "test de merde parce que je connais rien à ce truc de merde et tout le monde s’attend à que je sois un génie de toute façon"
+
     "???" "Je vois que je ne me trompais pas, au final."
 
     "Tu lèves les yeux et malgré le voile noire recouvrant ta vue, tu arrives toujours à distinguer les traits de la personne en face de toi."
@@ -46,7 +50,7 @@ label little_road:
     "Elle reprend sa typique posture, croisant les bras, tapant du pied."
     show ammon at american_shot with dissolve
     
-    "???" "En train de pioncer, n’est–ce pas ?"
+    "???" "En train de pioncer, hein ?"
 
     hl "Huh, de quoi ?"
 
@@ -392,7 +396,7 @@ label little_road:
 
     am "... Je vois, à ce point ?"
 
-    "Tu te retiens de lui hurler de garder ses commentaires pour lui."
+    "Tu te retiens de lui Howellr de garder ses commentaires pour lui."
 
     am "Bon tu veux savoir quoi sur \"La Maison\" ?"
 
@@ -801,172 +805,170 @@ label rest_area_1:
 
     show ammon right at american_shot
 
-    am "Do you want some help? You look like you're having a hard time."
+    am "Tu veux de l’aide ? T’as l’air de galérer un peu."
 
     menu let_ammon_help_you:
-        "Please, yes, can you help?":
+        "Demander de l’aide ":
             $ ammon_score += 1 
-            "Usually, it would’ve been the time where you deflect any sort of assistance. But..."
-            hl "Alright, go on."
-            "You didn’t have the strength to struggle nor protest so you give in to Ammon."
+            "Normalement, c’était le moment où tu détournes toute sorte d’aide. Mais..."
+            hl " D’accord, vas–y... "
+            "Tu n’as pas la force de lutter ni de protester, alors tu cèdes à Ammon."
 
             show ammon front
 
-            "His bulky hands grab the base of your helmet and his nails brush the tip of your neck hair, surprising you, not liking being touched."
-            "Your hair stands on edge, imploring to get it done the sooner you can. You don’t disagree. The sooner the helmet removed, the better you’ll be"
-            "Nonetheless, he gets trouble too to rid your feline head of the helmet. He pulls harder and harder on you and the pain gradually increases and you can't see the end of it."
-            hl "Oh my god, Ammon, be softer!! Less harder! You're going to hurt me!"
+            "Ses mains volumineuses et rugueuses saisissent la base de ton casque et ses ongles effleurent ton cou. Un frisson te parcourt. Tu n’aimes pas qu'on te touche."
+            "Tes poils se hérissent, t'implorant d'en finir au plus vite. Tu ne peux pas être plus d’accord. Plus vite le casque enlevé, mieux tu te porteras"
+            "Néanmoins, il a, lui aussi, du mal à débarrasser ta tête du casque. Il tire de toutes ses forces sur toi. La douleur submerge tous tes sens"
+            hl "Oh mon dieu, Ammon, sois plus doux ! !! Moins fort ! Tu vas me faire mal !"
             
-            am "If you weren't so such tight!"
+            am "si ton trou n’était pas si étroit..."
             
-            hl "What did you say?!"
+            hl "Qu'est-ce que t’as dit ?!"
 
-            am "I said, if you didn't have a such tight helmet... And such a big head!"
+            am "J’ai dit si le trou du casque n’était pas si étroit... et que tu n’avais pas une aussi grosse tête !"
             
-            hl "You can talk with your long big snout!"
+            hl "Tu peux parler avec ta gueule !"
             
-            am "If you don't stop talking right now, I'll pull your helmet in any way possible,"
+            am "Si tu te la fermes pas, j’enleverai ton casque d’un manière ou d’une autre"
             show ammon right e_smug
-            extend " with or without your head."
+            extend "avec ou sans ta tête."
             
-            hl "Stop talking with your long snout and just do what you just said, we'll both be better off!"
+            hl "La ferme avec ta gueule et juste enlève–le, on s'en portera mieux tous les deux !"
             
-            "For a moment Ammon still struggles to remove your helmet. The pain is really insufferable and you both pull like idiots trying to pull out Excalibur." 
-            "You yell and he apologises hoarsely."
-            "At some point, you feel with your united combined effort, the helmet is ready to give in. Suddenly there's a pop and you fly out of the helmet on the grass rolling for a considerate amount of time."
-            "When your frenetic charge comes to stop, you cough out the dirt and the blades of grasses stuck in your mouth."
+            "Pendant un moment, Ammon lutte encore pour enlever ton casque. Vous tirez tous les deux comme des idiots en essayant de retirer Excalibur." 
+            "Tu cries et il s'excuse sèchement."
+            "À un moment donné, vous sentez qu'avec vos efforts conjugués, le casque est prêt à céder." 
+            "Tout à coup, un pop se fait entendre et tu t’envoles du casque, atterrissant dans l’herbe."
+            "Tu expulses la terre et les brins d'herbe coincés dans ta bouche."
             show ammon front e_happy j_noway
-            "You shake up your head so your blood flows back in it. When you come back to your senses, you are met with a laughing dog unable to stop."
-            "His piercing laughter overwhelm your space and you get red of embarrassment irresistibly, despite you. You clutch the grass."
+            "Tu secoues ta tête pour que ton sang y circule à nouveau. Lorsque tu reprends tes esprits, une hyène se tient devant toi, incapable de s’arrêter de rire."
+            "Son rire perçant t’envahit et tu rougis de gêne, malgré toi. Tu t'agrippes à l'herbe."
 
             menu:
-                "Throw some grass at him.":
+                "Lui lancer de l'herbe" :
                     $ ammon_score += 1 
-                    "You pluck out some grass and you throw some at him to make him shut its long snout trap that serves him as a mouth."
-                    hl "Fucking moron !! I told you you shouldn't pull that hard! I'm all scratched and dirty now. I hate you, you hear me??"
+                    "Tu arraches de l'herbe et tu lui en jettes pour qu'il ferme son long piège à museau qui lui sert de bouche"
+                    hl "Putain d’abruti ! !! Je t'avais dit qu'il ne fallait pas tirer aussi fort ! Je suis tout égratigné et sale maintenant. Je te déteste, tu m'entends ?"
 
                     show ammon j_neutral
-                    "Ammon wipes out his tears of laughter and approaches, triumphing, over you. His wicked smile pierces his helmet as he hands you your helmet and reach a hand to you."
+                    "Ammon essuie ses larmes de rire et s'approche, triomphant, de toi. Son sourire malicieux transperce son casque alors qu'il te remet ton casque et te tend une main."
         
-                    am e_neutral  "Okay you cry kitten, keep whining all you want. But if you stay on the ground, you won't get anywhere, will you?"
+                    am e_neutral "D'accord mon chaton, plains–toi autant que tu veux. Mais si tu continues à te rouler au sol, tu n'arriveras à rien, si ?"
 
-                    "You grit your teeth as you clutch his hand. He carries you off the ground that you find yourself levitating. You often forget his undogly force."
+                    "Tu serres les dents en t'agrippant à sa main. Il te transporte hors du sol que tu te retrouves à léviter. Tu oublies souvent sa force inhuchienne."
                 
-                "Stay calm": 
-                    "You clutch the grass harder and harder. You want to unleash your rage on him, to throw grass and dirt at him."
-                    "But you can't. You're too weak for that. He'd only laugh at you harder. {w}You hate him."
+                "Rester calme" : 
+                    "Tu t'agrippes de plus en plus fort à l'herbe. Tu veux déchaîner ta rage sur lui, lui jeter de l'herbe et de la terre."
+                    "Mais tu ne peux pas. Tu es trop faible pour ça. Il ne ferait que se moquer de toi encore plus fort. {w}Tu le détestes."
 
                     show ammon j_neutral
-                    "Ammon wipes out his tears of laughter and approaches, triumphing, over you. His wicked smile pierces his helmet as he looks at you."
+                    "Ammon essuie ses larmes de rire et s'approche, triomphant, de toi. Son sourire malicieux transperce son casque alors qu'il te regarde."
 
-                    am e_noway "Hum, are you alright? Were you hurt? You look tense."
+                    am e_noway "Euh, tu vas bien ? T’es blessé ? Tu as l'air tendu."
 
                     show ammon e_neutral
-                    "He rushes towards you."
-                    "Once close to you, he reaches a hand out at you."
+                    "Il se précipite vers toi."
+                    "Une fois près de toi, il tend une main vers toi"
 
-                    "But you swat it off."
+                    "Mais tu la repousses d'un revers de main."
 
                     show ammon e_noway j_disgusted
-                    hl "I am fine, you don’t need to worry over me."
+                    hl "Je vais bien, tu n'as pas besoin de t'inquiéter pour moi."
 
-                    "You stand up and you quickly brush your clothes of the dust and the green blades."
+                    "Tu te lèves et tu brosses rapidement tes vêtements de la poussière et tout végétaux."
 
         
-        "I can do it on my own, no thanks":
-            "You don't need the help of that prick."
-            hl "I don't need your help. I can deal with it on my own."
+        "Le faire tout seul" :
+            "Tu n'as pas besoin de l'aide de ce con"
+            hl "Je n'ai pas besoin de ton aide. Je peux me débrouiller tout seul."
             
-            am pupils_right "Alright... Suit yourself."
+            am pupils_right "Très bien... Comme tu veux."
             
-            "You don't wait for his signal."
-            "However something's wrong: It really is stuck. No matter how much you pull or the angle you use, your ears won't budge so it won't come off."
-            "As you panic, you wiggle out in every directions possible, almost rushing in the motorcycle or Ammon."
+            "Tu n'attends pas son signal."
+            "Cependant, quelque chose ne va pas : il est vraiment coincé. Peu importe la force avec laquelle tu tires ou l'angle que tu utilises, tes oreilles ne bougent pas et il ne se détache donc pas."
+            "En paniquant, tu t'agites dans toutes les directions, te précipitant sur la moto et sur Ammon."
 
-            am pupils "Are you sure you don't need any help? you sure look like so."
+            am élèves "Tu es sûr que tu n'as pas besoin d'aide ? Tu en as l'air."
 
-            hl "I'm fine! I don't need your help or anyone's help!"
+            hl "Je vais bien ! Je n'ai pas besoin de ton aide ni de celle de personne !"
             
-            am pupils_left "Um, ok... I guess?"
+            am pupils_left "Um, ok... Je suppose que..."
 
-            show ammon pupils 
+            show ammon pupils
 
-            "In your wrestle against the helmet, you keep spinning around until you get nauseated from the all over experience."
-            "By a thread of luck or misfortune, you manage to get rid of your helmet. However with all your dances and twirling, you lost sense of directions and you lose balance making you fall into the grass."
-            "When your frenetic charge comes to stop, you cough out the dirt and the blades of grasses caught in your mouth. As you come back to your senses, you are met with a laughing dog unable to stop."
+            "Dans ta lutte contre le casque, tu continues à tourner sur toi-même jusqu'à ce que tu aies la nausée à cause de l'expérience généralisée."
+            "Par un fil de chance ou de malchance, tu parviens à te débarrasser de ton casque. Cependant avec toutes tes danses et tes virevoltes, tu as perdu le sens de l'orientation et tu as perdu l'équilibre te faisant tomber dans l'herbe."
+            "Lorsque ta charge frénétique s'arrête, tu craches la terre et les brins d'herbes pris dans ta bouche. Lorsque tu reprends tes esprits, tu es confronté à un chien rieur incapable de s'arrêter."
         
-            am pupils_left j_smug "Deserved it, jackass."
+            am pupils_left j_smug "Tu l'as bien mérité, abruti."
 
-            hl "What did you say?"
+            hl "Qu'est-ce que t’as dit ?"
 
-            am pupils j_neutral "You heard me. Just get up. You won't get anywhere like this."
+            am pupils j_neutral "Tu m'as entendu. Lève-toi. Tu n'arriveras à rien dans cet état."
             
-            "You get up. You rub your head out of pain and you can feel a nasty bump on your head. Maybe you should've asked for Ammon."
+            "Tu te lèves. Tu te frottes la tête par douleur et tu sens une méchante bosse sur ton crâne. Tu aurais peut-être dû demander Ammon."
 
     hide ammon with dissolve
 
-    "You scramble out of the grass and rush toward the rear mirror of the motorcycle to watch your face and check any scratches."
-    ## TODO: Illustration of gap looking in the mirror
-    "As you look into it, you behold a scrawny cat in his twenties, with a medium stature, not delighted and grumpy." 
-    "You sigh. You wouldn't be friend with him."
-    dk "Never forget, it's you and will always be you."
-    "Unfortunately you were not so lucky and your usual pure white–crystal hair face is tainted by some dirt and injuries." 
-    "You lament yourself on your state. Other than your scratches, you don't look so good either."
-    "Your tired eyes look like you haven't slept for a week—and you might not have—as the dark rings under your eyes draw themselves on a too much big surface." 
-    "You scrub them, however they remain unchanged and any try to make it go make clear that they won't go away."
-    "You check your red eye, swollen by the fatigue, you prod the inferior eyelid at it." 
-    "The capillaries running through your blue sapphire eyes sclera pulse a like a living entity."
-    
-    "You are annoyed at them and even more you are scared of them."
-    "The next moment, they disappear and you are then alone with your no better thoughts, still uncomfortable that someone might be watching you." 
-    cl "Just a wrong step and you're done for. Don't ever misstep, you hear me? Not ever. {w}You are a deviant and you know it."
+    "Tu te débrouilles pour sortir de l'herbe et tu te précipites vers le rétroviseur de la moto pour regarder ton visage et vérifier qu'il n'y ait pas d'égratignures."
+    ## TODO : Illustration de l'écart en train de regarder dans le rétroviseur.
+    "En y jetant un coup d'œil, tu contemples un chat maigre d'une vingtaine d'années, de stature moyenne et grognon." 
+    "Tu soupires. Tu aurais "
 
-    am "Hum Gap, what are you looking at? You've been staring for quite some time now."
+    dk "N'oublie jamais, c'est toi et ce sera toujours toi."
+
+    "Malheureusement, tu n'as pas eu cette chance et ton visage aux poils blancs habituellement purs comme du cristal à l’exception de ton museau marron, est entaché de quelques saletés et blessures." 
+    "Tu te lamentes sur ton état. À part ces égratignures, tu n’es pas en forme non plus."
+    "Tes yeux fatigués donnent l'impression que tu n'as pas dormi depuis une semaine - et c’est peut—être le cas - les cernes sous tes yeux se dessinant sur une surface trop grande." 
+    "Tu les frottes, cependant elles restent intacts et toute tentative de les faire disparaître se révèlent infructueuses."
+    "Tu vérifies ton œil rouge, gonflé par la fatigue, tu lui prodigues la paupière inférieure." 
+    "Les capillaires qui parcourent la sclérotique de tes yeux verts jade pulsent comme une entité vivante."
+    
+    "Ils t'agacent et plus encore ils t'effraient. "
+
+    am "Euh Howl, qu'est-ce que tu fixes comme ça ?"
 
     show ammon at american_shot
     with dissolve
 
-    "Ammon tilts his head from the other side of the motorcycle to look at your reflection in the mirror"
+    "Ammon penche la tête depuis l'autre côté de la moto pour jeter un coup d’œil dans le rétroviseur"
 
-    am "You've got to stop looking at yourself like that. You look like you are on the brink of murdering someone."
+    am "Il faut que t’arrêtes de te regarder comme ça. On dirait que tu es sur le point de trucider quelqu'un"
 
-    "With this disturbing statement, Ammon goes on to get rid of his helmet." 
-    "Realising he has got some points, you cut off your sight from your other you and you look at him inquisitively, wondering where he might have had this idea."
-    "You weren't that unhinged, were you?"
+    "Avec ce commentaire inquiétant, Ammon poursuit en se débarrassant de son casque" 
+    "Réalisant qu'il a un point, tu détournes le regard du toi de l’au–delà, n’ayant pas arrêté de te dévisager."
     
-    hl "Do you need help with your helmet, Ammon? You may use some given.. your head shape..."
+    hl "As-tu besoin d'aide avec ton casque, Ammon ? Tu auras besoin d'un peu d'aide... la forme de ta tête..."
     
-    am right "It's alright, pal. I can deal with it on my own. I'm used to."
+    am right "C'est bon, mec. Je peux m'en occuper tout seul. J'ai l'habitude."
 
-    "The cocky dog removes his helmet elegantly without any issues nor events whatsoever." 
-    "He wiggles his head finally free from his protective plastic jail."
+    "Le chien arrogant enlève son casque élégamment sans aucun problème ni souci quelconque" 
+    "Il remue la tête enfin libérée de sa prison protectrice en plastique"
 
     show ammon pupils_right 
-    "What a show–off. But a good show–off."
+    "Quel frimeur ! Mais un bon frimeur."
     camera at close_shot
-    show parkingLot:
+    show parking:
         parallel:
             easeout 1 blur 64
-    "The thing that always catches your attention in him is his eyes. His priceless golden eyes shining more than any sun you've seen." 
-    "You find yourself mesmerising in these luxurious jewels."
-    show ammon pupils 
-    "These piercing cruel eyes look through your soul"
+    "Ce qui attire toujours ton attention chez lui, ce sont ses yeux. Ses yeux dorés inestimables qui brillent plus que tous soleils que tu aies vu." 
+    "Tu te retrouves hypnotisée par ces bijoux"
+    show ammon pupils
+    "Ces yeux cruels et perçants te regardant à travers ton âme"
     show ammon pupils_right 
-    extend "and you are read like a dirty open book." 
-    "At any time, if he feels like so, he can pick an excerpt from it and study it attentively to your expense" 
-    dk "He can guess who you are from it alone."
-    "He is objectively better than you in every domain possible."
-    camera:
+    extend "et te lisant comme un sale livre ouvert." 
+    "À tout moment, s'il en a envie, il peut en choisir un extrait et l'étudier attentivement à tes dépens" 
+    dk "Il "
+    "Il est objectivement meilleur que toi dans tous les domaines possibles"
+    camera :
         easeout 15 ypos 400
-    "He is handsome, he is charming, he is charismatic, he has a sense a sense of style you will never have." 
-    "He also wears golden face piercing. It really amplifies his rebel attitude."
-    "You may want to say that to him but he’d say that you’re being too emotional so you always shut yourself."
-    "He often wears biker suits because that fits his life style he told you." 
-    "You wish you could be as extravagant as him and take crazy risks" 
-    "You are not as bold as him so you keep to your little classic shirt with your tie."
-    "You hope, one day, you’ll break the ties that roots you to your plain life and take the chance to be as free, as lifeful as liberated as him."
+    "Il est beau, il est charmant, il est charismatique, il a un sens un sens du style que tu n'auras jamais." 
+    "Il porte également des piercings dorées au visage."
+    "Tu aimerais pouvoir être aussi extravagant que lui et prendre des risques fous" 
+    "Tu n'es pas aussi audacieux que lui alors tu restes sur ta petite chemise classique avec ta cravate"
+    "Tu espères qu'un jour, tu briseras les liens qui t'enracinent dans ta vie ordinaire et que tu prendras le risque d'être aussi libre, aussi vivant que libéré que lui."
 
-    am "What are you staring at?"
+    am "Qu'est-ce que tu regardes ?"
 
     pause 0.5
 
@@ -975,77 +977,78 @@ label rest_area_1:
     
     show ammon pupils e_smug
 
-    am "Do I have something funny down there?"
+    am "J’ai quelque chose de spécial en dessous ?"
 
-    hl "Huh not at all ahah"
+    hl "Huh pas du tout ahah"
 
-    "You cringe, rubbing your neck with your hand."
+    "Tu grimaces en te frottant le cou avec ta main"
 
-    hl "I just really like your cloches ahah."
+    hl "C'est juste que j'aime beaucoup ta ceinture, ahah"
 
-    am "{cps=3}...{/cps} ok, thanks, I guess?"
+    am "{cps=3}...{/cps} ok, merci, je suppose ?"
     am pupils_right "{size=20} you weirdo"
     
-    camera:
-        parallel:
+    camera :
+        parallel :
             ease 2 zpos 0
-        parallel:
+        parallel :
             ease 2 ypos 0
 
     pause 1.0
 
     hide ammon with dissolve
-    "Despite your fixation on Ammon, you come to notice the deserted rest area you just stop in." 
-    "Dead leaves piled up on the border of the roads, signaling the fall has come and taken his toll on Nature." 
-    "The brownish orangey landscape contrasted with the bright green of Summer." 
-    "The mourning trees stand there, waiting for better times"
-    "Sooner or later, even their melancholic colours will be replaced by scarce branches and the glacial white tucking them to their warm sleep." 
-    "Tall grasses remain nonetheless undefeated by the time passing. Some sunflowers still resist, searching for their lead."
-    "The usual restrooms stick out of the surrounding nature. They are not at all well–maintained..."
-    "A tall metallic structure stand out with all this misery, a shine, a beacon of what lies ahead. You have seen them a handful of times. A phone booth." 
-    "You rarely see phone booths out in city so to find one in a rest area is even more incredible. Technology goes fast, you think, nowadays."
+    "Malgré ta fixation sur Ammon, tu en viens à remarquer l'aire de repos déserte sur laquelle tu viens de t'arrêter." 
+    "Les feuilles mortes s'entassent sur le bord des routes, signalant que l'automne est arrivé et qu'il a fait des ravages dans la nature." 
+    "Le paysage brun orangé contrastait avec le vert éclatant de l'été" 
+    "Les arbres en deuil se tiennent là, attendant des temps meilleurs"
+    "Tôt ou tard, même leurs couleurs mélancoliques seront remplacées par des branches et le blanc glacial qui les borde dans leur sommeil chaleureux." 
+    "Les herbes hautes restent néanmoins invaincues par le temps qui passe. Quelques tournesols résistent encore, à la recherche de leur guide."
+    "Les toilettes habituelles se détachent de la nature environnante. Elles ne sont pas du tout bien entretenues..."
+    "Une haute structure métallique se détache de toute cette misère. Tu en as vu une poignée de fois. Une cabine téléphonique." 
+    "Tu vois rarement des cabines téléphoniques au village, alors en trouver une sur une aire de repos est encore plus incroyable. La technologie va vite, penses-tu, de nos jours."
 
-    hl "Hey look, Ammon! They have a phone booth around here. Isn’t that wonderful?"
+    hl "Hé regarde, Ammon ! Ils ont une cabine téléphonique par ici. N'est-ce pas merveilleux ?"
 
-    show ammon right pupils_right e_smug at american_shot with dissolve
+    show ammon pupils_right e_smug at american_shot with dissolve
 
-    am "Huh?"
+    am "Huh ?"
     show ammon pupils 
-    extend "Oh yeah... sure."
+    extend "Oh ouais... bien sûr."
 
-    "Ammon doesn’t seem very interested in these incredible structure. You lower your gaze and notice his hand pressing his crotch, clutching his fist at a gradually faster pace." 
-    "This explains his lack of interest, you guess."
+    "Ammon ne semble pas très intéressé par cette incroyable structure. Tu baisses ton regard et tu remarques qu’il n’arrête pas de se dandiner, son pied n’arrêtant pas de bouger dans tous les sens." 
+    "Cela explique son manque d'intérêt, tu supposes."
 
-    am "So you’re going to use it, right? Who you gonna call?"
+    am "Alors tu vas l'utiliser, c'est ça ? Qui tu vas appeler ?"
 
-    "You mull over the question, even though you don’t know a lot of people who owns a phone at home. Only two persons comes to mind."
+    "Tu réfléchis à la question, même si tu ne connais pas beaucoup de gens qui possèdent un téléphone chez eux. Seules deux personnes te viennent à l'esprit."
 
-    am j_noway "Is it gonna be you mom?.. Or..." 
+    am j_noway "Ta mère ? Ou..." 
     show ammon pupils_left
-    extend " MJ?"
+    extend "MJ ?"
 
     show ammon pupils j_neutral
 
-    "He says the last word with a lot of emphasis as it was only obvious from both of them you’re going to pick." 
-    "A annoyed tone comes with and that disturbs you, as Ammon being genuinely annoyed is rare."
+    "Un petit silence s’ensuit"
 
-    hl "Yes I’m going to call her."
+    hl "Oui je vais l'appeler."
 
-    am "Ok, suit yourself."
-    am "I’m going to pee. Wait for me and don’t go far ok?"
+    am pupils_right "Ok, comme tu veux."
+    am "Je vais faire pipi. Attends-moi et ne t'éloigne pas, d'accord ?"
 
-    "Ammon quickly deflects the topic of discussion and comes back to the pressing matter at hand." 
-    "You watch him waddling in place, jumping like a late hare and you find yourself hard to not comply with his request."
+    "Ammon change rapidement le sujet de la discussion et revient sur l'affaire urgente qui nous occupe" 
+    "Tu le regardes se dandiner sur place, sauter comme un lapin en retard."
+    "Tu ne souhaites pas le retenir plus longtemps"
 
-    hl "Ok, don’t lose yourself on the way!"
 
-    am "Don’t worry. See ya."
+    hl "Ok, ne te perds pas en route !"
+
+    am "Ne t'inquiète pas. À plus tard."
 
     hide ammon with dissolve
 
-    "As soon as he finishes his sentence, you see him sprint towards the forsaken restroom and you chuckle." 
-    "As he disappears from your vision, you are now alone... Not quite... There's the phone booth. It attracts, implore you to come."
-    "So you stare at it longingly. For a moment, you can only stand there, in front of the cubicle, as your eyes runs through it, intrigued."
+    "Dès qu'il a terminé sa phrase, tu le vois sprinter vers les toilettes abandonnées et tu glousses." 
+    "Alors qu'il disparaît de ta vision, tu es désormais seul....{w} Pas tout à fait... Il y a la cabine téléphonique. Elle attire, t'implore de venir."
+    "Alors tu la fixes avec envie. Pendant un moment, tu ne peux que rester là, devant la cabine, tandis que tes yeux la parcourent, intrigués."
 
 
     
@@ -1053,336 +1056,329 @@ label rest_area_1:
 
 label phone_booth: 
     stop music fadeout 0.5
-    stop sound
-    scene phone_booth with fade
+    stop son
+    scene phone_booth with fondu
 
     play music "audio/music/night_sky.mp3" fadein 1.0 loop
 
-    "You jog towards the deserted phone booth. You hurry yourself to talk to her, to get it done." 
-    "Dragging yourself the door, you grab with a grand difficulty the handle, not being able to find the motivation to penetrate into the dark cubicle."
-    "You turn an inconsiderate amount of times the handle, at last, the door opens when you shove into it." 
-    "You mustn’t be in the right mindset to not notice that pulling a thousand times a door will not work on the 1001th time."
-    "But you couldn’t give more than a care, your gloominess crashing down at its lowest as you finally set paw in the somber void, pierced by rays of declining sunlight."
-    "Blind, by the low current luminosity of the place, you put some time to even find the phone."
-    "On the phone box, on a little sign at the bottom of it, it is written \"10 francs for 10 minutes!\" You think the sign bargains a fair deal to you."
-    "You get a coin from your pocket and you slid it into the coin slot. Soon after, the phone screen lits up awaiting your input." 
-    "You observe carefully as some features disturb you: they never had a screen before."
-    "With slowness, you press the phone number on the keypad, with petite–size buttons but you manage to input it on your first try."
-    "You pick up the phone and wait for the ringing to come and let it resonate in the booth soothing the emptiness of the place. You liked the music tone and you daydream a bit of time."
-    "You’ve wandered in your head for a undefined span of time, the ringing going on and on, the sound receding away in the dark void."
-    "You wonder why she puts this much amount of time to respond. Must it be the hour? Or is she’s not home right now? Maybe she has got an extended work shift and wasn’t still able to come this evening."
-    "Whatever the reason, it has to be a valid one. You mull over it a bit. She wouldn’t ignore you, would she? Perhaps she is ignoring you and is looking at the phone ringing right now."
-    "Suddenly a click travels from the other side of the line as to prove you wrong. You hear an inquisitive, quite sly, feminine voice answering the call."
+    "Tu trottines vers la cabine téléphonique déserte. Tu te dépêches de lui parler, d'en finir." 
+    "Te traînant jusqu'à la porte, tu saisis avec une grande difficulté la poignée, ne parvenant pas à trouver la motivation nécessaire pour pénétrer dans la cabine obscure."
+    "Tu tournes un nombre inconsidéré de fois la poignée, enfin, la porte s'ouvre quand tu la pousses." 
+    "Tu ne dois pas être dans le bon état d'esprit pour ne pas remarquer que tirer mille fois une porte ne fonctionnera pas la 1001e fois."
+    "Mais tu n'as pas pu t'en préoccuper plus que ça, ta morosité s'écrasant au plus bas lorsque tu poses enfin la patte dans le vide sombre, transpercé par les rayons d'un soleil déclinant."
+    "Aveugle, par la faible luminosité actuelle du lieu, tu as mis du temps à même trouver le téléphone"
+    "Sur la cabine téléphonique, sur une petite pancarte au fond de celle-ci, il est écrit : « 10 francs pour 10 minutes ! »."
+    "Tu sors une pièce de ta poche et tu la glisses dans le monnayeur. Peu après, l'écran du téléphone s'allume et attend ta saisie." 
+    "Tu observes attentivement car certaines fonctionnalités te dérangent : elles n'ont jamais eu d'écran auparavant."
+    "Avec lenteur, tu appuies sur le numéro de téléphone du clavier, aux touches de petite taille, mais tu parviens à le saisir du premier coup."
+    "Tu décroches le téléphone et tu attends que la sonnerie arrive pour la laisser résonner dans la cabine en apaisant le vide environnant."
+    "Tu as erré dans ta tête pendant un temps indéfini, la sonnerie se prolongeant, le son s'éloignant dans le vide obscur."
+    "Tu te demandes pourquoi elle met autant de temps à répondre. Elle n'est pas chez elle en ce moment ? Peut-être qu'elle a eu des heures de travail supplémentaires et qu'elle n'a pas pu venir ce soir."
+    "Quelle que soit la raison, elle doit être valable. Réfléchis un peu. Elle ne t'ignorerait pas, n'est-ce pas ?{w} Peut-être qu'elle t'ignore et qu'elle regarde le téléphone qui sonne en ce moment même."
+    "Soudain, un déclic se fait entendre de l'autre côté de la ligne, comme pour te prouver que tu as tort. Tu entends une voix féminine inquisitrice, qui répond à l'appel."
     
-    "???" "... Hello, who is it?"
+    " ???" "... Allô, qui est-ce ?"
     
-    hl "Marie–Jil, it’s me, Hurle!"
+    hl "Marie-Jil, c'est moi, Howell !"
     
-    mj "Howly! It’s really you! I’ve waited for your call all day long, you know that?."
+    mj "Howell ! C'est vraiment toi ! J'ai attendu ton appel toute la journée, tu le sais ?"
 
-    "A deep sigh escapes of her long mouth, relieved to hear your voice."
+    "Un profond soupir s'échappe de sa longue bouche, soulagée d'entendre ta voix"
 
-    mj "Have you reached the hotel, yet?"
+    mj "Tu es déjà arrivé à la Maison ?"
 
-    hl "No, not yet."
+    hl "Non, pas encore."
 
-    mj "You’re still on the road? How did you do to contact me then?"
+    mj "Tu es toujours sur la route ? Comment as-tu fait pour me contacter alors ?"
 
-    hl "Well apparently, they started to install phone booths on rest areas over the roads. Isn’t it amazing?" 
-    hl "Some day, I’ll be able to find phone booths everywhere and to call you anytime I want!"
-    hl "Imagine all of the possibilities! One day, maybe, we’ll truly never be apart. This is really wonderful! Technology is going so fast! Everything is going so fast!"
+    hl "Eh bien apparemment, ils ont commencé à installer des cabines téléphoniques sur les aires de repos le long des routes." 
+
+    mj "Ah oui ça me dit quelque chose. J’en avais vu la dernière fois que j’étais allé en ville."
+    mj "Je n’avais pas percuté sur le moment mais ça veut dire que bientôt, il n’y aura plus un seul endroit sur Terre où je pourrais pas te contacter, hein ?"
+
+    hl "Oui sûrement..."
+
+    mj "Toi et moi, nous serions connectés jusqu’à la fin des temps."
+    mj "Ne trouves–tu pas ça merveilleux ?"
+
+    "Tu serres le combiné. Tu considères la question."
+    "Ça devrait être le rêve non ?"
+    "Pourtant la boule dans ta gorge te dit le contraire."
+    "Tu la ravales et tu énonces avec difficulté ta réponse."
+
+    hl "Oui, sûrement."
+    hl "Ce serait... Merveilleux."
+
+    "Le silence au bout du fil te perce les oreilles."
+    "N’as–t—elle pas aimé ta réponse ?"
+    "N’était–ce pas ce qu’elle voulait entendre ?"
+    "Finalement, tu l’entends glousser."
+
+    mj "Tu es sûr, Howl ?"
+    mj "Je sais que c’est moi qui ai proposé mais même en le considérant plus de cinq secondes, ce ne serait pas si merveilleux que ça."
+    mj "J’aime bien avoir mes moments à moi parfois, toi aussi, non ?"
+
+    hl "Si si, c’est... vrai"
     
-    "For an enigmatic reason, your passion for latest high-tech overhauled your usual gloominess." 
-    "You find yourself very eager to indulge yourself in this pit of wonders, dreaming for the future of all living beings."
+    hl "Mais tu sais, pas besoin d’être connecté, tu aurais dû venir, toi aussi, faire le voyage avec nous ! Tu me manques vraiment !"
 
-    hl "Imagine for a second, how the americans reached the moon, {cps=120.0}how we will in the future be able to travel to space {cps=150.0}and also how we will be able to even eat without opening the mouth."
-    hl "{cps=200}don’tyouthinkit’sfantasticsometimesyouthinkwowtechnolgyandallh\nowrapiditwillreachveryhighstandads??it’sreallywonderfulwhenyouthinkaboutitIwanttoneverdietowitnessthis{nw}"
-
-    "You couldn’t hold your excitation anymore. The words leaving from your mouth were forming before your brain could even process the information you were spilling out at her. Your speaking functions were not functioning anymore."
-
-    mj "Howl, Calm down! Calm down, for god's sake. You’re going to choke on your own words. Take a breath ok? Breathe with me, alright? At the count of three you’ll breathe out, ok?"
-
-    "You follow Marie—Jil’s instructions and soon enough, you manage to calm yourself down and in the end you are able to talk at steady pace."
-    "Once calmed down, your lungs stops contorting and burning the air within is able to bring you tranquility to you. Her voice helps you catch back and stand on your two paws."
-    "You’re finally able to talk normally now."
-
-    hl "Ahah, sorry, MJ. It’s been so long that I haven’t talked to you! It’s been like what? a week?"
-
-    mj "You’ve talked to me this morning, Honey. But I don’t mind, I love it when you get all worked up over me, little kitten."
-    mj "I didn’t think that you’ll be missing me so much. You’ll only stay 3 day over there and you’re already panting your insides out"
-    mj "You didn't even reach the hotel."
-    mj "You’re lucky that I was the one answering the phone." 
-    mj "Had it been Dad or Mom, they would have teased the heck out of you. Don’t thank me huh? I almost didn’t answer given the hour."
-
-    hl "It’s not that late..."
-
-    mj "It’s like fifty to eight, at least it’s starting to get late, don’t you think? I don’t think I’ll answer later in the evening. Or my parents will. I don’t think you want to talk to them that late, huh?"
-
-    "She’s got a point. As much as you like her parents, the situation you would find yourself, head–to–head with them, not knowing what to say would be very akward."
-    "So you agree with her, not very much a lot you can do more to talk to her later."
-
-    hl "Yeah you are right..."
-    hl "Hey, you should’ve come too, to the trip with us! I really miss you!"
-
-    mj "Me? You’re doing great without me, don’t worry. And I wanted to come but you know I can’t, I’ve got to work tomorrow. Have to help out Mom with her restaurant."
+    mj "Moi ? Tu te débrouilles très bien sans moi, ne t'inquiète pas. Et je voulais venir mais tu sais que je ne peux pas, je dois travailler demain. Je dois aider maman avec son restaurant."
     
-    hl "You could’ve explained the situation to her. I’m sure she would have let you come."
+    hl "Tu aurais pu lui expliquer la situation. Je suis sûr qu'elle t'aurait laissé venir."
 
-    mj "It’s not like that, Howl. She just opened her restaurant. I can’t let her down like that. She really needs me, I don’t have the time to travel to a luxuous hotel unfortunately."
+    mj "Ce n'est pas comme ça, Howl. Elle vient d'ouvrir son restaurant. Je ne peux pas la laisser tomber comme ça." 
+    mj "Elle a vraiment besoin de moi, je n'ai pas le temps de me perdre dans une maison perdue au fond de la campagne normande malheureusement."
 
-    hl "Alright... but next time, you gotta come!"
+    hl "D'accord... mais la prochaine fois, tu devras venir !"
 
-    "She softly chuckles at your liveliness."
+    "Elle s'esclaffe doucement devant ta vivacité."
 
-    mj "You know, your attitude earlier reminded me of the time where we first–{nw}"
+    mj "Tu sais, ton attitude de tout à l'heure m'a rappelé la fois où nous nous sommes pour la première fois-{nw}"
 
-    az "There she goes. On her rant like always."
+    az "La voilà qui repart. Sur sa lancée, comme toujours."
     
-    dk "Well it'd be rude to interrupt her don't you think?"
+    dk "Eh bien, ce serait impoli de l'interrompre, tu ne crois pas ?"
 
-    az "Then don't"
-    az "Think of something else."
+    az "Alors ne le fais pas"
+    az "Pense à autre chose."
 
     menu:
-        "Listen to her":
+        "L’écouter" :
             $ derek_score += 1
-            "You decide that you should at least listen a tad before declaring it boring."
-            mj "-we first went to the beach?"
+            "Tu décides que tu devrais au moins l'écouter un chouïa avant de déclarer qu'elle est ennuyeuse"
+            mj "-nous sommes allés à la plage pour la première fois ?"
 
-            hl "Yes... I think so..."
+            hl "Oui... Je crois que oui..."
 
-            mj "Well Ammon always liked acting like a goofball to tease you; and I must agree with him that your reactions were worth it."
-            mj "This day, Ammon decided that he was going to dance on rocks and provoke you to come and get him..."
-            mj "That was at least what it looked from afar."
-            mj "Anyway I think at some point it worked and you charged him. He got so scared that he fell of the rock and sprained his ankle. I don’t think the pebbles helped."
-            mj "Fortunately your dad that drove us to the beach was around because he was able to provide first medical care before getting to a doctor."
-            mj "Well it kind of ruined our little outing but thinking back then, Ammon and you were always at each others’ throats but you went everything though thick and thin."
-            mj "It’s fascinating how you managed to stay together."
+            mj "Eh bien Ammon a toujours aimé faire le con pour te taquiner ; et je dois admettre avec lui que tes réactions en valaient la peine."
+            mj "Ce jour-là, Ammon a décidé qu'il allait danser sur les rochers et vous provoquer pour que vous veniez le chercher..."
+            mj "C'est du moins ce qu'il semblait de loin."
+            mj "Quoi qu'il en soit, je pense qu'à un moment donné, ça a marché et tu l'as chargé. Il a tellement eu peur qu'il est tombé du rocher et s'est foulé la cheville. Je ne pense pas que les cailloux l'aient aidé."
+            mj "Heureusement que ton père qui nous a conduits à la plage était dans les parages parce qu'il a pu lui prodiguer les premiers soins avant d'arriver à un médecin."
+            mj "Bon, ça a un peu gâché notre petite sortie mais en y repensant, Ammon et toi étiez toujours à la gorge l'un de l'autre mais vous avez tout supporté contre vents et marées."
+            mj "C'est fascinant de voir comment vous avez réussi à rester ensemble."
 
-            az "His misbehaviours only made him more interesting."
-            az "Why ditch him."
+            dk ""
 
-            dk "He has a way to get on your nerves."
+            mj "Au fait, tu te souviens quand on s'est mis ensemble pour la première fois ?"
 
-            mj "Oh by the way, do you remember when we first got together?"
-
-        "Think of something else":
+        "Penser à autre chose" :
             $ azzy_score += 1
-            "You let your mind wander elsewhere. You’ve already been there. Listening to her unending rants. You never were able to focus more than a minute."
-            "So this time, you give up instantly, too tired to fight against your boredom."
-            "That didn’t mean you didn’t appreciate her."
-            "You liked her, she’s a wonderful girl" 
-            "You are childhood friends and you were stuck together like hand in glove and never you has been separated from her." 
-            "She lived in your birth village, so you used to play together every day."
-            "For some reason, she could stand your presence, contrary to most of your peers of your age. That made her a precious friend." 
-            "She was always fond of your fantasies and your games, you had a lot of them when you were young."
-            "You would read a book about a boy in a green tunic going for adventures and you would pretend that you are this same boy reenacting the events of the book." 
-            "Most kids would take you for a social case and most have."
-            "But not Marie–Jil. Marie–Jil played with you in your little pretend games." 
+            "Tu laisses ton esprit vagabonder ailleurs. Tu es déjà passé par là. Écouter ses diatribes interminables. Tu n'as jamais réussi à te concentrer plus d'une minute."
+            "Alors cette fois, tu abandonnes instantanément, trop fatiguée pour lutter contre ton ennui."
+            "Cela ne veut pas dire que tu ne l'appréciais pas."
+            "Tu l'aimais bien, c'est une fille merveilleuse" 
+            "Vous êtes des amis d'enfance et vous étiez collés l'un à l'autre comme la main dans le gant et jamais tu n'as été séparé d'elle" 
+            "Elle vivait dans ton village natal, alors vous aviez l'habitude de jouer ensemble tous les jours"
+            "Pour une raison ou une autre, elle supportait ta présence, contrairement à la plupart de tes camarades de ton âge. Cela faisait d'elle une amie précieuse." 
+            "Elle a toujours été friande de tes fantasmes et de tes jeux, tu en avais beaucoup quand tu étais jeune."
+            "Tu lisais un livre sur un garçon vêtu d'une tunique verte qui partait à l'aventure et tu faisais semblant d'être ce même garçon en rejouant les événements du livre." 
+            "La plupart des enfants te prendraient pour un cas social et la plupart l'ont fait"
+            "Mais pas Marie-Jil. Marie-Jil jouait avec toi dans tes petits jeux imaginaires." 
 
-            mj "So um Howl, Howl, are you listening?"
+            mj "Alors hum Howl, Howl, tu m'écoutes ?"
 
-            "You wake up from your daydreaming, all of these memories have had left you groggy"
+            "Tu te réveilles de ta rêverie, tous ces souvenirs t’ayant laissé groggy"
 
-            hl "Yeah, MJ, you were saying?"
+            hl "Oui, MJ, tu disais ?"
 
-            mj "... I was saying, do you remember when we first got together? Your enthusiasm didn't die down since. It's warming to the heart to witness it."
+            mj "... je disais, tu te souviens quand on s'est mis ensemble pour la première fois ? Ton enthousiasme n'est pas retombé depuis. Ça fait chaud au cœur d'en être témoin."
     
     show canteen at zpos_bg with dissolve
     show canteen:
         ease 1 blur 16
-    "When you first got together, huh? Yes you do remember, how could you not? It was a very special day after all."
-    "You weren't expecting it. One day, you were eating at the cafeteria of your high school." 
-    "The usual crowd of the cafeteria flew away for an event you surely were not interested in so there were not a lot of people left here."
-    "You tapped weakly at the food in front of you, not really hungry." 
-    "The unusual quietness, although, helped you focus and take some bites into your plate, but no matter how much you tried, your plate remained, for the most part, untouched."
-    "At your left, Ammon was laying on his chair, his tummy hurting him. He defied you earlier to an eating contest." 
-    "You had accepted meekly, by principle, you’d never refuse any challenge thrown at you by your favorite troublemaker."
-    "But you didn’t have the heart—nor the stomach—to follow him up on the challenge." 
-    "You had been surprised at his dedication, this day you had been fed hachis parmentier and you both had taken double rations so it weighed a lot on his stomach."
-    "He was so full, his shirt couldn't hold his belly any more, so you could admire his belly button and the lump the food had formed in his insides." 
-    "Trying to cheer him up, you rubbed his abdomen and you were met with a pleasant slushiness."
-    "You couldn’t stop so you kept on rubbing, hoping to appease him. To your disbelief, Ammon didn’t mind and he even let out some squeak of laughter and satisfaction."
+    "Quand vous vous êtes mis ensemble pour la première fois, hein ? Oui, tu t'en souviens, comment pourrais-tu ne pas t'en souvenir ? C'était un jour très spécial après tout."
+    "Tu ne t'y attendais pas. Un jour, vous mangiez à la cafétéria de votre lycée." 
+    "La foule habituelle de la cafétéria s'est envolée pour un événement qui ne t'intéressait sûrement pas, alors il ne restait plus grand monde ici."
+    "Tu as tapoté faiblement la nourriture devant toi, n'ayant pas vraiment faim." 
+    "Le calme inhabituel, cependant, t'a aidé à te concentrer et à prendre quelques bouchées dans ton assiette, mais tu as eu beau essayer, ton assiette est restée, la plupart du temps, intacte."
+    "À ta gauche, Ammon était allongé sur sa chaise, son ventre lui faisant mal. Il t'avait défié tout à l'heure à un concours de mangeurs." 
+    "Tu avais accepté docilement, par principe, tu ne refuserais jamais un défi lancé par ton trublion préféré."
+    "Mais tu n'as pas eu le cœur - ni l'estomac - de le suivre dans son défi." 
+    "Tu avais été surpris par son dévouement, ce jour-là vous aviez été nourris de hachis parmentier et vous aviez tous les deux pris des rations doubles, alors ça lui pesait beaucoup sur l'estomac."
+    "Il était tellement rassasié que sa chemise ne tenait plus son ventre, tu pouvais donc admirer son nombril et la bosse que la nourriture avait formée dans ses entrailles." 
+    "Essayant de lui remonter le moral, tu as frotté son abdomen et tu as été accueilli par une agréable bouillie."
+    "Vous ne pouviez pas vous arrêter alors vous avez continué à frotter, espérant l'apaiser. À ton grand désarroi, Ammon n'y a pas vu d'inconvénient et il a même laissé échapper quelques grincements de rire et de satisfaction."
 
-    hl "Heheh, what do you think it’s gonna be?"
+    hl "Heheh, qu'est-ce que tu crois que ça va être ?"
 
-    "Confusion roses on Ammon’s face, still contorted by pain mixed with softness."
+    "Des roses de confusion sur le visage d'Ammon, encore contorsionné par la douleur mêlée de douceur."
 
-    am "I–I thiiiink it’s go– gonna be what?"
+    am "Je-je pense que ça va être quoi ?"
 
-    "I look at his tummy."
+    "Je regarde son ventre."
 
-    hl "A boy or a girl?"
+    hl "Un garçon ou une fille ?"
 
-    am "A–A gir– *Buuuurrurp* oh shut u–up man."
+    am "Un-une fille- *Buuuurrurp* oh shut u-up man."
 
-    "Ammon continued to burp uncontrollably so you remove your hand off of him, disgusted." 
-    "You were less eager than before to finish your food so you mulled on the table, leaned on it, disturbed."
-    "It started to worry you: Marie–Jil still had not come to the cafeteria, today. You three always ate together for lunch so you wondered where she could be." 
-    "Usually, she was never late, so her absence left you concerned about her whereabouts."
-    "Perhaps, she went to the match happening during lunch but she wasn’t really into the high school sports and she would have told you, if she were." 
-    "Then her class might take longer than expected. But again, you didn’t think that was it."
+    "Ammon continuait à roter de façon incontrôlée, alors tu retires ta main de lui, dégoûtée" 
+    "Tu étais moins pressé qu'avant de finir ton repas alors tu as muloté sur la table, tu t'es appuyé dessus, perturbé."
+    "Cela a commencé à t'inquiéter : Marie-Jil n'était toujours pas venue à la cafétéria, aujourd'hui. Vous mangiez toujours ensemble tous les trois à midi, alors tu t'es demandé où elle pouvait bien être." 
+    "D'habitude, elle n'était jamais en retard, alors son absence t'a laissé inquiet quant à sa localisation."
+    "Peut-être qu'elle est allée au match qui se déroulait pendant le déjeuner, mais elle n'était pas vraiment intéressée par le sport au lycée et elle vous l'aurait dit, si c'était le cas." 
+    "Alors son cours risque de durer plus longtemps que prévu. Mais encore une fois, tu n'as pas pensé que c'était ça."
 
-    hl "I wonder where she is..."
-    "Said out loud, you were expecting that Ammon was going to answer you, or at least say something, but no response as Ammon laid now seemingly unconscious on his chair."
-    "All of the sudden, Marie–Jil approached you, bringing in no food but an tense air on her way. As she got closer to you, you started shivering from stress."
-    "Marie–Jil stood shut fast on the floor, very anxious, not knowing where to place herself. Her tail couldn’t stop shaking; the nervosity of the situation got you making your tail moving out of your own."
-    ## TODO: add Marie–Jil sprite?
-    mj "Hi Howl..."
+    hl "Je me demande où elle est..."
+    "Dit à voix haute, tu t'attendais à ce qu'Ammon te réponde, ou au moins dise quelque chose, mais aucune réponse alors qu'Ammon gisait maintenant apparemment inconscient sur sa chaise."
+    "Tout à coup, Marie-Jil s'est approchée de toi, n'apportant aucune nourriture mais un air tendu sur son chemin. Alors qu'elle se rapprochait de toi, tu as commencé à trembler sous l'effet du stress."
+    "Marie-Jil s'est tenue enfermée par terre, très anxieuse, ne sachant pas où se placer. Sa queue n'arrêtait pas de trembler ; la nervosité de la situation t'a fait faire des mouvements de queue à la tienne."
+    ## TODO : ajouter le sprite de Marie-Jil ?
+    mj "Salut Howl..."
 
-    hl "Hi MJ... Why are you late, what’s going on? Do you want to tell me something?"
+    hl "Salut MJ... Pourquoi es-tu en retard, que se passe-t-il ? Tu veux me dire quelque chose ?"
 
-    "Marie–Jil raised her head, shocked, like she had been unmasked, as the end grew nearer with every second passing."
+    "Marie-Jil releva la tête, choquée, comme si elle avait été démasquée, alors que la fin se rapprochait à chaque seconde qui passait."
 
-    mj "Huh, what do you mean?"
+    mj "Hein, qu'est-ce que tu veux dire ?"
 
-    hl "You’re all nervous. I never saw you like that. Did you break my stuff?"
+    hl "Tu es toute nerveuse. T’es pas souvent comme ça. Qu’est–ce qu’il s’est passé ?"
 
-    mj "No I did not!! {w}Oh hi Ammon..."
-    mj "Ammon could you leave Howl and I alo–"
+    mj "Il s’est rien passé !!!{w} Oh... Salut Ammon..."
+    mj "Ammon, pourrais-tu laisser Howl et moi seuls ?"
 
-    "She finally noticed Ammon and his thick tummy. Hopeless at the scenery she was beholding, she ignored him and returned her attention to you."
+    "Elle finit par remarquer Ammon et son ventre épais. Désespérée par le paysage qu'elle contemplait, elle l'a ignoré et a reporté son attention sur toi."
 
-    mj "Please let me finish, Howl."
+    mj "S'il te plaît, laisse-moi finir, Howl."
 
-    "Sensing the seriousness of the situation, you put down your tableware and looked at her in the eyes. You estimated that she needed your full attention"
-    "The disheartened deer clasped her hands together, breathing in, trying to gather all the courage needed for the tremendous act she was about to do." 
-    "She lingers here for a time whether she had made the right choice." 
-    "Not able to help her at this moment, you let her be. She had a lot on her mind and you see strands of doubt, confusion and determination twitching at the corner of her long snout."
-    "She rubs her eyelids one last time and Resolve rosed in her eyes, determined to get done with it."
+    "Sentant la gravité de la situation, tu as posé ta vaisselle et tu l'as regardée dans les yeux. Tu as estimé qu'elle avait besoin de toute ton attention"
+    "La biche découragée joignit les mains, inspirant, essayant de rassembler tout le courage nécessaire à l'acte formidable qu'elle s'apprêtait à accomplir." 
+    "Elle s'attarde un temps à savoir si elle avait fait le bon choix" 
+    "Ne pouvant pas l'aider à ce moment-là, tu la laisses être. Elle avait beaucoup de choses en tête et tu vois des brins de doute, de confusion et de détermination tressaillir au coin de son long museau."
+    "Elle frotte ses paupières une dernière fois et la résolution rosit dans ses yeux, déterminée à en finir."
     
-    mj "You know, how we have been friend for a very long time, now, Howl?"
+    mj "Tu sais que nous sommes amis depuis très longtemps, Howl ?"
 
-    hl "Yes I do?"
+    hl "Oui, je le sais ?"
 
-    mj "Well I am really happy with our friendship right now, how you always have been there for me."
+    mj "Et bien je suis vraiment heureux de notre amitié en ce moment, de la façon dont tu as toujours été là pour moi."
 
-    hl "And you always have been there for me! No need to sweat it o–"
+    hl "Et tu as toujours été là pour moi ! Pas besoin de s'inquiéter o-"
 
-    mj "Just a second please...{w} What I meant to say is that you are a wonderful person and I enjoy every moment I spent with you."
+    mj "Une seconde s'il te plaît...{w} Ce que je voulais dire, c'est que tu es une personne merveilleuse et que j'apprécie chaque moment passé avec toi."
 
-    "Ammon slowly raised from the dead, lending an interested ear to where the discussion was leading. In your heart, you knew where it was going and he knew too. You gaze at Marie–Jil."
+    "Ammon s'est lentement relevé d'entre les morts, prêtant une oreille intéressée à la direction que prenait la discussion. Au fond de toi, tu savais où elle allait et il le savait aussi. Tu regardes Marie-Jil."
 
-    mj "But lately, I have felt a change inside me. I want to spend more time with you, I want to be closer to you. Closer than our current bond."
-    mj "Those last years, I’ve come to want for a change in our relationship, something Friendship can’t offer. Those last months, I’ve been pondering the question."
-    mj "Is it really right? Do I need a closer relationship than what we have right now. Then I realised."
+    mj "Mais ces derniers temps, j'ai senti un changement en moi. Je veux passer plus de temps avec toi, je veux être plus proche de toi. Plus proche que notre lien actuel."
+    mj "Ces dernières années, j'en suis venu à vouloir un changement dans notre relation, quelque chose que l'Amitié ne peut pas offrir. Ces derniers mois, j'ai réfléchi à la question."
+    mj "Est-ce vraiment bien ? Ai-je besoin d'une relation plus étroite que celle que nous avons actuellement. Puis j'ai réalisé."
 
-    "While she pronounced all of that, she teared her dress down nervously, helping her to stay calm. But her composure broke once her eyes met yours."
-    "Her face began to turn pinkish so she turned around, breaking the eye contact with you, making you unable to observe her facial features anymore." 
-    "Your piercing gaze caused her to get embarrassed and she turned to prevent your gaze to reach her."
-    "Ammon at this point, was fully alert, listening on her every words, every sounds leaving her mouth, every finger movement, every anxious tics."
-    "You must have had put too much pressure on her because she yelled the next sentence."
+    "Pendant qu'elle prononçait tout cela, elle a déchiré sa robe nerveusement, ce qui l'a aidée à rester calme. Mais son calme s'est brisé dès que ses yeux ont rencontré les tiens."
+    "Son visage a commencé à rosir alors elle s'est retournée, rompant le contact visuel avec toi, te rendant incapable d'observer encore les traits de son visage." 
+    "Votre regard perçant a provoqué sa gêne et elle s'est retournée pour empêcher votre regard de l'atteindre."
+    "Ammon, à ce moment-là, était totalement alerte, écoutant ses moindres mots, ses moindres sons sortant de sa bouche, ses moindres mouvements de doigts, ses moindres tics d'anxiété."
+    "Tu avais dû exercer une pression trop forte sur elle car elle a crié la phrase suivante"
 
-    mj "Stop staring at me!! You’re making me anxious. Fine! What I mean is..."
-    mj "I can’t go like this any longer. I need to know. I’m sure that, if I don’t have the response I want, we will be able to go back at how things were."
-    mj "So... I wanted to know, if those feelings are reciprocal and if you want to explore and figure out those feelings with me then I’d be really happy... What I really mean is:–"
+    mj "Arrête de me fixer ! !! Tu me rends anxieuse. Très bien ! Ce que je veux dire, c'est que..."
+    mj "Je ne peux plus continuer comme ça. Il faut que je sache. Je suis sûr que, si je n'ai pas la réponse que je souhaite, nous pourrons revenir en arrière sur la façon dont les choses se sont passées."
+    mj "Alors... je voulais savoir, si ces sentiments sont réciproques et si tu veux explorer et comprendre ces sentiments avec moi, alors j'en serais très heureux.... Ce que je veux vraiment dire c'est :-"
 
-    "She clenched her dress hard, not wanting to let go her only last support. Ammon and you were both suspended at her lips waiting for her next words."
+    "Elle serra fort sa robe, ne voulant pas lâcher son seul dernier soutien. Ammon et toi étiez tous deux suspendus à ses lèvres en attendant ses prochains mots."
 
-    mj "... Will you be my boyfriend..?"
+    mj ".... Veux-tu être mon petit ami... ?"
 
-    am "WHAAAAT?"
+    am " QUOI ? "
 
-    "Ammon couldn’t stay still and get up from his chair from shock, his jaw hanging open. After his interjection, he stood silent, unable to say more."
-    "In this point of time, something clicked within you. All of your relatives didn’t stop repeating to to you that Marie–Jil and you would make such a great couple." 
-    "You never thought much of it, she was your closest friend, not a lover."
-    "But now that Marie–Jil thought so too, you pondered. How stupid of you to not have thought about it!" 
-    "It’s only natural and logical you’d end up together. You are a boy and a girl and you are so close to each other. Of course it has to be"
-    "Once the epiphany rushed through you head, you knew what to do." 
-    "Marie–Jil is such a great person, she’s smart, she’s creative you want to be with her your entire life; and if being a couple meant that, then you’ll wholeheartedly agree to it."
-    "You dash to her and take her in your arms, in a loving embrace that can only mean one thing, and only one answer possible but can’t help it but say it aloud."
+    "Ammon n'a pas pu rester en place et s'est levé de sa chaise sous le choc, la mâchoire pendante. Après son interjection, il est resté silencieux, incapable d'en dire plus."
+    "À ce moment-là, un déclic s'est produit en toi. Tous tes proches n'ont pas cessé de te répéter que Marie-Jil et toi feriez un couple formidable." 
+    "Tu n'y as jamais pensé, c'était ton amie la plus proche, pas une amante."
+    "Mais maintenant que Marie-Jil le pensait aussi, tu as réfléchi. Comme tu es bête de ne pas y avoir pensé !" 
+    "C'est tout à fait naturel et logique que vous finissiez ensemble. Vous êtes un garçon et une fille et vous êtes si proches l'un de l'autre. Bien sûr que ça doit être le cas"
+    "Une fois que l'épiphanie t'a traversé la tête, tu as su ce qu'il fallait faire" 
+    "Marie-Jil est une personne tellement géniale, elle est intelligente, elle est créative que tu veux être avec elle toute ta vie ; et si être un couple signifiait cela, alors tu serais de tout cœur d'accord."
+    "Tu t'élances vers elle et tu la prends dans tes bras, dans une étreinte amoureuse qui ne peut signifier qu'une seule chose, et qu'une seule réponse possible, mais tu ne peux pas t'empêcher de la dire à voix haute."
 
-    # scene phone_booth with dissolve
+    # scène phone_booth with dissolve
     hide canteen with dissolve
 
-    mj "I’ll always remember what you said..."
+    mj "Je me souviendrai toujours de ce que tu as dit..."
 
     show canteen at zpos_bg with dissolve
 
-    "Howl + Marie–Jil" "Of course, I’ll be your boyfriend! Why did we not do that sooner!"
+    "Howl + Marie-Jil" "Bien sûr, je serai ton petit ami ! Pourquoi ne l'avons-nous pas fait plus tôt !"
 
-    am "I think I’m going to vomit..."
+    am "Je crois que je vais vomir..."
 
-    "Ammon abruptly stood up and rushed to the toilets."
+    "Ammon s'est brusquement levé et s'est précipité vers les toilettes"
 
-    # scene phone_booth with dissolve
-    hide canteen with dissolve
+    # scène phone_booth with dissolve
+    show canteen with dissolve
 
-    hl "I had to check up on him that day too... He shouldn’t have eaten that much."
+    hl "J'ai dû prendre de ses nouvelles ce jour-là aussi... Il n'aurait pas dû manger autant."
 
-    mj "Actually Howly... I am the one who went check up on him, I made you stay at the table to keep watch of our stuff."
+    mj "En fait Howly... C'est moi qui suis allé le surveiller, je t'ai fait rester à table pour surveiller nos affaires."
 
-    "A sense of discomfort and awkwardness emanates from Marie—Jil’s words like opening matriochka dolls. She had to witness him bathing in his vomit after all. You wouldn’t want to be the one that had go that day."
+    "Un sentiment de gêne et d'inconfort émane des paroles de Marie-Jil comme l'ouverture de poupées matriochka. Elle a dû assister à son bain dans son vomi après tout. Tu ne voudrais pas être celle qui a dû y aller ce jour-là."
     
-    mj "By the way, while we are talking about him, is everything alright with Ammon?"
+    mj "Au fait, puisqu'on parle de lui, est-ce que tout va bien avec Ammon ?"
 
-    hl "What do you mean by that?"
+    hl "Qu'est-ce que tu veux dire par là ?"
 
-    mj "I know he can be exhausting, sometimes. You didn’t do anything reckless with him, did you?"
+    mj "Je sais qu'il peut être épuisant, parfois. Tu n'as rien fait d'imprudent avec lui, n'est-ce pas ?"
     
-    "A concerned voice comes out out of the receiver. You always become bold with the jackass dog around."
+    "Une voix inquiète sort du combiné. On devient toujours audacieux avec un chien crétin dans les parages."
 
-    hl "No, nothing of the sort, thankfully."
+    hl "Non, rien de tel, heureusement."
 
-    "Silence fills the air. Marie–Jil returns you an doubting laugh, with multiple layers of sarcasm, suspicion and reservation. She was, with a lack of better words, able to see right through you."
+    "Le silence emplit l'air. Marie-Jil te renvoie un rire dubitatif, avec de multiples couches de sarcasme, de suspicion et de réserve. Elle était, faute de mieux, capable de voir clair en toi."
 
-    mj "Sure Howl."
-    mj "Anything worthy telling me about him?"
+    mj "Bien sûr Howl."
+    mj "Quelque chose qui vaille la peine de me parler de lui ?"
     
     menu:
-        "Nothing special":
-            hl "I mean we just rode the road. Nothing really exciting."
-            mj "You sure? Nothing with Ammon? Don't you say nothing special happened when you travel with THE Ammon?"
-            "You pause."
-            hl "{cps=3}...{/cps} No, I can't remember  anything special nor specific."
-            mj "{cps=3}...{/cps} You can't remember..."
-        "Ammon is a prick" if radio_on:
-            hl "Ammon is an asshole."
-            mj "What did he do again."
-            hl "Well I was starting to get a headache because of his music. So I asked him to turn off the radio. He asked me why."
-            mj "What did you answer then?"
-            hl "That I didn't like the music, I wasn't feeling like telling him it was bothering me so I said that."
-            mj "Well I figured. You should've just told him you had a headache he would have understood."
+        "Rien de spécial" :
+            hl "Je veux dire qu'on a juste roulé sur la route. Rien de vraiment excitant."
+            mj "Tu es sûr ? Rien avec Ammon ? Tu ne dis pas qu'il ne s'est rien passé de spécial lorsque tu as voyagé avec LE Ammon ?"
+            "Tu fais une pause."
+            hl "{cps=3}...{/cps} Non, je ne me souviens de rien de spécial ni de précis."
+            mj "{cps=3}...{/cps} Tu ne te souviens pas..."
+        "Ammon est un con" if radio_on :
+            hl "Ammon est un connard"
+            mj "Qu'est-ce qu'il a fait déjà ?"
+            hl "Eh bien je commençais à avoir mal à la tête à cause de sa musique. Alors je lui ai demandé d'éteindre la radio. Il m'a demandé pourquoi."
+            mj "Qu'est-ce que tu as répondu alors ?"
+            hl "Que je n'aimais pas la musique, je n'avais pas envie de lui dire que ça me gênait alors j'ai dit ça."
+            mj "Eh bien je me suis dit . Tu aurais dû lui dire que tu avais mal à la tête, il aurait compris."
 
-            "It's too late to fix it, don't bother with it."
+            "C'est trop tard pour arranger les choses, ne t'embête pas avec ça"
 
-            mj "Don't tell me you have forgotten how he could be stubborn about his preferences?"
-            hl "Maybe I have."
-            mj "You don't remember huh?"
+            mj "Ne me dis pas que tu as oublié à quel point il pouvait être têtu sur ses préférences ?"
+            hl "Peut-être que oui."
+            mj "Tu ne t'en souviens pas, hein ?"
     
-    mj "Well anyway, I wanted to talk to you about something that was bothering me lately..."
+    mj "Enfin bref, je voulais te parler de quelque chose qui me tracassait ces derniers temps..."
 
-    hl "Huh what is it? Have you had another argument with your parents?"
+    hl "Huh qu'est-ce que c'est ? Tu t'es encore disputé avec tes parents ?"
 
-    mj "No it’s not that. It’s something that concerns you. Something going on lately."
+    mj "Non, ce n'est pas ça. C'est quelque chose qui te préoccupe. Quelque chose qui se passe ces derniers temps."
 
-    "She grasps more tightly on the phone than before. The matter had been clinging on her heart for a good time."
+    "Elle s'agrippe plus fortement au téléphone qu'auparavant. La question était accrochée à son cœur depuis un bon moment."
 
-    hl "Huh, okay? What is it? What does this have to do with me?"
+    hl "Hein, d'accord ? Qu'est-ce qu'il y a ? Qu'est-ce que ça a à voir avec moi ?"
 
-    mj "I–I wanted to talk about your behavior lately."
+    mj "Je voulais te parler de ton comportement ces derniers temps"
 
-    "Unsettled, she struggles to find words on her thoughts. Her overall attitude disturbs you."
-    "She grows impatient. You let her explain herself."
+    "Déstabilisée, elle peine à trouver les mots sur ses pensées. Son attitude générale te perturbe."
+    "Elle s'impatiente. Tu la laisses s'expliquer."
 
-    mj "Are you alright?"
+    mj "Ça va ?"
 
-    hl "What do you mean? You’re making me confused."
+    hl "Qu'est-ce que tu veux dire ? Vous me rendez confus."
 
-    mj "With you trip, were you able to think back, clear your thoughts, to reflect on what happened recently."
+    mj "Avec ton voyage, as-tu pu repenser, éclaircir tes idées, réfléchir à ce qui s'est passé récemment."
 
-    "She sounds concerned. Irritated. Have you been that out of it lately?" 
-    "At most, you felt a bit tired from the pressure but that’s all."
-    "She waits for your answer, expecting a thorough justification. You don’t have one. You’re utterly confused." 
-    "You scratch the back of your head, hoping something will come out, but nothing. Only oblivion and the dark void."
+    "Elle a l'air préoccupée. Irritée. As-tu été à ce point à côté de la plaque ces derniers temps ?" 
+    "Tout au plus, tu t'es sentie un peu fatiguée par la pression, mais c'est tout"
+    "Elle attend ta réponse, attendant à une justification approfondie. Tu n'en as pas. Tu es complètement confus." 
+    "Tu te grattes la nuque, espérant que quelque chose en sortira, mais rien. Seulement l'oubli et le vide obscur."
 
-    hl "I genuinely don’t know what you’re talking about. I don’t recall anything noteworthy that happened earlier. Everything’s fine, alr–"
+    hl "Je ne sais vraiment pas de quoi tu parles. Je ne me souviens de rien de notable qui se soit passé tout à l'heure. Tout va bien, mais..."
 
     stop music
     play music "audio/music/anger.mp3" 
 
-    mj "Oh my god, for Jesus Christ." 
-    mj "Are you for real, Howl??? You’ve been pretending for a month everything’s fine and you expect me to believe you!??"
+    mj "Oh mon dieu, pour Jésus Christ." 
+    mj "Tu es sérieux, Howl ???? Ça fait un mois que tu prétends que tout va bien et tu veux que je te croie ! ??"
     
     hl "Huh..."
 
@@ -1390,209 +1386,220 @@ label phone_booth:
         ease 1 blur 32
         ease 1 blur 16
         repeat
-    "Confusion roses into you."
-    "A burst of voice surges through the phone and you almost drop it." 
-    "You panic. What happened, for Jesus’ sake? You dig through you mind."
-    "You’re in the void, your head absent, beholding a black box. You try to open it. You can’t. You’re afraid. You shouldn’t go deeper"
-    "You hands are wet. Every second, you are to the point of letting it slip." 
-    "You sweat profusely. Your throat tightens."
-    "You fall silent."
+    "La confusion monte en toi"
+    "Un éclat de voix déferle dans le téléphone et tu manques de le lâcher." 
+    "Tu paniques. Que s'est-il passé, pour l'amour de Dieu ? Tu fouilles dans ton esprit."
+    "Tu es dans le vide, la tête absente, et tu contemples une boîte noire. Tu essaies de l'ouvrir. Tu n'y arrives pas. Tu as peur. Tu ne devrais pas aller plus loin"
+    "Tes mains sont mouillées. À chaque seconde, tu es à deux doigts de le laisser glisser" 
+    "Tu transpires abondamment. Ta gorge se serre."
+    "Tu te tais."
 
-    mj "Hurle! please answer to me!" 
-    mj "Your mom is dead sick worried for you!"
-    mj "So please, help me, Hurle... Please Howl, will you let me help you? Will you tell me what happened last month"
+    mj "Howell ! réponds-moi s'il te plaît !" 
+    mj "Ta mère est morte d'inquiétude pour toi !"
+    mj "Alors s'il te plaît, aide-moi, Howell... S'il te plaît Howell, me laisseras-tu t'aider ? Veux-tu me dire ce qui s'est passé le mois dernier ?"
     
-    hl "Last... Month?"
+    hl "Le... Mois ?"
     
-    "You asked confused. Everything she says, You can't hear it. More accurately, you can hear her perfectly but you refuse to hear it. The black box should never be opened and every attempt sends a throb trough your brain." 
-    "You head hurts. You seethe. Please stop. Please stop, you can't take it anymore."
+    "Tu as demandé confusément. Tout ce qu'elle dit, tu ne l'entends pas. Plus exactement, tu l'entends parfaitement mais tu refuses de l'entendre. La boîte noire ne doit jamais être ouverte et chaque tentative envoie une palpitation dans ton cerveau." 
+    "Tu as mal à la tête. Tu fulmines. S'il te plaît, arrête. S'il te plaît, arrête, tu n'en peux plus."
     
     menu:
-        "Make her stop":
-            hl "Please.... stop."
-            mj " ... I won't stop. I {w=1.0}am {w}fed up. I won't stop until I'm finished." 
+        "L’arrêter" :
+            hl "S'il te plaît.... arrêter."
+            mj " ... Je ne m'arrêterai pas. J'en ai {w=1.0}assez. Je ne m'arrêterai pas tant que je n'aurai pas fini. " 
         
-        "Try to change the subject":
-            hl "Can’t... we talk about something else?"
-            mj "no we won’t. I am fed up. You let me finish."
+        " Essayer de changer de sujet " :
+            hl "On ne peut pas... parler d'autre chose ?"
+            mj "Non, on va pas faire ça ! J'en ai assez. Tu me laisses finir."
 
     
-    mj "You will answer to my questions, Hurle and you won't be able to escape forever."
-    mj "We never asked any questions, we didn't want to put pressure on you. We let you breathe, rest, mourn, or even hell, agonize." 
-    mj "But I’m sick of it."
-    mj "But one day or sooner, you'll have to tell us what happened and I'm sick of not knowing the truth."
-    mj "So tell me Hurle. What happened, last month, the day you went missing in the forest?"
-    mj "We were waiting for you that day."
+    mj "Tu répondras à mes questions, Howell et tu ne pourras pas t'échapper éternellement"
+    mj "Nous n'avons jamais posé de questions, nous ne voulions pas te mettre la pression. Nous t'avons laissé respirer, te reposer, faire ton deuil ou même l'enfer, agoniser." 
+    mj "Mais j'en ai marre."
+    mj "Mais un jour ou l'autre, tu devras nous dire ce qui s'est passé et j'en ai marre de ne pas connaître la vérité."
+    mj "Alors dis-moi Howell. Que s'est-il passé, le mois dernier, le jour où tu as disparu dans la forêt ?"
+    mj "Nous t'attendions ce jour-là."
     
-    "You panic even more. Went missing, it hits a bell. You realise. The box tightens even more. What happened that day must remain secret at all cost." 
-    "She mustn't go further in her crusade of questioning. You ought to make her shut or you don't know what may become of you."
-    "She represents a menace to your tranquility. Your Apathy."
+    "Tu paniques encore plus. Porté disparu, ça fait tilt. Tu réalises. La boîte se resserre encore plus. Ce qui s'est passé ce jour-là doit rester secret à tout prix." 
+    "Elle ne doit pas aller plus loin dans sa croisade de questionnement. Tu devrais la faire taire, sinon tu ne sais pas ce qu'il peut advenir de toi."
+    "Elle représente une menace pour ta tranquillité. Ton apathie."
     
-    hl "I told you and told you, I don't know! How many times do I have to tell you?!! I don't know, I don't know and I still don't know! How that goes for you!"
+    hl "Je te l'ai dit et je te l'ai dit, je ne sais pas ! Combien de fois dois-je te le dire ? !! Je ne sais pas, je ne sais pas et je ne sais toujours pas ! Comment ça se passe pour toi !"
     
-    mj "I am sick of you with your \"I don't know\" \"I don't know\"! You lie to me as you breathe! You know and I will get the truth about that day."
+    mj "J'en ai marre de toi et de tes « je sais pas », « je sais pas » ! Tu me mens comme tu respires ! Tu sais et j'obtiendrai la vérité sur ce jour."
 
-    "The deluge of your body flows down on your sweaty palms. Your shaky hands tremble like a sinner to Judgment day."
-    "The phone slips out out of your hands and falls down; thus, its thud echoes heavily in the booth. You pick it up hastily and shove it into your ear by fear to annoy the Bringer of your Retributions." 
-    "You are scared of it, you are scared of your Judgment, you are scared of the Truth."
+    "Le déluge de ton corps s'écoule sur tes paumes moites. Tes mains tremblotantes tremblent comme un pécheur le jour du jugement dernier."
+    "Le téléphone glisse de tes mains et tombe ; ainsi, son bruit sourd résonne lourdement dans la cabine. Tu le ramasses précipitamment et l'enfonce dans ton oreille par peur d'agacer le Porteur de tes rétributions." 
+    "Tu en as peur, tu as peur de ton jugement, tu as peur de la Vérité"
     
-    mj "Don't you dare to try and slip away. If not today, I'll make you spill out on way or another, just wait for it. That could be today, but that could be tomorrow or after tomorrow or a week or a year, just wait for me."
-    mj "I mean, for fuck’s sake, you were gone missing for a week?? A whole week and you weren’t even hurt."
-    mj "It never happens! Do you understand that??? We all thought you were fucking dead."
-    mj "Ammon couldn’t sleep a night, your mom cried all day non–stop, and I searched everywhere for you in this god damn forest."
-    mj "I just couldn’t stop.{w} Just the thought of you, maybe alive, in the dark, alone, in the woods was driving me mad."
-    mj "But no matter how much we searched, we never found you. The whole village searched for you!"
-    mj "I could almost believe you didn’t exist anymore..."
-    mj "Then out of nowhere, you reappear like nothing happened??"
-    mj "Not 
-    injured, with no consequences, whatsoever! It’s like you never disappeared??"
-    mj "Do you know how much it’s fucking strange??"
-    mj "You had nothing on you, do you expect me that you didn’t drink or eat for a whole fucking week??"
-    mj "How did you survive??"
-    "You didn’t need to drink."
-    "Nor eat.{w} For that matter..."
+    mj "N’essaye pas de t'éclipser. Si ce n'est aujourd'hui, je te ferai avouer demain, ou après demain, dans quatre jours, dans une semaine, dans un mois, l’année prochaine, juste attends-moi."
+    mj "Je veux dire, pour l'amour du ciel, tu as disparu pendant une semaine ?? Une semaine entière et tu n'as même pas été blessée."
+    mj "Ça n'arrive jamais ! Tu comprends ça ??? On pensait tous que tu étais mort, putain."
+    mj "Ammon n'a pas dormi une nuit, ta mère a pleuré toute la journée sans arrêt, et je t'ai cherché partout dans cette putain de forêt."
+    mj "Je ne pouvais pas m'arrêter. Rien que l'idée de te voir, vivant, dans le noir, dans les bois, tout seul, me rendait folle."
+    mj "Mais nous avons eu beau chercher, nous ne t'avons jamais trouvé. Tout le village t'a cherché !"
+    mj "Je pouvais presque croire que t’étais évaporé..."
+    
+    "Marie–Jil déglutit"
+    
+    mj "Et puis, de nulle part, tu réapparais comme si rien ne s'était arrivé ?"
+    mj "Pas blessé, sans aucune conséquence, quoi qu’elles en soient ! C'est comme si tu n'avais jamais disparu..."
+    mj "Tu sais à quel point c'est étrange ?"
+    mj "Howell, le mec qui n’a jamais quitté sa chambre de sa vie, devient un expert en survie ??"
+    mj "Tu n'avais rien sur toi, tu t'attends à ce je croie que tu n'aies ni bu ni mangé pendant toute une putain de semaine ??"
+    mj "Comment t’as survécu ??"
+    "Tu n'avais besoin pas de boire."
+    "Pas qu’elle puisse comprendre de toute façon."
 
-    mj "You know that day, you weren’t the only one gone missing. Well I’m sure you are aware of it, after all."
-    mj "Not everyone was lucky..."
+    mj "Tu sais que ce jour-là, tu n'étais pas le seul à avoir disparu ? Je suis sûr que tu le sais, après tout."
+    mj "Tout le monde n'a pas eu de la chance..."
     pause 1.0
-    mj "So please, tell me what happened. We still can find him. Perhaps we can still save him!"
+    mj "Alors s'il te plaît, dis-moi ce qui s'est passé. Il n’a pas pu aller bien loin ! Nous pouvons encore le retrouver !"
+    mj "Je m’en fous qu’il soit vivant ou qu’il soit crevé la gueule ouverte dans une rivière dans ces bois de MERDE."
 
-    hl "I don’t know..."
+    "Elle sanglote. Des larmes chaudes coulent sur le téléphone."
 
-    mj "I’m sure you wouldn’t know. You’re glad that he’s not there anymore, aren’t you? Well I am not."
+    mj "S’il te plaît, Howell... Rends–le nous... Rends–le moi..."
+    mj "DIS MOI OÙ IL EST."
 
-    mj "So please answer me..."
+    "Après son éclat, elle ne parle plus. Les pleurs envahissent la cabine."
+    "Pourtant tu restes silencieux."
+    "Tu rassembles ce qui te reste de courage."
 
-    hl "I don’t know... I don’t know, I swear... I can’t remember."
+    hl "Je ne sais pas..."
 
-    mj "Ok let me rephrase it more clearly so you can remember..."
+    "Les pleurs s’arrêtent. Un fort soupir torturé saturent le combiné"
 
-    "Please. She shouldn’t. Why is she always like that."
-    "Everyone would fare much better if she just minded her own business..."
-    "Some things are best left forgotten."
+    mj "Je savais que tu dirais ça. Tu es content qu'il ne soit plus là, c’est ça ? Pas moi."
 
-    hl "Please... Don’t do that."
+    mj "Alors réponds-moi s'il te plaît..."
+
+    hl "Je sais pas... Je sais pas, je te jure... Je me souviens plus."
+
+    mj "Ok laisse moi reformuler plus clairement pour que tu puisses t'en souvenir..."
+
+    "S'il te plaît. Elle ne devrait pas. Pourquoi est-elle toujours comme ça ?"
+    "Tout le monde s'en sortirait mieux si elle se mêlait de ses affaires..."
+    "Il y a des choses qu'il vaut mieux oublier."
+
+    hl "S'il te plaît... Ne fais pas ça."
     
-    mj "What were you doing September the 13th?{w} Were you with him,"
+    mj "Que faisais-tu le 13 septembre ? Est—ce que t’étais avec lui ?"
     stop music
-    extend "with ×××××××××××××××××××××××{nw}"
+    extend "avec ×××××××××××××××××××××××{nw}"
 
-    "It hits you like a truck. This date. You didn’t want to hear it."
+    "Ça te percute à plein fouet. Cette date. Tu ne voulais pas l'entendre."
 
-    dk "This is starting to get out of hands...{w} Like always."
+    dk "Ça commence à devenir incontrôlable...{w} Comme toujours."
 
-    az "The box is getting loose."
+    az "La boîte s’entrouvre."
     
     menu:
-        "Let loose.":
+        "Laisser aller" :
             jump you_dont_understand
-        "Keep it contained at all costs":
+        "Contenir tout prix" :
             jump you_dont_understand
     
     label you_dont_understand:
-            az "I don’t think you understand."
+            az "Je ne pense pas que tu comprennes ce qu’il se passe."
             
-            dk "You’re not the one who decides around here"
+            dk "Ce n'est pas toi qui décides ici"
     
-    "You look down. You’re holding the box. You let it slip. The box opens."
-    "You are beholding the hill. He was expecting you. You brought someone. He is pleased."
-    "You’re pleased too. You’ve done what He asked."
-    "He brushes your cheek. A surge of adrenaline rushes through you. You want His hand forever, that It never leaves your skin."
-    "You want His embrace more than anything. You’re willing to do anything for It. He knows how to fill your sick heart. Your deviant heart."
-    "You know that you’re already a forsaken case so you let Him corrupt you even further. What were good in you to begin with anyway."
-    "You present Him your partner. He gladly accepts the offering."
-    "You take a step back to admire fully the demonstration he’s going to put for you."
-    "He wraps his hands around his neck. {w} You like it.{nw}"
+    "Tu regardes vers le bas. Tu tiens la boîte. Tu la laisses glisser. La boîte s'ouvre."
+    "Tu contemples la colline. Il t'attendait. Tu as amené quelqu'un. Il est content."
+    "Toi aussi, tu es content. Tu as fait ce qu'il a demandé."
+    "Il effleure ta joue. Une poussée d'adrénaline te traverse. Tu veux que sa main soit éternelle, qu'elle ne quitte jamais ta peau."
+    "Tu veux son étreinte plus que tout. Tu es prête à faire n'importe quoi pour lui. Il sait comment remplir ton cœur malade. Ton cœur déviant."
+    "Tu sais que tu es déjà un cas abandonné, alors tu le laisses te corrompre encore plus. Qu'y avait-il de bon en toi au départ de toute façon ?"
+    "Tu lui présentes ton partenaire. Il accepte volontiers l'offrande."
+    "Il enroule ses mains autour de son cou. {w} Tu aimes ça.{nw}"
 
-    hl "No."
+    hl "Non."
 
-    "You liked it."
+    "Tu aimes ça."
     
-    hl "No..."
+    hl "Non..."
 
-    "You liked it."
+    "Tu aimes ça."
 
-    hl "No................."
+    hl "Non................."
 
-    "You liked it."
+    "Tu as aimé ça."
     
-    hl "No......................................"
+    hl "Non......................................"
 
-    "You liked it."
+    "Tu as aimé."
 
-    hl "NO I DIDN’T."
-    hl "I DIDN’T LIKE IT."
+    hl "NON, c’est faux."
+    hl "Je n'ai pas aimé."
 
-    "Yes you did"
+    "Si, tu as aimé"
 
-    mj "Wait, Howl, what’s going on?? What are you on about???"
+    mj "Attends, Howl, qu'est-ce qui se passe ??? Qu'est-ce que tu racontes ?"
 
-    hl "I DIDN’T LIKE IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIT."
+    hl "JE N’AI PAS AIMÉ."
 
     "..." 
-    cl "You loved it."
 
     play music "audio/music/uboa.mp3"
 
     show phone_booth at shaking
     
-    hl "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH"
+    hl "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
     show phone_booth:
         xoffset 0
         yoffset 0
 
-    hl "SHUT UP I’M NOT A MONSTER"
+    hl "Tais-toi, je ne suis pas un monstre"
 
     show phone_booth:
         easein 0.5 blur 96
         easein 0.5 blur 128
         repeat
 
-    mj "What’s going on, Hurle, I don’t understand."
-    mj "You are rambling like a mad man!!"
-    mj "Are you insane??"
+    mj "Qu'est-ce qui se passe, Howl, je comprends pas."
+    mj "Tu marmonnes comme pas possible !!"
+    mj "S’il te plaît réponds moi ???"
 
-    hl "I’m not a monster, I am not a monster I am not a monster."
-    hl "i’m just going to breathe in and out and everything’s going to be fine"
-    hl "friendly fleas and fireflies friendly fleas and fireflies"
-    hl "friendly fleas and fireflies friendly fireflies and fleas"
-    hl "friendly fireflies and fleas friendly fireflies and fleasfriendly fireflies and fleas fireflies fleas and friendly"
-    hl "friendly fleas fleas fleas fleas fleas fleas fleas fleas fleas fleas fleas fleas fleas fleas fleas fleas fleas fleas fleas fleas fleas fleas fleas fleas fleas"
+    hl "Je ne suis pas un monstre, je ne suis pas un monstre je ne suis pas un monstre"
+    hl "je vais juste inspirer et expirer et tout ira bien"
+    hl "puces et lucioles amicales puces et lucioles amicales"
+    hl "les puces et les lucioles amicales les lucioles et les puces amicales"
+    hl "les mouches à feu et les puces les mouches à feu et les puces les mouches à feu et les puces les mouches à feu les puces les puces les puces les puces les puces les puces les puces les puces les puces les puces les puces"
+    hl "amicales les puces les puces les puces les puces les puces les puces les puces les puces les puces les puces les puces les puces les puces les puces les puces les puces les puces les puces"
 
 
-    mj "What are you even saying???"
-    mj "Just listen to me{nw}"
+    mj "Qu'est-ce que tu racontes ???"
+    mj "Écoute moi !{nw}"
 
-    hl "{size=60}SHUT THE FUCK UP{/size}"
+    hl "{size=60}SELLE LA FUCK UP{/size}"
     stop music
 
     pause 2.0
 
     play sound "audio/sounds/glass_breaking.ogg"
-    ### TODO: Drunk effect
+    ### TODO : Effet d'ivresse
     show phone_booth:
         ease 2 blur 128
     with sshake
     
     play sfx "audio/sounds/ear_ringing.ogg" fadein 0.5 volume 0.3
     
-    show expression "#F00":
+    show expression "#F00" :
         alpha 0.0
         zoom 2.535
-        align (0.5, 0.5)
+        aligner (0.5, 0.5)
         ease 2 alpha 0.5
     pause 2.0
     
-    "A loud crash echoes and resonates within the phone booth." 
-    "Slumped down, you don’t move anymore." 
-    "Your head’s empty but a shrill and piercing white noise in your ears. You’re clawed to the ground and won’t get up anymore."
+    "Un grand fracas se répercute et résonne dans la cabine téléphonique" 
+    "Affalé, tu ne bouges plus" 
+    "La tête vide, un bruit blanc strident et perçant résonne dans tes oreilles. Tu es agrippé au sol et tu ne te relèveras plus."
     show phone_booth:
         ease 1 blur 32
-    "When your bloodied vision sets back into focus, you observe with a dead eye the destroyed–to—thousand—pieces receiver on the ground, you come to wonder what has guided you to this point." 
-    "You rise your hands at eye–level sight to watch the blood spill out of your hands." 
-    "What happened that has come to you to bloody them. {w}What happened September Friday the 13th."
-
-
+    "Lorsque ta vision ensanglantée se remet en place, et d’un œil mort, tu observes d'un œil mort le récepteur détruit en mille morceaux au sol{w}, tu en viens à te demander ce qui t'a guidé jusqu'ici." 
+    "Tu lèves tes mains à hauteur d’œil, le sang coulant le long de tes poignets." 
+    "Que s'est-il passé pour que tu en viennes à les salir. {w}Que s’est–il passé{w}, le vendredi 13 septembre."
 
     jump rest_area_2
 
@@ -1600,196 +1607,196 @@ label rest_area_2:
     stop music
     stop sfx fadeout 10.0
 
-    scene parkingLot:
+    scene parkingLot :
         zoom 1.25
     with Fade(0.5, 6.0, 0.5)
 
-    "You lay down onto the frame of the bike. You can’t stand. Dragging yourself here from the booth was already hard enough as it is."
-    "The tiredness and your recent agitated behaviour set you into a second state — there but quite not there."
-    "You rub your eyes. If you were feeling sleepy, you don’t anymore. You’re just nauseated and want to get home as soon as possible."
-    "But you won’t. So you just comatose around. Waiting for Ammon."
+    "Tu t'allonges sur le cadre du vélo. Tu ne peux pas rester debout. Se traîner jusqu'ici depuis le stand était déjà assez difficile comme ça."
+    "La fatigue et ton récent comportement agité te plongent dans un état second - là mais tout à fait pas là."
+    "Tu te frottes les yeux. Si tu avais envie de dormir, ce n'est plus le cas. Tu as juste la nausée et tu veux rentrer chez toi le plus vite possible."
+    "Mais tu ne le feras pas. Alors tu te contentes de comater. En attendant Ammon."
     
-    am "Huh you alright Howl?"
+    am "Huh tu vas bien Howl ?"
 
     show ammon at american_shot with dissolve
 
-    "You feel a hand on your shoulder. You’re about to raise your head"
+    "Tu sens une main sur ton épaule. Tu es sur le point de lever la tête"
     camera at close_shot
-    extend " but a the dog crouches to eye–level."
-    "Having his face close to yours sets you uncomfortable but you gulp and stare him back."
+    extend " mais le chien s'accroupit à hauteur de tes yeux. "
+    "Le fait d'avoir son visage près du tien te met mal à l'aise mais tu ravales ta salive et tu le fixes en retour."
 
-    am "You don’t look fine. Were you able to sleep? Well surely not."
-    am "I’m sorry I took so much time. I had some matters to take care of. I didn’t think it would take that long."
-    am "Maybe we need to take a longer break. Just go take a nap, ok?"
+    am "Tu n'as pas l'air bien. As-tu pu dormir ? Certainement pas."
+    am "Je suis désolé d'avoir pris autant de temps. J'avais quelques affaires à régler. Je ne pensais pas que cela prendrait autant de temps."
+    am "Peut-être devrions-nous faire une pause plus longue. Va faire une sieste, d'accord ?"
 
-    "You swat his hand away."
+    "Tu repousses sa main d'un coup de poing."
 
-    hl "I’m fine, I’m fine, just let me breathe."
+    hl "Je vais bien, je vais bien, laisse-moi respirer."
 
-    am e_noway "... What happened" 
+    am e_noway "... Que s'est-il passé ?" 
     
-    hl "Nothing."
+    hl "Rien."
     
-    # angry
-    am right e_angry "Your hands are full of blood."
+    # colère
+    am right e_angry "Tes mains sont pleines de sang"
 
     show ammon e_neutral pupils_right
     
-    "He looks at the phone booth."
+    "Il regarde la cabine téléphonique"
 
-    am "Did you smash the glass???"
+    am "As-tu brisé la vitre ???"
 
-    hl "No... I did not."
+    hl "Non... je ne l'ai pas fait."
 
-    am e_smug pupils "Say it with less enthusiasm next time.{w} I almost didn’t believe you."
-    am j_noway "Seriously. What the hell???"
+    am e_smug pupilles "Dis-le avec moins d'enthousiasme la prochaine fois.{w} J'ai failli ne pas te croire."
+    am j_noway "Sérieusement. C'est quoi ce bordel ? ??"
 
-    hl "Right. Anyway I am fine."
+    hl "C'est vrai. De toute façon, je vais bien."
 
     show ammon front e_neutral j_disgusted
-    "Ammon’s mouth twists. He gives you his usual stare."
+    "La bouche d'Ammon se tord. Il te lance son regard habituel."
 
-    am j_noway "No you’re not."
-    am j_disgusted "Trust me, you look like shit. You should at least rest."
+    am j_noway "Non tu ne vas pas bien."
+    am j_disgusted "Crois-moi, tu as une sale tête. Tu devrais au moins te reposer."
 
-    "Ammon’s sudden attention for you gets on your nerves. He has been cold to you all ride long. Why care about you now."
+    "L'attention soudaine d'Ammon à ton égard te porte sur les nerfs. Il a été froid avec toi pendant tout le trajet. Pourquoi s'intéresser à toi maintenant ?"
 
-    hl "Ammon I swear I am fine."
+    hl "Ammon, je te jure que je vais bien."
 
-    "You stand up. Proving a point to Ammon, you forgot your weak state and latent nausea, the world spins gradually around you."
+    "Tu te lèves. Prouvant un point à Ammon, tu as oublié ton état de faiblesse et ta nausée latente, le monde tourne progressivement autour de toi."
 
-    ### TODO: Drunk
+    ### TODO : Ivresse
 
-    "The dusk sky, who was empty until now, fills with stars all of colours, it reminds you of the strange colour artifacts that you can find on low–quality photographs."
-    "A sudden headache takes hold of your head like a vice tightening it."
+    "Le ciel crépusculaire, qui était vide jusqu'à présent, se remplit d'étoiles de toutes les couleurs, cela te rappelle les étranges artefacts de couleurs que l'on peut trouver sur les photographies de mauvaise qualité."
+    "Un mal de tête soudain s'empare de ta tête comme un étau qui la resserre"
     show ammon e_noway j_disgusted
-    "Your stomach churns. Your legs tremble and can’t support your weight any longer. They give out."
+    "Ton estomac se met à trembler. Tes jambes tremblent et ne peuvent plus supporter ton poids. Elles lâchent."
 
-    am j_noway "Howl!"
+    am j_noway "Howell !"
 
-    "He catches you before you hit the ground."
+    "Il te rattrape avant que tu ne touches le sol"
 
-    am "I told you you were not fine. Don’t do stuff like that on me, alright?"
+    am "Je t'ai dit que tu n'allais pas bien. Ne fais pas ce genre de choses sur moi, d'accord ?"
 
     show ammon e_neutral pupils_right j_neutral
 
-    "His muscled arms wrap around you. A smell of lavender spread through your nose."
+    "Ses bras musclés s'enroulent autour de toi. Une odeur de lavande se répand dans ton nez."
     
-    if azzy_score >= 1:
-        az "You should pass out more often"
-        az "Or break grass"
+    if azzy_score >= 1 :
+        az "Tu devrais t'évanouir plus souvent"
+        az "Ou casser de l'herbe"
 
-    show ammon pupils
+    show ammon
 
-    "He helps you sit on the grass. He crouches yet again and take you with both hands."
+    "Il t'aide à t'asseoir sur l'herbe. Il s'accroupit encore et te prend à deux mains"
 
-    am "What’s going on!?"
+    am "Qu'est-ce qui se passe !"
 
-    hl "My head hurts."
+    hl "J'ai mal à la tête."
 
-    am "Maybe the blood loss doing that to you. Well I’m not sure you’ve lost that much blood but it’s better to patch it up."
+    am "C'est peut-être la perte de sang qui te fait ça. Bon je ne suis pas sûr que tu aies perdu tant de sang que ça mais il vaut mieux rafistoler."
 
-    "You brush your forehead and your pulsating skull heats up your hand."
+    "Tu effleures ton front et les pulsations de ton crâne chauffent ta main"
 
-    am "Let me see."
+    am "Fais-moi voir."
 
-    "He puts his hand on your forehead too."
+    "Il pose aussi sa main sur ton front"
 
-    am j_disgusted pupils_left "Ok I don’t feel like you have a fever but we’ve got to treat your headache and your hands."
-    am "I think I have some aspirins and bandages in my stuff, let me get it."
+    am j_disgusted pupils_left "Ok je n'ai pas l'impression que tu as de la fièvre mais il faut soigner ton mal de tête et tes mains."
+    am "Je crois que j'ai des aspirines et des pansements dans mes affaires, je vais les chercher"
 
     hide ammon with dissolve
 
-    "Ammon stands up and walks towards the top box of the motorbike."
-    "Still nauseated, you can’t much more than sit back and watch."
-    "He opens the top—box and get his traveling bag. It is of medium—size, large enough for a 3—day trip."
-    "However, you can’t but notice something familiar with one of his belongings."
-    "Something cylindrical, something blue."
-    "Finally, Ammon pulls out a box of medicines and bandages of his bag and gives it to you."
+    "Ammon se lève et se dirige vers le coffre supérieur de la moto"
+    "Encore nauséeux, tu ne peux pas faire grand-chose de plus que de t'asseoir et de regarder."
+    "Il ouvre le top-box et récupère son sac de voyage. Il est de taille moyenne, assez grand pour un voyage de trois jours."
+    "Cependant, tu ne peux pas ne pas remarquer quelque chose de familier avec l'une de ses affaires."
+    "Quelque chose de cylindrique, quelque chose de bleu."
+    "Enfin, Ammon sort de son sac une boîte de médicaments et de pansements et te la donne"
 
-    show ammon at american_shot with dissolve
+    hide ammon at american_shot with dissolve
 
-    am "Here, with that, your head will hurt a bit less than before."
+    am "Tiens, with ça, ta tête te fera un peu moins mal qu'avant."
 
-    hl "Thanks."
+    hl "Merci."
 
-    "You grab the little box."
+    "Tu attrapes la petite boîte"
 
-    am "And now let me patch that."
+    am "Et maintenant, laisse-moi rafistoler ça."
 
-    "He takes your hand one by one and starts to roll the tissue around the wounds."
-    "He knows what he’s doing. It’s like he’s already done that before."
+    "Il prend ta main une à une et commence à enrouler le tissu autour des plaies"
+    "Il sait ce qu'il fait. C'est comme s'il l'avait déjà fait auparavant."
 
-    am "I don’t have any antiseptic solutions but I couldn’t let that bleed."
+    am "Je n'ai pas de solution antiseptique mais je ne pouvais pas laisser saigner ça."
 
-    am "Wait you’ll surely need some water. Let me fetch some for you."
+    am "Attends, tu vas sûrement avoir besoin d'eau. Laisse-moi aller t'en chercher."
 
-    "He starts walking to the top—box then stops midway."
-    "He ponders for some moment, for a strange amount of time then turns around."
+    "Il commence à marcher vers le top-box puis s'arrête à mi-chemin."
+    "Il réfléchit un moment, pendant un temps étrange puis fait demi-tour."
 
-    am "I just remembered I don’t have any water. There are some faucets in the restrooms, let me you get—"
+    am "Je viens de me rappeler que je n'ai pas d'eau. Il y a des robinets dans les toilettes, laisse-moi te..."
 
-    hl "That’s alright you’ve already done enough for me."
+    hl "C'est bon tu en as déjà fait assez pour moi"
 
-    "You swallow down the aspirin in one fell swoop."
+    "Tu avales l'aspirine d'un seul coup"
 
-    if azzy_score >= 2:
-        az "Show off"
+    if azzy_score >= 2 :
+        az "Fais le malin"
     
-    hl "I’m used to take them without water..."
+    hl "J'ai l'habitude de les prendre sans eau..."
 
-    am "Huh I see... Well that’s great. No need to get to the restroom then."
-    am "Well take your time then... We’ll leave when you’re ready."
+    am "Huh je vois... C'est super. Pas besoin d'aller aux toilettes alors"
+    am "Eh bien prenez votre temps alors... Nous partirons quand vous serez prêts."
 
-    "The discussion drops silent. You’re too tired to get it alive anyway."
-    "You try to rest a bit, but gradually something’s starting to bother you."
-    "You’ve already seen this thing that Ammon had in his bag."
-    "It shouldn’t catch your attention like that. After all, it’s just his bag. Nonetheless..."
-    "You bite your lip. The more you look at it, the more it doesn’t make sense. Your world revolves, no, distorts around it."
-    "It mesmerizes you. You are drawn to it. You can’t let the bag out of your sight anymore. The moth within has to follow this firefly."
+    "La discussion retombe dans le silence. De toute façon, tu es trop fatiguée pour la faire vivre."
+    "Tu essaies de te reposer un peu, mais petit à petit, quelque chose commence à te gêner."
+    "Tu as déjà vu cette chose qu'Ammon avait dans son sac"
+    "Ça ne devrait pas attirer ton attention comme ça. Après tout, ce n'est que son sac. Néanmoins..."
+    "Tu te mords la lèvre. Plus tu regardes, plus ça n'a pas de sens. Ton monde tourne, non, se déforme autour de lui."
+    "Il t'hypnotise. Tu es attiré par lui. Tu ne peux plus perdre le sac de vue. Le papillon de nuit qui est en toi doit suivre cette luciole."
 
-    "You need to check this bag."
+    "Il faut que tu vérifies ce sac"
     camera at zpos_camera
-    "Still quite dizzy, you manage to get up. You have to use the bike as a support. You shouldn’t push yourself too much."
-    "But you still get up."
+    "Encore passablement étourdi, tu parviens à te lever. Tu dois te servir du vélo comme d'un support. Il ne faut pas trop se pousser."
+    "Mais tu te lèves quand même."
 
-    hl "Hey you know what? I’m thirsty. I think I have some water left in my bag."
+    hl "Hé tu sais quoi ? J'ai soif. Je crois qu'il me reste un peu d'eau dans mon sac."
 
-    am "Are you sure, you don’t want me to get it for you. You don’t look like you can stand up in your state."
+    am "Tu es sûre, tu ne veux pas que j'aille te la chercher. Tu n'as pas l'air de pouvoir tenir debout dans ton état."
 
-    hl "I feel better now. I’ll feel even better when I’ll drink water, won’t I?"
+    hl "Je me sens mieux maintenant. Je me sentirai encore mieux quand je boirai de l'eau, n'est-ce pas ?"
 
-    am "Sure..."
+    am "Bien sûr..."
 
-    hl "Look, I can stand! I’m a big boy aren’t I."
+    hl "Regarde, je peux me tenir debout ! Je suis un grand garçon, n'est-ce pas ?"
 
     show ammon j_disgusted
 
-    "Ammon looks at you, unamused. Your attempts at teasing him fall on deaf ears. You roll your eyes."
-    "You sigh and you pinch the bridge between your eyes."
+    "Ammon te regarde, sans être amusé. Tes tentatives pour le taquiner tombent dans l'oreille d'un sourd. Tu roules les yeux."
+    "Tu soupires et tu te pinces l'arête entre les deux yeux."
 
-    hl "Ok, I’ll just get the water."
+    hl "Ok, je vais chercher l'eau."
 
-    am "Right."
+    am "D'accord."
 
     label restarea_pointnclick_start:
-        "Ammon is definitely hiding something to you."
-        "Your interest has only grown bigger."
-        python:
+        "Ammon te hide certainement quelque chose"
+        "Ton intérêt n'a fait que grandir"
+        python :
             ammon_talked = 0
             current_screen = "restarea"
             trunk_explored = False
 
-            padlock_code = [6, 1, 5, 3]
-            checked_padlock = 0 
+            code_cadenas = [6, 1, 5, 3]
+            cadenas_vérifié = 0 
             
-            got_stick = False
-            got_notebook = False
+            got_stick = Faux
+            got_notebook = Faux
             good_code = ""
 
         
-        # show screen custom_quickbarç
-        camera:
+        # affiche l'écran custom_quickbarç
+        camera :
             # perspective False
             zpos 0
             perspective False
@@ -1801,27 +1808,27 @@ label rest_area_2:
 
 
 label confront_him:
-    # python:
-    #     del ammon_talked
-    #     del trunk_explored
-    #     del padlock_code
-    #     del good_code
-    #     del checked_padlock  
-    #     del got_stick
+    # python :
+    # del ammon_talked
+    # del trunk_explored
+    # del code_cadenas
+    # del good_code
+    # del checked_padlock  
+    # del got_stick
 
-    #     current_screen = "" 
+    # current_screen = "" 
     stop music fadeout 1.5
-    am "Can I help you?"
+    am "Puis-je vous aider ?"
 
     
-    show parkingLot:
+    show parkingLot :
         xpos -2144
-    show ammon at american_shot:
+    show ammon at american_shot :
         xpos -1073
     
     pause 0.5
 
-    camera:
+    camera :
         perspective True
         easeout 3 xpos -2032
 
@@ -1829,170 +1836,170 @@ label confront_him:
     
     
     play music "audio/music/anger.mp3" loop fadein 0.5
-    "There stands an angry dog"
+    "Il y a un chien en colère"
     camera:
         perspective False 
         xpos 0
     
     scene black
-    show parkingLot
+    show parking
     show ammon at american_shot
-    am "May I know what are you doing with my bag?"
+    am "Puis-je savoir ce que vous faites avec mon sac ?"
 
-    "You shiver out of fear. Why did he have to see you do this. If only you could fly very far away from here."
+    "Tu trembles de peur. Pourquoi fallait-il qu'il te voie faire cela. Si seulement tu pouvais voler très loin d'ici."
 
-    hl "That’s... not what you think, Ammon..."
+    hl "Ce n'est... pas ce que tu penses, Ammon..."
 
-    ### TODO: Expand the conditions with picked objects
+    ### TODO : Étendre les conditions avec des objets choisis
 
-    am j_growl "Then what are you doing with my [picked_from_the_bag] in your hand?"
+    am j_growl "Alors que fais-tu avec mon [picked_from_the_bag] dans ta main ?"
 
-    hl "I don’t know I just took it, I swear!"
+    hl "Je ne sais pas, je l'ai juste pris, je le jure !"
 
-    "Ammon yells at you."
+    "Ammon te crie dessus."
 
-    am j_yell "You just took it??? The padlock just disappeared then??? That’s what you’re going to tell me?"
-    am j_disgusted "Because, if you are, don’t even show your shitty face to me anymore."
-    am j_growl "You fucking cracked the padlock, you asshole."
-    am "Well I’m glad you remember my birthday now, bastard. Hope it helped you crack the code."
-    am "I would’ve prefered you remember a fucking month ago??? Don’t you think?!"
-    am "Why did you even do that?? You can’t trust me that much??"
-    am "You’ve pissed me off enough times that you possibly could{w} and even then, I’ve tried everything to set you comfortable, even comforting when you were bitching and doing one of your too many whims."
-    am pupils_down j_disgusted "Bandaged you up..."
-    am pupils "I went along with your hysteric behaviour all day long."
-    am j_yell "And that’s how you thank me back?? By snooping my stuff??"
+    am j_yell "Tu l'as juste pris ? ?? Le cadenas a disparu comme ça ? C'est ce que tu vas me dire ?"
+    am j_disgusted "Parce que si c'est le cas, ne me montre plus ta tête de merde."
+    am j_growl "Tu as craqué le cadenas, putain, connard"
+    am "Je suis content que tu te souviennes de mon anniversaire maintenant, salaud. J'espère que ça t'a aidé à déchiffrer le code."
+    am "J'aurais préféré que tu t'en souviennes il y a un putain de mois ? ??? Tu ne crois pas ? !"
+    am "Pourquoi as-tu fait ça ? Tu ne peux pas me faire confiance à ce point ?"
+    am "Tu m'as énervé suffisamment de fois pour que tu puisses éventuellement{w} et même là, j'ai tout essayé pour te mettre à l'aise, même te réconforter quand tu râlais et que tu faisais un de tes trop nombreux caprices."
+    am pupils_down j_disgusted "Je t'ai mis un bandage..."
+    am pupilles "J'ai accompagné ton comportement hystérique toute la journée"
+    am j_yell "Et c'est comme ça que tu me remercies en retour ? ? En fouillant dans mes affaires ??"
 
     show ammon j_growl
 
-    "You stay shut. Tears overflow your eyes. You didn’t want to do that."
+    "Tu restes fermé. Les larmes débordent de tes yeux. Tu ne voulais pas faire ça."
     
-    dk "Why did you even do it."
+    dk "Pourquoi l'as-tu fait ?"
 
-    hl "Please understand me! I was just–"
+    hl "S'il te plaît, comprends-moi ! J'étais juste..."
 
-    ### TODO: Maybe expand the argument
+    ### TODO : Peut-être développer l'argument
 
-    am j_yell "What is there to understand?? DON’T FUCKING TOUCH MY STUFF YOU UNDERSTAND??"
+    am j_yell "Qu'est-ce qu'il y a à comprendre ? NE TOUCHE PAS À MES AFFAIRES, TU COMPRENDS ?"
 
-    "Tears stream down your cheeks."
-    "You tighten the [picked_from_the_bag]. This is your last anchor of your relationship. The last thing standing for both of you."
+    "Les larmes coulent sur tes joues."
+    "Vous resserrez le [picked_from_the_bag]. C'est le dernier point d'ancrage de votre relation. La dernière chose qui tient debout pour vous deux."
 
-    az "Cling onto it."
+    az "Accroche-toi à elle."
 
-    dk "Do not let it go."
+    dk "Ne le lâche pas."
 
-    am j_growl "I’ve tried everything I swear, Howl. I’ve tried everything so you could stop brooding."
-    am "I’ve been there for you, everytime you were having hard time."
-    am "And fucking God, with you, it’s all the time, it’s like I’m caretaking a baby, not a grown man!"
-    am "With Marie–Jil, we might as well be your surrogate parents, with how you let her babysit you."
-    am "You’re supposed to be a couple, remember?? She’s not your mom!"
-    am "So for once, just grow a pair and stop moping around."
-    am "You won’t even look at her. She’s not happy with you and never will be."
-    am "With you around, we both won’t ever be! You life—energy vaccuum."
+    am j_growl "J'ai tout essayé, je le jure, Howl. J'ai tout essayé pour que tu puisses arrêter de broyer du noir."
+    am "J'ai été là pour toi, à chaque fois que tu as eu des moments difficiles."
+    am "Et putain, avec toi, c'est tout le temps, c'est comme si je m'occupais d'un bébé, pas d'un adulte !"
+    am "Avec Marie-Jil, on pourrait aussi bien être tes parents de substitution, avec la façon dont tu la laisses te garder."
+    am "Vous êtes censés être un couple, tu te souviens ? Ce n'est pas ta mère !"
+    am "Alors pour une fois, fais-toi pousser une paire et arrête de te morfondre."
+    am "Tu ne la regardes même pas. Elle n'est pas heureuse avec toi et ne le sera jamais."
+    am "Avec toi dans les parages, nous ne le serons jamais tous les deux ! Espèce de vide d'énergie vitale."
 
-    "The deluge of critiscm and reproach overwhelm you. You want to retort, to make him shut his mouth."
-    "But you can’t find anything to say. Because..."
-    "He’s right, isn’t he?"
+    "Le déluge de critiques et de reproches te submerge. Tu as envie de rétorquer, de lui faire fermer la bouche."
+    "Mais tu ne trouves rien à dire. Parce que..."
+    "Il a raison, n'est-ce pas ?"
 
-    am "You know what? You should have never come back, then."
+    am "Tu sais quoi ? Tu n'aurais jamais dû revenir, alors."
 
-    hl "... What?"
+    hl "... Quoi ?"
 
-    am "You shouldn’t have come back from those woods."
-    am j_yell "I can’t deal with you anymore. You’re dragging me down. You’re intoxicating!!"
-    am j_growl "Everytime you’re around my life is a fucking nightmare."
-    am right e_smug j_disgusted "Why did you come back? I can’t understand why."
-    am pupils_right "Why you and not him??"
+    am "Tu n'aurais pas dû revenir de ces bois."
+    am j_yell "Je ne peux plus te supporter. Tu m'entraînes vers le bas. Tu es enivrante ! !!"
+    am j_growl "Chaque fois que tu es là, ma vie est un putain de cauchemar."
+    am right e_smug j_disgusted "Pourquoi es-tu revenu ? Je ne comprends pas pourquoi."
+    am pupils_right "Pourquoi toi et pas lui ? ?"
 
     show ammon pupils_down
     
-    "He falls silent."
+    "Il se tait."
 
-    am pupils "... I can’t help but think Life is simply unfair when I look at you."
+    am pupils "... Je ne peux pas m'empêcher de penser que la vie est tout simplement injuste quand je te regarde."
 
-    "You cluch your pants. You can only mutter those words."
+    " Tu claudiques dans ton pantalon. Tu ne peux que marmonner ces mots."
 
-    hl "Why... why would you say that?.."
-    hl "What did I do to deserve that?.."
+    hl "Pourquoi... pourquoi tu dis ça ?..."
+    hl "Qu'est-ce que j'ai fait pour mériter ça ?..."
 
-    am front e_neutral "I won’t even bother with answering you. It isn’t even worth it."
-    am j_growl "You don’t deserve it. You’re insufferable."
+    am front e_neutral "Je ne prendrai même pas la peine de te répondre. Cela n'en vaut même pas la peine."
+    am j_growl "Tu ne le mérites pas. Tu es insupportable."
 
-    am j_noway "But I will say one thing. Why didn’t you come for my birthday?"
+    am j_noway "Mais je vais te dire une chose. Pourquoi n'es-tu pas venu pour mon anniversaire ?"
 
     hl "..."
 
-    am j_growl "I was expecting you. I couldn’t wait one more second. For this day, I only wished for one thing, only one thing!"
-    am "That you were there. With me. That was my only wish."
-    am "I wanted to give you one last chance..."
+    am j_growl "Je t'attendais. Je ne pouvais pas attendre une seconde de plus. Pour ce jour, je ne souhaitais qu'une chose, une seule chose !"
+    am "Que tu sois là. Avec moi. C'était mon seul souhait."
+    am "Je voulais te donner une dernière chance..."
 
-    hl "But you know I couldn’t have, this day..."
-    hl "This is not my fault... That’s not fair..."
+    hl "Mais tu sais que je n'aurais pas pu, ce jour..."
+    hl "Ce n'est pas ma faute... Ce n'est pas juste..."
 
     am "..."
-    am "... You never went missing didn’t you?"
+    am "... Tu n'as jamais disparu, n'est-ce pas ?"
 
-    hl "huh–"
+    hl "huh-"
 
-    am "You went in the forest by yourself, didn’t you?"
-    am "Well, not by yourself right?"
+    am "Tu es allé dans la forêt tout seul, n'est-ce pas ?"
+    am " Eh bien, pas toute seule, n'est-ce pas ? "
 
-    hl "That’s not true, I just can’t rememb–"
+    hl "Ce n'est pas vrai, c'est juste que je ne me souviens pas..."
 
-    am "Don’t bother. I just know it. You were never honest anyway."
-    am "This is your fault... I mean:"
+    am "Ne t'inquiète pas. Je le sais, c'est tout. Tu n'as jamais été honnête de toute façon."
+    am "C'est de ta faute... Je veux dire :"
 
-    am "Do you even look at yourself sometimes! You’re a fucking walking corpse! A Monster!"
-    am "So that you came back or not made no difference. You may be walking..."
-    am "But you should’ve stayed dead. Back then. In the woods.{w} Where I wouldn’t have to watch your sad pathetic excuse of a face anymore."
-    am "No..."
-    am "You know what? You’re already dead to me."
+    am "Est-ce que tu te regardes au moins parfois ! Tu es un putain de cadavre ambulant ! Un monstre !"
+    am "Que tu sois revenu ou non n'a donc rien changé. Tu es peut-être en train de marcher..."
+    am "Mais tu aurais dû rester mort. À l'époque. Dans les bois. Là où je n'aurais plus eu à regarder ta triste excuse pathétique de visage."
+    am "Non..."
+    am "Tu sais quoi ? Tu es déjà mort pour moi."
     am j_yell "Scram."
 
-    am j_growl "No wait. Give me back my stuff then you’ll scram."
-    am "I don’t want you to see me anymore. I don’t want to see you anymore..."
-    am "Please just leave..."
+    am j_growl "Non, attends. Rends-moi mes affaires et tu t'en iras."
+    am "Je ne veux plus que tu me voies. Je ne veux plus te voir..."
+    am "S'il te plaît, pars..."
 
-    "Ammon turns around towards the bike."
+    "Ammon se retourne vers le vélo."
     
-    hl "Wait! Please!.."
+    hl "Attends ! S'il te plaît !..."
 
-    "You reach a hand out to him."
-    "You can’t give his [picked_from_the_bag] back. He’d leave you for good if you did."
+    "Tu lui tends la main."
+    "Tu ne peux pas lui rendre son [picked_from_the_bag]. Il te quitterait pour de bon si tu le faisais."
 
-    hl "Please don’t leave... Where will I go if you leave!.."
-    hl "I beg you Ammon, please stay... I am nothing without you!.."
-    hl "What do you want me to do?"
+    hl "S'il te plaît, ne pars pas... Où irai-je si tu t'en vas !..."
+    hl "Je t'en supplie Ammon, reste s'il te plaît... Je ne suis rien sans toi !..."
+    hl "Que veux-tu que je fasse ?"
 
-    "Ammon freezes in place. He doesn’t say a word for an agonising amount of time."
+    "Ammon se fige sur place. Il ne dit pas un mot pendant un temps angoissant."
 
-    am "... I am fed up with you."
+    am "... J'en ai marre de toi."
 
-    "He turns back."
+    "Il fait demi-tour."
 
-    am j_growl "Give it back to me."
+    am j_growl "Rends-le moi."
 
-    hl "... What–"
+    hl "... Quoi-"
 
-    ### TODO: Add an expression where he has exorbitated eyes
+    ### TODO : Ajoute une expression où il a les yeux exorbités.
 
-    am j_yell "GIVE BACK WHAT YOU STOLE FROM ME."
+    am j_yell "Rends-moi ce que tu m'as volé"
 
     hide ammon with dissolve
-    "All of the sudden, Ammon charges."
+    "Tout à coup, Ammon charge."
 
-    "Ammon grabs the [picked_from_the_bag] but there is too much at stake to let it go so you clutch his hand"
-    "You wrestle for your life to get the [picked_from_the_bag] back. This is your last chance to set things right so you scratch at him, hiss at him, and even bites him."
-    "On the other hand, Ammon won’t let go either. He barks at you, jerks his head in all directions. He’s slipping through your fingers the more you pull that [picked_from_the_bag]."
+    "Ammon attrape le [picked_from_the_bag] mais l'enjeu est trop important pour le laisser partir alors tu lui serres la main"
+    "Tu luttes pour ta vie afin de récupérer le [picked_from_the_bag]. C'est ta dernière chance d'arranger les choses alors tu le griffes, tu le siffles et tu le mords même."
+    "D'un autre côté, Ammon ne veut pas lâcher prise non plus. Il t'aboie dessus, secoue la tête dans tous les sens. Il te glisse entre les doigts plus tu tires sur ce [picked_from_the_bag]."
     
-    hl "Please Ammon!! Trust me!!!"
-    hl "Please believe me!{w} Please that someone believes me for once!"
-    hl "I’m tired of repeating myself!"
-    hl "Please believe me!"
+    hl "S'il te plaît Ammon !!! Fais-moi confiance !!!"
+    hl "S'il te plaît, crois-moi ! S'il te plaît, que quelqu'un me croie pour une fois !"
+    hl "J'en ai marre de me répéter !"
+    hl "S'il te plaît, crois-moi !"
 
-    "You put you hand out to him, to his shoulder. He might understand if you can grab a hold of him."
+    "Tu tends ta main vers lui, vers son épaule. Il comprendra peut-être que tu puisses t'agripper à lui."
 
-    am "{size=60}BACK OFF{/size}"
+    am "{size=60}CASSE–TOI{/size}"
 
     play sound "audio/sounds/punch.mp3"
     
@@ -2001,108 +2008,113 @@ label confront_him:
         easeout 1.5 alpha 0.7
     show parkingLot with sshake
 
-    "The next moment, his fist connects to your eyebrows arch and you blast through the air on his motorcycle."
-    "The [picked_from_the_bag] sits on the floor, its contents spilled in the grass, last relic of your fleeting friendship, trampled"
-    "You hit your head hard on the frame of the motorcycle. Blood trickles down from it. You pass your head on your wound. Just blood."
+    "L'instant d'après, son poing se connecte à ton arcade et tu exploses dans les airs sur sa moto."
+    "Le [picked_from_the_bag] repose sur le sol, son contenu répandu dans l'herbe, dernière relique de votre amitié éphémère, piétinée"
+    "Tu te cognes violemment la tête sur le cadre de la moto. Du sang s'en écoule goutte à goutte. Tu passes ta tête sur ta blessure. Juste du sang."
 
-    am "FUCK, sorry, I didn’t mean to! Let me hel–"
+    am "PUTAIN, désolé, je n'ai pas fait exprès ! Laisse-moi t'aider..."
 
-    hl "{size=60}YOU FUCKING BASTARD{/size}"
+    hl "{size=60}TU FUCKING BASTARD{/size}"
 
     show parkingLot with sshake
 
     scene black with dissolve
 
-    "You spring on Ammon. You both roll on the grass. After that it’s a bit of a blur. You don’t remember everything."
+    "Tu te jettes sur Ammon. Vous vous roulez tous les deux dans l'herbe." 
+    "Après ça, c'est un peu flou. Tu ne te souviens pas de tout."
 
 
     
     stop music fadeout 0.5
     play music "audio/music/uboa.mp3" loop
 
-    show parkingLot with dissolve
+    show parking with dissolve
     show expression "#F00" at alpha_dissolve:
         easeout 1.5 alpha 0.7
 
-    "All you remember, is Ammon laid down in the grass, defenseless, his face contorting in pain. He’s out of breath, imploring for air."
-    "You, on the other hand, sits on top of him, astride. You watch his unbeckled belt and you can see the tip of his underpants though his fly."
-    "You gulp."
-    if azzy_score >= 2:
-        az "Why that now..."
-    "Unfortunately, the more you go up though his body, the more you wish you stayed down there."
-    "His disheveled, torn down, shirt and his black dirty jacket were no different, no the thing that disturbs you were your arms compressing his chest down."
-    "This must hurt him so you should stop but your arms keep pressing down and his cries of pain fill your ears. But you keep pressing down, no matter how much he seethes."
-    "Even more disturbing, Ammon hits your arms with all his strength but that reveals in vain, your arms planted there like statues, unmovable, whatever may happened."
-    "Despite his determination and his fierceness, the fists grew gradually weaker to the point where the wind hits you as hard as him."
-    "The knee strikes, beforehand, as piercing as spears, in your back, became bumps comparable to tickles."
-    "Then you understand. Your hands are wrapped around the thick neck of your weakening friend."
-    "You squeeze and squeeze his squishy throat crushing every chance that air revigorates him. His adam apple convulsing under your thumb gives you a wave of nausea. However..."
+    "Tout ce dont tu te souviens, c'est d'Ammon allongé dans l'herbe, sans défense, son visage se contorsionnant de douleur. Il est à bout de souffle, implorant de l'air."
+    "Toi, de ton côté, tu es assis sur lui, à califourchon. Tu observes sa ceinture défaite et tu peux voir le bout de son caleçon à travers sa braguette."
+    "Tu déglutis."
+    if azzy_score >= 2 :
+        az "Pourquoi ça maintenant..."
+    "Malheureusement, plus tu montes dans son corps, plus tu souhaites rester en bas."
+    "Son T–shirt ébouriffée et déchirée et sa veste noire sale n'étaient pas différentes, mais ce qui te dérangeait, c’étaient tes bras qui comprimaient sa poitrine."
+    "Ça doit lui faire mal, alors tu devrais arrêter, mais tes bras continuent à appuyer et ses cris de douleur remplissent tes oreilles. Mais tu continues à appuyer, peu importe à quel point il gémit."
+    "Plus troublant encore, Ammon frappe tes bras de toutes ses forces mais cela se révèle en vain, tes bras plantés là comme des statues, inamovibles, quoi qu'il puisse arriver."
+    "Malgré sa détermination et sa férocité, les poings se sont progressivement affaiblis jusqu'à ce que le vent te frappe aussi fort que lui."
+    "Les coups de genoux, auparavant, aussi perçants que des lances, dans ton dos, te font plus rien."
+    "Alors tu comprends. Tes mains s'enroulent autour du cou épais de ton ami qui s'affaiblit."
+    "Tu serres et tu écrases sa gorge molle en écrasant toute chance sa respiration le sauve. Sa pomme d'Adam qui se convulse sous ton pouce te donne une vague de nausée. Cependant..."
     pause 1.0
-    "You find yourself loving touching his flim skin, and its rough texture. You wished you had done it sooner."
-    "Ammon’s face turns pale as you writhe him of his last strands of energy. Drool bubbles out of his mouth, his teeth gritted to keep the remaining air in his mouth."
-    "Another thread of drool drops on Ammon. Your eyes are exorbitated from rage. You have become a feral animal."
-    "All of the sudden, you feel a loving touch on your arm. The dying hound shares a gaze with you as his last sparkles of life exit those sad eyes."
-    "Close to Death, he says:"
+    "Tu te surprends à aimer toucher sa peau flasque et sa texture rugueuse. Tu regrettes de ne pas l'avoir fait plus tôt."
+    "Le visage d'Ammon devient pâle alors que tu lui arraches ses derniers fils d'énergie. De la bave jaillit de sa bouche, ses dents serrant pour garder le reste d'air dans sa bouche."
+    "Un autre fil de bave tombe sur Ammon. Tes yeux sont exorbités par la rage. Tu es devenu un animal sauvage."
+    "Tout à coup, tu sens un contact affectueux sur ton bras. Le molosse mourant partage un regard avec toi alors que ses dernières étincelles de vie sortent de ses yeux tristes."
+    "Près de la mort, il dit :"
 
-    am "Pl–please stop."
+    am "S'il vous plaît, arrêtez."
 
-    "You succeed to make up words from the low raspy sound coming out of his throat."
+    "Tu réussis à entendre des mots du son grave et rauque qui sort de sa gorge"
     
-    am "I believ–believe you, ok? You are my friend and I won’t leave you, ok?"
-    am "I know you’re having hard times, so I won’t hold you to what you’re doing right now, I promise."
+    am "Je te crois, je te crois, d'a–accord ? Tu es mon ami et je ne te quitte–erai pas, ok ?"
+    am "Je sais que tu vis des moments difficiles, alors je ne te tiendrai pas compte de ce que tu me fais là, je te le promets."
     
-    "His grip weakens, all colours drain out of his face. His throat before, contracting and moving, goes more and more inert."
+    "Sa poigne faiblit, toutes les couleurs se vident de son visage. Sa gorge avant, se contractant et bougeant, devient de plus en plus inerte."
     
-    am "You’re n–not dea–dead. You always ha–have been the s–same cat I met years ago."
+    am "Tu n'es pas mort. Tu as toujours été le même chat que j'ai rencontré il y a des années."
     
-    "He grins at you, tears streaming down the corner of his lips."
-    am "I don’t want to ever leave you."
-    am "I’ve said a—ll"
-    "He coughs and drool leaks on your hands. You don’t budge."
-    am "a–all those horri—horrible things to you, but I never thought them."
-    am "You’re one of my favourite persons"
-    am "So... I know it’s not you so stop doing that, I beg you."
-    am "Re—remove your h—hands... Please."
+    "Il te sourit, des larmes coulent au coin de ses lèvres"
+    am "Je ne veux jamais te quitter."
+    "Il tousse et de la bave coule sur tes mains. Tu ne bouges pas."
+    am "Je t'ai dit toutes ces choses horribles, mais je ne les ai jamais pensées."
+    am "Tu es l'une de mes personnes préférées"
+    am "Alors... je sais que ce n'est pas toi alors arrête de faire ça, je t'en supplie"
+    am "Retire tes mains... S'il te plaît."
 
-    "His hands fall down, unmoving. He doesn’t breathe a lot anymore."
+    "Ses mains tombent. Il ne respire plus beaucoup."
     if ammon_score == 0:
-        "But you didn’t care. All you want it to keep strangling his squishy little throat. It brings within you forbidden pleasures."
-        "You loved every rictus of pain on his face. You drool even more and these strings mix with his."
-        "Your pleasure is indiscernible from his pain. You hate him. You hate him and you hope he suffers enough." 
-        "He’s going to regret ever thinking about leaving you."
+        "Mais tu t'en moques. Tout ce que tu veux, c'est continuer à étrangler sa petite gorge toute molle. Cela fait naître en toi des plaisirs interdits."
+        "Tu as adoré chaque rictus de douleur sur son visage. Tu baves encore plus et ces cordes se mélangent aux siennes."
+        "Ton plaisir est indiscernable de sa douleur. Tu le détestes. Tu le détestes et tu espères qu'il souffre suffisamment." 
+        "Il va regretter d'avoir pensé à te quitter"
         stop music
-        cl "Told you so."
-        cl "You love it."
-        cl "You loved it."
-        cl "You’re not at all a living being."
-        cl "You’re a beast. {w}You are a Monster."
+        cl "Je te l'avais bien dit."
+        cl "Tu l'aimes."
+        cl "Tu as adoré."
+        cl "Tu n'es pas du tout un être vivant."
+        cl "Tu es une bête. {w} Tu es un monstre."
 
-        "You remove your hands."
-        hl "... Why."
+        "Tu enlèves tes mains."
+        hl "... Pourquoi."
 
-        "A wave of nausea overflows you."
-        "You puke."
-    
-    # else:
-    #     "Then you remenmber. All the times Ammon bring up your spirits. All the times you cried out of exhaustion and he was there for you."
-    #     "All the times, he took your yogurt at lunch at middle school and toyed with you for minutes. In the instant, you hated it but in the end, you’d laugh."
-    #     "The time you feel nauseated at this lame party and he came take you home even though he told you not to."
-    #     "The times where he didn’t feel good so you watched over him for day and nights so he’d go better."
-    #     "You grin. You couldn’t have a better friend than him. He was the only one able to fully understand you. Then you realise."
-    #     "You’re strangling him. Your hands are wrapped his neck. What are you doing. What you’re doing is bad, forbidden. You’re committing a crime."
-    #     "You remove you hands of his neck and you stand up so fast, you’re striked with the vertigo."
-    #     "Ammon let out a seething gasp, finally air filling his lungs. However he stays on the ground, too puny of your assault."
+        "Une vague de nausée te submerge."
+        "Tu vomis."
+        "Il ne parle plus. Est-ce qu'il respire encore ?"
+        "Ton mal de tête t'assaille avec plus d'intensité. Tu t'agrippes à ta tête."
+        "Tu t'effondres."
+    else:
+        "Puis tu te souviens. Toutes les fois où Ammon t'a remonté le moral. Toutes les fois où tu as pleuré d'épuisement et où il était là pour toi."
+        "Toutes les fois où il a pris ton yaourt au déjeuner au collège et a joué avec toi pendant des minutes. Sur l'instant, tu détestais ça mais à la fin, tu riais."
+        "La fois où tu te sens nauséeuse à cette soirée nulle et qu'il est venu te raccompagner alors qu'il t'avait dit de ne pas le faire."
+        "Les fois où il ne se sentait pas bien alors tu l'as veillé pendant des jours et des nuits pour qu'il aille mieux."
+        "Tu grimaces. Tu ne pouvais pas avoir un meilleur ami que lui. Il était le seul capable de te comprendre pleinement. Puis tu réalises."
+        "Tu es en train de l'étrangler. Tes mains entourent son cou. Qu'est-ce que tu fais ? Ce que tu fais est mauvais, interdit. Tu commets un crime."
+        "Tu enlèves tes mains de son cou et tu te lèves si vite que tu es frappé par le vertige."
+        "Ammon laisse échapper un souffle fulgurant, l'air remplissant enfin ses poumons. Cependant il reste au sol, trop chétif de ton assaut."
+        am "Merci Howl..."
+        am "Je t'aime {w} beaucoup, tu le sais ça."
+        if ammon_score == 3:
+            am "Non. Je t’–"
         
-    #     if ammon_score >= 1:
-    #         am "Thanks Gap..."
-    #         am "I like you {w}a lot."
-    #         if ammon_score == 3:
-    #             am "No. I lo–"
-        
-        "He doesn’t talk anymore. Does he breathe anymore?"
+        "Tu attends ses prochains mots mais rien ne vient."
+        "Après un long moment agonisant, tu baisses les yeux."
+        "Il ne bouge plus. Il ne parle plus."
+        "... Est–ce qu’il respire ?"
+        "En panique, tu te précipites sur son visage, et tu colles ton oreilles sur sa bouche, pour vérifier que tu puisses entendre rien que, mais alors rien qu’une respiration..."
+        "..."
+        "Il ne respire plus."
     
-    "Your headache assaults you with greater intensity. You clutch you head. You lose your balance."
-    "You collapse."
+    
 
     jump first_act_part_1
     

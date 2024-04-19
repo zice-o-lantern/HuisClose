@@ -25,7 +25,7 @@ define config.check_conflicting_properties = True
 ## The colors of text in the interface.
 
 ## An accent color used throughout the interface to label and highlight text.
-define gui.accent_color = '#cf439a'
+define gui.accent_color = '#e0d082'
 
 ## The color used for a text button when it is neither selected nor hovered.
 define gui.idle_color = '#888888'
@@ -88,8 +88,8 @@ define gui.title_text_size = 75
 ## Main and Game Menus #########################################################
 
 ## The images used for the main and game menus.
-# define gui.main_menu_background = "gui/main_menu.png"
-define gui.main_menu_background = Movie(play="gui/main_menu.webm")
+define gui.main_menu_background = "gui/main_menu.png"
+# define gui.main_menu_background = Movie(play="gui/main_menu.webm")
 define gui.game_menu_background = "gui/game_menu.png"
 define gui.main_menu_title = "gui/main_menu_title.png"
 
@@ -178,20 +178,20 @@ define gui.button_text_xalign = 0.0
 
 
 ## These variables override settings for different kinds of buttons. Please see
-## the gui documentation for the kinds of buttons available, and what each is
+# the gui documentation for the kinds of bukttons available, and what each is
 ## used for.
 ##
 ## These customizations are used by the default interface:
 
-define gui.radio_button_borders = Borders(27, 6, 6, 6)
+define gui.radio_button_borders = Borders(60, 2, 6, 6)
 
-define gui.check_button_borders = Borders(27, 6, 6, 6)
+define gui.check_button_borders = Borders(60, 2, 6, 6)
 
 define gui.confirm_button_text_xalign = 0.5
 
 define gui.page_button_borders = Borders(15, 6, 15, 6)
 
-define gui.quick_button_borders = Borders(15, 6, 15, 0)
+# define gui.quick_button_borders = Borders(15, 6, 15, 0)
 define gui.quick_button_text_size = 21
 define gui.quick_button_text_idle_color = gui.idle_small_color
 define gui.quick_button_text_selected_color = gui.accent_color
@@ -227,7 +227,7 @@ define gui.choice_button_text_insensitive_color = '#8888887f'
 
 ## The save slot button.
 define gui.slot_button_width = 414
-define gui.slot_button_height = 309
+define gui.slot_button_height = 286
 define gui.slot_button_borders = Borders(15, 15, 15, 15)
 define gui.slot_button_text_size = 21
 define gui.slot_button_text_xalign = 0.5
@@ -290,7 +290,7 @@ define gui.main_menu_text_xalign = 1.0
 define gui.frame_borders = Borders(6, 6, 6, 6)
 
 ## The frame that is used as part of the confirm screen.
-define gui.confirm_frame_borders = Borders(60, 60, 60, 60)
+define gui.confirm_frame_borders = Borders(40, 40, 40, 40)
 
 ## The frame that is used as part of the skip screen.
 define gui.skip_frame_borders = Borders(24, 8, 75, 8)
