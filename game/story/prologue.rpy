@@ -20,13 +20,13 @@ label prologue:
     cl "{cps=3}...{/cps}{w} Combler ce vide qui ronge cet être{w}——Mon être——{w}flétrissant."
     cl "C’est pour cela que,{w} jusqu’à présent,{w} et pour toujours..."
     cl "Je t’aime{w}, Charles"
-    scene black
+    show black
     stop sound
-    pause 1.5
     # play sound 'audio/sounds/car_white_noise.ogg' loop
     jump little_road
 
 label little_road:
+    scene black
     # show ruralRoad
     # with Fade(0.5, 4.0, 0.5)
 
@@ -38,11 +38,7 @@ label little_road:
 
     hl "Ahhhh—"
 
-    show turn ammon1 at american_shot with dissolve
-
-    "test de merde parce que je connais rien à ce truc de merde et tout le monde s’attend à que je sois un génie de toute façon"
-
-    "???" "Je vois que je ne me trompais pas, au final."
+    "???" "Alors, pas trop fatigué ?"
 
     "Tu lèves les yeux et malgré le voile noire recouvrant ta vue, tu arrives toujours à distinguer les traits de la personne en face de toi."
     "Elle porte un casque et une veste de motard noirs. Impossible de voir son visage. Mais tu n’as pas vraiment besoin de le voir."
@@ -62,9 +58,9 @@ label little_road:
 
     "L’homme au casque pouffe."
 
-    "Homme au casque" "Il est environ 18h, il est pas si tard."
-    "Homme au casque" "Tu peux bien rester éveillé quelques heures de plus non ?"
-    "Homme au casque" "Je voulais arriver à la Maison avant la tombée de la nuit mais c'est un peu tard pour ça"
+    "???" "Il est environ 18h, il est pas si tard."
+    "???" "Tu peux bien rester éveillé quelques heures de plus non ?"
+    "???" "Je voulais arriver à la Maison avant la tombée de la nuit mais c'est un peu tard pour ça"
 
     "Tu baisses les yeux et étonnamment, tu te trouves sur une moto, assis."
     "Sortant ton chiffon, tu essuies la buée qui obstrue les verres de tes lunettes." 
@@ -79,19 +75,19 @@ label little_road:
 
     "L’Homme au casque ricane."
 
-    "Homme au casque" "T’es un peu long à la détente, tu le sais ça ?"
+    "???" "T’es un peu long à la détente, tu le sais ça ?"
 
     hl "Arrête de dire ça, On me le dit bien trop souvent."
 
-    "Homme au casque" "Comme tu veux mais si tu rêvassais moins souvent, je n'aurais sûrement pas te le dire aussi souvent." 
+    "???" "Comme tu veux mais si tu rêvassais moins souvent, je n'aurais sûrement pas te le dire aussi souvent." 
     "Tu ravales les remarques acerbes au fond de ta gorge et tu te contentes d’un claquement de langue."
 
     az "C’est vrai que t’es long à la détente, au fond."
     dk "Tu ne l’es pas ; tu considères toutes les options, plus que la moyenne, ce qui te prend plus de temps."
 
-    "Homme au casque" "Par contre, je peux pas te laisser te rendormir."
-    "Homme au casque" "Tu commençais à piquer du nez et je n’apprécie pas les gros objets lourds et froids qui me martèlent le dos pendant que je conduis."
-    "Homme au casque" "Donc tu vas garder tes petites mirettes ouvertes le temps qu’on arrive à la Maison, compris ?"
+    "???" "Par contre, je peux pas te laisser te rendormir."
+    "???" "Tu commençais à piquer du nez et je n’apprécie pas les gros objets lourds et froids qui me martèlent le dos pendant que je conduis."
+    "???" "Donc tu vas garder tes petites mirettes ouvertes le temps qu’on arrive à la Maison, compris ?"
 
     hl "D’accord...{w} Ammon."
 
@@ -284,7 +280,7 @@ label little_road:
             
             hl "Non."
 
-            am "... Bref, faux ou pas, je peux pas faire grand-chose à ton problème."
+            am "... Bref, False ou pas, je peux pas faire grand-chose à ton problème."
             am "Mais on peut s'arrêter faire une pause{w}, tu sais le temps de reposer tes fefesses ?"
 
             "Tu glousses malgré toi."
@@ -396,15 +392,13 @@ label little_road:
 
     am "... Je vois, à ce point ?"
 
-    "Tu te retiens de lui Howellr de garder ses commentaires pour lui."
-
     am "Bon tu veux savoir quoi sur \"La Maison\" ?"
 
     ## NOTE: Set up choices variables
 
     $ where_it_is = True
     $ why_there = False
-    # $ work = False
+    $ work = False
     $ what_else = False
     $ been_there = False
     $ real_reason = False
@@ -470,7 +464,7 @@ label little_road:
             "Tu te grattes la nuque, ça te démange."
 
             $ why_there = True
-            # $ work = True 
+            $ work = True 
 
             jump destination_questions
 
@@ -681,24 +675,32 @@ label little_road:
         ## TODO: Faire une question Real Reason 
         ## TODO: Faire une question Work 
  
-        "Tu n'as pas un travail ?" if work: 
+        "Tu n'as pas un travail ?" if work:
+            $ work = False 
             hl "Dis Ammon ?" 
  
             am "Oui ?" 
  
             hl "Tu es professeur d'Histoire à l'Université, non ?" 
  
-            am "Pas exactement mais c'est l'idée, oui." 
+            am "C'est l'idée, oui." 
  
             hl "Tu ne devrais pas être à l'université alors ?"
 
-            "(pas fini d'écrire ce dialogue)"   
+            "Ammon te dévisage à travers le rétroviseur."
 
-            jump destination_questions      
-        "La vraie raison" if real_reason and not been_there and not why_there and not what_else: 
-            $ real_reason = False 
-            "Ammon, il n'y a pas une autre raison pour laquelle on y va ?"
-            "(pas fini d'écrire ce dialogue)" 
+            am "... Non ?"
+
+            hl "Heu pourquoi ?"
+
+            am "Parce que c’est la Toussaint ?"
+
+            "Son regard qui s’ensuit ne peut pas être plus évocateur : de l’incrédulité et du dédain."
+
+            hl "Ah oui c’est vrai..."
+
+            am "T’en as d’autres questions pertinentes comme ça ?"
+
             jump destination_questions 
          
 
@@ -715,6 +717,8 @@ label little_road:
 
         am "Tu es si fatigué que ça ?"
 
+        ### TODO: Réécrire ça mdr
+
         "N'ayant plus d'énergie, tu hoches de la tête, savant pertinemment qu'il ne pourrait pas le voir."
         "Cependant il comprit——notamment grâce aux frottements du casque sur sa veste——et une pensée lui vient en tête."
         "Hésitant à le dire, il se décida subitement."
@@ -725,7 +729,7 @@ label little_road:
 
         am "Attrape-moi la queue."
 
-        "Même la deuxième fois, tu n'arrives pas à assimiler le sens de ce  qu'il vient de dire."
+        "Même la deuxième fois, tu n'arrives pas à comprendre ce qu'il vient de dire."
 
         am "Pour que tu puisses t'accrocher à quelque chose, pendant que tu dors..."
 
@@ -787,18 +791,6 @@ label little_road:
         az "En espérant que tu as eu ce que tu voulais{w}, lâche."
 
         "Sur ces mots, le néant t'emporte et bientôt ta conscience s'y fond."
-
-        # "Ça ne pose pas problème qu'on aille là-bas ?" if work:
-        #     $ work = False
-
-        #     hl "Ça ne pose pas problème ?"
-
-        #     am "De quoi ?"
-
-        #     "Tu n'as pas ton travail "
-        #     jump destination_questions
-        
-
 
 label rest_area_1:
     # "Eventually, Ammon, who had stripped away his helmet since a long time ago, notices you."
@@ -864,13 +856,13 @@ label rest_area_1:
                     show ammon j_neutral
                     "Ammon essuie ses larmes de rire et s'approche, triomphant, de toi. Son sourire malicieux transperce son casque alors qu'il te regarde."
 
-                    am e_noway "Euh, tu vas bien ? T’es blessé ? Tu as l'air tendu."
+                    am e_noway "Euh, tu vas bien ? T’es blessé ? T’as l'air tendu."
 
                     show ammon e_neutral
                     "Il se précipite vers toi."
-                    "Une fois près de toi, il tend une main vers toi"
+                    "Une fois près de toi, il tend sa main vers toi"
 
-                    "Mais tu la repousses d'un revers de main."
+                    "Mais tu la repousses d'un revers."
 
                     show ammon e_noway j_disgusted
                     hl "Je vais bien, tu n'as pas besoin de t'inquiéter pour moi."
@@ -879,7 +871,8 @@ label rest_area_1:
 
         
         "Le faire tout seul" :
-            "Tu n'as pas besoin de l'aide de ce con"
+            "Tu n'as pas besoin de l'aide de ce con."
+
             hl "Je n'ai pas besoin de ton aide. Je peux me débrouiller tout seul."
             
             am pupils_right "Très bien... Comme tu veux."
@@ -888,7 +881,7 @@ label rest_area_1:
             "Cependant, quelque chose ne va pas : il est vraiment coincé. Peu importe la force avec laquelle tu tires ou l'angle que tu utilises, tes oreilles ne bougent pas et il ne se détache donc pas."
             "En paniquant, tu t'agites dans toutes les directions, te précipitant sur la moto et sur Ammon."
 
-            am élèves "Tu es sûr que tu n'as pas besoin d'aide ? Tu en as l'air."
+            am pupils "Tu es sûr que tu n'as pas besoin d'aide ? Tu en as l'air."
 
             hl "Je vais bien ! Je n'ai pas besoin de ton aide ni de celle de personne !"
             
@@ -897,14 +890,14 @@ label rest_area_1:
             show ammon pupils
 
             "Dans ta lutte contre le casque, tu continues à tourner sur toi-même jusqu'à ce que tu aies la nausée à cause de l'expérience généralisée."
-            "Par un fil de chance ou de malchance, tu parviens à te débarrasser de ton casque. Cependant avec toutes tes danses et tes virevoltes, tu as perdu le sens de l'orientation et tu as perdu l'équilibre te faisant tomber dans l'herbe."
+            "Par un fil de chance ou de malchance, tu parviens à te débarrasser de ton casque. Cependant avec toutes tes danses et tes virevoltes, tu perds l'équilibre tombant dans l'herbe."
             "Lorsque ta charge frénétique s'arrête, tu craches la terre et les brins d'herbes pris dans ta bouche. Lorsque tu reprends tes esprits, tu es confronté à un chien rieur incapable de s'arrêter."
         
-            am pupils_left j_smug "Tu l'as bien mérité, abruti."
+            am pupils_left j_smug "Bien fait, abruti."
 
             hl "Qu'est-ce que t’as dit ?"
 
-            am pupils j_neutral "Tu m'as entendu. Lève-toi. Tu n'arriveras à rien dans cet état."
+            am pupils j_neutral "Tu m'as entendu. Lève-toi. Tu n'arriveras à rien comme ça."
             
             "Tu te lèves. Tu te frottes la tête par douleur et tu sens une méchante bosse sur ton crâne. Tu aurais peut-être dû demander Ammon."
 
@@ -936,9 +929,9 @@ label rest_area_1:
     am "Il faut que t’arrêtes de te regarder comme ça. On dirait que tu es sur le point de trucider quelqu'un"
 
     "Avec ce commentaire inquiétant, Ammon poursuit en se débarrassant de son casque" 
-    "Réalisant qu'il a un point, tu détournes le regard du toi de l’au–delà, n’ayant pas arrêté de te dévisager."
+    "Réalisant qu'il a un point, tu détournes le regard du toi de l’autre côté du miroir, n’ayant pas arrêté de te dévisager."
     
-    hl "As-tu besoin d'aide avec ton casque, Ammon ? Tu auras besoin d'un peu d'aide... la forme de ta tête..."
+    hl "T’as besoin d'aide avec ton casque, Ammon ? Tu sais... la forme de ta tête..."
     
     am right "C'est bon, mec. Je peux m'en occuper tout seul. J'ai l'habitude."
 
@@ -946,7 +939,8 @@ label rest_area_1:
     "Il remue la tête enfin libérée de sa prison protectrice en plastique"
 
     show ammon pupils_right 
-    "Quel frimeur ! Mais un bon frimeur."
+    az "Quel frimeur !" 
+    az "Mais quel bon frimeur."
     camera at close_shot
     show parking:
         parallel:
@@ -981,12 +975,12 @@ label rest_area_1:
 
     hl "Huh pas du tout ahah"
 
-    "Tu grimaces en te frottant le cou avec ta main"
+    "Tu grimaces tout en te frottant le cou"
 
     hl "C'est juste que j'aime beaucoup ta ceinture, ahah"
 
     am "{cps=3}...{/cps} ok, merci, je suppose ?"
-    am pupils_right "{size=20} you weirdo"
+    # am pupils_right "{size=20} you weirdo"
     
     camera :
         parallel :
@@ -1056,15 +1050,14 @@ label rest_area_1:
 
 label phone_booth: 
     stop music fadeout 0.5
-    stop son
-    scene phone_booth with fondu
+    stop sound
+    scene phone_booth with dissolve
 
     play music "audio/music/night_sky.mp3" fadein 1.0 loop
 
-    "Tu trottines vers la cabine téléphonique déserte. Tu te dépêches de lui parler, d'en finir." 
-    "Te traînant jusqu'à la porte, tu saisis avec une grande difficulté la poignée, ne parvenant pas à trouver la motivation nécessaire pour pénétrer dans la cabine obscure."
+    "Te traînant jusqu'à la cabine, tu saisis avec une grande difficulté la poignée, ne parvenant pas à trouver la motivation nécessaire pour pénétrer dans la cabine obscure."
     "Tu tournes un nombre inconsidéré de fois la poignée, enfin, la porte s'ouvre quand tu la pousses." 
-    "Tu ne dois pas être dans le bon état d'esprit pour ne pas remarquer que tirer mille fois une porte ne fonctionnera pas la 1001e fois."
+    "Tu ne dois pas être dans le bon état d'esprit pour ne pas remarquer que tirer mille fois sur une porte ne fonctionnera pas la mille et unième fois."
     "Mais tu n'as pas pu t'en préoccuper plus que ça, ta morosité s'écrasant au plus bas lorsque tu poses enfin la patte dans le vide sombre, transpercé par les rayons d'un soleil déclinant."
     "Aveugle, par la faible luminosité actuelle du lieu, tu as mis du temps à même trouver le téléphone"
     "Sur la cabine téléphonique, sur une petite pancarte au fond de celle-ci, il est écrit : « 10 francs pour 10 minutes ! »."
@@ -1083,7 +1076,7 @@ label phone_booth:
     
     mj "Howell ! C'est vraiment toi ! J'ai attendu ton appel toute la journée, tu le sais ?"
 
-    "Un profond soupir s'échappe de sa longue bouche, soulagée d'entendre ta voix"
+    "Un profond soupir s'échappe de sa long museau, soulagée d'entendre ta voix"
 
     mj "Tu es déjà arrivé à la Maison ?"
 
@@ -1115,7 +1108,7 @@ label phone_booth:
     "Finalement, tu l’entends glousser."
 
     mj "Tu es sûr, Howl ?"
-    mj "Je sais que c’est moi qui ai proposé mais même en le considérant plus de cinq secondes, ce ne serait pas si merveilleux que ça."
+    mj "Je sais que c’est moi qui ai proposé mais tu ne l’as jamais considéré n’est–ce pas ?"
     mj "J’aime bien avoir mes moments à moi parfois, toi aussi, non ?"
 
     hl "Si si, c’est... vrai"
@@ -1158,10 +1151,11 @@ label phone_booth:
             mj "Bon, ça a un peu gâché notre petite sortie mais en y repensant, Ammon et toi étiez toujours à la gorge l'un de l'autre mais vous avez tout supporté contre vents et marées."
             mj "C'est fascinant de voir comment vous avez réussi à rester ensemble."
 
-            dk ""
-
             mj "Au fait, tu te souviens quand on s'est mis ensemble pour la première fois ?"
 
+            "Marie–Jil souffle doucement du nez, amusée."
+
+            mj "J’imagine que non. Ce serait pas anormal pour toi d’oublier de ce genre de truc de toute façon."
         "Penser à autre chose" :
             $ azzy_score += 1
             "Tu laisses ton esprit vagabonder ailleurs. Tu es déjà passé par là. Écouter ses diatribes interminables. Tu n'as jamais réussi à te concentrer plus d'une minute."
@@ -1182,53 +1176,62 @@ label phone_booth:
 
             hl "Oui, MJ, tu disais ?"
 
-            mj "... je disais, tu te souviens quand on s'est mis ensemble pour la première fois ? Ton enthousiasme n'est pas retombé depuis. Ça fait chaud au cœur d'en être témoin."
+            mj "... je disais, tu te souviens quand on s'est mis ensemble pour la première fois ? Sûrement pas. Ce serait anormal pour toi d’oublier de ce genre de truc de toute façon."
     
+    "Sa dernière remarque ne te revient pas vraiment. Une note d’amertume suinte de ces mots."
+    "Confus, te grattant le cuir chevelu, tu te remémores ces derniers mots."
+
     show canteen at zpos_bg with dissolve
     show canteen:
         ease 1 blur 16
     "Quand vous vous êtes mis ensemble pour la première fois, hein ? Oui, tu t'en souviens, comment pourrais-tu ne pas t'en souvenir ? C'était un jour très spécial après tout."
     "Tu ne t'y attendais pas. Un jour, vous mangiez à la cafétéria de votre lycée." 
-    "La foule habituelle de la cafétéria s'est envolée pour un événement qui ne t'intéressait sûrement pas, alors il ne restait plus grand monde ici."
-    "Tu as tapoté faiblement la nourriture devant toi, n'ayant pas vraiment faim." 
-    "Le calme inhabituel, cependant, t'a aidé à te concentrer et à prendre quelques bouchées dans ton assiette, mais tu as eu beau essayer, ton assiette est restée, la plupart du temps, intacte."
-    "À ta gauche, Ammon était allongé sur sa chaise, son ventre lui faisant mal. Il t'avait défié tout à l'heure à un concours de mangeurs." 
-    "Tu avais accepté docilement, par principe, tu ne refuserais jamais un défi lancé par ton trublion préféré."
-    "Mais tu n'as pas eu le cœur - ni l'estomac - de le suivre dans son défi." 
-    "Tu avais été surpris par son dévouement, ce jour-là vous aviez été nourris de hachis parmentier et vous aviez tous les deux pris des rations doubles, alors ça lui pesait beaucoup sur l'estomac."
-    "Il était tellement rassasié que sa chemise ne tenait plus son ventre, tu pouvais donc admirer son nombril et la bosse que la nourriture avait formée dans ses entrailles." 
-    "Essayant de lui remonter le moral, tu as frotté son abdomen et tu as été accueilli par une agréable bouillie."
-    "Vous ne pouviez pas vous arrêter alors vous avez continué à frotter, espérant l'apaiser. À ton grand désarroi, Ammon n'y a pas vu d'inconvénient et il a même laissé échapper quelques grincements de rire et de satisfaction."
+    "La foule habituelle de la cafétéria s'était envolée pour un événement qui ne t'intéressait sûrement pas, alors il ne restait plus grand monde ici."
+    "Tu tapotais faiblement la nourriture devant toi, n'ayant pas vraiment faim." 
+    "Le calme inhabituel, cependant, t'avait aidé à te concentrer et à prendre quelques bouchées dans ton assiette, mais tu avais beau essayer, ton assiette était restée, la plupart du temps, intacte."
+    "À ta gauche, Ammon était allongé sur sa chaise, son ventre lui faisant mal." 
+    # "Tu avais accepté docilement, par principe, tu ne refuserais jamais un défi lancé par ton trublion préféré."
+    # "Mais tu n'as pas eu le cœur - ni l'estomac - de le suivre dans son défi." 
+    # "Tu avais été surpris par son dévouement, ce jour-là vous aviez été nourris de hachis parmentier et vous aviez tous les deux pris des rations doubles, alors ça lui pesait beaucoup sur l'estomac."
+    # "Il était tellement rassasié que sa chemise ne tenait plus son ventre, tu pouvais donc admirer son nombril et la bosse que la nourriture avait formée dans ses entrailles."
+    # "Essayant de lui remonter le moral, tu as frotté son abdomen et tu as été accueilli par une agréable bouillie."
+    # "Vous ne pouviez pas vous arrêter alors vous avez continué à frotter, espérant l'apaiser. À ton grand désarroi, Ammon n'y a pas vu d'inconvénient et il a même laissé échapper quelques grincements de rire et de satisfaction."
 
-    hl "Heheh, qu'est-ce que tu crois que ça va être ?"
+    # hl "Heheh, qu'est-ce que tu crois que ça va être ?"
 
-    "Des roses de confusion sur le visage d'Ammon, encore contorsionné par la douleur mêlée de douceur."
+    # "Des roses de confusion sur le visage d'Ammon, encore contorsionné par la douleur mêlée de douceur."
 
-    am "Je-je pense que ça va être quoi ?"
+    # am "Je-je pense que ça va être quoi ?"
 
-    "Je regarde son ventre."
+    # "Je regarde son ventre."
 
-    hl "Un garçon ou une fille ?"
+    # hl "Un garçon ou une fille ?"
 
-    am "Un-une fille- *Buuuurrurp* oh shut u-up man."
+    # am "Un-une fille- *Buuuurrurp* oh shut u-up man."
 
-    "Ammon continuait à roter de façon incontrôlée, alors tu retires ta main de lui, dégoûtée" 
-    "Tu étais moins pressé qu'avant de finir ton repas alors tu as muloté sur la table, tu t'es appuyé dessus, perturbé."
-    "Cela a commencé à t'inquiéter : Marie-Jil n'était toujours pas venue à la cafétéria, aujourd'hui. Vous mangiez toujours ensemble tous les trois à midi, alors tu t'es demandé où elle pouvait bien être." 
-    "D'habitude, elle n'était jamais en retard, alors son absence t'a laissé inquiet quant à sa localisation."
-    "Peut-être qu'elle est allée au match qui se déroulait pendant le déjeuner, mais elle n'était pas vraiment intéressée par le sport au lycée et elle vous l'aurait dit, si c'était le cas." 
-    "Alors son cours risque de durer plus longtemps que prévu. Mais encore une fois, tu n'as pas pensé que c'était ça."
+    # "Ammon continuait à roter de façon incontrôlée, alors tu retires ta main de lui, dégoûtée" 
+    # "Tu étais moins pressé qu'avant de finir ton repas alors tu as muloté sur la table, tu t'es appuyé dessus, perturbé."
+    "Pour une raison ou une autre, ce jour–là, il avait décidé de se gaver de nourriture. Même il avait acheté une deuxième portion à la cafétéria."
+    "Qui plus est, le plat du jour étant hachis parmentier, une étrange admiration monta en toi : d’où venait cet appétit ?"
+    "Malgré toutes tes tentatives d’en savoir plus sur son enthousiasme, il ne répondit pas et continua de manger en silence sa bouillie."
+    "Cependant, cette poussée d’énergie fut de courte durée, parce qu’il finit par se rouler en boule sur sa chaise, le mal au ventre."
+    "Il voulait te parler de quelque chose auparavant ; mais avec sa frénésie alimentaire, tu avais laissé tomber."
+    "Quelque chose de plus urgeant te préoccupait."
+    "Cela commençait à t'inquiéter : Marie-Jil n'était toujours pas venue à la cafétéria, aujourd'hui. Vous mangiez toujours ensemble tous les trois à midi, alors tu t'es demandé où elle pouvait bien être." 
+    "D'habitude, elle n'était jamais en retard"
+    "Peut-être qu'elle est allée au match qui se déroulait pendant le déjeuner, mais elle n'était pas vraiment intéressée par le sport et elle vous l'aurait dit, si c'était le cas." 
+    "Ou alors son cours durait plus longtemps que prévu. Mais encore une fois, tu ne pensais pas que c'était ça."
 
     hl "Je me demande où elle est..."
-    "Dit à voix haute, tu t'attendais à ce qu'Ammon te réponde, ou au moins dise quelque chose, mais aucune réponse alors qu'Ammon gisait maintenant apparemment inconscient sur sa chaise."
-    "Tout à coup, Marie-Jil s'est approchée de toi, n'apportant aucune nourriture mais un air tendu sur son chemin. Alors qu'elle se rapprochait de toi, tu as commencé à trembler sous l'effet du stress."
-    "Marie-Jil s'est tenue enfermée par terre, très anxieuse, ne sachant pas où se placer. Sa queue n'arrêtait pas de trembler ; la nervosité de la situation t'a fait faire des mouvements de queue à la tienne."
+    "À voix haute, tu t'attendais à ce qu'Ammon te réponde, ou au moins dise quelque chose, mais aucune réponse alors qu'Ammon gisait maintenant apparemment inconscient sur sa chaise, la tête dans son plat."
+    "Tout à coup, Marie-Jil s’approcha de toi, n'apportant aucune nourriture mais un air tendu sur son chemin."
+    # "Marie-Jil s'est tenue enfermée par terre, très anxieuse, ne sachant pas où se placer.  la nervosité de la situation t'a fait faire des mouvements de queue à la tienne."
     ## TODO : ajouter le sprite de Marie-Jil ?
     mj "Salut Howl..."
 
-    hl "Salut MJ... Pourquoi es-tu en retard, que se passe-t-il ? Tu veux me dire quelque chose ?"
+    hl "Salut MJ... Pourquoi es-tu en retard, que se passe-t-il ? Quelque chose ne va pas ?"
 
-    "Marie-Jil releva la tête, choquée, comme si elle avait été démasquée, alors que la fin se rapprochait à chaque seconde qui passait."
+    "Marie-Jil releva la tête, choquée, comme si elle avait été démasquée."
 
     mj "Hein, qu'est-ce que tu veux dire ?"
 
@@ -1237,56 +1240,58 @@ label phone_booth:
     mj "Il s’est rien passé !!!{w} Oh... Salut Ammon..."
     mj "Ammon, pourrais-tu laisser Howl et moi seuls ?"
 
-    "Elle finit par remarquer Ammon et son ventre épais. Désespérée par le paysage qu'elle contemplait, elle l'a ignoré et a reporté son attention sur toi."
+    "Après plusieurs demandes, elle finit par remarquer Ammon et son état déplorable. Désespérée par le vue qu'elle contemplait, elle finit par l’ignorer et reporta son attention sur toi."
 
-    mj "S'il te plaît, laisse-moi finir, Howl."
+    mj "S'il te plaît, avant que tu ne dises quelque chose, laisse-moi finir, Howl."
 
-    "Sentant la gravité de la situation, tu as posé ta vaisselle et tu l'as regardée dans les yeux. Tu as estimé qu'elle avait besoin de toute ton attention"
-    "La biche découragée joignit les mains, inspirant, essayant de rassembler tout le courage nécessaire à l'acte formidable qu'elle s'apprêtait à accomplir." 
+    "Sentant la gravité de la situation, tu la regardas dans les yeux. Tu as estimé qu'elle avait besoin de toute ton attention"
+    "La biche découragée joignit les mains, inspirant, essayant de rassembler tout le courage nécessaire." 
     "Elle s'attarde un temps à savoir si elle avait fait le bon choix" 
-    "Ne pouvant pas l'aider à ce moment-là, tu la laisses être. Elle avait beaucoup de choses en tête et tu vois des brins de doute, de confusion et de détermination tressaillir au coin de son long museau."
+    "Ne pouvant pas l'aider à ce moment-là, tu la laisses respirer. Elle avait beaucoup de choses en tête et tu vois des brins de doute, de confusion et de détermination tressaillir au coin de son long museau."
     "Elle frotte ses paupières une dernière fois et la résolution rosit dans ses yeux, déterminée à en finir."
     
     mj "Tu sais que nous sommes amis depuis très longtemps, Howl ?"
 
     hl "Oui, je le sais ?"
 
-    mj "Et bien je suis vraiment heureux de notre amitié en ce moment, de la façon dont tu as toujours été là pour moi."
+    mj "Eh bien je suis vraiment heureux de notre amitié en ce moment, de la façon dont tu as toujours été là pour moi."
 
-    hl "Et tu as toujours été là pour moi ! Pas besoin de s'inquiéter o-"
+    hl "Et tu as toujours été là pour moi ! Pas besoin de s'inquiéter o-{nw}"
 
     mj "Une seconde s'il te plaît...{w} Ce que je voulais dire, c'est que tu es une personne merveilleuse et que j'apprécie chaque moment passé avec toi."
 
-    "Ammon s'est lentement relevé d'entre les morts, prêtant une oreille intéressée à la direction que prenait la discussion. Au fond de toi, tu savais où elle allait et il le savait aussi. Tu regardes Marie-Jil."
+    "Ammon se releva lentement d'entre les morts, prêtant une oreille intéressée à la direction que prenait la discussion. Au fond de toi, tu savais où elle allait et il le savait aussi. Tu regardas Marie-Jil."
 
     mj "Mais ces derniers temps, j'ai senti un changement en moi. Je veux passer plus de temps avec toi, je veux être plus proche de toi. Plus proche que notre lien actuel."
     mj "Ces dernières années, j'en suis venu à vouloir un changement dans notre relation, quelque chose que l'Amitié ne peut pas offrir. Ces derniers mois, j'ai réfléchi à la question."
     mj "Est-ce vraiment bien ? Ai-je besoin d'une relation plus étroite que celle que nous avons actuellement. Puis j'ai réalisé."
 
-    "Pendant qu'elle prononçait tout cela, elle a déchiré sa robe nerveusement, ce qui l'a aidée à rester calme. Mais son calme s'est brisé dès que ses yeux ont rencontré les tiens."
+    "Pendant qu'elle prononçait tout cela, elle tirait à répétition sur son cardigan, le regard ailleurs, cherchant à se détendre."
+    "Cependant, elle croisa ton regard."
     "Son visage a commencé à rosir alors elle s'est retournée, rompant le contact visuel avec toi, te rendant incapable d'observer encore les traits de son visage." 
-    "Votre regard perçant a provoqué sa gêne et elle s'est retournée pour empêcher votre regard de l'atteindre."
     "Ammon, à ce moment-là, était totalement alerte, écoutant ses moindres mots, ses moindres sons sortant de sa bouche, ses moindres mouvements de doigts, ses moindres tics d'anxiété."
     "Tu avais dû exercer une pression trop forte sur elle car elle a crié la phrase suivante"
 
     mj "Arrête de me fixer ! !! Tu me rends anxieuse. Très bien ! Ce que je veux dire, c'est que..."
-    mj "Je ne peux plus continuer comme ça. Il faut que je sache. Je suis sûr que, si je n'ai pas la réponse que je souhaite, nous pourrons revenir en arrière sur la façon dont les choses se sont passées."
+    mj "Je ne peux plus continuer comme ça. Il faut que je sache. Je suis sûr que, si je n'ai pas la réponse que je souhaite, nous pourrons revenir en arrière."
     mj "Alors... je voulais savoir, si ces sentiments sont réciproques et si tu veux explorer et comprendre ces sentiments avec moi, alors j'en serais très heureux.... Ce que je veux vraiment dire c'est :-"
 
-    "Elle serra fort sa robe, ne voulant pas lâcher son seul dernier soutien. Ammon et toi étiez tous deux suspendus à ses lèvres en attendant ses prochains mots."
+    "Elle serra fort son cardigan, ne voulant pas lâcher son seul dernier soutien. Ammon et toi étiez tous deux suspendus à ses lèvres en attendant ses prochains mots."
 
-    mj ".... Veux-tu être mon petit ami... ?"
+    mj ".... Veux-tu sortir avec moi... ?"
 
-    am " QUOI ? "
+    am "QUOI ?"
+
+    # J’ai envie de vomir chaque fois que je lis ça
 
     "Ammon n'a pas pu rester en place et s'est levé de sa chaise sous le choc, la mâchoire pendante. Après son interjection, il est resté silencieux, incapable d'en dire plus."
     "À ce moment-là, un déclic s'est produit en toi. Tous tes proches n'ont pas cessé de te répéter que Marie-Jil et toi feriez un couple formidable." 
-    "Tu n'y as jamais pensé, c'était ton amie la plus proche, pas une amante."
-    "Mais maintenant que Marie-Jil le pensait aussi, tu as réfléchi. Comme tu es bête de ne pas y avoir pensé !" 
+    "Tu n'y avais jamais pensé, c'était ton amie la plus proche, pas une amante."
+    "Mais maintenant que Marie-Jil le pensait aussi, tu y réfléchis. Comme tu es bête de ne pas y avoir pensé !" 
     "C'est tout à fait naturel et logique que vous finissiez ensemble. Vous êtes un garçon et une fille et vous êtes si proches l'un de l'autre. Bien sûr que ça doit être le cas"
-    "Une fois que l'épiphanie t'a traversé la tête, tu as su ce qu'il fallait faire" 
+    "Une fois que l'épiphanie t'a traversé la tête, tu savais ce qu'il fallait faire" 
     "Marie-Jil est une personne tellement géniale, elle est intelligente, elle est créative que tu veux être avec elle toute ta vie ; et si être un couple signifiait cela, alors tu serais de tout cœur d'accord."
-    "Tu t'élances vers elle et tu la prends dans tes bras, dans une étreinte amoureuse qui ne peut signifier qu'une seule chose, et qu'une seule réponse possible, mais tu ne peux pas t'empêcher de la dire à voix haute."
+    "Tu t'élanças vers elle et tu la prends dans tes bras, dans une étreinte amoureuse qui ne peut signifier qu'une seule chose, et qu'une seule réponse possible, mais tu ne peux pas t'empêcher de la dire à voix haute."
 
     # scène phone_booth with dissolve
     hide canteen with dissolve
@@ -1304,9 +1309,9 @@ label phone_booth:
     # scène phone_booth with dissolve
     show canteen with dissolve
 
-    hl "J'ai dû prendre de ses nouvelles ce jour-là aussi... Il n'aurait pas dû manger autant."
+    hl "J'ai dû allé le voir ce jour-là aussi... Il n'aurait pas dû manger autant."
 
-    mj "En fait Howly... C'est moi qui suis allé le surveiller, je t'ai fait rester à table pour surveiller nos affaires."
+    mj "En fait Howly... C'est moi qui suis allé le voir, je t'ai fait rester à notre table pour surveiller nos affaires."
 
     "Un sentiment de gêne et d'inconfort émane des paroles de Marie-Jil comme l'ouverture de poupées matriochka. Elle a dû assister à son bain dans son vomi après tout. Tu ne voudrais pas être celle qui a dû y aller ce jour-là."
     
@@ -1320,31 +1325,30 @@ label phone_booth:
 
     hl "Non, rien de tel, heureusement."
 
-    "Le silence emplit l'air. Marie-Jil te renvoie un rire dubitatif, avec de multiples couches de sarcasme, de suspicion et de réserve. Elle était, faute de mieux, capable de voir clair en toi."
+    "Le silence emplit l'air. Marie-Jil te renvoie un rire."
 
-    mj "Bien sûr Howl."
-    mj "Quelque chose qui vaille la peine de me parler de lui ?"
+    # mj "Bien sûr Howl."
+    # mj "Quelque chose qui vaille la peine de me parler de lui ?"
     
-    menu:
-        "Rien de spécial" :
-            hl "Je veux dire qu'on a juste roulé sur la route. Rien de vraiment excitant."
-            mj "Tu es sûr ? Rien avec Ammon ? Tu ne dis pas qu'il ne s'est rien passé de spécial lorsque tu as voyagé avec LE Ammon ?"
-            "Tu fais une pause."
-            hl "{cps=3}...{/cps} Non, je ne me souviens de rien de spécial ni de précis."
-            mj "{cps=3}...{/cps} Tu ne te souviens pas..."
-        "Ammon est un con" if radio_on :
-            hl "Ammon est un connard"
-            mj "Qu'est-ce qu'il a fait déjà ?"
-            hl "Eh bien je commençais à avoir mal à la tête à cause de sa musique. Alors je lui ai demandé d'éteindre la radio. Il m'a demandé pourquoi."
-            mj "Qu'est-ce que tu as répondu alors ?"
-            hl "Que je n'aimais pas la musique, je n'avais pas envie de lui dire que ça me gênait alors j'ai dit ça."
-            mj "Eh bien je me suis dit . Tu aurais dû lui dire que tu avais mal à la tête, il aurait compris."
+    # menu:
+    #     "Rien de spécial" :
+    #         mj "Tu es sûr ? Rien avec Ammon ? Tu ne dis pas qu'il ne s'est rien passé de spécial lorsque tu as voyagé avec LE Ammon ?"
+    #         "Tu fais une pause."
+    #         hl "{cps=3}...{/cps} Non, je ne me souviens de rien de spécial."
+    #         mj "{cps=3}...{/cps} Tu ne te souviens pas..."
+    #     "Ammon est un con" if radio_on :
+    #         hl "Ammon est un connard"
+    #         mj "Qu'est-ce qu'il a fait déjà ?"
+    #         hl "Eh bien je commençais à avoir mal à la tête à cause de sa musique. Alors je lui ai demandé d'éteindre la radio. Il m'a demandé pourquoi."
+    #         mj "Qu'est-ce que tu as répondu alors ?"
+    #         hl "Que je n'aimais pas la musique, je n'avais pas envie de lui dire que ça me gênait alors j'ai dit ça."
+    #         mj "Eh bien je me suis dit . Tu aurais dû lui dire que tu avais mal à la tête, il aurait compris."
 
-            "C'est trop tard pour arranger les choses, ne t'embête pas avec ça"
+    #         "C'est trop tard pour arranger les choses, ne t'embête pas avec ça"
 
-            mj "Ne me dis pas que tu as oublié à quel point il pouvait être têtu sur ses préférences ?"
-            hl "Peut-être que oui."
-            mj "Tu ne t'en souviens pas, hein ?"
+    #         mj "Ne me dis pas que tu as oublié à quel point il pouvait être têtu sur ses préférences ?"
+    #         hl "Peut-être que oui."
+    #         mj "Tu ne t'en souviens pas, hein ?"
     
     mj "Enfin bref, je voulais te parler de quelque chose qui me tracassait ces derniers temps..."
 
@@ -1363,7 +1367,7 @@ label phone_booth:
 
     mj "Ça va ?"
 
-    hl "Qu'est-ce que tu veux dire ? Vous me rendez confus."
+    hl "Qu'est-ce que tu veux dire ?"
 
     mj "Avec ton voyage, as-tu pu repenser, éclaircir tes idées, réfléchir à ce qui s'est passé récemment."
 
@@ -1395,21 +1399,21 @@ label phone_booth:
     "Tu te tais."
 
     mj "Howell ! réponds-moi s'il te plaît !" 
-    mj "Ta mère est morte d'inquiétude pour toi !"
-    mj "Alors s'il te plaît, aide-moi, Howell... S'il te plaît Howell, me laisseras-tu t'aider ? Veux-tu me dire ce qui s'est passé le mois dernier ?"
+    mj "Ta mère était morte d'inquiétude pour toi !"
+    mj "Alors s'il te plaît, aide-moi, Howell... S'il te plaît Howell, laisse moi t’aider. Veux-tu me dire ce qui s'est passé le mois dernier ?"
     
-    hl "Le... Mois ?"
+    hl "Le. mois.. Dernier ?"
     
-    "Tu as demandé confusément. Tout ce qu'elle dit, tu ne l'entends pas. Plus exactement, tu l'entends parfaitement mais tu refuses de l'entendre. La boîte noire ne doit jamais être ouverte et chaque tentative envoie une palpitation dans ton cerveau." 
+    "Tu as demandé confus. Tout ce qu'elle dit, tu ne l'entends pas. Plus exactement, tu l'entends parfaitement mais tu refuses de l'entendre. La boîte noire ne doit jamais être ouverte et chaque tentative envoie une palpitation dans ton cerveau." 
     "Tu as mal à la tête. Tu fulmines. S'il te plaît, arrête. S'il te plaît, arrête, tu n'en peux plus."
     
     menu:
         "L’arrêter" :
-            hl "S'il te plaît.... arrêter."
+            hl "S'il te plaît.... arrête."
             mj " ... Je ne m'arrêterai pas. J'en ai {w=1.0}assez. Je ne m'arrêterai pas tant que je n'aurai pas fini. " 
         
         " Essayer de changer de sujet " :
-            hl "On ne peut pas... parler d'autre chose ?"
+            hl "On ne peut pas... parler d'autres choses ?"
             mj "Non, on va pas faire ça ! J'en ai assez. Tu me laisses finir."
 
     
@@ -1501,9 +1505,9 @@ label phone_booth:
             jump you_dont_understand
     
     label you_dont_understand:
-            az "Je ne pense pas que tu comprennes ce qu’il se passe."
+            az "J’ai peur que tu comprennes pas ce qu’il se passe ici."
             
-            dk "Ce n'est pas toi qui décides ici"
+            dk "Ce n'est pas toi qui décides."
     
     "Tu regardes vers le bas. Tu tiens la boîte. Tu la laisses glisser. La boîte s'ouvre."
     "Tu contemples la colline. Il t'attendait. Tu as amené quelqu'un. Il est content."
@@ -1530,7 +1534,7 @@ label phone_booth:
 
     "Tu as aimé."
 
-    hl "NON, c’est faux."
+    hl "NON, c’est False."
     hl "Je n'ai pas aimé."
 
     "Si, tu as aimé"
@@ -1572,10 +1576,8 @@ label phone_booth:
     mj "Qu'est-ce que tu racontes ???"
     mj "Écoute moi !{nw}"
 
-    hl "{size=60}SELLE LA FUCK UP{/size}"
+    hl "{size=60}LA FERME{/size}{w=0.5}{nw}"
     stop music
-
-    pause 2.0
 
     play sound "audio/sounds/glass_breaking.ogg"
     ### TODO : Effet d'ivresse
@@ -1597,7 +1599,7 @@ label phone_booth:
     "La tête vide, un bruit blanc strident et perçant résonne dans tes oreilles. Tu es agrippé au sol et tu ne te relèveras plus."
     show phone_booth:
         ease 1 blur 32
-    "Lorsque ta vision ensanglantée se remet en place, et d’un œil mort, tu observes d'un œil mort le récepteur détruit en mille morceaux au sol{w}, tu en viens à te demander ce qui t'a guidé jusqu'ici." 
+    "Lorsque ta vision ensanglantée revient en place, d’un œil mort, tu observes d'un œil mort le récepteur détruit en mille morceaux au sol{w}, tu en viens à te demander ce qui t'a guidé jusqu'ici." 
     "Tu lèves tes mains à hauteur d’œil, le sang coulant le long de tes poignets." 
     "Que s'est-il passé pour que tu en viennes à les salir. {w}Que s’est–il passé{w}, le vendredi 13 septembre."
 
@@ -1625,9 +1627,9 @@ label rest_area_2:
     extend " mais le chien s'accroupit à hauteur de tes yeux. "
     "Le fait d'avoir son visage près du tien te met mal à l'aise mais tu ravales ta salive et tu le fixes en retour."
 
-    am "Tu n'as pas l'air bien. As-tu pu dormir ? Certainement pas."
+    am "T'as pas l'air bien."
     am "Je suis désolé d'avoir pris autant de temps. J'avais quelques affaires à régler. Je ne pensais pas que cela prendrait autant de temps."
-    am "Peut-être devrions-nous faire une pause plus longue. Va faire une sieste, d'accord ?"
+    am "Peut-être qu’on devrait faire une pause plus longue. Va faire une sieste, d'accord ?"
 
     "Tu repousses sa main d'un coup de poing."
 
@@ -1644,37 +1646,37 @@ label rest_area_2:
     
     "Il regarde la cabine téléphonique"
 
-    am "As-tu brisé la vitre ???"
+    am "T’as brisé la vitre ???"
 
-    hl "Non... je ne l'ai pas fait."
+    hl "Non... c’est pas moi..."
 
-    am e_smug pupilles "Dis-le avec moins d'enthousiasme la prochaine fois.{w} J'ai failli ne pas te croire."
-    am j_noway "Sérieusement. C'est quoi ce bordel ? ??"
+    am e_smug pupils "Dis-le avec moins d'enthousiasme la prochaine fois.{w} J'ai failli ne pas te croire."
+    am j_noway "Sérieusement. C'est quoi ce bordel ???"
 
-    hl "C'est vrai. De toute façon, je vais bien."
+    hl "Rien."
 
     show ammon front e_neutral j_disgusted
     "La bouche d'Ammon se tord. Il te lance son regard habituel."
 
-    am j_noway "Non tu ne vas pas bien."
-    am j_disgusted "Crois-moi, tu as une sale tête. Tu devrais au moins te reposer."
+    am j_noway "Non y’a pas rien. Tu vas pas bien !"
+    am j_disgusted "Crois-moi, tu as une sale tête. Tu devrais te reposer au moins."
 
-    "L'attention soudaine d'Ammon à ton égard te porte sur les nerfs. Il a été froid avec toi pendant tout le trajet. Pourquoi s'intéresser à toi maintenant ?"
+    "L'attention soudaine d'Ammon te met sur les nerfs. Il a été froid avec toi pendant tout le trajet. Pourquoi s'intéresser à toi maintenant ?"
 
-    hl "Ammon, je te jure que je vais bien."
+    hl "Ammon, je te jure qu’il y a rien."
 
-    "Tu te lèves. Prouvant un point à Ammon, tu as oublié ton état de faiblesse et ta nausée latente, le monde tourne progressivement autour de toi."
+    "Tu te lèves mais le monde tourne progressivement autour de toi."
 
-    ### TODO : Ivresse
+    ### TODO: Drunk mode 
 
-    "Le ciel crépusculaire, qui était vide jusqu'à présent, se remplit d'étoiles de toutes les couleurs, cela te rappelle les étranges artefacts de couleurs que l'on peut trouver sur les photographies de mauvaise qualité."
+    "Le ciel crépusculaire, qui était vide jusqu'à présent, se remplit d'étoiles de toutes les couleurs, cela te rappelle les étranges artefacts que l'on peut trouver sur les photographies de mauvaise qualité."
     "Un mal de tête soudain s'empare de ta tête comme un étau qui la resserre"
     show ammon e_noway j_disgusted
     "Ton estomac se met à trembler. Tes jambes tremblent et ne peuvent plus supporter ton poids. Elles lâchent."
 
     am j_noway "Howell !"
 
-    "Il te rattrape avant que tu ne touches le sol"
+    "Il te rattrape avant que tu ne heurtes le sol."
 
     am "Je t'ai dit que tu n'allais pas bien. Ne fais pas ce genre de choses sur moi, d'accord ?"
 
@@ -1707,16 +1709,16 @@ label rest_area_2:
 
     hide ammon with dissolve
 
-    "Ammon se lève et se dirige vers le coffre supérieur de la moto"
-    "Encore nauséeux, tu ne peux pas faire grand-chose de plus que de t'asseoir et de regarder."
-    "Il ouvre le top-box et récupère son sac de voyage. Il est de taille moyenne, assez grand pour un voyage de trois jours."
+    "Ammon se lève et se dirige vers le coffre de la moto"
+    "Encore nauséeux, tu ne peux pas faire grand-chose de plus que de rester assis et que de regarder."
+    "Il ouvre le petit coffre et récupère son sac de voyage. Il est de taille moyenne, assez grand pour un voyage de trois jours."
     "Cependant, tu ne peux pas ne pas remarquer quelque chose de familier avec l'une de ses affaires."
     "Quelque chose de cylindrique, quelque chose de bleu."
     "Enfin, Ammon sort de son sac une boîte de médicaments et de pansements et te la donne"
 
     hide ammon at american_shot with dissolve
 
-    am "Tiens, with ça, ta tête te fera un peu moins mal qu'avant."
+    am "Tiens, avec ça, ta tête te fera un peu moins mal qu'avant."
 
     hl "Merci."
 
@@ -1736,7 +1738,7 @@ label rest_area_2:
 
     am "Je viens de me rappeler que je n'ai pas d'eau. Il y a des robinets dans les toilettes, laisse-moi te..."
 
-    hl "C'est bon tu en as déjà fait assez pour moi"
+    hl "C'est bon tu en as déjà fait assez pour moi."
 
     "Tu avales l'aspirine d'un seul coup"
 
@@ -1746,42 +1748,40 @@ label rest_area_2:
     hl "J'ai l'habitude de les prendre sans eau..."
 
     am "Huh je vois... C'est super. Pas besoin d'aller aux toilettes alors"
-    am "Eh bien prenez votre temps alors... Nous partirons quand vous serez prêts."
+    am "Eh bien prends ton temps alors... on partira quand tu seras prêt."
 
     "La discussion retombe dans le silence. De toute façon, tu es trop fatiguée pour la faire vivre."
     "Tu essaies de te reposer un peu, mais petit à petit, quelque chose commence à te gêner."
-    "Tu as déjà vu cette chose qu'Ammon avait dans son sac"
+    "Tu as déjà vu cette chose qu'Ammon avait dans son sac."
     "Ça ne devrait pas attirer ton attention comme ça. Après tout, ce n'est que son sac. Néanmoins..."
     "Tu te mords la lèvre. Plus tu regardes, plus ça n'a pas de sens. Ton monde tourne, non, se déforme autour de lui."
     "Il t'hypnotise. Tu es attiré par lui. Tu ne peux plus perdre le sac de vue. Le papillon de nuit qui est en toi doit suivre cette luciole."
 
-    "Il faut que tu vérifies ce sac"
+    "Il faut que tu vérifies ce sac."
     camera at zpos_camera
-    "Encore passablement étourdi, tu parviens à te lever. Tu dois te servir du vélo comme d'un support. Il ne faut pas trop se pousser."
+    "Encore passablement étourdi, tu parviens à te lever. Tu dois te servir de la moto comme support."
     "Mais tu te lèves quand même."
 
     hl "Hé tu sais quoi ? J'ai soif. Je crois qu'il me reste un peu d'eau dans mon sac."
 
-    am "Tu es sûre, tu ne veux pas que j'aille te la chercher. Tu n'as pas l'air de pouvoir tenir debout dans ton état."
+    am "Tu es sûr, tu ne veux pas que j'aille te la chercher ? Tu n'as pas l'air de pouvoir tenir debout dans ton état."
 
     hl "Je me sens mieux maintenant. Je me sentirai encore mieux quand je boirai de l'eau, n'est-ce pas ?"
 
-    am "Bien sûr..."
+    am "Oui, sûrement..."
 
-    hl "Regarde, je peux me tenir debout ! Je suis un grand garçon, n'est-ce pas ?"
+    hl "Regarde, je peux me tenir debout ! Je suis un grand garçon, non ?"
 
     show ammon j_disgusted
 
     "Ammon te regarde, sans être amusé. Tes tentatives pour le taquiner tombent dans l'oreille d'un sourd. Tu roules les yeux."
-    "Tu soupires et tu te pinces l'arête entre les deux yeux."
+    "Tu soupires et tu te pinces l'arête entre les yeux."
 
     hl "Ok, je vais chercher l'eau."
 
-    am "D'accord."
+    am "... {w} va."
 
     label restarea_pointnclick_start:
-        "Ammon te hide certainement quelque chose"
-        "Ton intérêt n'a fait que grandir"
         python :
             ammon_talked = 0
             current_screen = "restarea"
@@ -1790,8 +1790,8 @@ label rest_area_2:
             code_cadenas = [6, 1, 5, 3]
             cadenas_vérifié = 0 
             
-            got_stick = Faux
-            got_notebook = Faux
+            got_stick = False
+            got_notebook = False
             good_code = ""
 
         
@@ -1818,7 +1818,7 @@ label confront_him:
 
     # current_screen = "" 
     stop music fadeout 1.5
-    am "Puis-je vous aider ?"
+    am "Je peux t’aider ?"
 
     
     show parkingLot :
@@ -1836,7 +1836,7 @@ label confront_him:
     
     
     play music "audio/music/anger.mp3" loop fadein 0.5
-    "Il y a un chien en colère"
+    "Un chien en colère se tient là"
     camera:
         perspective False 
         xpos 0
@@ -1844,7 +1844,7 @@ label confront_him:
     scene black
     show parking
     show ammon at american_shot
-    am "Puis-je savoir ce que vous faites avec mon sac ?"
+    am "Puis-je savoir ce que tu fais avec mon sac ?"
 
     "Tu trembles de peur. Pourquoi fallait-il qu'il te voie faire cela. Si seulement tu pouvais voler très loin d'ici."
 
@@ -1861,13 +1861,16 @@ label confront_him:
     am j_yell "Tu l'as juste pris ? ?? Le cadenas a disparu comme ça ? C'est ce que tu vas me dire ?"
     am j_disgusted "Parce que si c'est le cas, ne me montre plus ta tête de merde."
     am j_growl "Tu as craqué le cadenas, putain, connard"
-    am "Je suis content que tu te souviennes de mon anniversaire maintenant, salaud. J'espère que ça t'a aidé à déchiffrer le code."
-    am "J'aurais préféré que tu t'en souviennes il y a un putain de mois ? ??? Tu ne crois pas ? !"
-    am "Pourquoi as-tu fait ça ? Tu ne peux pas me faire confiance à ce point ?"
-    am "Tu m'as énervé suffisamment de fois pour que tu puisses éventuellement{w} et même là, j'ai tout essayé pour te mettre à l'aise, même te réconforter quand tu râlais et que tu faisais un de tes trop nombreux caprices."
+    am "J’imagine que c’était vraiment compliqué de trouver le code, hein ?"
+    am "Bah oui, c’était la date de mon anniversaire. Bien trouvé, Sherlock."
+    # am "Je suis content que tu te souviennes de mon anniversaire maintenant. J'espère que ça t'a aidé à déchiffrer le code."
+    am "J'aurais préféré que tu le devines il y a un putain de mois ??? Tu ne crois pas ?!"
+    am "Au lieu de te perdre dans le bois comme un sale con."
+    am "Même, pourquoi t’as fait ça ? Tu me fais pas confiance à ce point ?"
+    am "Tu m’as fait chier plus fois qu’il n’en est possible{w} et même là, j'ai tout essayé pour te mettre à l'aise, même te réconforter quand tu râlais et que tu faisais un de tes trop nombreux caprices."
     am pupils_down j_disgusted "Je t'ai mis un bandage..."
-    am pupilles "J'ai accompagné ton comportement hystérique toute la journée"
-    am j_yell "Et c'est comme ça que tu me remercies en retour ? ? En fouillant dans mes affaires ??"
+    am pupils "J'ai accompagné ton comportement hystérique toute la journée."
+    am j_yell "Et c'est comme ça que tu me remercies en retour ?? En fouillant dans mes affaires ??"
 
     show ammon j_growl
 
@@ -1884,32 +1887,32 @@ label confront_him:
     "Les larmes coulent sur tes joues."
     "Vous resserrez le [picked_from_the_bag]. C'est le dernier point d'ancrage de votre relation. La dernière chose qui tient debout pour vous deux."
 
-    az "Accroche-toi à elle."
+    az "Accroches–y toi."
 
-    dk "Ne le lâche pas."
+    dk "Quoi qu’il arrive, ne la lâche pas."
 
     am j_growl "J'ai tout essayé, je le jure, Howl. J'ai tout essayé pour que tu puisses arrêter de broyer du noir."
     am "J'ai été là pour toi, à chaque fois que tu as eu des moments difficiles."
     am "Et putain, avec toi, c'est tout le temps, c'est comme si je m'occupais d'un bébé, pas d'un adulte !"
-    am "Avec Marie-Jil, on pourrait aussi bien être tes parents de substitution, avec la façon dont tu la laisses te garder."
+    am "Avec Marie-Jil, on pourrait aussi bien être tes parents, avec la façon dont tu la laisses te garder."
     am "Vous êtes censés être un couple, tu te souviens ? Ce n'est pas ta mère !"
     am "Alors pour une fois, fais-toi pousser une paire et arrête de te morfondre."
-    am "Tu ne la regardes même pas. Elle n'est pas heureuse avec toi et ne le sera jamais."
-    am "Avec toi dans les parages, nous ne le serons jamais tous les deux ! Espèce de vide d'énergie vitale."
+    am "Tu ne fais même pas attention à elle. Elle n'est pas heureuse avec toi et ne le sera jamais."
+    am "Avec toi dans les parages, nous ne le serons jamais tous les deux !"
 
     "Le déluge de critiques et de reproches te submerge. Tu as envie de rétorquer, de lui faire fermer la bouche."
     "Mais tu ne trouves rien à dire. Parce que..."
     "Il a raison, n'est-ce pas ?"
 
-    am "Tu sais quoi ? Tu n'aurais jamais dû revenir, alors."
+    am "Tu sais quoi ? Tu n'aurais jamais dû revenir."
 
     hl "... Quoi ?"
 
     am "Tu n'aurais pas dû revenir de ces bois."
-    am j_yell "Je ne peux plus te supporter. Tu m'entraînes vers le bas. Tu es enivrante ! !!"
+    am j_yell "Je ne peux plus te supporter. Tu m'entraînes vers le bas. Tu m’empoisonnes !!!"
     am j_growl "Chaque fois que tu es là, ma vie est un putain de cauchemar."
-    am right e_smug j_disgusted "Pourquoi es-tu revenu ? Je ne comprends pas pourquoi."
-    am pupils_right "Pourquoi toi et pas lui ? ?"
+    am right e_smug j_disgusted "Pourquoi t’es revenu ? Je ne comprends pas."
+    am pupils_right "Pourquoi toi et pas lui ??"
 
     show ammon pupils_down
     
@@ -1917,23 +1920,22 @@ label confront_him:
 
     am pupils "... Je ne peux pas m'empêcher de penser que la vie est tout simplement injuste quand je te regarde."
 
-    " Tu claudiques dans ton pantalon. Tu ne peux que marmonner ces mots."
+    "Tu claudiques dans ton pantalon. Tu ne peux que marmonner ces mots."
 
     hl "Pourquoi... pourquoi tu dis ça ?..."
     hl "Qu'est-ce que j'ai fait pour mériter ça ?..."
 
-    am front e_neutral "Je ne prendrai même pas la peine de te répondre. Cela n'en vaut même pas la peine."
-    am j_growl "Tu ne le mérites pas. Tu es insupportable."
+    am front e_neutral "Je ne prendrai même pas la peine de te répondre. C’en vaut même pas la peine."
+    am j_growl "Tu ne le mérites pas."
 
-    am j_noway "Mais je vais te dire une chose. Pourquoi n'es-tu pas venu pour mon anniversaire ?"
+    am j_noway "Mais je vais te dire une chose. Pourquoi t’es pas venu pour mon anniversaire ?"
 
     hl "..."
 
     am j_growl "Je t'attendais. Je ne pouvais pas attendre une seconde de plus. Pour ce jour, je ne souhaitais qu'une chose, une seule chose !"
     am "Que tu sois là. Avec moi. C'était mon seul souhait."
-    am "Je voulais te donner une dernière chance..."
 
-    hl "Mais tu sais que je n'aurais pas pu, ce jour..."
+    hl "Mais tu sais que je n'aurais pas pu, ce jour... Je me souviens de rien"
     hl "Ce n'est pas ma faute... Ce n'est pas juste..."
 
     am "..."
@@ -1941,8 +1943,8 @@ label confront_him:
 
     hl "huh-"
 
-    am "Tu es allé dans la forêt tout seul, n'est-ce pas ?"
-    am " Eh bien, pas toute seule, n'est-ce pas ? "
+    am "Tu es allé dans la forêt tout seul."
+    am "Enfin, pas tout seul, dis–moi ? "
 
     hl "Ce n'est pas vrai, c'est juste que je ne me souviens pas..."
 
@@ -1954,13 +1956,13 @@ label confront_him:
     am "Mais tu aurais dû rester mort. À l'époque. Dans les bois. Là où je n'aurais plus eu à regarder ta triste excuse pathétique de visage."
     am "Non..."
     am "Tu sais quoi ? Tu es déjà mort pour moi."
-    am j_yell "Scram."
+    am j_yell "Casse–toi."
 
     am j_growl "Non, attends. Rends-moi mes affaires et tu t'en iras."
     am "Je ne veux plus que tu me voies. Je ne veux plus te voir..."
     am "S'il te plaît, pars..."
 
-    "Ammon se retourne vers le vélo."
+    "Ammon se retourne vers la moto."
     
     hl "Attends ! S'il te plaît !..."
 
@@ -1973,7 +1975,7 @@ label confront_him:
 
     "Ammon se fige sur place. Il ne dit pas un mot pendant un temps angoissant."
 
-    am "... J'en ai marre de toi."
+    am "... Qu’est–ce que je veux que tu fasses."
 
     "Il fait demi-tour."
 
@@ -1983,21 +1985,21 @@ label confront_him:
 
     ### TODO : Ajoute une expression où il a les yeux exorbités.
 
-    am j_yell "Rends-moi ce que tu m'as volé"
+    am j_yell "Rends-moi ce que tu m'as volé."
 
     hide ammon with dissolve
     "Tout à coup, Ammon charge."
 
     "Ammon attrape le [picked_from_the_bag] mais l'enjeu est trop important pour le laisser partir alors tu lui serres la main"
     "Tu luttes pour ta vie afin de récupérer le [picked_from_the_bag]. C'est ta dernière chance d'arranger les choses alors tu le griffes, tu le siffles et tu le mords même."
-    "D'un autre côté, Ammon ne veut pas lâcher prise non plus. Il t'aboie dessus, secoue la tête dans tous les sens. Il te glisse entre les doigts plus tu tires sur ce [picked_from_the_bag]."
+    "D'un autre côté, Ammon ne veut pas lâcher prise non plus. Il t'aboie dessus, secoue la tête dans tous les sens. Plus tu tires sur ce [picked_from_the_bag], plus il te glisse entre les doigts."
     
     hl "S'il te plaît Ammon !!! Fais-moi confiance !!!"
     hl "S'il te plaît, crois-moi ! S'il te plaît, que quelqu'un me croie pour une fois !"
     hl "J'en ai marre de me répéter !"
     hl "S'il te plaît, crois-moi !"
 
-    "Tu tends ta main vers lui, vers son épaule. Il comprendra peut-être que tu puisses t'agripper à lui."
+    "Tu tends ta main vers lui, vers son épaule. Il te comprendra peut-être si tu t'agrippes à lui."
 
     am "{size=60}CASSE–TOI{/size}"
 
@@ -2014,7 +2016,7 @@ label confront_him:
 
     am "PUTAIN, désolé, je n'ai pas fait exprès ! Laisse-moi t'aider..."
 
-    hl "{size=60}TU FUCKING BASTARD{/size}"
+    hl "{size=60}JE TE DÉTESTE{/size}"
 
     show parkingLot with sshake
 
@@ -2033,12 +2035,12 @@ label confront_him:
         easeout 1.5 alpha 0.7
 
     "Tout ce dont tu te souviens, c'est d'Ammon allongé dans l'herbe, sans défense, son visage se contorsionnant de douleur. Il est à bout de souffle, implorant de l'air."
-    "Toi, de ton côté, tu es assis sur lui, à califourchon. Tu observes sa ceinture défaite et tu peux voir le bout de son caleçon à travers sa braguette."
+    "Toi, de ton côté, tu es assis sur lui, à califourchon."
     "Tu déglutis."
     if azzy_score >= 2 :
         az "Pourquoi ça maintenant..."
-    "Malheureusement, plus tu montes dans son corps, plus tu souhaites rester en bas."
-    "Son T–shirt ébouriffée et déchirée et sa veste noire sale n'étaient pas différentes, mais ce qui te dérangeait, c’étaient tes bras qui comprimaient sa poitrine."
+    "Malheureusement, plus ta vue monte dans son corps, plus elle souhaites rester en bas."
+    "Son t–shirt ébouriffée et déchirée et sa veste noire sale n'étaient pas différentes, mais ce qui te dérangeait, c’étaient tes bras qui comprimaient sa poitrine."
     "Ça doit lui faire mal, alors tu devrais arrêter, mais tes bras continuent à appuyer et ses cris de douleur remplissent tes oreilles. Mais tu continues à appuyer, peu importe à quel point il gémit."
     "Plus troublant encore, Ammon frappe tes bras de toutes ses forces mais cela se révèle en vain, tes bras plantés là comme des statues, inamovibles, quoi qu'il puisse arriver."
     "Malgré sa détermination et sa férocité, les poings se sont progressivement affaiblis jusqu'à ce que le vent te frappe aussi fort que lui."
@@ -2052,11 +2054,12 @@ label confront_him:
     "Tout à coup, tu sens un contact affectueux sur ton bras. Le molosse mourant partage un regard avec toi alors que ses dernières étincelles de vie sortent de ses yeux tristes."
     "Près de la mort, il dit :"
 
-    am "S'il vous plaît, arrêtez."
+    am "S'il te plaît, arrêtez."
 
     "Tu réussis à entendre des mots du son grave et rauque qui sort de sa gorge"
     
     am "Je te crois, je te crois, d'a–accord ? Tu es mon ami et je ne te quitte–erai pas, ok ?"
+    am "Je ne pensais pas ce que je disais. J’étais juste énervé."
     am "Je sais que tu vis des moments difficiles, alors je ne te tiendrai pas compte de ce que tu me fais là, je te le promets."
     
     "Sa poigne faiblit, toutes les couleurs se vident de son visage. Sa gorge avant, se contractant et bougeant, devient de plus en plus inerte."
@@ -2066,8 +2069,6 @@ label confront_him:
     "Il te sourit, des larmes coulent au coin de ses lèvres"
     am "Je ne veux jamais te quitter."
     "Il tousse et de la bave coule sur tes mains. Tu ne bouges pas."
-    am "Je t'ai dit toutes ces choses horribles, mais je ne les ai jamais pensées."
-    am "Tu es l'une de mes personnes préférées"
     am "Alors... je sais que ce n'est pas toi alors arrête de faire ça, je t'en supplie"
     am "Retire tes mains... S'il te plaît."
 

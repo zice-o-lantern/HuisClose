@@ -97,6 +97,9 @@ style frame:
 
 screen say(who, what):
     style_prefix "say"
+    
+    if not renpy.variant("small"):
+        add SideImage() xalign 0.0 yalign 1.0
 
     window:
         id "window"
@@ -113,8 +116,6 @@ screen say(who, what):
 
     ## If there's a side image, display it above the text. Do not display on the
     ## phone variant - there's no room.
-    if not renpy.variant("small"):
-        add SideImage() xalign 0.0 yalign 1.0
 
 
 ## Make the namebox available for styling through the Character object.
@@ -244,6 +245,7 @@ screen quick_menu():
     if quick_menu:
 
         hbox:
+            spacing 20
             style_prefix "quick"
 
             xalign 0.5
@@ -320,7 +322,7 @@ screen navigation():
 
             textbutton _("Finir Replay") action EndReplay(confirm=True)
 
-        elif not main_menu:
+        # elif not main_menu:
 
             textbutton _("Menu Prinicipal") action MainMenu()
 
