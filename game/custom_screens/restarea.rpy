@@ -4,22 +4,16 @@ style bottom:
 
 screen restarea(screen_active=True):
     tag restarea
-    layer "farback"
-
-    on "show" action [SetVariable("current_screen", "restarea"), Show("restarea_butt")]
-    on "show" action [SetVariable("current_screen", "restarea"), Show("restarea_butt")]
-    on "hide" action Hide("restarea_butt")
-
-    add 'parking' at zpos_bg
-
-screen restarea_butt(screen_active=True):
     layer "front"
+
+    on "show" action [SetVariable("current_screen", "restarea")]
+    
     imagebutton:
         pos (300, 400)
         anchor (.5, .5)
         idle 'ammon_pn'
         hover 'ammon_pn_hovered'
-        action Call("restarea_ammon")
+        action [Call("restarea_ammon")]
         sensitive screen_active
 
         at custom_zoom
@@ -31,15 +25,14 @@ screen restarea_butt(screen_active=True):
         idle 'trunk'
         hover 'trunk_hovered'
         action Call("restarea_trunk")
-        sensitive button_available(screen_active)
+        sensitive screen_active
         
         at custom_zoom
 
 
 screen restareatrunk(screen_active=True):
     tag restarea
-
-    add 'trunkopen'
+    layer "back"
 
     on "show" action SetVariable("current_screen", "restareatrunk")
     on "replace" action SetVariable("current_screen", "restareatrunk")
@@ -51,30 +44,30 @@ screen restareatrunk(screen_active=True):
         idle 'ammon_bag'
         hover 'ammon_bag_hover'
         action Call("restarea_bag")
-        sensitive button_available(screen_active)
+        sensitive screen_active
     
-    if not got_stick:
+    if not any(item.image == "stick" for item in ga_inventory):
         imagebutton:
             pos (900, 700)
             anchor (.5, .5)
 
-            idle 'stick'
-            hover 'stick_hovered'
+            idle 'stick_idle'
+            hover 'stick_hover'
             action Call("restarea_stick")
-            sensitive button_available(screen_active)
+            sensitive screen_active
 
-    if not got_notebook:
+    if not any(item.image == "notebook" for item in ga_inventory):
         imagebutton:
             pos (1400, 800)
             anchor (.5, .5)
-            idle 'notebook'
-            hover 'notebook_hovered'
+            idle 'notebook_idle'
+            hover 'notebook_hover'
             action Call("restarea_notebook")
-            sensitive button_available(screen_active)
+            sensitive screen_active
             at custom_zoom
     
-    if button_available(screen_active):
-        imagebutton auto "backbutton_%s.png" action Show("restarea", _layer="master", transition=dissolve):
+    if screen_active:
+        imagebutton auto "gui/backbutton_%s.png" action Call("restarea_trans"):
             style 'bottom'
             at custom_zoom
 
@@ -83,15 +76,15 @@ transform start_code:
 
 init python:
     def check_code():
-        good_code = [1, 3, 0, 9]
         # nice_code = [6, 9, 6, 9]
+        basic_codes = ([0,0,0,0], [1,2,3,4], [5,6,7,8], [9,0,1,2])
         if padlock_code == good_code:
             renpy.jump("ammon_padlock_good_code")
         
         elif padlock_code == [6, 9, 6, 9]:
             renpy.jump("ammon_padlock_nice_code")
         
-        elif padlock_code == [0, 0, 0, 0] or padlock_code == [1, 2, 3, 4]:
+        elif any(padlock_code == basic_codes[i] for i in range(len(basic_codes) - 1)):
             renpy.jump("ammon_padlock_basic_code")
 
 
@@ -106,124 +99,143 @@ screen restarea_padlock(screen_active=True):
                 xalign 0.5
                 imagebutton auto "gui/padlock_leftbutton_%s.png" action [SetDict(padlock_code, i, (padlock_code[i] - 1) % 10), Function(check_code)]:
                     at c_zoom
-                    sensitive button_available(screen_active)
+                    sensitive screen_active
 
                 text str(padlock_code[i])
 
                 imagebutton auto "gui/padlock_rightbutton_%s.png" action [SetDict(padlock_code, i, (padlock_code[i] + 1) % 10), Function(check_code)]:
                     at c_zoom
-                    sensitive button_available(screen_active)
+                    sensitive screen_active
 
-    if button_available(screen_active):
-        imagebutton auto "backbutton_%s.png" action Return():
+    if screen_active:
+        imagebutton auto "gui/backbutton_%s.png" action Return():
             style 'bottom'
             at custom_zoom
 
+
+label restarea_trans:
+    call hide_customgui
+    with None
+    hide trunkopen onlayer back
+    show parking at zpos_bg onlayer farback
+    with dissolve
+    show screen restarea(screen_active=False) 
+    with dissolve
+    pause 0.1
+    return
 
 label ammon_padlock_good_code:
     show screen restarea_padlock(screen_active=False)
     
     play sound "audio/sounds/unlock.ogg"
 
-    "Finally you open the padlock. Time to rummage through his stuff then."
+    "Finalement, tu ouvres le cadenas. C'est le moment de fouiller dans ses affaires."
 
     hide screen restarea_padlock with dissolve
 
-    "You find some clothes, the usual cleaning hygiene stuff and an unusual amount of medicines of all kind and you think is his notebook?"
-    "You notice another thing. A blue flask. You’ve already seen this flask."
+    "Tu trouves quelques vêtements, les produits d'hygiène classiques et une quantité inhabituelle de médicaments en tout genre et tu penses que c'est son carnet ?."
+    "Tu remarques une autre chose. Une gourde bleue. Tu as déjà vu cette gourde."
 
-    az "The notebook looks interesting. You should take it."
-    az "Perhaps he writes his dirty secrets in it? Who knows."
+    az "Le carnet a l'air intéressant. Tu devrais le prendre."
+    az "Peut-être qu'il y écrit ses vilains secrets ? Qui sait ?"
 
-    dk "Watch out for the medicines! Maybe he is telling you everything. Maybe he is dangerous and he can hurt you."
+    dk "Attention aux médicaments ! Peut-être qu'il te dit tout. Peut-être qu'il est dangereux et qu'il peut te faire du mal."
 
     $ picked_from_the_bag = ""
 
     menu:
-        "Pick up the medicines":
-            $ picked_from_the_bag = "medicine"
-            "The medicine is what piqued your interest the most."
-            "You grab one of them, and sure, it is a antipyretic. Nothing out of the ordinary. Nowadays it is used to treat mild pain."
-            "You put it back. It still remains a lot of medicines you have to check out." 
-            "Just the fact that he has so many different types medications is concerning."
-            "Not everyone has a first aid kit available on them every second."
-            "Then you stumble one very interesting. You recognize the brand."
-            "You grab it and turn it in every direction in the case you were mistaken. You have already taken some."
-            "It’s an antidepressant."
-            hl "... What?"
+        "Saisir les médicaments" :
+            $ picked_from_the_bag = "médicament"
+            "Le médicament est ce qui a le plus piqué ton intérêt."
+            "Tu en attrapes un, et bien sûr, c'est un antipyrétique. Rien qui ne sorte de l'ordinaire. De nos jours, il est utilisé pour traiter les douleurs légères."
+            "Tu le remets à sa place. Il reste encore beaucoup de médicaments que tu dois vérifier." 
+            "Le simple fait qu'il ait autant de médicaments de types différents est inquiétant."
+            "Tout le monde n'a pas une trousse de premiers secours disponible sur soi à chaque seconde."
+            "Puis tu tombes sur un médicament très intéressant. Tu reconnais la marque."
+            "Tu l'attrapes et tu le tournes dans tous les sens au cas où tu te serais trompé. Tu en as déjà pris."
+            "C'est un antidépresseur."
+            hl "... Hein ?"
             jump confront_him
-        "Pick up the notebook":
-            $ picked_from_the_bag = "notebook"
-            "The notebook is what piqued your interest the most."
-            "You grab it, rotate a little in every direction."
-            "It doesn’t look young at all. Even it looks it has been around for ages. The worn—out leather of the cover presents a lot of cuts within it."
-            "Some chunks of it are gone. The book is barely holding together. You dare not move it around too much, in fear of it crumpling down."
-            "You look for some writing on the front or the back to know if there is any name or something that could indicate you the nature of the notebook."
-            "Although, no such luck."
-            "You decide to open the book. The inside is no better than the outside."
-            "The pages have turned a slight yellow, some page are torn–up, lots of illegible writings, scratchings everywhere. Truly a mess."
-            "In all of this you manage to decipher Ammon’s writing and you’re able to read some parts of it."
-            "A particular page catches your eye. You start to read it."
-            ###TODO:Maybe set it in nvl mode.
-            "\"Saturday, 14th September 1975\""
-            "\"Dear Diary,\""
-            "\"{cps=50}Today Howl ki{nw}\""
+        "Saisir le carnet" :
+            $ picked_from_the_bag = "carnet"
+            "Le carnet est ce qui a le plus piqué ton intérêt."
+            "Tu le saisis, tu tournes un peu dans tous les sens."
+            "Il n'a pas du tout l'air jeune. Même qu'il a l'air d'exister depuis des lustres. Le cuir usé de la couverture présente beaucoup de coupures en son sein."
+            "Il y a des morceaux qui ont disparu. Le livre tient à peine debout. Tu n'oses pas trop le déplacer, de peur qu'il ne se froisse."
+            "Tu cherches une écriture sur le recto ou le verso pour savoir s'il y a un nom ou quelque chose qui pourrait t'indiquer la nature du carnet."
+            "Bien que, pas de chance."
+            "Tu décides d'ouvrir le livre. L'intérieur n'est pas mieux que l'extérieur."
+            "Les pages sont devenues légèrement jaunes, certaines pages sont déchirées, beaucoup d'écritures illisibles, des griffures partout. Un vrai gâchis."
+            "Dans tout cela, tu parviens à déchiffrer l'écriture d'Ammon et tu es capable d'en lire certaines parties."
+            "Une page en particulier attire ton attention. Tu commences à la lire."
+            ###TODO:Peut-être le mettre en mode nvl.
+            "Samedi 14 septembre 1975"
+            "« Cher journal "
+            "{cps=50}Aujourd'hui, Howl m’a em{nw}"
 
             jump confront_him
-        "Pick up the flask":
-            $ picked_from_the_bag = "flask"
-            "You can’t look away from the flask."
-            "You cracked opened the bag for that after all."
-            "You carefully turn it around, still not able to believe what you have in front of your eyes."
-            "You struggle to remember where you have seen it. It itches in the back of your brain. It sets you uncomfortable. You can’t put it down anymore."
-            "You have to find where it comes from."
+        "Saisir la gourde" :
+            $ picked_from_the_bag = "gourde"
+            "Tu ne peux pas détourner le regard de la gourde."
+            "Tu as craqué le sac pour ça finalement."
+            "Tu le retournes avec précaution, n'arrivant toujours pas à croire ce que tu as devant les yeux."
+            "Tu as du mal à te souvenir de l'endroit où tu l'as vu. Cela te démange à l'arrière de ton cerveau. Il te met mal à l'aise. Tu ne peux plus le poser."
+            "Il faut que tu trouves d'où ça vient."
             show eye_lid
             show expression "#000" with blink_reverse
-            "So you take a deep breath, close your eyes and rub your temples. You should be able to remember, right?"
-            "You clear your mind. You need every inch of your energy. You concentrate on the itching. A centipede crawls around your skull."
-            "You breathe in slowly."
-            "You breathe out."
+            "Alors tu respires profondément, tu fermes les yeux et tu te frottes les tempes. Tu devrais pouvoir te souvenir, n'est-ce pas ?"
+            "Tu fais le vide dans ton esprit. Tu as besoin de toute ton énergie. Tu te concentres sur les démangeaisons. Un mille-pattes rampe dans ton crâne."
+            "Tu inspires lentement."
+            "Tu expires."
             stop music fadeout 1.0
-            "You are ready."
-            "You plunge your hand deep into your ear and you hit the cage of your brain. You wiggle your claws around, randomly. It’s squishy." 
-            "It’s more arduous than you thought. Although you’re more determined than that. It won’t be able to escape your grasp any longer."
-            "Finally, you grab one of its legs and you pull without a warning. But it won’t give out easily. It scratches every surfaces it can cling onto. It is desperate."
-            "The pain caused by it tore you down from the inside, it is similar to being opened in half and little by little, slowly, very slowly, disemboweled."
-            "You writhe out your suffering but you won’t give up. You have to remember."
-            "You extract the rampant from your ear and hold it still and keep it in your control. It convulses. You have to keep going."
-            "You wrap your fingers around the insect. You want to throw it onto the ground. Its thousand legs wiggles under your skin so much that your stomach begins to churn."
-            "But you hold still. You have to."
-            "Then you crush it. It doesn’t move anymore. You’ve succeeded."
-            "The before hot and squishy insides of the insect turns solid cold. You’re confused. You open your clutch."
-            "A beautiful cocoon sits there. You admire it. The centipede morphed."
-            "As you get closer of it, a ray of light beams in your eyes and you let it go, to hide your eyes of it."
-            "When you reopen them, a beautiful firefly illuminates the your world. You can’t move, mouth agape."
-            "And like that, the firefly gently lands."
+            "Tu es prêt."
+            "Tu plonges ta main profondément dans ton oreille et tu frappes la cage de ton cerveau. Tu agites tes griffes dans tous les sens, au hasard. C'est mou." 
+            "C'est plus ardu que tu ne le pensais. Même si tu es plus déterminé que cela. Il ne pourra plus échapper à ton emprise plus longtemps."
+            "Finalement, tu saisis l'une de ses pattes et tu tires sans sommation. Mais il ne cède pas facilement. Il gratte toutes les surfaces auxquelles il peut s'accrocher. Il est désespéré."
+            "La douleur qu'elle provoque te déchire de l'intérieur, c'est comme si on t'ouvrait en deux et que petit à petit, lentement, très lentement, on t'éventrait."
+            "Tu te tords de souffrance mais tu n'abandonnes pas. Tu dois te souvenir."
+            "Tu extrais le rampant de ton oreille, tu le tiens immobile et tu le gardes sous ton contrôle. Il se met à convulser. Tu dois continuer."
+            "Tu enroules tes doigts autour de l'insecte. Tu veux le jeter sur le sol. Ses mille pattes s'agitent sous ta peau à tel point que ton estomac commence à se retourner."
+            "Mais tu ne bouges pas. Il le faut."
+            "Alors tu l'écrases. Elle ne bouge plus. Tu as réussi."
+            "Les entrailles avant chaudes et moelleuses de l'insecte deviennent solidement froides. Tu es troublé. Tu rouvres ton emprise."
+            "Un magnifique cocon est posé là. Tu l'admires. Le mille-pattes s'est transformé."
             show eye_lid
             hide expression "#000" with blink_transition
             play music "audio/music/moment_orange.mp3" fadein 0.5
             hide eye_lid with dissolve
-            "Wait. You remember now."
-            "Why does Ammon have your Father’s flask."
+            "Attends, tu te souviens maintenant."
+            "Pourquoi Ammon a-t-il la fiole de ton père ?"
             jump confront_him
 
 label ammon_padlock_nice_code:
     show screen restarea_padlock(screen_active=False)
-    "Nice code."
-    "You would use it if this padlock belonged to you. You giggle like a six year–old, it is very funny indeed."
+    "Sympa le code ."
+    "Tu l'utiliserais si ce cadenas t'appartenait. Tu glousses comme un enfant de six ans, tu ne peux t’en empêcher."
 
-    az "That is very funny actually."
+    az "C'est très drôle en effet."
 
-    dk "Don’t listen to them.{w} Just keep looking."
+    dk "Ne l'écoute pas. Continue à chercher."
 
     jump restarea_padlock_loop_local
 
 label ammon_padlock_basic_code:
     show screen restarea_padlock(screen_active=False)
-    "Despite inputing the first code come to mind, the padlock doesn’t submit."
-    "Did you think that Ammon would be that basic? You are disappointed with yourself that you could think that he was able to do that."
-    "Well you should keep searching anyway."
-    "And stop inputting basic codes that anyone would crack. He’s smarter that that. That should be something important to him."
+
+    if being_basic == 0:
+        "Malgré la saisie du premier code qui te vient à l'esprit, le cadenas ne se soumet pas."
+        "Pensais-tu vraiment qu'Ammon serait aussi basique ? Tu es déçu de toi-même."
+        "Eh bien, tu devrais quand même continuer à chercher."
+        "Et arrêter d'entrer des codes basiques que n'importe qui pourrait craquer. Il est plus intelligent que ça. Cela devrait être quelque chose d'important pour lui."
+    elif being_basic == 1:
+        "..."
+        "Comme dit précédemment, {font=gui/fonts/ApercuBold.otf}Ammon est plus intelligent que ça.{/font}"
+        "Essaie autre chose."
+    elif being_basic >= 2:
+        "..."
+        "{font=gui/fonts/ApercuBold.otf}Arrête{/font}."
+    
+    $ being_basic += 1
 
     jump restarea_padlock_loop_local
 
@@ -234,236 +246,256 @@ transform c_zoom:
 
 
 label restarea_ammon:
-    $ renpy.show_screen(current_screen, _layer="master",screen_active=False)
-
-    show ammon at american_shot
+    $ persistent.parallax_on = False
+    show ammon at american_shot onlayer front
     with dissolve
 
-    am "Hi Howly. Do you need anything?"
-    am "Have you found what you want?   "
+    am "Salut Howly. T’as besoin de quelque chose ?"
+    am "T'as trouvé ce que tu voulais ?"
 
     if checked_padlock >= 1:
-        "You notice he has his wallet in his pants on his back pockets."
-        "You’re sure it has valuable information about the padlock code. Like his ID with his birthday on it."
-        "If you’re willing to steal his wallet..."
+        "Tu remarques qu'il a son portefeuille dans son pantalon sur ses poches arrière."
+        "Tu es sûr qu'il contient des informations précieuses sur le code du cadenas. Comme sa carte d'identité avec sa date d'anniversaire dessus."
+        "Si tu es prêt à voler son portefeuille..."
 
     menu:
-        "I want to talk about something with you":
-            am "What is it?"
+        "Je veux parler de quelque chose avec toi" :
+            am "Qu’y a–t–il ?"
 
             menu ammon_questions:
 
-                "Are you sure you don’t have any water?":
-                    hl "I’m thirsty."
+                "Tu es sûr que tu n'as pas d'eau ?":
+                    "Essayons de le faire ouvrir son sac."
 
-                    am "Yes I am sure."
+                    hl "J'ai soif et je n’arrive pas à trouver de l’eau.."
 
-                    hl "Not any tiney bitey one for me?"
+                    am "Oui, je suis sûr."
 
-                    am "No Howl, no matter how much you ask, the answer will stay the same."
-                    am e_disgusted "Do you want me to shake the deep bottom of my bag so you can see I’m not lying?"
+                    hl "Il n'y en a pas un tout petit pour moi ?"
 
-                    hl "No..."
+                    am "Non Howl, tu auras beau demander, la réponse restera la même."
+                    am e_disgusted " Tu veux que je secoue le fond de mon sac pour que tu voies bien que je ne mente pas ?"
 
-                    am e_neutral "So stop asking."
+                    hl "Non..."
 
-                    "He’s really acting weird. You need to get at the bottom of this."
+                    am e_neutral "Alors ne demande pas."
 
-                "What’s your favourite number" if checked_padlock >= 1:
-                    hl "Hey Ammon, do you have a favourite number?"
+                    "Raté."
+                    jump ammon_questions
 
-                    am e_disgusted "... What do you mean?"
+                "Quel est ton numéro préféré ?" if checked_padlock >= 1 :
+                    hl "Hé Ammon, tu as un numéro préféré ?"
 
-                    hl "Like a 4 digits number, you know like 4562? 6512? 2313? Those are cool numbers! Really cool numbers..."
+                    am e_disgusted "... Qu'est-ce que tu veux dire ?"
 
-                    am j_noway "Hum no? Why would I have a favourite 4 digits number? This is just stupid?"
+                    hl " Genre un numéro à 4 chiffres, tu sais comme 4562 ? 6512 ? 2313 ? Ce sont des nombres intéressants ! Des nombres vraiment intéressants..."
+
+                    am j_noway "Hum non ? Pourquoi j’aurais un numéro préféré à 4 chiffres ? C'est juste stupide ?"
 
                     show ammon j_neutral
 
-                    hl "I don’t know, I do have a favourite 5 digits number! So why not 4 digits?"
+                    hl "Je ne sais pas, j'ai un numéro préféré à 5 chiffres ! Alors pourquoi pas un numéro à 4 chiffres ?"
 
-                    am "... Which it is..?"
+                    am "... ce qui est... ?"
 
-                    hl "Huuuuuh, {cps=5}6... 8...{cps=2} 83.. 1"
+                    hl "Huuuuuh, {cps=5}6... 8...{cps=2} 83... 1"
 
-                    am right e_smug j_disgusted "Greaaaaaat...."
+                    am right e_smug j_disgusted "Bieeeeeeen...."
 
-                    hl "But I also have a favourite 2 digits number!"
+                    hl "Mais j'ai aussi un numéro préféré à 2 chiffres !"
 
-                    am j_noway "Yeah I know this one. You don’t have to tell me."
+                    am j_noway "Oui, je le connais celui-là. Tu n'as pas besoin de me le dire."
 
-                    az "But it’s so funny..."
+                    az "Mais c'est tellement drôle..."
 
-                    dk "Stop it."
+                    dk "Arrête."
 
                     hl "Oh ok..."
+                    jump ammon_questions
 
-                "When’s your birthday?" if checked_padlock >= 1:
-                    "What are you doing???"
+                " C'est quand ton anniversaire ? " if birthday and checked_padlock >= 1:
+                    $ birthday = False
+                    
+                    "Qu'est-ce que tu fais ???"
+                    "Quel genre d’ami ne connaîtrait pas sa date d’anniversaire ?"
 
-                    az "Sounds like someone wants to get beaten by Ammon"
-                    az "That’s exciting."
+                    dk "Ça peut arriver à tout le monde."
 
-                    dk "... Could you not do that?"
+                    az "On dirait que quelqu'un cherche à se faire démonter par Ammon"
+                    az "Pas que ça ne déplaise."
 
-                    "Anyway, you won’t say that."
+                    dk "... Tu ne pourrais pas faire ça ?"
+
+                    "De toute façon, tu ne diras pas ça."
+                    jump ammon_questions
                 
 
-                "Hand me your wallet" if checked_padlock >= 1:
+                "Donne-moi ton portefeuille" if checked_padlock >= 1:
 
                     am e_disgusted j_disgusted "{cps=3}...{/cps}"
                     show ammon j_noway
-                    extend " What?"
+                    extend "Quoi ?"
 
-                    hl "You know, the square thing you have in your back pocket?"
-                    hl "It can be used for storing money, cards, id–"
+                    hl "Tu sais, le truc carré que tu as dans ta poche arrière ?"
+                    hl "On peut y ranger de l'argent, des cartes, des papiers d'identité..."
 
-                    am e_neutral "I know what a wallet is."
-                    am e_neutral j_neutral "What’s bothering me is why you’re \"asking\" me my wallet."
-                    am "You have no use for my wallet."
+                    am e_neutral "Je sais ce qu'est un portefeuille."
+                    am e_neutral j_neutral "Ce qui me dérange, c'est pourquoi tu me demandes mon portefeuille."
+                    am "Tu n'as pas besoin de mon portefeuille."
 
-                    hl "It’s because you didn’t think hard enough."
+                    hl "C'est parce que tu n'as pas assez réfléchi à la question."
 
                     am e_disgusted "..."
-                    am "I’m going to ignore what you just said if that’s fine by you."
+                    am "Je vais ignorer ce que tu viens de dire si cela te convient."
+                    jump ammon_questions
+                "Non rien.":
+                    am "Bah casse toi alors"
+                
+                
 
         
-        "I’ve got to something for you." if ga_inventory != []:
+        "J’ai quelque chose pour toi." if ga_inventory != []:
 
-            am "What you got?"
+            am "Qu’est que tu as pour moi ?"
 
             label ammon_item_present:
                 $ evidence_needed = True
-                call screen inventory
+                # call screen inventory
                 
                 if selected_item.name == "Notebook":
 
-                    hl "Heeeeeeey, Ammmo"
+                    hl "Ammmon"
 
-                    "Ammon sighs. He sees what you got in your hands."
+                    "Ammon soupire. Il voit ce que tu as entre les mains."
 
-                    am "Is it your notebook. It’s true that you like drawing on your part time."
-                    am right "Why are you showing me this? I’ve already seen it."
+                    am "C'est ton carnet ?"
+                    am right "Pourquoi tu me montres ça ? Je l'ai déjà vu."
 
-                    hl "Yes I am aware... I feel like you can give me some advice on one of my sketches."
+                    hl "Oui je suis au courant... J'ai l'impression que tu peux me donner des conseils sur un de mes croquis."
 
-                    am "You don’t need my advice, you are already fine on your own."
+                    am "Tu n'as pas besoin de mes conseils, tu te débrouilles déjà très bien tout seul."
 
-                    hl "I don’t know "
+                    hl "Je ne sais pas..."
 
-                    am "Fiiiiine but this is the last time you’re showing it to me ok?"
+                    am "D’accoooord mais c'est la dernière fois que tu me le montres ok ?."
 
-                    hl "Ok!"
+                    hl "Ok."
 
                     show ammon front e_neutral j_neutral
 
-                    "You hand him the notebook and he opens it, grumpily, slogging through the pages."
-                    "You stick to him on his side to better appreciate your little sketches. You’re proud of your silly drawings. You hope him too."
-                    "From times to times, you point out some sketch reminding you some memories. Some you made at college. Some made at MJ’s. Some at Ammon’s, etc"
+                    "Tu lui tends le carnet et il l'ouvre, d'un air bougon, en parcourant les pages."
+                    "De temps en temps, tu pointes quelques croquis te rappelant certains souvenirs. Certains que tu as faits au collège. D'autres chez MJ. D'autres chez Ammon, etc"
                     show ammon pupils_down j_happy
-                    "Despite Ammon’s initial reservations, you see a big grin drawn on his illuminated face."
+                    "Malgré les premières réticences d'Ammon, tu vois un sourire se dessiner sur son visage."
                     
-                    am "Honestly I don’t even know why you’re asking me this, all of these are great."
+                    am "Honnêtement, je ne sais même pas pourquoi tu me demandes ça, ils sont tous bien."
                     if checked_padlock >= 1:
-                        "Meanwhile, you lean into him, trying to grab the wallet in his pocket."
-                        "The thing is you’re not really sneaky, discreet or anything."
-                        "So you just end up gluing your body onto his, creating a pretty embarrassing situation."
+                        "Pendant ce temps, tu te penches sur lui pour essayer d'attraper le portefeuille qui se trouve dans sa poche."
+                        "Le problème, c'est que tu n'es pas vraiment sournois, discret ou quoi que ce soit d'autre."
+                        "Alors tu finis par coller ton corps sur le sien, ce qui crée une situation assez embarrassante."
                         show ammon j_disgusted e_disgusted pupils
-                        "Ammon raises an eyebrow."
+                        "Ammon hausse un sourcil."
 
                         
-                        am "Um, what are you doing? Is there something wrong?"
+                        am "Hum, qu'est-ce que tu fais ? Il y a quelque chose qui ne va pas ?"
 
-                        hl "No– No! I just wanted to get a better look at it that’s all. It was hard to see from where I was."
+                        hl "Non- Non ! Je voulais juste mieux le voir, c'est tout. C'était difficile à voir de là où j'étais."
 
-                        am j_noway "Hum okay?"
+                        am j_noway "Hum ok ?"
 
                         show ammon j_neutral
 
-                        "You quickly retrieve your hand from his back. No need to make it more awkward."
+                        "Tu récupères rapidement ta main de son dos. Pas besoin de rendre la situation plus gênante."
 
-                        az "You should try to steal more often."
-                        dk "Do not encourage him."
+                        az "Tu devrais essayer de voler plus souvent."
+                        dk "Ne l'encourage pas."
                         
                     
                     show ammon right e_neutral j_neutral
-                    "Ammon closes the notebook and hands it back to you."
-                    am "Happy?"
+                    "Ammon referme le carnet et te le rend."
+                    am " Content ? "
 
-                    hl "Yes, great thank you!"
+                    hl "Oui..."
 
-                    am front "Well I’m happy than I was able to help."
+                    am front "Eh bien je suis content d'avoir pu t'aider."
 
                 elif selected_item.name == "Stick":
-                    hl "I have something for you, Ammon!"
+                    hl "J'ai quelque chose pour toi, Ammon !"
 
-                    am e_disgusted "... What?"
+                    am e_disgusted "... Quoi ?"
 
-                    hl "Quick, go fetch, good dog!"
+                    hl "Vite, va chercher, bon chien !"
 
-                    "You throw the stick in the grass behind him. Confused he turns his back to you."
-                    "You take the opportunity to slip your hand into his back pocket. You manage to grab onto it."
-                    "You quickly retrieve your hand with the wallet."
-                    ## TODO: Show item gettings
-                    "(You should examine the wallet in your inventory.)"
+                    "Tu lances le bâton dans l'herbe derrière lui. Confus, il te tourne le dos."
+                    "Tu en profites pour glisser ta main dans sa poche arrière. Tu réussis à l'attraper."
+                    "Tu récupères rapidement ta main avec le portefeuille."
+                    ## TODO : Show item gettings
+                    "(Tu devrais examiner le portefeuille dans ton inventaire.)"
                     $ ga_inventory.append(ammon_wallet)
 
-                    "After some time, Ammon faces you again even more confused."
+                    "Au bout d'un certain temps, Ammon te fait à nouveau face, encore plus confus."
 
-                    am "What was that about? What were you expecting me to do?"
+                    am " Mais qu’est–ce que c’était que ça ? Qu'est-ce que t'attendais de moi ?"
 
-                    hl "... Go fetch it?"
+                    hl "... que tu ailles le chercher ?"
 
-                    am e_neutral j_disgusted "... I’m going to politely ignore this."
+                    am e_neutral j_disgusted "... Je vais poliment ignorer ça."
                 
                 elif selected_item.name == "Ammon’s Wallet":
-                    "Wait!!!!! Don’t do that!!"
-                    "Are you a total moron? Put that back."
+                    "Attends !!!!! Ne fais pas ça !!!"
+                    "Tu es complètement débile ? Rengaine ça."
                 
                 else:
-                    "Nice."
-    hide ammon with dissolve
+                    "C'est bien."
+    hide ammon onlayer front with dissolve
     return
 
 label restarea_trunk:
-    $ renpy.show_screen("restareatrunk", _layer="master", screen_active=False)
-    $ renpy.transition(dissolve)
-    
+    call hide_customgui
+    with None
+    hide parking onlayer farback
+    show trunkopen onlayer back with dissolve
+    show screen restareatrunk(screen_active=False) with dissolve
+
     pause 0.5
     if not trunk_explored:
-        "I open the little trunk in the back of the motorcycle."
-        "It was so crammed that I was a bit surprised that we managed to fit everything in that much of a place."
-        "Discouraged by this sight, I slump my shoulders——I will never find that water stick "
+        "Tu ouvres le petit coffre à l'arrière de la moto."
+        "C'était tellement bourré que t'as été un peu surpris que tu aies réussi à tout faire tenir dans un tel espace."
+        "Découragé par cette vue, tu avachis tes épaules - tu ne trouveras jamais l'eau."
         $ trunk_explored = True
     return
     
 label restarea_bag:
-    $ renpy.show_screen(current_screen, _layer="master", screen_active=False)
+    $ persistent.parallax_on = False
+    # $ renpy.show_screen(current_screen, _layer="front", screen_active=False)
+    show screen restareatrunk(screen_active=False)
 
     if checked_padlock == 0:
         
-        "You sneakily get at a close distance of your friend’s bag and you try to open it. You cast some quick looks at Ammon while doing your little crime but he seems distracted, elsewhere."
-        "Being discreet, you can’t force the bag to open, so you notice something that preventing you from going any further without making a fuss."
+        "Tu t'approches furtivement du sac de ton ami et tu essayes de l'ouvrir. Tu jettes quelques regards rapides à Ammon tout en accomplissant ton petit crime, mais il semble distrait, ailleurs."
+        "Comme tu es discret, tu ne peux pas forcer l'ouverture du sac, alors tu remarques quelque chose qui t'empêche d'aller plus loin sans faire d'histoires."
 
-        $ renpy.show_screen("restarea_padlock", screen_active=False)
-        $ renpy.transition(dissolve)
+        # $ renpy.show_screen("restarea_padlock", screen_active=False)
+        # $ renpy.transition(dissolve)
+        show screen restarea_padlock(screen_active=False) with dissolve
+
 
         pause 1.0
 
-        "You remember that Ammon is a pretty cautious guy so obviously, he has set a code padlock on his trip belongings. Taking a peek in it will demonstrate harder that you thought."
-        "You check the bag if it has a hole or any openings, making you able to bypass his security." 
-        "Unfortunately no such luck. No tearing, no manufacturing defects, no hole, nothing." 
-        "You shake the bag.{w} It’s filled to the brim."
-        "You mull about a time, it shouldn’t hurt to try some combinations before giving up"
+        "Tu te souviens qu'Ammon est un type assez prudent, alors évidemment, il a posé un cadenas à code sur ses affaires de voyage. Y jeter un coup d'œil se révélera plus difficile que tu ne le pensais."
+        "Tu vérifies si le sac a un trou ou une quelconque ouverture, ce qui te rendrait capable de contourner sa sécurité." 
+        "Malheureusement, pas de chance. Pas de déchirure, pas de défaut de fabrication, pas de trou, rien." 
+        "Tu secoues le sac.{w} Il est rempli à ras bord."
+        "Tu réfléchis un temps, ça ne devrait pas faire de mal d'essayer quelques combinaisons avant d'abandonner."
     
     elif checked_padlock == 1:
 
-        "You figure you haven’t tried enough and that you should keep on guessing. You’ll surely find it someday. With enough determination, you’ll crack it don’t worry!"
-        "But don’t forget that he has surely input a date dear to him, like you’d guess, his birthday, alright?"
+        "Tu te dis que tu n'as pas assez essayé et qu'il faut continuer à deviner. Tu trouveras sûrement un jour. Avec suffisamment de détermination, tu le craqueras ne t'inquiète pas !."
+        "Mais n'oublie pas qu'il a sûrement entré une date qui lui est chère, comme tu pourrais le deviner, son anniversaire, d'accord ?."
     
     else:
 
-        "Might give it another try."
+        "Tu pourrais faire un autre essai. "
     
     label restarea_padlock_loop_local:
     # window hide
@@ -471,29 +503,28 @@ label restarea_bag:
     
     if checked_padlock == 0:
 
-        "Well what were you thinking anyway? Do you really ponder he’d put a random number into his padlock? No that can’t be it. Ammon surely set a code like a date dear to him or something."
-        "Perhaps his birthday. Should be easy enough. You just have to put his birthday into the padlock and you’ll be able to unlock, right? Go on, do it. You are{cps=3}...{/cps} able to do{cps=3}...{/cps} it..."
-        "{cps=3}...{/cps} Wait. Did you really forget, Ammon’s birthday? You’re utterly ashamed. What a great friend you are. Forgetting his birthday. Great job."
-        "Alright, let’s go on. You know what to do. You should look for his birthday. But don’t ask him directly. He {b}will{/b} get mad. It’d be better if you could find it in secret."
+        "Eh bien, à quoi pensais-tu de toute façon ? Tu penses vraiment qu'il a mis un numéro au hasard dans son cadenas ? Non, ce n'est pas possible. Ammon a sûrement mis un code comme une date qui lui est chère ou quelque chose comme ça."
+        "Peut-être son anniversaire. Ça devrait être assez facile. Tu n'as qu'à mettre sa date de naissance dans le cadenas et tu pourras le déverrouiller, n'est-ce pas ? Allez, fais-le. Tu es{cps=3}...{/cps} capable de le faire{cps=3}...{/cps}..."
+        "{cps=3}...{/cps} Attends. Tu as vraiment oublié l'anniversaire d'Ammon ? Tu as vraiment honte. Quel grand ami tu es. Oublier son anniversaire. Beau travail."
+        "Très bien, continuons. Tu sais ce qu'il faut faire. Tu devrais chercher à connaître son anniversaire. Mais ne lui demande pas directement. Il {b}se mettra{b} en colère. Ce serait mieux si tu pouvais le trouver en secret."
         
         $ checked_padlock += 1
     
     elif checked_padlock == 1:
         
         $ checked_padlock += 1 
-        "Ok, it really looks like you won’t go anywhere with what you are doing. There are smarter ways to go about it."
-        "Just look for the code, ok?"
+        "Ok, on dirait vraiment que tu n'iras nulle part avec ce que tu fais. Il y a des façons plus intelligentes de procéder."
+        "Cherche juste le code, ok ?"
     else:
-        "Ok you should just get back to your search."
-    # $ ga_inventory.append(wallet)
+        "Ok, tu devrais juste retourner à tes recherches."
 
     return
 
 label restarea_stick:
-    $ renpy.show_screen(current_screen, _layer="master", screen_active=False)
-    "Oh a stick."
-    "You wonder how it got there."
-    "Well might as well take it then. Maybe you could use it with Ammon."
+    show screen restareatrunk(screen_active=False)
+    "Oh un bâton."
+    "Tu te demandes comment il est arrivé là."
+    "Eh bien, autant le prendre alors. Tu pourras peut-être l'utiliser avec Ammon."
     
     $ got_stick = True
     $ empty_inventory = False
@@ -502,13 +533,10 @@ label restarea_stick:
     return
 
 label restarea_notebook:
-    $ renpy.show_screen(current_screen, _layer="master", screen_active=False)
-    "Oh here is your beloved notebook you bring with you everywhere."
-    "Studies can be really exhausting. If you dedicated all your life, you’d already jumped over a window."
-    "So you got a hobby of yours to distract you. When you’re bored at classes in the amphitheater, you take out your notebook and start sketching in them."
-    "Over the years, you estimate you got really good at it. You can’t resist showing it to your friends. Julie loves your drawings. She encourages you into an artist career."
-    "You also show it a lot to Ammon. He likes what you do but at this point, he’s got fed up that you show it to him every minute."
-    "You should show it to him again. You could also keep sketching in it. Bring it with you."
+    show screen restareatrunk(screen_active=False)
+    "Oh voici ton carnet bien aimé que tu emmènes partout avec toi."
+    "Tu devrais lui montrer à nouveau à Ammon."
+    "Tu pourrais aussi continuer à faire des croquis avec. Emmène–le."
     
     $ ga_inventory.append(notebook)
     # $ check_inventory_empty()

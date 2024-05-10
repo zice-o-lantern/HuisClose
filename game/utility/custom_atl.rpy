@@ -95,9 +95,6 @@ transform drunk:
         easeout .5 u_blur_radius .0 u_dark_radius 1.0
 
 # Declare images
-
-image ruralRoad = "bg/ruralRoad.webp"
-image parkingLot = "bg/bg restArea.jpg"
 # image clearing = "bg/clearing.webp"
 
 define dissolve = Dissolve(.5)
@@ -352,6 +349,23 @@ transform WiggleVisionAwake:
         linear 2 blur(0)
         linear 2 blur(0)
         repeat
+
+transform inventory_move_in:
+    on show:
+        xpos 2020
+        easein 0.3 xpos 1487
+    
+    on replace:
+        xpos 2020
+        easein 0.3 xpos 1487
+
+    on replaced:
+        xpos 1487
+        easein 0.3 xpos 2020 
+    
+    on hide:
+        xpos 1487
+        easein 0.3 xpos 2020 
 
 # transform zpos_black
 

@@ -5,7 +5,8 @@ init python:
 
 label pointnclick_interact_loop:
     window hide
-    $ renpy.call_screen(current_screen, _layer="master", screen_active=True)
+    $persistent.parallax_on = True
+    $ renpy.call_screen(current_screen)
     if current_screen != "":
         jump pointnclick_interact_loop
 

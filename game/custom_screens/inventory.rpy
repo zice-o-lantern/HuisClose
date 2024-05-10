@@ -3,6 +3,7 @@ init python:
     class Item:
         def __init__(self, name, image, description, examine="default_examine"):
             self.name = name
+            # self.image = Image("Environment Items/{}_idle".fornat(image))
             self.image = image
             self.description = description
             self.examine = examine
@@ -12,66 +13,95 @@ default ga_inventory = []
 default columns_nb = 2
 default rows_nb = 3
 default selected_item = ""
-default notebook = Item("Notebook", "notebook", "My beloved notebook. I bring it out with me everywhere.")
-default water_bottle = Item("Water Bottle", "bottle", "A water bottle that rehydrates! To be honest, \nI’m pretty honest, I’m pretty thirsty.", "water_bottle_examine")
+default notebook = Item("Notebook", "notebook", _("Ton carnet bien-aimé. Tu l'emportes partout avec toi."), "notebook_examine")
+default water_bottle = Item("Water Bottle", "water-bottle", _("Une bouteille d'eau qui réhydrate ! Pour être honnête, \ntu as plutôt soif.."), "water_bottle_examine")
 # default cigarette = Item("Cigarette", "cigarette", "I knew Ammon was hiding some from me.", "cigarette_examine")
-default ammon_wallet = Item("Ammon’s Wallet", "portefeuille_clark", "Ammon’s wallet. You might find \nsome interesting information about him", "ammon_wallet_examine")
-default stick = Item("Stick", "stick", "This is a stick. Ammon might like it.")
+default ammon_wallet = Item("Ammon’s Wallet", "wallet", _("Ammon’s wallet. You might find \nsome interesting information about him"), "ammon_wallet_examine")
+default stick = Item("Stick", "stick", _("C'est un bâton. Ammon pourrait aimer ça."), "stick_examine")
 
 default presented_item = ""
-
-style item_inventory:
-    align (.68, .3)
-    spacing 30
-
-style desc_inventory:
-    pos (520, 200)
-    spacing 30
-
-style txt_butt:
-    pos (600, 600)
-    text_align (0.5, 0.5)
-    spacing 40
 
 
 ## NOTE: custom inventory for game
 screen inventory():
-    tag menu
+    tag dialogue
 
-    add "inventory_bg"
+    frame:
+        at inventory_move_in
+        style 'inventory_frame'
+        background "gui/inventory_bg.png"
 
-    if selected_item == "" and ga_inventory != []:
-        # on "show" action [SetVariable("inventory_desc", ga_inventory[0].description), SetVariable("inventory_image", ga_inventory[0].image), SetVariable("inventory_name", ga_inventory[0].name)]
-        on "show" action SetVariable("selected_item", ga_inventory[0])
-    
-    elif selected_item != "":
-        vbox:
-            style 'desc_inventory'
-            add selected_item.image size (256, 256)
-            text selected_item.description size 20
+        if selected_item == "" and ga_inventory != []:
+            $ selected_item = ga_inventory[0]
+        #     # on "show" action [SetVariable("inventory_desc", ga_inventory[0].description), SetVariable("inventory_image", ga_inventory[0].image), SetVariable("inventory_name", ga_inventory[0].name)]
+        #     on "show" action SetVariable("selected_item", ga_inventory[0])
         
-        vbox:
-            style 'txt_butt'
-            if evidence_needed:
-                textbutton "Present":
-                    action Return()
+        # elif selected_item != "":
+        #     vbox:
+        #         style 'desc_inventory'
+        #         add "Environment Items/"+selected_item.image+"_idle.png" size (256, 256)
+        #         text selected_item.description size 20
             
-            textbutton "Examine":
-                action Call(selected_item.examine)
+        #     vbox:
+        #         style 'txt_butt'
+        #         if evidence_needed:
+        #             textbutton "Present":
+        #                 action Return()
+                
+        #         textbutton "Examine":
+        #             action Call(selected_item.examine)
 
-    grid columns_nb rows_nb:
-        style 'item_inventory'
-        $ item = ""
-        for i in range(columns_nb*rows_nb):
-            if i < len(ga_inventory):
-                $ item = ga_inventory[i]
+        # grid columns_nb rows_nb:
+        #     style 'item_inventory'
+        #     $ item = ""
+        #     for i in range(columns_nb*rows_nb):
+        #         if i < len(ga_inventory):
+        #             $ item = ga_inventory[i]
 
-            imagebutton auto "inventory_slot_%s.png" action SetVariable("selected_item", item)
+        #         imagebutton auto "gui/inventory_slot_%s.png" action SetVariable("selected_item", item)
+        #         # imagebutton auto "Environment Items/{}_%s.png".format(item.image) action SetVariable("selected_item", item):
+        
+        grid columns_nb rows_nb:
+            style 'grid_inventory'
+            for item in ga_inventory:
+                imagebutton auto "Environment Items/{}_%s.png".format(item.image) action SetVariable("selected_item", item):
+                    style 'item_inventory'  
+                    at custom_zoom
+
+        imagebutton auto "gui/backbutton_%s.png" action Hide("inventory"):
+            style 'return_inventory_butt'
+            at custom_zoom
+        
+        imagebutton auto "gui/button/examine_%s.png":
+            pos (67, 660)
+            action Call(selected_item.examine)
     
-    grid columns_nb rows_nb:
-        style 'item_inventory'
-        for i in ga_inventory:
-            add i.image size(128, 128)
+    
+        
+
+style inventory_frame:
+    anchor (0.0, 0.0)
+
+style item_inventory:
+    anchor (0.5, 0.5)
+
+style grid_inventory:
+    xpos 100 
+    ypos 200
+    spacing 30
+
+style desc_inventory:
+    # pos (520, 200)
+    spacing 30
+
+style txt_butt:
+    # pos (600, 600)
+    text_align (0.5, 0.5)
+    spacing 40
+
+style return_inventory_butt:
+    xpos -100
+
         
 
 screen get_item(item):
@@ -90,41 +120,45 @@ screen get_item(item):
                 text item.description size 40
 
 label default_examine:
-    call pointnclick_screen from _call_pointnclick_screen
-    "Nothing special about it."
-    call screen inventory
+    hide screen inventory 
+    # call pointnclick_screen from _call_pointnclick_screen
+    "Rien de particulier sur ça."
+    show screen inventory
     return
 
 label water_bottle_examine:
-    call pointnclick_screen from _call_pointnclick_screen_1
-    "I should bring it to Ammon. {w}He might get impatient. I care no less if he’s pissed."
-    "But I don’t have to deal his prick attitude, right now."
+    # call pointnclick_screen from _call_pointnclick_screen_1
+    "De l’eau, cool"
     call screen inventory
     return
 label cigarette_examine:
-    call pointnclick_screen from _call_pointnclick_screen_2
+    # call pointnclick_screen from _call_pointnclick_screen_2
     "You’d light one but you don’t have a lighter."
     "Seems like you’ll have to see Ammon anyway."
-    call screen inventory
+    show screen inventory
     return
 label ammon_wallet_examine:
-    call pointnclick_screen from _call_pointnclick_screen_3
-    hl "I should be able to find some information on Ammon."
-    "You search through his wallet"
-    "There’s some money, gift cards and coupons for some groceries store. Not really interesting to you to be, honest."
-    "Then you spot the thin you was searching for."
+    # call pointnclick_screen from _call_pointnclick_screen_3
+    hl "Tu devrais pouvoir trouver des informations sur Ammon."
+    "Tu fouilles dans son portefeuille"
+    "Il y a un peu d'argent, des cartes cadeaux et des coupons pour des magasins. Ce n'est pas vraiment intéressant pour toi, honnêtement."
+    "Puis tu repères la chose que tu cherchais."
 
     show ammon_id
     pause 2.0
-    "Well here his birthday, you should be able to open the padlock now"
+    "Eh bien voici son anniversaire, tu devrais pouvoir ouvrir le cadenas maintenant."
     hide ammon_id
-    call screen inventory
+    show screen inventory
     return
 
 label stick_examine:
-    call pointnclick_screen from _call_pointnclick_screen_4
-    "This is a stick. Nothing more to it..."
-    "Though it could interest Ammon." 
-    "You know, how he’s a dog and all..."
-    call screen inventory
+    # call pointnclick_screen from _call_pointnclick_screen_4
+    "C'est un bâton. Il n'y a rien de plus..."
+    "Mais ça pourrait intéresser Ammon." 
+    "Tu sais, comme il est un chien et tout ça..."
+    show screen inventory
+    return
+
+label notebook_examine:
+    show screen notebook
     return

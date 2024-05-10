@@ -19,6 +19,8 @@ define hl = Character("Howl", callback=gap_noise)
 
 define mj = Character("Marie–Jil")
 
+define persistent.parallax_on = True
+
 
 # The game starts here.
 

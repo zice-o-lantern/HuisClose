@@ -19,18 +19,21 @@ label prologue:
     cl "Il peut les apprivoiser, les recueillir, ces monstres de l’au–delà{w}, au sein de ton phare au milieu de la mer déchaînée."
     cl "{cps=3}...{/cps}{w} Combler ce vide qui ronge cet être{w}——Mon être——{w}flétrissant."
     cl "C’est pour cela que,{w} jusqu’à présent,{w} et pour toujours..."
-    cl "Je t’aime{w}, Charles"
-    show black
+    cl "Je t’aime{w}, Charles{w=2.0}{nw}"
+    ### TODO: Show title logo
     stop sound
+    $ config.window_hide_transition = None
+    window hide
+    pause 1.0
     # play sound 'audio/sounds/car_white_noise.ogg' loop
     jump little_road
 
 label little_road:
-    scene black
     # show ruralRoad
     # with Fade(0.5, 4.0, 0.5)
+    scene black
 
-    show ruralRoad
+    show ruralroad
     with Fade(0.5, 4.0, 0.5)
     camera at zpos_camera
 
@@ -548,7 +551,7 @@ label little_road:
 
             am "Si tu faisais attention autour de toi plus de 5 secondes, on n'en serait pas là."
 
-            "La brise du morne Automne reprend de plus belle. {w}Tu pondères la raison pour laquelle tu ne sais, au final, rien de la personne que tu appelais ton meilleur ami il y a des années."
+            "La brise du morne automne reprend de plus belle. {w}Tu pondères la raison pour laquelle tu ne sais, au final, rien de la personne que tu appelais ton meilleur ami il y a des années."
             "Aussi pourquoi tu n'as pas pris le temps de te renseigner d'où il t'emmenait."
             "Tu supposes l'instant où il t'a proposé, tu as sauté sur l'occasion sans même y réfléchir une seconde."
             "Que pensais-tu qu'il allait arriver ? Un mec bizarre qui n'aligne pas deux mots et une connard irritable sur une moto ensemble, ça n'amène rien de bon."
@@ -791,16 +794,140 @@ label little_road:
         az "En espérant que tu as eu ce que tu voulais{w}, lâche."
 
         "Sur ces mots, le néant t'emporte et bientôt ta conscience s'y fond."
+label dream_1: 
+    camera:
+        perspective True
+        subpixel True
+        zpos -300
+        ease 1 ypos 125
+        ease 1 ypos 100
+        repeat
+    pause 0.5
+    show clearing:
+        ease 1 blur 128
+        ease 1 blur 32
+        repeat
+    with dissolve
+
+    pause 0.5
+    # play music "audio/music/griff.mp3" fadein 1.0 loop
+    window show
+    
+    cl "{w=1.0}Aux frontières de la forêt, dans la clairière, je reste allongé, accablé, à bout de souffle. Je respire autant que je peux mais l'air chaud me brûle la gorge."
+    cl "Puis je sens ta présence rassurante, je me rappelle que je ne suis pas seul. Que tu es là avec moi."
+    camera:
+        ease 1 ypos 125
+        ease 1.15 ypos 105
+        ease 1.30 ypos 125
+        ease 1.5 ypos 115
+        ease 2.0 ypos 125
+    
+    show clearing:
+        blur 128
+        linear 5.0 blur 32
+
+    extend "Alors je respire profondément et enfin mon torse battant s'abaisse à un rythme régulier."
+    cl "Entre deux expirations soulagées, je regarde autour de moi pour te chercher et mes yeux se croisent avec lui, quelqu'un que je connais très bien, quelqu'un que je n'oublierai jamais, quelqu'un que je souhaite oublier, un monstre sans cœur."
+    cl "Je le fixe profondément mais les lueurs qui brillaient dans ses yeux ont disparu depuis longtemps{w}, si tant est qu'il y en ait jamais eu."
+    cl "Parfois, je me demande si ma vie aurait pu se dérouler différemment, ce que j'aurais dû faire pour ne pas finir dans une forêt, au milieu de la nuit, assommé, avec cet être sans valeur."
+    cl "S'il m'avait plus souri, s'il m'avait plus parlé, s'il m'avait plus pris dans ses bras, s'il s'était plus soucié de moi, s'il avait fait tout ça, peut-être, juste peut-être, j'aurais eu pitié."
+    cl "De la pitié quand tu l'as fait fulminer par les dents, en régurgitant, en vomissant."
+    cl "Des regrets quand il te suppliait de te souvenir de tous les bons moments."
+    cl "Remords quand il t'implorait de le laisser partir, qu'il ne parlerait pas de ce qui s'est passé ce soir."
+    cl "Mais je ne l'aurais pas fait. Je n'aurais rien ressenti pour lui."
+    cl "Pendant ces instants durables, où, avec sa dernière corde d'énergie, il a serré mon bras, {w=.5} il n'y a rien eu."
+    cl "Pas de tristesse, pas de supplication, pas de tourment, pas de colère, pas de rage, pas de courroux."
+    cl "Pendant que je restais là, j'avais soif d'un signe quelconque montrant qu'il était un être conscient et chaud. Quelque chose, n'importe quoi"
+    cl "Non. Juste des yeux morts. J'ai beau regarder, je vois toujours ces mêmes yeux morts. Qui me regardent."
+    cl "J'aurais aimé que ce ne soit pas les mêmes yeux. J'aimerais pouvoir dire qu'un frisson m'a parcouru, que la tristesse m'a envahi quand tout cela s'est déroulé."
+    cl "Non, juste des yeux morts, pour les années passées et maintenant pour toujours.{w} Ou du moins, je n'ai pas réussi à le percevoir. Comme beaucoup de choses dans ma vie."
+    play sfx "sounds/rope_squeak.ogg" fadein 0.5 volume 0.3
+    show clearing:
+        ease 1 blur 128
+        ease 1 blur 16
+    cl "Chaque régurgitation, j'aurais voulu qu'il prête plus attention à moi."
+    stop sfx fadeout 1.0
+    cl "Qu'il me prenne dans ses bras, qu’il me parle plus qu'une douzaine de mots dans toute ma vie."
+    play sfx "sounds/rope_squeak.ogg" fadein 0.5 volume 0.3
+    show clearing:
+        ease 1 blur 128
+        ease 1 blur 16
+    cl "Je voudrais qu'il me sourit à cet instant."
+    stop sfx fadeout 1.0
+    cl "Sauf qu'il ne peut pas. Il conservera toujours cette expression cadavérique."
+    cl "Tous ces souhaits, ces réponses, ces aspirations, ces rêves, enfouis avec lui."
+    window hide
+
+    pause 1.0
+
+    window show
+    show clearing:
+        ease 2 blur 0
+
+    cl "La brise rafraîchissante caresse mes longues oreilles, le hurlement surnaturel du vent me rafraîchit mais ma gorge brûle toujours."
+    cl "J'essaie de la faire disparaître mais les milliers d'aiguilles enfoncées au fond de ma gorge protestent.{w}\nIl me faut de l'eau."
+    cl "Je me dirige donc difficilement vers lui et je cherche quelque chose pour apaiser ma soif."
+    cl "Je parviens à trouver une gourde. Je la débouche et l'enfonce dans ma gorge sale pour que l'eau tiède puisse couler."
+    cl "À chaque gorgée, ça lave un peu plus."
+    cl "Ce mucus qui obstrue ma gorge."
+    cl "Cette démangeaison chaude qui y résidait."
+    cl "Cette détresse qui s'était accumulée au fil des années."
+    cl "Ces regrets de ne pas avoir été assez bon pour lui."
+    cl "Cette culpabilité de l'avoir déçu, de ne pas en être digne."
+    cl "Cette honte de ne pas avoir été assez bien pour lui."
+    cl "La seule chose qui reste, c'est l'engourdissement envahissant de ma vie."
+    cl "J'ai besoin de plus d'eau."
+
+    pause 0.5
+
+    cl "Je regarde, dans les environs et non loin de moi, se dresse un marais à plusieurs mètres de moi."
+    camera:
+        ease 0.5 zpos -280
+        ease 1 zpos -350
+        ease 0.5 zpos -320
+        ease 1 zpos -400
+        ease 0.5 zpos -370
+        ease 1 zpos -450
+    cl "J'ai rampe désespérément jusqu'à elle et je me gave d'eau."
+    cl "Mais même mon âme immonde ne peut supporter cette eau fétide et je régurgite tout ce qui se trouve dans le marais."
+    camera:
+        ease 0.5 ypos 150
+    cl "De la bave accrochée à mon museau, des larmes qui coulent sur mon visage, je m'effondre dans l'herbe, vidée de toute mon énergie."
+    cl "Ma vision reste bloquée sur le milieu de ce marais."
+    
+    call spawn_fireflies from _call_spawn_fireflies
+    
+    cl "Une petite colline avec une centaine de lucioles se projette sur moi, m'offrant un spectacle que je n'oublierais jamais. Quelque chose que je pensais ne jamais voir."
+    cl "Un phare d'une lumière langoureuse dans l'obscurité écrasante de la nuit qui m'entoure et qui me fait vivre."
 
 label rest_area_1:
     # "Eventually, Ammon, who had stripped away his helmet since a long time ago, notices you."
+    scene black
+    # show ruralRoad
+    # with Fade(0.5, 4.0, 0.5)
+    
+    camera at zpos_camera
+    pause 1.0
+
+    show parkinglot with dissolve
 
     show ammon right at american_shot
+
+    "Encore une fois tu ressens une main froide sur ta nuque."
+
+    am "Hé ho réveille–toi on est arrivé."
+
+    hl "Ah bon ?"
+
+    am "Oui, lève–toi vite."
+
+    "Grincheux, tu descends de la moto et tu enlèves ton casque."
+    "Tu galères."
 
     am "Tu veux de l’aide ? T’as l’air de galérer un peu."
 
     menu let_ammon_help_you:
-        "Demander de l’aide ":
+        "Demander de l’aide":
             $ ammon_score += 1 
             "Normalement, c’était le moment où tu détournes toute sorte d’aide. Mais..."
             hl " D’accord, vas–y... "
@@ -821,7 +948,7 @@ label rest_area_1:
             
             hl "Tu peux parler avec ta gueule !"
             
-            am "Si tu te la fermes pas, j’enleverai ton casque d’un manière ou d’une autre"
+            am "Si tu te la fermes pas, j’enlèverai ton casque d’un manière ou d’une autre"
             show ammon right e_smug
             extend "avec ou sans ta tête."
             
@@ -942,7 +1069,7 @@ label rest_area_1:
     az "Quel frimeur !" 
     az "Mais quel bon frimeur."
     camera at close_shot
-    show parking:
+    show parkinglot:
         parallel:
             easeout 1 blur 64
     "Ce qui attire toujours ton attention chez lui, ce sont ses yeux. Ses yeux dorés inestimables qui brillent plus que tous soleils que tu aies vu." 
@@ -951,8 +1078,7 @@ label rest_area_1:
     "Ces yeux cruels et perçants te regardant à travers ton âme"
     show ammon pupils_right 
     extend "et te lisant comme un sale livre ouvert." 
-    "À tout moment, s'il en a envie, il peut en choisir un extrait et l'étudier attentivement à tes dépens" 
-    dk "Il "
+    "À tout moment, s'il en a envie, il peut en choisir un extrait et l'étudier attentivement à tes dépens." 
     "Il est objectivement meilleur que toi dans tous les domaines possibles"
     camera :
         easeout 15 ypos 400
@@ -1003,7 +1129,7 @@ label rest_area_1:
 
     hl "Hé regarde, Ammon ! Ils ont une cabine téléphonique par ici. N'est-ce pas merveilleux ?"
 
-    show ammon pupils_right e_smug at american_shot with dissolve
+    show ammon pupils_right at american_shot with dissolve
 
     am "Huh ?"
     show ammon pupils 
@@ -1027,9 +1153,9 @@ label rest_area_1:
     hl "Oui je vais l'appeler."
 
     am pupils_right "Ok, comme tu veux."
-    am "Je vais faire pipi. Attends-moi et ne t'éloigne pas, d'accord ?"
+    am "Je vais pisser. Attends-moi et ne t'éloigne pas, d'accord ?"
 
-    "Ammon change rapidement le sujet de la discussion et revient sur l'affaire urgente qui nous occupe" 
+    "Ammon change rapidement le sujet de la discussion et revient sur l'affaire urgente." 
     "Tu le regardes se dandiner sur place, sauter comme un lapin en retard."
     "Tu ne souhaites pas le retenir plus longtemps"
 
@@ -1046,12 +1172,12 @@ label rest_area_1:
 
 
     
-    jump phone_booth
+    jump phonebooth
 
-label phone_booth: 
+label phonebooth: 
     stop music fadeout 0.5
     stop sound
-    scene phone_booth with dissolve
+    scene phonebooth with fade
 
     play music "audio/music/night_sky.mp3" fadein 1.0 loop
 
@@ -1091,7 +1217,7 @@ label phone_booth:
 
     hl "Oui sûrement..."
 
-    mj "Toi et moi, nous serions connectés jusqu’à la fin des temps."
+    mj "À ce rythme, où que tu sois sur Terre, jamais nous pourrions être séparés, toi et moi."
     mj "Ne trouves–tu pas ça merveilleux ?"
 
     "Tu serres le combiné. Tu considères la question."
@@ -1108,14 +1234,14 @@ label phone_booth:
     "Finalement, tu l’entends glousser."
 
     mj "Tu es sûr, Howl ?"
-    mj "Je sais que c’est moi qui ai proposé mais tu ne l’as jamais considéré n’est–ce pas ?"
-    mj "J’aime bien avoir mes moments à moi parfois, toi aussi, non ?"
+    mj "Je sais que c’est moi qui ai proposé mais pour toi ce serait trop, non ?"
+    mj "J’aime aussi bien avoir mes moments à moi."
 
     hl "Si si, c’est... vrai"
     
     hl "Mais tu sais, pas besoin d’être connecté, tu aurais dû venir, toi aussi, faire le voyage avec nous ! Tu me manques vraiment !"
 
-    mj "Moi ? Tu te débrouilles très bien sans moi, ne t'inquiète pas. Et je voulais venir mais tu sais que je ne peux pas, je dois travailler demain. Je dois aider maman avec son restaurant."
+    mj "Moi ? Tu te débrouilles très bien sans moi, ne t'inquiète pas. Et je voulais venir mais tu sais que je ne peux pas, je dois travailler demain. Je dois aider ma mère avec son restaurant."
     
     hl "Tu aurais pu lui expliquer la situation. Je suis sûr qu'elle t'aurait laissé venir."
 
@@ -1125,6 +1251,8 @@ label phone_booth:
     hl "D'accord... mais la prochaine fois, tu devras venir !"
 
     "Elle s'esclaffe doucement devant ta vivacité."
+
+    ### TODO: Allonger le temps que MJ parle
 
     mj "Tu sais, ton attitude de tout à l'heure m'a rappelé la fois où nous nous sommes pour la première fois-{nw}"
 
@@ -1188,7 +1316,7 @@ label phone_booth:
     "Tu ne t'y attendais pas. Un jour, vous mangiez à la cafétéria de votre lycée." 
     "La foule habituelle de la cafétéria s'était envolée pour un événement qui ne t'intéressait sûrement pas, alors il ne restait plus grand monde ici."
     "Tu tapotais faiblement la nourriture devant toi, n'ayant pas vraiment faim." 
-    "Le calme inhabituel, cependant, t'avait aidé à te concentrer et à prendre quelques bouchées dans ton assiette, mais tu avais beau essayer, ton assiette était restée, la plupart du temps, intacte."
+    "Le calme inhabituel, cependant, t'avait aidé à te concentrer et à prendre quelques bouchées dans ton assiette, mais tu avais beau essayer, ton assiette était restée, pour la plupart, intacte."
     "À ta gauche, Ammon était allongé sur sa chaise, son ventre lui faisant mal." 
     # "Tu avais accepté docilement, par principe, tu ne refuserais jamais un défi lancé par ton trublion préféré."
     # "Mais tu n'as pas eu le cœur - ni l'estomac - de le suivre dans son défi." 
@@ -1212,7 +1340,7 @@ label phone_booth:
     # "Ammon continuait à roter de façon incontrôlée, alors tu retires ta main de lui, dégoûtée" 
     # "Tu étais moins pressé qu'avant de finir ton repas alors tu as muloté sur la table, tu t'es appuyé dessus, perturbé."
     "Pour une raison ou une autre, ce jour–là, il avait décidé de se gaver de nourriture. Même il avait acheté une deuxième portion à la cafétéria."
-    "Qui plus est, le plat du jour étant hachis parmentier, une étrange admiration monta en toi : d’où venait cet appétit ?"
+    "Qui plus est, le plat du jour étant hachis parmentier, une étrange admiration monta en toi : d’où venait cet appétit ?"
     "Malgré toutes tes tentatives d’en savoir plus sur son enthousiasme, il ne répondit pas et continua de manger en silence sa bouillie."
     "Cependant, cette poussée d’énergie fut de courte durée, parce qu’il finit par se rouler en boule sur sa chaise, le mal au ventre."
     "Il voulait te parler de quelque chose auparavant ; mais avec sa frénésie alimentaire, tu avais laissé tomber."
@@ -1229,7 +1357,7 @@ label phone_booth:
     ## TODO : ajouter le sprite de Marie-Jil ?
     mj "Salut Howl..."
 
-    hl "Salut MJ... Pourquoi es-tu en retard, que se passe-t-il ? Quelque chose ne va pas ?"
+    hl "Salut MJ... Pourquoi t’es en retard ? Quelque chose ne va pas ?"
 
     "Marie-Jil releva la tête, choquée, comme si elle avait été démasquée."
 
@@ -1248,7 +1376,7 @@ label phone_booth:
     "La biche découragée joignit les mains, inspirant, essayant de rassembler tout le courage nécessaire." 
     "Elle s'attarde un temps à savoir si elle avait fait le bon choix" 
     "Ne pouvant pas l'aider à ce moment-là, tu la laisses respirer. Elle avait beaucoup de choses en tête et tu vois des brins de doute, de confusion et de détermination tressaillir au coin de son long museau."
-    "Elle frotte ses paupières une dernière fois et la résolution rosit dans ses yeux, déterminée à en finir."
+    "Elle frotte ses paupières une dernière fois et la résolution monta dans ses yeux, déterminée à en finir."
     
     mj "Tu sais que nous sommes amis depuis très longtemps, Howl ?"
 
@@ -1274,7 +1402,7 @@ label phone_booth:
 
     mj "Arrête de me fixer ! !! Tu me rends anxieuse. Très bien ! Ce que je veux dire, c'est que..."
     mj "Je ne peux plus continuer comme ça. Il faut que je sache. Je suis sûr que, si je n'ai pas la réponse que je souhaite, nous pourrons revenir en arrière."
-    mj "Alors... je voulais savoir, si ces sentiments sont réciproques et si tu veux explorer et comprendre ces sentiments avec moi, alors j'en serais très heureux.... Ce que je veux vraiment dire c'est :-"
+    mj "Alors... je voulais savoir, si ces sentiments sont réciproques et si tu veux explorer et comprendre ces sentiments avec moi, alors j'en serais très heureuse.... Ce que je veux vraiment dire c'est :-"
 
     "Elle serra fort son cardigan, ne voulant pas lâcher son seul dernier soutien. Ammon et toi étiez tous deux suspendus à ses lèvres en attendant ses prochains mots."
 
@@ -1293,7 +1421,7 @@ label phone_booth:
     "Marie-Jil est une personne tellement géniale, elle est intelligente, elle est créative que tu veux être avec elle toute ta vie ; et si être un couple signifiait cela, alors tu serais de tout cœur d'accord."
     "Tu t'élanças vers elle et tu la prends dans tes bras, dans une étreinte amoureuse qui ne peut signifier qu'une seule chose, et qu'une seule réponse possible, mais tu ne peux pas t'empêcher de la dire à voix haute."
 
-    # scène phone_booth with dissolve
+    # scène phonebooth with dissolve
     hide canteen with dissolve
 
     mj "Je me souviendrai toujours de ce que tu as dit..."
@@ -1306,18 +1434,21 @@ label phone_booth:
 
     "Ammon s'est brusquement levé et s'est précipité vers les toilettes"
 
-    # scène phone_booth with dissolve
-    show canteen with dissolve
+    # scène phonebooth with dissolve
+    hide canteen with dissolve
 
     hl "J'ai dû allé le voir ce jour-là aussi... Il n'aurait pas dû manger autant."
 
     mj "En fait Howly... C'est moi qui suis allé le voir, je t'ai fait rester à notre table pour surveiller nos affaires."
 
-    "Un sentiment de gêne et d'inconfort émane des paroles de Marie-Jil comme l'ouverture de poupées matriochka. Elle a dû assister à son bain dans son vomi après tout. Tu ne voudrais pas être celle qui a dû y aller ce jour-là."
+    "Un sentiment de gêne et d'inconfort émane des paroles de Marie-Jil comme l'ouverture de poupées matriochka." 
+    "Elle a dû assister à son bain dans son vomi après tout. Tu ne voudrais pas être celui qui a dû y aller ce jour-là."
     
     mj "Au fait, puisqu'on parle de lui, est-ce que tout va bien avec Ammon ?"
 
     hl "Qu'est-ce que tu veux dire par là ?"
+
+    ## TODO: Retoucher ces deux lignes
 
     mj "Je sais qu'il peut être épuisant, parfois. Tu n'as rien fait d'imprudent avec lui, n'est-ce pas ?"
     
@@ -1354,13 +1485,13 @@ label phone_booth:
 
     hl "Huh qu'est-ce que c'est ? Tu t'es encore disputé avec tes parents ?"
 
-    mj "Non, ce n'est pas ça. C'est quelque chose qui te préoccupe. Quelque chose qui se passe ces derniers temps."
+    mj "Non, ce n'est pas ça. C'est quelque chose qui me préoccupe. Quelque chose qui se passe ces derniers temps."
 
     "Elle s'agrippe plus fortement au téléphone qu'auparavant. La question était accrochée à son cœur depuis un bon moment."
 
     hl "Hein, d'accord ? Qu'est-ce qu'il y a ? Qu'est-ce que ça a à voir avec moi ?"
 
-    mj "Je voulais te parler de ton comportement ces derniers temps"
+    mj "Je voulais te parler de toi ces derniers temps"
 
     "Déstabilisée, elle peine à trouver les mots sur ses pensées. Son attitude générale te perturbe."
     "Elle s'impatiente. Tu la laisses s'expliquer."
@@ -1382,11 +1513,11 @@ label phone_booth:
     play music "audio/music/anger.mp3" 
 
     mj "Oh mon dieu, pour Jésus Christ." 
-    mj "Tu es sérieux, Howl ???? Ça fait un mois que tu prétends que tout va bien et tu veux que je te croie ! ??"
+    mj "Tu es sérieux, Howl ???? Ça fait un mois que tu prétends que tout va bien et tu veux que je te croie !??"
     
     hl "Huh..."
 
-    show phone_booth:
+    show phonebooth:
         ease 1 blur 32
         ease 1 blur 16
         repeat
@@ -1402,9 +1533,10 @@ label phone_booth:
     mj "Ta mère était morte d'inquiétude pour toi !"
     mj "Alors s'il te plaît, aide-moi, Howell... S'il te plaît Howell, laisse moi t’aider. Veux-tu me dire ce qui s'est passé le mois dernier ?"
     
-    hl "Le. mois.. Dernier ?"
+    hl "Le mois.. Dernier ?"
     
-    "Tu as demandé confus. Tout ce qu'elle dit, tu ne l'entends pas. Plus exactement, tu l'entends parfaitement mais tu refuses de l'entendre. La boîte noire ne doit jamais être ouverte et chaque tentative envoie une palpitation dans ton cerveau." 
+    "Tu as demandé confus. Tout ce qu'elle dit, tu ne l'entends pas." 
+    "Plus exactement, tu l'entends parfaitement mais tu refuses de l'entendre. La boîte noire ne doit jamais être ouverte et chaque tentative envoie une palpitation dans ton cerveau." 
     "Tu as mal à la tête. Tu fulmines. S'il te plaît, arrête. S'il te plaît, arrête, tu n'en peux plus."
     
     menu:
@@ -1418,9 +1550,9 @@ label phone_booth:
 
     
     mj "Tu répondras à mes questions, Howell et tu ne pourras pas t'échapper éternellement"
-    mj "Nous n'avons jamais posé de questions, nous ne voulions pas te mettre la pression. Nous t'avons laissé respirer, te reposer, faire ton deuil ou même l'enfer, agoniser." 
+    mj "Nous n'avons jamais posé de questions, nous ne voulions pas te mettre la pression. Nous t'avons laissé respirer, te reposer, faire ton deuil." 
     mj "Mais j'en ai marre."
-    mj "Mais un jour ou l'autre, tu devras nous dire ce qui s'est passé et j'en ai marre de ne pas connaître la vérité."
+    mj "Mais un jour ou l'autre, tu devras nous dire ce qui s'est passé et j'en ai marre de ne pas savoir la vérité."
     mj "Alors dis-moi Howell. Que s'est-il passé, le mois dernier, le jour où tu as disparu dans la forêt ?"
     mj "Nous t'attendions ce jour-là."
     
@@ -1455,8 +1587,8 @@ label phone_booth:
     "Tu n'avais besoin pas de boire."
     "Pas qu’elle puisse comprendre de toute façon."
 
-    mj "Tu sais que ce jour-là, tu n'étais pas le seul à avoir disparu ? Je suis sûr que tu le sais, après tout."
-    mj "Tout le monde n'a pas eu de la chance..."
+    mj "Tu sais que ce jour-là, tu n'étais pas le seul à avoir disparu ?"
+    mj "Tout le monde n'a pas eu de ta chance..."
     pause 1.0
     mj "Alors s'il te plaît, dis-moi ce qui s'est passé. Il n’a pas pu aller bien loin ! Nous pouvons encore le retrouver !"
     mj "Je m’en fous qu’il soit vivant ou qu’il soit crevé la gueule ouverte dans une rivière dans ces bois de MERDE."
@@ -1510,15 +1642,19 @@ label phone_booth:
             dk "Ce n'est pas toi qui décides."
     
     "Tu regardes vers le bas. Tu tiens la boîte. Tu la laisses glisser. La boîte s'ouvre."
-    "Tu contemples la colline. Il t'attendait. Tu as amené quelqu'un. Il est content."
-    "Toi aussi, tu es content. Tu as fait ce qu'il a demandé."
+
+    show expression "#000" with blink_reverse
+    "Tu contemples la colline. Il t'attendait. Tu as amené quelqu'un. Il est euphorique."
+    "Toi aussi, tu es euphorique. Tu as fait ce qu'il a demandé."
     "Il effleure ta joue. Une poussée d'adrénaline te traverse. Tu veux que sa main soit éternelle, qu'elle ne quitte jamais ta peau."
     "Tu veux son étreinte plus que tout. Tu es prête à faire n'importe quoi pour lui. Il sait comment remplir ton cœur malade. Ton cœur déviant."
-    "Tu sais que tu es déjà un cas abandonné, alors tu le laisses te corrompre encore plus. Qu'y avait-il de bon en toi au départ de toute façon ?"
-    "Tu lui présentes ton partenaire. Il accepte volontiers l'offrande."
+    "Tu sais que tu es déjà un cas perdu, alors tu le laisses te corrompre encore plus. Qu'y avait-il de bon en toi de toute façon ?"
+    "Tu lui présentes ton partenaire."
     "Il enroule ses mains autour de son cou. {w} Tu aimes ça.{nw}"
 
     hl "Non."
+    
+    hide expression "#000" with blink_transition
 
     "Tu aimes ça."
     
@@ -1534,7 +1670,7 @@ label phone_booth:
 
     "Tu as aimé."
 
-    hl "NON, c’est False."
+    hl "NON, c’est faux."
     hl "Je n'ai pas aimé."
 
     "Si, tu as aimé"
@@ -1543,20 +1679,22 @@ label phone_booth:
 
     hl "JE N’AI PAS AIMÉ."
 
-    "..." 
+    "..."
+
+    "Si tu as aimé, sale monstre."
 
     play music "audio/music/uboa.mp3"
 
-    show phone_booth at shaking
+    show phonebooth at shaking
     
     hl "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-    show phone_booth:
+    show phonebooth:
         xoffset 0
         yoffset 0
 
     hl "Tais-toi, je ne suis pas un monstre"
 
-    show phone_booth:
+    show phonebooth:
         easein 0.5 blur 96
         easein 0.5 blur 128
         repeat
@@ -1581,7 +1719,7 @@ label phone_booth:
 
     play sound "audio/sounds/glass_breaking.ogg"
     ### TODO : Effet d'ivresse
-    show phone_booth:
+    show phonebooth:
         ease 2 blur 128
     with sshake
     
@@ -1590,16 +1728,16 @@ label phone_booth:
     show expression "#F00" :
         alpha 0.0
         zoom 2.535
-        aligner (0.5, 0.5)
+        align (0.5, 0.5)
         ease 2 alpha 0.5
     pause 2.0
     
     "Un grand fracas se répercute et résonne dans la cabine téléphonique" 
     "Affalé, tu ne bouges plus" 
     "La tête vide, un bruit blanc strident et perçant résonne dans tes oreilles. Tu es agrippé au sol et tu ne te relèveras plus."
-    show phone_booth:
+    show phonebooth:
         ease 1 blur 32
-    "Lorsque ta vision ensanglantée revient en place, d’un œil mort, tu observes d'un œil mort le récepteur détruit en mille morceaux au sol{w}, tu en viens à te demander ce qui t'a guidé jusqu'ici." 
+    "Lorsque ta vision ensanglantée revient en place, d’un œil mort, tu observes le récepteur détruit en mille morceaux au sol{w}, tu en viens à te demander ce qui t'a guidé jusqu'ici." 
     "Tu lèves tes mains à hauteur d’œil, le sang coulant le long de tes poignets." 
     "Que s'est-il passé pour que tu en viennes à les salir. {w}Que s’est–il passé{w}, le vendredi 13 septembre."
 
@@ -1609,11 +1747,11 @@ label rest_area_2:
     stop music
     stop sfx fadeout 10.0
 
-    scene parkingLot :
+    scene parkinglot :
         zoom 1.25
     with Fade(0.5, 6.0, 0.5)
 
-    "Tu t'allonges sur le cadre du vélo. Tu ne peux pas rester debout. Se traîner jusqu'ici depuis le stand était déjà assez difficile comme ça."
+    "Tu t'allonges sur le châssis de la moto. Tu ne peux pas rester debout. Se traîner jusqu'ici depuis la cabine était déjà assez difficile comme ça."
     "La fatigue et ton récent comportement agité te plongent dans un état second - là mais tout à fait pas là."
     "Tu te frottes les yeux. Si tu avais envie de dormir, ce n'est plus le cas. Tu as juste la nausée et tu veux rentrer chez toi le plus vite possible."
     "Mais tu ne le feras pas. Alors tu te contentes de comater. En attendant Ammon."
@@ -1727,7 +1865,7 @@ label rest_area_2:
     am "Et maintenant, laisse-moi rafistoler ça."
 
     "Il prend ta main une à une et commence à enrouler le tissu autour des plaies"
-    "Il sait ce qu'il fait. C'est comme s'il l'avait déjà fait auparavant."
+    "Il sait ce qu'il fait."
 
     am "Je n'ai pas de solution antiseptique mais je ne pouvais pas laisser saigner ça."
 
@@ -1772,7 +1910,7 @@ label rest_area_2:
 
     hl "Regarde, je peux me tenir debout ! Je suis un grand garçon, non ?"
 
-    show ammon j_disgusted
+    show ammon j_disgusted at american_shot
 
     "Ammon te regarde, sans être amusé. Tes tentatives pour le taquiner tombent dans l'oreille d'un sourd. Tu roules les yeux."
     "Tu soupires et tu te pinces l'arête entre les yeux."
@@ -1785,14 +1923,18 @@ label rest_area_2:
         python :
             ammon_talked = 0
             current_screen = "restarea"
+            current_subscreen = "restarea_butt"
             trunk_explored = False
 
-            code_cadenas = [6, 1, 5, 3]
-            cadenas_vérifié = 0 
+            padlock_code = [6,1,5,3]
+            being_basic = 0
+            checked_padlock = 0 
             
             got_stick = False
             got_notebook = False
-            good_code = ""
+            good_code = 1309
+
+            birthday = True
 
         
         # affiche l'écran custom_quickbarç
@@ -1803,6 +1945,7 @@ label rest_area_2:
         hide ammon
         scene black
         stop music
+        show parking at zpos_bg onlayer farback
         play music "audio/music/moment_orange.mp3" loop fadein 1.0
         jump pointnclick_interact_loop
 
@@ -1821,7 +1964,7 @@ label confront_him:
     am "Je peux t’aider ?"
 
     
-    show parkingLot :
+    show parkinglot :
         xpos -2144
     show ammon at american_shot :
         xpos -1073
@@ -1869,7 +2012,7 @@ label confront_him:
     am "Même, pourquoi t’as fait ça ? Tu me fais pas confiance à ce point ?"
     am "Tu m’as fait chier plus fois qu’il n’en est possible{w} et même là, j'ai tout essayé pour te mettre à l'aise, même te réconforter quand tu râlais et que tu faisais un de tes trop nombreux caprices."
     am pupils_down j_disgusted "Je t'ai mis un bandage..."
-    am pupils "J'ai accompagné ton comportement hystérique toute la journée."
+    am pupils "Je t’ai accompagné avec ton comportement hystérique toute la journée."
     am j_yell "Et c'est comme ça que tu me remercies en retour ?? En fouillant dans mes affaires ??"
 
     show ammon j_growl
@@ -1885,7 +2028,7 @@ label confront_him:
     am j_yell "Qu'est-ce qu'il y a à comprendre ? NE TOUCHE PAS À MES AFFAIRES, TU COMPRENDS ?"
 
     "Les larmes coulent sur tes joues."
-    "Vous resserrez le [picked_from_the_bag]. C'est le dernier point d'ancrage de votre relation. La dernière chose qui tient debout pour vous deux."
+    "Tu resserrez le [picked_from_the_bag]. C'est le dernier point d'ancrage de votre relation. La dernière chose qui tient debout pour vous deux."
 
     az "Accroches–y toi."
 
@@ -2008,7 +2151,7 @@ label confront_him:
     
     show expression "#F00" at alpha_dissolve:
         easeout 1.5 alpha 0.7
-    show parkingLot with sshake
+    show parkinglot with sshake
 
     "L'instant d'après, son poing se connecte à ton arcade et tu exploses dans les airs sur sa moto."
     "Le [picked_from_the_bag] repose sur le sol, son contenu répandu dans l'herbe, dernière relique de votre amitié éphémère, piétinée"
@@ -2018,7 +2161,7 @@ label confront_him:
 
     hl "{size=60}JE TE DÉTESTE{/size}"
 
-    show parkingLot with sshake
+    show parkinglot with sshake
 
     scene black with dissolve
 

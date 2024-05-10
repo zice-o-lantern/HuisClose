@@ -1,17 +1,17 @@
 screen custom_quickbar:
+    $ screen_active = renpy.get_screen("inventory")
     hbox:
         spacing 20
         if not empty_inventory:
-            imagebutton:
-                idle 'inventory'
-                hover 'inventory_hover'
-                action ShowMenu("inventory")
+            imagebutton auto "gui/inventory_%s.png":
+                action Show("inventory")
+                sensitive not screen_active
 
         if got_notebook:
             imagebutton:
                 at custom_zoom
-                idle "notebook"
-                hover "notebook_hovered"
+                idle "notebook_idle"
+                hover "notebook_hover"
                 action ShowMenu("notebook")
 
 init python:
@@ -27,3 +27,10 @@ screen countdown(show_c=False):
 label timer_default:
     "No label to jump to"
     return
+
+label hide_customgui:
+    hide screen inventory
+    hide screen notebook
+
+style return_butt:
+    align (1.0, 0.0)

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<dirinfo>
+<files>
+	<item key='bar20230726124358' />
+	<item key='button20230726124348' />
+	<item key='fonts20230820174234' />
+	<item key='overlay20230726124348' />
+	<item key='phone20230726124348' />
+	<item key='scrollbar20230726124358' />
+	<item key='slider20230726124358' />
+	<item key='azzy_textbox.png20240428191859' />
+	<item key='backbutton_hover.png20231125000353' />
+	<item key='backbutton_idle.png20231125000353' />
+	<item key='backbutton_selected.png20230813233039' />
+	<item key='bubble.png20231125000352' />
+	<item key='Clearing.png20240428191724' />
+	<item key='frame.png20231125000353' />
+	<item key='game_menu.png20231125000353' />
+	<item key='inventory_bg.png20231125000354' />
+	<item key='inventory_hover.png20231125000354' />
+	<item key='inventory_slot_hover.png20231125000354' />
+	<item key='inventory_slot_idle.png20231125000354' />
+	<item key='inventory_slot_selected.png20231125000354' />
+	<item key='inventory_idle.png20231125000354' />
+	<item key='main_menu_title.png20240428191724' />
+	<item key='main_menu.mp420240428191724' />
+	<item key='main_menu.png20231125000353' />
+	<item key='main_menu.webm20240428191724' />
+	<item key='namebox.png20231125000353' />
+	<item key='notebook_hovered.png20231125000354' />
+	<item key='notebook.png20231125000354' />
+	<item key='notify.png20231125000353' />
+	<item key='nvl.png20231125000353' />
+	<item key='open_notebook.webp20231125000354' />
+	<item key='padlock_leftbutton_hover.png20231125000354' />
+	<item key='padlock_leftbutton_idle.png20231125000354' />
+	<item key='padlock_leftbutton_selected.png20231125000354' />
+	<item key='padlock_rightbutton_hover.png20231125000354' />
+	<item key='padlock_rightbutton_idle.png20231125000354' />
+	<item key='padlock_rightbutton_selected.png20231125000354' />
+	<item key='skip.png20231125000353' />
+	<item key='textbox.png20231125000353' />
+	<item key='thoughtbubble.png20231125000353' />
+	<item key='window_icon.png20231125000353' />
+</files>
+</dirinfo>
